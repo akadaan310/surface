@@ -1,0 +1,1191 @@
+{
+  "mathematical_review": {
+    "definitions": [
+      {
+        "end_byte_exclusive": 2472,
+        "end_line": 15,
+        "source": {
+          "bytes": 41427,
+          "path": "docs/MATHEMATICAL_ATLAS.md",
+          "sha256": "529dbf8e2977129ae4203604d9ed91eb9ae6319a50cfc380e50ea64d6ce27ca6"
+        },
+        "start_byte": 2326,
+        "start_line": 15,
+        "text": "| `logic` | Are propositions, guards, quantifiers and inference rules explicit? | Missing evidence and cyclic self-support must not yield truth |\n",
+        "text_sha256": "5488ae4d6b6749e14b4a2159b37c6e9a36f3bd443c25ca1241ad3f50e9383683"
+      },
+      {
+        "end_byte_exclusive": 2665,
+        "end_line": 16,
+        "source": {
+          "bytes": 41427,
+          "path": "docs/MATHEMATICAL_ATLAS.md",
+          "sha256": "529dbf8e2977129ae4203604d9ed91eb9ae6319a50cfc380e50ea64d6ce27ca6"
+        },
+        "start_byte": 2472,
+        "start_line": 16,
+        "text": "| `set_theory` | Are objects, membership, domains, products and cardinality bounds defined? | Test empty/duplicate inventories and distinguish finite sets from potentially unbounded families |\n",
+        "text_sha256": "9f84ccff7910756b80b971f5a53048ac124b7c24bf9eb893beef0947b14f155c"
+      },
+      {
+        "end_byte_exclusive": 2840,
+        "end_line": 17,
+        "source": {
+          "bytes": 41427,
+          "path": "docs/MATHEMATICAL_ATLAS.md",
+          "sha256": "529dbf8e2977129ae4203604d9ed91eb9ae6319a50cfc380e50ea64d6ce27ca6"
+        },
+        "start_byte": 2665,
+        "start_line": 17,
+        "text": "| `type_theory` | Do constructors, domain/codomain and composition preserve declared types? | Reject a byte offset passed as a physical qubit ID or a mismatched composition |\n",
+        "text_sha256": "1b3842a422fd7823abb0964d4a497e4a0e29a20333708d62a20c5d713449059a"
+      },
+      {
+        "end_byte_exclusive": 3002,
+        "end_line": 18,
+        "source": {
+          "bytes": 41427,
+          "path": "docs/MATHEMATICAL_ATLAS.md",
+          "sha256": "529dbf8e2977129ae4203604d9ed91eb9ae6319a50cfc380e50ea64d6ce27ca6"
+        },
+        "start_byte": 2840,
+        "start_line": 18,
+        "text": "| `arithmetic` | Are valuation, width, signedness, rounding and overflow specified? | Carry injection, XOR and assignment must produce distinct expected traces |\n",
+        "text_sha256": "e17214597016152cb07a7034f4d0f74bedfc90bcaf26492c7a0588ac40aa34b2"
+      },
+      {
+        "end_byte_exclusive": 3187,
+        "end_line": 19,
+        "source": {
+          "bytes": 41427,
+          "path": "docs/MATHEMATICAL_ATLAS.md",
+          "sha256": "529dbf8e2977129ae4203604d9ed91eb9ae6319a50cfc380e50ea64d6ce27ca6"
+        },
+        "start_byte": 3002,
+        "start_line": 19,
+        "text": "| `algebra` | Which laws actually hold: closure, associativity, identity, inverse, distributivity? | Noninvertible masks cannot be admitted as group elements under the same operation |\n",
+        "text_sha256": "92e1103169ba86a0cee341f08439bef17ba84f222f217361208efdf66f0bec8c"
+      },
+      {
+        "end_byte_exclusive": 3380,
+        "end_line": 20,
+        "source": {
+          "bytes": 41427,
+          "path": "docs/MATHEMATICAL_ATLAS.md",
+          "sha256": "529dbf8e2977129ae4203604d9ed91eb9ae6319a50cfc380e50ea64d6ce27ca6"
+        },
+        "start_byte": 3187,
+        "start_line": 20,
+        "text": "| `order_lattices` | Is the relation a partial/total order; are meets/joins defined where claimed? | Test antisymmetry/transitivity and incomparable cases rather than infer order from labels |\n",
+        "text_sha256": "1e9a2ae90a05832916ce98c6fe1c4b1d40e3125c4e257b0c0fc51bf3d999821c"
+      },
+      {
+        "end_byte_exclusive": 3547,
+        "end_line": 21,
+        "source": {
+          "bytes": 41427,
+          "path": "docs/MATHEMATICAL_ATLAS.md",
+          "sha256": "529dbf8e2977129ae4203604d9ed91eb9ae6319a50cfc380e50ea64d6ce27ca6"
+        },
+        "start_byte": 3380,
+        "start_line": 21,
+        "text": "| `combinatorics` | What is counted and what is the finite search bound? | Candidate programs, distinct functions and successful outputs have different denominators |\n",
+        "text_sha256": "5d34154fba1a3f504ee0fb8d11ecc2338dacf16ceaf192ac6ab07af8acd71e25"
+      },
+      {
+        "end_byte_exclusive": 3699,
+        "end_line": 22,
+        "source": {
+          "bytes": 41427,
+          "path": "docs/MATHEMATICAL_ATLAS.md",
+          "sha256": "529dbf8e2977129ae4203604d9ed91eb9ae6319a50cfc380e50ea64d6ce27ca6"
+        },
+        "start_byte": 3547,
+        "start_line": 22,
+        "text": "| `graph_theory` | What do vertices/edges, direction and weights mean? | Different edge types and disconnected components must remain distinguishable |\n",
+        "text_sha256": "865481924f65a78f40a6569d18b4ebc240b02fd3e11dd9e6867d9330e661a20f"
+      },
+      {
+        "end_byte_exclusive": 3871,
+        "end_line": 23,
+        "source": {
+          "bytes": 41427,
+          "path": "docs/MATHEMATICAL_ATLAS.md",
+          "sha256": "529dbf8e2977129ae4203604d9ed91eb9ae6319a50cfc380e50ea64d6ce27ca6"
+        },
+        "start_byte": 3699,
+        "start_line": 23,
+        "text": "| `automata_languages` | What grammar, states, transitions, guards and acceptance rules execute? | Test rejected words, illegal transitions, cycles and budget exhaustion |\n",
+        "text_sha256": "d70bd0aca4f6fba21a9a8fe91fd81debbca01427435e16b503d12a00113b4ff5"
+      },
+      {
+        "end_byte_exclusive": 4064,
+        "end_line": 24,
+        "source": {
+          "bytes": 41427,
+          "path": "docs/MATHEMATICAL_ATLAS.md",
+          "sha256": "529dbf8e2977129ae4203604d9ed91eb9ae6319a50cfc380e50ea64d6ce27ca6"
+        },
+        "start_byte": 3871,
+        "start_line": 24,
+        "text": "| `information_coding` | What information is preserved, compressed or lost under the codec? | Retain source bytes; test tampering, alternate encoding, distribution shift and noninvertibility |\n",
+        "text_sha256": "6ca78c8a7eb5bf3c0652badb6c424ac049b8e32e7df0e2b56baa21ebfb6db5e6"
+      },
+      {
+        "end_byte_exclusive": 4221,
+        "end_line": 25,
+        "source": {
+          "bytes": 41427,
+          "path": "docs/MATHEMATICAL_ATLAS.md",
+          "sha256": "529dbf8e2977129ae4203604d9ed91eb9ae6319a50cfc380e50ea64d6ce27ca6"
+        },
+        "start_byte": 4064,
+        "start_line": 25,
+        "text": "| `geometry` | What coordinate spaces, units, metrics and transformations are admitted? | Move layout origins without changing a function or quantum state |\n",
+        "text_sha256": "1d87a6ac844596888351d99b0786752ea80830e9112f8a8e3938ae4bdba6b4d8"
+      },
+      {
+        "end_byte_exclusive": 4387,
+        "end_line": 26,
+        "source": {
+          "bytes": 41427,
+          "path": "docs/MATHEMATICAL_ATLAS.md",
+          "sha256": "529dbf8e2977129ae4203604d9ed91eb9ae6319a50cfc380e50ea64d6ce27ca6"
+        },
+        "start_byte": 4221,
+        "start_line": 26,
+        "text": "| `topology` | What cover/complex/topology and continuity conditions support the claim? | A graph one-skeleton and a filled complex need not have the same homology |\n",
+        "text_sha256": "f7be689afa9b178be885b528e2736d827f6e0341a1a2335e20b8dc4c27fc0e6e"
+      },
+      {
+        "end_byte_exclusive": 4563,
+        "end_line": 27,
+        "source": {
+          "bytes": 41427,
+          "path": "docs/MATHEMATICAL_ATLAS.md",
+          "sha256": "529dbf8e2977129ae4203604d9ed91eb9ae6319a50cfc380e50ea64d6ce27ca6"
+        },
+        "start_byte": 4387,
+        "start_line": 27,
+        "text": "| `analysis_calculus` | What domains, regularity, derivatives, measures and convergence conditions apply? | Test boundaries, nondifferentiable cases and sampling ambiguities |\n",
+        "text_sha256": "293a32b1243a862a5fd66ddf3b5e822a274cb6e5801456bbb0f34ea1aa308296"
+      },
+      {
+        "end_byte_exclusive": 4745,
+        "end_line": 28,
+        "source": {
+          "bytes": 41427,
+          "path": "docs/MATHEMATICAL_ATLAS.md",
+          "sha256": "529dbf8e2977129ae4203604d9ed91eb9ae6319a50cfc380e50ea64d6ce27ca6"
+        },
+        "start_byte": 4563,
+        "start_line": 28,
+        "text": "| `differential_equations` | What evolution law, initial/boundary data and well-posedness assumptions apply? | Compare analytic solutions and convergence under a refined time step |\n",
+        "text_sha256": "c34b102ec458e0ff720c4806406264e386ccd71572719f41ff8801bce2c010a6"
+      },
+      {
+        "end_byte_exclusive": 4934,
+        "end_line": 29,
+        "source": {
+          "bytes": 41427,
+          "path": "docs/MATHEMATICAL_ATLAS.md",
+          "sha256": "529dbf8e2977129ae4203604d9ed91eb9ae6319a50cfc380e50ea64d6ce27ca6"
+        },
+        "start_byte": 4745,
+        "start_line": 29,
+        "text": "| `spectral_harmonic` | What basis, transform normalization, window and spectral interpretation apply? | Test phase loss, aliasing, Parseval conventions and failed inverse reconstruction |\n",
+        "text_sha256": "cf73110e08c15a210a80c4e4517f092069f4b15a262499e4e512164c2794ce4b"
+      },
+      {
+        "end_byte_exclusive": 5158,
+        "end_line": 30,
+        "source": {
+          "bytes": 41427,
+          "path": "docs/MATHEMATICAL_ATLAS.md",
+          "sha256": "529dbf8e2977129ae4203604d9ed91eb9ae6319a50cfc380e50ea64d6ce27ca6"
+        },
+        "start_byte": 4934,
+        "start_line": 30,
+        "text": "| `probability_statistics` | What random process, likelihood, estimator, independence and uncertainty are assumed? | Null controls, held-out data, multiple-testing corrections and equal probabilities with different states |\n",
+        "text_sha256": "9eac27cae07c1eeb9a3fae80fb606053a47f0ab9bad7a2318907a05d3d26c316"
+      },
+      {
+        "end_byte_exclusive": 5363,
+        "end_line": 31,
+        "source": {
+          "bytes": 41427,
+          "path": "docs/MATHEMATICAL_ATLAS.md",
+          "sha256": "529dbf8e2977129ae4203604d9ed91eb9ae6319a50cfc380e50ea64d6ce27ca6"
+        },
+        "start_byte": 5158,
+        "start_line": 31,
+        "text": "| `optimization_control` | What objective, constraints, admissible controls and termination criteria are used? | Compare a strong baseline; distinguish a local/search-order optimum from a global optimum |\n",
+        "text_sha256": "4f0472b849a6c49f471fe8ce93f9d2e9d7af6df42fdb9cb748615c1ca1815491"
+      },
+      {
+        "end_byte_exclusive": 5556,
+        "end_line": 32,
+        "source": {
+          "bytes": 41427,
+          "path": "docs/MATHEMATICAL_ATLAS.md",
+          "sha256": "529dbf8e2977129ae4203604d9ed91eb9ae6319a50cfc380e50ea64d6ce27ca6"
+        },
+        "start_byte": 5363,
+        "start_line": 32,
+        "text": "| `numerical_analysis` | What precision, conditioning, stability and error/tolerance contract applies? | Cross-implementation comparison, malformed/nonfinite input and changed discretization |\n",
+        "text_sha256": "d635d5a42186e8775bee261f95e500cd5a533ec746a41316a4a38f0b9ec61bc4"
+      },
+      {
+        "end_byte_exclusive": 5750,
+        "end_line": 33,
+        "source": {
+          "bytes": 41427,
+          "path": "docs/MATHEMATICAL_ATLAS.md",
+          "sha256": "529dbf8e2977129ae4203604d9ed91eb9ae6319a50cfc380e50ea64d6ce27ca6"
+        },
+        "start_byte": 5556,
+        "start_line": 33,
+        "text": "| `category_composition` | What objects/morphisms compose; do identity, associativity and preservation diagrams hold? | Type-compatible syntax alone does not prove a functor or naturality law |\n",
+        "text_sha256": "c861f491d38d7eb2a0ad033102028eb9ec868db04635e9beeebe2dbfd6951372"
+      },
+      {
+        "end_byte_exclusive": 5955,
+        "end_line": 34,
+        "source": {
+          "bytes": 41427,
+          "path": "docs/MATHEMATICAL_ATLAS.md",
+          "sha256": "529dbf8e2977129ae4203604d9ed91eb9ae6319a50cfc380e50ea64d6ce27ca6"
+        },
+        "start_byte": 5750,
+        "start_line": 34,
+        "text": "| `physics_units` | What physical model, dimensional analysis, conserved quantities and regime apply? | Do not infer force/energy from layout distance or equate dark-current calibration with dark matter |\n",
+        "text_sha256": "4f779f1e11d9331ce7ede9826e5f3334f9530a000f0d802a18a781ffd22aa31b"
+      },
+      {
+        "end_byte_exclusive": 6162,
+        "end_line": 35,
+        "source": {
+          "bytes": 41427,
+          "path": "docs/MATHEMATICAL_ATLAS.md",
+          "sha256": "529dbf8e2977129ae4203604d9ed91eb9ae6319a50cfc380e50ea64d6ce27ca6"
+        },
+        "start_byte": 5955,
+        "start_line": 35,
+        "text": "| `quantum_information` | What state/channel/measurement semantics, basis order and equivalence convention apply? | Relative-phase, positivity, CPTP, measurement-loss and logical/physical-address controls |\n",
+        "text_sha256": "4ec2bb79ee0563f8284aa041a3db78b4a405a2bae02422128240e34f211d93ce"
+      },
+      {
+        "end_byte_exclusive": 6345,
+        "end_line": 36,
+        "source": {
+          "bytes": 41427,
+          "path": "docs/MATHEMATICAL_ATLAS.md",
+          "sha256": "529dbf8e2977129ae4203604d9ed91eb9ae6319a50cfc380e50ea64d6ce27ca6"
+        },
+        "start_byte": 6162,
+        "start_line": 36,
+        "text": "| `computation_complexity` | What are state/search/work/memory bounds and the cost model? | Distinguish logical fuel, gate count, serialized bytes, elapsed time and resident memory |\n",
+        "text_sha256": "4f4a54ba4ac21072869ea0aa86f97e1cde0067f755de559d19f4feb040c9400b"
+      },
+      {
+        "end_byte_exclusive": 6546,
+        "end_line": 37,
+        "source": {
+          "bytes": 41427,
+          "path": "docs/MATHEMATICAL_ATLAS.md",
+          "sha256": "529dbf8e2977129ae4203604d9ed91eb9ae6319a50cfc380e50ea64d6ce27ca6"
+        },
+        "start_byte": 6345,
+        "start_line": 37,
+        "text": "| `metrology_uncertainty` | What was measured, with which calibration, traceability and error propagation? | Distinguish simulated output from observation and stale calibration from current evidence |\n",
+        "text_sha256": "ee9a6c0e135858909d8d86597ccefd65384d467037a70e190752a645db953752"
+      }
+    ],
+    "domain_count": 23,
+    "ordered_ids": [
+      "logic",
+      "set_theory",
+      "type_theory",
+      "arithmetic",
+      "algebra",
+      "order_lattices",
+      "combinatorics",
+      "graph_theory",
+      "automata_languages",
+      "information_coding",
+      "geometry",
+      "topology",
+      "analysis_calculus",
+      "differential_equations",
+      "spectral_harmonic",
+      "probability_statistics",
+      "optimization_control",
+      "numerical_analysis",
+      "category_composition",
+      "physics_units",
+      "quantum_information",
+      "computation_complexity",
+      "metrology_uncertainty"
+    ],
+    "source": {
+      "bytes": 67795,
+      "path": "tools/commission.py",
+      "sha256": "30e8c96aba5afdb459f0d6ce51b585d84dcbd957a1ca53ea00e29a473a887ae4"
+    }
+  },
+  "relationship": "The 62 curriculum topics and 23 review domains have distinct namespaces and purposes. No one-to-one mapping or evidence of all topics being implemented is asserted.",
+  "schema": "surface.quantum-oracle.inherited-registries.v1",
+  "scope": "Static identity census with exact source hashes; no topic mastery, theorem, or scientific acceptance follows from coverage.",
+  "university": {
+    "division_count": 6,
+    "exact_identity_match_to_historical_receipt": true,
+    "historical_receipt": {
+      "bytes": 36888,
+      "path": "evidence/polyia-import.json",
+      "sha256": "3ce1475688a9b6cb1c214fa08d343bd60a1bbcab6ee3ebfec86205716d9ad675"
+    },
+    "labels": {
+      "application": 2,
+      "established": 42,
+      "house": 18
+    },
+    "registry_declarations": [
+      {
+        "end_byte_exclusive": 5382,
+        "end_line": 92,
+        "source": {
+          "bytes": 10338,
+          "path": "docs/SUBSTRATE_UNIVERSITY.md",
+          "sha256": "b19fe1ee9c0f9d7867168faba8e4cc1635065ddf69b3d032ea72e7851ac65cf6"
+        },
+        "start_byte": 4071,
+        "start_line": 67,
+        "text": "## Preserved topic identities\n\nFresh execution of the actual registry produced:\n\n| Division | Original identity | Topic count |\n|---|---|---:|\n| I | `foundations` — Foundations of Computation | 10 |\n| II | `relational` — Relational and Generative Mathematics | 10 |\n| III | `languages` — Programmable Computational Languages | 10 |\n| IV | `geometry` — Geometry, Physics, and Representation | 12 |\n| V | `acoustic` — Acoustic and Generative Sciences | 10 |\n| VI | `worlds` — Computational Worlds and Emergence | 10 |\n| **Total** | **Six original divisions** | **62** |\n\nAll 62 IDs are unique. The current topic-level labels are **42 established**,\n**18 house** and **2 application**. The schema additionally permits conjecture\nand mythology. A topic's label is not automatically a verdict for every\nsentence or every implemented computation within it; definitions retain their\nown labels and sources. Registry preservation records curricular identity and\ncontent, not executable mastery of every topic.\n\nPolyIA's **Infinity IX** and **VII/VIII open research charters** belong to its\nseparate adopted research organization. They do not silently renumber or extend\nthis original six-division registry. Surface can later cross-reference these\nidentities while keeping their source namespaces explicit.\n\n",
+        "text_sha256": "76b6ed7e73d796549dc0a56953dc643852bfc717f03e5bed2ddc6ab6c1a0a23c"
+      }
+    ],
+    "source": {
+      "bytes": 6231,
+      "path": "vendor/polyia/substrate-university/src/content/registry.ts",
+      "sha256": "e270e33107bc4962df48df9de4cec2522bdfd8a0d452a8d9e299c0a11764cf8c"
+    },
+    "topic_count": 62,
+    "topics": [
+      {
+        "division": "foundations",
+        "id": "transition-systems",
+        "prerequisites_source": "[]",
+        "source": {
+          "bytes": 23498,
+          "path": "vendor/polyia/substrate-university/src/content/topics/foundations.ts",
+          "sha256": "60517881c6291557ef6eb34bf131749c91395f744dc028f0c1c52411c0cf52d1"
+        },
+        "start_line": 8,
+        "status": "established",
+        "title_source": "'States, moves and transitions'"
+      },
+      {
+        "division": "foundations",
+        "id": "finite-automata",
+        "prerequisites_source": "['transition-systems']",
+        "source": {
+          "bytes": 23498,
+          "path": "vendor/polyia/substrate-university/src/content/topics/foundations.ts",
+          "sha256": "60517881c6291557ef6eb34bf131749c91395f744dc028f0c1c52411c0cf52d1"
+        },
+        "start_line": 36,
+        "status": "established",
+        "title_source": "'Finite-state machines and regular languages'"
+      },
+      {
+        "division": "foundations",
+        "id": "operational-grammar",
+        "prerequisites_source": "['transition-systems', 'finite-automata']",
+        "source": {
+          "bytes": 23498,
+          "path": "vendor/polyia/substrate-university/src/content/topics/foundations.ts",
+          "sha256": "60517881c6291557ef6eb34bf131749c91395f744dc028f0c1c52411c0cf52d1"
+        },
+        "start_line": 64,
+        "status": "house",
+        "title_source": "'Operational grammars: syntax, semantics, execution'"
+      },
+      {
+        "division": "foundations",
+        "id": "admissibility",
+        "prerequisites_source": "['finite-automata', 'operational-grammar']",
+        "source": {
+          "bytes": 23498,
+          "path": "vendor/polyia/substrate-university/src/content/topics/foundations.ts",
+          "sha256": "60517881c6291557ef6eb34bf131749c91395f744dc028f0c1c52411c0cf52d1"
+        },
+        "start_line": 93,
+        "status": "established",
+        "title_source": "'Admissibility languages and the product construction'"
+      },
+      {
+        "division": "foundations",
+        "id": "substrate-theory",
+        "prerequisites_source": "['transition-systems']",
+        "source": {
+          "bytes": 23498,
+          "path": "vendor/polyia/substrate-university/src/content/topics/foundations.ts",
+          "sha256": "60517881c6291557ef6eb34bf131749c91395f744dc028f0c1c52411c0cf52d1"
+        },
+        "start_line": 119,
+        "status": "house",
+        "title_source": "'Substrate Theory: computation as transformation of state'"
+      },
+      {
+        "division": "foundations",
+        "id": "perturbation",
+        "prerequisites_source": "['finite-automata']",
+        "source": {
+          "bytes": 23498,
+          "path": "vendor/polyia/substrate-university/src/content/topics/foundations.ts",
+          "sha256": "60517881c6291557ef6eb34bf131749c91395f744dc028f0c1c52411c0cf52d1"
+        },
+        "start_line": 146,
+        "status": "established",
+        "title_source": "'Perturbation: a small change and where it goes'"
+      },
+      {
+        "division": "foundations",
+        "id": "equivalence-classes",
+        "prerequisites_source": "[]",
+        "source": {
+          "bytes": 23498,
+          "path": "vendor/polyia/substrate-university/src/content/topics/foundations.ts",
+          "sha256": "60517881c6291557ef6eb34bf131749c91395f744dc028f0c1c52411c0cf52d1"
+        },
+        "start_line": 173,
+        "status": "established",
+        "title_source": "'Equivalence classes and quotients'"
+      },
+      {
+        "division": "foundations",
+        "id": "numerical-grammars",
+        "prerequisites_source": "['transition-systems']",
+        "source": {
+          "bytes": 23498,
+          "path": "vendor/polyia/substrate-university/src/content/topics/foundations.ts",
+          "sha256": "60517881c6291557ef6eb34bf131749c91395f744dc028f0c1c52411c0cf52d1"
+        },
+        "start_line": 200,
+        "status": "house",
+        "title_source": "'Numerical grammars: numerals are programs'"
+      },
+      {
+        "division": "foundations",
+        "id": "graph-theory",
+        "prerequisites_source": "[]",
+        "source": {
+          "bytes": 23498,
+          "path": "vendor/polyia/substrate-university/src/content/topics/foundations.ts",
+          "sha256": "60517881c6291557ef6eb34bf131749c91395f744dc028f0c1c52411c0cf52d1"
+        },
+        "start_line": 228,
+        "status": "established",
+        "title_source": "'Graphs, walks and paths'"
+      },
+      {
+        "division": "foundations",
+        "id": "complexity",
+        "prerequisites_source": "['graph-theory', 'operational-grammar']",
+        "source": {
+          "bytes": 23498,
+          "path": "vendor/polyia/substrate-university/src/content/topics/foundations.ts",
+          "sha256": "60517881c6291557ef6eb34bf131749c91395f744dc028f0c1c52411c0cf52d1"
+        },
+        "start_line": 256,
+        "status": "established",
+        "title_source": "'The cost of resolution and complexity classes'"
+      },
+      {
+        "division": "relational",
+        "id": "alphabets-words",
+        "prerequisites_source": "[]",
+        "source": {
+          "bytes": 20689,
+          "path": "vendor/polyia/substrate-university/src/content/topics/relational.ts",
+          "sha256": "6f56006a561582523af036cf6967964dd783ce8bc629d39e81dc21cc0844a98f"
+        },
+        "start_line": 11,
+        "status": "established",
+        "title_source": "'Alphabets, words and the free monoid'"
+      },
+      {
+        "division": "relational",
+        "id": "generative-grammars",
+        "prerequisites_source": "['alphabets-words']",
+        "source": {
+          "bytes": 20689,
+          "path": "vendor/polyia/substrate-university/src/content/topics/relational.ts",
+          "sha256": "6f56006a561582523af036cf6967964dd783ce8bc629d39e81dc21cc0844a98f"
+        },
+        "start_line": 39,
+        "status": "established",
+        "title_source": "'Generative grammars and the Chomsky hierarchy'"
+      },
+      {
+        "division": "relational",
+        "id": "plicastratum",
+        "prerequisites_source": "['alphabets-words', 'generative-grammars']",
+        "source": {
+          "bytes": 20689,
+          "path": "vendor/polyia/substrate-university/src/content/topics/relational.ts",
+          "sha256": "6f56006a561582523af036cf6967964dd783ce8bc629d39e81dc21cc0844a98f"
+        },
+        "start_line": 65,
+        "status": "house",
+        "title_source": "'Plicastratum: folding a path into one glyph'"
+      },
+      {
+        "division": "relational",
+        "id": "alphabet-towers",
+        "prerequisites_source": "['alphabets-words', 'plicastratum']",
+        "source": {
+          "bytes": 20689,
+          "path": "vendor/polyia/substrate-university/src/content/topics/relational.ts",
+          "sha256": "6f56006a561582523af036cf6967964dd783ce8bc629d39e81dc21cc0844a98f"
+        },
+        "start_line": 96,
+        "status": "house",
+        "title_source": "'Structured alphabets and alphabet towers'"
+      },
+      {
+        "division": "relational",
+        "id": "ingrammatica",
+        "prerequisites_source": "['finite-automata', 'generative-grammars']",
+        "source": {
+          "bytes": 20689,
+          "path": "vendor/polyia/substrate-university/src/content/topics/relational.ts",
+          "sha256": "6f56006a561582523af036cf6967964dd783ce8bc629d39e81dc21cc0844a98f"
+        },
+        "start_line": 123,
+        "status": "house",
+        "title_source": "'Ingrammatica: the study of what a grammar refuses'"
+      },
+      {
+        "division": "relational",
+        "id": "constructive-admission",
+        "prerequisites_source": "['generative-grammars', 'operational-grammar']",
+        "source": {
+          "bytes": 20689,
+          "path": "vendor/polyia/substrate-university/src/content/topics/relational.ts",
+          "sha256": "6f56006a561582523af036cf6967964dd783ce8bc629d39e81dc21cc0844a98f"
+        },
+        "start_line": 149,
+        "status": "house",
+        "title_source": "'Constructive Substrate Admission'"
+      },
+      {
+        "division": "relational",
+        "id": "relational-generativity",
+        "prerequisites_source": "['alphabets-words']",
+        "source": {
+          "bytes": 20689,
+          "path": "vendor/polyia/substrate-university/src/content/topics/relational.ts",
+          "sha256": "6f56006a561582523af036cf6967964dd783ce8bc629d39e81dc21cc0844a98f"
+        },
+        "start_line": 176,
+        "status": "house",
+        "title_source": "'Relational Generativity: structure from a seed and its relations'"
+      },
+      {
+        "division": "relational",
+        "id": "modal-cyclic",
+        "prerequisites_source": "['alphabets-words']",
+        "source": {
+          "bytes": 20689,
+          "path": "vendor/polyia/substrate-university/src/content/topics/relational.ts",
+          "sha256": "6f56006a561582523af036cf6967964dd783ce8bc629d39e81dc21cc0844a98f"
+        },
+        "start_line": 203,
+        "status": "established",
+        "title_source": "'Cyclic mathematics: rotations, necklaces and modes'"
+      },
+      {
+        "division": "relational",
+        "id": "recursive-folds",
+        "prerequisites_source": "['alphabets-words']",
+        "source": {
+          "bytes": 20689,
+          "path": "vendor/polyia/substrate-university/src/content/topics/relational.ts",
+          "sha256": "6f56006a561582523af036cf6967964dd783ce8bc629d39e81dc21cc0844a98f"
+        },
+        "start_line": 230,
+        "status": "established",
+        "title_source": "'Recursion: folds and unfolds as structure-preserving maps'"
+      },
+      {
+        "division": "relational",
+        "id": "compositional-forms",
+        "prerequisites_source": "['generative-grammars']",
+        "source": {
+          "bytes": 20689,
+          "path": "vendor/polyia/substrate-university/src/content/topics/relational.ts",
+          "sha256": "6f56006a561582523af036cf6967964dd783ce8bc629d39e81dc21cc0844a98f"
+        },
+        "start_line": 256,
+        "status": "established",
+        "title_source": "'Compositional forms: parallel rewriting and graph grammars'"
+      },
+      {
+        "division": "languages",
+        "id": "uri-grammar",
+        "prerequisites_source": "[]",
+        "source": {
+          "bytes": 19392,
+          "path": "vendor/polyia/substrate-university/src/content/topics/languages.ts",
+          "sha256": "9ad33b2397000131f5dd54d986a0938156f39bb11d399c0792dcf3b1084f8f96"
+        },
+        "start_line": 8,
+        "status": "established",
+        "title_source": "'Addresses as words: the grammar of a URI'"
+      },
+      {
+        "division": "languages",
+        "id": "purl",
+        "prerequisites_source": "['uri-grammar']",
+        "source": {
+          "bytes": 19392,
+          "path": "vendor/polyia/substrate-university/src/content/topics/languages.ts",
+          "sha256": "9ad33b2397000131f5dd54d986a0938156f39bb11d399c0792dcf3b1084f8f96"
+        },
+        "start_line": 34,
+        "status": "house",
+        "title_source": "'PURL: an address for a resource and its operations'"
+      },
+      {
+        "division": "languages",
+        "id": "seurl",
+        "prerequisites_source": "['uri-grammar', 'typed-machines']",
+        "source": {
+          "bytes": 19392,
+          "path": "vendor/polyia/substrate-university/src/content/topics/languages.ts",
+          "sha256": "9ad33b2397000131f5dd54d986a0938156f39bb11d399c0792dcf3b1084f8f96"
+        },
+        "start_line": 60,
+        "status": "house",
+        "title_source": "'SEURL: typed operation channels'"
+      },
+      {
+        "division": "languages",
+        "id": "typed-machines",
+        "prerequisites_source": "[]",
+        "source": {
+          "bytes": 19392,
+          "path": "vendor/polyia/substrate-university/src/content/topics/languages.ts",
+          "sha256": "9ad33b2397000131f5dd54d986a0938156f39bb11d399c0792dcf3b1084f8f96"
+        },
+        "start_line": 86,
+        "status": "established",
+        "title_source": "'Typed machines and statecharts'"
+      },
+      {
+        "division": "languages",
+        "id": "types-as-admissibility",
+        "prerequisites_source": "['typed-machines']",
+        "source": {
+          "bytes": 19392,
+          "path": "vendor/polyia/substrate-university/src/content/topics/languages.ts",
+          "sha256": "9ad33b2397000131f5dd54d986a0938156f39bb11d399c0792dcf3b1084f8f96"
+        },
+        "start_line": 112,
+        "status": "established",
+        "title_source": "'Types as admissibility'"
+      },
+      {
+        "division": "languages",
+        "id": "compilation",
+        "prerequisites_source": "['typed-machines', 'symbolic-composition']",
+        "source": {
+          "bytes": 19392,
+          "path": "vendor/polyia/substrate-university/src/content/topics/languages.ts",
+          "sha256": "9ad33b2397000131f5dd54d986a0938156f39bb11d399c0792dcf3b1084f8f96"
+        },
+        "start_line": 138,
+        "status": "house",
+        "title_source": "'Compilation: when a word becomes one operation'"
+      },
+      {
+        "division": "languages",
+        "id": "matrix-loom",
+        "prerequisites_source": "['compilation']",
+        "source": {
+          "bytes": 19392,
+          "path": "vendor/polyia/substrate-university/src/content/topics/languages.ts",
+          "sha256": "9ad33b2397000131f5dd54d986a0938156f39bb11d399c0792dcf3b1084f8f96"
+        },
+        "start_line": 164,
+        "status": "house",
+        "title_source": "'Matrix Loom: weaving operations into matrices'"
+      },
+      {
+        "division": "languages",
+        "id": "addressable-forms",
+        "prerequisites_source": "['uri-grammar', 'compilation']",
+        "source": {
+          "bytes": 19392,
+          "path": "vendor/polyia/substrate-university/src/content/topics/languages.ts",
+          "sha256": "9ad33b2397000131f5dd54d986a0938156f39bb11d399c0792dcf3b1084f8f96"
+        },
+        "start_line": 190,
+        "status": "house",
+        "title_source": "'Addressable forms: when an address is arithmetic'"
+      },
+      {
+        "division": "languages",
+        "id": "grammars-as-programs",
+        "prerequisites_source": "['typed-machines']",
+        "source": {
+          "bytes": 19392,
+          "path": "vendor/polyia/substrate-university/src/content/topics/languages.ts",
+          "sha256": "9ad33b2397000131f5dd54d986a0938156f39bb11d399c0792dcf3b1084f8f96"
+        },
+        "start_line": 217,
+        "status": "established",
+        "title_source": "'Grammars as programs: parsing'"
+      },
+      {
+        "division": "languages",
+        "id": "symbolic-composition",
+        "prerequisites_source": "[]",
+        "source": {
+          "bytes": 19392,
+          "path": "vendor/polyia/substrate-university/src/content/topics/languages.ts",
+          "sha256": "9ad33b2397000131f5dd54d986a0938156f39bb11d399c0792dcf3b1084f8f96"
+        },
+        "start_line": 244,
+        "status": "established",
+        "title_source": "'Symbolic composition and the transition monoid'"
+      },
+      {
+        "division": "geometry",
+        "id": "image-kernel",
+        "prerequisites_source": "[]",
+        "source": {
+          "bytes": 23473,
+          "path": "vendor/polyia/substrate-university/src/content/topics/geometry.ts",
+          "sha256": "c546d17d603d65259bba0f5a567086113baff5cb1fd2908b7b294af077ed8558"
+        },
+        "start_line": 8,
+        "status": "established",
+        "title_source": "'Image, kernel and preimage'"
+      },
+      {
+        "division": "geometry",
+        "id": "imagistratum",
+        "prerequisites_source": "['image-kernel', 'rank-nullity']",
+        "source": {
+          "bytes": 23473,
+          "path": "vendor/polyia/substrate-university/src/content/topics/geometry.ts",
+          "sha256": "c546d17d603d65259bba0f5a567086113baff5cb1fd2908b7b294af077ed8558"
+        },
+        "start_line": 36,
+        "status": "house",
+        "title_source": "'Imagistratum: what each layer of representation keeps'"
+      },
+      {
+        "division": "geometry",
+        "id": "rank-nullity",
+        "prerequisites_source": "['image-kernel']",
+        "source": {
+          "bytes": 23473,
+          "path": "vendor/polyia/substrate-university/src/content/topics/geometry.ts",
+          "sha256": "c546d17d603d65259bba0f5a567086113baff5cb1fd2908b7b294af077ed8558"
+        },
+        "start_line": 62,
+        "status": "established",
+        "title_source": "'Rank, nullity and projection loss'"
+      },
+      {
+        "division": "geometry",
+        "id": "projective-camera",
+        "prerequisites_source": "['image-kernel']",
+        "source": {
+          "bytes": 23473,
+          "path": "vendor/polyia/substrate-university/src/content/topics/geometry.ts",
+          "sha256": "c546d17d603d65259bba0f5a567086113baff5cb1fd2908b7b294af077ed8558"
+        },
+        "start_line": 89,
+        "status": "established",
+        "title_source": "'The pinhole camera as a projective map'"
+      },
+      {
+        "division": "geometry",
+        "id": "topology",
+        "prerequisites_source": "[]",
+        "source": {
+          "bytes": 23473,
+          "path": "vendor/polyia/substrate-university/src/content/topics/geometry.ts",
+          "sha256": "c546d17d603d65259bba0f5a567086113baff5cb1fd2908b7b294af077ed8558"
+        },
+        "start_line": 115,
+        "status": "established",
+        "title_source": "'Topology: what deformation cannot change'"
+      },
+      {
+        "division": "geometry",
+        "id": "curvature",
+        "prerequisites_source": "['topology']",
+        "source": {
+          "bytes": 23473,
+          "path": "vendor/polyia/substrate-university/src/content/topics/geometry.ts",
+          "sha256": "c546d17d603d65259bba0f5a567086113baff5cb1fd2908b7b294af077ed8558"
+        },
+        "start_line": 142,
+        "status": "established",
+        "title_source": "'Curvature and turning'"
+      },
+      {
+        "division": "geometry",
+        "id": "spatial-tensors",
+        "prerequisites_source": "['image-kernel']",
+        "source": {
+          "bytes": 23473,
+          "path": "vendor/polyia/substrate-university/src/content/topics/geometry.ts",
+          "sha256": "c546d17d603d65259bba0f5a567086113baff5cb1fd2908b7b294af077ed8558"
+        },
+        "start_line": 169,
+        "status": "established",
+        "title_source": "'Vectors, frames and tensors'"
+      },
+      {
+        "division": "geometry",
+        "id": "computational-photography",
+        "prerequisites_source": "['image-kernel', 'rank-nullity']",
+        "source": {
+          "bytes": 23473,
+          "path": "vendor/polyia/substrate-university/src/content/topics/geometry.ts",
+          "sha256": "c546d17d603d65259bba0f5a567086113baff5cb1fd2908b7b294af077ed8558"
+        },
+        "start_line": 195,
+        "status": "established",
+        "title_source": "'Computational photography: an image is a measurement'"
+      },
+      {
+        "division": "geometry",
+        "id": "celestial-geometry",
+        "prerequisites_source": "['spatial-tensors']",
+        "source": {
+          "bytes": 23473,
+          "path": "vendor/polyia/substrate-university/src/content/topics/geometry.ts",
+          "sha256": "c546d17d603d65259bba0f5a567086113baff5cb1fd2908b7b294af077ed8558"
+        },
+        "start_line": 221,
+        "status": "established",
+        "title_source": "'Celestial coordinates and the observer'"
+      },
+      {
+        "division": "geometry",
+        "id": "chart-correspondences",
+        "prerequisites_source": "['topology']",
+        "source": {
+          "bytes": 23473,
+          "path": "vendor/polyia/substrate-university/src/content/topics/geometry.ts",
+          "sha256": "c546d17d603d65259bba0f5a567086113baff5cb1fd2908b7b294af077ed8558"
+        },
+        "start_line": 248,
+        "status": "established",
+        "title_source": "'Charts, map projections and their distortions'"
+      },
+      {
+        "division": "geometry",
+        "id": "rendering-mathematics",
+        "prerequisites_source": "['projective-camera']",
+        "source": {
+          "bytes": 23473,
+          "path": "vendor/polyia/substrate-university/src/content/topics/geometry.ts",
+          "sha256": "c546d17d603d65259bba0f5a567086113baff5cb1fd2908b7b294af077ed8558"
+        },
+        "start_line": 275,
+        "status": "established",
+        "title_source": "'Rendering: the equation behind every frame'"
+      },
+      {
+        "division": "geometry",
+        "id": "invisible-sensing",
+        "prerequisites_source": "['image-kernel', 'computational-photography']",
+        "source": {
+          "bytes": 23473,
+          "path": "vendor/polyia/substrate-university/src/content/topics/geometry.ts",
+          "sha256": "c546d17d603d65259bba0f5a567086113baff5cb1fd2908b7b294af077ed8558"
+        },
+        "start_line": 302,
+        "status": "application",
+        "title_source": "'Invisible sensing: inferring what is not in view'"
+      },
+      {
+        "division": "acoustic",
+        "id": "sound-signals",
+        "prerequisites_source": "[]",
+        "source": {
+          "bytes": 18414,
+          "path": "vendor/polyia/substrate-university/src/content/topics/acoustic.ts",
+          "sha256": "a715ac5272663c9968eeb36160b39ab2f01928fd5a6055d369900199a1d67cc4"
+        },
+        "start_line": 11,
+        "status": "established",
+        "title_source": "'Sound as a signal, and how it is sampled'"
+      },
+      {
+        "division": "acoustic",
+        "id": "pitch-frequency",
+        "prerequisites_source": "['sound-signals']",
+        "source": {
+          "bytes": 18414,
+          "path": "vendor/polyia/substrate-university/src/content/topics/acoustic.ts",
+          "sha256": "a715ac5272663c9968eeb36160b39ab2f01928fd5a6055d369900199a1d67cc4"
+        },
+        "start_line": 38,
+        "status": "established",
+        "title_source": "'Pitch, frequency and the logarithm'"
+      },
+      {
+        "division": "acoustic",
+        "id": "interval-geometry",
+        "prerequisites_source": "['pitch-frequency']",
+        "source": {
+          "bytes": 18414,
+          "path": "vendor/polyia/substrate-university/src/content/topics/acoustic.ts",
+          "sha256": "a715ac5272663c9968eeb36160b39ab2f01928fd5a6055d369900199a1d67cc4"
+        },
+        "start_line": 65,
+        "status": "established",
+        "title_source": "'Interval geometry: walking the circle of twelve'"
+      },
+      {
+        "division": "acoustic",
+        "id": "tuning",
+        "prerequisites_source": "['pitch-frequency']",
+        "source": {
+          "bytes": 18414,
+          "path": "vendor/polyia/substrate-university/src/content/topics/acoustic.ts",
+          "sha256": "a715ac5272663c9968eeb36160b39ab2f01928fd5a6055d369900199a1d67cc4"
+        },
+        "start_line": 92,
+        "status": "established",
+        "title_source": "'Tuning: pure ratios against equal steps'"
+      },
+      {
+        "division": "acoustic",
+        "id": "fourier",
+        "prerequisites_source": "['sound-signals']",
+        "source": {
+          "bytes": 18414,
+          "path": "vendor/polyia/substrate-university/src/content/topics/acoustic.ts",
+          "sha256": "a715ac5272663c9968eeb36160b39ab2f01928fd5a6055d369900199a1d67cc4"
+        },
+        "start_line": 119,
+        "status": "established",
+        "title_source": "'Spectra: the discrete Fourier transform'"
+      },
+      {
+        "division": "acoustic",
+        "id": "time-frequency",
+        "prerequisites_source": "['fourier']",
+        "source": {
+          "bytes": 18414,
+          "path": "vendor/polyia/substrate-university/src/content/topics/acoustic.ts",
+          "sha256": "a715ac5272663c9968eeb36160b39ab2f01928fd5a6055d369900199a1d67cc4"
+        },
+        "start_line": 145,
+        "status": "established",
+        "title_source": "'Time–frequency: the spectrogram and its limit'"
+      },
+      {
+        "division": "acoustic",
+        "id": "synthesis",
+        "prerequisites_source": "['fourier']",
+        "source": {
+          "bytes": 18414,
+          "path": "vendor/polyia/substrate-university/src/content/topics/acoustic.ts",
+          "sha256": "a715ac5272663c9968eeb36160b39ab2f01928fd5a6055d369900199a1d67cc4"
+        },
+        "start_line": 171,
+        "status": "established",
+        "title_source": "'Sound synthesis: additive, subtractive and FM'"
+      },
+      {
+        "division": "acoustic",
+        "id": "phase",
+        "prerequisites_source": "['sound-signals']",
+        "source": {
+          "bytes": 18414,
+          "path": "vendor/polyia/substrate-university/src/content/topics/acoustic.ts",
+          "sha256": "a715ac5272663c9968eeb36160b39ab2f01928fd5a6055d369900199a1d67cc4"
+        },
+        "start_line": 197,
+        "status": "established",
+        "title_source": "'Phase: where in the cycle'"
+      },
+      {
+        "division": "acoustic",
+        "id": "phonogrammatica",
+        "prerequisites_source": "['time-frequency', 'operational-grammar']",
+        "source": {
+          "bytes": 18414,
+          "path": "vendor/polyia/substrate-university/src/content/topics/acoustic.ts",
+          "sha256": "a715ac5272663c9968eeb36160b39ab2f01928fd5a6055d369900199a1d67cc4"
+        },
+        "start_line": 223,
+        "status": "house",
+        "title_source": "'Phonogrammatica: a grammar of acoustic forms'"
+      },
+      {
+        "division": "acoustic",
+        "id": "generative-composition",
+        "prerequisites_source": "['interval-geometry']",
+        "source": {
+          "bytes": 18414,
+          "path": "vendor/polyia/substrate-university/src/content/topics/acoustic.ts",
+          "sha256": "a715ac5272663c9968eeb36160b39ab2f01928fd5a6055d369900199a1d67cc4"
+        },
+        "start_line": 249,
+        "status": "established",
+        "title_source": "'Generative composition: music from rules'"
+      },
+      {
+        "division": "worlds",
+        "id": "cellular-automata",
+        "prerequisites_source": "[]",
+        "source": {
+          "bytes": 19551,
+          "path": "vendor/polyia/substrate-university/src/content/topics/worlds.ts",
+          "sha256": "7fd64b34d38f64591153a32808d35ebf8e75ab0fb3931e6a6d9e165a5a470342"
+        },
+        "start_line": 11,
+        "status": "established",
+        "title_source": "'Cellular automata: a world from a local rule'"
+      },
+      {
+        "division": "worlds",
+        "id": "world-loom",
+        "prerequisites_source": "['cellular-automata']",
+        "source": {
+          "bytes": 19551,
+          "path": "vendor/polyia/substrate-university/src/content/topics/worlds.ts",
+          "sha256": "7fd64b34d38f64591153a32808d35ebf8e75ab0fb3931e6a6d9e165a5a470342"
+        },
+        "start_line": 38,
+        "status": "house",
+        "title_source": "'World Loom: weaving a world row by row'"
+      },
+      {
+        "division": "worlds",
+        "id": "agent-grammars",
+        "prerequisites_source": "[]",
+        "source": {
+          "bytes": 19551,
+          "path": "vendor/polyia/substrate-university/src/content/topics/worlds.ts",
+          "sha256": "7fd64b34d38f64591153a32808d35ebf8e75ab0fb3931e6a6d9e165a5a470342"
+        },
+        "start_line": 64,
+        "status": "established",
+        "title_source": "'Agent grammars: inhabitants from rules'"
+      },
+      {
+        "division": "worlds",
+        "id": "procedural-environments",
+        "prerequisites_source": "[]",
+        "source": {
+          "bytes": 19551,
+          "path": "vendor/polyia/substrate-university/src/content/topics/worlds.ts",
+          "sha256": "7fd64b34d38f64591153a32808d35ebf8e75ab0fb3931e6a6d9e165a5a470342"
+        },
+        "start_line": 91,
+        "status": "established",
+        "title_source": "'Procedural environments: building from rules'"
+      },
+      {
+        "division": "worlds",
+        "id": "world-models",
+        "prerequisites_source": "['cellular-automata']",
+        "source": {
+          "bytes": 19551,
+          "path": "vendor/polyia/substrate-university/src/content/topics/worlds.ts",
+          "sha256": "7fd64b34d38f64591153a32808d35ebf8e75ab0fb3931e6a6d9e165a5a470342"
+        },
+        "start_line": 117,
+        "status": "established",
+        "title_source": "'Generative world models'"
+      },
+      {
+        "division": "worlds",
+        "id": "glm-lgm",
+        "prerequisites_source": "['agent-grammars', 'operational-grammar']",
+        "source": {
+          "bytes": 19551,
+          "path": "vendor/polyia/substrate-university/src/content/topics/worlds.ts",
+          "sha256": "7fd64b34d38f64591153a32808d35ebf8e75ab0fb3931e6a6d9e165a5a470342"
+        },
+        "start_line": 143,
+        "status": "house",
+        "title_source": "'Gaming Language Models and Language Gaming Models'"
+      },
+      {
+        "division": "worlds",
+        "id": "borne",
+        "prerequisites_source": "['world-loom']",
+        "source": {
+          "bytes": 19551,
+          "path": "vendor/polyia/substrate-university/src/content/topics/worlds.ts",
+          "sha256": "7fd64b34d38f64591153a32808d35ebf8e75ab0fb3931e6a6d9e165a5a470342"
+        },
+        "start_line": 170,
+        "status": "house",
+        "title_source": "'BORNE: what must be born before what'"
+      },
+      {
+        "division": "worlds",
+        "id": "maps-navigation",
+        "prerequisites_source": "[]",
+        "source": {
+          "bytes": 19551,
+          "path": "vendor/polyia/substrate-university/src/content/topics/worlds.ts",
+          "sha256": "7fd64b34d38f64591153a32808d35ebf8e75ab0fb3931e6a6d9e165a5a470342"
+        },
+        "start_line": 197,
+        "status": "established",
+        "title_source": "'World maps and navigation'"
+      },
+      {
+        "division": "worlds",
+        "id": "simulated-populations",
+        "prerequisites_source": "['cellular-automata', 'agent-grammars']",
+        "source": {
+          "bytes": 19551,
+          "path": "vendor/polyia/substrate-university/src/content/topics/worlds.ts",
+          "sha256": "7fd64b34d38f64591153a32808d35ebf8e75ab0fb3931e6a6d9e165a5a470342"
+        },
+        "start_line": 223,
+        "status": "established",
+        "title_source": "'Simulated populations and emergence'"
+      },
+      {
+        "division": "worlds",
+        "id": "homeless-dark",
+        "prerequisites_source": "['world-loom', 'borne']",
+        "source": {
+          "bytes": 19551,
+          "path": "vendor/polyia/substrate-university/src/content/topics/worlds.ts",
+          "sha256": "7fd64b34d38f64591153a32808d35ebf8e75ab0fb3931e6a6d9e165a5a470342"
+        },
+        "start_line": 249,
+        "status": "application",
+        "title_source": "'HOMELESS / Dark: an application in development'"
+      }
+    ],
+    "topics_by_division": {
+      "acoustic": 10,
+      "foundations": 10,
+      "geometry": 12,
+      "languages": 10,
+      "relational": 10,
+      "worlds": 10
+    },
+    "upstream_commit": "6a0f5eaa8dd39b58bdd99889721ecea5f54e62bb"
+  }
+}

@@ -1,0 +1,533 @@
+{
+  "schema": "surface.commission.plan.v1",
+  "commission_id": "scientific-completion-20261025",
+  "title": "PHANTOM x Quantum Oracle scientific completion first",
+  "source": {
+    "sha256": "daffec2608bf1440373afc8734545ee55940c53ce036ea12a99f784b0b550478",
+    "byte_length": 8729
+  },
+  "review": {
+    "status": "REVIEWED",
+    "reviewer": "Codex explicit mapping under owner autonomous execution directive; not independent scientific acceptance"
+  },
+  "budget": {
+    "total_seconds": 180,
+    "max_tasks": 2
+  },
+  "requirements": [
+    {
+      "id": "section-1",
+      "span": {
+        "start": 284,
+        "end": 1182,
+        "quote": "1. Execution precedence\n\nRead \"AGENTS.md\", \"SUM.md\", all files in \"initiatives/quantum-oracle-v3/\", \"docs/QUANTUM_V3_CONSOLIDATION.md\", \"docs/MATHEMATICAL_ATLAS.md\", \"docs/GATE_REPORT.md\", and the original immutable PHANTOM/Quantum Oracle packages.\n\nTreat all historical self-prompts as preserved specifications. This directive clarifies the owner's current execution priorities.\n\nDo not implement new SURFACE rendering, avatar, UI, material, animation, or real-time integration features until the prerequisite PHANTOM × Quantum Oracle scientific acceptance gates have passed.\n\nThe existing SURFACE source remains immutable except for essential repository-integrity and safety repairs separately justified and recorded.\n\nThe Android launch gate may remain BLOCKED while independent scientific work proceeds. Do not confuse a scientific completion claim with a claim of Android release readiness.\n\n"
+      },
+      "interpretation": "Preserve and execute the exact owner requirement; scientific implementation and assessment are in research/quantum_oracle. Existing compiler task success establishes only the named integrity check.",
+      "disposition": "TASK",
+      "task_ids": [
+        "source-check"
+      ],
+      "acceptance": {
+        "status": "OPEN",
+        "gate": "1. Execution precedence",
+        "evidence": [
+          "research/quantum_oracle/evidence/acceptance.json"
+        ],
+        "tolerance": "Per operator contract and original gate; no automatic promotion from local task success."
+      }
+    },
+    {
+      "id": "section-2",
+      "span": {
+        "start": 1182,
+        "end": 2519,
+        "quote": "2. Primary scientific objective\n\nComplete the PHANTOM × Quantum Oracle initiative as a coherent, executable mathematical research system.\n\nThe target is not a collection of functions merely named after physics concepts.\n\nEvery admitted quantum oracle must be a typed scientific operator with explicit mathematical semantics, admissible inputs, outputs, assumptions, computational implementation, independent references, perturbation behavior, resource bounds, and reproducible evidence.\n\nRepresent supported quantum domains with distinct operator families, including:\n\n- Quantum states, transformations, observables, channels, measurements, and information metrics.\n- Quantum dynamics, open systems, decoherence, noise, and control.\n- Quantum circuits, compilation, optimization, and provider-specific execution contracts.\n- Wave mechanics, spectral representations, interference, scattering, and applicable quantum field-theoretic models.\n- Particle and collider representations, with calibrated experimental data adapters where available.\n- Quantum-informed material models and relevant electromagnetic or atomic interactions.\n\nDo not assert that the implemented registry exhausts quantum physics. Maintain an explicit coverage and applicability registry for implemented, unsupported, proposed, and scientifically unresolved models.\n\n"
+      },
+      "interpretation": "Preserve and execute the exact owner requirement; scientific implementation and assessment are in research/quantum_oracle. Existing compiler task success establishes only the named integrity check.",
+      "disposition": "CONTEXT",
+      "task_ids": [],
+      "acceptance": {
+        "status": "OPEN",
+        "gate": "2. Primary scientific objective",
+        "evidence": [
+          "research/quantum_oracle/evidence/acceptance.json"
+        ],
+        "tolerance": "Per operator contract and original gate; no automatic promotion from local task success."
+      }
+    },
+    {
+      "id": "section-3",
+      "span": {
+        "start": 2519,
+        "end": 3173,
+        "quote": "3. PHANTOM preservation and COMPOSER dependency\n\nPreserve every immutable PHANTOM artifact and original semantic contract.\n\nAudit the missing COMPOSER Gate 1 materials and historical Octave evidence identified by the consolidation report.\n\nRecover and verify the original material when accessible. If unavailable, retain UNKNOWN and specify exact missing evidence.\n\nDo not manufacture replacements and describe them as recovered originals.\n\nUse versioned adapters to integrate established PHANTOM operations, generator grammars, binary representations, state machines, and replay protocols.\n\nVerify compatibility through tests, not naming similarities.\n\n"
+      },
+      "interpretation": "Preserve and execute the exact owner requirement; scientific implementation and assessment are in research/quantum_oracle. Existing compiler task success establishes only the named integrity check.",
+      "disposition": "TASK",
+      "task_ids": [
+        "foundation-check"
+      ],
+      "acceptance": {
+        "status": "OPEN",
+        "gate": "3. PHANTOM preservation and COMPOSER dependency",
+        "evidence": [
+          "research/quantum_oracle/evidence/acceptance.json"
+        ],
+        "tolerance": "Per operator contract and original gate; no automatic promotion from local task success."
+      }
+    },
+    {
+      "id": "section-4",
+      "span": {
+        "start": 3173,
+        "end": 3907,
+        "quote": "4. Binary-to-quantum representation\n\nComplete typed distinctions between:\n\n- Classical binary words and basis states.\n- Statevectors and mixed density operators.\n- Raw byte encodings and mathematical state equivalence.\n- Reversible classical functions and admissible quantum unitaries.\n- Classical stochastic channels and quantum channels.\n- Measurement outcomes and the information discarded by measurement.\n- Logical qubits, physical qubits, basis indices, and memory addresses.\n\nRepair the V3 admission weaknesses already documented in the repository.\n\nIntroduce independent numerical implementations and reference comparisons.\n\nNever infer that classical numerical serialization makes a classical computer into quantum hardware.\n\n"
+      },
+      "interpretation": "Preserve and execute the exact owner requirement; scientific implementation and assessment are in research/quantum_oracle. Existing compiler task success establishes only the named integrity check.",
+      "disposition": "CONTEXT",
+      "task_ids": [],
+      "acceptance": {
+        "status": "OPEN",
+        "gate": "4. Binary-to-quantum representation",
+        "evidence": [
+          "research/quantum_oracle/evidence/acceptance.json"
+        ],
+        "tolerance": "Per operator contract and original gate; no automatic promotion from local task success."
+      }
+    },
+    {
+      "id": "section-5",
+      "span": {
+        "start": 3907,
+        "end": 4106,
+        "quote": "5. N-Euclidean function-space architecture\n\nComplete the mathematical contract for a container holding N distinct Euclidean-coordinate function spaces, together with their relationships.\n\nSeparate:\n\n"
+      },
+      "interpretation": "Preserve and execute the exact owner requirement; scientific implementation and assessment are in research/quantum_oracle. Existing compiler task success establishes only the named integrity check.",
+      "disposition": "CONTEXT",
+      "task_ids": [],
+      "acceptance": {
+        "status": "OPEN",
+        "gate": "5. N-Euclidean function-space architecture",
+        "evidence": [
+          "research/quantum_oracle/evidence/acceptance.json"
+        ],
+        "tolerance": "Per operator contract and original gate; no automatic promotion from local task success."
+      }
+    },
+    {
+      "id": "section-6",
+      "span": {
+        "start": 4106,
+        "end": 4147,
+        "quote": "1. Local coordinate domains and origins.\n"
+      },
+      "interpretation": "Preserve and execute the exact owner requirement; scientific implementation and assessment are in research/quantum_oracle. Existing compiler task success establishes only the named integrity check.",
+      "disposition": "CONTEXT",
+      "task_ids": [],
+      "acceptance": {
+        "status": "OPEN",
+        "gate": "1. Local coordinate domains and origins.",
+        "evidence": [
+          "research/quantum_oracle/evidence/acceptance.json"
+        ],
+        "tolerance": "Per operator contract and original gate; no automatic promotion from local task success."
+      }
+    },
+    {
+      "id": "section-7",
+      "span": {
+        "start": 4147,
+        "end": 4182,
+        "quote": "2. Function and observable spaces.\n"
+      },
+      "interpretation": "Preserve and execute the exact owner requirement; scientific implementation and assessment are in research/quantum_oracle. Existing compiler task success establishes only the named integrity check.",
+      "disposition": "CONTEXT",
+      "task_ids": [],
+      "acceptance": {
+        "status": "OPEN",
+        "gate": "2. Function and observable spaces.",
+        "evidence": [
+          "research/quantum_oracle/evidence/acceptance.json"
+        ],
+        "tolerance": "Per operator contract and original gate; no automatic promotion from local task success."
+      }
+    },
+    {
+      "id": "section-8",
+      "span": {
+        "start": 4182,
+        "end": 4226,
+        "quote": "3. Intrinsic metrics, norms, and operators.\n"
+      },
+      "interpretation": "Preserve and execute the exact owner requirement; scientific implementation and assessment are in research/quantum_oracle. Existing compiler task success establishes only the named integrity check.",
+      "disposition": "CONTEXT",
+      "task_ids": [],
+      "acceptance": {
+        "status": "OPEN",
+        "gate": "3. Intrinsic metrics, norms, and operators.",
+        "evidence": [
+          "research/quantum_oracle/evidence/acceptance.json"
+        ],
+        "tolerance": "Per operator contract and original gate; no automatic promotion from local task success."
+      }
+    },
+    {
+      "id": "section-9",
+      "span": {
+        "start": 4226,
+        "end": 4277,
+        "quote": "4. Ambient chart layout and inter-chart distances.\n"
+      },
+      "interpretation": "Preserve and execute the exact owner requirement; scientific implementation and assessment are in research/quantum_oracle. Existing compiler task success establishes only the named integrity check.",
+      "disposition": "CONTEXT",
+      "task_ids": [],
+      "acceptance": {
+        "status": "OPEN",
+        "gate": "4. Ambient chart layout and inter-chart distances.",
+        "evidence": [
+          "research/quantum_oracle/evidence/acceptance.json"
+        ],
+        "tolerance": "Per operator contract and original gate; no automatic promotion from local task success."
+      }
+    },
+    {
+      "id": "section-10",
+      "span": {
+        "start": 4277,
+        "end": 4340,
+        "quote": "5. Coordinate transformations and representation translations.\n"
+      },
+      "interpretation": "Preserve and execute the exact owner requirement; scientific implementation and assessment are in research/quantum_oracle. Existing compiler task success establishes only the named integrity check.",
+      "disposition": "CONTEXT",
+      "task_ids": [],
+      "acceptance": {
+        "status": "OPEN",
+        "gate": "5. Coordinate transformations and representation translations.",
+        "evidence": [
+          "research/quantum_oracle/evidence/acceptance.json"
+        ],
+        "tolerance": "Per operator contract and original gate; no automatic promotion from local task success."
+      }
+    },
+    {
+      "id": "section-11",
+      "span": {
+        "start": 4340,
+        "end": 4410,
+        "quote": "6. Typed coupling laws, boundary conditions, and dynamic propagation.\n"
+      },
+      "interpretation": "Preserve and execute the exact owner requirement; scientific implementation and assessment are in research/quantum_oracle. Existing compiler task success establishes only the named integrity check.",
+      "disposition": "CONTEXT",
+      "task_ids": [],
+      "acceptance": {
+        "status": "OPEN",
+        "gate": "6. Typed coupling laws, boundary conditions, and dynamic propagation.",
+        "evidence": [
+          "research/quantum_oracle/evidence/acceptance.json"
+        ],
+        "tolerance": "Per operator contract and original gate; no automatic promotion from local task success."
+      }
+    },
+    {
+      "id": "section-12",
+      "span": {
+        "start": 4410,
+        "end": 4808,
+        "quote": "7. Quantum Hilbert-space structures and their admissible correspondences.\n\nEstablish valid mappings where mathematical justification exists.\n\nDo not equate visual proximity, mathematical similarity, and physical coupling.\n\nImplement finite reference examples with analytic or independently verified numerical solutions.\n\nThe full mathematical object must be reusable without the SURFACE renderer.\n\n"
+      },
+      "interpretation": "Preserve and execute the exact owner requirement; scientific implementation and assessment are in research/quantum_oracle. Existing compiler task success establishes only the named integrity check.",
+      "disposition": "CONTEXT",
+      "task_ids": [],
+      "acceptance": {
+        "status": "OPEN",
+        "gate": "7. Quantum Hilbert-space structures and their admissible correspondences.",
+        "evidence": [
+          "research/quantum_oracle/evidence/acceptance.json"
+        ],
+        "tolerance": "Per operator contract and original gate; no automatic promotion from local task success."
+      }
+    },
+    {
+      "id": "section-13",
+      "span": {
+        "start": 4808,
+        "end": 5544,
+        "quote": "6. Scientific discovery automata\n\nUse the existing bounded commission compiler, state machines, supervisor, and finite generator infrastructure.\n\nSupport research cycles:\n\nSCOPE → ACQUIRE → VERIFY SOURCE → FORMALIZE → GENERATE → EXECUTE → PERTURB → COMPARE → CHALLENGE → ACCEPT / REJECT / UNKNOWN → ARCHIVE → SELECT NEXT.\n\nFor generated models and operators, preserve parent lineage, construction paths, unsuccessful candidates, independent challenge results, counterexamples, and replay coordinates.\n\nUse Substrate University's 62 topic identities and the existing 23-domain mathematical review catalogue as research organization and applicability structures—not automatic evidence of mathematical completion.\n\n"
+      },
+      "interpretation": "Preserve and execute the exact owner requirement; scientific implementation and assessment are in research/quantum_oracle. Existing compiler task success establishes only the named integrity check.",
+      "disposition": "CONTEXT",
+      "task_ids": [],
+      "acceptance": {
+        "status": "OPEN",
+        "gate": "6. Scientific discovery automata",
+        "evidence": [
+          "research/quantum_oracle/evidence/acceptance.json"
+        ],
+        "tolerance": "Per operator contract and original gate; no automatic promotion from local task success."
+      }
+    },
+    {
+      "id": "section-14",
+      "span": {
+        "start": 5544,
+        "end": 6307,
+        "quote": "7. Research and experimental requirements\n\nFor each applicable domain:\n\n- Acquire suitable established scientific references and open-source implementations.\n- Determine whether observational, experimental, or simulation evidence is required.\n- Validate numerical results against independent controls.\n- Preserve uncertainty, numerical stability, precision, calibration, and dimensional consistency.\n- Differentiate accepted scientific theory from proposed computational interpretations.\n- Apply finite time, memory, search, and execution budgets.\n\nUse authentic scientific datasets for observational claims.\n\nDo not claim hardware execution without physical-provider evidence and authorization.\n\nDo not substitute synthetic examples for calibrated experiments.\n\n"
+      },
+      "interpretation": "Preserve and execute the exact owner requirement; scientific implementation and assessment are in research/quantum_oracle. Existing compiler task success establishes only the named integrity check.",
+      "disposition": "CONTEXT",
+      "task_ids": [],
+      "acceptance": {
+        "status": "OPEN",
+        "gate": "7. Research and experimental requirements",
+        "evidence": [
+          "research/quantum_oracle/evidence/acceptance.json"
+        ],
+        "tolerance": "Per operator contract and original gate; no automatic promotion from local task success."
+      }
+    },
+    {
+      "id": "section-15",
+      "span": {
+        "start": 6307,
+        "end": 7292,
+        "quote": "8. Completion and acceptance\n\nMaintain the inherited Oracle G0–G7, SURFACE G00–G16, V2/V3, PHANTOM, and COMPOSER obligations with their exact original scope.\n\nRecord separate gate statuses for scientific foundation completion, physical-data validation, quantum-hardware validation, and SURFACE readiness.\n\nA local passing test does not discharge an unrelated original release obligation.\n\nFor every accepted capability, deliver:\n\n- Executable implementation.\n- Typed interface and mathematical specification.\n- Deterministic or properly characterized probabilistic replay.\n- Verification evidence and independent comparison.\n- Provenance and source hashes.\n- Explicit resource contracts.\n- Known limitations and unresolved research questions.\n\nIf a requirement is inaccessible because of missing external hardware, datasets, credentials, or source materials, mark it BLOCKED or UNKNOWN. Continue all independent authorized work and preserve the unresolved acceptance requirement.\n\n"
+      },
+      "interpretation": "Preserve and execute the exact owner requirement; scientific implementation and assessment are in research/quantum_oracle. Existing compiler task success establishes only the named integrity check.",
+      "disposition": "CONTEXT",
+      "task_ids": [],
+      "acceptance": {
+        "status": "OPEN",
+        "gate": "8. Completion and acceptance",
+        "evidence": [
+          "research/quantum_oracle/evidence/acceptance.json"
+        ],
+        "tolerance": "Per operator contract and original gate; no automatic promotion from local task success."
+      }
+    },
+    {
+      "id": "section-16",
+      "span": {
+        "start": 7292,
+        "end": 7928,
+        "quote": "9. SURFACE admission barrier\n\nNo new SURFACE feature implementation is authorized by this commission.\n\nAfter the prerequisite scientific gates are accepted, publish a standalone SURFACE SCIENTIFIC INTEGRATION READINESS REPORT.\n\nThat report must identify every admitted operator, its typed interface, data transformations, numerical limits, physical assumptions, and compatibility requirements.\n\nAny original gates that remain blocked must be explicitly listed. A partial scientific release must not be represented as completion of the entire initiative.\n\nOnly then may the owner issue a separate implementation commission for SURFACE.\n\n"
+      },
+      "interpretation": "Preserve and execute the exact owner requirement; scientific implementation and assessment are in research/quantum_oracle. Existing compiler task success establishes only the named integrity check.",
+      "disposition": "CONTEXT",
+      "task_ids": [],
+      "acceptance": {
+        "status": "OPEN",
+        "gate": "9. SURFACE admission barrier",
+        "evidence": [
+          "research/quantum_oracle/evidence/acceptance.json"
+        ],
+        "tolerance": "Per operator contract and original gate; no automatic promotion from local task success."
+      }
+    },
+    {
+      "id": "section-17",
+      "span": {
+        "start": 7928,
+        "end": 8729,
+        "quote": "10. Operating rules\n\nWork autonomously through bounded, recoverable tasks. Do not wait indefinitely on a blocked dependency.\n\nCommit tested increments on the designated independent initiative branch.\n\nRespect the existing manual-only CI policy unless the owner explicitly changes it.\n\nNever rewrite upstream artifacts, alter historical evidence, invent test results, expose signing credentials, or mark an unsupported physical interpretation as established science.\n\nAt termination, deliver the verified commits, manifest, acceptance ledger, scientific coverage report, unresolved dependencies, and exact continuation instructions.\n\nThe mission is to complete the scientific machinery first. SURFACE will be its downstream physical and visual application—not the substitute for it.\n\nEND COMMISSION.\n"
+      },
+      "interpretation": "Preserve and execute the exact owner requirement; scientific implementation and assessment are in research/quantum_oracle. Existing compiler task success establishes only the named integrity check.",
+      "disposition": "CONTEXT",
+      "task_ids": [],
+      "acceptance": {
+        "status": "OPEN",
+        "gate": "10. Operating rules",
+        "evidence": [
+          "research/quantum_oracle/evidence/acceptance.json"
+        ],
+        "tolerance": "Per operator contract and original gate; no automatic promotion from local task success."
+      }
+    }
+  ],
+  "tasks": [
+    {
+      "id": "source-check",
+      "action": "source-integrity",
+      "requires": [],
+      "requirement_ids": [
+        "section-1"
+      ],
+      "timeout_seconds": 30,
+      "semantic_timeout_seconds": 15
+    },
+    {
+      "id": "foundation-check",
+      "action": "foundation-audit",
+      "requires": [
+        "source-check"
+      ],
+      "requirement_ids": [
+        "section-3"
+      ],
+      "timeout_seconds": 60,
+      "semantic_timeout_seconds": 30
+    }
+  ],
+  "atlas_review": [
+    {
+      "domain": "logic",
+      "applicability": "APPLICABLE",
+      "reason": "Admission predicates, no unsupported inference; unknown evidence remains unknown.",
+      "evidence": [],
+      "status": "OPEN"
+    },
+    {
+      "domain": "set_theory",
+      "applicability": "APPLICABLE",
+      "reason": "Finite distinct domain IDs, state dimensions and input cardinalities.",
+      "evidence": [],
+      "status": "OPEN"
+    },
+    {
+      "domain": "type_theory",
+      "applicability": "APPLICABLE",
+      "reason": "Coordinate, state, channel, word and address distinctions with rejected composition.",
+      "evidence": [],
+      "status": "OPEN"
+    },
+    {
+      "domain": "arithmetic",
+      "applicability": "APPLICABLE",
+      "reason": "Bounded words, modular wrap and exact independent finite reference.",
+      "evidence": [],
+      "status": "OPEN"
+    },
+    {
+      "domain": "algebra",
+      "applicability": "APPLICABLE",
+      "reason": "Permutation unitaries, Hermiticity, CPTP and affine transformation contracts.",
+      "evidence": [],
+      "status": "OPEN"
+    },
+    {
+      "domain": "order_lattices",
+      "applicability": "APPLICABLE",
+      "reason": "Inherited PHANTOM order obligations remain open beyond finite candidate ordering.",
+      "evidence": [],
+      "status": "OPEN"
+    },
+    {
+      "domain": "combinatorics",
+      "applicability": "APPLICABLE",
+      "reason": "Finite grammar enumeration bounds and all failed candidate identities.",
+      "evidence": [],
+      "status": "OPEN"
+    },
+    {
+      "domain": "graph_theory",
+      "applicability": "APPLICABLE",
+      "reason": "Explicit symmetric coupling graph; layout distances confer no coupling.",
+      "evidence": [],
+      "status": "OPEN"
+    },
+    {
+      "domain": "automata_languages",
+      "applicability": "APPLICABLE",
+      "reason": "Legal research phases, finite candidate grammar, source-bound replay.",
+      "evidence": [],
+      "status": "OPEN"
+    },
+    {
+      "domain": "information_coding",
+      "applicability": "APPLICABLE",
+      "reason": "Byte identity distinct from mathematical equivalence and lossy measurement.",
+      "evidence": [],
+      "status": "OPEN"
+    },
+    {
+      "domain": "geometry",
+      "applicability": "APPLICABLE",
+      "reason": "Separate constant local SPD metric, ambient layout and quantum metrics.",
+      "evidence": [],
+      "status": "OPEN"
+    },
+    {
+      "domain": "topology",
+      "applicability": "APPLICABLE",
+      "reason": "General covers, nerves and nested chart topology remain proposed, not proven.",
+      "evidence": [],
+      "status": "OPEN"
+    },
+    {
+      "domain": "analysis_calculus",
+      "applicability": "APPLICABLE",
+      "reason": "Finite trigonometric function spaces and analytic derivatives.",
+      "evidence": [],
+      "status": "OPEN"
+    },
+    {
+      "domain": "differential_equations",
+      "applicability": "APPLICABLE",
+      "reason": "Finite modal evolution and independently compared dynamics.",
+      "evidence": [],
+      "status": "OPEN"
+    },
+    {
+      "domain": "spectral_harmonic",
+      "applicability": "APPLICABLE",
+      "reason": "Actual Fourier coefficients and norm/convention-preserving translations.",
+      "evidence": [],
+      "status": "OPEN"
+    },
+    {
+      "domain": "probability_statistics",
+      "applicability": "APPLICABLE",
+      "reason": "Born distributions, seeded sampling, finite held-out and null controls.",
+      "evidence": [],
+      "status": "OPEN"
+    },
+    {
+      "domain": "optimization_control",
+      "applicability": "APPLICABLE",
+      "reason": "Finite search order is not unrestricted optimality or hardware control.",
+      "evidence": [],
+      "status": "OPEN"
+    },
+    {
+      "domain": "numerical_analysis",
+      "applicability": "APPLICABLE",
+      "reason": "Independent references, tolerances, finite/shape guards, conditioning.",
+      "evidence": [],
+      "status": "OPEN"
+    },
+    {
+      "domain": "category_composition",
+      "applicability": "APPLICABLE",
+      "reason": "Typed composability alone is not a general functor proof.",
+      "evidence": [],
+      "status": "OPEN"
+    },
+    {
+      "domain": "physics_units",
+      "applicability": "APPLICABLE",
+      "reason": "Explicit units/model regime; dimensionless fixture distinct from measurement.",
+      "evidence": [],
+      "status": "OPEN"
+    },
+    {
+      "domain": "quantum_information",
+      "applicability": "APPLICABLE",
+      "reason": "States, density operators, channels and measurement loss semantics.",
+      "evidence": [],
+      "status": "OPEN"
+    },
+    {
+      "domain": "computation_complexity",
+      "applicability": "APPLICABLE",
+      "reason": "Bounded qubits, matrices, candidates, events and supervised deadlines.",
+      "evidence": [],
+      "status": "OPEN"
+    },
+    {
+      "domain": "metrology_uncertainty",
+      "applicability": "APPLICABLE",
+      "reason": "Calibration and experimental uncertainties remain separate from simulation.",
+      "evidence": [],
+      "status": "OPEN"
+    }
+  ]
+}

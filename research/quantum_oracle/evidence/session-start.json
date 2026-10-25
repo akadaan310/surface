@@ -1,0 +1,26 @@
+{
+  "schema": "quantum-oracle.session-start.v1",
+  "workspace": "/home/ubuntu/Documents/Codex/2026-10-25-substrate-phantom-quantum-oracle-scientific-completion/surface",
+  "branch": "initiative/quantum-oracle-v3",
+  "baseline_commit": "6e97a6c819aba0df79b507da0d71301acc794d07",
+  "baseline_tree": "45b689a08ee3d311bb1b1080bfc755cd15ffce2f",
+  "baseline_manifest_sha256": "f6bc3651fee5b989aa99add8b13fc4c4a2e364d12a0a33e1d21f1be5bf4fca07",
+  "baseline_repository_check": {
+    "status": "PASS",
+    "files": 489,
+    "bytes": 29000235
+  },
+  "foundation_check": {
+    "status": "PASS",
+    "files": 621,
+    "bytes": 78637471,
+    "receipt_sha256": "821b25643300b8db5b7d1dee68c7f9362ca0efccd160210bf14c06a8f4a4174c"
+  },
+  "initial_dirty_changes": [],
+  "isolation": "Fresh clone of specified existing initiative branch in originally empty workspace",
+  "initial_live_jobs": "No task resume/fence state from an active local session; archived PHANTOM journals are historical",
+  "deadline_policy": "Each new scientific host job<=60 seconds wall,<=45 seconds semantic,2GiB address space; original compiler<=300 seconds per task unchanged",
+  "authority": "commissions/2026-10-25-scientific-completion/verbatim.txt",
+  "precedence": "Owner scientific-only implementation commission supersedes prior publication pause; historical self-prompts preserved",
+  "surface_feature_authorization": false
+}

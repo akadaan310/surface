@@ -50,11 +50,11 @@
       "sha256": "eeaaec761b28fe6643b50291c0fe4c44937244445395d9f6b285a5c20b3bd700"
     },
     {
-      "bytes": 3860,
-      "git_blob_sha1": "8ca1f36c52fa2dbfca1d8a6daa0fb2ce7fccfc80",
+      "bytes": 4736,
+      "git_blob_sha1": "795f6c15498cf8073bbd7935eb3cdfc9c0de1f2b",
       "git_mode": "100644",
       "path": "SUM.md",
-      "sha256": "baf3a7e903c3e95b15fd27ca74ae97e1517664b7afdcc282d05eebbf1634cab6"
+      "sha256": "38cbe95aa992c6047516849e12d1e40e20534ac6c131cd8998b631c937918bbe"
     },
     {
       "bytes": 1463,
@@ -83,6 +83,111 @@
       "git_mode": "100644",
       "path": "android/native_main.cpp",
       "sha256": "8169c6e1dc3f26a00721b9d6db29e12a6840f673895b5ff2d8cef16d5dc2b9c9"
+    },
+    {
+      "bytes": 23984,
+      "git_blob_sha1": "4a839e5f53ad83cd0fe90cb5cfd56c8eb6e68f47",
+      "git_mode": "100644",
+      "path": "commissions/2026-10-25-scientific-completion/draft/draft.json",
+      "sha256": "43666e71364863975ca37cd14c4f723fea451cdd7afd7d202946bb06e3809aed"
+    },
+    {
+      "bytes": 375,
+      "git_blob_sha1": "2b7b108c6fdc72c3256499e9c48e5e6ab3720481",
+      "git_mode": "100644",
+      "path": "commissions/2026-10-25-scientific-completion/draft/manifest.json",
+      "sha256": "622fd4e5659441f64300589f10e8ef9b0bdb2bbe3cfaa658a4bdf09367786317"
+    },
+    {
+      "bytes": 8729,
+      "git_blob_sha1": "98ba1c665ed205ad6249be24059cc30dc9e84bbc",
+      "git_mode": "100644",
+      "path": "commissions/2026-10-25-scientific-completion/draft/source.txt",
+      "sha256": "daffec2608bf1440373afc8734545ee55940c53ce036ea12a99f784b0b550478"
+    },
+    {
+      "bytes": 235,
+      "git_blob_sha1": "efbb38c5960912d160d281a9895aeab8dc63e90c",
+      "git_mode": "100644",
+      "path": "commissions/2026-10-25-scientific-completion/generated/external-envelopes.json",
+      "sha256": "5c66f11f0dd0268cb416bc6eb8093b16922d6ef04a5ac2c1cb57dc253a62b07a"
+    },
+    {
+      "bytes": 23934,
+      "git_blob_sha1": "7a6f17bffce723a80a3560a7bde7fe316e1cfbc2",
+      "git_mode": "100644",
+      "path": "commissions/2026-10-25-scientific-completion/generated/machine.json",
+      "sha256": "fd92d9d706d266e05bd30a7c5ca979f1566e5d9aba256c3dee231264b96ad6ff"
+    },
+    {
+      "bytes": 5827,
+      "git_blob_sha1": "8f3463f1ebb79b5e926af5c2befe08b2e1630dc2",
+      "git_mode": "100644",
+      "path": "commissions/2026-10-25-scientific-completion/generated/machine.md",
+      "sha256": "f090ba7a3fc65e7974716d9650d3f3482ffa62bb504019551feb19242d61f76e"
+    },
+    {
+      "bytes": 1913,
+      "git_blob_sha1": "69629760e702399d85b0a80ee88bde59a0f97889",
+      "git_mode": "100644",
+      "path": "commissions/2026-10-25-scientific-completion/generated/machine.svg",
+      "sha256": "bc21a1fd7472decb599001a3d450efd7c42a984390a17c29793608d69e6ac249"
+    },
+    {
+      "bytes": 1229,
+      "git_blob_sha1": "4df6f5e6b6de565f40c3d8c3942208a72835234e",
+      "git_mode": "100644",
+      "path": "commissions/2026-10-25-scientific-completion/generated/manifest.json",
+      "sha256": "a3d7f6e13b705cecad18258f3ffa14a04884b3f492e6b8375368479b923e62b0"
+    },
+    {
+      "bytes": 23041,
+      "git_blob_sha1": "f998879d07b209be1a8d653a34e2c3d45cec5fa2",
+      "git_mode": "100644",
+      "path": "commissions/2026-10-25-scientific-completion/generated/plan.json",
+      "sha256": "a584eb95c2e3af7d081064a6f03ebc5ee9f73cf085d8444915205f8589a86171"
+    },
+    {
+      "bytes": 10994,
+      "git_blob_sha1": "bd895155249bf54c26e8cd32276efd4b4f5ca7a6",
+      "git_mode": "100644",
+      "path": "commissions/2026-10-25-scientific-completion/generated/source-map.json",
+      "sha256": "fb2ed403f748ea93d7a5a911daa372d5bff307e3e4d25a16d6599f2424e26704"
+    },
+    {
+      "bytes": 8729,
+      "git_blob_sha1": "98ba1c665ed205ad6249be24059cc30dc9e84bbc",
+      "git_mode": "100644",
+      "path": "commissions/2026-10-25-scientific-completion/generated/source.txt",
+      "sha256": "daffec2608bf1440373afc8734545ee55940c53ce036ea12a99f784b0b550478"
+    },
+    {
+      "bytes": 740,
+      "git_blob_sha1": "997a83cff95a42908149e6e99e7f58dc8784a822",
+      "git_mode": "100644",
+      "path": "commissions/2026-10-25-scientific-completion/generated/task-specs.json",
+      "sha256": "028e350fc4ed4fd448f278e89888aae605888f3f896b12713ea8b21fa067027d"
+    },
+    {
+      "bytes": 4169,
+      "git_blob_sha1": "76a07f57a9abff3038e2a972e92c238a05f35de6",
+      "git_mode": "100644",
+      "path": "commissions/2026-10-25-scientific-completion/implementation-plan.md",
+      "sha256": "ad7ca56528b8299509c067583b5e5a6a929738c755c8181596fc1887fb5f211d"
+    },
+    {
+      "bytes": 27232,
+      "git_blob_sha1": "6a03afd44ec4d4524a70f5ec1f5c7ccbf8729513",
+      "git_mode": "100644",
+      "path": "commissions/2026-10-25-scientific-completion/plan.json",
+      "sha256": "fee229978f52ede8fb330cc6cb404a208c4df4f2c296cafb3325570deed1a61b"
+    },
+    {
+      "bytes": 8729,
+      "git_blob_sha1": "98ba1c665ed205ad6249be24059cc30dc9e84bbc",
+      "git_mode": "100644",
+      "path": "commissions/2026-10-25-scientific-completion/verbatim.txt",
+      "sha256": "daffec2608bf1440373afc8734545ee55940c53ce036ea12a99f784b0b550478"
     },
     {
       "bytes": 602,
@@ -384,6 +489,13 @@
       "git_mode": "100644",
       "path": "docs/PROGRESS.md",
       "sha256": "7c1a8b80b109fe1a3127a8463529045f7eeba35fcb8a39d084dad152f80726e6"
+    },
+    {
+      "bytes": 11731,
+      "git_blob_sha1": "031ca9d4819782dfa3b198d65284ebda72e96828",
+      "git_mode": "100644",
+      "path": "docs/QUANTUM_ORACLE_CUSTODY_AUDIT.md",
+      "sha256": "ab93049d5ed9c95c4ba0f1f54f79a8bb692f6b6d93f01b2c451c7afc677f3a26"
     },
     {
       "bytes": 21943,
@@ -2381,11 +2493,11 @@
       "sha256": "96a662ad2fab353eb6de4f8a16b44310960a57ba93deb0777979b6f208bef5e3"
     },
     {
-      "bytes": 1230,
-      "git_blob_sha1": "d0e4779660811ed38fb17790c8842d4f9afa0f1f",
+      "bytes": 1629,
+      "git_blob_sha1": "fed6801a04bbd1b84b14d721026fae0c5083dd7e",
       "git_mode": "100644",
       "path": "initiatives/quantum-oracle-v3/INITIATIVE.json",
-      "sha256": "4f69fc1c1f44ec6b28f32794d9b1e9ee69495910eed24c4a1a13d7bb8122fba3"
+      "sha256": "a7c79babc68570e7166d1fb4c2f63e9fe2938a7b241e05f87454c65baa81c6e4"
     },
     {
       "bytes": 1460,
@@ -2540,6 +2652,97 @@
       "git_mode": "100644",
       "path": "releases/0.1.1/Surface-Recovery-0.1.1-arm64.apk",
       "sha256": "eb430f4a71f296059901fd383edf8f128c0b4795c2df737eb1ef99e1d98ab120"
+    },
+    {
+      "bytes": 1245,
+      "git_blob_sha1": "4775bf6f6c6c85e20923dbb057fcbb62b6958d4b",
+      "git_mode": "100644",
+      "path": "research/quantum_oracle/evidence/baseline-source-snapshots.json",
+      "sha256": "3160ffe042a61a0f02957a6dff285130f7d0b29bf8a0b985fad9f847c186cb59"
+    },
+    {
+      "bytes": 1230,
+      "git_blob_sha1": "d0e4779660811ed38fb17790c8842d4f9afa0f1f",
+      "git_mode": "100644",
+      "path": "research/quantum_oracle/evidence/baseline/INITIATIVE.json",
+      "sha256": "4f69fc1c1f44ec6b28f32794d9b1e9ee69495910eed24c4a1a13d7bb8122fba3"
+    },
+    {
+      "bytes": 3860,
+      "git_blob_sha1": "8ca1f36c52fa2dbfca1d8a6daa0fb2ce7fccfc80",
+      "git_mode": "100644",
+      "path": "research/quantum_oracle/evidence/baseline/SUM.md",
+      "sha256": "baf3a7e903c3e95b15fd27ca74ae97e1517664b7afdcc282d05eebbf1634cab6"
+    },
+    {
+      "bytes": 3779,
+      "git_blob_sha1": "6ec492c72f088a7e41e88b0f419562c270d9cada",
+      "git_mode": "100644",
+      "path": "research/quantum_oracle/evidence/baseline/verify_custody_audit.initial.py.txt",
+      "sha256": "1bc81cac9034e93a4387864854a744a7343f7dd630d4c4c4d3e187ffe63ec8ae"
+    },
+    {
+      "bytes": 1811,
+      "git_blob_sha1": "5f7dd33ed7ff026ceee39b749de9de3cc5653e31",
+      "git_mode": "100644",
+      "path": "research/quantum_oracle/evidence/custody-audit-verification-after-checkpoint-update.json",
+      "sha256": "3d58f1c3e04c95f2a769c35059da88c0a1b8ea38bf7b4a81506b6997ddcfc73f"
+    },
+    {
+      "bytes": 2267,
+      "git_blob_sha1": "db179c204e0697eeb944b595b0b188cf1df07ece",
+      "git_mode": "100644",
+      "path": "research/quantum_oracle/evidence/custody-audit-verification.json",
+      "sha256": "f371b69b9f643143895de65eb00bc5d59dd20bedef36b75dcab91719e08fa4e1"
+    },
+    {
+      "bytes": 48729,
+      "git_blob_sha1": "e1c809b2c6ca6324cf75a7984b4d69fb7f54d161",
+      "git_mode": "100644",
+      "path": "research/quantum_oracle/evidence/custody-audit.json",
+      "sha256": "6e4bee90a47f9917a2cd7a363fa704b0148e8768fd0d40ac1d4b748b7ca30f3a"
+    },
+    {
+      "bytes": 424,
+      "git_blob_sha1": "001be68e41af40fed169836bb56f221643c9e409",
+      "git_mode": "100644",
+      "path": "research/quantum_oracle/evidence/github-branches.json",
+      "sha256": "8e7f8a3302026f9c2914732a82a9a50dccfc50ec9042b273c61f7245c44f3084"
+    },
+    {
+      "bytes": 3,
+      "git_blob_sha1": "fe51488c7066f6687ef680d6bfaa4f7768ef205c",
+      "git_mode": "100644",
+      "path": "research/quantum_oracle/evidence/github-releases.json",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "bytes": 252292,
+      "git_blob_sha1": "377525072611bcd322363d2da13346d09e785f07",
+      "git_mode": "100644",
+      "path": "research/quantum_oracle/evidence/inherited-obligations.json",
+      "sha256": "88a123d3b3b7cc281064535122ff1d8e3c7525e73d382231cc95e945c9ed41a6"
+    },
+    {
+      "bytes": 48924,
+      "git_blob_sha1": "d92b33087efc14e3ffadac357dd3a784d4f37c7c",
+      "git_mode": "100644",
+      "path": "research/quantum_oracle/evidence/inherited-registries.json",
+      "sha256": "8682bd3b4ac2eaf2b1fbc82c3e9220036ceae1bebd0b9fa4ab0d6c523aaf772c"
+    },
+    {
+      "bytes": 1394,
+      "git_blob_sha1": "6d89ae1908a2f2b7eb290970c321571f19e74b15",
+      "git_mode": "100644",
+      "path": "research/quantum_oracle/evidence/session-start.json",
+      "sha256": "ec4b02d406e7cb83b841297b001cfc50595c30db602e8fe0631363a6af904297"
+    },
+    {
+      "bytes": 4796,
+      "git_blob_sha1": "ce7d22dbcf455a3cdfb141c030fef3ab2340f712",
+      "git_mode": "100644",
+      "path": "research/quantum_oracle/evidence/verify_custody_audit.py",
+      "sha256": "978cc5539ce1a1b98e09a4120a241b78657c1a950261baf947fefd5d6ce994af"
     },
     {
       "bytes": 2806,

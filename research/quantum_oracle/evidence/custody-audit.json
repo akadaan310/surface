@@ -1,0 +1,987 @@
+{
+  "archive_census": [
+    {
+      "bytes": 17147236,
+      "inspection": "ZIP central-directory census; selected small text members read, no code executed",
+      "matching_members": [
+        "phantom_division_viii_v04/evidence/structures/bitvector_sparse.packed",
+        "phantom_division_viii_v04/evidence/structures/bitvector_sparse.rrr",
+        "phantom_division_viii_v04/evidence/structures/wavelet_ascending.json",
+        "phantom_division_viii_v04/evidence/structures/wavelet_descending.json",
+        "phantom_division_viii_v04/runs/release/structures/bitvector_sparse.packed",
+        "phantom_division_viii_v04/runs/release/structures/bitvector_sparse.rrr",
+        "phantom_division_viii_v04/runs/release/structures/wavelet_ascending.json",
+        "phantom_division_viii_v04/runs/release/structures/wavelet_descending.json"
+      ],
+      "members": 565,
+      "path": "build/foundation/QUANTUM_ORACLE_V2_COMMISSION/inputs/PHANTOM_Division_VIII_v0_4_Handoff.zip",
+      "sha256": "b66fb352ad51c6ed09f1059b0a72fdcf0f38ee81431c6f3099ba20a4e4076fbb"
+    },
+    {
+      "bytes": 12191,
+      "inspection": "ZIP central-directory census; selected small text members read, no code executed",
+      "matching_members": [],
+      "members": 10,
+      "path": "build/foundation/QUANTUM_ORACLE_V2_COMMISSION/inputs/QUANTUM_ORACLE_HARNESS_v0.1.zip",
+      "sha256": "cbe3097cbaef23369134be894e13a8df96832efcad2577633d040fe8cec1b26d"
+    },
+    {
+      "bytes": 16643831,
+      "inspection": "ZIP central-directory census; selected small text members read, no code executed",
+      "matching_members": [
+        "QUANTUM_ORACLE_V2_COMMISSION/context/PHANTOM_COMPOSER_SURFACE_CONSTITUTION_v1.md"
+      ],
+      "members": 13,
+      "path": "build/foundation/QUANTUM_ORACLE_V3_EXTENSION/upstream/QUANTUM_ORACLE_PHANTOM_V2_HANDOFF.zip",
+      "sha256": "0e37728a910431be8a3e7290caaf4f49481b6fc12643f336b4debfda4642e92b"
+    },
+    {
+      "bytes": 10470,
+      "inspection": "ZIP central-directory census; selected small text members read, no code executed",
+      "matching_members": [
+        "surface_commission/PHANTOM_COMPOSER_SURFACE_CONSTITUTION_v1.md"
+      ],
+      "member_inventory": [
+        "surface_commission/",
+        "surface_commission/ONBOARDING_MESSAGE.md",
+        "surface_commission/PHANTOM_COMPOSER_SURFACE_CONSTITUTION_v1.md"
+      ],
+      "members": 3,
+      "path": "build/foundation/SURFACE_PHYSICAL_COSMOS_V1/upstream/PHANTOM_COMPOSER_SURFACE_CONSTITUTION_v1.zip",
+      "sha256": "40639c2d64e08f5232d953c9966ba7bd8425e74adcee0c65fd76d6b399b6ea7a",
+      "text_hits": [
+        {
+          "line": 3,
+          "member": "surface_commission/ONBOARDING_MESSAGE.md",
+          "text": "You are commissioned to build **COMPOSER** and then **SURFACE**, with **PHANTOM Division VIII v0.4 treated as the preserved, immutable reference machine**. Do not rename SURFACE, mutate PHANTOM or replace it with the illustrative standalone Python v0.5 seed."
+        },
+        {
+          "line": 5,
+          "member": "surface_commission/ONBOARDING_MESSAGE.md",
+          "text": "Read the attached **PHANTOM_COMPOSER_SURFACE_CONSTITUTION_v1.md** in full. Treat all 75 numbered provisions as formal scope and acceptance obligations. Use the original PHANTOM handoff and replay manifest as read-only, independently verified input. First develop the complete typed, language-neutral, versioned, independently replayable COMPOSER parent harness; integrate PHANTOM operations, Q-Strings, wave-bearing symbols, ASTs/solvers, geometric correspondence, research journals, cross-language contracts and generators-of-generators. Do not proceed to SURFACE until COMPOSER's evidence gate is passed."
+        },
+        {
+          "line": 7,
+          "member": "surface_commission/ONBOARDING_MESSAGE.md",
+          "text": "Then implement **SURFACE** as a separate high-fidelity quantum-informed UI/game rendering system, beginning with an exact responsive 2D Euclidean sine-wave surface and its ordered generation/rasterization/presentation evidence. Reproduce Octave reference behavior, verify current rendering and physics research, then layer continuous and sampled waves, light/heat models, calibrated telescope image processing, the explicitly artistic **Dark Matter Fluid**, quantum physics/computing corpus oracle and physically valid quantum simulation adapters. Preserve numerical/scientific truth separately from artistic modeling."
+        },
+        {
+          "line": 1,
+          "member": "surface_commission/PHANTOM_COMPOSER_SURFACE_CONSTITUTION_v1.md",
+          "text": "# PHANTOM → COMPOSER → SURFACE"
+        },
+        {
+          "line": 6,
+          "member": "surface_commission/PHANTOM_COMPOSER_SURFACE_CONSTITUTION_v1.md",
+          "text": "**Named products:** **PHANTOM** (preserved, complete baseline), **COMPOSER** (new parent harness built around PHANTOM), **SURFACE** (separate quantum-informed UI/rendering/game-engine surface). Never call SURFACE “Phantom Surface.”"
+        },
+        {
+          "line": 10,
+          "member": "surface_commission/PHANTOM_COMPOSER_SURFACE_CONSTITUTION_v1.md",
+          "text": "1. Preserve PHANTOM Division VIII v0.4 unchanged: original ZIP bytes, source tree, generated artifacts, research histories, ledgers, manifests, and hashes. No silent patching. Work in a new `composer/` project with a versioned PHANTOM adapter."
+        },
+        {
+          "line": 11,
+          "member": "surface_commission/PHANTOM_COMPOSER_SURFACE_CONSTITUTION_v1.md",
+          "text": "2. The earlier standalone `PHANTOM_COMPOSER_SEED_v0.5.zip` is **not** an authoritative replacement, implementation, or scientific validation. Treat it as a small illustrative concept source only; import no code without source review, full comparison, and independent verification."
+        },
+        {
+          "line": 12,
+          "member": "surface_commission/PHANTOM_COMPOSER_SURFACE_CONSTITUTION_v1.md",
+          "text": "3. First build and test the complete COMPOSER harness to an independently replayable acceptance milestone. **Only then** implement SURFACE using it. Deliver separate artifacts and manifests."
+        },
+        {
+          "line": 29,
+          "member": "surface_commission/PHANTOM_COMPOSER_SURFACE_CONSTITUTION_v1.md",
+          "text": "17. Confirm the documented 4,096-place word width, cumulative budget 4,000,000, recursion depth 4, 64 structural operations, 16 MiB IR bound and related limits; new COMPOSER limits are separately defined."
+        },
+        {
+          "line": 32,
+          "member": "surface_commission/PHANTOM_COMPOSER_SURFACE_CONSTITUTION_v1.md",
+          "text": "## C. Build COMPOSER first: the authoritative parent harness"
+        },
+        {
+          "line": 51,
+          "member": "surface_commission/PHANTOM_COMPOSER_SURFACE_CONSTITUTION_v1.md",
+          "text": "36. Publish SDKs in Python, TypeScript and C++ with Julia and Octave numeric reference bridges; compare deterministic fixtures, numerical tolerances, AST semantics and operator outputs across runtimes."
+        },
+        {
+          "line": 57,
+          "member": "surface_commission/PHANTOM_COMPOSER_SURFACE_CONSTITUTION_v1.md",
+          "text": "39. SURFACE is the forward-facing UI and rendering research system for the user’s game-engine ambition, not a rebranding of PHANTOM. Build as a separate package consuming COMPOSER through stable typed contracts."
+        },
+        {
+          "line": 60,
+          "member": "surface_commission/PHANTOM_COMPOSER_SURFACE_CONSTITUTION_v1.md",
+          "text": "42. Research and reproduce GNU Octave/MATLAB-style handles: `figure → axes → line(xdata,ydata) → renderer → framebuffer → drawnow/present`. Consult GNU Octave documentation and source. Implement one Octave script as numerical/reference witness and compare actual pixels within declared coverage/tolerance."
+        },
+        {
+          "line": 72,
+          "member": "surface_commission/PHANTOM_COMPOSER_SURFACE_CONSTITUTION_v1.md",
+          "text": "54. Research libraries as candidates (GNU Octave, NumPy/SciPy, Julia differential equation ecosystem, FFTW, WebGPU/WebGL, OpenCV, imageio, astronomical calibration packages, quantum simulation frameworks). Audit license, release, benchmark, compatibility and current 2026 research; do not add unnecessary dependencies by assumption."
+        },
+        {
+          "line": 92,
+          "member": "surface_commission/PHANTOM_COMPOSER_SURFACE_CONSTITUTION_v1.md",
+          "text": "68. **Gate 1:** COMPOSER contract/IR stable, PHANTOM adapter operational, multi-runtime conformance, event ledger, solvers, AST and Q-Strings functioning; clean-room reproduction passes."
+        },
+        {
+          "line": 96,
+          "member": "surface_commission/PHANTOM_COMPOSER_SURFACE_CONSTITUTION_v1.md",
+          "text": "72. Deliver independently downloadable `COMPOSER_*` and `SURFACE_*` source archives; docs, input-data manifests, licenses, executable tests, figures, animation captures, code/AST/schema inventories, benchmark data and research journals."
+        },
+        {
+          "line": 103,
+          "member": "surface_commission/PHANTOM_COMPOSER_SURFACE_CONSTITUTION_v1.md",
+          "text": "- GNU Octave current official manual: https://docs.octave.org/latest/Manipulation-of-Plot-Windows.html (`drawnow`, figure updating); graphics objects `line`, `axes`, `image`, `surface` in GNU Octave docs; Qt/OpenGL and gnuplot paths are implementation-dependent."
+        },
+        {
+          "line": 104,
+          "member": "surface_commission/PHANTOM_COMPOSER_SURFACE_CONSTITUTION_v1.md",
+          "text": "- Octave source: https://gitlab.com/gnu-octave/octave (graphics pipeline, source inspection needed before exact CPU/GPU assertions)."
+        },
+        {
+          "line": 111,
+          "member": "surface_commission/PHANTOM_COMPOSER_SURFACE_CONSTITUTION_v1.md",
+          "text": "**Final directive:** Build COMPOSER as a complete constitutional parent platform based on PHANTOM without editing it. Only after passing COMPOSER gates, deliver SURFACE as its own quantum-informed, mathematically reproducible, progressively rendered visual world. Include failed experiments, unknowns, histories, generators and cross-substrate witnesses. Do not substitute a small prototype for the requested system."
+        }
+      ]
+    },
+    {
+      "bytes": 16666087,
+      "inspection": "ZIP central-directory census; selected small text members read, no code executed",
+      "matching_members": [],
+      "members": 19,
+      "path": "build/foundation/SURFACE_PHYSICAL_COSMOS_V1/upstream/QUANTUM_ORACLE_PHANTOM_V3_N_ATLAS.zip",
+      "sha256": "4b8decefc53d7f6776ed668cfc2f3ab48660f68e5a47ddfcd4fb346548c32ace"
+    },
+    {
+      "bytes": 11489,
+      "inspection": "ZIP central-directory census; selected small text members read, no code executed",
+      "matching_members": [],
+      "members": 8,
+      "path": "build/foundation/phantom_division_viii_v04/inputs/originals/DIVISION_VIII_RADIX_MACHINE_COMPANION_v0.4.zip",
+      "sha256": "295e5afd1e40f6c293b8784feadf647bc46aac529dc0e660c1b83c396a64de37"
+    },
+    {
+      "bytes": 9807,
+      "inspection": "ZIP central-directory census; selected small text members read, no code executed",
+      "matching_members": [],
+      "members": 1,
+      "path": "build/foundation/phantom_division_viii_v04/inputs/originals/PHANTOM_DIVISION_VIII_DISCOVERY_COMMISSION_v0.3.zip",
+      "sha256": "264f016679e697631a8e5c64f8237e5e6573f035edfecb9e7ae688f11ec56d65"
+    },
+    {
+      "bytes": 10037228,
+      "inspection": "ZIP central-directory census; selected small text members read, no code executed",
+      "matching_members": [],
+      "members": 165,
+      "path": "build/foundation/phantom_division_viii_v04/inputs/prior_releases/PHANTOM_Language_Lab_Code_Reports.zip",
+      "sha256": "51091d10a4f350d656d825d5a92baa488876c4985ded97285f60a03bb03311a9"
+    },
+    {
+      "bytes": 3911478,
+      "inspection": "BadZipFile; historical damaged original remains unchanged and is not relabelled recovered",
+      "path": "build/foundation/phantom_division_viii_v04/inputs/prior_releases/Pillar_Generative_System_v0_1.zip",
+      "sha256": "6b65beffc64c05839ac1b8462273a4f0827d9bf3534e1b3ee58eb6bc64ea49a8"
+    },
+    {
+      "bytes": 1162994,
+      "inspection": "ZIP central-directory census; selected small text members read, no code executed",
+      "matching_members": [],
+      "member_inventory": [
+        "surface-immersive/.gitignore",
+        "surface-immersive/.openai/hosting.json",
+        "surface-immersive/dist/data/gaia-dr3-bright-source.csv",
+        "surface-immersive/dist/data/gaia-dr3-bright.json",
+        "surface-immersive/dist/icon.svg",
+        "surface-immersive/dist/index.html",
+        "surface-immersive/dist/js/atlas.mjs",
+        "surface-immersive/dist/js/checkpoints.mjs",
+        "surface-immersive/dist/js/phantom.mjs",
+        "surface-immersive/dist/js/renderer.mjs",
+        "surface-immersive/dist/js/view.mjs",
+        "surface-immersive/dist/manifest.webmanifest",
+        "surface-immersive/dist/surface.css",
+        "surface-immersive/docs/PROGRESS.md",
+        "surface-immersive/docs/superpowers/plans/2026-10-25-surface-rebuild.md",
+        "surface-immersive/docs/superpowers/specs/2026-10-25-surface-design.md",
+        "surface-immersive/package.json",
+        "surface-immersive/tests/atlas.test.mjs",
+        "surface-immersive/tests/checkpoints.test.mjs",
+        "surface-immersive/tests/phantom.test.mjs",
+        "surface-immersive/tests/physics.test.mjs",
+        "surface-immersive/tests/recovery.test.mjs",
+        "surface-immersive/tests/spectral.test.mjs",
+        "surface-immersive/tests/view.test.mjs",
+        "surface-immersive/tools/import-atlas.py"
+      ],
+      "members": 25,
+      "path": "lineage/surface-web-work-in-progress-20261025.zip",
+      "sha256": "b59d1e6471b9deb543aa8e3b53affcd503a88d33c97e7bca32bacf7e7230ff83",
+      "text_hits": [
+        {
+          "line": 19,
+          "member": "surface-immersive/dist/js/atlas.mjs",
+          "text": "    if(!Object.hasOwn(catalogue.stars,i))throw new TypeError('sparse catalogue');"
+        },
+        {
+          "line": 28,
+          "member": "surface-immersive/dist/js/checkpoints.mjs",
+          "text": "        if (!Object.hasOwn(item, i)) fail('Sparse checkpoint arrays are not allowed');"
+        },
+        {
+          "line": 21,
+          "member": "surface-immersive/docs/superpowers/plans/2026-10-25-surface-rebuild.md",
+          "text": "- Corrupt, oversized or sparse numeric imports cannot enter solvers."
+        },
+        {
+          "line": 49,
+          "member": "surface-immersive/tests/checkpoints.test.mjs",
+          "text": "test('sparse, nonfinite, wrongly sized, and oversized input are rejected before serialization', async () => {"
+        },
+        {
+          "line": 51,
+          "member": "surface-immersive/tests/checkpoints.test.mjs",
+          "text": "  const sparse = snapshot(); delete sparse.engine.fields.heat[8];"
+        },
+        {
+          "line": 55,
+          "member": "surface-immersive/tests/checkpoints.test.mjs",
+          "text": "  for (const state of [sparse, infinite, wrongSize, wrongVersion]) {"
+        },
+        {
+          "line": 56,
+          "member": "surface-immersive/tests/checkpoints.test.mjs",
+          "text": "    await assert.rejects(() => exportCheckpoint(state), /sparse|finite|length|version/i);"
+        },
+        {
+          "line": 5,
+          "member": "surface-immersive/tests/phantom.test.mjs",
+          "text": "test('numeric admission rejects sparse, inherited, coercive and nonfinite entries',()=>{"
+        },
+        {
+          "line": 106,
+          "member": "surface-immersive/tests/physics.test.mjs",
+          "text": "test('malformed checkpoints fail atomically, including sparse arrays and invalid dimensions', () => {"
+        }
+      ]
+    }
+  ],
+  "bounded_path_search": {
+    "command": "rg --files ROOTS | rg -i (composer|octave|language_lab_full|research_evidence|recovered.*zip|\\.m$); then explicit no-ignore current-workspace and archive census",
+    "limits": "Read-only name search; initial rg respects ignore files, followed by explicit current foundation/archive inspection. Not an exhaustive search of every external host, disconnected volume, private chat, or expired artifact store.",
+    "result": "Found supplied constitution paths, unrelated WGS84 Octave reference and unrelated package sources; no original COMPOSER Gate1 or historical Octave case bundles recovered",
+    "roots": [
+      "/home/ubuntu/Documents/Codex",
+      "/mnt",
+      "/tmp"
+    ]
+  },
+  "created_utc": "2026-10-25T16:56:52.495881+00:00",
+  "derived_artifacts": [
+    {
+      "bytes": 252292,
+      "path": "research/quantum_oracle/evidence/inherited-obligations.json",
+      "sha256": "88a123d3b3b7cc281064535122ff1d8e3c7525e73d382231cc95e945c9ed41a6"
+    },
+    {
+      "bytes": 48924,
+      "path": "research/quantum_oracle/evidence/inherited-registries.json",
+      "sha256": "8682bd3b4ac2eaf2b1fbc82c3e9220036ceae1bebd0b9fa4ab0d6c523aaf772c"
+    }
+  ],
+  "external_reference": {
+    "content_hash": null,
+    "hash_reason": "Browser text extraction was inspected; exact response bytes were not retained or claimed",
+    "observed_page_version": "11.1.0",
+    "purpose": "A reference route for a new independently identified Octave experiment; drawnow updates figure windows/children and flushes the event queue. It contains no historical project receipts.",
+    "retrieved_date": "2026-10-25",
+    "url": "https://docs.octave.org/latest/Manipulation-of-Plot-Windows.html"
+  },
+  "external_searches": [
+    {
+      "limit": 10,
+      "owner": "akadaan310",
+      "query": "PHANTOM_COMPOSER",
+      "returned_results": 0,
+      "scope": "Indexed default branches only; no global absence proof",
+      "tool": "GitHub.search"
+    },
+    {
+      "limit": 10,
+      "query": "Octave",
+      "repository": "akadaan310/surface",
+      "returned_results": 0,
+      "scope": "Index may omit recent commits; local source search is separately recorded",
+      "tool": "GitHub.search"
+    },
+    {
+      "limit": 10,
+      "owner": "akadaan310",
+      "query": "COMPOSER",
+      "relevant_results": 0,
+      "returned_results": 5,
+      "scope": "Returned unrelated scene/chat composer commits; none is a PHANTOM COMPOSER Gate1 source witness",
+      "tool": "GitHub.search_commits"
+    },
+    {
+      "queries": [
+        "\"PHANTOM_COMPOSER\" \"Gate\"",
+        "\"PHANTOM\" \"Octave\" \"SURFACE\""
+      ],
+      "relevant_results": 0,
+      "scope": "Unrelated word matches are not project evidence",
+      "tool": "web.search"
+    }
+  ],
+  "interpretation": "UNKNOWN means no authenticated original was recovered in this bounded search. It is not a proof the material never existed. New experiments must use new IDs and cannot retroactively certify missing historical evidence.",
+  "local_history": {
+    "legacy_commit_probes": {
+      "b16a63a8fc9466c93f9233d0a45bd3840ac39536": {
+        "exit_code": 128,
+        "locally_available": false
+      },
+      "f002eece5a5915b886d77dce1807890588282afd": {
+        "exit_code": 128,
+        "locally_available": false
+      }
+    },
+    "matching_changed_paths": [],
+    "reachable_commits": [
+      "6e97a6c819aba0df79b507da0d71301acc794d07",
+      "aa4474e4bd884ddec98fbeb13b5f0c167cdbe03c",
+      "2fa3a51d3b3366a7b416d5cc91da665a1e013944",
+      "a32442d2cc06cf47ead6f7f97389549766d17ea2"
+    ],
+    "scope": "All locally reachable refs only; absent local Git objects do not establish global absence",
+    "unique_changed_paths": 490
+  },
+  "missing_dependencies": [
+    {
+      "available": "75-provision constitution, onboarding document and selected later harnesses/reference implementations",
+      "id": "composer_gate1_original",
+      "missing_evidence": [
+        "Complete original COMPOSER source archive or repository commit/tree and immutable checksum/manifest",
+        "Versioned Substrate/Operation/Machine contracts, canonical JSON plus compact binary IR, error/compatibility schema",
+        "Operational adapter source and exact conformance vectors against untouched PHANTOM, including loss and operator traces",
+        "Python/TypeScript/C++ SDK source plus Julia/Octave reference bridges, versions, commands, vectors and measured tolerances",
+        "Causal event ledger covering parse/derived-state/solver/numerical/render issue/completion/verification/presentation phases with external roots",
+        "Bounded solver and symbolic/implementation AST artifacts, side conditions, rewrite and counterexample witnesses",
+        "Guarded and compound Q-Strings, fixed-point/cycle refusal and independent equivalence witnesses",
+        "Clean-room replay package, locks/licenses, invocation logs, denominator, source/input/output hashes, environment and independently verified result"
+      ],
+      "next_action": "Obtain the original Gate1 source/evidence location or exact archive; hash before extraction; compare to its original manifest; replay in a fresh bounded destination. If never supplied, implement a separately versioned COMPOSER package and label it new work, not recovered history.",
+      "not_substitutes": [
+        "The illustrative v0.5 seed (constitution explicitly excludes authoritative status)",
+        "Existing Surface native renderer, commission compiler or scoped PHANTOM replay"
+      ],
+      "source": {
+        "end_byte_exclusive": 17449,
+        "end_line": 92,
+        "source": {
+          "bytes": 20463,
+          "path": "build/foundation/surface_commission/PHANTOM_COMPOSER_SURFACE_CONSTITUTION_v1.md",
+          "sha256": "1328544ac84cc43a558ad7c485f8150c63094b634059c7cda58ccee7da632feb"
+        },
+        "start_byte": 17262,
+        "start_line": 92,
+        "text": "68. **Gate 1:** COMPOSER contract/IR stable, PHANTOM adapter operational, multi-runtime conformance, event ledger, solvers, AST and Q-Strings functioning; clean-room reproduction passes.\n",
+        "text_sha256": "1e208c344b58b6d74bf43699ca84914ff38588da6ac304d568de0ac12c2a1f27"
+      },
+      "status": "UNKNOWN"
+    },
+    {
+      "case_identity": "Ordinal from original screenshot report; original test name is unavailable",
+      "id": "historical_octave_case_1",
+      "missing_evidence": [
+        "Original test/script and input source bytes",
+        "Octave version/toolkit/backend and platform identity",
+        "Solver/renderer source revision and invocation",
+        "Numerical outputs, images and pixel-difference map",
+        "Geometric/pixel tolerance, measured residual and applicability/coverage mask",
+        "Original timestamped receipt and input/output/verifier hashes"
+      ],
+      "next_action": "Acquire this exact historical case bundle and its independently bound receipt. A newly authored Octave experiment receives a new ID and cannot change this historical status.",
+      "source": {
+        "bytes": 2414,
+        "path": "evidence/recovery-inventory.json",
+        "sha256": "3e4d6e4aa41a34d995e1416c4fe2ac247a6cfeaaf4aa4ad9223ed76ead14969c"
+      },
+      "status": "UNKNOWN"
+    },
+    {
+      "case_identity": "Ordinal from original screenshot report; original test name is unavailable",
+      "id": "historical_octave_case_2",
+      "missing_evidence": [
+        "Original test/script and input source bytes",
+        "Octave version/toolkit/backend and platform identity",
+        "Solver/renderer source revision and invocation",
+        "Numerical outputs, images and pixel-difference map",
+        "Geometric/pixel tolerance, measured residual and applicability/coverage mask",
+        "Original timestamped receipt and input/output/verifier hashes"
+      ],
+      "next_action": "Acquire this exact historical case bundle and its independently bound receipt. A newly authored Octave experiment receives a new ID and cannot change this historical status.",
+      "source": {
+        "bytes": 2414,
+        "path": "evidence/recovery-inventory.json",
+        "sha256": "3e4d6e4aa41a34d995e1416c4fe2ac247a6cfeaaf4aa4ad9223ed76ead14969c"
+      },
+      "status": "UNKNOWN"
+    },
+    {
+      "case_identity": "Ordinal from original screenshot report; original test name is unavailable",
+      "id": "historical_octave_case_3",
+      "missing_evidence": [
+        "Original test/script and input source bytes",
+        "Octave version/toolkit/backend and platform identity",
+        "Solver/renderer source revision and invocation",
+        "Numerical outputs, images and pixel-difference map",
+        "Geometric/pixel tolerance, measured residual and applicability/coverage mask",
+        "Original timestamped receipt and input/output/verifier hashes"
+      ],
+      "next_action": "Acquire this exact historical case bundle and its independently bound receipt. A newly authored Octave experiment receives a new ID and cannot change this historical status.",
+      "source": {
+        "bytes": 2414,
+        "path": "evidence/recovery-inventory.json",
+        "sha256": "3e4d6e4aa41a34d995e1416c4fe2ac247a6cfeaaf4aa4ad9223ed76ead14969c"
+      },
+      "status": "UNKNOWN"
+    },
+    {
+      "case_identity": "Ordinal from original screenshot report; original test name is unavailable",
+      "id": "historical_octave_case_4",
+      "missing_evidence": [
+        "Original test/script and input source bytes",
+        "Octave version/toolkit/backend and platform identity",
+        "Solver/renderer source revision and invocation",
+        "Numerical outputs, images and pixel-difference map",
+        "Geometric/pixel tolerance, measured residual and applicability/coverage mask",
+        "Original timestamped receipt and input/output/verifier hashes"
+      ],
+      "next_action": "Acquire this exact historical case bundle and its independently bound receipt. A newly authored Octave experiment receives a new ID and cannot change this historical status.",
+      "source": {
+        "bytes": 2414,
+        "path": "evidence/recovery-inventory.json",
+        "sha256": "3e4d6e4aa41a34d995e1416c4fe2ac247a6cfeaaf4aa4ad9223ed76ead14969c"
+      },
+      "status": "UNKNOWN"
+    },
+    {
+      "case_identity": "Ordinal from original screenshot report; original test name is unavailable",
+      "id": "historical_octave_case_5",
+      "missing_evidence": [
+        "Original test/script and input source bytes",
+        "Octave version/toolkit/backend and platform identity",
+        "Solver/renderer source revision and invocation",
+        "Numerical outputs, images and pixel-difference map",
+        "Geometric/pixel tolerance, measured residual and applicability/coverage mask",
+        "Original timestamped receipt and input/output/verifier hashes"
+      ],
+      "next_action": "Acquire this exact historical case bundle and its independently bound receipt. A newly authored Octave experiment receives a new ID and cannot change this historical status.",
+      "source": {
+        "bytes": 2414,
+        "path": "evidence/recovery-inventory.json",
+        "sha256": "3e4d6e4aa41a34d995e1416c4fe2ac247a6cfeaaf4aa4ad9223ed76ead14969c"
+      },
+      "status": "UNKNOWN"
+    },
+    {
+      "case_identity": "Ordinal from original screenshot report; original test name is unavailable",
+      "id": "historical_octave_case_6",
+      "missing_evidence": [
+        "Original test/script and input source bytes",
+        "Octave version/toolkit/backend and platform identity",
+        "Solver/renderer source revision and invocation",
+        "Numerical outputs, images and pixel-difference map",
+        "Geometric/pixel tolerance, measured residual and applicability/coverage mask",
+        "Original timestamped receipt and input/output/verifier hashes"
+      ],
+      "next_action": "Acquire this exact historical case bundle and its independently bound receipt. A newly authored Octave experiment receives a new ID and cannot change this historical status.",
+      "source": {
+        "bytes": 2414,
+        "path": "evidence/recovery-inventory.json",
+        "sha256": "3e4d6e4aa41a34d995e1416c4fe2ac247a6cfeaaf4aa4ad9223ed76ead14969c"
+      },
+      "status": "UNKNOWN"
+    },
+    {
+      "case_identity": "Ordinal from original screenshot report; original test name is unavailable",
+      "id": "historical_octave_case_7",
+      "missing_evidence": [
+        "Original test/script and input source bytes",
+        "Octave version/toolkit/backend and platform identity",
+        "Solver/renderer source revision and invocation",
+        "Numerical outputs, images and pixel-difference map",
+        "Geometric/pixel tolerance, measured residual and applicability/coverage mask",
+        "Original timestamped receipt and input/output/verifier hashes"
+      ],
+      "next_action": "Acquire this exact historical case bundle and its independently bound receipt. A newly authored Octave experiment receives a new ID and cannot change this historical status.",
+      "source": {
+        "bytes": 2414,
+        "path": "evidence/recovery-inventory.json",
+        "sha256": "3e4d6e4aa41a34d995e1416c4fe2ac247a6cfeaaf4aa4ad9223ed76ead14969c"
+      },
+      "status": "UNKNOWN"
+    },
+    {
+      "case_identity": "Ordinal from original screenshot report; original test name is unavailable",
+      "id": "historical_octave_case_8",
+      "missing_evidence": [
+        "Original test/script and input source bytes",
+        "Octave version/toolkit/backend and platform identity",
+        "Solver/renderer source revision and invocation",
+        "Numerical outputs, images and pixel-difference map",
+        "Geometric/pixel tolerance, measured residual and applicability/coverage mask",
+        "Original timestamped receipt and input/output/verifier hashes"
+      ],
+      "next_action": "Acquire this exact historical case bundle and its independently bound receipt. A newly authored Octave experiment receives a new ID and cannot change this historical status.",
+      "source": {
+        "bytes": 2414,
+        "path": "evidence/recovery-inventory.json",
+        "sha256": "3e4d6e4aa41a34d995e1416c4fe2ac247a6cfeaaf4aa4ad9223ed76ead14969c"
+      },
+      "status": "UNKNOWN"
+    },
+    {
+      "id": "historical_sparse_array_repair",
+      "missing_evidence": [
+        "Original sparse JavaScript array counterexample",
+        "Before/after parser/solver source",
+        "Admission failure and repaired-test logs with hashes and exact acceptance condition"
+      ],
+      "next_action": "Recover the original source/counterexample and replay it separately; later finite-array guards do not prove the old repair.",
+      "source": {
+        "bytes": 6758,
+        "path": "lineage/RESUME_PROMPT.original.md",
+        "sha256": "c921c8aff9a3228f5d0911cff9b15de3422191cd9175bbd18af772a6badf0bc9"
+      },
+      "status": "UNKNOWN"
+    },
+    {
+      "id": "historical_wave_stability",
+      "missing_evidence": [
+        "Original unstable wave case and stencil",
+        "Boundary/initial conditions, units, dt/dx and stability regime",
+        "Exact failing and repaired solver revisions",
+        "Independent reference, convergence/error measurements and final validation receipt"
+      ],
+      "next_action": "Recover and independently re-execute the original instability fixture; preserve the reported still-under-validation status until then.",
+      "source": {
+        "bytes": 6758,
+        "path": "lineage/RESUME_PROMPT.original.md",
+        "sha256": "c921c8aff9a3228f5d0911cff9b15de3422191cd9175bbd18af772a6badf0bc9"
+      },
+      "status": "UNKNOWN"
+    },
+    {
+      "id": "full_language_corpus",
+      "missing_evidence": [
+        "All 13 ordered original corpus volumes; none was found in the bounded searched workspace paths"
+      ],
+      "next_action": "Acquire the named volumes; verify each listed SHA-256 and the assembled 5,289,090,771-byte archive before extraction; use original preserve/rerun/reconcile scripts in fresh directories. Compact core replay does not require this dependency.",
+      "required_originals": {
+        "archive": "PHANTOM_Language_Lab_Full.tar.gz",
+        "archive_bytes": 5289090771,
+        "archive_sha256": "9dd4e980a883d0bd2bb7fa66d02e70217694e32a4750b530728152cb49148216",
+        "assemble": "Place all volumes and this manifest in one folder; run scripts/assemble_release.py from the code packet. Every volume and the complete archive are checked before finalization.",
+        "release_validation": "inputs/prior_releases/PHANTOM_Language_Lab_Archive_Validation.json",
+        "scope": "complete selected prior releases; not every corpus or dictionary ever published in a language",
+        "source_manifest": "inputs/prior_releases/PHANTOM_Language_Lab_Volumes.json",
+        "volumes": [
+          {
+            "availability": "present_and_sha256_verified_at_packaging",
+            "bytes": 419430400,
+            "file": "PHANTOM_Language_Lab_Full.tar.gz.part001",
+            "sha256": "2e7bd40d91daa28e5797862688fdc9adb82d8218772cc2220f2a93a614155097"
+          },
+          {
+            "availability": "present_and_sha256_verified_at_packaging",
+            "bytes": 419430400,
+            "file": "PHANTOM_Language_Lab_Full.tar.gz.part002",
+            "sha256": "d7abf3a8f8221c9e00eb227becdf5b5e38e85a8b14e595159138085c0c6a49fe"
+          },
+          {
+            "availability": "present_and_sha256_verified_at_packaging",
+            "bytes": 419430400,
+            "file": "PHANTOM_Language_Lab_Full.tar.gz.part003",
+            "sha256": "dafaff0f52da3e871fb754bd5afe3c09e833db37c575b2ccf68c690e11e056a3"
+          },
+          {
+            "availability": "present_and_sha256_verified_at_packaging",
+            "bytes": 419430400,
+            "file": "PHANTOM_Language_Lab_Full.tar.gz.part004",
+            "sha256": "c3c8cddc143cb88c6b3ef8ebc5793f7669970957debfe4b7e595454e38d1e38d"
+          },
+          {
+            "availability": "present_and_sha256_verified_at_packaging",
+            "bytes": 419430400,
+            "file": "PHANTOM_Language_Lab_Full.tar.gz.part005",
+            "sha256": "4700c84d862b40d27884ac9b81d362b77ac342c7b668b3adc0a794c06062e1a0"
+          },
+          {
+            "availability": "present_and_sha256_verified_at_packaging",
+            "bytes": 419430400,
+            "file": "PHANTOM_Language_Lab_Full.tar.gz.part006",
+            "sha256": "77047d14c6162d100a36942a02ecc9f910961a69a89ca210c99ce96f1fcc842b"
+          },
+          {
+            "availability": "present_and_sha256_verified_at_packaging",
+            "bytes": 419430400,
+            "file": "PHANTOM_Language_Lab_Full.tar.gz.part007",
+            "sha256": "2f97c28e217d4fb1e182c289233cd4a17ad9f621979e3556cb42cb8f96ca08a3"
+          },
+          {
+            "availability": "present_and_sha256_verified_at_packaging",
+            "bytes": 419430400,
+            "file": "PHANTOM_Language_Lab_Full.tar.gz.part008",
+            "sha256": "f8a2b3e3dd61a1eaebfe71c7ea2ba7371869c2a90d5170e36bfcb074a66f9ef5"
+          },
+          {
+            "availability": "present_and_sha256_verified_at_packaging",
+            "bytes": 419430400,
+            "file": "PHANTOM_Language_Lab_Full.tar.gz.part009",
+            "sha256": "7b73094ca650186107ff27d0cfffe183f97fd420bf3fbec810948f5941b7a049"
+          },
+          {
+            "availability": "present_and_sha256_verified_at_packaging",
+            "bytes": 419430400,
+            "file": "PHANTOM_Language_Lab_Full.tar.gz.part010",
+            "sha256": "6b4bc5895b613cec67d2160f35d7c14486169d1a798b9e1b196707daa76e22c6"
+          },
+          {
+            "availability": "present_and_sha256_verified_at_packaging",
+            "bytes": 419430400,
+            "file": "PHANTOM_Language_Lab_Full.tar.gz.part011",
+            "sha256": "02829fef3dc7947a88d465108aba6b9b9a1bc621c8bf2f7f385501a810d6e1f1"
+          },
+          {
+            "availability": "present_and_sha256_verified_at_packaging",
+            "bytes": 419430400,
+            "file": "PHANTOM_Language_Lab_Full.tar.gz.part012",
+            "sha256": "3d24fa6ff5df9d05cd8c6eb7fff2279015b4ac7f31fda245681de3f3612c1544"
+          },
+          {
+            "availability": "present_and_sha256_verified_at_packaging",
+            "bytes": 255925971,
+            "file": "PHANTOM_Language_Lab_Full.tar.gz.part013",
+            "sha256": "527121687b59ae930ec6b49ba9c0365d69006ba5c5d8f6f0f9f1c0fc0e5f2291"
+          }
+        ]
+      },
+      "source": {
+        "bytes": 5993,
+        "path": "build/foundation/phantom_division_viii_v04/DATA_INDEX.json",
+        "sha256": "b15f2a4ac34359f9b2c3eafbeebc773744d1f7aa9ce9d2d0373d0fade684bc38"
+      },
+      "status": "BLOCKED"
+    },
+    {
+      "id": "complete_phantom_research_archive",
+      "missing_evidence": [
+        "PHANTOM_Division_VIII_v0_4_Research_Evidence.zip with all original full rerun/annotation outputs"
+      ],
+      "next_action": "Acquire the 232,062,058-byte archive and verify SHA-256 150bb38f2a79441f97947ec63f392e3d9da0b5f3a7f4bebc72d12e299d6bb0d0. Retained compact receipts remain historical evidence.",
+      "required_original": {
+        "bytes": 232062058,
+        "extract_into": "parent of phantom_division_viii_v04; overlapping files are byte-identical",
+        "file": "PHANTOM_Division_VIII_v0_4_Research_Evidence.zip",
+        "manifest": "RESEARCH_EVIDENCE_MANIFEST.json",
+        "manifest_sha256": "f1a1d7a7fb97b2e795aba926742336e0a8299e48bd54c13d000623ad40dcb62b",
+        "sha256": "150bb38f2a79441f97947ec63f392e3d9da0b5f3a7f4bebc72d12e299d6bb0d0"
+      },
+      "source": {
+        "bytes": 5993,
+        "path": "build/foundation/phantom_division_viii_v04/DATA_INDEX.json",
+        "sha256": "b15f2a4ac34359f9b2c3eafbeebc773744d1f7aa9ce9d2d0373d0fade684bc38"
+      },
+      "status": "BLOCKED"
+    }
+  ],
+  "remote_snapshots": [
+    {
+      "result": "No releases returned",
+      "source": {
+        "bytes": 3,
+        "path": "research/quantum_oracle/evidence/github-releases.json",
+        "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+      },
+      "url": "https://api.github.com/repos/akadaan310/surface/releases?per_page=10"
+    },
+    {
+      "result": "main and initiative/quantum-oracle-v3; both heads occur in local history",
+      "source": {
+        "bytes": 424,
+        "path": "research/quantum_oracle/evidence/github-branches.json",
+        "sha256": "8e7f8a3302026f9c2914732a82a9a50dccfc50ec9042b273c61f7245c44f3084"
+      },
+      "url": "https://api.github.com/repos/akadaan310/surface/branches?per_page=100"
+    }
+  ],
+  "repository": {
+    "branch": "initiative/quantum-oracle-v3",
+    "commit": "6e97a6c819aba0df79b507da0d71301acc794d07",
+    "cwd": "/home/ubuntu/Documents/Codex/2026-10-25-substrate-phantom-quantum-oracle-scientific-completion/surface",
+    "initial_status": "Clean at audit start; later concurrent agent additions excluded from this source inventory",
+    "tree": "45b689a08ee3d311bb1b1080bfc755cd15ffce2f"
+  },
+  "schema": "surface.quantum-oracle.custody-audit.v1",
+  "scope": "Read-only inherited-source audit and additive evidence. Scientific-only owner continuation supersedes earlier publication pause. No native/source/archive/history changes, no scientific suite rerun, no remote mutation. Parallel work is outside this snapshot.",
+  "sources": [
+    {
+      "bytes": 5588,
+      "path": "AGENTS.md",
+      "sha256": "d918bdb12049c600fdb54f26132694f1f738f79eeb1bc16933e6eff4aac82745"
+    },
+    {
+      "bytes": 8192,
+      "path": "README.md",
+      "sha256": "eeaaec761b28fe6643b50291c0fe4c44937244445395d9f6b285a5c20b3bd700"
+    },
+    {
+      "bytes": 3860,
+      "path": "SUM.md",
+      "sha256": "baf3a7e903c3e95b15fd27ca74ae97e1517664b7afdcc282d05eebbf1634cab6"
+    },
+    {
+      "bytes": 1434,
+      "path": "build/foundation/QUANTUM_ORACLE_V2_COMMISSION/ACCEPTANCE_MATRIX.md",
+      "sha256": "833eb891dbeef3fb222f435c3dc9e2bab34d6be9ee6f160b6432ddd001d719ab"
+    },
+    {
+      "bytes": 10947,
+      "path": "build/foundation/QUANTUM_ORACLE_V2_COMMISSION/CONSTITUTION.md",
+      "sha256": "bbdf20168cd26b07c79e16a6fe13d8baed715fb43bae97a1a5ee38576500d82b"
+    },
+    {
+      "bytes": 573,
+      "path": "build/foundation/QUANTUM_ORACLE_V2_COMMISSION/INPUTS_MANIFEST.json",
+      "sha256": "7e165dcbb05cc4aa544a126a2d5f37ba8a320c83404383edb796f540db64e6fc"
+    },
+    {
+      "bytes": 1126,
+      "path": "build/foundation/QUANTUM_ORACLE_V2_COMMISSION/INTERFACE_CONTRACTS.json",
+      "sha256": "17fd5b83b29f0c62717d428b8edfd5c14220fe50618e33deab70624ea3406dab"
+    },
+    {
+      "bytes": 4998,
+      "path": "build/foundation/QUANTUM_ORACLE_V2_COMMISSION/SELF_PROMPT.md",
+      "sha256": "3321085dde04cfea58cd4aff31426250b1573797cc3d7b6853e753b370fa1d02"
+    },
+    {
+      "bytes": 3065,
+      "path": "build/foundation/QUANTUM_ORACLE_V2_COMMISSION/UPSTREAM_RESEARCH.md",
+      "sha256": "2686a8d0329fa5edc873394e7445599a00fdbb093b7b205c24e6fca69236c605"
+    },
+    {
+      "bytes": 20463,
+      "path": "build/foundation/QUANTUM_ORACLE_V2_COMMISSION/context/PHANTOM_COMPOSER_SURFACE_CONSTITUTION_v1.md",
+      "sha256": "1328544ac84cc43a558ad7c485f8150c63094b634059c7cda58ccee7da632feb"
+    },
+    {
+      "bytes": 22929,
+      "path": "build/foundation/QUANTUM_ORACLE_V2_COMMISSION/context/PHANTOM_DIVISION_VIII_DISCOVERY_COMMISSION_v0.3.md",
+      "sha256": "af9136cd213809c83a1d0f83d1f56d933de99e76230488d3d790fac59830b2f9"
+    },
+    {
+      "bytes": 16275,
+      "path": "build/foundation/QUANTUM_ORACLE_V2_COMMISSION/context/REPLAY_HANDOFF.md",
+      "sha256": "bf2978de02efcf210fcc32e3b6315d8144f630b3f90372e23d70239759297e0f"
+    },
+    {
+      "bytes": 8110,
+      "path": "build/foundation/QUANTUM_ORACLE_V3_EXTENSION/CONSTITUTION_V3.md",
+      "sha256": "96a662ad2fab353eb6de4f8a16b44310960a57ba93deb0777979b6f208bef5e3"
+    },
+    {
+      "bytes": 2004,
+      "path": "build/foundation/QUANTUM_ORACLE_V3_EXTENSION/MANIFEST.json",
+      "sha256": "ae6579a6cc89546f341f762db0456b354aa2f847420b71ac598d9bd463d450cd"
+    },
+    {
+      "bytes": 995,
+      "path": "build/foundation/QUANTUM_ORACLE_V3_EXTENSION/README.md",
+      "sha256": "d1d25b7d4144ade8bf37cf32e038f061bebf101ca85f25d83414732d627a66af"
+    },
+    {
+      "bytes": 2980,
+      "path": "build/foundation/QUANTUM_ORACLE_V3_EXTENSION/SELF_PROMPT_V3.md",
+      "sha256": "8a0c39c381d524a64d590181531dd1098e6af0ab03f360ee85f94a50a36a781f"
+    },
+    {
+      "bytes": 5993,
+      "path": "build/foundation/phantom_division_viii_v04/DATA_INDEX.json",
+      "sha256": "b15f2a4ac34359f9b2c3eafbeebc773744d1f7aa9ce9d2d0373d0fade684bc38"
+    },
+    {
+      "bytes": 89852,
+      "path": "build/foundation/phantom_division_viii_v04/RELEASE_MANIFEST.json",
+      "sha256": "925b8ab9760ce19fd80f30e5e1aa7382864a6625c0fb2ab6099d48806c6beb58"
+    },
+    {
+      "bytes": 16275,
+      "path": "build/foundation/phantom_division_viii_v04/REPLAY_HANDOFF.md",
+      "sha256": "bf2978de02efcf210fcc32e3b6315d8144f630b3f90372e23d70239759297e0f"
+    },
+    {
+      "bytes": 16432,
+      "path": "build/foundation/phantom_division_viii_v04/docs/ACCEPTANCE_MATRIX.md",
+      "sha256": "512ee1cbef6fd287d5d8961bac4813ea0bea3aba6f1876c12d2f02bf9700ce8f"
+    },
+    {
+      "bytes": 17119,
+      "path": "build/foundation/phantom_division_viii_v04/docs/FINITE_BOUNDS.md",
+      "sha256": "56a413ff12fd6858f9d188efbe807f85038a5b8ef02719b32ac23ce2d0b4992e"
+    },
+    {
+      "bytes": 18111,
+      "path": "build/foundation/phantom_division_viii_v04/docs/MATHEMATICAL_RAKE.md",
+      "sha256": "e0a981fec88e98f806b1e99c6221c544e941f8fae2a5edbbce78c70a458717e5"
+    },
+    {
+      "bytes": 10035,
+      "path": "build/foundation/phantom_division_viii_v04/inputs/originals/PHANTOM_ONBOARDING_ADDENDUM.md",
+      "sha256": "48f00413e0d3f45b5a595a1a5299b333b6cfe073e325166ba3527c98c4c266d2"
+    },
+    {
+      "bytes": 5338,
+      "path": "build/foundation/quantum_oracle/README.md",
+      "sha256": "8c87f799ed29c43ac3cc71e241de1b7731ad6e2e3110f668c57f249243cd8a51"
+    },
+    {
+      "bytes": 1376,
+      "path": "build/foundation/quantum_oracle/docs/ACCEPTANCE.md",
+      "sha256": "5ea69c099da44a69da119516bb1b0fb799b553b1eafa02edbd8ac151f320579a"
+    },
+    {
+      "bytes": 1358,
+      "path": "build/foundation/quantum_oracle/tests/test_engine.py",
+      "sha256": "f5b603c9626471016f7fa9ea97a6f48aad633518b713e1f9c3363b6f9a9e9b7d"
+    },
+    {
+      "bytes": 20463,
+      "path": "build/foundation/surface_commission/PHANTOM_COMPOSER_SURFACE_CONSTITUTION_v1.md",
+      "sha256": "1328544ac84cc43a558ad7c485f8150c63094b634059c7cda58ccee7da632feb"
+    },
+    {
+      "bytes": 10647,
+      "path": "docs/ARCHITECTURE_AND_HARNESSES.md",
+      "sha256": "8749303ce946654135f61a0a80f18495d99a1228583836764f1c3509e3a53da9"
+    },
+    {
+      "bytes": 30451,
+      "path": "docs/FOUNDATION_INVENTORY.md",
+      "sha256": "00ba0df1012ba6853259d1dea9be5230e0716021e88d8605377f474582f76936"
+    },
+    {
+      "bytes": 7793,
+      "path": "docs/FOUNDATION_REPLAY.md",
+      "sha256": "18f37ba2eebca4c528f851d859d3b4045f69b4e0a1fd2a8086344a3a21f27a01"
+    },
+    {
+      "bytes": 22125,
+      "path": "docs/GATE_REPORT.md",
+      "sha256": "92fe39935e2bf199da498266b33bf9b02d9050ca96b6a3f6e4cfbe2e81fc8985"
+    },
+    {
+      "bytes": 41427,
+      "path": "docs/MATHEMATICAL_ATLAS.md",
+      "sha256": "529dbf8e2977129ae4203604d9ed91eb9ae6319a50cfc380e50ea64d6ce27ca6"
+    },
+    {
+      "bytes": 21943,
+      "path": "docs/QUANTUM_V3_CONSOLIDATION.md",
+      "sha256": "e79e364079cea46207db153c4b803d4da2f8f898f0cc92eec180bb9979327a01"
+    },
+    {
+      "bytes": 10338,
+      "path": "docs/SUBSTRATE_UNIVERSITY.md",
+      "sha256": "b19fe1ee9c0f9d7867168faba8e4cc1635065ddf69b3d032ea72e7851ac65cf6"
+    },
+    {
+      "bytes": 97545,
+      "path": "evidence/commission-gates.json",
+      "sha256": "b5af29432f35dbc0ade5c41af46af99021c578ba2d9f3d5139c05f0c6056db64"
+    },
+    {
+      "bytes": 13242,
+      "path": "evidence/foundation-replay.json",
+      "sha256": "d5f05aff022fb105d199dba04a101180c40cbca8043d801039167f98c57cb15b"
+    },
+    {
+      "bytes": 36888,
+      "path": "evidence/polyia-import.json",
+      "sha256": "3ce1475688a9b6cb1c214fa08d343bd60a1bbcab6ee3ebfec86205716d9ad675"
+    },
+    {
+      "bytes": 2414,
+      "path": "evidence/recovery-inventory.json",
+      "sha256": "3e4d6e4aa41a34d995e1416c4fe2ac247a6cfeaaf4aa4ad9223ed76ead14969c"
+    },
+    {
+      "bytes": 85247,
+      "path": "evidence/v3-consolidation-audit.json",
+      "sha256": "46338fe0feafcd09aed421c09f10045e5626a5029d231d26088e070d9bee4b32"
+    },
+    {
+      "bytes": 8110,
+      "path": "initiatives/quantum-oracle-v3/CONSTITUTION_V3.md",
+      "sha256": "96a662ad2fab353eb6de4f8a16b44310960a57ba93deb0777979b6f208bef5e3"
+    },
+    {
+      "bytes": 1230,
+      "path": "initiatives/quantum-oracle-v3/INITIATIVE.json",
+      "sha256": "4f69fc1c1f44ec6b28f32794d9b1e9ee69495910eed24c4a1a13d7bb8122fba3"
+    },
+    {
+      "bytes": 1460,
+      "path": "initiatives/quantum-oracle-v3/PACKAGE.json",
+      "sha256": "3ca5b2a5b44827e252c5dd5adfb29a47b64b021c61151d5c54e454abe945dcf8"
+    },
+    {
+      "bytes": 4356,
+      "path": "initiatives/quantum-oracle-v3/README.md",
+      "sha256": "e9fae05f63e7db3a8f38c5afee1ff0486a7dc80f63efd1ae0703000ee28f8fa3"
+    },
+    {
+      "bytes": 4379,
+      "path": "initiatives/quantum-oracle-v3/SELF_PROMPT.md",
+      "sha256": "353526c419df9c17013a5326212959664858895f2927fd516576d42786743df9"
+    },
+    {
+      "bytes": 2980,
+      "path": "initiatives/quantum-oracle-v3/SELF_PROMPT_V3.original.md",
+      "sha256": "8a0c39c381d524a64d590181531dd1098e6af0ab03f360ee85f94a50a36a781f"
+    },
+    {
+      "bytes": 6758,
+      "path": "lineage/RESUME_PROMPT.original.md",
+      "sha256": "c921c8aff9a3228f5d0911cff9b15de3422191cd9175bbd18af772a6badf0bc9"
+    },
+    {
+      "bytes": 806,
+      "path": "lineage/cosmos-continuation-parts/manifest.json",
+      "sha256": "936a5dc31992ea6b062ff8691d72a58d88f688f321b173d54c548678960cf7da"
+    },
+    {
+      "bytes": 67795,
+      "path": "tools/commission.py",
+      "sha256": "30e8c96aba5afdb459f0d6ce51b585d84dcbd957a1ca53ea00e29a473a887ae4"
+    },
+    {
+      "bytes": 41418,
+      "path": "vendor/polyia/IMPORT_MANIFEST.json",
+      "sha256": "6eebb37ec30fceae018fcd158e39fecb2f3c47cacae6a732891f3fdb99ebaf01"
+    }
+  ],
+  "verified_inventory": {
+    "composer_numbered_provisions": 75,
+    "phantom_commission_sections": 19,
+    "review_domains": 23,
+    "university_topics": 62,
+    "v2_gates": 8,
+    "v2_numbered_provisions": 66,
+    "v3_acceptance_examples": 7,
+    "v3_numbered_provisions": 24
+  }
+}

@@ -5,7 +5,7 @@
   "base_commit": "aa4474e4bd884ddec98fbeb13b5f0c167cdbe03c",
   "base_tree": "265a1bace7095b3afe48d4b09c9fe9fda02f2e9c",
   "base_manifest_sha256": "aa5caa6a76303d2ad876dfaffd59698482593f438e8ec49047fcc5549d51861f",
-  "status": "READY_FOR_NEXT_INSTRUCTION",
+  "status": "SCIENTIFIC_CONTINUATION_IN_PROGRESS",
   "owner_handoff": "Publication/package preparation only; no further builds or verification runs were authorized at handoff.",
   "dependencies": [],
   "budgets": {
@@ -17,10 +17,16 @@
   "self_prompt": "initiatives/quantum-oracle-v3/SELF_PROMPT.md",
   "original_constitution": "initiatives/quantum-oracle-v3/CONSTITUTION_V3.md",
   "first_open_gates": [
-    "Actual Android launch when device evidence is available",
-    "Versioned V3 validation adapter for documented counterexamples",
-    "Typed N-chart field/transition contract"
+    "Versioned V3 validation and independent backend comparison",
+    "Standalone typed N-chart fields and dynamics",
+    "Original real-data/calibration/discovery/cold-replay obligations",
+    "Android launch is independently BLOCKED; not a scientific dependency"
   ],
   "full_scientific_release": "UNKNOWN; retain all original Oracle and Surface gates",
-  "verification_at_branch_creation": "NOT_RUN per owner instruction; prior completed evidence retained in base"
+  "verification_at_branch_creation": "NOT_RUN per owner instruction; prior completed evidence retained in base",
+  "current_authority": {
+    "source": "commissions/2026-10-25-scientific-completion/verbatim.txt",
+    "priority": "Complete scientific foundations before SURFACE; no new SURFACE features",
+    "historical_owner_handoff": "The owner_handoff field above describes the superseded publication pause."
+  }
 }

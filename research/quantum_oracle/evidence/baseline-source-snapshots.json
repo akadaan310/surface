@@ -1,0 +1,26 @@
+{
+  "initial_verifier_preservation": {
+    "bound_by": "custody-audit-verification.json",
+    "bytes": 3779,
+    "path": "research/quantum_oracle/evidence/baseline/verify_custody_audit.initial.py.txt",
+    "sha256": "1bc81cac9034e93a4387864854a744a7343f7dd630d4c4c4d3e187ffe63ec8ae"
+  },
+  "purpose": "Standalone exact baseline source snapshots for documents legitimately advanced by the current scientific commission; original audit hashes remain unchanged. Only the explicit logical paths below resolve through snapshots.",
+  "schema": "surface.quantum-oracle.baseline-source-snapshots.v1",
+  "snapshots": [
+    {
+      "bytes": 3860,
+      "logical_path": "SUM.md",
+      "sha256": "baf3a7e903c3e95b15fd27ca74ae97e1517664b7afdcc282d05eebbf1634cab6",
+      "snapshot_path": "research/quantum_oracle/evidence/baseline/SUM.md",
+      "source_commit": "6e97a6c819aba0df79b507da0d71301acc794d07"
+    },
+    {
+      "bytes": 1230,
+      "logical_path": "initiatives/quantum-oracle-v3/INITIATIVE.json",
+      "sha256": "4f69fc1c1f44ec6b28f32794d9b1e9ee69495910eed24c4a1a13d7bb8122fba3",
+      "snapshot_path": "research/quantum_oracle/evidence/baseline/INITIATIVE.json",
+      "source_commit": "6e97a6c819aba0df79b507da0d71301acc794d07"
+    }
+  ]
+}

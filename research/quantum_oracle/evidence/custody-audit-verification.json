@@ -1,0 +1,55 @@
+{
+  "artifacts": [
+    {
+      "bytes": 11731,
+      "path": "docs/QUANTUM_ORACLE_CUSTODY_AUDIT.md",
+      "sha256": "ab93049d5ed9c95c4ba0f1f54f79a8bb692f6b6d93f01b2c451c7afc677f3a26"
+    },
+    {
+      "bytes": 48729,
+      "path": "research/quantum_oracle/evidence/custody-audit.json",
+      "sha256": "6e4bee90a47f9917a2cd7a363fa704b0148e8768fd0d40ac1d4b748b7ca30f3a"
+    },
+    {
+      "bytes": 252292,
+      "path": "research/quantum_oracle/evidence/inherited-obligations.json",
+      "sha256": "88a123d3b3b7cc281064535122ff1d8e3c7525e73d382231cc95e945c9ed41a6"
+    },
+    {
+      "bytes": 48924,
+      "path": "research/quantum_oracle/evidence/inherited-registries.json",
+      "sha256": "8682bd3b4ac2eaf2b1fbc82c3e9220036ceae1bebd0b9fa4ab0d6c523aaf772c"
+    },
+    {
+      "bytes": 424,
+      "path": "research/quantum_oracle/evidence/github-branches.json",
+      "sha256": "8e7f8a3302026f9c2914732a82a9a50dccfc50ec9042b273c61f7245c44f3084"
+    },
+    {
+      "bytes": 3,
+      "path": "research/quantum_oracle/evidence/github-releases.json",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "bytes": 3779,
+      "path": "research/quantum_oracle/evidence/verify_custody_audit.py",
+      "sha256": "1bc81cac9034e93a4387864854a744a7343f7dd630d4c4c4d3e187ffe63ec8ae"
+    }
+  ],
+  "command": [
+    "/usr/bin/python3",
+    "-B",
+    "research/quantum_oracle/evidence/verify_custody_audit.py"
+  ],
+  "created_utc": "2026-10-25T16:59:22.669254+00:00",
+  "cwd": "/home/ubuntu/Documents/Codex/2026-10-25-substrate-phantom-quantum-oracle-scientific-completion/surface",
+  "elapsed_seconds": 0.13530801888555288,
+  "exit_code": 0,
+  "platform": "Linux-6.8.0-1060-oracle-aarch64-with-glibc2.35",
+  "python": "3.10.12",
+  "schema": "surface.quantum-oracle.custody-verification.v1",
+  "scope": "Read-only audit integrity and source-span validation; repeated integrity verification is not counted as new scientific tests. No scientific ACCEPT claim.",
+  "stderr": "",
+  "stdout": "{\"domains\": 23, \"exact_source_spans_checked\": 303, \"historical_unknown_records_preserved\": 11, \"scientific_acceptance_claimed\": false, \"source_files_checked\": 70, \"status\": \"PASS\", \"topics\": 62}\n",
+  "timeout_seconds": 30
+}

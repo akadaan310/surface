@@ -1,0 +1,42 @@
+{
+  "artifacts": [
+    {
+      "bytes": 1245,
+      "path": "research/quantum_oracle/evidence/baseline-source-snapshots.json",
+      "sha256": "3160ffe042a61a0f02957a6dff285130f7d0b29bf8a0b985fad9f847c186cb59"
+    },
+    {
+      "bytes": 3860,
+      "path": "research/quantum_oracle/evidence/baseline/SUM.md",
+      "sha256": "baf3a7e903c3e95b15fd27ca74ae97e1517664b7afdcc282d05eebbf1634cab6"
+    },
+    {
+      "bytes": 1230,
+      "path": "research/quantum_oracle/evidence/baseline/INITIATIVE.json",
+      "sha256": "4f69fc1c1f44ec6b28f32794d9b1e9ee69495910eed24c4a1a13d7bb8122fba3"
+    },
+    {
+      "bytes": 3779,
+      "path": "research/quantum_oracle/evidence/baseline/verify_custody_audit.initial.py.txt",
+      "sha256": "1bc81cac9034e93a4387864854a744a7343f7dd630d4c4c4d3e187ffe63ec8ae"
+    },
+    {
+      "bytes": 4796,
+      "path": "research/quantum_oracle/evidence/verify_custody_audit.py",
+      "sha256": "978cc5539ce1a1b98e09a4120a241b78657c1a950261baf947fefd5d6ce994af"
+    }
+  ],
+  "command": [
+    "/usr/bin/python3",
+    "-B",
+    "research/quantum_oracle/evidence/verify_custody_audit.py"
+  ],
+  "created_utc": "2026-10-25T17:07:00.772923+00:00",
+  "elapsed_seconds": 0.1465623751282692,
+  "exit_code": 0,
+  "schema": "surface.quantum-oracle.custody-verification.v1",
+  "scope": "Explicit standalone baseline snapshots accommodate authorized SUM/initiative updates; original audit and initial receipt hashes unchanged.",
+  "stderr": "",
+  "stdout": "{\"domains\": 23, \"exact_source_spans_checked\": 303, \"explicit_baseline_snapshots\": [\"SUM.md\", \"initiatives/quantum-oracle-v3/INITIATIVE.json\"], \"historical_unknown_records_preserved\": 11, \"scientific_acceptance_claimed\": false, \"source_files_checked\": 70, \"status\": \"PASS\", \"topics\": 62}\n",
+  "timeout_seconds": 30
+}

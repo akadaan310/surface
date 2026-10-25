@@ -1,3 +1,11 @@
+# Scientific continuation — 2026-10-25
+
+The owner's [scientific completion-first commission](commissions/2026-10-25-scientific-completion/verbatim.txt) authorizes independent scientific implementation on `initiative/quantum-oracle-v3` and supersedes the publication-only pause below. SURFACE source and manual-only CI remain unchanged. Android launch is a separate unresolved gate.
+
+Current work: immutable custody audit, typed quantum admission, standalone finite function spaces, and source-bound research cycles. Original scientific/release gates remain open; no scientific integration readiness report is authorized by passing local fixtures alone. See [implementation plan](commissions/2026-10-25-scientific-completion/implementation-plan.md) and [custody audit](docs/QUANTUM_ORACLE_CUSTODY_AUDIT.md).
+
+The earlier checkpoint follows unchanged as historical evidence.
+
 # Current Surface checkpoint — 2026-10-25 consolidation
 
 Canonical repository: **https://github.com/akadaan310/surface**. The owner explicitly designated it for native Surface, physics, PHANTOM/Quantum Oracle, state machines, harnesses and generators.

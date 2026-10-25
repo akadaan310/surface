@@ -1,0 +1,26 @@
+{
+  "schema": "surface.initiative.v1",
+  "id": "quantum-oracle-v3",
+  "branch": "initiative/quantum-oracle-v3",
+  "base_commit": "aa4474e4bd884ddec98fbeb13b5f0c167cdbe03c",
+  "base_tree": "265a1bace7095b3afe48d4b09c9fe9fda02f2e9c",
+  "base_manifest_sha256": "aa5caa6a76303d2ad876dfaffd59698482593f438e8ec49047fcc5549d51861f",
+  "status": "READY_FOR_NEXT_INSTRUCTION",
+  "owner_handoff": "Publication/package preparation only; no further builds or verification runs were authorized at handoff.",
+  "dependencies": [],
+  "budgets": {
+    "task_seconds": 300,
+    "semantic_seconds": 120,
+    "classified_retries": 1
+  },
+  "package": "initiatives/quantum-oracle-v3/PACKAGE.json",
+  "self_prompt": "initiatives/quantum-oracle-v3/SELF_PROMPT.md",
+  "original_constitution": "initiatives/quantum-oracle-v3/CONSTITUTION_V3.md",
+  "first_open_gates": [
+    "Actual Android launch when device evidence is available",
+    "Versioned V3 validation adapter for documented counterexamples",
+    "Typed N-chart field/transition contract"
+  ],
+  "full_scientific_release": "UNKNOWN; retain all original Oracle and Surface gates",
+  "verification_at_branch_creation": "NOT_RUN per owner instruction; prior completed evidence retained in base"
+}

@@ -1,0 +1,170 @@
+SUBSTRATE — PHANTOM × QUANTUM ORACLE
+
+SCIENTIFIC COMPLETION-FIRST COMMISSION
+
+Authority: Owner continuation directive
+Repository: https://github.com/akadaan310/surface
+Branch: "initiative/quantum-oracle-v3"
+Priority: Complete scientific foundations before SURFACE implementation.
+
+1. Execution precedence
+
+Read "AGENTS.md", "SUM.md", all files in "initiatives/quantum-oracle-v3/", "docs/QUANTUM_V3_CONSOLIDATION.md", "docs/MATHEMATICAL_ATLAS.md", "docs/GATE_REPORT.md", and the original immutable PHANTOM/Quantum Oracle packages.
+
+Treat all historical self-prompts as preserved specifications. This directive clarifies the owner's current execution priorities.
+
+Do not implement new SURFACE rendering, avatar, UI, material, animation, or real-time integration features until the prerequisite PHANTOM × Quantum Oracle scientific acceptance gates have passed.
+
+The existing SURFACE source remains immutable except for essential repository-integrity and safety repairs separately justified and recorded.
+
+The Android launch gate may remain BLOCKED while independent scientific work proceeds. Do not confuse a scientific completion claim with a claim of Android release readiness.
+
+2. Primary scientific objective
+
+Complete the PHANTOM × Quantum Oracle initiative as a coherent, executable mathematical research system.
+
+The target is not a collection of functions merely named after physics concepts.
+
+Every admitted quantum oracle must be a typed scientific operator with explicit mathematical semantics, admissible inputs, outputs, assumptions, computational implementation, independent references, perturbation behavior, resource bounds, and reproducible evidence.
+
+Represent supported quantum domains with distinct operator families, including:
+
+- Quantum states, transformations, observables, channels, measurements, and information metrics.
+- Quantum dynamics, open systems, decoherence, noise, and control.
+- Quantum circuits, compilation, optimization, and provider-specific execution contracts.
+- Wave mechanics, spectral representations, interference, scattering, and applicable quantum field-theoretic models.
+- Particle and collider representations, with calibrated experimental data adapters where available.
+- Quantum-informed material models and relevant electromagnetic or atomic interactions.
+
+Do not assert that the implemented registry exhausts quantum physics. Maintain an explicit coverage and applicability registry for implemented, unsupported, proposed, and scientifically unresolved models.
+
+3. PHANTOM preservation and COMPOSER dependency
+
+Preserve every immutable PHANTOM artifact and original semantic contract.
+
+Audit the missing COMPOSER Gate 1 materials and historical Octave evidence identified by the consolidation report.
+
+Recover and verify the original material when accessible. If unavailable, retain UNKNOWN and specify exact missing evidence.
+
+Do not manufacture replacements and describe them as recovered originals.
+
+Use versioned adapters to integrate established PHANTOM operations, generator grammars, binary representations, state machines, and replay protocols.
+
+Verify compatibility through tests, not naming similarities.
+
+4. Binary-to-quantum representation
+
+Complete typed distinctions between:
+
+- Classical binary words and basis states.
+- Statevectors and mixed density operators.
+- Raw byte encodings and mathematical state equivalence.
+- Reversible classical functions and admissible quantum unitaries.
+- Classical stochastic channels and quantum channels.
+- Measurement outcomes and the information discarded by measurement.
+- Logical qubits, physical qubits, basis indices, and memory addresses.
+
+Repair the V3 admission weaknesses already documented in the repository.
+
+Introduce independent numerical implementations and reference comparisons.
+
+Never infer that classical numerical serialization makes a classical computer into quantum hardware.
+
+5. N-Euclidean function-space architecture
+
+Complete the mathematical contract for a container holding N distinct Euclidean-coordinate function spaces, together with their relationships.
+
+Separate:
+
+1. Local coordinate domains and origins.
+2. Function and observable spaces.
+3. Intrinsic metrics, norms, and operators.
+4. Ambient chart layout and inter-chart distances.
+5. Coordinate transformations and representation translations.
+6. Typed coupling laws, boundary conditions, and dynamic propagation.
+7. Quantum Hilbert-space structures and their admissible correspondences.
+
+Establish valid mappings where mathematical justification exists.
+
+Do not equate visual proximity, mathematical similarity, and physical coupling.
+
+Implement finite reference examples with analytic or independently verified numerical solutions.
+
+The full mathematical object must be reusable without the SURFACE renderer.
+
+6. Scientific discovery automata
+
+Use the existing bounded commission compiler, state machines, supervisor, and finite generator infrastructure.
+
+Support research cycles:
+
+SCOPE → ACQUIRE → VERIFY SOURCE → FORMALIZE → GENERATE → EXECUTE → PERTURB → COMPARE → CHALLENGE → ACCEPT / REJECT / UNKNOWN → ARCHIVE → SELECT NEXT.
+
+For generated models and operators, preserve parent lineage, construction paths, unsuccessful candidates, independent challenge results, counterexamples, and replay coordinates.
+
+Use Substrate University's 62 topic identities and the existing 23-domain mathematical review catalogue as research organization and applicability structures—not automatic evidence of mathematical completion.
+
+7. Research and experimental requirements
+
+For each applicable domain:
+
+- Acquire suitable established scientific references and open-source implementations.
+- Determine whether observational, experimental, or simulation evidence is required.
+- Validate numerical results against independent controls.
+- Preserve uncertainty, numerical stability, precision, calibration, and dimensional consistency.
+- Differentiate accepted scientific theory from proposed computational interpretations.
+- Apply finite time, memory, search, and execution budgets.
+
+Use authentic scientific datasets for observational claims.
+
+Do not claim hardware execution without physical-provider evidence and authorization.
+
+Do not substitute synthetic examples for calibrated experiments.
+
+8. Completion and acceptance
+
+Maintain the inherited Oracle G0–G7, SURFACE G00–G16, V2/V3, PHANTOM, and COMPOSER obligations with their exact original scope.
+
+Record separate gate statuses for scientific foundation completion, physical-data validation, quantum-hardware validation, and SURFACE readiness.
+
+A local passing test does not discharge an unrelated original release obligation.
+
+For every accepted capability, deliver:
+
+- Executable implementation.
+- Typed interface and mathematical specification.
+- Deterministic or properly characterized probabilistic replay.
+- Verification evidence and independent comparison.
+- Provenance and source hashes.
+- Explicit resource contracts.
+- Known limitations and unresolved research questions.
+
+If a requirement is inaccessible because of missing external hardware, datasets, credentials, or source materials, mark it BLOCKED or UNKNOWN. Continue all independent authorized work and preserve the unresolved acceptance requirement.
+
+9. SURFACE admission barrier
+
+No new SURFACE feature implementation is authorized by this commission.
+
+After the prerequisite scientific gates are accepted, publish a standalone SURFACE SCIENTIFIC INTEGRATION READINESS REPORT.
+
+That report must identify every admitted operator, its typed interface, data transformations, numerical limits, physical assumptions, and compatibility requirements.
+
+Any original gates that remain blocked must be explicitly listed. A partial scientific release must not be represented as completion of the entire initiative.
+
+Only then may the owner issue a separate implementation commission for SURFACE.
+
+10. Operating rules
+
+Work autonomously through bounded, recoverable tasks. Do not wait indefinitely on a blocked dependency.
+
+Commit tested increments on the designated independent initiative branch.
+
+Respect the existing manual-only CI policy unless the owner explicitly changes it.
+
+Never rewrite upstream artifacts, alter historical evidence, invent test results, expose signing credentials, or mark an unsupported physical interpretation as established science.
+
+At termination, deliver the verified commits, manifest, acceptance ledger, scientific coverage report, unresolved dependencies, and exact continuation instructions.
+
+The mission is to complete the scientific machinery first. SURFACE will be its downstream physical and visual application—not the substitute for it.
+
+END COMMISSION.
