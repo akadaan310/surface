@@ -1,0 +1,14 @@
+{
+  "schema": "surface.publication-handoff.v1",
+  "date": "2026-10-25",
+  "repository": "https://github.com/akadaan310/surface",
+  "published_source_commit": "2fa3a51d3b3366a7b416d5cc91da665a1e013944",
+  "prepared_content_tree": "b491cf5c03b3f2001937b927526d26b9e45fa63d",
+  "source_files_in_that_commit": 488,
+  "prior_local_test_evidence": "evidence/consolidation-verification.json",
+  "owner_instruction": "No more build or verification runs; finish committing and prepare the package.",
+  "after_instruction": "Publication and packaging metadata only. No new build, test, fresh-clone or verification execution.",
+  "ci_policy": "Manual workflow_dispatch only; no automatic push or pull_request runs after this handoff commit.",
+  "private_credentials": "Excluded; signing key remains private.",
+  "next_package": "initiative/quantum-oracle-v3, with exact integrated base and original constitution/self prompt."
+}

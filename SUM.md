@@ -2,6 +2,10 @@
 
 Canonical repository: **https://github.com/akadaan310/surface**. The owner explicitly designated it for native Surface, physics, PHANTOM/Quantum Oracle, state machines, harnesses and generators.
 
+## Publication-only handoff
+
+The owner explicitly stopped further builds and verification runs. The completed source/evidence is committed; the continuation branch is ready for the next instruction. No fresh-clone build or post-publication verification run was performed. CI is manual-dispatch only.
+
 ## Preserve
 
 - Native recovery baseline: `f002eece5a5915b886d77dce1807890588282afd`; restored predecessor `db061b8…`; original pre-loss source `b16a63a8fc9466c93f9233d0a45bd3840ac39536`.

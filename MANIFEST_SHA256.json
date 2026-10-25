@@ -8,11 +8,11 @@
       "sha256": "51e0025324da941ef34c673effab31f429a31ff2a9e10ecbc6350f6d755f46d0"
     },
     {
-      "bytes": 1121,
-      "git_blob_sha1": "79614e1e53a4de8aa8f28e43c6d787aba0ede75c",
+      "bytes": 1097,
+      "git_blob_sha1": "92dfdcf2dba80e2293ad84654c655ff8b8b60aec",
       "git_mode": "100644",
       "path": ".github/workflows/verify.yml",
-      "sha256": "02a7b0ac38a2b3bd2f538524072a864783d71bed5454f4e98c6763042f3b4be7"
+      "sha256": "49e1ac8f6179472663b96525af2c51d87f5186febef2323e50a7f6a530b3747b"
     },
     {
       "bytes": 180,
@@ -29,11 +29,11 @@
       "sha256": "47843d78484f3cb274fcf88f589a362d3160aea992b620c69fc84518187f163a"
     },
     {
-      "bytes": 5199,
-      "git_blob_sha1": "7d573abb27014693dc140a0bc9c94375e7d653a4",
+      "bytes": 5588,
+      "git_blob_sha1": "528a7f2130e25d22b40743fe8a90f39a61e6f081",
       "git_mode": "100644",
       "path": "AGENTS.md",
-      "sha256": "8a1747ebcad4d18155bc9f4663e9fd4f2d712471cb789dd82dd8eed71969621e"
+      "sha256": "d918bdb12049c600fdb54f26132694f1f738f79eeb1bc16933e6eff4aac82745"
     },
     {
       "bytes": 4789,
@@ -50,11 +50,11 @@
       "sha256": "eeaaec761b28fe6643b50291c0fe4c44937244445395d9f6b285a5c20b3bd700"
     },
     {
-      "bytes": 3559,
-      "git_blob_sha1": "c551668f12bfba82081446e4e7a3a631cbc7646a",
+      "bytes": 3860,
+      "git_blob_sha1": "8ca1f36c52fa2dbfca1d8a6daa0fb2ce7fccfc80",
       "git_mode": "100644",
       "path": "SUM.md",
-      "sha256": "679cf95f7a92d74ac1d840bde22f02756b825d69bfb1d3a4fe12a4fdfb57f545"
+      "sha256": "baf3a7e903c3e95b15fd27ca74ae97e1517664b7afdcc282d05eebbf1634cab6"
     },
     {
       "bytes": 1463,
@@ -421,11 +421,11 @@
       "sha256": "b19fe1ee9c0f9d7867168faba8e4cc1635065ddf69b3d032ea72e7851ac65cf6"
     },
     {
-      "bytes": 4665,
-      "git_blob_sha1": "728ac9d8a77de25d043dcbb7d0ce0f71cad5d637",
+      "bytes": 4704,
+      "git_blob_sha1": "d1c9625169b6be10f244bb3c9c8fb36bc0a2a1c9",
       "git_mode": "100644",
       "path": "docs/superpowers/plans/2026-10-25-canonical-commission.md",
-      "sha256": "f9825b57a1922305d86125b90abb71fe1957439af74097cdf1ae1d83f7da1fd7"
+      "sha256": "41c7745c1cabc45516abf5a9c8f7bf74048ec0f8e48042387fc7603eb80cb1f1"
     },
     {
       "bytes": 2691,
@@ -2113,6 +2113,13 @@
       "git_mode": "100644",
       "path": "evidence/polyia-import.json",
       "sha256": "3ce1475688a9b6cb1c214fa08d343bd60a1bbcab6ee3ebfec86205716d9ad675"
+    },
+    {
+      "bytes": 917,
+      "git_blob_sha1": "75cd18f2ea07a2672546c016b36b04b7339ec30a",
+      "git_mode": "100644",
+      "path": "evidence/publication-handoff.json",
+      "sha256": "45411db28d26a0f498abf5a4b071dffb2cb453520d1c39f6b708f2b643059d7d"
     },
     {
       "bytes": 1068,

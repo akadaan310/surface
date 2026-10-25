@@ -59,6 +59,6 @@
 
 - [x] Run meaningful new tests, current native/supervisor smoke checks and fresh V3 reference checks; retain actual command/results.
 - [x] Independently review compiler and publication census; reconcile failures instead of hiding them.
-- [ ] Publish exact source tree and verify it through a fresh clone/census; return runnable entry points and actual remaining gates.
+- [x] Publish the prepared source tree and continuation package. The owner explicitly stopped further builds and verification runs; no fresh-clone execution was performed.
 
 Execution note: full original science and actual Android launch remain explicit open gates. Publication verification is recorded separately; the command plan is implemented, not a full V3 acceptance declaration.

@@ -1,5 +1,9 @@
 # Agent entry point — SURFACE
 
+## Current owner handoff
+
+The owner stopped further build and verification runs during final publication on 2026-10-25. Complete publication/package preparation only. Do not launch new checks or research jobs from this handoff; wait for the next explicit implementation instruction. The commands below document the normal workflow for a later authorized task. CI is manual-dispatch only.
+
 ## Read before implementation
 
 1. `SUM.md`, `README.md`, `docs/ARCHITECTURE_AND_HARNESSES.md` and the current initiative's `SELF_PROMPT.md`/`INITIATIVE.json`.
