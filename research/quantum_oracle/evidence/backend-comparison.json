@@ -1,0 +1,548 @@
+{
+  "schema": "quantum-oracle.backend-comparison/1",
+  "executed_utc": "2026-10-25T17:06:18.475154+00:00",
+  "scope": "bounded classical numerical comparisons, 1..4 qubits; no physical hardware or complete G2 claim",
+  "command": [
+    "/home/ubuntu/Documents/Codex/2026-10-25-substrate-phantom-quantum-oracle-scientific-completion/surface/.venv/bin/python",
+    "-B",
+    "-m",
+    "research.quantum_oracle.tests.test_qiskit_reference",
+    "--receipt",
+    "research/quantum_oracle/evidence/backend-comparison.json"
+  ],
+  "environment": {
+    "python": "3.10.12",
+    "platform": "Linux-6.8.0-1060-oracle-aarch64-with-glibc2.35",
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "qiskit": "2.2.3"
+  },
+  "source_sha256": {
+    "research/quantum_oracle/quantum.py": "557f02365462a070f0f5e4e8a558eb0a3222c759b83aedae856f7b789f84f6cd",
+    "research/quantum_oracle/tests/test_qiskit_reference.py": "a254b8d6b5a07482c7ac3d0e476ca2552d1dc99abbd1ebdfcfb718a2708c2b9b",
+    "build/foundation/QUANTUM_ORACLE_V3_EXTENSION/atlas_quantum/core.py": "637368c05000fbcb2e7739cd7b9abe134be6b42222a2bab32bbcc880439369f6",
+    "build/foundation/quantum_oracle/quantum_oracle/core.py": "82efce911b2bcdc42f42872aea97ff320a7bdc9341b3267b5fa486354c970178"
+  },
+  "comparison_count": 22,
+  "accepted": 22,
+  "rows": [
+    {
+      "name": "phase_sensitive_circuit_1_qubits",
+      "max_absolute_error": 0.0,
+      "absolute_tolerance": 2e-14,
+      "status": "ACCEPT",
+      "input_sha256": [
+        "41e57a811ac9776a5931d1ac2f1f354df344c042329b13e20b4b516db8b78410"
+      ],
+      "qubits": 1,
+      "operations": [
+        {
+          "gate": "H",
+          "target": 0,
+          "angle": null
+        },
+        {
+          "gate": "RZ",
+          "target": 0,
+          "angle": 0.23
+        },
+        {
+          "gate": "RY",
+          "target": 0,
+          "angle": -0.17
+        },
+        {
+          "gate": "S",
+          "target": 0
+        }
+      ],
+      "output_sha256": "3e5b0a159d8115ff5dfd799c4140c849b1c7ea9a2ad9387ef7952b082ea86ac9",
+      "reference_output_sha256": "3e5b0a159d8115ff5dfd799c4140c849b1c7ea9a2ad9387ef7952b082ea86ac9"
+    },
+    {
+      "name": "phase_sensitive_circuit_2_qubits",
+      "max_absolute_error": 5.551115123125783e-17,
+      "absolute_tolerance": 2e-14,
+      "status": "ACCEPT",
+      "input_sha256": [
+        "193102fb2674025fa8eb7c45c183b77a90d87d59b612b7b8962d863abdd86668"
+      ],
+      "qubits": 2,
+      "operations": [
+        {
+          "gate": "H",
+          "target": 0,
+          "angle": null
+        },
+        {
+          "gate": "RZ",
+          "target": 0,
+          "angle": 0.23
+        },
+        {
+          "gate": "RY",
+          "target": 0,
+          "angle": -0.17
+        },
+        {
+          "gate": "H",
+          "target": 1,
+          "angle": null
+        },
+        {
+          "gate": "RZ",
+          "target": 1,
+          "angle": 0.46
+        },
+        {
+          "gate": "RY",
+          "target": 1,
+          "angle": -0.34
+        },
+        {
+          "gate": "CX",
+          "control": 0,
+          "target": 1
+        },
+        {
+          "gate": "S",
+          "target": 0
+        }
+      ],
+      "output_sha256": "0da8f0dc9c5f30ff3665d9003a6cf32269e61d535fa49b3f3dda436bd54b93a1",
+      "reference_output_sha256": "64ddf26d791e1b9e12727748310d7c9501d5a97dd3027e46dfada6aa0bfda386"
+    },
+    {
+      "name": "phase_sensitive_circuit_3_qubits",
+      "max_absolute_error": 6.206335383118183e-17,
+      "absolute_tolerance": 2e-14,
+      "status": "ACCEPT",
+      "input_sha256": [
+        "6f530519c9b447b4e9100226699ca3bab488a5560a735ceeb278bcbf531e9ab9"
+      ],
+      "qubits": 3,
+      "operations": [
+        {
+          "gate": "H",
+          "target": 0,
+          "angle": null
+        },
+        {
+          "gate": "RZ",
+          "target": 0,
+          "angle": 0.23
+        },
+        {
+          "gate": "RY",
+          "target": 0,
+          "angle": -0.17
+        },
+        {
+          "gate": "H",
+          "target": 1,
+          "angle": null
+        },
+        {
+          "gate": "RZ",
+          "target": 1,
+          "angle": 0.46
+        },
+        {
+          "gate": "RY",
+          "target": 1,
+          "angle": -0.34
+        },
+        {
+          "gate": "H",
+          "target": 2,
+          "angle": null
+        },
+        {
+          "gate": "RZ",
+          "target": 2,
+          "angle": 0.6900000000000001
+        },
+        {
+          "gate": "RY",
+          "target": 2,
+          "angle": -0.51
+        },
+        {
+          "gate": "CX",
+          "control": 0,
+          "target": 1
+        },
+        {
+          "gate": "CX",
+          "control": 1,
+          "target": 2
+        },
+        {
+          "gate": "S",
+          "target": 0
+        }
+      ],
+      "output_sha256": "6aa66d23b35045a25d27f1e7b530c329b74ea3c34060f5332e225bb4bbad121a",
+      "reference_output_sha256": "ad2b7e38e76341a1690239e6e22c4605658252b5fba19e38915d21a12aa7f57d"
+    },
+    {
+      "name": "phase_sensitive_circuit_4_qubits",
+      "max_absolute_error": 5.2909066017292616e-17,
+      "absolute_tolerance": 2e-14,
+      "status": "ACCEPT",
+      "input_sha256": [
+        "8034367eec76495180b08e634d0bf4236b83a30d9ce7be3fd843fe8860f4de41"
+      ],
+      "qubits": 4,
+      "operations": [
+        {
+          "gate": "H",
+          "target": 0,
+          "angle": null
+        },
+        {
+          "gate": "RZ",
+          "target": 0,
+          "angle": 0.23
+        },
+        {
+          "gate": "RY",
+          "target": 0,
+          "angle": -0.17
+        },
+        {
+          "gate": "H",
+          "target": 1,
+          "angle": null
+        },
+        {
+          "gate": "RZ",
+          "target": 1,
+          "angle": 0.46
+        },
+        {
+          "gate": "RY",
+          "target": 1,
+          "angle": -0.34
+        },
+        {
+          "gate": "H",
+          "target": 2,
+          "angle": null
+        },
+        {
+          "gate": "RZ",
+          "target": 2,
+          "angle": 0.6900000000000001
+        },
+        {
+          "gate": "RY",
+          "target": 2,
+          "angle": -0.51
+        },
+        {
+          "gate": "H",
+          "target": 3,
+          "angle": null
+        },
+        {
+          "gate": "RZ",
+          "target": 3,
+          "angle": 0.92
+        },
+        {
+          "gate": "RY",
+          "target": 3,
+          "angle": -0.68
+        },
+        {
+          "gate": "CX",
+          "control": 0,
+          "target": 1
+        },
+        {
+          "gate": "CX",
+          "control": 1,
+          "target": 2
+        },
+        {
+          "gate": "CX",
+          "control": 2,
+          "target": 3
+        },
+        {
+          "gate": "S",
+          "target": 0
+        }
+      ],
+      "output_sha256": "ea9f27d2c877dc4fa3504c924fd03381bb8a33f63a70161b8eeb0ddeda369e0e",
+      "reference_output_sha256": "fba0b709e0f4243c364a8add6c9fc40db55953a1a47604d08d5417b425959b0f"
+    },
+    {
+      "name": "amplitude_damping_action_gamma_0.0",
+      "max_absolute_error": 0.0,
+      "absolute_tolerance": 2e-14,
+      "status": "ACCEPT",
+      "input_sha256": [
+        "b6c781f4d777d320e2cb0ff7db985beb004c0a050557a65f100cd7d9503e9e60",
+        "fbfcd8f81e798f2e4e04256375c0766e6166910440ffd3de2b9b37a88ab5aac7",
+        "f5a5fd42d16a20302798ef6ed309979b43003d2320d9f0e8ea9831a92759fb4b"
+      ],
+      "output_sha256": "b6c781f4d777d320e2cb0ff7db985beb004c0a050557a65f100cd7d9503e9e60",
+      "reference_output_sha256": "b6c781f4d777d320e2cb0ff7db985beb004c0a050557a65f100cd7d9503e9e60"
+    },
+    {
+      "name": "amplitude_damping_choi_gamma_0.0",
+      "max_absolute_error": 0.0,
+      "absolute_tolerance": 2e-14,
+      "status": "ACCEPT",
+      "input_sha256": [
+        "fbfcd8f81e798f2e4e04256375c0766e6166910440ffd3de2b9b37a88ab5aac7",
+        "f5a5fd42d16a20302798ef6ed309979b43003d2320d9f0e8ea9831a92759fb4b"
+      ],
+      "choi_convention": "input_then_output_column_vectorization"
+    },
+    {
+      "name": "amplitude_damping_action_gamma_0.23",
+      "max_absolute_error": 0.0,
+      "absolute_tolerance": 2e-14,
+      "status": "ACCEPT",
+      "input_sha256": [
+        "b6c781f4d777d320e2cb0ff7db985beb004c0a050557a65f100cd7d9503e9e60",
+        "a6566d65e824e212b61a550f7cec6dce9b25163d92ff43bb71e00cf46b82fbe6",
+        "d93e6dd689e98b355f3386fff5142080b0719a124c54b7c5bf8d799854273ea0"
+      ],
+      "output_sha256": "ef6c75f1da520282ac2b166d7627ae69fdf3e9000edc0a373ec0b2f1326d4d8a",
+      "reference_output_sha256": "ef6c75f1da520282ac2b166d7627ae69fdf3e9000edc0a373ec0b2f1326d4d8a"
+    },
+    {
+      "name": "amplitude_damping_choi_gamma_0.23",
+      "max_absolute_error": 0.0,
+      "absolute_tolerance": 2e-14,
+      "status": "ACCEPT",
+      "input_sha256": [
+        "a6566d65e824e212b61a550f7cec6dce9b25163d92ff43bb71e00cf46b82fbe6",
+        "d93e6dd689e98b355f3386fff5142080b0719a124c54b7c5bf8d799854273ea0"
+      ],
+      "choi_convention": "input_then_output_column_vectorization"
+    },
+    {
+      "name": "amplitude_damping_action_gamma_1.0",
+      "max_absolute_error": 0.0,
+      "absolute_tolerance": 2e-14,
+      "status": "ACCEPT",
+      "input_sha256": [
+        "b6c781f4d777d320e2cb0ff7db985beb004c0a050557a65f100cd7d9503e9e60",
+        "193102fb2674025fa8eb7c45c183b77a90d87d59b612b7b8962d863abdd86668",
+        "367d0297986cd0ee492b9d0ecdce1872711b48f753779785eb6090cd11883f6b"
+      ],
+      "output_sha256": "193102fb2674025fa8eb7c45c183b77a90d87d59b612b7b8962d863abdd86668",
+      "reference_output_sha256": "193102fb2674025fa8eb7c45c183b77a90d87d59b612b7b8962d863abdd86668"
+    },
+    {
+      "name": "amplitude_damping_choi_gamma_1.0",
+      "max_absolute_error": 0.0,
+      "absolute_tolerance": 2e-14,
+      "status": "ACCEPT",
+      "input_sha256": [
+        "193102fb2674025fa8eb7c45c183b77a90d87d59b612b7b8962d863abdd86668",
+        "367d0297986cd0ee492b9d0ecdce1872711b48f753779785eb6090cd11883f6b"
+      ],
+      "choi_convention": "input_then_output_column_vectorization"
+    },
+    {
+      "name": "mixed_squared_fidelity_1_qubits",
+      "max_absolute_error": 2.220446049250313e-16,
+      "absolute_tolerance": 5e-13,
+      "status": "ACCEPT",
+      "input_sha256": [
+        "c6420bb227bfad4821c526de59e9e206d93c72ad245fddc14f9e872ee129f175",
+        "2bc20318254a90fcf928bf78915d9bdca5a2857e78e0d44ebf1224c37e100a9b"
+      ],
+      "measured": 0.8282235562134338,
+      "reference": 0.828223556213434,
+      "fixture_seeds": [
+        1801,
+        1901
+      ]
+    },
+    {
+      "name": "mixed_trace_distance_1_qubits",
+      "max_absolute_error": 0.0,
+      "absolute_tolerance": 5e-13,
+      "status": "ACCEPT",
+      "input_sha256": [
+        "c6420bb227bfad4821c526de59e9e206d93c72ad245fddc14f9e872ee129f175",
+        "2bc20318254a90fcf928bf78915d9bdca5a2857e78e0d44ebf1224c37e100a9b"
+      ],
+      "measured": 0.30140036521755953,
+      "reference": 0.30140036521755953,
+      "fixture_seeds": [
+        1801,
+        1901
+      ]
+    },
+    {
+      "name": "mixed_bures_distance_1_qubits",
+      "max_absolute_error": 6.106226635438361e-16,
+      "absolute_tolerance": 5e-13,
+      "status": "ACCEPT",
+      "input_sha256": [
+        "c6420bb227bfad4821c526de59e9e206d93c72ad245fddc14f9e872ee129f175",
+        "2bc20318254a90fcf928bf78915d9bdca5a2857e78e0d44ebf1224c37e100a9b"
+      ],
+      "measured": 0.4241040308762727,
+      "reference": 0.4241040308762721,
+      "fixture_seeds": [
+        1801,
+        1901
+      ]
+    },
+    {
+      "name": "mixed_squared_fidelity_2_qubits",
+      "max_absolute_error": 1.2212453270876722e-15,
+      "absolute_tolerance": 5e-13,
+      "status": "ACCEPT",
+      "input_sha256": [
+        "1bc1cd4d07925d5c55a6200899ec30e6d126c776b46741d8ab43deccc32766f1",
+        "a95c1e2f354456983a9adb6a37712a0fffaa3e6a6e25d2bdaceb5f67682946d1"
+      ],
+      "measured": 0.647938671550137,
+      "reference": 0.6479386715501382,
+      "fixture_seeds": [
+        1802,
+        1902
+      ]
+    },
+    {
+      "name": "mixed_trace_distance_2_qubits",
+      "max_absolute_error": 5.551115123125783e-17,
+      "absolute_tolerance": 5e-13,
+      "status": "ACCEPT",
+      "input_sha256": [
+        "1bc1cd4d07925d5c55a6200899ec30e6d126c776b46741d8ab43deccc32766f1",
+        "a95c1e2f354456983a9adb6a37712a0fffaa3e6a6e25d2bdaceb5f67682946d1"
+      ],
+      "measured": 0.4710586209350057,
+      "reference": 0.4710586209350058,
+      "fixture_seeds": [
+        1802,
+        1902
+      ]
+    },
+    {
+      "name": "mixed_bures_distance_2_qubits",
+      "max_absolute_error": 6.661338147750939e-16,
+      "absolute_tolerance": 5e-13,
+      "status": "ACCEPT",
+      "input_sha256": [
+        "1bc1cd4d07925d5c55a6200899ec30e6d126c776b46741d8ab43deccc32766f1",
+        "a95c1e2f354456983a9adb6a37712a0fffaa3e6a6e25d2bdaceb5f67682946d1"
+      ],
+      "measured": 0.624585657762172,
+      "reference": 0.6245856577621713,
+      "fixture_seeds": [
+        1802,
+        1902
+      ]
+    },
+    {
+      "name": "mixed_squared_fidelity_3_qubits",
+      "max_absolute_error": 1.2212453270876722e-15,
+      "absolute_tolerance": 5e-13,
+      "status": "ACCEPT",
+      "input_sha256": [
+        "25d5205e827abfdce3a13144fd2ba1ce99dbb90ca254cca8c1760cbef14d8fcc",
+        "6ef096e8f4796048f83d153f9bc8afd98841a77a9359648c1d9320a2cee1427f"
+      ],
+      "measured": 0.5113784710401382,
+      "reference": 0.511378471040137,
+      "fixture_seeds": [
+        1803,
+        1903
+      ]
+    },
+    {
+      "name": "mixed_trace_distance_3_qubits",
+      "max_absolute_error": 0.0,
+      "absolute_tolerance": 5e-13,
+      "status": "ACCEPT",
+      "input_sha256": [
+        "25d5205e827abfdce3a13144fd2ba1ce99dbb90ca254cca8c1760cbef14d8fcc",
+        "6ef096e8f4796048f83d153f9bc8afd98841a77a9359648c1d9320a2cee1427f"
+      ],
+      "measured": 0.5645528555259962,
+      "reference": 0.5645528555259962,
+      "fixture_seeds": [
+        1803,
+        1903
+      ]
+    },
+    {
+      "name": "mixed_bures_distance_3_qubits",
+      "max_absolute_error": 9.992007221626409e-16,
+      "absolute_tolerance": 5e-13,
+      "status": "ACCEPT",
+      "input_sha256": [
+        "25d5205e827abfdce3a13144fd2ba1ce99dbb90ca254cca8c1760cbef14d8fcc",
+        "6ef096e8f4796048f83d153f9bc8afd98841a77a9359648c1d9320a2cee1427f"
+      ],
+      "measured": 0.7548412888120473,
+      "reference": 0.7548412888120463,
+      "fixture_seeds": [
+        1803,
+        1903
+      ]
+    },
+    {
+      "name": "mixed_squared_fidelity_4_qubits",
+      "max_absolute_error": 6.661338147750939e-16,
+      "absolute_tolerance": 5e-13,
+      "status": "ACCEPT",
+      "input_sha256": [
+        "bb1db33b87b7f4a04ccce9426b72e84a1fc19981770c641a385a5e9915297576",
+        "df9174d937c29fb368ba2c60b9fe54a31f09dcdcad3bd1f0c237e97c1b72ffcd"
+      ],
+      "measured": 0.5511215003797244,
+      "reference": 0.5511215003797237,
+      "fixture_seeds": [
+        1804,
+        1904
+      ]
+    },
+    {
+      "name": "mixed_trace_distance_4_qubits",
+      "max_absolute_error": 3.3306690738754696e-16,
+      "absolute_tolerance": 5e-13,
+      "status": "ACCEPT",
+      "input_sha256": [
+        "bb1db33b87b7f4a04ccce9426b72e84a1fc19981770c641a385a5e9915297576",
+        "df9174d937c29fb368ba2c60b9fe54a31f09dcdcad3bd1f0c237e97c1b72ffcd"
+      ],
+      "measured": 0.5892348233929929,
+      "reference": 0.5892348233929926,
+      "fixture_seeds": [
+        1804,
+        1904
+      ]
+    },
+    {
+      "name": "mixed_bures_distance_4_qubits",
+      "max_absolute_error": 5.551115123125783e-16,
+      "absolute_tolerance": 5e-13,
+      "status": "ACCEPT",
+      "input_sha256": [
+        "bb1db33b87b7f4a04ccce9426b72e84a1fc19981770c641a385a5e9915297576",
+        "df9174d937c29fb368ba2c60b9fe54a31f09dcdcad3bd1f0c237e97c1b72ffcd"
+      ],
+      "measured": 0.7178083601398513,
+      "reference": 0.7178083601398518,
+      "fixture_seeds": [
+        1804,
+        1904
+      ]
+    }
+  ],
+  "status": "ACCEPT",
+  "independence_limit": "Independent APIs and implementations share NumPy/SciPy and BLAS; not independent hardware or all mathematical algorithms."
+}

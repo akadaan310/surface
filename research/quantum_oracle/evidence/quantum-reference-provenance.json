@@ -1,0 +1,14 @@
+[
+  {
+    "requested_url": "https://quantum.cloud.ibm.com/docs/en/guides/bit-ordering",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "requested_url": "https://quantum.cloud.ibm.com/learning/en/courses/general-formulation-of-quantum-information/quantum-channels/representations-of-channels",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "requested_url": "https://quantum.cloud.ibm.com/docs/en/api/qiskit/quantum_info",
+    "error": "HTTP Error 403: Forbidden"
+  }
+]

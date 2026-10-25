@@ -1,0 +1,9 @@
+{"type": "progress", "epoch": 1, "milestone": "adapter-started"}
+{
+  "status": "PASS",
+  "checked_files": 621,
+  "checked_bytes": 78637471,
+  "receipt_sha256": "821b25643300b8db5b7d1dee68c7f9362ca0efccd160210bf14c06a8f4a4174c",
+  "tolerance": "pinned immutable receipt, exact file census, SHA-256 and byte length; zero mismatches"
+}
+{"type": "progress", "epoch": 1, "milestone": "adapter-finished"}

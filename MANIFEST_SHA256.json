@@ -2654,6 +2654,27 @@
       "sha256": "eb430f4a71f296059901fd383edf8f128c0b4795c2df737eb1ef99e1d98ab120"
     },
     {
+      "bytes": 4312,
+      "git_blob_sha1": "0edd42408c66abd2018c5998d97c4339fa1652d5",
+      "git_mode": "100644",
+      "path": "research/quantum_oracle/discovery-contract.md",
+      "sha256": "c0e8c319e49173a664fe99f13b132d279f454bbd7eec0024c3a3a29278e56088"
+    },
+    {
+      "bytes": 13330,
+      "git_blob_sha1": "2f41c52a6dd6359b43b0c395b01f7260fbca2045",
+      "git_mode": "100644",
+      "path": "research/quantum_oracle/discovery.py",
+      "sha256": "f0110d5212ceca6e173e33f1378281246afa32b3f29a2068ef69b7404879a1c6"
+    },
+    {
+      "bytes": 16089,
+      "git_blob_sha1": "6cd1dc58665c6150adcccd812c527b6ff7773149",
+      "git_mode": "100644",
+      "path": "research/quantum_oracle/evidence/backend-comparison.json",
+      "sha256": "ca30d6e1bb143773cb913392c3c2254dfe9e594e68b5b26d9178786070ccc9c1"
+    },
+    {
       "bytes": 1245,
       "git_blob_sha1": "4775bf6f6c6c85e20923dbb057fcbb62b6958d4b",
       "git_mode": "100644",
@@ -2682,6 +2703,195 @@
       "sha256": "1bc81cac9034e93a4387864854a744a7343f7dd630d4c4c4d3e187ffe63ec8ae"
     },
     {
+      "bytes": 1367,
+      "git_blob_sha1": "730fa4a77aab56b9bb98259a91dca887ea15f3fb",
+      "git_mode": "100644",
+      "path": "research/quantum_oracle/evidence/commission-run-001/execution-inputs.json",
+      "sha256": "a88a0d783b24e74b4ef3a2326b2548c5706939a08417987019877f02c6fce128"
+    },
+    {
+      "bytes": 1068,
+      "git_blob_sha1": "967b8e6ce1283daf7648f02a32b7fec8f274819e",
+      "git_mode": "100644",
+      "path": "research/quantum_oracle/evidence/commission-run-001/jobs/foundation-check/committed/1/evidence.json",
+      "sha256": "3396c1cd0d689f1b2ca3e8972763aa5b3200b3864852579526ad148c2a5909e6"
+    },
+    {
+      "bytes": 221,
+      "git_blob_sha1": "94b313df6ef7c94101981a36259390caeefe25a6",
+      "git_mode": "100644",
+      "path": "research/quantum_oracle/evidence/commission-run-001/jobs/foundation-check/committed/1/manifest.json",
+      "sha256": "c257c0b5f623ea3ff33f8d97e854128e994a72b2c6a803b95c7d93a05257fd0f"
+    },
+    {
+      "bytes": 221,
+      "git_blob_sha1": "94b313df6ef7c94101981a36259390caeefe25a6",
+      "git_mode": "100644",
+      "path": "research/quantum_oracle/evidence/commission-run-001/jobs/foundation-check/current.json",
+      "sha256": "c257c0b5f623ea3ff33f8d97e854128e994a72b2c6a803b95c7d93a05257fd0f"
+    },
+    {
+      "bytes": 12,
+      "git_blob_sha1": "7d57495db00fa028c60d0d9856aa89cbabf4febf",
+      "git_mode": "100644",
+      "path": "research/quantum_oracle/evidence/commission-run-001/jobs/foundation-check/fence.json",
+      "sha256": "29a9dcddcffc1d077d12d090c3a0c1ed05945f0c9561d5d2aa37019461dee2c0"
+    },
+    {
+      "bytes": 2050,
+      "git_blob_sha1": "238dcfbb1f9e8efab523d360496a5323e61d9402",
+      "git_mode": "100644",
+      "path": "research/quantum_oracle/evidence/commission-run-001/jobs/foundation-check/journal.jsonl",
+      "sha256": "c0f20cb36f4a3fcefe92e4bc61a0aefdfe102688b265227e03286023fe4bf0cd"
+    },
+    {
+      "bytes": 0,
+      "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "git_mode": "100644",
+      "path": "research/quantum_oracle/evidence/commission-run-001/jobs/foundation-check/lock",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 399,
+      "git_blob_sha1": "e388ffcf086d223f30979d9c38c05f2f0fb4e323",
+      "git_mode": "100644",
+      "path": "research/quantum_oracle/evidence/commission-run-001/jobs/foundation-check/logs/1.log",
+      "sha256": "999f13d5bdf4dd2110c5df2740ef6291ebf7626cdfb053da93faf6d54123cffa"
+    },
+    {
+      "bytes": 1380,
+      "git_blob_sha1": "eda864f88265c12fa5d77683198746a0af3a2170",
+      "git_mode": "100644",
+      "path": "research/quantum_oracle/evidence/commission-run-001/jobs/foundation-check/resume.json",
+      "sha256": "b5f1305c13aa074e90ed7550e9e5a005af30cac8ed4a51c1c099dcc5e5214498"
+    },
+    {
+      "bytes": 1068,
+      "git_blob_sha1": "967b8e6ce1283daf7648f02a32b7fec8f274819e",
+      "git_mode": "100644",
+      "path": "research/quantum_oracle/evidence/commission-run-001/jobs/foundation-check/stages/1/evidence.json",
+      "sha256": "3396c1cd0d689f1b2ca3e8972763aa5b3200b3864852579526ad148c2a5909e6"
+    },
+    {
+      "bytes": 948,
+      "git_blob_sha1": "9d53de10c5873ef809d34f84fd3ba0044a318d37",
+      "git_mode": "100644",
+      "path": "research/quantum_oracle/evidence/commission-run-001/jobs/source-check/committed/1/evidence.json",
+      "sha256": "294239ac859bb6b1ee6c509f835d18b0e75520808a2c45c4c7ab541afc27e854"
+    },
+    {
+      "bytes": 220,
+      "git_blob_sha1": "2365bc840642221a0d5adf86f5bd4e7c57466181",
+      "git_mode": "100644",
+      "path": "research/quantum_oracle/evidence/commission-run-001/jobs/source-check/committed/1/manifest.json",
+      "sha256": "f49ada1cc27a0b20ea75d9c961033d6a79ccfa3a47b8bc2f6571eca6708ed91b"
+    },
+    {
+      "bytes": 220,
+      "git_blob_sha1": "2365bc840642221a0d5adf86f5bd4e7c57466181",
+      "git_mode": "100644",
+      "path": "research/quantum_oracle/evidence/commission-run-001/jobs/source-check/current.json",
+      "sha256": "f49ada1cc27a0b20ea75d9c961033d6a79ccfa3a47b8bc2f6571eca6708ed91b"
+    },
+    {
+      "bytes": 12,
+      "git_blob_sha1": "7d57495db00fa028c60d0d9856aa89cbabf4febf",
+      "git_mode": "100644",
+      "path": "research/quantum_oracle/evidence/commission-run-001/jobs/source-check/fence.json",
+      "sha256": "29a9dcddcffc1d077d12d090c3a0c1ed05945f0c9561d5d2aa37019461dee2c0"
+    },
+    {
+      "bytes": 2034,
+      "git_blob_sha1": "556f2e2d85217b54ae4706c19b36c3bd6c2a9ed7",
+      "git_mode": "100644",
+      "path": "research/quantum_oracle/evidence/commission-run-001/jobs/source-check/journal.jsonl",
+      "sha256": "a95fe8cafaa6c3a0d8e7ed9f80164a82e3ccccb59ca8eb6dc9a422483dcf810e"
+    },
+    {
+      "bytes": 0,
+      "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "git_mode": "100644",
+      "path": "research/quantum_oracle/evidence/commission-run-001/jobs/source-check/lock",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 131,
+      "git_blob_sha1": "5e2f16c2ce641ca54f01ccadc4870d4efd81ca90",
+      "git_mode": "100644",
+      "path": "research/quantum_oracle/evidence/commission-run-001/jobs/source-check/logs/1.log",
+      "sha256": "c657188e57d365cdcf298a5ba40eebb6d83d22def06f3a83e37c94f2e5b73936"
+    },
+    {
+      "bytes": 1365,
+      "git_blob_sha1": "511cdabe5677684a314f0a36a2294b601c321854",
+      "git_mode": "100644",
+      "path": "research/quantum_oracle/evidence/commission-run-001/jobs/source-check/resume.json",
+      "sha256": "7a4e71040f84ceb322dd656fc296e615d363f261d7fefd761bde083056f93263"
+    },
+    {
+      "bytes": 948,
+      "git_blob_sha1": "9d53de10c5873ef809d34f84fd3ba0044a318d37",
+      "git_mode": "100644",
+      "path": "research/quantum_oracle/evidence/commission-run-001/jobs/source-check/stages/1/evidence.json",
+      "sha256": "294239ac859bb6b1ee6c509f835d18b0e75520808a2c45c4c7ab541afc27e854"
+    },
+    {
+      "bytes": 780,
+      "git_blob_sha1": "a2629161509d4fd0bfc3c7eb9c8bdd5a04d6c0d2",
+      "git_mode": "100644",
+      "path": "research/quantum_oracle/evidence/commission-run-001/journal.jsonl",
+      "sha256": "37f242d5b9d1040574020fb5cef744ef953ec9dc58451780be8a74f4d19ad5be"
+    },
+    {
+      "bytes": 0,
+      "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "git_mode": "100644",
+      "path": "research/quantum_oracle/evidence/commission-run-001/lock",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 571,
+      "git_blob_sha1": "f946cb01b68c03aee75d2ad227c36b72a1ea5c20",
+      "git_mode": "100644",
+      "path": "research/quantum_oracle/evidence/commission-run-001/receipts/foundation-check.json",
+      "sha256": "28d614d9f434e9a547358e92a339d3ac8c298bc9f50dcc50c4e11ff883de67ad"
+    },
+    {
+      "bytes": 566,
+      "git_blob_sha1": "86063781c0e86d5fa6445f4858d28ec0a3632792",
+      "git_mode": "100644",
+      "path": "research/quantum_oracle/evidence/commission-run-001/receipts/source-check.json",
+      "sha256": "6ebf3a44574359b639c2da99bc228df50a3ba852f97ebcffa61245cb46df7155"
+    },
+    {
+      "bytes": 467,
+      "git_blob_sha1": "489ba073ba42a34b4c7a30445836c91045e61b2c",
+      "git_mode": "100644",
+      "path": "research/quantum_oracle/evidence/commission-run-001/run.json",
+      "sha256": "eed4d849f98281b12f31ae0749abcd40db4a59644a26ea267c2672a5778ca223"
+    },
+    {
+      "bytes": 1444,
+      "git_blob_sha1": "a39c76bfb6fd480898eaf6ab65dfd79389721adc",
+      "git_mode": "100644",
+      "path": "research/quantum_oracle/evidence/commission-run-001/summaries/000001.json",
+      "sha256": "4e34ef6795e2f1fb01144a5934543c67e0106cfa102e212b02effec69bc640b4"
+    },
+    {
+      "bytes": 7770,
+      "git_blob_sha1": "89de5ebff7934022125ec00d548ed310e78ec14f",
+      "git_mode": "100644",
+      "path": "research/quantum_oracle/evidence/core-unit-tests.log",
+      "sha256": "c0c561fe8e28a151c81fafdd0ec29a8adc75ebd179d48f3d73f720c0a89b3617"
+    },
+    {
+      "bytes": 2210,
+      "git_blob_sha1": "2e8ebf83544cd8f5c1471680e710d33a6d09c7b0",
+      "git_mode": "100644",
+      "path": "research/quantum_oracle/evidence/core-verification.json",
+      "sha256": "22e2c11001e55030b5f14f8f6fe29d91322684431913726410fc06453c3053bd"
+    },
+    {
       "bytes": 1811,
       "git_blob_sha1": "5f7dd33ed7ff026ceee39b749de9de3cc5653e31",
       "git_mode": "100644",
@@ -2701,6 +2911,13 @@
       "git_mode": "100644",
       "path": "research/quantum_oracle/evidence/custody-audit.json",
       "sha256": "6e4bee90a47f9917a2cd7a363fa704b0148e8768fd0d40ac1d4b748b7ca30f3a"
+    },
+    {
+      "bytes": 1816,
+      "git_blob_sha1": "dd1f6de95a762071cad8be3043a19af82b2e69eb",
+      "git_mode": "100644",
+      "path": "research/quantum_oracle/evidence/dependencies.json",
+      "sha256": "3bea2069539896fd190724465e1e85e2e2bc6638cdf26e14478f83d1eef8bbdf"
     },
     {
       "bytes": 424,
@@ -2731,6 +2948,27 @@
       "sha256": "8682bd3b4ac2eaf2b1fbc82c3e9220036ceae1bebd0b9fa4ab0d6c523aaf772c"
     },
     {
+      "bytes": 483,
+      "git_blob_sha1": "35850edd6b54988c299cb19dda0ebd26323ad477",
+      "git_mode": "100644",
+      "path": "research/quantum_oracle/evidence/quantum-reference-provenance.json",
+      "sha256": "e7a68e40aace7a057925964b0d7796e84ed4a814b148e280a706d615093d5da2"
+    },
+    {
+      "bytes": 25139,
+      "git_blob_sha1": "68a8cd401b97852707454ce1e35619549942152c",
+      "git_mode": "100644",
+      "path": "research/quantum_oracle/evidence/quantum-reference-web-extraction.json",
+      "sha256": "e46177ae3dfd2271880331aa2432f992c474f155ddeb79d9228e75da95497983"
+    },
+    {
+      "bytes": 3707,
+      "git_blob_sha1": "90c338c3ec5912e91e00d62d3d40a2b12ed2e5b9",
+      "git_mode": "100644",
+      "path": "research/quantum_oracle/evidence/review-probes.py",
+      "sha256": "86a608328b2b6f8586bb88e639e00932f4f0d6b33aeb251bec9c884b1dfe8961"
+    },
+    {
       "bytes": 1394,
       "git_blob_sha1": "6d89ae1908a2f2b7eb290970c321571f19e74b15",
       "git_mode": "100644",
@@ -2743,6 +2981,90 @@
       "git_mode": "100644",
       "path": "research/quantum_oracle/evidence/verify_custody_audit.py",
       "sha256": "978cc5539ce1a1b98e09a4120a241b78657c1a950261baf947fefd5d6ce994af"
+    },
+    {
+      "bytes": 13794,
+      "git_blob_sha1": "3c542738307816a88159973f64b8b1466ddccf0f",
+      "git_mode": "100644",
+      "path": "research/quantum_oracle/quantum-contract.md",
+      "sha256": "db22fb70d3c0dbe6c141430356ff5d5751f79b9332335b55bdbd38c31c2018dd"
+    },
+    {
+      "bytes": 24982,
+      "git_blob_sha1": "9b62be371c47325b69b92e433b66a6b22917666c",
+      "git_mode": "100644",
+      "path": "research/quantum_oracle/quantum.py",
+      "sha256": "557f02365462a070f0f5e4e8a558eb0a3222c759b83aedae856f7b789f84f6cd"
+    },
+    {
+      "bytes": 667,
+      "git_blob_sha1": "dc65e78e74cf474e15fa1c7f1eceebd43668cc38",
+      "git_mode": "100644",
+      "path": "research/quantum_oracle/requirements-linux-aarch64-py310.lock",
+      "sha256": "99df20b682c0f70ba9c99210838a508ad72956877692f9ff15329407e6aad656"
+    },
+    {
+      "bytes": 114,
+      "git_blob_sha1": "4331ffacc3ae396f4eb51bbe19194c3bdb797cdc",
+      "git_mode": "100644",
+      "path": "research/quantum_oracle/requirements.txt",
+      "sha256": "d0fdbdf67ee806aa61b44d13d4c702a5c5e8f51d0f7322118ad11c6c56bd2dca"
+    },
+    {
+      "bytes": 9949,
+      "git_blob_sha1": "6cabe2b1f2acd74ba79698dfa88bddcba7256a74",
+      "git_mode": "100644",
+      "path": "research/quantum_oracle/run.py",
+      "sha256": "6b05cc5e99de5ee33040495af5dababc59135e67bcdd1ee6644c53f51cf49722"
+    },
+    {
+      "bytes": 14905,
+      "git_blob_sha1": "d1131c3fc3cec61e2825b17918ff616748d62803",
+      "git_mode": "100644",
+      "path": "research/quantum_oracle/spaces-contract.md",
+      "sha256": "0500edef0445745d4e972b4cb3d57856850b42bce82850becad85991322c7b09"
+    },
+    {
+      "bytes": 27646,
+      "git_blob_sha1": "a0ae8edde01c4748224382b7ad45984ef217ff91",
+      "git_mode": "100644",
+      "path": "research/quantum_oracle/spaces.py",
+      "sha256": "632e368cd04ae4c1a28916886f17e7fab34886f59559295ad24401bff4b9069c"
+    },
+    {
+      "bytes": 2990,
+      "git_blob_sha1": "1a9ce9665f512db817d4c09832b552122778cb6e",
+      "git_mode": "100644",
+      "path": "research/quantum_oracle/tests/test_discovery.py",
+      "sha256": "fc1ad4a3835c8168847813000698126bea63edc603dd9f6759deeaeae7e6c043"
+    },
+    {
+      "bytes": 7938,
+      "git_blob_sha1": "a03e817bdcb94729231a54f8c88b9ecf82e23b61",
+      "git_mode": "100644",
+      "path": "research/quantum_oracle/tests/test_qiskit_reference.py",
+      "sha256": "a254b8d6b5a07482c7ac3d0e476ca2552d1dc99abbd1ebdfcfb718a2708c2b9b"
+    },
+    {
+      "bytes": 18954,
+      "git_blob_sha1": "3ac10d3134ae3632adefdd10c04cab3a334f6e6b",
+      "git_mode": "100644",
+      "path": "research/quantum_oracle/tests/test_quantum.py",
+      "sha256": "73fa131f2211a4582d1e93702ef557d7b2f964c7e367c473a79d70a531db4397"
+    },
+    {
+      "bytes": 1857,
+      "git_blob_sha1": "87fb9d57f66f826ef8c4d5f02d7b5c9138c2f31a",
+      "git_mode": "100644",
+      "path": "research/quantum_oracle/tests/test_runner.py",
+      "sha256": "c859f544c29c5d3c7e3053862fa18c92411843b7549415e75d7ef447dac3a77e"
+    },
+    {
+      "bytes": 16476,
+      "git_blob_sha1": "d4e47b209a674e1b85a1c55beb0f9e9ec7ab9df2",
+      "git_mode": "100644",
+      "path": "research/quantum_oracle/tests/test_spaces.py",
+      "sha256": "faaba559b004a672c6bba1b6524d227a2cd153e183e64b2aa739630221300edf"
     },
     {
       "bytes": 2806,

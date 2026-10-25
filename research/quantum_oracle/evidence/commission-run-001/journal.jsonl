@@ -1,0 +1,4 @@
+{"bundle_manifest_sha256":"a3d7f6e13b705cecad18258f3ffa14a04884b3f492e6b8375368479b923e62b0","deadline_wall":1792947794.0794432,"event":"run-start","run_sha256":"eed4d849f98281b12f31ae0749abcd40db4a59644a26ea267c2672a5778ca223","wall_time":1792947614.0832672}
+{"event":"task-receipt","receipt_sha256":"6ebf3a44574359b639c2da99bc228df50a3ba852f97ebcffa61245cb46df7155","status":"SUCCEEDED","task_id":"source-check","wall_time":1792947614.263675}
+{"event":"task-receipt","receipt_sha256":"28d614d9f434e9a547358e92a339d3ac8c298bc9f50dcc50c4e11ff883de67ad","status":"SUCCEEDED","task_id":"foundation-check","wall_time":1792947614.79728}
+{"event":"run-summary","execution_status":"TASKS_SUCCEEDED","generation":1,"scientific_acceptance":"NOT_EVALUATED","wall_time":1792947614.8028276}

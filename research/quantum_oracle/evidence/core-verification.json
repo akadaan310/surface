@@ -1,0 +1,37 @@
+{
+  "schema": "quantum-oracle.core-verification.v1",
+  "command": [
+    "/home/ubuntu/Documents/Codex/2026-10-25-substrate-phantom-quantum-oracle-scientific-completion/surface/.venv/bin/python",
+    "-B",
+    "-m",
+    "unittest",
+    "research.quantum_oracle.tests.test_quantum",
+    "research.quantum_oracle.tests.test_qiskit_reference",
+    "research.quantum_oracle.tests.test_spaces",
+    "research.quantum_oracle.tests.test_discovery",
+    "research.quantum_oracle.tests.test_runner",
+    "-v"
+  ],
+  "returncode": 0,
+  "test_count": 63,
+  "source_sha256": {
+    "research/quantum_oracle/quantum.py": "557f02365462a070f0f5e4e8a558eb0a3222c759b83aedae856f7b789f84f6cd",
+    "research/quantum_oracle/spaces.py": "632e368cd04ae4c1a28916886f17e7fab34886f59559295ad24401bff4b9069c",
+    "research/quantum_oracle/discovery.py": "f0110d5212ceca6e173e33f1378281246afa32b3f29a2068ef69b7404879a1c6",
+    "research/quantum_oracle/run.py": "6b05cc5e99de5ee33040495af5dababc59135e67bcdd1ee6644c53f51cf49722",
+    "research/quantum_oracle/tests/test_quantum.py": "73fa131f2211a4582d1e93702ef557d7b2f964c7e367c473a79d70a531db4397",
+    "research/quantum_oracle/tests/test_qiskit_reference.py": "a254b8d6b5a07482c7ac3d0e476ca2552d1dc99abbd1ebdfcfb718a2708c2b9b",
+    "research/quantum_oracle/tests/test_spaces.py": "faaba559b004a672c6bba1b6524d227a2cd153e183e64b2aa739630221300edf",
+    "research/quantum_oracle/tests/test_discovery.py": "fc1ad4a3835c8168847813000698126bea63edc603dd9f6759deeaeae7e6c043",
+    "research/quantum_oracle/tests/test_runner.py": "c859f544c29c5d3c7e3053862fa18c92411843b7549415e75d7ef447dac3a77e",
+    "research/quantum_oracle/evidence/review-probes.py": "86a608328b2b6f8586bb88e639e00932f4f0d6b33aeb251bec9c884b1dfe8961"
+  },
+  "output_sha256": {
+    "core-unit-tests.log": "c0c561fe8e28a151c81fafdd0ec29a8adc75ebd179d48f3d73f720c0a89b3617"
+  },
+  "status": "PASS",
+  "scope": "Finite typed mathematical operators and controls only; full initiative UNKNOWN; no hardware/device/physical calibration claim",
+  "platform": "Linux-6.8.0-1060-oracle-aarch64-with-glibc2.35",
+  "python": "3.10.12",
+  "basis": "source hashes bind the exact reviewed increment, future additions need new receipts"
+}
