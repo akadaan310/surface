@@ -1,0 +1,70 @@
+{
+  "schema": "quantum-oracle.dependencies.v1",
+  "platform": "CPython3.10 Linux aarch64",
+  "wheels": [
+    {
+      "file": "astropy-6.1.7-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+      "bytes": 9892774,
+      "sha256": "55c78252633c644361e2f7092d71f80ef9c2e6649f08d97711d9f19af514aedc"
+    },
+    {
+      "file": "astropy_iers_data-0.2026.10.19.0.52.1-py3-none-any.whl",
+      "bytes": 2005913,
+      "sha256": "14665720aa481c7b97dfd104d7218b38ed7e2ba30a70ff53a5c26a0e14d4025c"
+    },
+    {
+      "file": "dill-0.4.1-py3-none-any.whl",
+      "bytes": 120019,
+      "sha256": "1e1ce33e978ae97fcfcff5638477032b801c46c7c65cf717f95fbc2248f79a9d"
+    },
+    {
+      "file": "numpy-2.2.6-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+      "bytes": 14297320,
+      "sha256": "efd28d4e9cd7d7a8d39074a4d44c63eda73401580c5c76acda2ce969e0a38e83"
+    },
+    {
+      "file": "packaging-26.3-py3-none-any.whl",
+      "bytes": 129956,
+      "sha256": "d7193f7c8e4e93f444fde0262bf90af30e16fa0ad0ad44cb553c87339b23cd1c"
+    },
+    {
+      "file": "pyerfa-2.0.1.5-cp39-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+      "bytes": 692794,
+      "sha256": "b0603e8e1b839327d586c8a627cdc634b795e18b007d84f0cda5500a0908254e"
+    },
+    {
+      "file": "pyyaml-6.0.3-cp310-cp310-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl",
+      "bytes": 740646,
+      "sha256": "b30236e45cf30d2b8e7b3e85881719e98507abed1011bf463a8fa23e9c3e98a8"
+    },
+    {
+      "file": "qiskit-2.2.3-cp39-abi3-manylinux2014_aarch64.manylinux_2_17_aarch64.whl",
+      "bytes": 7721671,
+      "sha256": "3dc5071cd8c4e7a7b9685557dada82a125bcf9eb319e8c2b9d86ecd0b524baa9"
+    },
+    {
+      "file": "rustworkx-0.18.1-cp310-abi3-manylinux_2_28_aarch64.whl",
+      "bytes": 2157792,
+      "sha256": "c42a0a52463ff78c0dd03426efa7b40b17b433689c2a5ab6aaaf14173c2a9e31"
+    },
+    {
+      "file": "scipy-1.15.3-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+      "bytes": 35547617,
+      "sha256": "263961f658ce2165bbd7b99fa5135195c3a12d9bef045345016b8b50c315cb82"
+    },
+    {
+      "file": "stevedore-5.8.0-py3-none-any.whl",
+      "bytes": 54553,
+      "sha256": "88eede9e66ca80e34085b9174e2327da2c61ac91f24f70e41c3ad76e4bb4872b"
+    },
+    {
+      "file": "typing_extensions-4.16.0-py3-none-any.whl",
+      "bytes": 45571,
+      "sha256": "481caa481374e813c1b176ada14e97f1f67a4539ce9cfeb3f350d78d6370c2e8"
+    }
+  ],
+  "prior_receipt": "dependencies.json",
+  "additional_scope": "Astropy FITS/WCS comparison",
+  "package_index": "https://pypi.org/",
+  "qutip": "NOT_INSTALLED; prior bounded source-build attempt retained"
+}

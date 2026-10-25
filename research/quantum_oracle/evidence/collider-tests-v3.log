@@ -1,0 +1,20 @@
+test_analysis_and_optional_limits_reject_malformed_types (test_collider.ColliderTests) ... ok
+test_complete_observed_file_and_published_identity_are_preserved (test_collider.ColliderTests) ... ok
+test_counterexample_budget_rejects_without_silent_truncation (test_collider.ColliderTests) ... ok
+test_deterministic_archive_reconstructs_exact_bytes (test_collider.ColliderTests) ... ok
+test_empty_event_table_has_explicit_format_error (test_collider.ColliderTests) ... ok
+test_exact_source_offsets_and_large_integer_identifiers (test_collider.ColliderTests) ... ok
+test_format_limits_finite_and_integer_grammar_rejection (test_collider.ColliderTests) ... ok
+test_gzip_bomb_and_source_tampering_reject (test_collider.ColliderTests) ... ok
+test_negative_spacelike_nonfinite_and_units_reject_explicitly (test_collider.ColliderTests) ... ok
+test_pair_negative_central_mass_is_retained_without_zero_clipping (test_collider.ColliderTests) ... ok
+test_rounding_interval_derived_from_each_original_token (test_collider.ColliderTests) ... ok
+test_source_reconstruction_handles_crlf_and_preserves_duplicate_ids (test_collider.ColliderTests) ... ok
+test_synthetic_back_to_back_invariant_and_scalar_vector_agreement (test_collider.ColliderTests) ... ok
+test_synthetic_lorentz_boost_preserves_mass_and_has_declared_direction (test_collider.ColliderTests) ... ok
+test_unverified_fixture_is_not_labelled_cern_observation (test_collider.ColliderTests) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 15.750s
+
+OK

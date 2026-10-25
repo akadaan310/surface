@@ -1,0 +1,29 @@
+{
+  "attempts": 1,
+  "elapsed": 18.683599098585546,
+  "epoch": 1,
+  "published": [
+    {
+      "bytes": 9300,
+      "name": "tests.log",
+      "path": "committed/1/tests.log",
+      "sha256": "a081954713fe84b4b031ff3163518a44dfcf5c82956fadbda7dd63f35ca8a81e"
+    },
+    {
+      "bytes": 76523,
+      "name": "discovery.json",
+      "path": "committed/1/discovery.json",
+      "sha256": "ba7da4b84a855ccc4bfa69c0b85ceced2a603b0ad2847a297573db3178745fbb"
+    },
+    {
+      "bytes": 5035,
+      "name": "verification.json",
+      "path": "committed/1/verification.json",
+      "sha256": "8e2fd2b92043af93571add9a8d4099d1d6c1a076912f82230cd275558fe8c8fb"
+    }
+  ],
+  "reason": "success",
+  "returncode": 0,
+  "status": "succeeded",
+  "task_id": "scientific-reference"
+}

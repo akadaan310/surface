@@ -1,0 +1,190 @@
+{
+  "astropy_version": "6.1.7",
+  "calibration": {
+    "reason": "No density-to-intensity/flux response or calibrated PSF supplied",
+    "status": "UNKNOWN"
+  },
+  "data_bytes": 1591326,
+  "data_offset": 14400,
+  "flux_claimed": false,
+  "full_dss_vs_local_tan": {
+    "component_differences_degrees": [
+      [
+        2.4017023449118824e-05,
+        3.144083500172812e-05
+      ],
+      [
+        4.9071094878172516e-05,
+        3.475697725408011e-05
+      ],
+      [
+        5.566075600427212e-06,
+        2.2020029369684835e-05
+      ],
+      [
+        3.1575034540765046e-05,
+        3.6076363409964785e-05
+      ]
+    ],
+    "full_dss_independent_validation": "UNKNOWN",
+    "max_difference_degrees": 4.9071094878172516e-05,
+    "reason": "DSS plate model differs from local approximation",
+    "warnings": [
+      "'datfix' made the change 'Set MJD-OBS to 48247.575694 from DATE-OBS'."
+    ]
+  },
+  "full_g3": "UNKNOWN",
+  "input_kind": "real digitized photographic plate",
+  "local_tan_comparison": {
+    "coordinates_ra_dec_degrees": [
+      [
+        85.27497,
+        -2.458265
+      ],
+      [
+        85.3996733040297,
+        -2.5831809636607463
+      ],
+      [
+        85.15029003892583,
+        -2.3333374078103146
+      ],
+      [
+        85.33707169755924,
+        -2.4898743835629817
+      ]
+    ],
+    "max_error_degrees": 1.4210854715202004e-14,
+    "points_xy_zero_based": [
+      [
+        445.0,
+        446.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        890.0,
+        892.0
+      ],
+      [
+        223.5,
+        333.25
+      ]
+    ],
+    "scope": "header local TAN approximation; independent inverse-gnomonic formula versus Astropy/WCSLIB",
+    "selected_keywords": [
+      "WCSAXES",
+      "CTYPE1",
+      "CTYPE2",
+      "CUNIT1",
+      "CUNIT2",
+      "CRPIX1",
+      "CRPIX2",
+      "CRVAL1",
+      "CRVAL2",
+      "CD1_1",
+      "CD1_2",
+      "CD2_1",
+      "CD2_2",
+      "RADESYS"
+    ],
+    "status": "ACCEPT",
+    "tolerance_degrees": 1e-11
+  },
+  "observation": {
+    "COPYRGHT": "AAO/ROE",
+    "DATE-OBS": "1990-12-22T13:49:00",
+    "EXPOSURE": 65.0,
+    "INSTRUME": "Photographic Plate",
+    "ORIGIN": "STScI/MAST",
+    "PLATEID": "A0JP",
+    "SURVEY": "SERC-ER"
+  },
+  "opaque_extensions": {
+    "bytes": 43200,
+    "interpretation": "er.mask table retained byte-exact; not treated as a pixel uncertainty array",
+    "offset": 1607040,
+    "sha256": "7657ff352a2d804a37cbf61ae9a4d18f4f8c6003265880019739d1dac7fdfcf1"
+  },
+  "pixel_comparison": {
+    "checked": 795663,
+    "method": "independent raw big-endian int16 view versus Astropy FITS reader",
+    "mismatches": 0,
+    "scope": "integer decoding of this source primary image only",
+    "status": "ACCEPT",
+    "tolerance": 0
+  },
+  "pixel_witnesses": [
+    {
+      "bytes": 2,
+      "dtype": ">i2",
+      "hex": "1c21",
+      "offset": 14400,
+      "source_sha256": "c4bcc0bccbadf1488e4e361c0d8f04255dc344ff401fd4827139b3354eafe863",
+      "value": 7201,
+      "x": 0,
+      "y": 0
+    },
+    {
+      "bytes": 2,
+      "dtype": ">i2",
+      "hex": "19f2",
+      "offset": 14402,
+      "source_sha256": "c4bcc0bccbadf1488e4e361c0d8f04255dc344ff401fd4827139b3354eafe863",
+      "value": 6642,
+      "x": 1,
+      "y": 0
+    },
+    {
+      "bytes": 2,
+      "dtype": ">i2",
+      "hex": "19f2",
+      "offset": 16182,
+      "source_sha256": "c4bcc0bccbadf1488e4e361c0d8f04255dc344ff401fd4827139b3354eafe863",
+      "value": 6642,
+      "x": 0,
+      "y": 1
+    },
+    {
+      "bytes": 2,
+      "dtype": ">i2",
+      "hex": "18a2",
+      "offset": 810062,
+      "source_sha256": "c4bcc0bccbadf1488e4e361c0d8f04255dc344ff401fd4827139b3354eafe863",
+      "value": 6306,
+      "x": 445,
+      "y": 446
+    },
+    {
+      "bytes": 2,
+      "dtype": ">i2",
+      "hex": "3102",
+      "offset": 1605724,
+      "source_sha256": "c4bcc0bccbadf1488e4e361c0d8f04255dc344ff401fd4827139b3354eafe863",
+      "value": 12546,
+      "x": 890,
+      "y": 892
+    }
+  ],
+  "schema": "quantum-oracle.fits-observation/1",
+  "shape_yx": [
+    893,
+    891
+  ],
+  "source_bytes": 1650240,
+  "source_reconstruction": "image.raw retains every original byte",
+  "source_sha256": "c4bcc0bccbadf1488e4e361c0d8f04255dc344ff401fd4827139b3354eafe863",
+  "statistics": {
+    "maximum": 22918,
+    "mean": 9831.481676287574,
+    "minimum": 3759,
+    "unit": "uncalibrated photographic digitization values"
+  },
+  "time_scale": "UNKNOWN; DATE-OBS retained without invented time-scale/barycentric conversion",
+  "uncertainty": {
+    "reason": "No validated per-pixel uncertainty/covariance model supplied",
+    "status": "UNKNOWN"
+  }
+}

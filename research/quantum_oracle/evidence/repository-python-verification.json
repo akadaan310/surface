@@ -1,0 +1,28 @@
+{
+  "schema": "quantum-oracle.repository-regression.v1",
+  "command": [
+    "/home/ubuntu/Documents/Codex/2026-10-25-substrate-phantom-quantum-oracle-scientific-completion/surface/.venv/bin/python",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_*.py",
+    "-v"
+  ],
+  "returncode": 0,
+  "test_count": 63,
+  "skipped": 1,
+  "log_sha256": "4461b84a9454acec0b9dcbfa80f961d2b4fe5f0cff19a852196bcf477c8cfc4c",
+  "scope": "Existing Python repository suite only; native source unchanged, no native or Android run",
+  "source_sha256": {
+    "tests/test_commission.py": "b314373b7710cd43f9ce932ba2080b709b0bcfeb8a7cf696d567430410638277",
+    "tests/test_foundation_materializer.py": "ac447dd3d3f462b77ac8e4c5c7b0617b525b4f97067dacfa35a990adda4e456e",
+    "tests/test_initiative.py": "9403e568adae448e3041c4da6fe7ad0363940bbdd54bbcd0040814eb6a9b73fc",
+    "tests/test_polyia_integration.py": "dead2728f6f4438286a3eacc1c6a552e9ed881dd4c1688cd06fede60cbb3b9e4",
+    "tests/test_repository_manifest.py": "88dc4f2adfcc49825e34617fc64c910b41964614ae284759decc853f6e9b92c7",
+    "tests/test_supervisor.py": "98801151eaa9cb5869a9f339270387ce0a79a33203202a0072f5c0b5b3683e59"
+  }
+}

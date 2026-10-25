@@ -1,0 +1,12 @@
+{
+  "schema": "quantum-oracle.runner-fix.v1",
+  "prior_run": "scientific-run-001",
+  "prior_actual_worker_status": "succeeded",
+  "prior_cli_exit": 3,
+  "cause": "Wrapper compared uppercase SUCCEEDED to actual lowercase Supervisor succeeded",
+  "repair": "Shared execution_succeeded predicate; real Supervisor integration regression",
+  "verification": "scientific-run-002",
+  "tests": 100,
+  "scientific_tests_skipped": 0,
+  "full_initiative": "UNKNOWN"
+}

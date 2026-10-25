@@ -1,0 +1,882 @@
+{
+  "schema": "quantum-oracle.coverage.v1",
+  "not_exhaustive": true,
+  "implemented_scope": "Only concrete finite operators listed here; support labels do not grant scientific acceptance",
+  "statuses": [
+    "implemented",
+    "unsupported",
+    "proposed",
+    "scientifically_unresolved"
+  ],
+  "operators": [
+    {
+      "id": "q-state-admission",
+      "family": "states-and-information",
+      "support": "implemented",
+      "scientific_status": "ACCEPT",
+      "scope": "finite reference only; original release gates remain separate",
+      "implementation": {
+        "module": "research.quantum_oracle.quantum",
+        "operators": [
+          "Basis",
+          "ClassicalWord",
+          "BasisIndex",
+          "LogicalQubit",
+          "ByteOffset",
+          "HardwareQubit",
+          "StateVector",
+          "DensityMatrix",
+          "basis_lift",
+          "density",
+          "rebase",
+          "encode_state",
+          "decode_state",
+          "admit_v3_seed"
+        ],
+        "source": "research/quantum_oracle/quantum.py",
+        "sha256": "557f02365462a070f0f5e4e8a558eb0a3222c759b83aedae856f7b789f84f6cd"
+      },
+      "inputs": [
+        "bounded classical word or explicitly ordered normalized complex amplitudes/density entries"
+      ],
+      "outputs": [
+        "typed quantum state; exact endian/basis-bound byte witness"
+      ],
+      "semantics": "Basis injection, PSD trace-one density admission, explicit qubit-order permutation, exact declared binary64 pair encoding",
+      "assumptions": [
+        "classical numerical calculation",
+        "declared binary64 tolerance; exact byte and mathematical equivalence are separate"
+      ],
+      "resource_contract": {
+        "qubits": 4,
+        "word_bits": 64,
+        "dense_dimension": 16
+      },
+      "independent_controls": [
+        "unchanged V3 seed and Oracle conformance",
+        "basis permutation and signed-zero byte controls"
+      ],
+      "perturbation": "Malformed dimensions, nonfinite data, type confusion and model-specific perturbation/null controls in named tests",
+      "replay": ".venv/bin/python -B -m unittest discover -s research/quantum_oracle/tests -v",
+      "evidence": [
+        "evidence/core-verification.json",
+        "evidence/backend-comparison.json",
+        "evidence/scientific-run-002/scientific-reference/committed/1/verification.json"
+      ],
+      "limitations": [
+        "no analog-state exact encoding claim",
+        "no physical hardware address connection",
+        "no full V2 IR ABI"
+      ],
+      "references": [
+        "https://quantum.cloud.ibm.com/docs/en/guides/bit-ordering",
+        "https://quantum.cloud.ibm.com/docs/en/api/qiskit/quantum_info"
+      ],
+      "mathematical_specification": "quantum-contract.md",
+      "numerics": {
+        "dtype": "binary64/complex128; exact integer arithmetic in PHANTOM",
+        "tolerances": "Exact hashes/bytes for custody; per-test analytic/reference tolerances in linked contract, no uniform guarantee across all extreme inputs"
+      }
+    },
+    {
+      "id": "q-unitary-observable",
+      "family": "states-and-information",
+      "support": "implemented",
+      "scientific_status": "ACCEPT",
+      "scope": "finite reference only; original release gates remain separate",
+      "implementation": {
+        "module": "research.quantum_oracle.quantum",
+        "operators": [
+          "Unitary",
+          "Observable",
+          "gate",
+          "controlled_x",
+          "run_circuit",
+          "expectation",
+          "variance"
+        ],
+        "source": "research/quantum_oracle/quantum.py",
+        "sha256": "557f02365462a070f0f5e4e8a558eb0a3222c759b83aedae856f7b789f84f6cd"
+      },
+      "inputs": [
+        "typed state, Hermitian observable, unitary gate or bounded circuit"
+      ],
+      "outputs": [
+        "state or expectation/variance with observable units"
+      ],
+      "semantics": "U state transformation, Born expectation Tr(rho A), variance Tr(rho A^2)-mean^2",
+      "assumptions": [
+        "classical numerical calculation",
+        "declared binary64 tolerance; exact byte and mathematical equivalence are separate"
+      ],
+      "resource_contract": {
+        "qubits": 4,
+        "circuit_steps": 256,
+        "observable_entry_magnitude": 1000000.0
+      },
+      "independent_controls": [
+        "Qiskit phase-sensitive circuits1-4q",
+        "scalar-loop matrices and inverses"
+      ],
+      "perturbation": "Malformed dimensions, nonfinite data, type confusion and model-specific perturbation/null controls in named tests",
+      "replay": ".venv/bin/python -B -m unittest discover -s research/quantum_oracle/tests -v",
+      "evidence": [
+        "evidence/core-verification.json",
+        "evidence/backend-comparison.json",
+        "evidence/scientific-run-002/scientific-reference/committed/1/verification.json"
+      ],
+      "limitations": [
+        "supported finite gate set only; no arbitrary quantum algorithm claim"
+      ],
+      "references": [
+        "https://quantum.cloud.ibm.com/docs/en/guides/bit-ordering",
+        "https://quantum.cloud.ibm.com/docs/en/api/qiskit/quantum_info"
+      ],
+      "mathematical_specification": "quantum-contract.md",
+      "numerics": {
+        "dtype": "binary64/complex128; exact integer arithmetic in PHANTOM",
+        "tolerances": "Exact hashes/bytes for custody; per-test analytic/reference tolerances in linked contract, no uniform guarantee across all extreme inputs"
+      }
+    },
+    {
+      "id": "q-open-channels",
+      "family": "dynamics-noise-control",
+      "support": "implemented",
+      "scientific_status": "ACCEPT",
+      "scope": "finite reference only; original release gates remain separate",
+      "implementation": {
+        "module": "research.quantum_oracle.quantum",
+        "operators": [
+          "QuantumChannel",
+          "StochasticMap",
+          "ProbabilityDistribution",
+          "diagonal_density"
+        ],
+        "source": "research/quantum_oracle/quantum.py",
+        "sha256": "557f02365462a070f0f5e4e8a558eb0a3222c759b83aedae856f7b789f84f6cd"
+      },
+      "inputs": [
+        "density operator and Kraus family; separately classical probability and stochastic matrix"
+      ],
+      "outputs": [
+        "CPTP-evolved density or classical distribution; Choi matrix"
+      ],
+      "semantics": "Kraus map sum K rho Kdagger, completeness sum Kdagger K=I; column stochastic p map is a distinct type",
+      "assumptions": [
+        "classical numerical calculation",
+        "declared binary64 tolerance; exact byte and mathematical equivalence are separate"
+      ],
+      "resource_contract": {
+        "qubits": 4,
+        "kraus_operators": 16
+      },
+      "independent_controls": [
+        "Qiskit Kraus amplitude damping and dephasing",
+        "independent scalar loops",
+        "Choi positivity/partial trace"
+      ],
+      "perturbation": "Malformed dimensions, nonfinite data, type confusion and model-specific perturbation/null controls in named tests",
+      "replay": ".venv/bin/python -B -m unittest discover -s research/quantum_oracle/tests -v",
+      "evidence": [
+        "evidence/core-verification.json",
+        "evidence/backend-comparison.json",
+        "evidence/scientific-run-002/scientific-reference/committed/1/verification.json"
+      ],
+      "limitations": [
+        "no general non-Markovian bath",
+        "no calibrated physical noise inference from a Kraus fixture"
+      ],
+      "references": [
+        "https://quantum.cloud.ibm.com/docs/en/guides/bit-ordering",
+        "https://quantum.cloud.ibm.com/docs/en/api/qiskit/quantum_info"
+      ],
+      "mathematical_specification": "quantum-contract.md",
+      "numerics": {
+        "dtype": "binary64/complex128; exact integer arithmetic in PHANTOM",
+        "tolerances": "Exact hashes/bytes for custody; per-test analytic/reference tolerances in linked contract, no uniform guarantee across all extreme inputs"
+      }
+    },
+    {
+      "id": "q-closed-dynamics",
+      "family": "dynamics-noise-control",
+      "support": "implemented",
+      "scientific_status": "ACCEPT",
+      "scope": "finite reference only; original release gates remain separate",
+      "implementation": {
+        "module": "research.quantum_oracle.quantum",
+        "operators": [
+          "Hamiltonian",
+          "evolve_closed"
+        ],
+        "source": "research/quantum_oracle/quantum.py",
+        "sha256": "557f02365462a070f0f5e4e8a558eb0a3222c759b83aedae856f7b789f84f6cd"
+      },
+      "inputs": [
+        "H/hbar in rad/s, normalized state, time in seconds"
+      ],
+      "outputs": [
+        "closed finite-dimensional evolved state"
+      ],
+      "semantics": "eigenbasis exp(-i Ht/hbar) for constant finite Hermitian Hamiltonian",
+      "assumptions": [
+        "classical numerical calculation",
+        "declared binary64 tolerance; exact byte and mathematical equivalence are separate"
+      ],
+      "resource_contract": {
+        "qubits": 4,
+        "max_abs_time_seconds": 1000000.0,
+        "max_phase": 1000000.0
+      },
+      "independent_controls": [
+        "SciPy matrix exponential",
+        "Pauli analytic and noncommuting fixtures",
+        "time reversal"
+      ],
+      "perturbation": "Malformed dimensions, nonfinite data, type confusion and model-specific perturbation/null controls in named tests",
+      "replay": ".venv/bin/python -B -m unittest discover -s research/quantum_oracle/tests -v",
+      "evidence": [
+        "evidence/core-verification.json",
+        "evidence/backend-comparison.json",
+        "evidence/scientific-run-002/scientific-reference/committed/1/verification.json"
+      ],
+      "limitations": [
+        "no time-dependent control pulse or full field Hamiltonian"
+      ],
+      "references": [
+        "https://quantum.cloud.ibm.com/docs/en/guides/bit-ordering",
+        "https://quantum.cloud.ibm.com/docs/en/api/qiskit/quantum_info",
+        "https://qutip.readthedocs.io/en/stable/guide/dynamics/dynamics-master.html"
+      ],
+      "mathematical_specification": "quantum-contract.md",
+      "numerics": {
+        "dtype": "binary64/complex128; exact integer arithmetic in PHANTOM",
+        "tolerances": "Exact hashes/bytes for custody; per-test analytic/reference tolerances in linked contract, no uniform guarantee across all extreme inputs"
+      }
+    },
+    {
+      "id": "q-measurement",
+      "family": "states-and-information",
+      "support": "implemented",
+      "scientific_status": "ACCEPT",
+      "scope": "finite reference only; original release gates remain separate",
+      "implementation": {
+        "module": "research.quantum_oracle.quantum",
+        "operators": [
+          "measure",
+          "project_measurement",
+          "MeasurementRecord",
+          "MeasurementOutcome",
+          "probabilities"
+        ],
+        "source": "research/quantum_oracle/quantum.py",
+        "sha256": "557f02365462a070f0f5e4e8a558eb0a3222c759b83aedae856f7b789f84f6cd"
+      },
+      "inputs": [
+        "state, builtin integer shots/seed or typed basis outcome"
+      ],
+      "outputs": [
+        "Born distribution, counts or conditional post-measurement state and loss witness"
+      ],
+      "semantics": "Computational-basis projective instrument; iid preparations for seeded PCG64 multinomial shots",
+      "assumptions": [
+        "classical numerical calculation",
+        "declared binary64 tolerance; exact byte and mathematical equivalence are separate"
+      ],
+      "resource_contract": {
+        "qubits": 4,
+        "shots": 100000
+      },
+      "independent_controls": [
+        "analytic Born distributions",
+        "count conservation, replay and zero-probability rejection"
+      ],
+      "perturbation": "Malformed dimensions, nonfinite data, type confusion and model-specific perturbation/null controls in named tests",
+      "replay": ".venv/bin/python -B -m unittest discover -s research/quantum_oracle/tests -v",
+      "evidence": [
+        "evidence/core-verification.json",
+        "evidence/backend-comparison.json",
+        "evidence/scientific-run-002/scientific-reference/committed/1/verification.json"
+      ],
+      "limitations": [
+        "measurement destroys phase information",
+        "sampling reproducibility pinned to NumPy/version; not device shot receipt"
+      ],
+      "references": [
+        "https://quantum.cloud.ibm.com/docs/en/guides/bit-ordering",
+        "https://quantum.cloud.ibm.com/docs/en/api/qiskit/quantum_info"
+      ],
+      "mathematical_specification": "quantum-contract.md",
+      "numerics": {
+        "dtype": "binary64/complex128; exact integer arithmetic in PHANTOM",
+        "tolerances": "Exact hashes/bytes for custody; per-test analytic/reference tolerances in linked contract, no uniform guarantee across all extreme inputs"
+      }
+    },
+    {
+      "id": "q-information-metrics",
+      "family": "states-and-information",
+      "support": "implemented",
+      "scientific_status": "ACCEPT",
+      "scope": "finite reference only; original release gates remain separate",
+      "implementation": {
+        "module": "research.quantum_oracle.quantum",
+        "operators": [
+          "purity",
+          "fubini_study",
+          "trace_distance",
+          "state_fidelity",
+          "bures_distance"
+        ],
+        "source": "research/quantum_oracle/quantum.py",
+        "sha256": "557f02365462a070f0f5e4e8a558eb0a3222c759b83aedae856f7b789f84f6cd"
+      },
+      "inputs": [
+        "same-basis pure/density states"
+      ],
+      "outputs": [
+        "dimensionless finite metric or purity"
+      ],
+      "semantics": "FS ray angle, trace distance, squared Uhlmann fidelity and purification-aligned Bures distance; temporary normalized PSD metric representatives within admission tolerance",
+      "assumptions": [
+        "classical numerical calculation",
+        "declared binary64 tolerance; exact byte and mathematical equivalence are separate"
+      ],
+      "resource_contract": {
+        "qubits": 4,
+        "admission_atol": 1e-10
+      },
+      "independent_controls": [
+        "Qiskit metric comparisons",
+        "analytic pure/mixed controls",
+        "near-normalization self-distance and small-angle regression"
+      ],
+      "perturbation": "Malformed dimensions, nonfinite data, type confusion and model-specific perturbation/null controls in named tests",
+      "replay": ".venv/bin/python -B -m unittest discover -s research/quantum_oracle/tests -v",
+      "evidence": [
+        "evidence/core-verification.json",
+        "evidence/backend-comparison.json",
+        "evidence/scientific-run-002/scientific-reference/committed/1/verification.json"
+      ],
+      "limitations": [
+        "input bytes unchanged by metric representative projection",
+        "shared BLAS limits implementation independence"
+      ],
+      "references": [
+        "https://quantum.cloud.ibm.com/docs/en/guides/bit-ordering",
+        "https://quantum.cloud.ibm.com/docs/en/api/qiskit/quantum_info"
+      ],
+      "mathematical_specification": "quantum-contract.md",
+      "numerics": {
+        "dtype": "binary64/complex128; exact integer arithmetic in PHANTOM",
+        "tolerances": "Exact hashes/bytes for custody; per-test analytic/reference tolerances in linked contract, no uniform guarantee across all extreme inputs"
+      }
+    },
+    {
+      "id": "finite-coordinate-atlas",
+      "family": "wave-spectral-mechanics",
+      "support": "implemented",
+      "scientific_status": "ACCEPT",
+      "scope": "finite reference only; original release gates remain separate",
+      "implementation": {
+        "module": "research.quantum_oracle.spaces",
+        "operators": [
+          "LocalDomain",
+          "LayoutPoint",
+          "Chart",
+          "Atlas",
+          "AffineTransition",
+          "CoordinateView"
+        ],
+        "source": "research/quantum_oracle/spaces.py",
+        "sha256": "632e368cd04ae4c1a28916886f17e7fab34886f59559295ad24401bff4b9069c"
+      },
+      "inputs": [
+        "XY domain/origin/constant SPD metric; separately ambient layout; invertible affine map"
+      ],
+      "outputs": [
+        "intrinsic/layout distances and witnessed coordinate views"
+      ],
+      "semantics": "Flat local metric and affine pullback; layout has no coupling semantics",
+      "assumptions": [
+        "classical numerical calculation",
+        "declared binary64 tolerance; exact byte and mathematical equivalence are separate"
+      ],
+      "resource_contract": {
+        "charts": 64,
+        "points": 4096,
+        "metric_condition_number": 1000000000000.0
+      },
+      "independent_controls": [
+        "affine inverse and metric covariance",
+        "layout perturbation independence",
+        "collapsed-origin rejection"
+      ],
+      "perturbation": "Malformed dimensions, nonfinite data, type confusion and model-specific perturbation/null controls in named tests",
+      "replay": ".venv/bin/python -B -m unittest discover -s research/quantum_oracle/tests -v",
+      "evidence": [
+        "evidence/core-verification.json",
+        "evidence/backend-comparison.json",
+        "evidence/scientific-run-002/scientific-reference/committed/1/verification.json"
+      ],
+      "limitations": [
+        "no arbitrary manifold gluing, nerves or nested atlas topology"
+      ],
+      "references": [
+        "https://www.damtp.cam.ac.uk/user/tong/qm/qmhtml/S3.html",
+        "https://math.mit.edu/classes/18.336/index.html"
+      ],
+      "mathematical_specification": "spaces-contract.md",
+      "numerics": {
+        "dtype": "binary64/complex128; exact integer arithmetic in PHANTOM",
+        "tolerances": "Exact hashes/bytes for custody; per-test analytic/reference tolerances in linked contract, no uniform guarantee across all extreme inputs"
+      }
+    },
+    {
+      "id": "finite-fourier-spaces",
+      "family": "wave-spectral-mechanics",
+      "support": "implemented",
+      "scientific_status": "ACCEPT",
+      "scope": "finite reference only; original release gates remain separate",
+      "implementation": {
+        "module": "research.quantum_oracle.spaces",
+        "operators": [
+          "FourierSpace",
+          "FourierField",
+          "SquaredAmplitude",
+          "HilbertState",
+          "hilbert_state",
+          "seed_wave_view"
+        ],
+        "source": "research/quantum_oracle/spaces.py",
+        "sha256": "632e368cd04ae4c1a28916886f17e7fab34886f59559295ad24401bff4b9069c"
+      },
+      "inputs": [
+        "finite ordered periodic mode pairs and complex coefficients"
+      ],
+      "outputs": [
+        "field, derivative, norm, grid/spectrum translation, squared amplitude, admissible Hilbert isometry"
+      ],
+      "semantics": "Orthonormal trigonometric basis under normalized domain measure; exact finite coefficient semantics with numeric sampling tolerance",
+      "assumptions": [
+        "classical numerical calculation",
+        "declared binary64 tolerance; exact byte and mathematical equivalence are separate"
+      ],
+      "resource_contract": {
+        "modes": 256,
+        "points": 4096,
+        "max_mode_abs": 1024
+      },
+      "independent_controls": [
+        "analytic Fourier coefficients and FFT roundtrip",
+        "unchanged seed sine/derivative",
+        "amplitude2 squared=4; invalid energy alias rejected"
+      ],
+      "perturbation": "Malformed dimensions, nonfinite data, type confusion and model-specific perturbation/null controls in named tests",
+      "replay": ".venv/bin/python -B -m unittest discover -s research/quantum_oracle/tests -v",
+      "evidence": [
+        "evidence/core-verification.json",
+        "evidence/backend-comparison.json",
+        "evidence/scientific-run-002/scientific-reference/committed/1/verification.json"
+      ],
+      "limitations": [
+        "squared amplitude is not automatically energy",
+        "finite coefficient Hilbert map is not arbitrary classical-quantum equivalence"
+      ],
+      "references": [
+        "https://www.damtp.cam.ac.uk/user/tong/qm/qmhtml/S3.html",
+        "https://math.mit.edu/classes/18.336/index.html"
+      ],
+      "mathematical_specification": "spaces-contract.md",
+      "numerics": {
+        "dtype": "binary64/complex128; exact integer arithmetic in PHANTOM",
+        "tolerances": "Exact hashes/bytes for custody; per-test analytic/reference tolerances in linked contract, no uniform guarantee across all extreme inputs"
+      }
+    },
+    {
+      "id": "finite-modal-dynamics",
+      "family": "wave-spectral-mechanics",
+      "support": "implemented",
+      "scientific_status": "ACCEPT",
+      "scope": "finite reference only; original release gates remain separate",
+      "implementation": {
+        "module": "research.quantum_oracle.spaces",
+        "operators": [
+          "wave_evolve",
+          "wave_energy",
+          "schrodinger_evolve",
+          "schrodinger_energy",
+          "CoupledScalars"
+        ],
+        "source": "research/quantum_oracle/spaces.py",
+        "sha256": "632e368cd04ae4c1a28916886f17e7fab34886f59559295ad24401bff4b9069c"
+      },
+      "inputs": [
+        "periodic Fourier field/velocity or explicit symmetric finite coupling law"
+      ],
+      "outputs": [
+        "analytic modal propagation and declared quadratic energy"
+      ],
+      "semantics": "Wave/free Schrodinger finite modes; graph qddot=-Kq with structural null modes and nonnegative edge-difference energy",
+      "assumptions": [
+        "classical numerical calculation",
+        "declared binary64 tolerance; exact byte and mathematical equivalence are separate"
+      ],
+      "resource_contract": {
+        "coupled_nodes": 64,
+        "modes": 256,
+        "max_time_seconds": 1000000.0
+      },
+      "independent_controls": [
+        "dAlembert analytic wave",
+        "two-mode normal solution",
+        "disconnected/null controls",
+        "large constant displacement regression"
+      ],
+      "perturbation": "Malformed dimensions, nonfinite data, type confusion and model-specific perturbation/null controls in named tests",
+      "replay": ".venv/bin/python -B -m unittest discover -s research/quantum_oracle/tests -v",
+      "evidence": [
+        "evidence/core-verification.json",
+        "evidence/backend-comparison.json",
+        "evidence/scientific-run-002/scientific-reference/committed/1/verification.json"
+      ],
+      "limitations": [
+        "no general scattering/QFT, nonlinear or dissipative arbitrary PDE",
+        "energy labels follow precise declared units, no physical calibration"
+      ],
+      "references": [
+        "https://www.damtp.cam.ac.uk/user/tong/qm/qmhtml/S3.html",
+        "https://math.mit.edu/classes/18.336/index.html"
+      ],
+      "mathematical_specification": "spaces-contract.md",
+      "numerics": {
+        "dtype": "binary64/complex128; exact integer arithmetic in PHANTOM",
+        "tolerances": "Exact hashes/bytes for custody; per-test analytic/reference tolerances in linked contract, no uniform guarantee across all extreme inputs"
+      }
+    },
+    {
+      "id": "phantom-finite-discovery",
+      "family": "research-automata",
+      "support": "implemented",
+      "scientific_status": "ACCEPT",
+      "scope": "finite reference only; original release gates remain separate",
+      "implementation": {
+        "module": "research.quantum_oracle.discovery",
+        "operators": [
+          "Cycle",
+          "verify_events",
+          "run_affine_cycle",
+          "challenge_operations",
+          "replay"
+        ],
+        "source": "research/quantum_oracle/discovery.py",
+        "sha256": "f0110d5212ceca6e173e33f1378281246afa32b3f29a2068ef69b7404879a1c6"
+      },
+      "inputs": [
+        "fixed controlled affine word observations and finite search budget"
+      ],
+      "outputs": [
+        "candidate lineage, failed candidates, exhaustive challenge, separate decision and replay chain"
+      ],
+      "semantics": "Pinned original PHANTOM grammar; independent integer challenge and Gray/basis-permutation transport",
+      "assumptions": [
+        "classical numerical calculation",
+        "declared binary64 tolerance; exact byte and mathematical equivalence are separate"
+      ],
+      "resource_contract": {
+        "width": 6,
+        "candidates": 512,
+        "depth": 2,
+        "events": 32
+      },
+      "independent_controls": [
+        "held-out12/16 default",
+        "independent arithmetic",
+        "null/one-bit perturbation",
+        "recompute replay tamper check"
+      ],
+      "perturbation": "Malformed dimensions, nonfinite data, type confusion and model-specific perturbation/null controls in named tests",
+      "replay": ".venv/bin/python -B -m unittest discover -s research/quantum_oracle/tests -v",
+      "evidence": [
+        "evidence/core-verification.json",
+        "evidence/backend-comparison.json",
+        "evidence/scientific-run-002/scientific-reference/committed/1/verification.json"
+      ],
+      "limitations": [
+        "controlled fixture is not original broad G6 or observational discovery",
+        "no performance/novelty claim"
+      ],
+      "references": [
+        "build/foundation/phantom_division_viii_v04/docs/FINITE_BOUNDS.md"
+      ],
+      "mathematical_specification": "discovery-contract.md",
+      "numerics": {
+        "dtype": "binary64/complex128; exact integer arithmetic in PHANTOM",
+        "tolerances": "Exact hashes/bytes for custody; per-test analytic/reference tolerances in linked contract, no uniform guarantee across all extreme inputs"
+      }
+    },
+    {
+      "id": "general-qft-scattering",
+      "family": "wave-spectral-mechanics",
+      "support": "unsupported",
+      "scientific_status": "NOT_STARTED",
+      "implementation": null,
+      "limitations": [
+        "No relativistic interacting QFT, renormalized scattering or lattice field theory solver is implemented."
+      ],
+      "acceptance_evidence": []
+    },
+    {
+      "id": "quantum-materials-em",
+      "family": "materials-atomic-em",
+      "support": "proposed",
+      "scientific_status": "NOT_STARTED",
+      "implementation": null,
+      "limitations": [
+        "No admitted electronic-structure/DFT/atomic-transition/material-response operator; original native reduced models are unchanged and not evidence of this family."
+      ],
+      "acceptance_evidence": []
+    },
+    {
+      "id": "general-quantum-control",
+      "family": "dynamics-noise-control",
+      "support": "proposed",
+      "scientific_status": "NOT_STARTED",
+      "implementation": null,
+      "limitations": [
+        "Time-dependent optimal control, bath identification and general Lindblad integration remain unimplemented by this adapter."
+      ],
+      "acceptance_evidence": []
+    },
+    {
+      "id": "quantum-foundations-open",
+      "family": "foundations",
+      "support": "scientifically_unresolved",
+      "scientific_status": "UNKNOWN",
+      "implementation": null,
+      "limitations": [
+        "No claim to settle quantum gravity or measurement interpretations; computational models do not settle unresolved physics."
+      ],
+      "acceptance_evidence": []
+    },
+    {
+      "id": "live-quantum-provider",
+      "family": "circuits-compilation-provider",
+      "support": "unsupported",
+      "scientific_status": "NOT_STARTED",
+      "implementation": null,
+      "limitations": [
+        "No authorized physical-provider connection or hardware execution; credentials and budget required."
+      ],
+      "acceptance_evidence": []
+    },
+    {
+      "id": "full-collider-detector",
+      "family": "particle-collider",
+      "support": "unsupported",
+      "scientific_status": "NOT_STARTED",
+      "implementation": null,
+      "limitations": [
+        "ROOT/HepMC, detector calibration, efficiency, background/systematic/blinding pipeline not supplied by educational CSV."
+      ],
+      "acceptance_evidence": []
+    },
+    {
+      "id": "calibrated-astro-spectra",
+      "family": "observational-astrophysics",
+      "support": "proposed",
+      "scientific_status": "NOT_STARTED",
+      "implementation": null,
+      "limitations": [
+        "Photometry/spectral/time detector calibration and independent full-DSS astrometry remain original open requirements."
+      ],
+      "acceptance_evidence": []
+    },
+    {
+      "id": "observed-fits-local-tan",
+      "family": "observational-astrophysics",
+      "support": "implemented",
+      "scientific_status": "ACCEPT",
+      "scope": "only stated finite data/compilation comparison; full original gate remains UNKNOWN",
+      "implementation": {
+        "module": "research.quantum_oracle.astro",
+        "operators": [
+          "FITSImage",
+          "local_tan_wcs",
+          "fixture_report"
+        ],
+        "source": "research/quantum_oracle/astro.py",
+        "sha256": "ba65970cc65b0cef1fc9806a356778b8da828193bad459e12140da192e75fbed"
+      },
+      "inputs": [
+        "bounded exact photographic FITS bytes; zero-based image coordinates"
+      ],
+      "outputs": [
+        "source-byte/pixel witnesses; local approximate ICRS RA/Dec; separate calibration uncertainty status"
+      ],
+      "semantics": "Signed16 primary FITS decoding and explicitly selected inverse gnomonic local TAN formula",
+      "assumptions": [
+        "explicit conventions and uncertainty limits in contract",
+        "no extrapolation to full physical model"
+      ],
+      "resource_contract": {
+        "file_bytes": 4194304,
+        "pixels": 1000000,
+        "header_cards": 360,
+        "wcs_points": 1024
+      },
+      "independent_controls": [
+        "Astropy independent full795663-pixel comparison",
+        "1000 independently selected forward/inverse WCS positions"
+      ],
+      "perturbation": "Malformed/changed source and typed boundaries tested; model-specific null/rounding/calibration controls retained",
+      "replay": ".venv/bin/python -B -m unittest discover -s research/quantum_oracle/tests -v",
+      "evidence": [
+        "evidence/astro-fixture.json",
+        "evidence/astro-independent-review-v2.json",
+        "evidence/scientific-run-002/scientific-reference/committed/1/verification.json"
+      ],
+      "limitations": [
+        "full DSS astrometry not independently validated",
+        "no flux/PSF/per-pixel uncertainty or spectrum/time pipeline",
+        "data rights restrictions retained"
+      ],
+      "references": [
+        "https://learn.astropy.org/tutorials/FITS-images.html",
+        "https://fits.gsfc.nasa.gov/fits_standard.html"
+      ],
+      "mathematical_specification": "astro-contract.md",
+      "numerics": {
+        "precision": "binary64 with exact retained raw bytes",
+        "tolerances": "Per-case measured values and bounds in referenced receipts"
+      }
+    },
+    {
+      "id": "observed-dimuon-kinematics",
+      "family": "particle-collider",
+      "support": "implemented",
+      "scientific_status": "ACCEPT",
+      "scope": "only stated finite data/compilation comparison; full original gate remains UNKNOWN",
+      "implementation": {
+        "module": "research.quantum_oracle.collider",
+        "operators": [
+          "FourMomentum",
+          "Muon",
+          "Event",
+          "iter_events",
+          "compare_mass",
+          "analyze",
+          "read_source",
+          "verify_published_source"
+        ],
+        "source": "research/quantum_oracle/collider.py",
+        "sha256": "a14eb67d79a1104c24a928ee1f14e804ee56b8b3fb6c4e33b9759e50abed5674"
+      },
+      "inputs": [
+        "exact pinned100000-row CMS educational CSV or explicitly unverified input"
+      ],
+      "outputs": [
+        "typed events, byte spans, invariant comparisons and retained counterexamples"
+      ],
+      "semantics": "Minkowski +--- invariant, independent readers, conservative decimal-place interval comparison; incompatible published masses are REJECT evidence",
+      "assumptions": [
+        "explicit conventions and uncertainty limits in contract",
+        "no extrapolation to full physical model"
+      ],
+      "resource_contract": {
+        "file_bytes": 16777216,
+        "events": 100000,
+        "execution_seconds": 60
+      },
+      "independent_controls": [
+        "NumPy independent reader vs typed scalar parser",
+        "scalar fsum vs vectorized invariant",
+        "synthetic boost/inverse controls labeled separately"
+      ],
+      "perturbation": "Malformed/changed source and typed boundaries tested; model-specific null/rounding/calibration controls retained",
+      "replay": ".venv/bin/python -B -m unittest discover -s research/quantum_oracle/tests -v",
+      "evidence": [
+        "evidence/collider-cern5201-analysis-v3.json",
+        "evidence/collider-tests-v3.json",
+        "evidence/scientific-run-002/scientific-reference/committed/1/verification.json",
+        "evidence/collider-signed-bounds-fix.json"
+      ],
+      "limitations": [
+        "not ROOT/HepMC",
+        "no detector response, weights or systematics",
+        "1381 mass-rounding discrepancies are retained, not claimed detector anomalies"
+      ],
+      "references": [
+        "https://opendata.cern.ch/record/5201"
+      ],
+      "mathematical_specification": "collider-contract.md",
+      "numerics": {
+        "precision": "binary64 with exact retained raw bytes",
+        "tolerances": "Per-case measured values and bounds in referenced receipts"
+      }
+    },
+    {
+      "id": "historical-target-compilation",
+      "family": "circuits-compilation-provider",
+      "support": "implemented",
+      "scientific_status": "ACCEPT",
+      "scope": "only stated finite data/compilation comparison; full original gate remains UNKNOWN",
+      "implementation": {
+        "module": "research.quantum_oracle.circuits",
+        "operators": [
+          "CalibrationSnapshot",
+          "CircuitIR",
+          "CircuitOp",
+          "CompiledCircuit",
+          "admit_snapshot",
+          "load_snapshot",
+          "compile_circuit",
+          "simulate_surrogate"
+        ],
+        "source": "research/quantum_oracle/circuits.py",
+        "sha256": "248bb5de257865bed0676e380f5e81b58e0353d6ecc536d709f68d17b3decc9f"
+      },
+      "inputs": [
+        "typed logical circuit; source-bound historical IBM calibration subgraph; fixed seed"
+      ],
+      "outputs": [
+        "native circuit, logical/hardware mapping, full-unitary witness, serial duration and T1/readout surrogate"
+      ],
+      "semantics": "Qiskit native directed ECR compilation; independently constructed full unitary and Qiskit Kraus comparison of explicitly limited serial noise model",
+      "assumptions": [
+        "explicit conventions and uncertainty limits in contract",
+        "no extrapolation to full physical model"
+      ],
+      "resource_contract": {
+        "qubits": 4,
+        "input_operations": 32,
+        "native_operations": 256,
+        "transpiler_cooperative_seconds": 15,
+        "host_hard_seconds": 60
+      },
+      "independent_controls": [
+        "independent native gate matrices and final routing permutation",
+        "Qiskit Kraus/scalar readout reference",
+        "forged source/calibration rejection"
+      ],
+      "perturbation": "Malformed/changed source and typed boundaries tested; model-specific null/rounding/calibration controls retained",
+      "replay": ".venv/bin/python -B -m unittest discover -s research/quantum_oracle/tests -v",
+      "evidence": [
+        "evidence/circuit-compilation-v3.json",
+        "evidence/scientific-run-002/scientific-reference/committed/1/verification.json"
+      ],
+      "limitations": [
+        "snapshot dated2025; not current or hardware execution",
+        "no T2/crosstalk/pulse/leakage model",
+        "no physical shots/cost/authorization"
+      ],
+      "references": [
+        "https://github.com/Qiskit/qiskit-ibm-runtime/tree/1dd86e381ddecfc78db94e3287a9ce57e4ad65d8/qiskit_ibm_runtime/fake_provider/backends/brisbane"
+      ],
+      "mathematical_specification": "circuits-contract.md",
+      "numerics": {
+        "precision": "binary64 with exact retained raw bytes",
+        "tolerances": "Per-case measured values and bounds in referenced receipts"
+      }
+    }
+  ],
+  "review_catalogues": "evidence/inherited-registries.json;62 identities and23 domains organize work, not evidence"
+}

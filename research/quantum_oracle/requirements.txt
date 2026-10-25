@@ -1,5 +1,10 @@
+astropy==6.1.7
+astropy-iers-data==0.2026.10.19.0.52.1
 dill==0.4.1
 numpy==2.2.6
+packaging==26.3
+pyerfa==2.0.1.5
+PyYAML==6.0.3
 qiskit==2.2.3
 rustworkx==0.18.1
 scipy==1.15.3

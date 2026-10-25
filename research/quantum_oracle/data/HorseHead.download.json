@@ -1,0 +1,17 @@
+{
+  "acquired_utc": "2026-10-25T17:07:42.911428+00:00",
+  "bytes": 1650240,
+  "final_url": "https://astropy.stsci.edu/data/tutorials/FITS-images/HorseHead.fits",
+  "headers": {
+    "Content-Length": "1650240",
+    "Content-Type": "application/octet-stream",
+    "ETag": "\"5d3b45e3-192e40\"",
+    "Last-Modified": "Fri, 26 Jul 2019 18:26:43 GMT"
+  },
+  "max_bytes": 2097152,
+  "path": "research/quantum_oracle/data/HorseHead.fits",
+  "request_timeout_seconds": 25,
+  "sha256": "c4bcc0bccbadf1488e4e361c0d8f04255dc344ff401fd4827139b3354eafe863",
+  "status": 200,
+  "url": "https://astropy.stsci.edu/data/tutorials/FITS-images/HorseHead.fits"
+}

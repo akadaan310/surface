@@ -1,0 +1,18 @@
+{
+  "schema": "quantum-oracle.independent-review.v1",
+  "reviewer": "root; independent of astro implementer",
+  "status": "ACCEPT",
+  "scope": "1000 seeded interior pixel positions; explicitly selected local TAN only",
+  "seed": 310,
+  "points": 1000,
+  "max_forward_error_degrees": 2.842170943040401e-14,
+  "forward_tolerance_degrees": 1e-11,
+  "max_inverse_error_pixels": 1.0682299489417346e-10,
+  "inverse_tolerance_pixels": 1e-08,
+  "source_sha256": {
+    "research/quantum_oracle/astro.py": "a93aacffdf644a46352b5a6eea25c9996924cd7a93bcb11298aa51077b9b8de3"
+  },
+  "raw_data_sha256": "c4bcc0bccbadf1488e4e361c0d8f04255dc344ff401fd4827139b3354eafe863",
+  "full_dss_astrometry": "UNKNOWN",
+  "physical_calibration": "UNKNOWN"
+}

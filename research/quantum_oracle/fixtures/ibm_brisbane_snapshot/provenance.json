@@ -1,0 +1,36 @@
+{
+  "repository": "Qiskit/qiskit-ibm-runtime",
+  "source_revision": "1dd86e381ddecfc78db94e3287a9ce57e4ad65d8",
+  "source_commit_url": "https://github.com/Qiskit/qiskit-ibm-runtime/commit/1dd86e381ddecfc78db94e3287a9ce57e4ad65d8",
+  "accessed_utc": "2026-10-25T17:08:08.887359+00:00",
+  "license": "Apache-2.0",
+  "files": [
+    {
+      "path": "research/quantum_oracle/fixtures/ibm_brisbane_snapshot/conf_brisbane.json",
+      "source_url": "https://raw.githubusercontent.com/Qiskit/qiskit-ibm-runtime/1dd86e381ddecfc78db94e3287a9ce57e4ad65d8/qiskit_ibm_runtime/fake_provider/backends/brisbane/conf_brisbane.json",
+      "source_path": "qiskit_ibm_runtime/fake_provider/backends/brisbane/conf_brisbane.json",
+      "bytes": 147793,
+      "sha256": "309836dbf54cf635d811a273a3b4e1c933debdbea71c33b689ea1b71deafc2d2",
+      "git_blob_sha1": "0eba750cefbede7e76ac365cbebe7e13f03b3c6a"
+    },
+    {
+      "path": "research/quantum_oracle/fixtures/ibm_brisbane_snapshot/props_brisbane.json",
+      "source_url": "https://raw.githubusercontent.com/Qiskit/qiskit-ibm-runtime/1dd86e381ddecfc78db94e3287a9ce57e4ad65d8/qiskit_ibm_runtime/fake_provider/backends/brisbane/props_brisbane.json",
+      "source_path": "qiskit_ibm_runtime/fake_provider/backends/brisbane/props_brisbane.json",
+      "bytes": 353470,
+      "sha256": "bc8b29433a8e1935a8f5537cafccc63194dc5ed5137edba684ff3fb77b269d1d",
+      "git_blob_sha1": "e04421d4b04179f079974abcf6d8cacf8ee2ce9b"
+    },
+    {
+      "path": "research/quantum_oracle/fixtures/ibm_brisbane_snapshot/LICENSE.txt",
+      "source_url": "https://raw.githubusercontent.com/Qiskit/qiskit-ibm-runtime/1dd86e381ddecfc78db94e3287a9ce57e4ad65d8/LICENSE.txt",
+      "source_path": "LICENSE.txt",
+      "bytes": 11416,
+      "sha256": "7b7de08c64b1824bdc2b9f4b530814a9d0b5905a38ad0e96a717f3dd46d2bbe7",
+      "git_blob_sha1": "85a2a89c7efdb30bdb8583fceaad3ee905769634"
+    }
+  ],
+  "evidence_class": "historical_public_fake_provider_snapshot; not current calibration or hardware execution",
+  "backend_name": "ibm_brisbane",
+  "calibration_last_update": "2025-02-26T14:33:06-05:00"
+}

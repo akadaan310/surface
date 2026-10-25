@@ -1,0 +1,29 @@
+{
+  "current_implementation_sha256": "a14eb67d79a1104c24a928ee1f14e804ee56b8b3fb6c4e33b9759e50abed5674",
+  "current_test_sha256": "dac4a5f349de8ee97aa021251b7c100789a93b3b5296874469899b3e9e65fc1d",
+  "finding": "abs(INT_MIN) overflow let out-of-range signed integer momenta pass component admission",
+  "fix": "compare original numeric array against -MAX_COMPONENT and +MAX_COMPONENT; no abs in integer dtype",
+  "full_100000_source_rerun": false,
+  "prior_full_source_receipt": "collider-cern5201-analysis-v3.json",
+  "prior_full_source_receipt_sha256": "8c0f44b920b3156d62674fe0ac418cb65979ccb156f82ce1029ea1706446bff0",
+  "prior_implementation_sha256": "6161d1132d2de90c8cd71846fb6c4cc6787ec574857a2c9d581d2532987cb441",
+  "recorded_at_utc": "2026-10-25T17:23:06.349771+00:00",
+  "red_observed": {
+    "np.int32.min": "accepted before fix",
+    "np.int64.min": "accepted before fix"
+  },
+  "regression": "test_signed_integer_minimum_cannot_wrap_past_component_bound",
+  "schema": "quantum-oracle.review-fix-receipt/1",
+  "scope": "Input admission correction; preserved observed data and prior numerical evidence unchanged. Does not relabel prior full-source receipt as execution of current code.",
+  "verification": {
+    "command_scope": "All 15 non-full-source collider test methods",
+    "errors": 0,
+    "exit_code": 0,
+    "failures": 0,
+    "log": "collider-signed-bounds-tests.log",
+    "log_sha256": "6fc2e0cd711500c8f14d447218adb1d10e35b4e885cadce900c1c77ad41b33f5",
+    "runner": "unittest discovery of test_collider.py, excluding test_complete_observed_file_and_published_identity_are_preserved",
+    "skipped": 0,
+    "test_cases": 15
+  }
+}

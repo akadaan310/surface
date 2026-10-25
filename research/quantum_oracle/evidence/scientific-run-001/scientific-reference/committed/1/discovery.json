@@ -1,0 +1,3317 @@
+{
+  "challenge": {
+    "alternate_encoding_conjugacy": true,
+    "basis_permutation": {
+      "admissible_unitary": true,
+      "basis_order": "integer-msb-display; column x maps to row f(x)",
+      "coherent_transport_residual": 0.0,
+      "dimension": 16,
+      "tolerance": 1e-12,
+      "unitarity_residual": 0.0
+    },
+    "checked": 16,
+    "counterexamples": [],
+    "decision": "ACCEPT",
+    "held_out": 12,
+    "identity_null_mismatches": 16,
+    "method": "independent integer arithmetic, exhaustive finite held-out challenge",
+    "one_bit_output_perturbation_mismatches": 16,
+    "scope": "exact finite function only; no generalization to other widths, datasets or physics",
+    "training": 4,
+    "truth_table": [
+      1,
+      4,
+      7,
+      10,
+      13,
+      0,
+      3,
+      6,
+      9,
+      12,
+      15,
+      2,
+      5,
+      8,
+      11,
+      14
+    ]
+  },
+  "config": {
+    "max_candidates": 512,
+    "width": 4
+  },
+  "decision": "ACCEPT",
+  "events": [
+    {
+      "id": "c6bb8f99dc634dd8c772dbe4d59636871e4527ae22c494063a53a28125e2b20c",
+      "ordinal": 0,
+      "parent": null,
+      "payload": {
+        "max_candidates": 512,
+        "width": 4
+      },
+      "state": "SCOPE",
+      "subject": "phantom-affine-to-basis-v1"
+    },
+    {
+      "id": "0b0270ac402ce45d619c0b321d45bdd4ed0cab80b4731a08db7cfdbe1d957ab5",
+      "ordinal": 1,
+      "parent": "c6bb8f99dc634dd8c772dbe4d59636871e4527ae22c494063a53a28125e2b20c",
+      "payload": {
+        "kind": "controlled exact integer fixture",
+        "observations": [
+          {
+            "input": 0,
+            "output": 1
+          },
+          {
+            "input": 1,
+            "output": 4
+          },
+          {
+            "input": 2,
+            "output": 7
+          },
+          {
+            "input": 3,
+            "output": 10
+          }
+        ],
+        "physical_evidence": false,
+        "sha256": "3b64519f6487f4cfbfe8ac5d0f90fdc48875c6e08b70940d87915dd38f643925"
+      },
+      "state": "ACQUIRE",
+      "subject": "phantom-affine-to-basis-v1"
+    },
+    {
+      "id": "aaa6c8bfb70a1d914d3e1c503a243fff2fc5afa89cc73b2494c4076d713a0072",
+      "ordinal": 2,
+      "parent": "0b0270ac402ce45d619c0b321d45bdd4ed0cab80b4731a08db7cfdbe1d957ab5",
+      "payload": {
+        "original_modules": {
+          "__init__.py": "8d6782405df442c6d2d45a87153b00a16204ce8b58b55e9bfb19595ca6e23958",
+          "_runtime.py": "33bfc046b67f90d7a470cd57ea146b54c8f210be4780a61e59fbe000b3ad8734",
+          "contracts.py": "442b0c68d984479dc67c89fbce69ca1ca2c789c1e46f8d103dacff981e8b749e",
+          "generators.py": "77d792b22d3bcfae3b6a48f0ed74db6352e73188daa999f03e5ee2aaa9d90fa9",
+          "kernel.py": "aeb34870bc79f238514987639c2d15f5c0a1b30e6ae084866b7168b45fc50a6e"
+        }
+      },
+      "state": "VERIFY SOURCE",
+      "subject": "phantom-affine-to-basis-v1"
+    },
+    {
+      "id": "18b37e810b7b2e477b4cb8a8337fba8a3492c477efc8618631531b2af333dec2",
+      "ordinal": 3,
+      "parent": "aaa6c8bfb70a1d914d3e1c503a243fff2fc5afa89cc73b2494c4076d713a0072",
+      "payload": {
+        "domain": "unsigned U4",
+        "grammar": "ADD/MUL/XOR/AND constants 0,1,3; depth <=2",
+        "loss": "modular wrap declared",
+        "target": "(3*x+1) mod 2**width",
+        "training_inputs": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "state": "FORMALIZE",
+      "subject": "phantom-affine-to-basis-v1"
+    },
+    {
+      "id": "ed6abf9768350f8cf64efc48c4452e24833b70ff471e5f2fc5c0500689917e16",
+      "ordinal": 4,
+      "parent": "18b37e810b7b2e477b4cb8a8337fba8a3492c477efc8618631531b2af333dec2",
+      "payload": {
+        "parent_source": "77d792b22d3bcfae3b6a48f0ed74db6352e73188daa999f03e5ee2aaa9d90fa9",
+        "search_sha256": "4717140dd24cd42767efcd81e5921c7f255be14b8dabd7967f442bb7486c79a3",
+        "status": "CANDIDATE",
+        "tested": 75
+      },
+      "state": "GENERATE",
+      "subject": "phantom-affine-to-basis-v1"
+    },
+    {
+      "id": "187b3021dd1031abe78b9e34b91eecfbbd70623ef5cdf3a1ad37124ed1de2387",
+      "ordinal": 5,
+      "parent": "ed6abf9768350f8cf64efc48c4452e24833b70ff471e5f2fc5c0500689917e16",
+      "payload": {
+        "generator_id": "2a2c8ad9c2c72ee26cace3bda158d009f496ced72e75091f2706247e275ca8fe",
+        "outputs_sha256": "c09f037ff12da68e0b3f91aaa901927b16fd4cdb56a5a6b734594a996c39d02e"
+      },
+      "state": "EXECUTE",
+      "subject": "phantom-affine-to-basis-v1"
+    },
+    {
+      "id": "a462b379fc225050a3ff83bcd9bc346482a2db8ed6d70f36550d847bebe185e9",
+      "ordinal": 6,
+      "parent": "187b3021dd1031abe78b9e34b91eecfbbd70623ef5cdf3a1ad37124ed1de2387",
+      "payload": {
+        "identity_null_mismatches": 16,
+        "one_bit_output_perturbation_mismatches": 16
+      },
+      "state": "PERTURB",
+      "subject": "phantom-affine-to-basis-v1"
+    },
+    {
+      "id": "cbf66e8a1a18a9e3754b49923cfbdebe679f3c6e75f21f64e91f615ee9577763",
+      "ordinal": 7,
+      "parent": "a462b379fc225050a3ff83bcd9bc346482a2db8ed6d70f36550d847bebe185e9",
+      "payload": {
+        "alternate_encoding_conjugacy": true,
+        "phantom_matches_independent_truth_table": true
+      },
+      "state": "COMPARE",
+      "subject": "phantom-affine-to-basis-v1"
+    },
+    {
+      "id": "8b8a7150904924a629358fef4286cd0089b8afae8c86fe80c5684c1b16b358ba",
+      "ordinal": 8,
+      "parent": "cbf66e8a1a18a9e3754b49923cfbdebe679f3c6e75f21f64e91f615ee9577763",
+      "payload": {
+        "alternate_encoding_conjugacy": true,
+        "basis_permutation": {
+          "admissible_unitary": true,
+          "basis_order": "integer-msb-display; column x maps to row f(x)",
+          "coherent_transport_residual": 0.0,
+          "dimension": 16,
+          "tolerance": 1e-12,
+          "unitarity_residual": 0.0
+        },
+        "checked": 16,
+        "counterexamples": [],
+        "decision": "ACCEPT",
+        "held_out": 12,
+        "identity_null_mismatches": 16,
+        "method": "independent integer arithmetic, exhaustive finite held-out challenge",
+        "one_bit_output_perturbation_mismatches": 16,
+        "scope": "exact finite function only; no generalization to other widths, datasets or physics",
+        "training": 4,
+        "truth_table": [
+          1,
+          4,
+          7,
+          10,
+          13,
+          0,
+          3,
+          6,
+          9,
+          12,
+          15,
+          2,
+          5,
+          8,
+          11,
+          14
+        ]
+      },
+      "state": "CHALLENGE",
+      "subject": "phantom-affine-to-basis-v1"
+    },
+    {
+      "id": "545464c89d69e52d6e962e9852f01b190a71fc6371103132d4c8341e65701f39",
+      "ordinal": 9,
+      "parent": "8b8a7150904924a629358fef4286cd0089b8afae8c86fe80c5684c1b16b358ba",
+      "payload": {
+        "full_initiative_acceptance": "UNKNOWN",
+        "scope": "finite controlled affine transfer fixture only"
+      },
+      "state": "ACCEPT",
+      "subject": "phantom-affine-to-basis-v1"
+    },
+    {
+      "id": "8cb23dab0bab666e3350affc9b924ecd6d61438ae08d6d7ed2d77aa87a323c5c",
+      "ordinal": 10,
+      "parent": "545464c89d69e52d6e962e9852f01b190a71fc6371103132d4c8341e65701f39",
+      "payload": {
+        "challenge_sha256": "2c7ad79332458cd3df358968943a1b52dbdec4d225f5d49901cccb50ab9315c2",
+        "search_sha256": "4717140dd24cd42767efcd81e5921c7f255be14b8dabd7967f442bb7486c79a3"
+      },
+      "state": "ARCHIVE",
+      "subject": "phantom-affine-to-basis-v1"
+    },
+    {
+      "id": "90839f7afea6186887290e57ff7a4fd48c2b41cd42426fa7486241d212b7a9a4",
+      "ordinal": 11,
+      "parent": "8cb23dab0bab666e3350affc9b924ecd6d61438ae08d6d7ed2d77aa87a323c5c",
+      "payload": {
+        "criterion": "earliest unfulfilled independent original gate",
+        "next": "real-data held-out transfer and independent quantum libraries"
+      },
+      "state": "SELECT NEXT",
+      "subject": "phantom-affine-to-basis-v1"
+    }
+  ],
+  "physical_evidence": false,
+  "replay": "research.quantum_oracle.discovery.replay(report)",
+  "resources": {
+    "max_candidates": 512,
+    "max_depth": 2,
+    "max_dimension": 64,
+    "max_event_bytes": 1048576,
+    "max_events": 32,
+    "max_width": 6,
+    "runner_hard_seconds": 60,
+    "runner_memory_mib": 2048
+  },
+  "schema": "phantom.quantum.research-cycle.v1",
+  "search": {
+    "generator": {
+      "bounds": {
+        "max_depth": 4,
+        "max_items": 1000000,
+        "max_operations": 64,
+        "max_work": 4000000
+      },
+      "id": "2a2c8ad9c2c72ee26cace3bda158d009f496ced72e75091f2706247e275ca8fe",
+      "input_type": "U4",
+      "kind": "word_program",
+      "output_type": "U4",
+      "parameters": {
+        "operations": [
+          {
+            "op": "MUL",
+            "operand": 3
+          },
+          {
+            "op": "ADD",
+            "operand": 1
+          }
+        ],
+        "width": 4
+      },
+      "parents": [],
+      "schema": "DIV8-GENERATOR-IR/1"
+    },
+    "grammar_size_bound": 157,
+    "rejected_candidates": [
+      {
+        "candidate_id": "01b13cc3cf1b903f533f07720a1682463fc109600a23cad5b0d8eb520d4361ac",
+        "depth": 0,
+        "operations": [],
+        "ordinal": 0,
+        "state": "REJECT",
+        "witness": {
+          "actual": 0,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "7f1c92c25a519aad3db9a76f0cfca3eb457b7f7921b86eb75d9a73c9a41d105e",
+        "depth": 1,
+        "operations": [
+          {
+            "op": "ADD",
+            "operand": 0
+          }
+        ],
+        "ordinal": 1,
+        "state": "REJECT",
+        "witness": {
+          "actual": 0,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "cb7c3090057fc51a06a9af8f39c81e9cad5b45eb2d91f26ab370eb08789e32d7",
+        "depth": 1,
+        "operations": [
+          {
+            "op": "ADD",
+            "operand": 1
+          }
+        ],
+        "ordinal": 2,
+        "state": "REJECT",
+        "witness": {
+          "actual": 2,
+          "expected": 4,
+          "input": 1
+        }
+      },
+      {
+        "candidate_id": "e565e97dd1d0a9b5880b647fbf271e0d3ac655478af8af29541cd6d9ec2d6e4b",
+        "depth": 1,
+        "operations": [
+          {
+            "op": "ADD",
+            "operand": 3
+          }
+        ],
+        "ordinal": 3,
+        "state": "REJECT",
+        "witness": {
+          "actual": 3,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "b891da6fc15b03ae2faf0e0ee3727a8827a3332261cd8a6ceeaa52923d9027fa",
+        "depth": 1,
+        "operations": [
+          {
+            "op": "MUL",
+            "operand": 0
+          }
+        ],
+        "ordinal": 4,
+        "state": "REJECT",
+        "witness": {
+          "actual": 0,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "3de131f59ed662518d22b527147e288a966769f808468120074f657cdfc3bb82",
+        "depth": 1,
+        "operations": [
+          {
+            "op": "MUL",
+            "operand": 1
+          }
+        ],
+        "ordinal": 5,
+        "state": "REJECT",
+        "witness": {
+          "actual": 0,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "9d09e774def0fce5ba812986e2341620dc7e89fd6aa29fc494f8c740dce6cc09",
+        "depth": 1,
+        "operations": [
+          {
+            "op": "MUL",
+            "operand": 3
+          }
+        ],
+        "ordinal": 6,
+        "state": "REJECT",
+        "witness": {
+          "actual": 0,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "f45d77fe98a64f9559090a1a0310bb4230794a991db501b6cbcf162dd4c8b8b2",
+        "depth": 1,
+        "operations": [
+          {
+            "op": "XOR",
+            "operand": 0
+          }
+        ],
+        "ordinal": 7,
+        "state": "REJECT",
+        "witness": {
+          "actual": 0,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "18e51b8729b8f2b30edee04306b8def7dc2b97b3d3ca64e4de768891894567bd",
+        "depth": 1,
+        "operations": [
+          {
+            "op": "XOR",
+            "operand": 1
+          }
+        ],
+        "ordinal": 8,
+        "state": "REJECT",
+        "witness": {
+          "actual": 0,
+          "expected": 4,
+          "input": 1
+        }
+      },
+      {
+        "candidate_id": "fc0aed6c114d6a95c5216de85770ec9e8cf86e6773a4801a899c934bf86146e3",
+        "depth": 1,
+        "operations": [
+          {
+            "op": "XOR",
+            "operand": 3
+          }
+        ],
+        "ordinal": 9,
+        "state": "REJECT",
+        "witness": {
+          "actual": 3,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "f61bd54f32a777b456914b552b0bc88cf7d4743d539668f6e1672ea3b013593e",
+        "depth": 1,
+        "operations": [
+          {
+            "op": "AND",
+            "operand": 0
+          }
+        ],
+        "ordinal": 10,
+        "state": "REJECT",
+        "witness": {
+          "actual": 0,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "c8472c07e770db13178366a44208a1e8df56f35db7326a10e657e77a3af369ac",
+        "depth": 1,
+        "operations": [
+          {
+            "op": "AND",
+            "operand": 1
+          }
+        ],
+        "ordinal": 11,
+        "state": "REJECT",
+        "witness": {
+          "actual": 0,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "18e2674af6ee9891db17d878a1807e94908b38fde994d1d25512d7415f6bc853",
+        "depth": 1,
+        "operations": [
+          {
+            "op": "AND",
+            "operand": 3
+          }
+        ],
+        "ordinal": 12,
+        "state": "REJECT",
+        "witness": {
+          "actual": 0,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "0ad3c35bfbdb8dee77bcc3183431d1561d8864decc62a76d500c975643198c62",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "ADD",
+            "operand": 0
+          },
+          {
+            "op": "ADD",
+            "operand": 0
+          }
+        ],
+        "ordinal": 13,
+        "state": "REJECT",
+        "witness": {
+          "actual": 0,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "99c4796c23272c730cbb88c6f73b006a57ee8f5f4ea45f2f07b50c94b71a6e23",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "ADD",
+            "operand": 0
+          },
+          {
+            "op": "ADD",
+            "operand": 1
+          }
+        ],
+        "ordinal": 14,
+        "state": "REJECT",
+        "witness": {
+          "actual": 2,
+          "expected": 4,
+          "input": 1
+        }
+      },
+      {
+        "candidate_id": "3999a29d9e841c2c6fbcb241b8bd74ff4e1c62e2271309852b030de95734eea8",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "ADD",
+            "operand": 0
+          },
+          {
+            "op": "ADD",
+            "operand": 3
+          }
+        ],
+        "ordinal": 15,
+        "state": "REJECT",
+        "witness": {
+          "actual": 3,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "c6cf3c869231a67fbee2fbe49be31263362c0a07a3ac52e1310eaad32c825adf",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "ADD",
+            "operand": 0
+          },
+          {
+            "op": "MUL",
+            "operand": 0
+          }
+        ],
+        "ordinal": 16,
+        "state": "REJECT",
+        "witness": {
+          "actual": 0,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "a907fbc506f58f4dd6bd38d4bc00ca2a379def34a4595d7f6e9cd34322f4b57f",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "ADD",
+            "operand": 0
+          },
+          {
+            "op": "MUL",
+            "operand": 1
+          }
+        ],
+        "ordinal": 17,
+        "state": "REJECT",
+        "witness": {
+          "actual": 0,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "4d0926bfd929061500d4f4fc6014955639b328ce77332747f97b7787664f8042",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "ADD",
+            "operand": 0
+          },
+          {
+            "op": "MUL",
+            "operand": 3
+          }
+        ],
+        "ordinal": 18,
+        "state": "REJECT",
+        "witness": {
+          "actual": 0,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "8c0d044b348ff17c20b9f8acb6dc2fda1ed323738fb45c3db14438140d115904",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "ADD",
+            "operand": 0
+          },
+          {
+            "op": "XOR",
+            "operand": 0
+          }
+        ],
+        "ordinal": 19,
+        "state": "REJECT",
+        "witness": {
+          "actual": 0,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "65265bdbf8161a684599c62398c1df46f9491f8f04a08e62749ba143070b39b3",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "ADD",
+            "operand": 0
+          },
+          {
+            "op": "XOR",
+            "operand": 1
+          }
+        ],
+        "ordinal": 20,
+        "state": "REJECT",
+        "witness": {
+          "actual": 0,
+          "expected": 4,
+          "input": 1
+        }
+      },
+      {
+        "candidate_id": "0296ae75d09aed8c0aad45dbbe9a16612e163e1e3d57d598482d03b2ad8bc524",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "ADD",
+            "operand": 0
+          },
+          {
+            "op": "XOR",
+            "operand": 3
+          }
+        ],
+        "ordinal": 21,
+        "state": "REJECT",
+        "witness": {
+          "actual": 3,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "7356eefad75c348925304bd231bfff668d26d35b332bd23d50ec17df37e73f52",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "ADD",
+            "operand": 0
+          },
+          {
+            "op": "AND",
+            "operand": 0
+          }
+        ],
+        "ordinal": 22,
+        "state": "REJECT",
+        "witness": {
+          "actual": 0,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "e08055b55de9813626bb6ec60893d80e3a07e5b5c431f1202f1d812589d72f44",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "ADD",
+            "operand": 0
+          },
+          {
+            "op": "AND",
+            "operand": 1
+          }
+        ],
+        "ordinal": 23,
+        "state": "REJECT",
+        "witness": {
+          "actual": 0,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "b1f6dcf6490cce63401fa97af485a8e952605aeedca1455b40cfa72e30d0b1f2",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "ADD",
+            "operand": 0
+          },
+          {
+            "op": "AND",
+            "operand": 3
+          }
+        ],
+        "ordinal": 24,
+        "state": "REJECT",
+        "witness": {
+          "actual": 0,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "b2d9d08457de7ca17b4bf70d6ffe2c38a9cae4a4d9de3acbf7be338dd1f9e0ec",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "ADD",
+            "operand": 1
+          },
+          {
+            "op": "ADD",
+            "operand": 0
+          }
+        ],
+        "ordinal": 25,
+        "state": "REJECT",
+        "witness": {
+          "actual": 2,
+          "expected": 4,
+          "input": 1
+        }
+      },
+      {
+        "candidate_id": "27db49875468a74983cd478841c9774253af9598f99d57d3d247a588255016d4",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "ADD",
+            "operand": 1
+          },
+          {
+            "op": "ADD",
+            "operand": 1
+          }
+        ],
+        "ordinal": 26,
+        "state": "REJECT",
+        "witness": {
+          "actual": 2,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "4ced09f46179128378f317f2debf3f59984910700fdfd568912cbbe0569b60f0",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "ADD",
+            "operand": 1
+          },
+          {
+            "op": "ADD",
+            "operand": 3
+          }
+        ],
+        "ordinal": 27,
+        "state": "REJECT",
+        "witness": {
+          "actual": 4,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "970ce5f54838d38095c9bcf4e89781d9098396d7b43ff973acb4abeba8f9e6b6",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "ADD",
+            "operand": 1
+          },
+          {
+            "op": "MUL",
+            "operand": 0
+          }
+        ],
+        "ordinal": 28,
+        "state": "REJECT",
+        "witness": {
+          "actual": 0,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "3b10d03de22b4339e2601e0c1dc2b851359243ed644371668d335282032943e9",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "ADD",
+            "operand": 1
+          },
+          {
+            "op": "MUL",
+            "operand": 1
+          }
+        ],
+        "ordinal": 29,
+        "state": "REJECT",
+        "witness": {
+          "actual": 2,
+          "expected": 4,
+          "input": 1
+        }
+      },
+      {
+        "candidate_id": "9eebb6d768cb8727596b3e408ca3671522699bbb1af5e8fab2892e346ab7466c",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "ADD",
+            "operand": 1
+          },
+          {
+            "op": "MUL",
+            "operand": 3
+          }
+        ],
+        "ordinal": 30,
+        "state": "REJECT",
+        "witness": {
+          "actual": 3,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "70040ef940d990a0d95b61b331b86dd37ec0af191f050691d68faf6ffc4ae41b",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "ADD",
+            "operand": 1
+          },
+          {
+            "op": "XOR",
+            "operand": 0
+          }
+        ],
+        "ordinal": 31,
+        "state": "REJECT",
+        "witness": {
+          "actual": 2,
+          "expected": 4,
+          "input": 1
+        }
+      },
+      {
+        "candidate_id": "6b6016ac9c09987b5fa772ced139516d77e5a2146cf122993ca992a4ca4100ae",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "ADD",
+            "operand": 1
+          },
+          {
+            "op": "XOR",
+            "operand": 1
+          }
+        ],
+        "ordinal": 32,
+        "state": "REJECT",
+        "witness": {
+          "actual": 0,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "893fa2c8d4df9f84404f62014c2c86943ed3607c64c33d98c109c904becc458f",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "ADD",
+            "operand": 1
+          },
+          {
+            "op": "XOR",
+            "operand": 3
+          }
+        ],
+        "ordinal": 33,
+        "state": "REJECT",
+        "witness": {
+          "actual": 2,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "70df30ba336994d328f43491b1fafba47aee25ba3ba2e8a7a7debd378f5a973b",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "ADD",
+            "operand": 1
+          },
+          {
+            "op": "AND",
+            "operand": 0
+          }
+        ],
+        "ordinal": 34,
+        "state": "REJECT",
+        "witness": {
+          "actual": 0,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "18467dc0dc17317e003207efd1f56f0b85b52e7472a9c0b6b79753e5e0cc6d49",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "ADD",
+            "operand": 1
+          },
+          {
+            "op": "AND",
+            "operand": 1
+          }
+        ],
+        "ordinal": 35,
+        "state": "REJECT",
+        "witness": {
+          "actual": 0,
+          "expected": 4,
+          "input": 1
+        }
+      },
+      {
+        "candidate_id": "07409138307b100c837fc669de01f4f9424fa16628664ef602761fe5231a6db4",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "ADD",
+            "operand": 1
+          },
+          {
+            "op": "AND",
+            "operand": 3
+          }
+        ],
+        "ordinal": 36,
+        "state": "REJECT",
+        "witness": {
+          "actual": 2,
+          "expected": 4,
+          "input": 1
+        }
+      },
+      {
+        "candidate_id": "6734e4b9430dff57aa686e611893f2fa16a1a3855d1eb3afe3b28fa43bb04557",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "ADD",
+            "operand": 3
+          },
+          {
+            "op": "ADD",
+            "operand": 0
+          }
+        ],
+        "ordinal": 37,
+        "state": "REJECT",
+        "witness": {
+          "actual": 3,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "a212644150e8ed680bd5cf79b67adc561ec69173f69bce78cd34f3a5de21b094",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "ADD",
+            "operand": 3
+          },
+          {
+            "op": "ADD",
+            "operand": 1
+          }
+        ],
+        "ordinal": 38,
+        "state": "REJECT",
+        "witness": {
+          "actual": 4,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "aa7e5341d18e2b4687693edfe8211f850534b635c42337ad82a8d1c1990fd0f1",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "ADD",
+            "operand": 3
+          },
+          {
+            "op": "ADD",
+            "operand": 3
+          }
+        ],
+        "ordinal": 39,
+        "state": "REJECT",
+        "witness": {
+          "actual": 6,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "613d3bee94ea767ff5499da0efe72cbddc109cd5f7899a61f164abebcc24beca",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "ADD",
+            "operand": 3
+          },
+          {
+            "op": "MUL",
+            "operand": 0
+          }
+        ],
+        "ordinal": 40,
+        "state": "REJECT",
+        "witness": {
+          "actual": 0,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "b72b8b71a75e72dc355608db9792674986506fe89eb40ff5289482c150f5dcef",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "ADD",
+            "operand": 3
+          },
+          {
+            "op": "MUL",
+            "operand": 1
+          }
+        ],
+        "ordinal": 41,
+        "state": "REJECT",
+        "witness": {
+          "actual": 3,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "5555c851787ff4e26f90e29479184ace2d80bb9544d8fc5b219cd9ccdffd647e",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "ADD",
+            "operand": 3
+          },
+          {
+            "op": "MUL",
+            "operand": 3
+          }
+        ],
+        "ordinal": 42,
+        "state": "REJECT",
+        "witness": {
+          "actual": 9,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "729496e3f2dbb780916f04184d19667ef3f5bf497fd411a258379b0dce578a12",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "ADD",
+            "operand": 3
+          },
+          {
+            "op": "XOR",
+            "operand": 0
+          }
+        ],
+        "ordinal": 43,
+        "state": "REJECT",
+        "witness": {
+          "actual": 3,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "adaf6fe0830b95dda4e64af782ebc313bfa1197215bdc700d27b830de7bc60e3",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "ADD",
+            "operand": 3
+          },
+          {
+            "op": "XOR",
+            "operand": 1
+          }
+        ],
+        "ordinal": 44,
+        "state": "REJECT",
+        "witness": {
+          "actual": 2,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "f18328cfd7fa9bd4459012383523c21a7bc17a8b973068730f55f1063156f985",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "ADD",
+            "operand": 3
+          },
+          {
+            "op": "XOR",
+            "operand": 3
+          }
+        ],
+        "ordinal": 45,
+        "state": "REJECT",
+        "witness": {
+          "actual": 0,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "3475a887d5b20b97dae1b03a5e3a9e28c1b57d16f3b1a5780170b86853aa25d2",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "ADD",
+            "operand": 3
+          },
+          {
+            "op": "AND",
+            "operand": 0
+          }
+        ],
+        "ordinal": 46,
+        "state": "REJECT",
+        "witness": {
+          "actual": 0,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "131e3e8fa4d7d4ec1a31e62fc6b68b9a32192717aa764a0b35d39c2e78f8f279",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "ADD",
+            "operand": 3
+          },
+          {
+            "op": "AND",
+            "operand": 1
+          }
+        ],
+        "ordinal": 47,
+        "state": "REJECT",
+        "witness": {
+          "actual": 0,
+          "expected": 4,
+          "input": 1
+        }
+      },
+      {
+        "candidate_id": "0143dedacf1d316ae485e41b25bf3319acba865ec099f5a4022587e5cd20c64d",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "ADD",
+            "operand": 3
+          },
+          {
+            "op": "AND",
+            "operand": 3
+          }
+        ],
+        "ordinal": 48,
+        "state": "REJECT",
+        "witness": {
+          "actual": 3,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "b74d49d3762ed26e86e45bd0a4e41f8b10d88a3f6fdfbc95094d98554682e83d",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "MUL",
+            "operand": 0
+          },
+          {
+            "op": "ADD",
+            "operand": 0
+          }
+        ],
+        "ordinal": 49,
+        "state": "REJECT",
+        "witness": {
+          "actual": 0,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "91c7a37d0b422efae199b109885412363d325710e634fca789ba6e361bab1ffe",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "MUL",
+            "operand": 0
+          },
+          {
+            "op": "ADD",
+            "operand": 1
+          }
+        ],
+        "ordinal": 50,
+        "state": "REJECT",
+        "witness": {
+          "actual": 1,
+          "expected": 4,
+          "input": 1
+        }
+      },
+      {
+        "candidate_id": "fa2bf264c6a7e1d80f3639ff82ee467a9e6aa439e610202f079a4c5dfffd1d79",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "MUL",
+            "operand": 0
+          },
+          {
+            "op": "ADD",
+            "operand": 3
+          }
+        ],
+        "ordinal": 51,
+        "state": "REJECT",
+        "witness": {
+          "actual": 3,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "7eb4156eb15d33cd4399de9ba82b25a6d8bcb6e9043f258473ae80f8219c4362",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "MUL",
+            "operand": 0
+          },
+          {
+            "op": "MUL",
+            "operand": 0
+          }
+        ],
+        "ordinal": 52,
+        "state": "REJECT",
+        "witness": {
+          "actual": 0,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "b6d32b8410379975ef88e6f5ad2f60226ff76b29e3f927d6d082422b5170abd4",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "MUL",
+            "operand": 0
+          },
+          {
+            "op": "MUL",
+            "operand": 1
+          }
+        ],
+        "ordinal": 53,
+        "state": "REJECT",
+        "witness": {
+          "actual": 0,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "77afb34b6b45e2261bb9a8039a67ee2a8ca21841a21cbc731f78b5662e9060be",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "MUL",
+            "operand": 0
+          },
+          {
+            "op": "MUL",
+            "operand": 3
+          }
+        ],
+        "ordinal": 54,
+        "state": "REJECT",
+        "witness": {
+          "actual": 0,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "1a957aaddeb1da5c17cfe21485803f10f8ecbac00643ec8799c8828c38f70185",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "MUL",
+            "operand": 0
+          },
+          {
+            "op": "XOR",
+            "operand": 0
+          }
+        ],
+        "ordinal": 55,
+        "state": "REJECT",
+        "witness": {
+          "actual": 0,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "fd1fed692387bb288c5116382c5abec78b373f7a64698ae71f81b8b06081e4b4",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "MUL",
+            "operand": 0
+          },
+          {
+            "op": "XOR",
+            "operand": 1
+          }
+        ],
+        "ordinal": 56,
+        "state": "REJECT",
+        "witness": {
+          "actual": 1,
+          "expected": 4,
+          "input": 1
+        }
+      },
+      {
+        "candidate_id": "8ca68f9004bf7e027fbe40e2403a4b405f67be759f0269acdc218ea381f2fdd0",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "MUL",
+            "operand": 0
+          },
+          {
+            "op": "XOR",
+            "operand": 3
+          }
+        ],
+        "ordinal": 57,
+        "state": "REJECT",
+        "witness": {
+          "actual": 3,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "703634ac15057ea456753802c8e2e441e8a09854e53b0b101cad00ab5ad5a5c7",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "MUL",
+            "operand": 0
+          },
+          {
+            "op": "AND",
+            "operand": 0
+          }
+        ],
+        "ordinal": 58,
+        "state": "REJECT",
+        "witness": {
+          "actual": 0,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "92133e0fc030cb463ca345041d49caf0a38852680ffc41ca59f2fbc803845dcd",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "MUL",
+            "operand": 0
+          },
+          {
+            "op": "AND",
+            "operand": 1
+          }
+        ],
+        "ordinal": 59,
+        "state": "REJECT",
+        "witness": {
+          "actual": 0,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "9aefd689b32889fda4a57f1c30aee256ac5d28927008aa8a5d4bfea3d8708140",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "MUL",
+            "operand": 0
+          },
+          {
+            "op": "AND",
+            "operand": 3
+          }
+        ],
+        "ordinal": 60,
+        "state": "REJECT",
+        "witness": {
+          "actual": 0,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "ec2555e8cf680aff4565b975f2c2b9676026d92169e7031be34bf2cfc03c5adc",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "MUL",
+            "operand": 1
+          },
+          {
+            "op": "ADD",
+            "operand": 0
+          }
+        ],
+        "ordinal": 61,
+        "state": "REJECT",
+        "witness": {
+          "actual": 0,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "9c023dd182848688f855d61b259974638f458f8e471542f66c310ff3b7879b7e",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "MUL",
+            "operand": 1
+          },
+          {
+            "op": "ADD",
+            "operand": 1
+          }
+        ],
+        "ordinal": 62,
+        "state": "REJECT",
+        "witness": {
+          "actual": 2,
+          "expected": 4,
+          "input": 1
+        }
+      },
+      {
+        "candidate_id": "91d1f5ead859d1204c2d1b56dfb427b685511e3f2bfd23707731a318360e802c",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "MUL",
+            "operand": 1
+          },
+          {
+            "op": "ADD",
+            "operand": 3
+          }
+        ],
+        "ordinal": 63,
+        "state": "REJECT",
+        "witness": {
+          "actual": 3,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "6733503ae2c358b1555efcfa48d349b671964ac68152f8deded420f0fd521943",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "MUL",
+            "operand": 1
+          },
+          {
+            "op": "MUL",
+            "operand": 0
+          }
+        ],
+        "ordinal": 64,
+        "state": "REJECT",
+        "witness": {
+          "actual": 0,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "03c5fe48f7d95c54b53d2269c89f92c94642cd0ade8761296a6f9a93df14f59c",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "MUL",
+            "operand": 1
+          },
+          {
+            "op": "MUL",
+            "operand": 1
+          }
+        ],
+        "ordinal": 65,
+        "state": "REJECT",
+        "witness": {
+          "actual": 0,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "2d6bb18798dbabd323c26ec66be52cb06f9a4e14ec5c10f8d3d2ca89b63fb84e",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "MUL",
+            "operand": 1
+          },
+          {
+            "op": "MUL",
+            "operand": 3
+          }
+        ],
+        "ordinal": 66,
+        "state": "REJECT",
+        "witness": {
+          "actual": 0,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "bfed604e5e4d4e9dddc268c2959165093f9f70cca4bf8b5c18e9d13cdd098f73",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "MUL",
+            "operand": 1
+          },
+          {
+            "op": "XOR",
+            "operand": 0
+          }
+        ],
+        "ordinal": 67,
+        "state": "REJECT",
+        "witness": {
+          "actual": 0,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "ee7a0c690c51348016442155ac94e46c4ac010addafa35eff285ccf7bb77548c",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "MUL",
+            "operand": 1
+          },
+          {
+            "op": "XOR",
+            "operand": 1
+          }
+        ],
+        "ordinal": 68,
+        "state": "REJECT",
+        "witness": {
+          "actual": 0,
+          "expected": 4,
+          "input": 1
+        }
+      },
+      {
+        "candidate_id": "f9bcd12e7aa6f17289c64fb794e32940423c4d8277f1ca24dc20e31092d9b9ae",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "MUL",
+            "operand": 1
+          },
+          {
+            "op": "XOR",
+            "operand": 3
+          }
+        ],
+        "ordinal": 69,
+        "state": "REJECT",
+        "witness": {
+          "actual": 3,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "7f4e060d8c64a8fa91672ad3091e1b7a2891bbfa711e9c480a06fd3c34219635",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "MUL",
+            "operand": 1
+          },
+          {
+            "op": "AND",
+            "operand": 0
+          }
+        ],
+        "ordinal": 70,
+        "state": "REJECT",
+        "witness": {
+          "actual": 0,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "cbecc030dbaa3d1cd85377ef7f00429310462bbb14e10de51821a71eb9cb14d7",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "MUL",
+            "operand": 1
+          },
+          {
+            "op": "AND",
+            "operand": 1
+          }
+        ],
+        "ordinal": 71,
+        "state": "REJECT",
+        "witness": {
+          "actual": 0,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "faf05f0d947ebb4abbb16212a38b49515d486868d2a539f3bab3e4ab2132e893",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "MUL",
+            "operand": 1
+          },
+          {
+            "op": "AND",
+            "operand": 3
+          }
+        ],
+        "ordinal": 72,
+        "state": "REJECT",
+        "witness": {
+          "actual": 0,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "729c0fc6e73e0b4035e68c0e39abf6a2da3bad075d857f5c7a13a0b28edccf24",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "MUL",
+            "operand": 3
+          },
+          {
+            "op": "ADD",
+            "operand": 0
+          }
+        ],
+        "ordinal": 73,
+        "state": "REJECT",
+        "witness": {
+          "actual": 0,
+          "expected": 1,
+          "input": 0
+        }
+      }
+    ],
+    "scope": "fits supplied finite examples; held-out or exhaustive verification is a separate obligation",
+    "status": "CANDIDATE",
+    "tested": 75,
+    "trace": [
+      {
+        "candidate_id": "01b13cc3cf1b903f533f07720a1682463fc109600a23cad5b0d8eb520d4361ac",
+        "depth": 0,
+        "operations": [],
+        "ordinal": 0,
+        "state": "REJECT",
+        "witness": {
+          "actual": 0,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "7f1c92c25a519aad3db9a76f0cfca3eb457b7f7921b86eb75d9a73c9a41d105e",
+        "depth": 1,
+        "operations": [
+          {
+            "op": "ADD",
+            "operand": 0
+          }
+        ],
+        "ordinal": 1,
+        "state": "REJECT",
+        "witness": {
+          "actual": 0,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "cb7c3090057fc51a06a9af8f39c81e9cad5b45eb2d91f26ab370eb08789e32d7",
+        "depth": 1,
+        "operations": [
+          {
+            "op": "ADD",
+            "operand": 1
+          }
+        ],
+        "ordinal": 2,
+        "state": "REJECT",
+        "witness": {
+          "actual": 2,
+          "expected": 4,
+          "input": 1
+        }
+      },
+      {
+        "candidate_id": "e565e97dd1d0a9b5880b647fbf271e0d3ac655478af8af29541cd6d9ec2d6e4b",
+        "depth": 1,
+        "operations": [
+          {
+            "op": "ADD",
+            "operand": 3
+          }
+        ],
+        "ordinal": 3,
+        "state": "REJECT",
+        "witness": {
+          "actual": 3,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "b891da6fc15b03ae2faf0e0ee3727a8827a3332261cd8a6ceeaa52923d9027fa",
+        "depth": 1,
+        "operations": [
+          {
+            "op": "MUL",
+            "operand": 0
+          }
+        ],
+        "ordinal": 4,
+        "state": "REJECT",
+        "witness": {
+          "actual": 0,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "3de131f59ed662518d22b527147e288a966769f808468120074f657cdfc3bb82",
+        "depth": 1,
+        "operations": [
+          {
+            "op": "MUL",
+            "operand": 1
+          }
+        ],
+        "ordinal": 5,
+        "state": "REJECT",
+        "witness": {
+          "actual": 0,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "9d09e774def0fce5ba812986e2341620dc7e89fd6aa29fc494f8c740dce6cc09",
+        "depth": 1,
+        "operations": [
+          {
+            "op": "MUL",
+            "operand": 3
+          }
+        ],
+        "ordinal": 6,
+        "state": "REJECT",
+        "witness": {
+          "actual": 0,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "f45d77fe98a64f9559090a1a0310bb4230794a991db501b6cbcf162dd4c8b8b2",
+        "depth": 1,
+        "operations": [
+          {
+            "op": "XOR",
+            "operand": 0
+          }
+        ],
+        "ordinal": 7,
+        "state": "REJECT",
+        "witness": {
+          "actual": 0,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "18e51b8729b8f2b30edee04306b8def7dc2b97b3d3ca64e4de768891894567bd",
+        "depth": 1,
+        "operations": [
+          {
+            "op": "XOR",
+            "operand": 1
+          }
+        ],
+        "ordinal": 8,
+        "state": "REJECT",
+        "witness": {
+          "actual": 0,
+          "expected": 4,
+          "input": 1
+        }
+      },
+      {
+        "candidate_id": "fc0aed6c114d6a95c5216de85770ec9e8cf86e6773a4801a899c934bf86146e3",
+        "depth": 1,
+        "operations": [
+          {
+            "op": "XOR",
+            "operand": 3
+          }
+        ],
+        "ordinal": 9,
+        "state": "REJECT",
+        "witness": {
+          "actual": 3,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "f61bd54f32a777b456914b552b0bc88cf7d4743d539668f6e1672ea3b013593e",
+        "depth": 1,
+        "operations": [
+          {
+            "op": "AND",
+            "operand": 0
+          }
+        ],
+        "ordinal": 10,
+        "state": "REJECT",
+        "witness": {
+          "actual": 0,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "c8472c07e770db13178366a44208a1e8df56f35db7326a10e657e77a3af369ac",
+        "depth": 1,
+        "operations": [
+          {
+            "op": "AND",
+            "operand": 1
+          }
+        ],
+        "ordinal": 11,
+        "state": "REJECT",
+        "witness": {
+          "actual": 0,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "18e2674af6ee9891db17d878a1807e94908b38fde994d1d25512d7415f6bc853",
+        "depth": 1,
+        "operations": [
+          {
+            "op": "AND",
+            "operand": 3
+          }
+        ],
+        "ordinal": 12,
+        "state": "REJECT",
+        "witness": {
+          "actual": 0,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "0ad3c35bfbdb8dee77bcc3183431d1561d8864decc62a76d500c975643198c62",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "ADD",
+            "operand": 0
+          },
+          {
+            "op": "ADD",
+            "operand": 0
+          }
+        ],
+        "ordinal": 13,
+        "state": "REJECT",
+        "witness": {
+          "actual": 0,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "99c4796c23272c730cbb88c6f73b006a57ee8f5f4ea45f2f07b50c94b71a6e23",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "ADD",
+            "operand": 0
+          },
+          {
+            "op": "ADD",
+            "operand": 1
+          }
+        ],
+        "ordinal": 14,
+        "state": "REJECT",
+        "witness": {
+          "actual": 2,
+          "expected": 4,
+          "input": 1
+        }
+      },
+      {
+        "candidate_id": "3999a29d9e841c2c6fbcb241b8bd74ff4e1c62e2271309852b030de95734eea8",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "ADD",
+            "operand": 0
+          },
+          {
+            "op": "ADD",
+            "operand": 3
+          }
+        ],
+        "ordinal": 15,
+        "state": "REJECT",
+        "witness": {
+          "actual": 3,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "c6cf3c869231a67fbee2fbe49be31263362c0a07a3ac52e1310eaad32c825adf",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "ADD",
+            "operand": 0
+          },
+          {
+            "op": "MUL",
+            "operand": 0
+          }
+        ],
+        "ordinal": 16,
+        "state": "REJECT",
+        "witness": {
+          "actual": 0,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "a907fbc506f58f4dd6bd38d4bc00ca2a379def34a4595d7f6e9cd34322f4b57f",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "ADD",
+            "operand": 0
+          },
+          {
+            "op": "MUL",
+            "operand": 1
+          }
+        ],
+        "ordinal": 17,
+        "state": "REJECT",
+        "witness": {
+          "actual": 0,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "4d0926bfd929061500d4f4fc6014955639b328ce77332747f97b7787664f8042",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "ADD",
+            "operand": 0
+          },
+          {
+            "op": "MUL",
+            "operand": 3
+          }
+        ],
+        "ordinal": 18,
+        "state": "REJECT",
+        "witness": {
+          "actual": 0,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "8c0d044b348ff17c20b9f8acb6dc2fda1ed323738fb45c3db14438140d115904",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "ADD",
+            "operand": 0
+          },
+          {
+            "op": "XOR",
+            "operand": 0
+          }
+        ],
+        "ordinal": 19,
+        "state": "REJECT",
+        "witness": {
+          "actual": 0,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "65265bdbf8161a684599c62398c1df46f9491f8f04a08e62749ba143070b39b3",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "ADD",
+            "operand": 0
+          },
+          {
+            "op": "XOR",
+            "operand": 1
+          }
+        ],
+        "ordinal": 20,
+        "state": "REJECT",
+        "witness": {
+          "actual": 0,
+          "expected": 4,
+          "input": 1
+        }
+      },
+      {
+        "candidate_id": "0296ae75d09aed8c0aad45dbbe9a16612e163e1e3d57d598482d03b2ad8bc524",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "ADD",
+            "operand": 0
+          },
+          {
+            "op": "XOR",
+            "operand": 3
+          }
+        ],
+        "ordinal": 21,
+        "state": "REJECT",
+        "witness": {
+          "actual": 3,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "7356eefad75c348925304bd231bfff668d26d35b332bd23d50ec17df37e73f52",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "ADD",
+            "operand": 0
+          },
+          {
+            "op": "AND",
+            "operand": 0
+          }
+        ],
+        "ordinal": 22,
+        "state": "REJECT",
+        "witness": {
+          "actual": 0,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "e08055b55de9813626bb6ec60893d80e3a07e5b5c431f1202f1d812589d72f44",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "ADD",
+            "operand": 0
+          },
+          {
+            "op": "AND",
+            "operand": 1
+          }
+        ],
+        "ordinal": 23,
+        "state": "REJECT",
+        "witness": {
+          "actual": 0,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "b1f6dcf6490cce63401fa97af485a8e952605aeedca1455b40cfa72e30d0b1f2",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "ADD",
+            "operand": 0
+          },
+          {
+            "op": "AND",
+            "operand": 3
+          }
+        ],
+        "ordinal": 24,
+        "state": "REJECT",
+        "witness": {
+          "actual": 0,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "b2d9d08457de7ca17b4bf70d6ffe2c38a9cae4a4d9de3acbf7be338dd1f9e0ec",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "ADD",
+            "operand": 1
+          },
+          {
+            "op": "ADD",
+            "operand": 0
+          }
+        ],
+        "ordinal": 25,
+        "state": "REJECT",
+        "witness": {
+          "actual": 2,
+          "expected": 4,
+          "input": 1
+        }
+      },
+      {
+        "candidate_id": "27db49875468a74983cd478841c9774253af9598f99d57d3d247a588255016d4",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "ADD",
+            "operand": 1
+          },
+          {
+            "op": "ADD",
+            "operand": 1
+          }
+        ],
+        "ordinal": 26,
+        "state": "REJECT",
+        "witness": {
+          "actual": 2,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "4ced09f46179128378f317f2debf3f59984910700fdfd568912cbbe0569b60f0",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "ADD",
+            "operand": 1
+          },
+          {
+            "op": "ADD",
+            "operand": 3
+          }
+        ],
+        "ordinal": 27,
+        "state": "REJECT",
+        "witness": {
+          "actual": 4,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "970ce5f54838d38095c9bcf4e89781d9098396d7b43ff973acb4abeba8f9e6b6",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "ADD",
+            "operand": 1
+          },
+          {
+            "op": "MUL",
+            "operand": 0
+          }
+        ],
+        "ordinal": 28,
+        "state": "REJECT",
+        "witness": {
+          "actual": 0,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "3b10d03de22b4339e2601e0c1dc2b851359243ed644371668d335282032943e9",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "ADD",
+            "operand": 1
+          },
+          {
+            "op": "MUL",
+            "operand": 1
+          }
+        ],
+        "ordinal": 29,
+        "state": "REJECT",
+        "witness": {
+          "actual": 2,
+          "expected": 4,
+          "input": 1
+        }
+      },
+      {
+        "candidate_id": "9eebb6d768cb8727596b3e408ca3671522699bbb1af5e8fab2892e346ab7466c",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "ADD",
+            "operand": 1
+          },
+          {
+            "op": "MUL",
+            "operand": 3
+          }
+        ],
+        "ordinal": 30,
+        "state": "REJECT",
+        "witness": {
+          "actual": 3,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "70040ef940d990a0d95b61b331b86dd37ec0af191f050691d68faf6ffc4ae41b",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "ADD",
+            "operand": 1
+          },
+          {
+            "op": "XOR",
+            "operand": 0
+          }
+        ],
+        "ordinal": 31,
+        "state": "REJECT",
+        "witness": {
+          "actual": 2,
+          "expected": 4,
+          "input": 1
+        }
+      },
+      {
+        "candidate_id": "6b6016ac9c09987b5fa772ced139516d77e5a2146cf122993ca992a4ca4100ae",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "ADD",
+            "operand": 1
+          },
+          {
+            "op": "XOR",
+            "operand": 1
+          }
+        ],
+        "ordinal": 32,
+        "state": "REJECT",
+        "witness": {
+          "actual": 0,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "893fa2c8d4df9f84404f62014c2c86943ed3607c64c33d98c109c904becc458f",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "ADD",
+            "operand": 1
+          },
+          {
+            "op": "XOR",
+            "operand": 3
+          }
+        ],
+        "ordinal": 33,
+        "state": "REJECT",
+        "witness": {
+          "actual": 2,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "70df30ba336994d328f43491b1fafba47aee25ba3ba2e8a7a7debd378f5a973b",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "ADD",
+            "operand": 1
+          },
+          {
+            "op": "AND",
+            "operand": 0
+          }
+        ],
+        "ordinal": 34,
+        "state": "REJECT",
+        "witness": {
+          "actual": 0,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "18467dc0dc17317e003207efd1f56f0b85b52e7472a9c0b6b79753e5e0cc6d49",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "ADD",
+            "operand": 1
+          },
+          {
+            "op": "AND",
+            "operand": 1
+          }
+        ],
+        "ordinal": 35,
+        "state": "REJECT",
+        "witness": {
+          "actual": 0,
+          "expected": 4,
+          "input": 1
+        }
+      },
+      {
+        "candidate_id": "07409138307b100c837fc669de01f4f9424fa16628664ef602761fe5231a6db4",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "ADD",
+            "operand": 1
+          },
+          {
+            "op": "AND",
+            "operand": 3
+          }
+        ],
+        "ordinal": 36,
+        "state": "REJECT",
+        "witness": {
+          "actual": 2,
+          "expected": 4,
+          "input": 1
+        }
+      },
+      {
+        "candidate_id": "6734e4b9430dff57aa686e611893f2fa16a1a3855d1eb3afe3b28fa43bb04557",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "ADD",
+            "operand": 3
+          },
+          {
+            "op": "ADD",
+            "operand": 0
+          }
+        ],
+        "ordinal": 37,
+        "state": "REJECT",
+        "witness": {
+          "actual": 3,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "a212644150e8ed680bd5cf79b67adc561ec69173f69bce78cd34f3a5de21b094",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "ADD",
+            "operand": 3
+          },
+          {
+            "op": "ADD",
+            "operand": 1
+          }
+        ],
+        "ordinal": 38,
+        "state": "REJECT",
+        "witness": {
+          "actual": 4,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "aa7e5341d18e2b4687693edfe8211f850534b635c42337ad82a8d1c1990fd0f1",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "ADD",
+            "operand": 3
+          },
+          {
+            "op": "ADD",
+            "operand": 3
+          }
+        ],
+        "ordinal": 39,
+        "state": "REJECT",
+        "witness": {
+          "actual": 6,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "613d3bee94ea767ff5499da0efe72cbddc109cd5f7899a61f164abebcc24beca",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "ADD",
+            "operand": 3
+          },
+          {
+            "op": "MUL",
+            "operand": 0
+          }
+        ],
+        "ordinal": 40,
+        "state": "REJECT",
+        "witness": {
+          "actual": 0,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "b72b8b71a75e72dc355608db9792674986506fe89eb40ff5289482c150f5dcef",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "ADD",
+            "operand": 3
+          },
+          {
+            "op": "MUL",
+            "operand": 1
+          }
+        ],
+        "ordinal": 41,
+        "state": "REJECT",
+        "witness": {
+          "actual": 3,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "5555c851787ff4e26f90e29479184ace2d80bb9544d8fc5b219cd9ccdffd647e",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "ADD",
+            "operand": 3
+          },
+          {
+            "op": "MUL",
+            "operand": 3
+          }
+        ],
+        "ordinal": 42,
+        "state": "REJECT",
+        "witness": {
+          "actual": 9,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "729496e3f2dbb780916f04184d19667ef3f5bf497fd411a258379b0dce578a12",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "ADD",
+            "operand": 3
+          },
+          {
+            "op": "XOR",
+            "operand": 0
+          }
+        ],
+        "ordinal": 43,
+        "state": "REJECT",
+        "witness": {
+          "actual": 3,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "adaf6fe0830b95dda4e64af782ebc313bfa1197215bdc700d27b830de7bc60e3",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "ADD",
+            "operand": 3
+          },
+          {
+            "op": "XOR",
+            "operand": 1
+          }
+        ],
+        "ordinal": 44,
+        "state": "REJECT",
+        "witness": {
+          "actual": 2,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "f18328cfd7fa9bd4459012383523c21a7bc17a8b973068730f55f1063156f985",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "ADD",
+            "operand": 3
+          },
+          {
+            "op": "XOR",
+            "operand": 3
+          }
+        ],
+        "ordinal": 45,
+        "state": "REJECT",
+        "witness": {
+          "actual": 0,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "3475a887d5b20b97dae1b03a5e3a9e28c1b57d16f3b1a5780170b86853aa25d2",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "ADD",
+            "operand": 3
+          },
+          {
+            "op": "AND",
+            "operand": 0
+          }
+        ],
+        "ordinal": 46,
+        "state": "REJECT",
+        "witness": {
+          "actual": 0,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "131e3e8fa4d7d4ec1a31e62fc6b68b9a32192717aa764a0b35d39c2e78f8f279",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "ADD",
+            "operand": 3
+          },
+          {
+            "op": "AND",
+            "operand": 1
+          }
+        ],
+        "ordinal": 47,
+        "state": "REJECT",
+        "witness": {
+          "actual": 0,
+          "expected": 4,
+          "input": 1
+        }
+      },
+      {
+        "candidate_id": "0143dedacf1d316ae485e41b25bf3319acba865ec099f5a4022587e5cd20c64d",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "ADD",
+            "operand": 3
+          },
+          {
+            "op": "AND",
+            "operand": 3
+          }
+        ],
+        "ordinal": 48,
+        "state": "REJECT",
+        "witness": {
+          "actual": 3,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "b74d49d3762ed26e86e45bd0a4e41f8b10d88a3f6fdfbc95094d98554682e83d",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "MUL",
+            "operand": 0
+          },
+          {
+            "op": "ADD",
+            "operand": 0
+          }
+        ],
+        "ordinal": 49,
+        "state": "REJECT",
+        "witness": {
+          "actual": 0,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "91c7a37d0b422efae199b109885412363d325710e634fca789ba6e361bab1ffe",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "MUL",
+            "operand": 0
+          },
+          {
+            "op": "ADD",
+            "operand": 1
+          }
+        ],
+        "ordinal": 50,
+        "state": "REJECT",
+        "witness": {
+          "actual": 1,
+          "expected": 4,
+          "input": 1
+        }
+      },
+      {
+        "candidate_id": "fa2bf264c6a7e1d80f3639ff82ee467a9e6aa439e610202f079a4c5dfffd1d79",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "MUL",
+            "operand": 0
+          },
+          {
+            "op": "ADD",
+            "operand": 3
+          }
+        ],
+        "ordinal": 51,
+        "state": "REJECT",
+        "witness": {
+          "actual": 3,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "7eb4156eb15d33cd4399de9ba82b25a6d8bcb6e9043f258473ae80f8219c4362",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "MUL",
+            "operand": 0
+          },
+          {
+            "op": "MUL",
+            "operand": 0
+          }
+        ],
+        "ordinal": 52,
+        "state": "REJECT",
+        "witness": {
+          "actual": 0,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "b6d32b8410379975ef88e6f5ad2f60226ff76b29e3f927d6d082422b5170abd4",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "MUL",
+            "operand": 0
+          },
+          {
+            "op": "MUL",
+            "operand": 1
+          }
+        ],
+        "ordinal": 53,
+        "state": "REJECT",
+        "witness": {
+          "actual": 0,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "77afb34b6b45e2261bb9a8039a67ee2a8ca21841a21cbc731f78b5662e9060be",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "MUL",
+            "operand": 0
+          },
+          {
+            "op": "MUL",
+            "operand": 3
+          }
+        ],
+        "ordinal": 54,
+        "state": "REJECT",
+        "witness": {
+          "actual": 0,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "1a957aaddeb1da5c17cfe21485803f10f8ecbac00643ec8799c8828c38f70185",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "MUL",
+            "operand": 0
+          },
+          {
+            "op": "XOR",
+            "operand": 0
+          }
+        ],
+        "ordinal": 55,
+        "state": "REJECT",
+        "witness": {
+          "actual": 0,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "fd1fed692387bb288c5116382c5abec78b373f7a64698ae71f81b8b06081e4b4",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "MUL",
+            "operand": 0
+          },
+          {
+            "op": "XOR",
+            "operand": 1
+          }
+        ],
+        "ordinal": 56,
+        "state": "REJECT",
+        "witness": {
+          "actual": 1,
+          "expected": 4,
+          "input": 1
+        }
+      },
+      {
+        "candidate_id": "8ca68f9004bf7e027fbe40e2403a4b405f67be759f0269acdc218ea381f2fdd0",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "MUL",
+            "operand": 0
+          },
+          {
+            "op": "XOR",
+            "operand": 3
+          }
+        ],
+        "ordinal": 57,
+        "state": "REJECT",
+        "witness": {
+          "actual": 3,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "703634ac15057ea456753802c8e2e441e8a09854e53b0b101cad00ab5ad5a5c7",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "MUL",
+            "operand": 0
+          },
+          {
+            "op": "AND",
+            "operand": 0
+          }
+        ],
+        "ordinal": 58,
+        "state": "REJECT",
+        "witness": {
+          "actual": 0,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "92133e0fc030cb463ca345041d49caf0a38852680ffc41ca59f2fbc803845dcd",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "MUL",
+            "operand": 0
+          },
+          {
+            "op": "AND",
+            "operand": 1
+          }
+        ],
+        "ordinal": 59,
+        "state": "REJECT",
+        "witness": {
+          "actual": 0,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "9aefd689b32889fda4a57f1c30aee256ac5d28927008aa8a5d4bfea3d8708140",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "MUL",
+            "operand": 0
+          },
+          {
+            "op": "AND",
+            "operand": 3
+          }
+        ],
+        "ordinal": 60,
+        "state": "REJECT",
+        "witness": {
+          "actual": 0,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "ec2555e8cf680aff4565b975f2c2b9676026d92169e7031be34bf2cfc03c5adc",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "MUL",
+            "operand": 1
+          },
+          {
+            "op": "ADD",
+            "operand": 0
+          }
+        ],
+        "ordinal": 61,
+        "state": "REJECT",
+        "witness": {
+          "actual": 0,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "9c023dd182848688f855d61b259974638f458f8e471542f66c310ff3b7879b7e",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "MUL",
+            "operand": 1
+          },
+          {
+            "op": "ADD",
+            "operand": 1
+          }
+        ],
+        "ordinal": 62,
+        "state": "REJECT",
+        "witness": {
+          "actual": 2,
+          "expected": 4,
+          "input": 1
+        }
+      },
+      {
+        "candidate_id": "91d1f5ead859d1204c2d1b56dfb427b685511e3f2bfd23707731a318360e802c",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "MUL",
+            "operand": 1
+          },
+          {
+            "op": "ADD",
+            "operand": 3
+          }
+        ],
+        "ordinal": 63,
+        "state": "REJECT",
+        "witness": {
+          "actual": 3,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "6733503ae2c358b1555efcfa48d349b671964ac68152f8deded420f0fd521943",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "MUL",
+            "operand": 1
+          },
+          {
+            "op": "MUL",
+            "operand": 0
+          }
+        ],
+        "ordinal": 64,
+        "state": "REJECT",
+        "witness": {
+          "actual": 0,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "03c5fe48f7d95c54b53d2269c89f92c94642cd0ade8761296a6f9a93df14f59c",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "MUL",
+            "operand": 1
+          },
+          {
+            "op": "MUL",
+            "operand": 1
+          }
+        ],
+        "ordinal": 65,
+        "state": "REJECT",
+        "witness": {
+          "actual": 0,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "2d6bb18798dbabd323c26ec66be52cb06f9a4e14ec5c10f8d3d2ca89b63fb84e",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "MUL",
+            "operand": 1
+          },
+          {
+            "op": "MUL",
+            "operand": 3
+          }
+        ],
+        "ordinal": 66,
+        "state": "REJECT",
+        "witness": {
+          "actual": 0,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "bfed604e5e4d4e9dddc268c2959165093f9f70cca4bf8b5c18e9d13cdd098f73",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "MUL",
+            "operand": 1
+          },
+          {
+            "op": "XOR",
+            "operand": 0
+          }
+        ],
+        "ordinal": 67,
+        "state": "REJECT",
+        "witness": {
+          "actual": 0,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "ee7a0c690c51348016442155ac94e46c4ac010addafa35eff285ccf7bb77548c",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "MUL",
+            "operand": 1
+          },
+          {
+            "op": "XOR",
+            "operand": 1
+          }
+        ],
+        "ordinal": 68,
+        "state": "REJECT",
+        "witness": {
+          "actual": 0,
+          "expected": 4,
+          "input": 1
+        }
+      },
+      {
+        "candidate_id": "f9bcd12e7aa6f17289c64fb794e32940423c4d8277f1ca24dc20e31092d9b9ae",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "MUL",
+            "operand": 1
+          },
+          {
+            "op": "XOR",
+            "operand": 3
+          }
+        ],
+        "ordinal": 69,
+        "state": "REJECT",
+        "witness": {
+          "actual": 3,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "7f4e060d8c64a8fa91672ad3091e1b7a2891bbfa711e9c480a06fd3c34219635",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "MUL",
+            "operand": 1
+          },
+          {
+            "op": "AND",
+            "operand": 0
+          }
+        ],
+        "ordinal": 70,
+        "state": "REJECT",
+        "witness": {
+          "actual": 0,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "cbecc030dbaa3d1cd85377ef7f00429310462bbb14e10de51821a71eb9cb14d7",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "MUL",
+            "operand": 1
+          },
+          {
+            "op": "AND",
+            "operand": 1
+          }
+        ],
+        "ordinal": 71,
+        "state": "REJECT",
+        "witness": {
+          "actual": 0,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "faf05f0d947ebb4abbb16212a38b49515d486868d2a539f3bab3e4ab2132e893",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "MUL",
+            "operand": 1
+          },
+          {
+            "op": "AND",
+            "operand": 3
+          }
+        ],
+        "ordinal": 72,
+        "state": "REJECT",
+        "witness": {
+          "actual": 0,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "729c0fc6e73e0b4035e68c0e39abf6a2da3bad075d857f5c7a13a0b28edccf24",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "MUL",
+            "operand": 3
+          },
+          {
+            "op": "ADD",
+            "operand": 0
+          }
+        ],
+        "ordinal": 73,
+        "state": "REJECT",
+        "witness": {
+          "actual": 0,
+          "expected": 1,
+          "input": 0
+        }
+      },
+      {
+        "candidate_id": "2a2c8ad9c2c72ee26cace3bda158d009f496ced72e75091f2706247e275ca8fe",
+        "depth": 2,
+        "operations": [
+          {
+            "op": "MUL",
+            "operand": 3
+          },
+          {
+            "op": "ADD",
+            "operand": 1
+          }
+        ],
+        "ordinal": 74,
+        "state": "TRAIN_FIT",
+        "witness": null
+      }
+    ],
+    "training_observations": 4,
+    "training_sha256": "3b64519f6487f4cfbfe8ac5d0f90fdc48875c6e08b70940d87915dd38f643925"
+  },
+  "source_pins": {
+    "__init__.py": "8d6782405df442c6d2d45a87153b00a16204ce8b58b55e9bfb19595ca6e23958",
+    "_runtime.py": "33bfc046b67f90d7a470cd57ea146b54c8f210be4780a61e59fbe000b3ad8734",
+    "contracts.py": "442b0c68d984479dc67c89fbce69ca1ca2c789c1e46f8d103dacff981e8b749e",
+    "generators.py": "77d792b22d3bcfae3b6a48f0ed74db6352e73188daa999f03e5ee2aaa9d90fa9",
+    "kernel.py": "aeb34870bc79f238514987639c2d15f5c0a1b30e6ae084866b7168b45fc50a6e"
+  }
+}

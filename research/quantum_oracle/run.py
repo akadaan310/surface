@@ -62,7 +62,7 @@ def _write(path, value):
 
 def _versions():
     packages = {}
-    for name in ("numpy", "scipy", "qiskit", "qutip"):
+    for name in ("numpy", "scipy", "qiskit", "qutip", "astropy"):
         try:
             packages[name] = importlib.metadata.version(name)
         except importlib.metadata.PackageNotFoundError:
@@ -128,12 +128,17 @@ def execute(runs):
     return asdict(result)
 
 
+def execution_succeeded(result):
+    """The retained Supervisor protocol uses lowercase execution states."""
+    return result.get("status") == "succeeded" and result.get("returncode") == 0
+
+
 def replay_run(runs):
     runs = Path(runs).resolve(strict=True)
     result = json.loads(_safe_file(runs, "result.json").read_text())
     if set(result) != {"task_id", "status", "reason", "epoch", "attempts", "returncode", "published", "elapsed"}:
         raise ValueError("incomplete Supervisor result schema")
-    if (result["status"] != "SUCCEEDED" or result["task_id"] != "scientific-reference"
+    if (not execution_succeeded(result) or result["task_id"] != "scientific-reference"
             or result["returncode"] != 0 or result["attempts"] != 1
             or type(result["epoch"]) is not int or result["epoch"] < 1):
         raise ValueError("run did not succeed; inspect resume.json and logs")
@@ -198,7 +203,7 @@ def main():
         return worker()
     report = replay_run(args.replay) if args.replay else execute(args.runs)
     print(json.dumps(report, indent=2))
-    return 0 if report["status"] in ("PASS", "SUCCEEDED") else 3
+    return 0 if report["status"] == "PASS" or execution_succeeded(report) else 3
 
 
 if __name__ == "__main__":

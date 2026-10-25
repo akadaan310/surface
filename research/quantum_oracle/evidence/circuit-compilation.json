@@ -1,0 +1,2642 @@
+{
+  "schema": "quantum-oracle.historical-compilation/1",
+  "executed_utc": "2026-10-25T17:15:43.892696+00:00",
+  "command": [
+    "/home/ubuntu/Documents/Codex/2026-10-25-substrate-phantom-quantum-oracle-scientific-completion/surface/.venv/bin/python",
+    "-B",
+    "-m",
+    "research.quantum_oracle.tests.test_circuits",
+    "--receipt",
+    "research/quantum_oracle/evidence/circuit-compilation.json"
+  ],
+  "environment": {
+    "python": "3.10.12",
+    "qiskit": "2.2.3",
+    "numpy": "2.2.6"
+  },
+  "source_revision": "1dd86e381ddecfc78db94e3287a9ce57e4ad65d8",
+  "calibration_at": "2025-02-26T19:33:06+00:00",
+  "source_sha256": {
+    "research/quantum_oracle/circuits.py": "4337bc183ba864f8968362487b6a6ebd5ebfae79a642fb5e575733872f3d8b7c",
+    "research/quantum_oracle/quantum.py": "557f02365462a070f0f5e4e8a558eb0a3222c759b83aedae856f7b789f84f6cd",
+    "research/quantum_oracle/tests/test_circuits.py": "11c68999191c2ac869506acd29b419ddb21a17b40579ea8cde77a2219e4d668c",
+    "research/quantum_oracle/fixtures/ibm_brisbane_snapshot/conf_brisbane.json": "309836dbf54cf635d811a273a3b4e1c933debdbea71c33b689ea1b71deafc2d2",
+    "research/quantum_oracle/fixtures/ibm_brisbane_snapshot/props_brisbane.json": "bc8b29433a8e1935a8f5537cafccc63194dc5ed5137edba684ff3fb77b269d1d",
+    "research/quantum_oracle/fixtures/ibm_brisbane_snapshot/LICENSE.txt": "7b7de08c64b1824bdc2b9f4b530814a9d0b5905a38ad0e96a717f3dd46d2bbe7"
+  },
+  "case_count": 3,
+  "passed_cases": 3,
+  "rows": [
+    {
+      "logical_qubits": 2,
+      "physical_sites": [
+        0,
+        1
+      ],
+      "source_operations": [
+        {
+          "name": "H",
+          "logical_qubits": [
+            0
+          ],
+          "angle": null
+        },
+        {
+          "name": "RZ",
+          "logical_qubits": [
+            0
+          ],
+          "angle": 0.31
+        },
+        {
+          "name": "CX",
+          "logical_qubits": [
+            0,
+            1
+          ],
+          "angle": null
+        }
+      ],
+      "transpiler_seed": 53,
+      "initial_mapping": [
+        "0",
+        "1"
+      ],
+      "final_mapping": [
+        "0",
+        "1"
+      ],
+      "output_permutation": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "global_phase": 2.3561944901923475,
+      "native_gate_counts": {
+        "rz": 16,
+        "sx": 6,
+        "ecr": 1,
+        "x": 1
+      },
+      "native_operations": [
+        {
+          "name": "rz",
+          "local_slots": [
+            0
+          ],
+          "physical_sites": [
+            "0"
+          ],
+          "parameters": [
+            1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "sx",
+          "local_slots": [
+            0
+          ],
+          "physical_sites": [
+            "0"
+          ],
+          "parameters": [],
+          "duration_seconds": 6.000000000000001e-08,
+          "reported_gate_error": 0.00024329590602476677
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            0
+          ],
+          "physical_sites": [
+            "0"
+          ],
+          "parameters": [
+            1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            0
+          ],
+          "physical_sites": [
+            "0"
+          ],
+          "parameters": [
+            0.31
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            0
+          ],
+          "physical_sites": [
+            "0"
+          ],
+          "parameters": [
+            -1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            0
+          ],
+          "physical_sites": [
+            "0"
+          ],
+          "parameters": [
+            1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "sx",
+          "local_slots": [
+            0
+          ],
+          "physical_sites": [
+            "0"
+          ],
+          "parameters": [],
+          "duration_seconds": 6.000000000000001e-08,
+          "reported_gate_error": 0.00024329590602476677
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            0
+          ],
+          "physical_sites": [
+            "0"
+          ],
+          "parameters": [
+            -1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            1
+          ],
+          "physical_sites": [
+            "1"
+          ],
+          "parameters": [
+            1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            1
+          ],
+          "physical_sites": [
+            "1"
+          ],
+          "parameters": [
+            1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "sx",
+          "local_slots": [
+            1
+          ],
+          "physical_sites": [
+            "1"
+          ],
+          "parameters": [],
+          "duration_seconds": 6.000000000000001e-08,
+          "reported_gate_error": 0.0002425970240311255
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            1
+          ],
+          "physical_sites": [
+            "1"
+          ],
+          "parameters": [
+            1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            1
+          ],
+          "physical_sites": [
+            "1"
+          ],
+          "parameters": [
+            1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            1
+          ],
+          "physical_sites": [
+            "1"
+          ],
+          "parameters": [
+            -1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "sx",
+          "local_slots": [
+            1
+          ],
+          "physical_sites": [
+            "1"
+          ],
+          "parameters": [],
+          "duration_seconds": 6.000000000000001e-08,
+          "reported_gate_error": 0.0002425970240311255
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            1
+          ],
+          "physical_sites": [
+            "1"
+          ],
+          "parameters": [
+            1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "ecr",
+          "local_slots": [
+            1,
+            0
+          ],
+          "physical_sites": [
+            "1",
+            "0"
+          ],
+          "parameters": [],
+          "duration_seconds": 6.6e-07,
+          "reported_gate_error": 0.007432674432642006
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            0
+          ],
+          "physical_sites": [
+            "0"
+          ],
+          "parameters": [
+            1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "sx",
+          "local_slots": [
+            0
+          ],
+          "physical_sites": [
+            "0"
+          ],
+          "parameters": [],
+          "duration_seconds": 6.000000000000001e-08,
+          "reported_gate_error": 0.00024329590602476677
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            0
+          ],
+          "physical_sites": [
+            "0"
+          ],
+          "parameters": [
+            1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "x",
+          "local_slots": [
+            0
+          ],
+          "physical_sites": [
+            "0"
+          ],
+          "parameters": [],
+          "duration_seconds": 6.000000000000001e-08,
+          "reported_gate_error": 0.00024329590602476677
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            1
+          ],
+          "physical_sites": [
+            "1"
+          ],
+          "parameters": [
+            1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "sx",
+          "local_slots": [
+            1
+          ],
+          "physical_sites": [
+            "1"
+          ],
+          "parameters": [],
+          "duration_seconds": 6.000000000000001e-08,
+          "reported_gate_error": 0.0002425970240311255
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            1
+          ],
+          "physical_sites": [
+            "1"
+          ],
+          "parameters": [
+            1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        }
+      ],
+      "serial_duration_seconds": 1.0800000000000002e-06,
+      "unitary_error": 2.1210781103223385e-15,
+      "unitary_absolute_tolerance": 1e-10,
+      "surrogate_density_error": 2.388574504201467e-16,
+      "readout_probability_error": 1.6653345369377348e-16,
+      "surrogate_absolute_tolerance": 3e-14,
+      "surrogate_observed_probabilities": [
+        0.47260624268497686,
+        0.029398408542443678,
+        0.030073568405868598,
+        0.46792178036671095
+      ],
+      "simulated_counts": [
+        1973,
+        106,
+        132,
+        1885
+      ],
+      "shots": 4096,
+      "sampling_seed": 992,
+      "output_density_sha256": "23f7dd5c69abbc733ebc6895044cf024eb2e411b59bdb86e84f0c898b9e4fe7a",
+      "assumptions": [
+        "historical_snapshot_only",
+        "serial_schedule_all_qubits_damp_each_gate",
+        "zero_temperature_T1_amplitude_damping",
+        "independent_readout_confusion",
+        "T2_not_modeled",
+        "gate_error_not_converted_to_depolarizing",
+        "no_crosstalk_leakage_pulse_or_nonmarkovian_model",
+        "no_hardware_execution"
+      ],
+      "comparison_status": "PASS"
+    },
+    {
+      "logical_qubits": 3,
+      "physical_sites": [
+        0,
+        1,
+        2
+      ],
+      "source_operations": [
+        {
+          "name": "H",
+          "logical_qubits": [
+            0
+          ],
+          "angle": null
+        },
+        {
+          "name": "RZ",
+          "logical_qubits": [
+            0
+          ],
+          "angle": 0.31
+        },
+        {
+          "name": "CX",
+          "logical_qubits": [
+            0,
+            2
+          ],
+          "angle": null
+        }
+      ],
+      "transpiler_seed": 53,
+      "initial_mapping": [
+        "0",
+        "1",
+        "2"
+      ],
+      "final_mapping": [
+        "1",
+        "0",
+        "2"
+      ],
+      "output_permutation": [
+        0,
+        2,
+        1,
+        3,
+        4,
+        6,
+        5,
+        7
+      ],
+      "global_phase": 2.356194490192342,
+      "native_gate_counts": {
+        "rz": 35,
+        "sx": 17,
+        "ecr": 4,
+        "x": 1
+      },
+      "native_operations": [
+        {
+          "name": "rz",
+          "local_slots": [
+            0
+          ],
+          "physical_sites": [
+            "0"
+          ],
+          "parameters": [
+            1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "sx",
+          "local_slots": [
+            0
+          ],
+          "physical_sites": [
+            "0"
+          ],
+          "parameters": [],
+          "duration_seconds": 6.000000000000001e-08,
+          "reported_gate_error": 0.00024329590602476677
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            0
+          ],
+          "physical_sites": [
+            "0"
+          ],
+          "parameters": [
+            1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            0
+          ],
+          "physical_sites": [
+            "0"
+          ],
+          "parameters": [
+            0.31
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            0
+          ],
+          "physical_sites": [
+            "0"
+          ],
+          "parameters": [
+            -1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            0
+          ],
+          "physical_sites": [
+            "0"
+          ],
+          "parameters": [
+            1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "sx",
+          "local_slots": [
+            0
+          ],
+          "physical_sites": [
+            "0"
+          ],
+          "parameters": [],
+          "duration_seconds": 6.000000000000001e-08,
+          "reported_gate_error": 0.00024329590602476677
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            0
+          ],
+          "physical_sites": [
+            "0"
+          ],
+          "parameters": [
+            -1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "sx",
+          "local_slots": [
+            1
+          ],
+          "physical_sites": [
+            "1"
+          ],
+          "parameters": [],
+          "duration_seconds": 6.000000000000001e-08,
+          "reported_gate_error": 0.0002425970240311255
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            1
+          ],
+          "physical_sites": [
+            "1"
+          ],
+          "parameters": [
+            -1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "sx",
+          "local_slots": [
+            1
+          ],
+          "physical_sites": [
+            "1"
+          ],
+          "parameters": [],
+          "duration_seconds": 6.000000000000001e-08,
+          "reported_gate_error": 0.0002425970240311255
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            1
+          ],
+          "physical_sites": [
+            "1"
+          ],
+          "parameters": [
+            1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "ecr",
+          "local_slots": [
+            1,
+            0
+          ],
+          "physical_sites": [
+            "1",
+            "0"
+          ],
+          "parameters": [],
+          "duration_seconds": 6.6e-07,
+          "reported_gate_error": 0.007432674432642006
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            0
+          ],
+          "physical_sites": [
+            "0"
+          ],
+          "parameters": [
+            1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "sx",
+          "local_slots": [
+            0
+          ],
+          "physical_sites": [
+            "0"
+          ],
+          "parameters": [],
+          "duration_seconds": 6.000000000000001e-08,
+          "reported_gate_error": 0.00024329590602476677
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            0
+          ],
+          "physical_sites": [
+            "0"
+          ],
+          "parameters": [
+            1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "sx",
+          "local_slots": [
+            0
+          ],
+          "physical_sites": [
+            "0"
+          ],
+          "parameters": [],
+          "duration_seconds": 6.000000000000001e-08,
+          "reported_gate_error": 0.00024329590602476677
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            1
+          ],
+          "physical_sites": [
+            "1"
+          ],
+          "parameters": [
+            1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "sx",
+          "local_slots": [
+            1
+          ],
+          "physical_sites": [
+            "1"
+          ],
+          "parameters": [],
+          "duration_seconds": 6.000000000000001e-08,
+          "reported_gate_error": 0.0002425970240311255
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            1
+          ],
+          "physical_sites": [
+            "1"
+          ],
+          "parameters": [
+            1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            1
+          ],
+          "physical_sites": [
+            "1"
+          ],
+          "parameters": [
+            -1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "ecr",
+          "local_slots": [
+            1,
+            0
+          ],
+          "physical_sites": [
+            "1",
+            "0"
+          ],
+          "parameters": [],
+          "duration_seconds": 6.6e-07,
+          "reported_gate_error": 0.007432674432642006
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            0
+          ],
+          "physical_sites": [
+            "0"
+          ],
+          "parameters": [
+            -1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            0
+          ],
+          "physical_sites": [
+            "0"
+          ],
+          "parameters": [
+            1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "sx",
+          "local_slots": [
+            0
+          ],
+          "physical_sites": [
+            "0"
+          ],
+          "parameters": [],
+          "duration_seconds": 6.000000000000001e-08,
+          "reported_gate_error": 0.00024329590602476677
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            0
+          ],
+          "physical_sites": [
+            "0"
+          ],
+          "parameters": [
+            -1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "sx",
+          "local_slots": [
+            1
+          ],
+          "physical_sites": [
+            "1"
+          ],
+          "parameters": [],
+          "duration_seconds": 6.000000000000001e-08,
+          "reported_gate_error": 0.0002425970240311255
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            1
+          ],
+          "physical_sites": [
+            "1"
+          ],
+          "parameters": [
+            -1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "sx",
+          "local_slots": [
+            1
+          ],
+          "physical_sites": [
+            "1"
+          ],
+          "parameters": [],
+          "duration_seconds": 6.000000000000001e-08,
+          "reported_gate_error": 0.0002425970240311255
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            1
+          ],
+          "physical_sites": [
+            "1"
+          ],
+          "parameters": [
+            1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "ecr",
+          "local_slots": [
+            1,
+            0
+          ],
+          "physical_sites": [
+            "1",
+            "0"
+          ],
+          "parameters": [],
+          "duration_seconds": 6.6e-07,
+          "reported_gate_error": 0.007432674432642006
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            0
+          ],
+          "physical_sites": [
+            "0"
+          ],
+          "parameters": [
+            1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "sx",
+          "local_slots": [
+            0
+          ],
+          "physical_sites": [
+            "0"
+          ],
+          "parameters": [],
+          "duration_seconds": 6.000000000000001e-08,
+          "reported_gate_error": 0.00024329590602476677
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            0
+          ],
+          "physical_sites": [
+            "0"
+          ],
+          "parameters": [
+            1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            1
+          ],
+          "physical_sites": [
+            "1"
+          ],
+          "parameters": [
+            1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "sx",
+          "local_slots": [
+            1
+          ],
+          "physical_sites": [
+            "1"
+          ],
+          "parameters": [],
+          "duration_seconds": 6.000000000000001e-08,
+          "reported_gate_error": 0.0002425970240311255
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            1
+          ],
+          "physical_sites": [
+            "1"
+          ],
+          "parameters": [
+            1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            1
+          ],
+          "physical_sites": [
+            "1"
+          ],
+          "parameters": [
+            -1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            1
+          ],
+          "physical_sites": [
+            "1"
+          ],
+          "parameters": [
+            1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "sx",
+          "local_slots": [
+            1
+          ],
+          "physical_sites": [
+            "1"
+          ],
+          "parameters": [],
+          "duration_seconds": 6.000000000000001e-08,
+          "reported_gate_error": 0.0002425970240311255
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            1
+          ],
+          "physical_sites": [
+            "1"
+          ],
+          "parameters": [
+            -1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            2
+          ],
+          "physical_sites": [
+            "2"
+          ],
+          "parameters": [
+            1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            2
+          ],
+          "physical_sites": [
+            "2"
+          ],
+          "parameters": [
+            1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "sx",
+          "local_slots": [
+            2
+          ],
+          "physical_sites": [
+            "2"
+          ],
+          "parameters": [],
+          "duration_seconds": 6.000000000000001e-08,
+          "reported_gate_error": 0.00033534112767932513
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            2
+          ],
+          "physical_sites": [
+            "2"
+          ],
+          "parameters": [
+            1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            2
+          ],
+          "physical_sites": [
+            "2"
+          ],
+          "parameters": [
+            1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            2
+          ],
+          "physical_sites": [
+            "2"
+          ],
+          "parameters": [
+            -1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "sx",
+          "local_slots": [
+            2
+          ],
+          "physical_sites": [
+            "2"
+          ],
+          "parameters": [],
+          "duration_seconds": 6.000000000000001e-08,
+          "reported_gate_error": 0.00033534112767932513
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            2
+          ],
+          "physical_sites": [
+            "2"
+          ],
+          "parameters": [
+            1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "ecr",
+          "local_slots": [
+            2,
+            1
+          ],
+          "physical_sites": [
+            "2",
+            "1"
+          ],
+          "parameters": [],
+          "duration_seconds": 6.6e-07,
+          "reported_gate_error": 0.0070743631728029666
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            1
+          ],
+          "physical_sites": [
+            "1"
+          ],
+          "parameters": [
+            1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "sx",
+          "local_slots": [
+            1
+          ],
+          "physical_sites": [
+            "1"
+          ],
+          "parameters": [],
+          "duration_seconds": 6.000000000000001e-08,
+          "reported_gate_error": 0.0002425970240311255
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            1
+          ],
+          "physical_sites": [
+            "1"
+          ],
+          "parameters": [
+            1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "x",
+          "local_slots": [
+            1
+          ],
+          "physical_sites": [
+            "1"
+          ],
+          "parameters": [],
+          "duration_seconds": 6.000000000000001e-08,
+          "reported_gate_error": 0.0002425970240311255
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            2
+          ],
+          "physical_sites": [
+            "2"
+          ],
+          "parameters": [
+            1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "sx",
+          "local_slots": [
+            2
+          ],
+          "physical_sites": [
+            "2"
+          ],
+          "parameters": [],
+          "duration_seconds": 6.000000000000001e-08,
+          "reported_gate_error": 0.00033534112767932513
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            2
+          ],
+          "physical_sites": [
+            "2"
+          ],
+          "parameters": [
+            1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        }
+      ],
+      "serial_duration_seconds": 3.719999999999999e-06,
+      "unitary_error": 2.55848601617897e-15,
+      "unitary_absolute_tolerance": 1e-10,
+      "surrogate_density_error": 1.1921980955184333e-15,
+      "readout_probability_error": 7.216449660063518e-16,
+      "surrogate_absolute_tolerance": 3e-14,
+      "surrogate_observed_probabilities": [
+        0.46959833254362054,
+        0.023356506865637332,
+        0.015135838580560248,
+        0.0007525878059501257,
+        0.018811891697821582,
+        0.4570206437102774,
+        0.0006059020740390275,
+        0.0147182967220938
+      ],
+      "simulated_counts": [
+        1960,
+        83,
+        55,
+        3,
+        71,
+        1860,
+        5,
+        59
+      ],
+      "shots": 4096,
+      "sampling_seed": 992,
+      "output_density_sha256": "6905e0dede5612038b44aea0f44e67c8869a73114b9d22a53c98bdc168069be7",
+      "assumptions": [
+        "historical_snapshot_only",
+        "serial_schedule_all_qubits_damp_each_gate",
+        "zero_temperature_T1_amplitude_damping",
+        "independent_readout_confusion",
+        "T2_not_modeled",
+        "gate_error_not_converted_to_depolarizing",
+        "no_crosstalk_leakage_pulse_or_nonmarkovian_model",
+        "no_hardware_execution"
+      ],
+      "comparison_status": "PASS"
+    },
+    {
+      "logical_qubits": 4,
+      "physical_sites": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "source_operations": [
+        {
+          "name": "H",
+          "logical_qubits": [
+            0
+          ],
+          "angle": null
+        },
+        {
+          "name": "RZ",
+          "logical_qubits": [
+            0
+          ],
+          "angle": 0.31
+        },
+        {
+          "name": "CX",
+          "logical_qubits": [
+            0,
+            3
+          ],
+          "angle": null
+        }
+      ],
+      "transpiler_seed": 53,
+      "initial_mapping": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ],
+      "final_mapping": [
+        "2",
+        "0",
+        "1",
+        "3"
+      ],
+      "output_permutation": [
+        0,
+        4,
+        1,
+        5,
+        2,
+        6,
+        3,
+        7,
+        8,
+        12,
+        9,
+        13,
+        10,
+        14,
+        11,
+        15
+      ],
+      "global_phase": 2.356194490192342,
+      "native_gate_counts": {
+        "rz": 54,
+        "sx": 28,
+        "ecr": 7,
+        "x": 1
+      },
+      "native_operations": [
+        {
+          "name": "rz",
+          "local_slots": [
+            0
+          ],
+          "physical_sites": [
+            "0"
+          ],
+          "parameters": [
+            1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "sx",
+          "local_slots": [
+            0
+          ],
+          "physical_sites": [
+            "0"
+          ],
+          "parameters": [],
+          "duration_seconds": 6.000000000000001e-08,
+          "reported_gate_error": 0.00024329590602476677
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            0
+          ],
+          "physical_sites": [
+            "0"
+          ],
+          "parameters": [
+            1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            0
+          ],
+          "physical_sites": [
+            "0"
+          ],
+          "parameters": [
+            0.31
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            0
+          ],
+          "physical_sites": [
+            "0"
+          ],
+          "parameters": [
+            -1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            0
+          ],
+          "physical_sites": [
+            "0"
+          ],
+          "parameters": [
+            1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "sx",
+          "local_slots": [
+            0
+          ],
+          "physical_sites": [
+            "0"
+          ],
+          "parameters": [],
+          "duration_seconds": 6.000000000000001e-08,
+          "reported_gate_error": 0.00024329590602476677
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            0
+          ],
+          "physical_sites": [
+            "0"
+          ],
+          "parameters": [
+            -1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "sx",
+          "local_slots": [
+            1
+          ],
+          "physical_sites": [
+            "1"
+          ],
+          "parameters": [],
+          "duration_seconds": 6.000000000000001e-08,
+          "reported_gate_error": 0.0002425970240311255
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            1
+          ],
+          "physical_sites": [
+            "1"
+          ],
+          "parameters": [
+            -1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "sx",
+          "local_slots": [
+            1
+          ],
+          "physical_sites": [
+            "1"
+          ],
+          "parameters": [],
+          "duration_seconds": 6.000000000000001e-08,
+          "reported_gate_error": 0.0002425970240311255
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            1
+          ],
+          "physical_sites": [
+            "1"
+          ],
+          "parameters": [
+            1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "ecr",
+          "local_slots": [
+            1,
+            0
+          ],
+          "physical_sites": [
+            "1",
+            "0"
+          ],
+          "parameters": [],
+          "duration_seconds": 6.6e-07,
+          "reported_gate_error": 0.007432674432642006
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            0
+          ],
+          "physical_sites": [
+            "0"
+          ],
+          "parameters": [
+            1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "sx",
+          "local_slots": [
+            0
+          ],
+          "physical_sites": [
+            "0"
+          ],
+          "parameters": [],
+          "duration_seconds": 6.000000000000001e-08,
+          "reported_gate_error": 0.00024329590602476677
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            0
+          ],
+          "physical_sites": [
+            "0"
+          ],
+          "parameters": [
+            1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "sx",
+          "local_slots": [
+            0
+          ],
+          "physical_sites": [
+            "0"
+          ],
+          "parameters": [],
+          "duration_seconds": 6.000000000000001e-08,
+          "reported_gate_error": 0.00024329590602476677
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            1
+          ],
+          "physical_sites": [
+            "1"
+          ],
+          "parameters": [
+            1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "sx",
+          "local_slots": [
+            1
+          ],
+          "physical_sites": [
+            "1"
+          ],
+          "parameters": [],
+          "duration_seconds": 6.000000000000001e-08,
+          "reported_gate_error": 0.0002425970240311255
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            1
+          ],
+          "physical_sites": [
+            "1"
+          ],
+          "parameters": [
+            1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            1
+          ],
+          "physical_sites": [
+            "1"
+          ],
+          "parameters": [
+            -1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "ecr",
+          "local_slots": [
+            1,
+            0
+          ],
+          "physical_sites": [
+            "1",
+            "0"
+          ],
+          "parameters": [],
+          "duration_seconds": 6.6e-07,
+          "reported_gate_error": 0.007432674432642006
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            0
+          ],
+          "physical_sites": [
+            "0"
+          ],
+          "parameters": [
+            -1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            0
+          ],
+          "physical_sites": [
+            "0"
+          ],
+          "parameters": [
+            1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "sx",
+          "local_slots": [
+            0
+          ],
+          "physical_sites": [
+            "0"
+          ],
+          "parameters": [],
+          "duration_seconds": 6.000000000000001e-08,
+          "reported_gate_error": 0.00024329590602476677
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            0
+          ],
+          "physical_sites": [
+            "0"
+          ],
+          "parameters": [
+            -1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "sx",
+          "local_slots": [
+            1
+          ],
+          "physical_sites": [
+            "1"
+          ],
+          "parameters": [],
+          "duration_seconds": 6.000000000000001e-08,
+          "reported_gate_error": 0.0002425970240311255
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            1
+          ],
+          "physical_sites": [
+            "1"
+          ],
+          "parameters": [
+            -1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "sx",
+          "local_slots": [
+            1
+          ],
+          "physical_sites": [
+            "1"
+          ],
+          "parameters": [],
+          "duration_seconds": 6.000000000000001e-08,
+          "reported_gate_error": 0.0002425970240311255
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            1
+          ],
+          "physical_sites": [
+            "1"
+          ],
+          "parameters": [
+            1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "ecr",
+          "local_slots": [
+            1,
+            0
+          ],
+          "physical_sites": [
+            "1",
+            "0"
+          ],
+          "parameters": [],
+          "duration_seconds": 6.6e-07,
+          "reported_gate_error": 0.007432674432642006
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            0
+          ],
+          "physical_sites": [
+            "0"
+          ],
+          "parameters": [
+            1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "sx",
+          "local_slots": [
+            0
+          ],
+          "physical_sites": [
+            "0"
+          ],
+          "parameters": [],
+          "duration_seconds": 6.000000000000001e-08,
+          "reported_gate_error": 0.00024329590602476677
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            0
+          ],
+          "physical_sites": [
+            "0"
+          ],
+          "parameters": [
+            1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            1
+          ],
+          "physical_sites": [
+            "1"
+          ],
+          "parameters": [
+            1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "sx",
+          "local_slots": [
+            1
+          ],
+          "physical_sites": [
+            "1"
+          ],
+          "parameters": [],
+          "duration_seconds": 6.000000000000001e-08,
+          "reported_gate_error": 0.0002425970240311255
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            1
+          ],
+          "physical_sites": [
+            "1"
+          ],
+          "parameters": [
+            1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            1
+          ],
+          "physical_sites": [
+            "1"
+          ],
+          "parameters": [
+            -1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            1
+          ],
+          "physical_sites": [
+            "1"
+          ],
+          "parameters": [
+            1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "sx",
+          "local_slots": [
+            1
+          ],
+          "physical_sites": [
+            "1"
+          ],
+          "parameters": [],
+          "duration_seconds": 6.000000000000001e-08,
+          "reported_gate_error": 0.0002425970240311255
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            1
+          ],
+          "physical_sites": [
+            "1"
+          ],
+          "parameters": [
+            -1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "sx",
+          "local_slots": [
+            2
+          ],
+          "physical_sites": [
+            "2"
+          ],
+          "parameters": [],
+          "duration_seconds": 6.000000000000001e-08,
+          "reported_gate_error": 0.00033534112767932513
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            2
+          ],
+          "physical_sites": [
+            "2"
+          ],
+          "parameters": [
+            -1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "sx",
+          "local_slots": [
+            2
+          ],
+          "physical_sites": [
+            "2"
+          ],
+          "parameters": [],
+          "duration_seconds": 6.000000000000001e-08,
+          "reported_gate_error": 0.00033534112767932513
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            2
+          ],
+          "physical_sites": [
+            "2"
+          ],
+          "parameters": [
+            1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "ecr",
+          "local_slots": [
+            2,
+            1
+          ],
+          "physical_sites": [
+            "2",
+            "1"
+          ],
+          "parameters": [],
+          "duration_seconds": 6.6e-07,
+          "reported_gate_error": 0.0070743631728029666
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            1
+          ],
+          "physical_sites": [
+            "1"
+          ],
+          "parameters": [
+            1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "sx",
+          "local_slots": [
+            1
+          ],
+          "physical_sites": [
+            "1"
+          ],
+          "parameters": [],
+          "duration_seconds": 6.000000000000001e-08,
+          "reported_gate_error": 0.0002425970240311255
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            1
+          ],
+          "physical_sites": [
+            "1"
+          ],
+          "parameters": [
+            1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "sx",
+          "local_slots": [
+            1
+          ],
+          "physical_sites": [
+            "1"
+          ],
+          "parameters": [],
+          "duration_seconds": 6.000000000000001e-08,
+          "reported_gate_error": 0.0002425970240311255
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            2
+          ],
+          "physical_sites": [
+            "2"
+          ],
+          "parameters": [
+            1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "sx",
+          "local_slots": [
+            2
+          ],
+          "physical_sites": [
+            "2"
+          ],
+          "parameters": [],
+          "duration_seconds": 6.000000000000001e-08,
+          "reported_gate_error": 0.00033534112767932513
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            2
+          ],
+          "physical_sites": [
+            "2"
+          ],
+          "parameters": [
+            1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            2
+          ],
+          "physical_sites": [
+            "2"
+          ],
+          "parameters": [
+            -1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "ecr",
+          "local_slots": [
+            2,
+            1
+          ],
+          "physical_sites": [
+            "2",
+            "1"
+          ],
+          "parameters": [],
+          "duration_seconds": 6.6e-07,
+          "reported_gate_error": 0.0070743631728029666
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            1
+          ],
+          "physical_sites": [
+            "1"
+          ],
+          "parameters": [
+            -1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            1
+          ],
+          "physical_sites": [
+            "1"
+          ],
+          "parameters": [
+            1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "sx",
+          "local_slots": [
+            1
+          ],
+          "physical_sites": [
+            "1"
+          ],
+          "parameters": [],
+          "duration_seconds": 6.000000000000001e-08,
+          "reported_gate_error": 0.0002425970240311255
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            1
+          ],
+          "physical_sites": [
+            "1"
+          ],
+          "parameters": [
+            -1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "sx",
+          "local_slots": [
+            2
+          ],
+          "physical_sites": [
+            "2"
+          ],
+          "parameters": [],
+          "duration_seconds": 6.000000000000001e-08,
+          "reported_gate_error": 0.00033534112767932513
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            2
+          ],
+          "physical_sites": [
+            "2"
+          ],
+          "parameters": [
+            -1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "sx",
+          "local_slots": [
+            2
+          ],
+          "physical_sites": [
+            "2"
+          ],
+          "parameters": [],
+          "duration_seconds": 6.000000000000001e-08,
+          "reported_gate_error": 0.00033534112767932513
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            2
+          ],
+          "physical_sites": [
+            "2"
+          ],
+          "parameters": [
+            1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "ecr",
+          "local_slots": [
+            2,
+            1
+          ],
+          "physical_sites": [
+            "2",
+            "1"
+          ],
+          "parameters": [],
+          "duration_seconds": 6.6e-07,
+          "reported_gate_error": 0.0070743631728029666
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            1
+          ],
+          "physical_sites": [
+            "1"
+          ],
+          "parameters": [
+            1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "sx",
+          "local_slots": [
+            1
+          ],
+          "physical_sites": [
+            "1"
+          ],
+          "parameters": [],
+          "duration_seconds": 6.000000000000001e-08,
+          "reported_gate_error": 0.0002425970240311255
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            1
+          ],
+          "physical_sites": [
+            "1"
+          ],
+          "parameters": [
+            1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            2
+          ],
+          "physical_sites": [
+            "2"
+          ],
+          "parameters": [
+            1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "sx",
+          "local_slots": [
+            2
+          ],
+          "physical_sites": [
+            "2"
+          ],
+          "parameters": [],
+          "duration_seconds": 6.000000000000001e-08,
+          "reported_gate_error": 0.00033534112767932513
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            2
+          ],
+          "physical_sites": [
+            "2"
+          ],
+          "parameters": [
+            1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            2
+          ],
+          "physical_sites": [
+            "2"
+          ],
+          "parameters": [
+            -1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            2
+          ],
+          "physical_sites": [
+            "2"
+          ],
+          "parameters": [
+            1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "sx",
+          "local_slots": [
+            2
+          ],
+          "physical_sites": [
+            "2"
+          ],
+          "parameters": [],
+          "duration_seconds": 6.000000000000001e-08,
+          "reported_gate_error": 0.00033534112767932513
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            2
+          ],
+          "physical_sites": [
+            "2"
+          ],
+          "parameters": [
+            -1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            3
+          ],
+          "physical_sites": [
+            "3"
+          ],
+          "parameters": [
+            1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            3
+          ],
+          "physical_sites": [
+            "3"
+          ],
+          "parameters": [
+            1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "sx",
+          "local_slots": [
+            3
+          ],
+          "physical_sites": [
+            "3"
+          ],
+          "parameters": [],
+          "duration_seconds": 6.000000000000001e-08,
+          "reported_gate_error": 0.0003432149174920292
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            3
+          ],
+          "physical_sites": [
+            "3"
+          ],
+          "parameters": [
+            1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            3
+          ],
+          "physical_sites": [
+            "3"
+          ],
+          "parameters": [
+            1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            3
+          ],
+          "physical_sites": [
+            "3"
+          ],
+          "parameters": [
+            -1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "sx",
+          "local_slots": [
+            3
+          ],
+          "physical_sites": [
+            "3"
+          ],
+          "parameters": [],
+          "duration_seconds": 6.000000000000001e-08,
+          "reported_gate_error": 0.0003432149174920292
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            3
+          ],
+          "physical_sites": [
+            "3"
+          ],
+          "parameters": [
+            1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "ecr",
+          "local_slots": [
+            3,
+            2
+          ],
+          "physical_sites": [
+            "3",
+            "2"
+          ],
+          "parameters": [],
+          "duration_seconds": 6.6e-07,
+          "reported_gate_error": 0.018695165285261217
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            2
+          ],
+          "physical_sites": [
+            "2"
+          ],
+          "parameters": [
+            1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "sx",
+          "local_slots": [
+            2
+          ],
+          "physical_sites": [
+            "2"
+          ],
+          "parameters": [],
+          "duration_seconds": 6.000000000000001e-08,
+          "reported_gate_error": 0.00033534112767932513
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            2
+          ],
+          "physical_sites": [
+            "2"
+          ],
+          "parameters": [
+            1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "x",
+          "local_slots": [
+            2
+          ],
+          "physical_sites": [
+            "2"
+          ],
+          "parameters": [],
+          "duration_seconds": 6.000000000000001e-08,
+          "reported_gate_error": 0.00033534112767932513
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            3
+          ],
+          "physical_sites": [
+            "3"
+          ],
+          "parameters": [
+            1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        },
+        {
+          "name": "sx",
+          "local_slots": [
+            3
+          ],
+          "physical_sites": [
+            "3"
+          ],
+          "parameters": [],
+          "duration_seconds": 6.000000000000001e-08,
+          "reported_gate_error": 0.0003432149174920292
+        },
+        {
+          "name": "rz",
+          "local_slots": [
+            3
+          ],
+          "physical_sites": [
+            "3"
+          ],
+          "parameters": [
+            1.5707963267948966
+          ],
+          "duration_seconds": 0.0,
+          "reported_gate_error": 0.0
+        }
+      ],
+      "serial_duration_seconds": 6.360000000000001e-06,
+      "unitary_error": 2.7094048379720572e-15,
+      "unitary_absolute_tolerance": 1e-10,
+      "surrogate_density_error": 1.6091054089879256e-15,
+      "readout_probability_error": 1.609823385706477e-15,
+      "surrogate_absolute_tolerance": 3e-14,
+      "surrogate_observed_probabilities": [
+        0.44615400558744067,
+        0.0067130058428081455,
+        0.01434946860177671,
+        0.00021579517450672316,
+        0.016951806366763755,
+        0.0002563711478468866,
+        0.0005451494938683124,
+        8.24159035490493e-06,
+        0.030126489680373358,
+        0.4502583669227658,
+        0.000968726480983257,
+        0.014469712770303145,
+        0.00114721998038612,
+        0.01724450382771603,
+        3.6887358375506965e-05,
+        0.0005542491737305726
+      ],
+      "simulated_counts": [
+        1864,
+        33,
+        44,
+        2,
+        59,
+        1,
+        2,
+        0,
+        115,
+        1836,
+        7,
+        57,
+        6,
+        69,
+        0,
+        1
+      ],
+      "shots": 4096,
+      "sampling_seed": 992,
+      "output_density_sha256": "30220e188a9b540032e065b93b88afba82277de6e72289b1cf10904c4a60c66e",
+      "assumptions": [
+        "historical_snapshot_only",
+        "serial_schedule_all_qubits_damp_each_gate",
+        "zero_temperature_T1_amplitude_damping",
+        "independent_readout_confusion",
+        "T2_not_modeled",
+        "gate_error_not_converted_to_depolarizing",
+        "no_crosstalk_leakage_pulse_or_nonmarkovian_model",
+        "no_hardware_execution"
+      ],
+      "comparison_status": "PASS"
+    }
+  ],
+  "evidence_class": "historical_calibration_constrained_classical_simulation",
+  "provider_submissions": 0,
+  "provider_spend": 0,
+  "current_calibration": false,
+  "hardware_execution": false,
+  "full_G5_status": "UNKNOWN",
+  "scientific_admission": "requires_review_of_exact_finite_scope"
+}

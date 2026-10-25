@@ -1,0 +1,58 @@
+{
+  "repository": {
+    "id": "424995933",
+    "name": "qiskit-ibm-runtime",
+    "owner": {
+      "login": "Qiskit",
+      "id": 30696987,
+      "type": "Organization",
+      "avatar_url": "https://avatars.githubusercontent.com/u/30696987?v=4",
+      "url": "https://api.github.com/users/Qiskit"
+    },
+    "repository_full_name": "Qiskit/qiskit-ibm-runtime",
+    "permissions": {
+      "admin": false,
+      "maintain": false,
+      "pull": true,
+      "push": false,
+      "triage": false
+    },
+    "allow_auto_merge": null,
+    "allow_merge_commit": null,
+    "allow_rebase_merge": null,
+    "allow_squash_merge": null,
+    "allow_update_branch": null,
+    "clone_url": "https://github.com/Qiskit/qiskit-ibm-runtime.git",
+    "size": 62987,
+    "default_branch": "main",
+    "git_commits_url": "https://api.github.com/repos/Qiskit/qiskit-ibm-runtime/git/commits{/sha}",
+    "git_refs_url": "https://api.github.com/repos/Qiskit/qiskit-ibm-runtime/git/refs{/sha}",
+    "git_url": "git://github.com/Qiskit/qiskit-ibm-runtime.git",
+    "master_branch": null,
+    "visibility": "public",
+    "archived": false,
+    "is_code_search_indexed": null
+  },
+  "branch_commit": "1dd86e381ddecfc78db94e3287a9ce57e4ad65d8",
+  "files": [
+    {
+      "name": "conf_brisbane.json",
+      "path": "qiskit_ibm_runtime/fake_provider/backends/brisbane/conf_brisbane.json",
+      "git_blob_sha1": "0eba750cefbede7e76ac365cbebe7e13f03b3c6a",
+      "size": 147793
+    },
+    {
+      "name": "props_brisbane.json",
+      "path": "qiskit_ibm_runtime/fake_provider/backends/brisbane/props_brisbane.json",
+      "git_blob_sha1": "e04421d4b04179f079974abcf6d8cacf8ee2ce9b",
+      "size": 353470
+    }
+  ],
+  "license": {
+    "content": "                    Copyright 2021 IBM and its contributors\n\n                                 Apache License\n                           Version 2.0, January 2004\n                        http://www.apache.org/licenses/\n\n   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION\n\n   1. Definitions.\n\n      \"License\" shall mean the terms and conditions for use, reproduction,\n      and distribution as defined by Sections 1 through 9 of this document.",
+    "encoding": "utf-8",
+    "sha": "85a2a89c7efdb30bdb8583fceaad3ee905769634",
+    "display_url": "https://github.com/Qiskit/qiskit-ibm-runtime/blob/1dd86e381ddecfc78db94e3287a9ce57e4ad65d8/LICENSE.txt",
+    "display_title": "LICENSE.txt"
+  }
+}

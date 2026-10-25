@@ -4,6 +4,8 @@ The owner's [scientific completion-first commission](commissions/2026-10-25-scie
 
 Current work: immutable custody audit, typed quantum admission, standalone finite function spaces, and source-bound research cycles. Original scientific/release gates remain open; no scientific integration readiness report is authorized by passing local fixtures alone. See [implementation plan](commissions/2026-10-25-scientific-completion/implementation-plan.md) and [custody audit](docs/QUANTUM_ORACLE_CUSTODY_AUDIT.md).
 
+Final standalone increment: **100 scientific tests pass**, 22 Qiskit reference comparisons, 3 historical target compilation/noise fixtures, full real FITS/CERN inputs with retained limitations and counterexamples. Existing repository Python suite:63 tests,1 Node-version skip. See [scientific package](research/quantum_oracle/README.md), [acceptance ledger](research/quantum_oracle/evidence/acceptance.json), [coverage](research/quantum_oracle/coverage.json), and [exact continuation](research/quantum_oracle/CONTINUATION.md). Full scientific completion remains UNKNOWN; physical hardware and SURFACE readiness remain BLOCKED.
+
 The earlier checkpoint follows unchanged as historical evidence.
 
 # Current Surface checkpoint — 2026-10-25 consolidation

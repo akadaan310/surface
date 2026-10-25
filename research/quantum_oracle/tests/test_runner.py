@@ -1,11 +1,19 @@
 import tempfile
 import json
+from dataclasses import asdict
+import sys
 import unittest
 from pathlib import Path
 from research.quantum_oracle import run
 
 
 class RunnerTests(unittest.TestCase):
+    def test_real_supervisor_success_vocabulary_is_admitted(self):
+        from tools.supervise import Supervisor, TaskSpec
+        with tempfile.TemporaryDirectory() as directory:
+            result = Supervisor(directory).run(TaskSpec("status-contract", (sys.executable, "-c", "pass"), timeout=5, semantic_timeout=3))
+            self.assertTrue(run.execution_succeeded(asdict(result)))
+
     def test_empty_forged_receipt_cannot_claim_executed_tests(self):
         from research.quantum_oracle.discovery import run_affine_cycle
         with tempfile.TemporaryDirectory() as directory:

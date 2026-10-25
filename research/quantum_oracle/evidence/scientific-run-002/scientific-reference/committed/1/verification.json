@@ -1,0 +1,141 @@
+{
+  "command": [
+    "/home/ubuntu/Documents/Codex/2026-10-25-substrate-phantom-quantum-oracle-scientific-completion/surface/.venv/bin/python",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "research/quantum_oracle/tests",
+    "-v"
+  ],
+  "environment": {
+    "packages": {
+      "astropy": "6.1.7",
+      "numpy": "2.2.6",
+      "qiskit": "2.2.3",
+      "qutip": "NOT_INSTALLED",
+      "scipy": "1.15.3"
+    },
+    "platform": "Linux-6.8.0-1060-oracle-aarch64-with-glibc2.35",
+    "python": "3.10.12"
+  },
+  "execution_status": "PASS",
+  "full_initiative": "UNKNOWN",
+  "limits": {
+    "address_space_bytes": 2147483648,
+    "blas_threads": 1,
+    "cpu_seconds": 50,
+    "output_file_bytes": 8388608,
+    "retry_exit_codes": [],
+    "semantic_seconds": 45,
+    "wall_seconds": 60
+  },
+  "outputs": {
+    "discovery.json": {
+      "bytes": 76523,
+      "sha256": "ba7da4b84a855ccc4bfa69c0b85ceced2a603b0ad2847a297573db3178745fbb"
+    },
+    "tests.log": {
+      "bytes": 9386,
+      "sha256": "08ce62ac9144871b06e48bc63265c50739eea1f34b2e36a9e5ccad9ef045bd73"
+    }
+  },
+  "physical_data_validation": "NOT_EVALUATED",
+  "quantum_hardware_validation": "NOT_EXECUTED",
+  "returncode": 0,
+  "schema": "quantum-oracle.verification.v1",
+  "scientific_acceptance": "SCOPED_REVIEW_REQUIRED",
+  "source_files": {
+    "research/quantum_oracle/astro.py": {
+      "bytes": 13088,
+      "sha256": "ba65970cc65b0cef1fc9806a356778b8da828193bad459e12140da192e75fbed"
+    },
+    "research/quantum_oracle/circuits.py": {
+      "bytes": 30215,
+      "sha256": "248bb5de257865bed0676e380f5e81b58e0353d6ecc536d709f68d17b3decc9f"
+    },
+    "research/quantum_oracle/collider.py": {
+      "bytes": 24153,
+      "sha256": "a14eb67d79a1104c24a928ee1f14e804ee56b8b3fb6c4e33b9759e50abed5674"
+    },
+    "research/quantum_oracle/discovery.py": {
+      "bytes": 13330,
+      "sha256": "f0110d5212ceca6e173e33f1378281246afa32b3f29a2068ef69b7404879a1c6"
+    },
+    "research/quantum_oracle/evidence/replay_astro_review.py": {
+      "bytes": 1525,
+      "sha256": "57e47f7e71449a6fb5d5cf9e2e848dfa34eda74c2516120cd7461e3c04fa4d71"
+    },
+    "research/quantum_oracle/evidence/review-adapter-probes.py": {
+      "bytes": 4866,
+      "sha256": "25f5d8bfe9798dfa98eb95bd732fca7d61a018d890bc8d3827143cb94a6e8189"
+    },
+    "research/quantum_oracle/evidence/review-probes.py": {
+      "bytes": 3707,
+      "sha256": "86a608328b2b6f8586bb88e639e00932f4f0d6b33aeb251bec9c884b1dfe8961"
+    },
+    "research/quantum_oracle/evidence/verify_custody_audit.py": {
+      "bytes": 4796,
+      "sha256": "978cc5539ce1a1b98e09a4120a241b78657c1a950261baf947fefd5d6ce994af"
+    },
+    "research/quantum_oracle/quantum.py": {
+      "bytes": 24982,
+      "sha256": "557f02365462a070f0f5e4e8a558eb0a3222c759b83aedae856f7b789f84f6cd"
+    },
+    "research/quantum_oracle/run.py": {
+      "bytes": 10168,
+      "sha256": "66fbb3ea4e3580bdeafacbd95bdd0e60c0a595f974c205936db3e198a200706b"
+    },
+    "research/quantum_oracle/spaces.py": {
+      "bytes": 27646,
+      "sha256": "632e368cd04ae4c1a28916886f17e7fab34886f59559295ad24401bff4b9069c"
+    },
+    "research/quantum_oracle/tests/test_astro.py": {
+      "bytes": 6292,
+      "sha256": "265193dae0fe3a9d67d6c5931554cc1dc1306b5f22fb8de45010cd9b0d14bb08"
+    },
+    "research/quantum_oracle/tests/test_circuits.py": {
+      "bytes": 16308,
+      "sha256": "bdea32edba0b4008c6cb4ec29337acba8b9e4daabd7a23dcc95cc0bdcc498ac6"
+    },
+    "research/quantum_oracle/tests/test_collider.py": {
+      "bytes": 11273,
+      "sha256": "dac4a5f349de8ee97aa021251b7c100789a93b3b5296874469899b3e9e65fc1d"
+    },
+    "research/quantum_oracle/tests/test_discovery.py": {
+      "bytes": 2990,
+      "sha256": "fc1ad4a3835c8168847813000698126bea63edc603dd9f6759deeaeae7e6c043"
+    },
+    "research/quantum_oracle/tests/test_qiskit_reference.py": {
+      "bytes": 7938,
+      "sha256": "a254b8d6b5a07482c7ac3d0e476ca2552d1dc99abbd1ebdfcfb718a2708c2b9b"
+    },
+    "research/quantum_oracle/tests/test_quantum.py": {
+      "bytes": 18954,
+      "sha256": "73fa131f2211a4582d1e93702ef557d7b2f964c7e367c473a79d70a531db4397"
+    },
+    "research/quantum_oracle/tests/test_runner.py": {
+      "bytes": 2289,
+      "sha256": "d1405aaf8e6110cd3b6c7310a68397b51146d8617f5bc1db6062b8a9883711b3"
+    },
+    "research/quantum_oracle/tests/test_spaces.py": {
+      "bytes": 16476,
+      "sha256": "faaba559b004a672c6bba1b6524d227a2cd153e183e64b2aa739630221300edf"
+    },
+    "tools/commission.py": {
+      "bytes": 67795,
+      "sha256": "30e8c96aba5afdb459f0d6ce51b585d84dcbd957a1ca53ea00e29a473a887ae4"
+    },
+    "tools/materialize_foundation.py": {
+      "bytes": 10580,
+      "sha256": "e889e81dcd57389d612ce5be0340bc7757a4f213e55a2bd7cb70cbaab3899fef"
+    },
+    "tools/supervise.py": {
+      "bytes": 18062,
+      "sha256": "b71911546fa84b29b890e8b755cbb0c6177823c51c15a23bdd67548af34b7cbf"
+    }
+  },
+  "surface_readiness": "BLOCKED",
+  "tolerance": "Exact hashes for custody; numerical tolerance is declared in individual tests/contracts."
+}

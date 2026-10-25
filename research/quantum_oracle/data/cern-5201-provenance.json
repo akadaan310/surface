@@ -1,0 +1,56 @@
+{
+  "acquisition": {
+    "command": [
+      "curl",
+      "--fail",
+      "--silent",
+      "--show-error",
+      "--location",
+      "--max-time",
+      "60",
+      "--max-filesize",
+      "16777216",
+      "https://opendata.cern.ch/record/5201/files/Dimuon_DoubleMu.csv",
+      "--output",
+      "/tmp/quantum-oracle-cern5201.csv"
+    ],
+    "completed_file_mtime_utc": "2026-10-25T17:04:50.987038+00:00",
+    "exit_code": 0,
+    "published_checksum_verified": true
+  },
+  "author": "Thomas McCauley",
+  "boundaries": [
+    "No ROOT or HepMC parsing",
+    "No detector calibration, weights or systematic uncertainty supplied",
+    "Printed decimal rounding is an assumption, not detector uncertainty",
+    "No experimental endorsement of this analysis"
+  ],
+  "file_url": "https://opendata.cern.ch/record/5201/files/Dimuon_DoubleMu.csv",
+  "license": "CC0-1.0",
+  "logical_bytes": {
+    "adler32": "5b87a72a",
+    "bytes": 13935840,
+    "sha256": "58caa45c580f8bcf4b457281c8525a56de0e0b8eb0e0b29e86a9b655a8e64d35"
+  },
+  "metadata_url": "https://opendata.cern.ch/api/records/5201",
+  "observed_run_period": "Run2011A",
+  "original_metadata": {
+    "bytes": 3605,
+    "path": "data/cern-5201-record.original.json",
+    "sha256": "7406b16c5925e2a263f75a76a2c6b0479995405122c3553a205b668df78c9668"
+  },
+  "publication_year": 2019,
+  "published_identity": {
+    "adler32": "5b87a72a",
+    "bytes": 13935840
+  },
+  "record_url": "https://opendata.cern.ch/record/5201",
+  "schema": "quantum-oracle.observed-data-provenance/1",
+  "source_scope": "CMS derived education/outreach subset, 100000 dimuon candidate rows; not suitable for full physics analysis",
+  "transport_archive": {
+    "bytes": 5789915,
+    "encoding": "gzip level9, mtime0, empty filename; exact original uncompressed bytes retained",
+    "path": "data/cern-5201-Dimuon_DoubleMu.csv.gz",
+    "sha256": "f9e84321a893ff36120d88e3f1831d8398e4e42b717a7d72f07c90db101e4561"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "command": [
+    ".venv/bin/python",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "research/quantum_oracle/tests",
+    "-p",
+    "test_collider.py",
+    "-v"
+  ],
+  "cwd": "repository root",
+  "errors": 0,
+  "exit_code": 0,
+  "failures": 0,
+  "log": "research/quantum_oracle/evidence/collider-tests-v3.log",
+  "log_sha256": "1880de7ccf7af5b50b1c19265eeb5e4bb0bad3f1aba5f2af5dc85a69992fcfba",
+  "recorded_at_utc": "2026-10-25T17:17:31.885201+00:00",
+  "schema": "quantum-oracle.test-receipt/1",
+  "scope": "Observed-source adapter and synthetic independent controls; actual data consistency grade is separate; no full G4 acceptance",
+  "skipped": 0,
+  "source_hashes": {
+    "collider.py": "6161d1132d2de90c8cd71846fb6c4cc6787ec574857a2c9d581d2532987cb441",
+    "data/cern-5201-Dimuon_DoubleMu.csv.gz": "f9e84321a893ff36120d88e3f1831d8398e4e42b717a7d72f07c90db101e4561",
+    "data/cern-5201-provenance.json": "d19c90b2a2bca3e198b94422e0b17bab84453cab76c61607856e31b6f3468b0c",
+    "data/cern-5201-record.original.json": "7406b16c5925e2a263f75a76a2c6b0479995405122c3553a205b668df78c9668",
+    "tests/test_collider.py": "c7fe5e1eb7afa145421509d732e9d1c37bdd5c9a634ebc73febab1f1929a155b"
+  },
+  "test_cases": 15
+}

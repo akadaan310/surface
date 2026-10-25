@@ -5,7 +5,7 @@
   "base_commit": "aa4474e4bd884ddec98fbeb13b5f0c167cdbe03c",
   "base_tree": "265a1bace7095b3afe48d4b09c9fe9fda02f2e9c",
   "base_manifest_sha256": "aa5caa6a76303d2ad876dfaffd59698482593f438e8ec49047fcc5549d51861f",
-  "status": "SCIENTIFIC_CONTINUATION_IN_PROGRESS",
+  "status": "PARTIAL_SCIENTIFIC_INCREMENT_VERIFIED",
   "owner_handoff": "Publication/package preparation only; no further builds or verification runs were authorized at handoff.",
   "dependencies": [],
   "budgets": {
@@ -28,5 +28,16 @@
     "source": "commissions/2026-10-25-scientific-completion/verbatim.txt",
     "priority": "Complete scientific foundations before SURFACE; no new SURFACE features",
     "historical_owner_handoff": "The owner_handoff field above describes the superseded publication pause."
+  },
+  "scientific_package": "research/quantum_oracle/README.md",
+  "acceptance_ledger": "research/quantum_oracle/evidence/acceptance.json",
+  "coverage": "research/quantum_oracle/coverage.json",
+  "continuation": "research/quantum_oracle/CONTINUATION.md",
+  "verification_current": {
+    "scientific_tests": 100,
+    "repository_python_tests": 63,
+    "repository_python_skipped": 1,
+    "full_initiative": "UNKNOWN",
+    "surface_features_authorized": false
   }
 }

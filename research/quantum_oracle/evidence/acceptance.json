@@ -1,0 +1,420 @@
+{
+  "schema": "quantum-oracle.acceptance-ledger.v1",
+  "authority": "commissions/2026-10-25-scientific-completion/verbatim.txt",
+  "full_initiative": "UNKNOWN",
+  "is_partial_release": true,
+  "separate_statuses": {
+    "scientific_foundation_completion": {
+      "status": "UNKNOWN",
+      "accepted_scope": "13 finite operator families/capability groups in coverage.json",
+      "remaining": "Inherited complete V2/V3/PHANTOM/COMPOSER obligations remain"
+    },
+    "physical_data_validation": {
+      "status": "UNKNOWN",
+      "accepted_scope": "exact FITS/CERN data interpretation and numerical comparisons",
+      "rejected_claims": [
+        "all published CERN masses consistent under printed decimal rounding"
+      ],
+      "remaining": "calibrated measurement models and full observational analyses"
+    },
+    "quantum_hardware_validation": {
+      "status": "BLOCKED",
+      "reason": "No provider authorization, execution credentials, spend budget or physical-provider evidence; historical snapshots are offline data"
+    },
+    "surface_readiness": {
+      "status": "BLOCKED",
+      "reason": "Scientific prerequisites incomplete; Android runtime independently unverified; separate implementation commission required"
+    }
+  },
+  "scoped_capabilities": [
+    {
+      "id": "q-state-admission",
+      "status": "ACCEPT",
+      "exact_scope": "finite reference only; original release gates remain separate",
+      "coverage_record": "coverage.json#q-state-admission",
+      "implementation_sha256": "557f02365462a070f0f5e4e8a558eb0a3222c759b83aedae856f7b789f84f6cd",
+      "evidence": [
+        "evidence/core-verification.json",
+        "evidence/backend-comparison.json",
+        "evidence/scientific-run-002/scientific-reference/committed/1/verification.json"
+      ]
+    },
+    {
+      "id": "q-unitary-observable",
+      "status": "ACCEPT",
+      "exact_scope": "finite reference only; original release gates remain separate",
+      "coverage_record": "coverage.json#q-unitary-observable",
+      "implementation_sha256": "557f02365462a070f0f5e4e8a558eb0a3222c759b83aedae856f7b789f84f6cd",
+      "evidence": [
+        "evidence/core-verification.json",
+        "evidence/backend-comparison.json",
+        "evidence/scientific-run-002/scientific-reference/committed/1/verification.json"
+      ]
+    },
+    {
+      "id": "q-open-channels",
+      "status": "ACCEPT",
+      "exact_scope": "finite reference only; original release gates remain separate",
+      "coverage_record": "coverage.json#q-open-channels",
+      "implementation_sha256": "557f02365462a070f0f5e4e8a558eb0a3222c759b83aedae856f7b789f84f6cd",
+      "evidence": [
+        "evidence/core-verification.json",
+        "evidence/backend-comparison.json",
+        "evidence/scientific-run-002/scientific-reference/committed/1/verification.json"
+      ]
+    },
+    {
+      "id": "q-closed-dynamics",
+      "status": "ACCEPT",
+      "exact_scope": "finite reference only; original release gates remain separate",
+      "coverage_record": "coverage.json#q-closed-dynamics",
+      "implementation_sha256": "557f02365462a070f0f5e4e8a558eb0a3222c759b83aedae856f7b789f84f6cd",
+      "evidence": [
+        "evidence/core-verification.json",
+        "evidence/backend-comparison.json",
+        "evidence/scientific-run-002/scientific-reference/committed/1/verification.json"
+      ]
+    },
+    {
+      "id": "q-measurement",
+      "status": "ACCEPT",
+      "exact_scope": "finite reference only; original release gates remain separate",
+      "coverage_record": "coverage.json#q-measurement",
+      "implementation_sha256": "557f02365462a070f0f5e4e8a558eb0a3222c759b83aedae856f7b789f84f6cd",
+      "evidence": [
+        "evidence/core-verification.json",
+        "evidence/backend-comparison.json",
+        "evidence/scientific-run-002/scientific-reference/committed/1/verification.json"
+      ]
+    },
+    {
+      "id": "q-information-metrics",
+      "status": "ACCEPT",
+      "exact_scope": "finite reference only; original release gates remain separate",
+      "coverage_record": "coverage.json#q-information-metrics",
+      "implementation_sha256": "557f02365462a070f0f5e4e8a558eb0a3222c759b83aedae856f7b789f84f6cd",
+      "evidence": [
+        "evidence/core-verification.json",
+        "evidence/backend-comparison.json",
+        "evidence/scientific-run-002/scientific-reference/committed/1/verification.json"
+      ]
+    },
+    {
+      "id": "finite-coordinate-atlas",
+      "status": "ACCEPT",
+      "exact_scope": "finite reference only; original release gates remain separate",
+      "coverage_record": "coverage.json#finite-coordinate-atlas",
+      "implementation_sha256": "632e368cd04ae4c1a28916886f17e7fab34886f59559295ad24401bff4b9069c",
+      "evidence": [
+        "evidence/core-verification.json",
+        "evidence/backend-comparison.json",
+        "evidence/scientific-run-002/scientific-reference/committed/1/verification.json"
+      ]
+    },
+    {
+      "id": "finite-fourier-spaces",
+      "status": "ACCEPT",
+      "exact_scope": "finite reference only; original release gates remain separate",
+      "coverage_record": "coverage.json#finite-fourier-spaces",
+      "implementation_sha256": "632e368cd04ae4c1a28916886f17e7fab34886f59559295ad24401bff4b9069c",
+      "evidence": [
+        "evidence/core-verification.json",
+        "evidence/backend-comparison.json",
+        "evidence/scientific-run-002/scientific-reference/committed/1/verification.json"
+      ]
+    },
+    {
+      "id": "finite-modal-dynamics",
+      "status": "ACCEPT",
+      "exact_scope": "finite reference only; original release gates remain separate",
+      "coverage_record": "coverage.json#finite-modal-dynamics",
+      "implementation_sha256": "632e368cd04ae4c1a28916886f17e7fab34886f59559295ad24401bff4b9069c",
+      "evidence": [
+        "evidence/core-verification.json",
+        "evidence/backend-comparison.json",
+        "evidence/scientific-run-002/scientific-reference/committed/1/verification.json"
+      ]
+    },
+    {
+      "id": "phantom-finite-discovery",
+      "status": "ACCEPT",
+      "exact_scope": "finite reference only; original release gates remain separate",
+      "coverage_record": "coverage.json#phantom-finite-discovery",
+      "implementation_sha256": "f0110d5212ceca6e173e33f1378281246afa32b3f29a2068ef69b7404879a1c6",
+      "evidence": [
+        "evidence/core-verification.json",
+        "evidence/backend-comparison.json",
+        "evidence/scientific-run-002/scientific-reference/committed/1/verification.json"
+      ]
+    },
+    {
+      "id": "observed-fits-local-tan",
+      "status": "ACCEPT",
+      "exact_scope": "only stated finite data/compilation comparison; full original gate remains UNKNOWN",
+      "coverage_record": "coverage.json#observed-fits-local-tan",
+      "implementation_sha256": "ba65970cc65b0cef1fc9806a356778b8da828193bad459e12140da192e75fbed",
+      "evidence": [
+        "evidence/astro-fixture.json",
+        "evidence/astro-independent-review-v2.json",
+        "evidence/scientific-run-002/scientific-reference/committed/1/verification.json"
+      ]
+    },
+    {
+      "id": "observed-dimuon-kinematics",
+      "status": "ACCEPT",
+      "exact_scope": "only stated finite data/compilation comparison; full original gate remains UNKNOWN",
+      "coverage_record": "coverage.json#observed-dimuon-kinematics",
+      "implementation_sha256": "a14eb67d79a1104c24a928ee1f14e804ee56b8b3fb6c4e33b9759e50abed5674",
+      "evidence": [
+        "evidence/collider-cern5201-analysis-v3.json",
+        "evidence/collider-tests-v3.json",
+        "evidence/scientific-run-002/scientific-reference/committed/1/verification.json",
+        "evidence/collider-signed-bounds-fix.json"
+      ]
+    },
+    {
+      "id": "historical-target-compilation",
+      "status": "ACCEPT",
+      "exact_scope": "only stated finite data/compilation comparison; full original gate remains UNKNOWN",
+      "coverage_record": "coverage.json#historical-target-compilation",
+      "implementation_sha256": "248bb5de257865bed0676e380f5e81b58e0353d6ecc536d709f68d17b3decc9f",
+      "evidence": [
+        "evidence/circuit-compilation-v3.json",
+        "evidence/scientific-run-002/scientific-reference/committed/1/verification.json"
+      ]
+    }
+  ],
+  "original_quantum_gates": [
+    {
+      "id": "G0",
+      "status": "ACCEPT",
+      "scope_and_remaining": "Supplied compact immutable baseline only; historical original replay retained and621 file custody rechecked. Full external corpus remains BLOCKED.",
+      "original_definition": "build/foundation/QUANTUM_ORACLE_V2_COMMISSION/ACCEPTANCE_MATRIX.md",
+      "exact_source_span_inventory": "evidence/inherited-obligations.json"
+    },
+    {
+      "id": "G1",
+      "status": "UNKNOWN",
+      "scope_and_remaining": "Typed quantum states/codecs and PHANTOM finite word-generator transport verified; complete cross-runtime IR, Q-String, operation/trace and replay contracts remain.",
+      "original_definition": "build/foundation/QUANTUM_ORACLE_V2_COMMISSION/ACCEPTANCE_MATRIX.md",
+      "exact_source_span_inventory": "evidence/inherited-obligations.json"
+    },
+    {
+      "id": "G2",
+      "status": "UNKNOWN",
+      "scope_and_remaining": "22 Qiskit comparisons and analytic/scalar controls pass for supported1-4q families. Broader commissioned operator/open-system/control coverage and independent-stack obligations remain.",
+      "original_definition": "build/foundation/QUANTUM_ORACLE_V2_COMMISSION/ACCEPTANCE_MATRIX.md",
+      "exact_source_span_inventory": "evidence/inherited-obligations.json"
+    },
+    {
+      "id": "G3",
+      "status": "UNKNOWN",
+      "scope_and_remaining": "Real photographic FITS decoding and explicitly local TAN validated; full DSS/calibrated photometry/spectra/time/PSF/uncertainty absent.",
+      "original_definition": "build/foundation/QUANTUM_ORACLE_V2_COMMISSION/ACCEPTANCE_MATRIX.md",
+      "exact_source_span_inventory": "evidence/inherited-obligations.json"
+    },
+    {
+      "id": "G4",
+      "status": "UNKNOWN",
+      "scope_and_remaining": "Full100k observed educational CSV ingested; scalar/NumPy comparison passes,1381 consistency counterexamples retained. ROOT/HepMC/weights/detector/systematics absent.",
+      "original_definition": "build/foundation/QUANTUM_ORACLE_V2_COMMISSION/ACCEPTANCE_MATRIX.md",
+      "exact_source_span_inventory": "evidence/inherited-obligations.json"
+    },
+    {
+      "id": "G5",
+      "status": "UNKNOWN",
+      "scope_and_remaining": "Source-bound authentic historical Brisbane subgraph compilation and T1/readout surrogate pass. Full scheduling/uncertainty/shot-cost/mitigation target obligations remain; no hardware execution.",
+      "original_definition": "build/foundation/QUANTUM_ORACLE_V2_COMMISSION/ACCEPTANCE_MATRIX.md",
+      "exact_source_span_inventory": "evidence/inherited-obligations.json"
+    },
+    {
+      "id": "G6",
+      "status": "UNKNOWN",
+      "scope_and_remaining": "Finite affine word-to-basis-permutation discovery accepted only in controlled finite scope; broader held-out real/cross-substrate transfer and quantitative-benefit/rejection benchmark absent.",
+      "original_definition": "build/foundation/QUANTUM_ORACLE_V2_COMMISSION/ACCEPTANCE_MATRIX.md",
+      "exact_source_span_inventory": "evidence/inherited-obligations.json"
+    },
+    {
+      "id": "G7",
+      "status": "BLOCKED",
+      "scope_and_remaining": "Partial package can be cold-replayed; full integrated clean-room acceptance depends on unresolved original G1-G6 and source/data gates.",
+      "original_definition": "build/foundation/QUANTUM_ORACLE_V2_COMMISSION/ACCEPTANCE_MATRIX.md",
+      "exact_source_span_inventory": "evidence/inherited-obligations.json"
+    }
+  ],
+  "surface_gates_retained": [
+    {
+      "id": "G00",
+      "title": "Recover current workspace and immutable baselines",
+      "status": "UNKNOWN",
+      "source": "evidence/commission-gates.json",
+      "reassessed": false,
+      "rule": "New standalone scientific evidence does not discharge original release scope"
+    },
+    {
+      "id": "G01",
+      "title": "Bounded supervisor and durable recovery",
+      "status": "BLOCKED",
+      "source": "evidence/commission-gates.json",
+      "reassessed": false,
+      "rule": "New standalone scientific evidence does not discharge original release scope"
+    },
+    {
+      "id": "G02",
+      "title": "Existing admission, wave stability and evidence reconciliation",
+      "status": "UNKNOWN",
+      "source": "evidence/commission-gates.json",
+      "reassessed": false,
+      "rule": "New standalone scientific evidence does not discharge original release scope"
+    },
+    {
+      "id": "G03",
+      "title": "Usable current SURFACE route",
+      "status": "BLOCKED",
+      "source": "evidence/commission-gates.json",
+      "reassessed": false,
+      "rule": "New standalone scientific evidence does not discharge original release scope"
+    },
+    {
+      "id": "G04",
+      "title": "Binary physical and quantum contracts",
+      "status": "BLOCKED",
+      "source": "evidence/commission-gates.json",
+      "reassessed": false,
+      "rule": "New standalone scientific evidence does not discharge original release scope"
+    },
+    {
+      "id": "G05",
+      "title": "Electrical magnetic multirate coupling",
+      "status": "BLOCKED",
+      "source": "evidence/commission-gates.json",
+      "reassessed": false,
+      "rule": "New standalone scientific evidence does not discharge original release scope"
+    },
+    {
+      "id": "G06",
+      "title": "Acoustic thermal observables",
+      "status": "BLOCKED",
+      "source": "evidence/commission-gates.json",
+      "reassessed": false,
+      "rule": "New standalone scientific evidence does not discharge original release scope"
+    },
+    {
+      "id": "G07",
+      "title": "Battery and charging",
+      "status": "BLOCKED",
+      "source": "evidence/commission-gates.json",
+      "reassessed": false,
+      "rule": "New standalone scientific evidence does not discharge original release scope"
+    },
+    {
+      "id": "G08",
+      "title": "Magneto-optical spectrum and color",
+      "status": "BLOCKED",
+      "source": "evidence/commission-gates.json",
+      "reassessed": false,
+      "rule": "New standalone scientific evidence does not discharge original release scope"
+    },
+    {
+      "id": "G09",
+      "title": "N-chart atlas and topology",
+      "status": "BLOCKED",
+      "source": "evidence/commission-gates.json",
+      "reassessed": false,
+      "rule": "New standalone scientific evidence does not discharge original release scope"
+    },
+    {
+      "id": "G10",
+      "title": "Observed cosmic catalogue vertical slice",
+      "status": "BLOCKED",
+      "source": "evidence/commission-gates.json",
+      "reassessed": false,
+      "rule": "New standalone scientific evidence does not discharge original release scope"
+    },
+    {
+      "id": "G11",
+      "title": "Billion-source ingestion and scaling",
+      "status": "NOT_STARTED",
+      "source": "evidence/commission-gates.json",
+      "reassessed": false,
+      "rule": "New standalone scientific evidence does not discharge original release scope"
+    },
+    {
+      "id": "G12",
+      "title": "Pulsar timing and symbol grammars",
+      "status": "BLOCKED",
+      "source": "evidence/commission-gates.json",
+      "reassessed": false,
+      "rule": "New standalone scientific evidence does not discharge original release scope"
+    },
+    {
+      "id": "G13",
+      "title": "Astronomical dynamical models",
+      "status": "NOT_STARTED",
+      "source": "evidence/commission-gates.json",
+      "reassessed": false,
+      "rule": "New standalone scientific evidence does not discharge original release scope"
+    },
+    {
+      "id": "G14",
+      "title": "Bounded mathematical discovery",
+      "status": "BLOCKED",
+      "source": "evidence/commission-gates.json",
+      "reassessed": false,
+      "rule": "New standalone scientific evidence does not discharge original release scope"
+    },
+    {
+      "id": "G15",
+      "title": "Inherited v2/v3 unresolved obligations",
+      "status": "BLOCKED",
+      "source": "evidence/commission-gates.json",
+      "reassessed": false,
+      "rule": "New standalone scientific evidence does not discharge original release scope"
+    },
+    {
+      "id": "G16",
+      "title": "Integrated release and cold replay",
+      "status": "BLOCKED",
+      "source": "evidence/commission-gates.json",
+      "reassessed": false,
+      "rule": "New standalone scientific evidence does not discharge original release scope"
+    }
+  ],
+  "v3": {
+    "status": "UNKNOWN",
+    "original_seed_rejection_preserved": true,
+    "new_adapter_scope": "Malformed shape/finite/basis/normalization/origin/scale controls repaired in new versioned adapters; original seed unchanged",
+    "remaining": "Full nesting/topology/dynamic coupling/model families and all V2 obligations"
+  },
+  "phantom": {
+    "status": "UNKNOWN",
+    "accepted_scope": "unchanged compact baseline plus tested versioned finite generator adapter",
+    "remaining": "Full corpus/research evidence dependencies and complete cross-runtime integration"
+  },
+  "composer_gate1": {
+    "status": "UNKNOWN",
+    "exact_missing_evidence": "evidence/custody-audit.json",
+    "replacement_claimed": false
+  },
+  "historical_octave": {
+    "status": "UNKNOWN",
+    "original_comparisons_recovered": 0,
+    "replacement_claimed": false
+  },
+  "review": {
+    "independent_probes": [
+      "evidence/review-probes.py",
+      "evidence/review-adapter-probes.py"
+    ],
+    "astro_review": "evidence/astro-independent-review-v2.json",
+    "remaining_scientific_risks": [
+      "Shared numerical-stack components limit independence",
+      "Fixture acceptance is not a uniform error proof over extreme admitted parameters",
+      "Calibration/rights/time/uncertainty boundaries remain explicit"
+    ]
+  },
+  "surface_feature_changes": false,
+  "manual_only_CI_preserved": true,
+  "integration_readiness_report_issued": false,
+  "continuation": "CONTINUATION.md"
+}
