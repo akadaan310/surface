@@ -1,0 +1,40 @@
+{
+  "schema": "surface.initiative-package.v1",
+  "name": "QUANTUM ORACLE × PHANTOM V3 / Surface continuation",
+  "baseline": "INITIATIVE.json on initiative/quantum-oracle-v3 pins the canonical integration commit",
+  "originals": [
+    {
+      "path": "CONSTITUTION_V3.md",
+      "bytes": 8110,
+      "sha256": "96a662ad2fab353eb6de4f8a16b44310960a57ba93deb0777979b6f208bef5e3",
+      "immutable": true
+    },
+    {
+      "path": "SELF_PROMPT_V3.original.md",
+      "bytes": 2980,
+      "sha256": "8a0c39c381d524a64d590181531dd1098e6af0ab03f360ee85f94a50a36a781f",
+      "immutable": true
+    }
+  ],
+  "v3_zip_sha256": "4b8decefc53d7f6776ed668cfc2f3ab48660f68e5a47ddfcd4fb346548c32ace",
+  "cosmos_zip_sha256": "ca8f9202b4c4acc8ab39d3a7305f4ba4cf80d016a384db9714019208cd5ae622",
+  "shared_runtime": [
+    "tools/commission.py",
+    "tools/supervise.py",
+    "tools/materialize_foundation.py",
+    "tools/new_initiative.py",
+    "tools/polyia_surface_demo.py",
+    "src",
+    "include",
+    "vendor/polyia"
+  ],
+  "required_evidence": [
+    "evidence/commission-gates.json",
+    "evidence/foundation-replay.json",
+    "evidence/v3-consolidation-audit.json",
+    "evidence/polyia-import.json",
+    "evidence/consolidation-verification.json"
+  ],
+  "full_v3_status": "UNKNOWN; see explicit provision and release-gate matrices",
+  "source_delivery": "Complete canonical repository archive includes package overlay plus shared runtime and immutable input chunks."
+}

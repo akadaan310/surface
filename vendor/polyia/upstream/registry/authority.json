@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "current_authority": "SRC-OWNER-CURRENT",
+  "destination_repository": "https://github.com/akadaan310/PolyIA",
+  "package_build_remote_actions": "No remote repository write or Oracle deployment performed by this package build.",
+  "decisions": [
+    {
+      "id": "DEC-001",
+      "decision": "Infinity is IX; VII/VIII open research charters; preserve existing I-VI topic identity",
+      "supersedes": [
+        "POLY-C-004",
+        "POLY-C-005",
+        "UCG-009",
+        "Historical Division IX and unnumbered-Infinity numbering where conflicting"
+      ]
+    },
+    {
+      "id": "DEC-002",
+      "decision": "Live inspectable machine-operable state service is first operational deliverable of Codex commission",
+      "supersedes": [
+        "Local-only final-service restrictions to the extent conflicting with current authorized service scope"
+      ]
+    },
+    {
+      "id": "DEC-003",
+      "decision": "Proceed Option A with B formal science/charters/vocabulary and C produce/verify/guidance/full interface; destination PolyIA supplied",
+      "supersedes": [
+        "Any interpretation that removes B/C from Option A"
+      ]
+    },
+    {
+      "id": "DEC-004",
+      "decision": "Book of Forms is a new construction mandate, not a missing prior source.",
+      "source_ref": "SRC-OWNER-CLARIFICATIONS",
+      "supersedes": [
+        "MISSING-BOOK-OF-FORMS unresolved identity"
+      ]
+    },
+    {
+      "id": "DEC-005",
+      "decision": "Under delegated full authority, select OpenClaw as the intended external tool-policy reference; retain original OpenCLAR spelling and distinguish this decision from historical proof.",
+      "source_ref": "SRC-OWNER-CLARIFICATIONS",
+      "supersedes": [
+        "UNRESOLVED-OPENCLAR implementation-choice hold"
+      ]
+    }
+  ],
+  "source_attestation": "Owner states all University material was hand-verified/reviewed; retain without treating that attestation as fresh execution evidence.",
+  "current_amendments": [
+    "SRC-OWNER-CLARIFICATIONS"
+  ]
+}

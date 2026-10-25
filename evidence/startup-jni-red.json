@@ -1,0 +1,125 @@
+{
+  "schema": "surface-startup-jni-host-v1",
+  "phase_label": "red",
+  "status": "FAIL",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "scope": "Actual SurfaceActivity static Java native-method resolution on host JVM with an instrumented native fixture; no Android Activity/device execution",
+  "native_fixture_abi": "Linux JNI pointer parameters are opaque; jint is signed 32-bit; no JNIEnv table access; no native string-content claim",
+  "actual_activity": {
+    "path": "android/SurfaceActivity.java",
+    "sha256": "bb142a681f2d97da5b5e1047d3bfbc3a6a5c9c9f96857d7717f611ebf67d9fea",
+    "historical_source_copy": "tests/android_startup/baseline/SurfaceActivity.java",
+    "historical_copy_verification": "SHA256 identical to actual Activity bytes captured before the fix and used in the observed RED run"
+  },
+  "fixture": {
+    "path": "tests/android_startup/bridge_fixture.cpp",
+    "sha256": "5b19310d52129ed001da8697983d7eb91109a73ac26aa0eb0fec5b55bfe16987"
+  },
+  "driver": {
+    "path": "tests/android_startup/StartupProbe.java",
+    "sha256": "8a0c241e2b75b9a234aa336157b51d7ca855dae1df65a554d71ffdbb3f419f98"
+  },
+  "android_jar": {
+    "path": "/workspace/scratch/976a326a6786/android-toolchain/android-36/android.jar",
+    "sha256": "d9eb9da824d9e247a352f570f01e1169e725b2954bca9e283a71786c59b59f9a"
+  },
+  "commands": [
+    {
+      "label": "java-version",
+      "argv": [
+        "/usr/bin/java",
+        "-version"
+      ],
+      "timeout_seconds": 30,
+      "exit_code": 0,
+      "wall_seconds": 0.3690976339998997
+    },
+    {
+      "label": "compile-host-jni-fixture",
+      "argv": [
+        "/usr/bin/c++",
+        "-std=c++20",
+        "-O2",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-fPIC",
+        "-shared",
+        "-fvisibility=hidden",
+        "/workspace/scratch/976a326a6786/surface-native/tests/android_startup/bridge_fixture.cpp",
+        "-o",
+        "/workspace/scratch/976a326a6786/surface-native/build/startup-jni/red/libsurface.so"
+      ],
+      "timeout_seconds": 30,
+      "exit_code": 0,
+      "wall_seconds": 0.2520065869998689
+    },
+    {
+      "label": "compile-actual-activity-and-driver",
+      "argv": [
+        "/usr/bin/java",
+        "-m",
+        "jdk.compiler/com.sun.tools.javac.Main",
+        "-source",
+        "8",
+        "-target",
+        "8",
+        "-classpath",
+        "/workspace/scratch/976a326a6786/android-toolchain/android-36/android.jar",
+        "-d",
+        "/workspace/scratch/976a326a6786/surface-native/build/startup-jni/red/classes",
+        "/workspace/scratch/976a326a6786/surface-native/android/SurfaceActivity.java",
+        "/workspace/scratch/976a326a6786/surface-native/tests/android_startup/StartupProbe.java"
+      ],
+      "timeout_seconds": 30,
+      "exit_code": 0,
+      "wall_seconds": 2.202232426000137
+    },
+    {
+      "label": "execute-actual-jni-bridge",
+      "argv": [
+        "/usr/bin/java",
+        "-Djava.library.path=/workspace/scratch/976a326a6786/surface-native/build/startup-jni/red",
+        "-cp",
+        "/workspace/scratch/976a326a6786/surface-native/build/startup-jni/red/classes:/workspace/scratch/976a326a6786/android-toolchain/android-36/android.jar",
+        "org.surface.nativeink.StartupProbe"
+      ],
+      "timeout_seconds": 30,
+      "exit_code": 42,
+      "wall_seconds": 0.1655210639996767
+    }
+  ],
+  "assertions": [
+    "Actual Activity class initializes without constructing an Android Activity",
+    "First native dimensions call receives (320, 480) exactly",
+    "Actual nativeOpen declaration resolves and passes a non-null String reference",
+    "Second native dimensions call receives (1080, 2400) exactly",
+    "Observed callback counts are dimensions=2, open=1, nonnull-String=1"
+  ],
+  "log": "evidence/startup-jni-red.log",
+  "elapsed_seconds": 3.2366061140000966,
+  "runtime_exit_code": 42,
+  "expected_missing_load_failure_observed": true,
+  "witness": null,
+  "passed": false,
+  "compiled_activity_sha256": "4f502a5edc9f3df9abf09157c6df6fe7834e2a646ca69270a181480c97fbd9bf",
+  "fixture_library_sha256": "b721ad450742b79101011445ba0c959042a22fcdb93b2bb624cf30eddbb4386d",
+  "compiled_bytecode_inspection": {
+    "command": [
+      "java",
+      "-m",
+      "jdk.jdeps/com.sun.tools.javap.Main",
+      "-p",
+      "-c",
+      "/workspace/scratch/976a326a6786/surface-native/build/startup-jni/red/classes/org/surface/nativeink/SurfaceActivity.class"
+    ],
+    "exit_code": 0,
+    "evidence": "evidence/startup-jni-red-javap.txt",
+    "system_load_library_invocation_present": false,
+    "sha256": "a7fac4adb28d7e5df68ec30b6f859dfa9af1eca4dc570b97de5d9d739d52e291"
+  },
+  "verifier_script": {
+    "path": "tools/test_android_startup.py",
+    "sha256": "0a47a22eeb282b38b036f4fdc0f8b626500606aac6b6de4527ab1b4c3afd6188"
+  }
+}

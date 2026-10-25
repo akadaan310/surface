@@ -1,0 +1,1137 @@
+{
+  "authored_files": [
+    {
+      "bytes": 12983,
+      "path": "tools/polyia_surface_demo.py",
+      "sha256": "8e51829ee7a7e092b33f67570be0800fc1f2b6a60b9429f01d620dae19e50ce0"
+    },
+    {
+      "bytes": 6225,
+      "path": "tests/test_polyia_integration.py",
+      "sha256": "dead2728f6f4438286a3eacc1c6a552e9ed881dd4c1688cd06fede60cbb3b9e4"
+    },
+    {
+      "bytes": 5033,
+      "path": "vendor/polyia/university_demo.mjs",
+      "sha256": "df9bb67984b7688d280ecd4ca956bb6b133375b2442ca9edb689bef6dce5e89a"
+    },
+    {
+      "bytes": 3163,
+      "path": "vendor/polyia/README.md",
+      "sha256": "a97b9d3e885835aa58261788179a548c4aa0e69e60ce353e592f308882cddddf"
+    },
+    {
+      "bytes": 2069,
+      "path": "vendor/polyia/LICENSE_STATUS.md",
+      "sha256": "f97185c70bd35d4de1f49ccae0e6f1cc32cd034710fd97919c803d610f30a077"
+    },
+    {
+      "bytes": 10702,
+      "path": "docs/POLYIA_INTEGRATION.md",
+      "sha256": "60fa4cf28aa8db3ceb422523a3fa97559099e2b462ecfa4f1568b16df54142bd"
+    },
+    {
+      "bytes": 10338,
+      "path": "docs/SUBSTRATE_UNIVERSITY.md",
+      "sha256": "b19fe1ee9c0f9d7867168faba8e4cc1635065ddf69b3d032ea72e7851ac65cf6"
+    }
+  ],
+  "checks": [
+    {
+      "command": "python3 -B tools/verify_package.py --require-release-manifest",
+      "exit_code": 0,
+      "name": "upstream_release_manifest",
+      "repository": "polyia",
+      "result": {
+        "counts": {
+          "core_inherited_obligations": 252,
+          "expanded_members": 253,
+          "mission_obligations": 192,
+          "release_manifest_files": 1286,
+          "repository_blobs": 757,
+          "repository_snapshots": 8,
+          "source_files": 1038,
+          "supplemental_documents": 130,
+          "supplemental_partition_bytes": 1055041,
+          "supplemental_registry_bytes": 10270078,
+          "supplemental_segments": 3706,
+          "unique_expanded_archives": 13
+        },
+        "errors": [],
+        "full_mission_status": "NOT_COMMISSIONED",
+        "ok": true
+      },
+      "scope": "Original package byte custody and reference coverage; not scientific acceptance.",
+      "working_directory": "pinned original PolyIA checkout"
+    },
+    {
+      "command": "python3 -B -m unittest discover -s tests -p test_polyia_integration.py -v",
+      "exit_code": 1,
+      "expected_assertion_failures": 6,
+      "name": "adapter_initial_red",
+      "reason": "Adapter and University driver did not yet exist; test bodies retained their expected behavior.",
+      "tests": 6,
+      "working_directory": "Surface root before adapter implementation"
+    },
+    {
+      "command": "python3 -B -m unittest discover -s tests -p test_polyia_integration.py -v",
+      "elapsed_seconds_reported": 1.771,
+      "exit_code": 0,
+      "name": "adapter_green",
+      "skipped": 0,
+      "summary": "Ran 6 tests in 1.771s; OK",
+      "tests": 6,
+      "working_directory": "Surface root"
+    },
+    {
+      "command": "python3 -B -m unittest discover -s tests -v",
+      "elapsed_seconds_reported": 7.227,
+      "exit_code": 0,
+      "name": "preserved_polyia_tests",
+      "scope": "All tests in the selected exact-byte PolyIA subset, not all original PolyIA tests.",
+      "skipped": 0,
+      "summary": "Ran 89 tests in 7.227s; OK",
+      "test_files": [
+        "test_astra.py",
+        "test_forms.py",
+        "test_generator_packages.py",
+        "test_generators.py",
+        "test_native.py",
+        "test_native_terms.py"
+      ],
+      "tests": 89,
+      "working_directory": "vendor/polyia/upstream"
+    },
+    {
+      "command": "python3 -I -B tools/polyia_surface_demo.py --with-university --output /tmp/surface-polyia-demo.json",
+      "exit_code": 0,
+      "name": "combined_headless_demo",
+      "python_example_checks": 12,
+      "receipt_sha256": "d8ca6be23700a65bbbc8c234e9255003e0271fc04ed28973006e42ab49b82f57",
+      "university_status": "PASS",
+      "working_directory": "Surface root"
+    },
+    {
+      "checked_git_blobs": 80,
+      "checked_sha256": 80,
+      "exit_code": 0,
+      "extra_imported_files": 0,
+      "missing_files": 0,
+      "name": "source_custody",
+      "operation": "verify_imports()"
+    },
+    {
+      "command": "git status --short",
+      "exit_codes": [
+        0,
+        0
+      ],
+      "name": "upstream_worktrees_unchanged",
+      "outputs": [
+        "",
+        ""
+      ],
+      "repositories": [
+        "polyia",
+        "substrate-university"
+      ]
+    },
+    {
+      "exit_code": 0,
+      "name": "authored_evidence_and_document_links",
+      "operation": "Check seven authored-file hashes against evidence and resolve every local Markdown link in four authored documents",
+      "result": "PASS"
+    },
+    {
+      "archive": "vendor/polyia/upstream/sources/recovered/ASTRA_CELESTIAL_SHELLS_ATOM_CODEX_GOD_SEED_V02.zip",
+      "credential_named_members": [],
+      "name": "archival_credential_filename_review",
+      "private_key_markers": 0,
+      "regular_archive_members": 54,
+      "scope": "Narrow archive-name/private-key-marker inspection, not a general secret-detection guarantee."
+    }
+  ],
+  "demo": {
+    "astra": {
+      "checkpoint_attempt": "PERSISTENCE_REQUIRED",
+      "event_persistence": "NOT_COMMITTED_BY_KERNEL",
+      "events": [
+        {
+          "from_phase": "OBSERVE",
+          "hash": "4924f295a84c3e30b15530b8a2cfc82fb16495dbb5d3f0b8e5d8d4b72e202408",
+          "input": {
+            "artifact": "Surface bounded import",
+            "content": "abc"
+          },
+          "previous": "0000000000000000000000000000000000000000000000000000000000000000",
+          "tick": 1,
+          "to_phase": "PROPOSE",
+          "verb": "SELECT"
+        },
+        {
+          "from_phase": "PROPOSE",
+          "hash": "143854dd94f050a71fd273cbcd705f27efe22e7ef02a5ec6428ac81f4e3360bd",
+          "input": {},
+          "previous": "4924f295a84c3e30b15530b8a2cfc82fb16495dbb5d3f0b8e5d8d4b72e202408",
+          "tick": 2,
+          "to_phase": "ADMIT",
+          "verb": "PROPOSE"
+        },
+        {
+          "from_phase": "ADMIT",
+          "hash": "02b8e7b0d1197d6416572103617e2f4f2bc9dfa7a8d0753db172e53a5ea4512e",
+          "input": {},
+          "previous": "143854dd94f050a71fd273cbcd705f27efe22e7ef02a5ec6428ac81f4e3360bd",
+          "tick": 3,
+          "to_phase": "EXECUTE",
+          "verb": "ADMIT"
+        },
+        {
+          "from_phase": "EXECUTE",
+          "hash": "f3f4686f583aa290fd459ab478a4d2cd5626ac44d0208b7fbfd6bca0d1dd86ac",
+          "input": {},
+          "previous": "02b8e7b0d1197d6416572103617e2f4f2bc9dfa7a8d0753db172e53a5ea4512e",
+          "tick": 4,
+          "to_phase": "VERIFY",
+          "verb": "EXECUTE"
+        },
+        {
+          "from_phase": "VERIFY",
+          "hash": "4a55d5f79145e2722187307d37ae8acb78e4942e4cf58cf67a73ddf0ea217a35",
+          "input": {},
+          "previous": "f3f4686f583aa290fd459ab478a4d2cd5626ac44d0208b7fbfd6bca0d1dd86ac",
+          "tick": 5,
+          "to_phase": "CHECKPOINT",
+          "verb": "VERIFY"
+        }
+      ],
+      "phases": [
+        "OBSERVE",
+        "PROPOSE",
+        "ADMIT",
+        "EXECUTE",
+        "VERIFY",
+        "CHECKPOINT"
+      ],
+      "verification": {
+        "evidence_class": "HANDLER_SELF_CONSISTENCY",
+        "independent": false,
+        "output_hash": "f0b75a208bf80b7ac47f090211c7e19f9123b5048b526e9ac1e98151c362f9d4",
+        "verdict": "PASS"
+      }
+    },
+    "checks": {
+      "different_representation_after_layout": true,
+      "eighteen_exact_exercises": true,
+      "limited_search_unresolved": true,
+      "native_differential_agreement": true,
+      "negative_membership": true,
+      "no_fabricated_checkpoint": true,
+      "roundtrip": true,
+      "same_content_after_layout": true,
+      "style_preserves_content": true,
+      "trace_intact": true,
+      "trace_tamper_refused": true,
+      "two_protocol_words": true
+    },
+    "custody": {
+      "bytes": 4455381,
+      "files": 80,
+      "manifest_sha256": "6eebb37ec30fceae018fcd158e39fecb2f3c47cacae6a732891f3fdb99ebaf01",
+      "scope": "Exact Git blob and SHA-256 custody; not a license grant or scientific proof.",
+      "status": "PASS",
+      "upstreams": {
+        "polyia": {
+          "branch": "codex/commission-20261024-83906c7",
+          "commit": "bb6319acb88467b618f5a6f673f1867768223ce6",
+          "license_status": "UNSPECIFIED: no repository-wide software license found at this commit",
+          "mission_obligations_accepted": 2,
+          "mission_obligations_total": 192,
+          "mission_status": "NOT_COMMISSIONED",
+          "repository": "https://github.com/akadaan310/PolyIA",
+          "research": "paused by owner; not resumed"
+        },
+        "substrate-university": {
+          "branch": "claude/new-session-xd8auu",
+          "commit": "6a0f5eaa8dd39b58bdd99889721ecea5f54e62bb",
+          "license_status": "UNSPECIFIED: no repository-wide software license found at this commit; bundled font licenses do not license TypeScript code",
+          "repository": "https://github.com/akadaan310/abedkadaancom"
+        }
+      }
+    },
+    "forms": {
+      "after_content_cid": "3cdf5cd9c6000cff439d650673d56ecf1f6ecbbbda9e356ecfe3673c2f61374d",
+      "after_representation_cid": "a67188843bc804cce2ae57469dccae237a686b1585871c8368415437cc6088b5",
+      "before_content_cid": "3cdf5cd9c6000cff439d650673d56ecf1f6ecbbbda9e356ecfe3673c2f61374d",
+      "before_representation_cid": "2f3319892f5b0bf581169149bfa521d66c0b64cf3830343eb8d60b0aeeb8646e",
+      "roundtrip_equal": true
+    },
+    "full_mission_acceptance": false,
+    "limitations": [
+      "PolyIA remains NOT_COMMISSIONED; the source handoff reports 2/192 accepted mission obligations.",
+      "Owner-paused upstream research is not resumed by this example.",
+      "Trace replay detects corruption; an unsigned self-consistent receipt is not authenticated provenance.",
+      "Differential VM checking shares Python and Fraction; it is not a formal proof.",
+      "Infinity is IX; VII and VIII remain open research charters.",
+      "No model-free open-domain interpretation or open-ended discovery is claimed."
+    ],
+    "llm_inference": false,
+    "native": {
+      "outputs": {
+        "product_derivative": {
+          "type": "Polynomial",
+          "value": [
+            "0",
+            "1",
+            "-3/2"
+          ]
+        },
+        "quotient": {
+          "type": "Polynomial",
+          "value": [
+            "-1/2",
+            "-1/2"
+          ]
+        },
+        "quotient_numerator": {
+          "type": "Polynomial",
+          "value": [
+            "0",
+            "1",
+            "-1/2"
+          ]
+        },
+        "remainder": {
+          "type": "Polynomial",
+          "value": [
+            "-1/2"
+          ]
+        }
+      },
+      "source": "(commission\n  (profile \"polyia.native/0.1\")\n  (budget 128)\n  (let a Polynomial (poly 0 0 -1/2))\n  (let b Polynomial (poly -1 1))\n  (let d Division (divmod a b))\n  (emit quotient (quotient d))\n  (emit remainder (remainder d))\n  (emit product_derivative (derivative (pmul a b)))\n  (emit quotient_numerator (padd (pmul (derivative a) b) (pmul (poly -1) (pmul a (derivative b)))))\n)\n",
+      "verification": {
+        "agreement": true,
+        "evidence_class": "differential-check",
+        "limitation": "finite supported profile; agreement is not proof or full mission acceptance",
+        "method": "bytecode versus separate AST evaluator",
+        "shared_dependencies": [
+          "lexer/parser/typechecker",
+          "fractions.Fraction"
+        ]
+      }
+    },
+    "polynomial": {
+      "candidate_count": 18,
+      "curriculum": {
+        "assumptions": [
+          "Q[x], ascending exact rational coefficients",
+          "r=0 or degree(r)<degree(b)",
+          "quotient differentiation requires b(x) != 0"
+        ],
+        "content_id": "74b39c052511954ded96f7217c6661e36589317dda316b1902e706dec9bb68ad",
+        "id": "dc6a1dc92926af879ab8f5b717517a34f96a014bfcf18a40ba72e42899273ed9",
+        "schema": "polyia.curriculum/0.1",
+        "scope": "four exact worked steps, not a complete pedagogy or learner assessment",
+        "source_lock": [
+          {
+            "anchors": "040,123-132,135,152",
+            "path": "sources/originals/UCG_CODEX_CONSTITUTIONAL_COMMISSION.md",
+            "sha256": "0cf03197777e19330ce36cf478bec9a5c4cad5459fd142c37eb4ae0e82bd6d7e"
+          },
+          {
+            "anchors": "C-020,021,030,051,053,064,069,070,076",
+            "path": "sources/recovered/CODEX_CONSTITUTION.md",
+            "sha256": "cfe0b88f9c701e139372d783db1d9568da272f6433f9e513d6475fe7985a2630"
+          },
+          {
+            "anchors": "3,5,8",
+            "path": "sources/originals/RELATIONAL_GENERATIVITY_FOUNDATION_V0_1.md",
+            "sha256": "359a3d584a06c3fd3cb30ebd43c9a3d7781ecc7e33ba6846823bf3758d7c528f"
+          },
+          {
+            "anchors": "1,3-7,10",
+            "path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/docs/TECHNICAL_TREATISE.md",
+            "sha256": "bed750d816b54029a59ff933361cc5ad15709de14b59b595735d6e95439a2e01"
+          },
+          {
+            "anchors": "2.1,2.2,2.3,4,5",
+            "path": "sources/repos/computationalgrammartheory/CGT_SDK_SPEC.md",
+            "sha256": "4ed9074c9d1713f4aba14da0f21de08bfea192fdba57bcefcf8219886e87ca9f"
+          },
+          {
+            "anchors": "SF-06,07,08",
+            "path": "docs/SCIENTIFIC_FOUNDATIONS.md",
+            "sha256": "78dff0f8c6637449d043e3816d2d4f6cfc5a42a2d4aad6dd662f2d6b5e9cd8f0"
+          },
+          {
+            "anchors": "PIA-097..PIA-108",
+            "path": "GOD_SEED.md",
+            "sha256": "4f179f83ff2279e1bf3e471ac8edc80456b9fdff29548332bf5b649a3c724f38"
+          },
+          {
+            "anchors": "FV-01..FV-09",
+            "path": "docs/FORMAL_VOCABULARY.md",
+            "sha256": "45455b3d908b5ca978a510902337c08363478db378aa52b0825c91a5deb5ce24"
+          },
+          {
+            "anchors": "state graph and representation boundary",
+            "path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/docs/STATE_MACHINE.md",
+            "sha256": "48c38a2a24128513fc45c091ba1c26c61feb4cd48a3062f876bb560c6d05fa5e"
+          },
+          {
+            "anchors": "intent coverage, source custody and refusal",
+            "path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/docs/CONCIERGE_CONTRACT.md",
+            "sha256": "0400c89054a4fa88cbb40f8312d38f9548f6373f666746874d7005e30b31692b"
+          },
+          {
+            "anchors": "typed machine construction and verification",
+            "path": "sources/expanded/TRE_TREE_FOUNDATIONS_RESEARCH_PACKET_V01/TRE_TREE_FOUNDATIONS_V01/docs/01_MACHINE_COMPILER.md",
+            "sha256": "8955e70c7d48bb47588f863382df6c3a046a2301d4701ef84d4fe4bc29d5a14b"
+          }
+        ],
+        "steps": [
+          {
+            "claim": "constant coefficient b[0]*q[0]+r[0] equals a[0]",
+            "evidence_class": "exact-rational-coefficient-check",
+            "id": "fractions",
+            "operands": [
+              "-1",
+              "-1/2",
+              "-1/2"
+            ],
+            "operation": "multiply then add exact rationals",
+            "requires": [],
+            "result": "0",
+            "source_refs": [
+              0,
+              1,
+              5
+            ]
+          },
+          {
+            "dividend": [
+              "0",
+              "0",
+              "-1/2"
+            ],
+            "divisor": [
+              "-1",
+              "1"
+            ],
+            "evidence_class": "exact-rational-coefficient-check",
+            "id": "division",
+            "operation": "descending coefficient elimination",
+            "quotient": [
+              "-1/2",
+              "-1/2"
+            ],
+            "remainder": [
+              "-1/2"
+            ],
+            "requires": [
+              "fractions"
+            ],
+            "source_refs": [
+              0,
+              1,
+              5
+            ]
+          },
+          {
+            "evidence_class": "exact-rational-coefficient-check",
+            "id": "product-derivative",
+            "operation": "(a*b)' = a'*b+a*b'",
+            "requires": [
+              "division"
+            ],
+            "result": [
+              "0",
+              "1",
+              "-3/2"
+            ],
+            "source_refs": [
+              0,
+              1,
+              5
+            ]
+          },
+          {
+            "denominator": [
+              "1",
+              "-2",
+              "1"
+            ],
+            "domain": {
+              "excluded_by_polynomial": [
+                "-1",
+                "1"
+              ],
+              "requirement": "b(x) != 0"
+            },
+            "evidence_class": "exact-rational-coefficient-check",
+            "id": "quotient-derivative",
+            "numerator": [
+              "0",
+              "1",
+              "-1/2"
+            ],
+            "operation": "(a/b)' = (a'*b-a*b')/(b*b)",
+            "requires": [
+              "division",
+              "product-derivative"
+            ],
+            "source_refs": [
+              0,
+              1,
+              5
+            ]
+          }
+        ]
+      },
+      "first": {
+        "dividend": [
+          "0",
+          "0",
+          "-1/2"
+        ],
+        "divisor": [
+          "-1",
+          "1"
+        ],
+        "domain": {
+          "excluded_by_polynomial": [
+            "-1",
+            "1"
+          ],
+          "requirement": "b(x) != 0"
+        },
+        "product_derivative": [
+          "0",
+          "1",
+          "-3/2"
+        ],
+        "quotient": [
+          "-1/2",
+          "-1/2"
+        ],
+        "quotient_derivative_denominator": [
+          "1",
+          "-2",
+          "1"
+        ],
+        "quotient_derivative_numerator": [
+          "0",
+          "1",
+          "-1/2"
+        ],
+        "remainder": [
+          "-1/2"
+        ]
+      },
+      "first_content_id": "74b39c052511954ded96f7217c6661e36589317dda316b1902e706dec9bb68ad",
+      "limited_inverse": {
+        "classification": "UNRESOLVED_SEARCH_BUDGET",
+        "complete": false,
+        "status": "RESOURCE_LIMIT"
+      },
+      "model_cid": "5d3b2ad3c46c2f244dae81426e3f8f55ab4363b383991d5b810579ce306b6310",
+      "style_preserves_content_id": true,
+      "style_preserves_relations": true
+    },
+    "protocol": {
+      "model_cid": "dfb51b34cfe8aa8f5f529b40d984535514b6f4644257400c2d1c7640addedab4",
+      "negative_member": false,
+      "replay": {
+        "entries": 9,
+        "ok": true,
+        "result_cid": "158a4ff052414afe68ae3319f1bfff3a7fa5c8a976572321ce4d58d7f1c541b9",
+        "scope": "captured trace integrity only; no execution or provenance authentication"
+      },
+      "tampered_replay": {
+        "error": {
+          "code": "TRACE",
+          "detail": "Trace chain mismatch."
+        },
+        "ok": false
+      },
+      "trace": [
+        {
+          "data": {
+            "model_cid": "dfb51b34cfe8aa8f5f529b40d984535514b6f4644257400c2d1c7640addedab4",
+            "request_cid": "42f9f09789c7fc28f001a93d5dd15a3281fbb3365b54ac005f064925315440a4"
+          },
+          "digest": "0c171117f5d03691f2c0409bd70b5efec19988ed65e34c3dde376a50d6404ea7",
+          "event": "admit",
+          "index": 0,
+          "previous": "0000000000000000000000000000000000000000000000000000000000000000",
+          "state": "INPUT"
+        },
+        {
+          "data": {
+            "family": "regular",
+            "search_budget": 10000,
+            "tool_calls": []
+          },
+          "digest": "7b0b5c2c0f5aaee68d42b9c881f540e4b0a556ddd4f27ea79fd480b11f3a6cae",
+          "event": "begin_frontier",
+          "index": 1,
+          "previous": "0c171117f5d03691f2c0409bd70b5efec19988ed65e34c3dde376a50d6404ea7",
+          "state": "GENERATE"
+        },
+        {
+          "data": {
+            "content_id": "cd4b14005e5892e7162a31bef95c55a4165c4988139f5ecb5d2c0dba5a6f4ddc",
+            "frontier_visit": 5
+          },
+          "digest": "d3692531a243da3a8f71bd448e9eec85c411cc7884a33baf1bf8a224b37f4e07",
+          "event": "construct_candidate",
+          "index": 2,
+          "previous": "7b0b5c2c0f5aaee68d42b9c881f540e4b0a556ddd4f27ea79fd480b11f3a6cae",
+          "state": "GENERATE"
+        },
+        {
+          "data": {
+            "content_id": "cd4b14005e5892e7162a31bef95c55a4165c4988139f5ecb5d2c0dba5a6f4ddc",
+            "frontier_visit": 5
+          },
+          "digest": "e69a330ffc318b4a71337f03520d57da202171955ef8922b27b6cfff3e665cb0",
+          "event": "constraints_passed",
+          "index": 3,
+          "previous": "d3692531a243da3a8f71bd448e9eec85c411cc7884a33baf1bf8a224b37f4e07",
+          "state": "CONSTRAIN"
+        },
+        {
+          "data": {
+            "content_id": "cd4b14005e5892e7162a31bef95c55a4165c4988139f5ecb5d2c0dba5a6f4ddc",
+            "frontier_visit": 5
+          },
+          "digest": "215fbb2950d2307003cc68968770208b25c5c87daec7b9fd139d854cd9f8e851",
+          "event": "admit_candidate",
+          "index": 4,
+          "previous": "e69a330ffc318b4a71337f03520d57da202171955ef8922b27b6cfff3e665cb0",
+          "state": "VERIFY"
+        },
+        {
+          "data": {
+            "content_id": "63eeb16b5cfd3a006056b36f54bc9a742073db369f3152e99aa85937bc8f9fb1",
+            "frontier_visit": 11
+          },
+          "digest": "479f820b3613374dbd2a1906b5e50b80ea2c4f367a8fb5eb2387b1d9aa0e0f41",
+          "event": "construct_candidate",
+          "index": 5,
+          "previous": "215fbb2950d2307003cc68968770208b25c5c87daec7b9fd139d854cd9f8e851",
+          "state": "GENERATE"
+        },
+        {
+          "data": {
+            "content_id": "63eeb16b5cfd3a006056b36f54bc9a742073db369f3152e99aa85937bc8f9fb1",
+            "frontier_visit": 11
+          },
+          "digest": "24469a64e737f7f75d3981175066d6194ae34ed682e7478a18d10b8f5e74db76",
+          "event": "constraints_passed",
+          "index": 6,
+          "previous": "479f820b3613374dbd2a1906b5e50b80ea2c4f367a8fb5eb2387b1d9aa0e0f41",
+          "state": "CONSTRAIN"
+        },
+        {
+          "data": {
+            "content_id": "63eeb16b5cfd3a006056b36f54bc9a742073db369f3152e99aa85937bc8f9fb1",
+            "frontier_visit": 11
+          },
+          "digest": "75d3598ab4a18e4241f5c9e7020b5a79f20422d42b7397a080138fb92345bd58",
+          "event": "admit_candidate",
+          "index": 7,
+          "previous": "24469a64e737f7f75d3981175066d6194ae34ed682e7478a18d10b8f5e74db76",
+          "state": "VERIFY"
+        },
+        {
+          "data": {
+            "result_cid": "158a4ff052414afe68ae3319f1bfff3a7fa5c8a976572321ce4d58d7f1c541b9",
+            "status": "PASS"
+          },
+          "digest": "99377e708f7b4ff428c79290f97c175002b5d79b86ba260674856be40189677c",
+          "event": "finish",
+          "index": 8,
+          "previous": "75d3598ab4a18e4241f5c9e7020b5a79f20422d42b7397a080138fb92345bd58",
+          "state": "COMPLETE"
+        }
+      ],
+      "words": [
+        [
+          "PING",
+          "ACK"
+        ],
+        [
+          "PING",
+          "ACK",
+          "ACK"
+        ]
+      ]
+    },
+    "schema": "surface.polyia-demo/1",
+    "scope": "Local finite computations and source custody; no live service, durable ledger, native renderer binding or Android execution.",
+    "status": "PASS",
+    "university": {
+      "address": "loom://plate/START/ROTATE:90/SCALE:2/SHIFT:1,0/COMMIT",
+      "browser_required": false,
+      "cycle_refused": true,
+      "full_university_acceptance": false,
+      "limitations": [
+        "The upstream loom parser accepts some surplus arguments; this example exposes no arbitrary-input API.",
+        "World dimensions and matrix shapes are fixed validated fixtures; upstream helpers do not fully validate hostile inputs.",
+        "Fold is excluded because original Greek glyphs can collide with generated rule names.",
+        "Six divisions and all 62 topic identities are retained. PolyIA IX and VII/VIII belong to a separate registry."
+      ],
+      "llm_inference": false,
+      "matrix": [
+        [
+          "0",
+          "-2",
+          "1"
+        ],
+        [
+          "2",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1"
+        ]
+      ],
+      "node": "v24.22.1",
+      "non_quarter_turn_refused": true,
+      "preimage_kinds": [
+        "empty",
+        "affine"
+      ],
+      "registry": {
+        "division_count": 6,
+        "labels": {
+          "application": 2,
+          "established": 42,
+          "house": 18
+        },
+        "topic_count": 62,
+        "topics": [
+          {
+            "division": "foundations",
+            "id": "transition-systems",
+            "status": "established"
+          },
+          {
+            "division": "foundations",
+            "id": "finite-automata",
+            "status": "established"
+          },
+          {
+            "division": "foundations",
+            "id": "operational-grammar",
+            "status": "house"
+          },
+          {
+            "division": "foundations",
+            "id": "admissibility",
+            "status": "established"
+          },
+          {
+            "division": "foundations",
+            "id": "substrate-theory",
+            "status": "house"
+          },
+          {
+            "division": "foundations",
+            "id": "perturbation",
+            "status": "established"
+          },
+          {
+            "division": "foundations",
+            "id": "equivalence-classes",
+            "status": "established"
+          },
+          {
+            "division": "foundations",
+            "id": "numerical-grammars",
+            "status": "house"
+          },
+          {
+            "division": "foundations",
+            "id": "graph-theory",
+            "status": "established"
+          },
+          {
+            "division": "foundations",
+            "id": "complexity",
+            "status": "established"
+          },
+          {
+            "division": "relational",
+            "id": "alphabets-words",
+            "status": "established"
+          },
+          {
+            "division": "relational",
+            "id": "generative-grammars",
+            "status": "established"
+          },
+          {
+            "division": "relational",
+            "id": "plicastratum",
+            "status": "house"
+          },
+          {
+            "division": "relational",
+            "id": "alphabet-towers",
+            "status": "house"
+          },
+          {
+            "division": "relational",
+            "id": "ingrammatica",
+            "status": "house"
+          },
+          {
+            "division": "relational",
+            "id": "constructive-admission",
+            "status": "house"
+          },
+          {
+            "division": "relational",
+            "id": "relational-generativity",
+            "status": "house"
+          },
+          {
+            "division": "relational",
+            "id": "modal-cyclic",
+            "status": "established"
+          },
+          {
+            "division": "relational",
+            "id": "recursive-folds",
+            "status": "established"
+          },
+          {
+            "division": "relational",
+            "id": "compositional-forms",
+            "status": "established"
+          },
+          {
+            "division": "languages",
+            "id": "uri-grammar",
+            "status": "established"
+          },
+          {
+            "division": "languages",
+            "id": "purl",
+            "status": "house"
+          },
+          {
+            "division": "languages",
+            "id": "seurl",
+            "status": "house"
+          },
+          {
+            "division": "languages",
+            "id": "typed-machines",
+            "status": "established"
+          },
+          {
+            "division": "languages",
+            "id": "types-as-admissibility",
+            "status": "established"
+          },
+          {
+            "division": "languages",
+            "id": "compilation",
+            "status": "house"
+          },
+          {
+            "division": "languages",
+            "id": "matrix-loom",
+            "status": "house"
+          },
+          {
+            "division": "languages",
+            "id": "addressable-forms",
+            "status": "house"
+          },
+          {
+            "division": "languages",
+            "id": "grammars-as-programs",
+            "status": "established"
+          },
+          {
+            "division": "languages",
+            "id": "symbolic-composition",
+            "status": "established"
+          },
+          {
+            "division": "geometry",
+            "id": "image-kernel",
+            "status": "established"
+          },
+          {
+            "division": "geometry",
+            "id": "imagistratum",
+            "status": "house"
+          },
+          {
+            "division": "geometry",
+            "id": "rank-nullity",
+            "status": "established"
+          },
+          {
+            "division": "geometry",
+            "id": "projective-camera",
+            "status": "established"
+          },
+          {
+            "division": "geometry",
+            "id": "topology",
+            "status": "established"
+          },
+          {
+            "division": "geometry",
+            "id": "curvature",
+            "status": "established"
+          },
+          {
+            "division": "geometry",
+            "id": "spatial-tensors",
+            "status": "established"
+          },
+          {
+            "division": "geometry",
+            "id": "computational-photography",
+            "status": "established"
+          },
+          {
+            "division": "geometry",
+            "id": "celestial-geometry",
+            "status": "established"
+          },
+          {
+            "division": "geometry",
+            "id": "chart-correspondences",
+            "status": "established"
+          },
+          {
+            "division": "geometry",
+            "id": "rendering-mathematics",
+            "status": "established"
+          },
+          {
+            "division": "geometry",
+            "id": "invisible-sensing",
+            "status": "application"
+          },
+          {
+            "division": "acoustic",
+            "id": "sound-signals",
+            "status": "established"
+          },
+          {
+            "division": "acoustic",
+            "id": "pitch-frequency",
+            "status": "established"
+          },
+          {
+            "division": "acoustic",
+            "id": "interval-geometry",
+            "status": "established"
+          },
+          {
+            "division": "acoustic",
+            "id": "tuning",
+            "status": "established"
+          },
+          {
+            "division": "acoustic",
+            "id": "fourier",
+            "status": "established"
+          },
+          {
+            "division": "acoustic",
+            "id": "time-frequency",
+            "status": "established"
+          },
+          {
+            "division": "acoustic",
+            "id": "synthesis",
+            "status": "established"
+          },
+          {
+            "division": "acoustic",
+            "id": "phase",
+            "status": "established"
+          },
+          {
+            "division": "acoustic",
+            "id": "phonogrammatica",
+            "status": "house"
+          },
+          {
+            "division": "acoustic",
+            "id": "generative-composition",
+            "status": "established"
+          },
+          {
+            "division": "worlds",
+            "id": "cellular-automata",
+            "status": "established"
+          },
+          {
+            "division": "worlds",
+            "id": "world-loom",
+            "status": "house"
+          },
+          {
+            "division": "worlds",
+            "id": "agent-grammars",
+            "status": "established"
+          },
+          {
+            "division": "worlds",
+            "id": "procedural-environments",
+            "status": "established"
+          },
+          {
+            "division": "worlds",
+            "id": "world-models",
+            "status": "established"
+          },
+          {
+            "division": "worlds",
+            "id": "glm-lgm",
+            "status": "house"
+          },
+          {
+            "division": "worlds",
+            "id": "borne",
+            "status": "house"
+          },
+          {
+            "division": "worlds",
+            "id": "maps-navigation",
+            "status": "established"
+          },
+          {
+            "division": "worlds",
+            "id": "simulated-populations",
+            "status": "established"
+          },
+          {
+            "division": "worlds",
+            "id": "homeless-dark",
+            "status": "application"
+          }
+        ],
+        "topics_by_division": {
+          "acoustic": 10,
+          "foundations": 10,
+          "geometry": 12,
+          "languages": 10,
+          "relational": 10,
+          "worlds": 10
+        }
+      },
+      "rule90_rows": [
+        "000010000",
+        "000101000",
+        "001000100",
+        "010101010"
+      ],
+      "schema": "surface.university-demo/1",
+      "scope": "Fixed, bounded headless fixtures. Original TypeScript is loaded with native stripping; no static typecheck or browser suite is claimed.",
+      "source_commit": "6a0f5eaa8dd39b58bdd99889721ecea5f54e62bb",
+      "states": [
+        "idle",
+        "open",
+        "open",
+        "open",
+        "open",
+        "committed"
+      ],
+      "status": "PASS",
+      "uncommitted_refused": true
+    }
+  },
+  "environment": {
+    "no_dependency_install_performed": true,
+    "node": "v24.22.1",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]"
+  },
+  "manifest": {
+    "bytes": 4455381,
+    "files": 80,
+    "path": "vendor/polyia/IMPORT_MANIFEST.json",
+    "sha256": "6eebb37ec30fceae018fcd158e39fecb2f3c47cacae6a732891f3fdb99ebaf01"
+  },
+  "mission_status": {
+    "VII_VIII": "open research charters",
+    "full_mission_acceptance": false,
+    "infinity_division": "IX",
+    "polyia": "NOT_COMMISSIONED",
+    "research_resumed": false,
+    "source_reported_accepted": 2,
+    "source_reported_total": 192,
+    "university_mandate_activated": false
+  },
+  "not_run": [
+    "Complete original PolyIA runtime test suite",
+    "Live PolyIA service checks",
+    "Upstream University Vitest",
+    "University TypeScript static typecheck",
+    "University Vite build",
+    "University Playwright",
+    "Android/device execution for this integration",
+    "Surface native binding of these Python/TypeScript kernels"
+  ],
+  "recorded_at_utc": "2026-10-25T16:16:07.017100+00:00",
+  "schema": "surface.polyia-import-evidence/1",
+  "scope": "Bounded local import and headless execution; no upstream edits, live VM/site/service actions, ledger writes, research resumption or release acceptance.",
+  "status": "PASS_WITH_DECLARED_SCOPE",
+  "university_source_findings": [
+    {
+      "disposition": "Excluded from executable import; original generated symbols can collide with original Greek glyphs.",
+      "observed": "RangeError: Maximum call stack size exceeded",
+      "reproducer": "unfoldAll(foldAll(startFold('ΑΑ')))",
+      "source": "src/math/fold.ts"
+    },
+    {
+      "disposition": "Only a fixed admitted fixture is exposed; arbitrary-input wrapper requires stricter arity validation.",
+      "observed": "All return ok:true",
+      "reproducers": [
+        "loom://plate/START/SCALE:2,3,4/COMMIT",
+        "loom://plate/START/SHIFT:1,2,3/COMMIT",
+        "loom://plate/START:anything/COMMIT"
+      ],
+      "source": "src/math/addressCompiler.ts"
+    },
+    {
+      "disposition": "Only fixed positive bounded dimensions are used.",
+      "observed": 1,
+      "reproducer": "weave(90,9,0).length",
+      "source": "src/math/world.ts"
+    }
+  ],
+  "upstreams": {
+    "polyia": {
+      "branch": "codex/commission-20261024-83906c7",
+      "commit": "bb6319acb88467b618f5a6f673f1867768223ce6",
+      "license_status": "UNSPECIFIED: no repository-wide software license found at this commit",
+      "mission_obligations_accepted": 2,
+      "mission_obligations_total": 192,
+      "mission_status": "NOT_COMMISSIONED",
+      "repository": "https://github.com/akadaan310/PolyIA",
+      "research": "paused by owner; not resumed"
+    },
+    "substrate-university": {
+      "branch": "claude/new-session-xd8auu",
+      "commit": "6a0f5eaa8dd39b58bdd99889721ecea5f54e62bb",
+      "license_status": "UNSPECIFIED: no repository-wide software license found at this commit; bundled font licenses do not license TypeScript code",
+      "repository": "https://github.com/akadaan310/abedkadaancom"
+    }
+  }
+}

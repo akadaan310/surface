@@ -1,0 +1,915 @@
+{
+  "schema": "surface.consolidation-verification.v1",
+  "date": "2026-10-25",
+  "scope": "Canonical repository consolidation and bounded executable increments, not full scientific commissioning",
+  "status": "PASS_WITH_EXPLICIT_OPEN_GATES",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "python": "3.12.14",
+  "checks": [
+    {
+      "gate": "native-and-python",
+      "implementation": "src/,include/,tests/",
+      "command": "python3 -B tools/build_native.py --test",
+      "observed": {
+        "native_executables": 9,
+        "python_tests": 63,
+        "failures": 0
+      },
+      "tolerance": "All tests; per numerical assertion tolerance remains in source",
+      "status": "PASS",
+      "evidence": "evidence/consolidation/native-and-python-tests.log"
+    },
+    {
+      "gate": "compiler",
+      "implementation": "tools/commission.py",
+      "command": "python3 -B -m unittest discover -s tests -p test_commission.py -v",
+      "observed": {
+        "tests": 30,
+        "failures": 0
+      },
+      "tolerance": "Exact source maps/manifests, bounded/fenced receipts, rejection cases",
+      "status": "PASS",
+      "evidence": "evidence/consolidation/compiler-tests.log"
+    },
+    {
+      "gate": "foundation-custody",
+      "implementation": "tools/materialize_foundation.py",
+      "command": "python3 -B tools/materialize_foundation.py --check",
+      "observed": {
+        "files": 621,
+        "bytes": 78637471,
+        "canonical_receipt_sha256": "821b25643300b8db5b7d1dee68c7f9362ca0efccd160210bf14c06a8f4a4174c"
+      },
+      "tolerance": "Zero byte/hash/census mismatches",
+      "status": "PASS",
+      "evidence": "evidence/foundation-materialization.json"
+    },
+    {
+      "gate": "original-v3-reference",
+      "implementation": "immutable V3 seed",
+      "command": "python3 -B -m unittest discover -s tests -v; python3 -B examples.py (within original V3 root)",
+      "observed": {
+        "tests": 9,
+        "failures": 0,
+        "counterexamples_retained": 6
+      },
+      "tolerance": "Original test tolerances; example bytes exact; additional phase residual recorded",
+      "status": "PASS_WITH_SCOPE",
+      "evidence": "evidence/v3-consolidation-audit.json"
+    },
+    {
+      "gate": "polyia-university",
+      "implementation": "tools/polyia_surface_demo.py + vendor/polyia/",
+      "command": "python3 -B -m unittest discover -s tests -p test_polyia_integration.py -v; original subset unittest; demo --with-university",
+      "observed": {
+        "integration_tests": 6,
+        "upstream_tests": 89,
+        "exact_files": 80,
+        "university_topics": 62
+      },
+      "tolerance": "Exact Git blobs/SHA256, exact rational and fixed automaton output; see import receipt",
+      "status": "PASS_WITH_SCOPE",
+      "evidence": "evidence/polyia-import.json"
+    },
+    {
+      "gate": "actual-owner-machine",
+      "implementation": "commissions/2026-10-25-surface-consolidation/",
+      "command": "tools/commission.py factory -> generate -> validate -> run -> reconcile-results -> replay",
+      "observed": {
+        "source_bytes": 5043,
+        "requirements": 20,
+        "tasks": 11,
+        "atlas_domains": 23,
+        "local_tasks_succeeded": 4,
+        "external_tasks_blocked": 7,
+        "external_result": "SUBMITTED_FOR_REVIEW",
+        "execution_status": "BLOCKED",
+        "scientific_acceptance": "NOT_EVALUATED"
+      },
+      "tolerance": "Exact source spans, deterministic generated bundle and digest-bound receipts",
+      "status": "PASS_WITH_EXPLICIT_BLOCKED_TASKS",
+      "evidence": "evidence/consolidation/owner-commission-replay.json"
+    },
+    {
+      "gate": "android-device",
+      "implementation": "releases/0.1.1/Surface-Recovery-0.1.1-arm64.apk",
+      "command": "adb install and actual launch/lifecycle checks required",
+      "observed": "HostJNI/static APK evidence retained; no authorized device execution in this consolidation",
+      "tolerance": "Real device stays open and renders; exact APK hash",
+      "status": "BLOCKED",
+      "evidence": "evidence/startup-repair-build.json"
+    },
+    {
+      "gate": "full-scientific-release",
+      "implementation": "Original Surface G00-G16 and Oracle G0-G7 plus V3 clauses",
+      "command": "See original per-gate commands, dependencies and new initiative",
+      "observed": "Consolidation and finite tools do not close calibrated physics, full atlas, observational adapters, hardware or held-out discovery",
+      "tolerance": "Original per-gate obligations remain binding",
+      "status": "UNKNOWN",
+      "evidence": "docs/QUANTUM_V3_CONSOLIDATION.md"
+    }
+  ],
+  "historical_failures": {
+    "retained": [
+      "evidence/consolidation/review-final-first.log",
+      "evidence/consolidation/review-recheck.log",
+      "evidence/consolidation/owner-commission-run.json",
+      "evidence/consolidation/owner-commission-verified.json"
+    ],
+    "finding": "The inherited retry test demanded first child startup, sleep, fsync and retry within140ms. It sometimes observed only one attempt. A versioned test now checks both actual child-visible deadline values and durable intent equality within1s budget. Production supervisor semantics unchanged. Broader scheduling-related prior failures are retained; their cause was not proven.",
+    "final": "One full native/Python run passed63 tests; final owner execution passed all4 local tasks and leaves7 external tasks blocked."
+  },
+  "evidence_files": [
+    {
+      "path": "evidence/consolidation/compiler-tests.log",
+      "bytes": 5083,
+      "sha256": "0cce1e37fd9b0b19bbe66ed45e25bc75bbcd50363cbab0f7b93b7ed1a0c344f2"
+    },
+    {
+      "path": "evidence/consolidation/external-harness-reconciliation.json",
+      "bytes": 234,
+      "sha256": "17df971e4b5e2862dce2240deb8567c247a70bc8b0cbd347d1d31a34761114c5"
+    },
+    {
+      "path": "evidence/consolidation/external-harness-result.json",
+      "bytes": 1315,
+      "sha256": "3b978fb78db8e8ce06e973460b07a61bbff570b185eee8fb1771b5ec570d23b2"
+    },
+    {
+      "path": "evidence/consolidation/native-and-python-tests.log",
+      "bytes": 12481,
+      "sha256": "05b13f1fca2e2fc1236b840f7810ab9c42162c394ff3b9f08232403c33fa0a16"
+    },
+    {
+      "path": "evidence/consolidation/native-build-attempt.json",
+      "bytes": 142,
+      "sha256": "387e2ff22c03a7c395e31e86752ec6020ce363ceac5306394efbe650eac68dd2"
+    },
+    {
+      "path": "evidence/consolidation/native-build.json",
+      "bytes": 20036,
+      "sha256": "2513733b55f6be5d4fe767775b2cfa28bc5d502f327a9d3264262d53f40ddb7d"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-final/envelopes/consolidate-v3.json",
+      "bytes": 3590,
+      "sha256": "ab904b93c3703350a72fadc3b1e4eab155c01d901a5ccb0f1b1438b264dd6ee0"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-final/envelopes/continue-science.json",
+      "bytes": 2027,
+      "sha256": "0232bab7f4d1d91df1c53e2a140ac52644c1ad534397f99836b3b4323b4021e6"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-final/envelopes/create-initiative.json",
+      "bytes": 2010,
+      "sha256": "56804564c78a7e73e2f45719ed15024c776ea48d5d176723f3eee62af52c3121"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-final/envelopes/design-renderer.json",
+      "bytes": 1720,
+      "sha256": "7fe022d4efbbfcca5984d9447d288796774c572950a3818d439cb730f2c4c76f"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-final/envelopes/document-atlas.json",
+      "bytes": 1711,
+      "sha256": "52d930f53cb5aa83f8e049f1a5253d183199767980edd851c4ca87681ac3961f"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-final/envelopes/document-harnesses.json",
+      "bytes": 6999,
+      "sha256": "0fa29683e76affe92d4f2290fad4310284d502e11acace790465b732a59f7a91"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-final/envelopes/publish-repository.json",
+      "bytes": 3143,
+      "sha256": "3f86bce5aa499fe4dd4fb05239d423f372eced2c392fb9bf1a3b4c98272aa968"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-final/execution-inputs.json",
+      "bytes": 8473,
+      "sha256": "fa53a1e6fa8acaa345bddecc5275ba81352e2e7b2b5d5c417cfd1ef3dee1bd26"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-final/jobs/verify-foundation/committed/1/evidence.json",
+      "bytes": 1013,
+      "sha256": "894eba806cb87b4340902a5051b475b0fb9087adfe8c1b351cc741f70c71a28b"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-final/jobs/verify-foundation/committed/1/manifest.json",
+      "bytes": 221,
+      "sha256": "c7bc0b4d139714377f915f8d976e90fc4396e7ec5595fd655f8f907d290ac3b5"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-final/jobs/verify-foundation/current.json",
+      "bytes": 221,
+      "sha256": "c7bc0b4d139714377f915f8d976e90fc4396e7ec5595fd655f8f907d290ac3b5"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-final/jobs/verify-foundation/fence.json",
+      "bytes": 12,
+      "sha256": "29a9dcddcffc1d077d12d090c3a0c1ed05945f0c9561d5d2aa37019461dee2c0"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-final/jobs/verify-foundation/logs/1.log",
+      "bytes": 399,
+      "sha256": "999f13d5bdf4dd2110c5df2740ef6291ebf7626cdfb053da93faf6d54123cffa"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-final/jobs/verify-foundation/resume.json",
+      "bytes": 1168,
+      "sha256": "9a91f917a8514579bc88c2f101406eb029fdda3629e3588c87b7b943fdb86aee"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-final/jobs/verify-foundation/stages/1/evidence.json",
+      "bytes": 1013,
+      "sha256": "894eba806cb87b4340902a5051b475b0fb9087adfe8c1b351cc741f70c71a28b"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-final/jobs/verify-polyia/committed/1/evidence.json",
+      "bytes": 1069,
+      "sha256": "95e6ea49f179d579c6e5208375ce10146ead9ad1a1f8881e4022e2ab88e36a94"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-final/jobs/verify-polyia/committed/1/manifest.json",
+      "bytes": 377,
+      "sha256": "8b43124b02229dea18f31b621ceb528bdd29206f84c20030bc86653124c8bc84"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-final/jobs/verify-polyia/committed/1/polyia-demo.json",
+      "bytes": 17291,
+      "sha256": "ea40046a3ced8e964f6a6bad9a447268919c42d18fccb21cf10ecc1c31da6279"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-final/jobs/verify-polyia/current.json",
+      "bytes": 377,
+      "sha256": "8b43124b02229dea18f31b621ceb528bdd29206f84c20030bc86653124c8bc84"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-final/jobs/verify-polyia/fence.json",
+      "bytes": 12,
+      "sha256": "29a9dcddcffc1d077d12d090c3a0c1ed05945f0c9561d5d2aa37019461dee2c0"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-final/jobs/verify-polyia/logs/1.log",
+      "bytes": 17422,
+      "sha256": "7b4019f6822830fabeed2cf6056fca92668275723ae1b7b3f8e6502044fccd2f"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-final/jobs/verify-polyia/resume.json",
+      "bytes": 1328,
+      "sha256": "39317ede7c006b2a64a75805d6059ac562426725b3b962b3719cc9986d21c8c6"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-final/jobs/verify-polyia/stages/1/evidence.json",
+      "bytes": 1069,
+      "sha256": "95e6ea49f179d579c6e5208375ce10146ead9ad1a1f8881e4022e2ab88e36a94"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-final/jobs/verify-polyia/stages/1/polyia-demo.json",
+      "bytes": 17291,
+      "sha256": "ea40046a3ced8e964f6a6bad9a447268919c42d18fccb21cf10ecc1c31da6279"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-final/jobs/verify-source/committed/1/evidence.json",
+      "bytes": 948,
+      "sha256": "efb9e8f27933635eb47c492a51abff1c2e679b54584f7d126546c2a6381fa92f"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-final/jobs/verify-source/committed/1/manifest.json",
+      "bytes": 220,
+      "sha256": "076b731c21defd29a39d95a7306990cefcbfb98d347e212c394c4bd022d7735f"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-final/jobs/verify-source/current.json",
+      "bytes": 220,
+      "sha256": "076b731c21defd29a39d95a7306990cefcbfb98d347e212c394c4bd022d7735f"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-final/jobs/verify-source/fence.json",
+      "bytes": 12,
+      "sha256": "29a9dcddcffc1d077d12d090c3a0c1ed05945f0c9561d5d2aa37019461dee2c0"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-final/jobs/verify-source/logs/1.log",
+      "bytes": 131,
+      "sha256": "c657188e57d365cdcf298a5ba40eebb6d83d22def06f3a83e37c94f2e5b73936"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-final/jobs/verify-source/resume.json",
+      "bytes": 1158,
+      "sha256": "117744b027f41df2cd72a4c6b56e53ac9271d2823fe111cf53f25535654865a8"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-final/jobs/verify-source/stages/1/evidence.json",
+      "bytes": 948,
+      "sha256": "efb9e8f27933635eb47c492a51abff1c2e679b54584f7d126546c2a6381fa92f"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-final/jobs/verify-supervisor/committed/1/evidence.json",
+      "bytes": 912,
+      "sha256": "a45e94d44bef56db3ce2f95f2291dab391ff4eb386d7664cb5e61a3fd6de8afa"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-final/jobs/verify-supervisor/committed/1/manifest.json",
+      "bytes": 220,
+      "sha256": "e18ecf3da2f75f5cf6c88fa1de65d529b94614a0bde420980d8b8fa36c4f9275"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-final/jobs/verify-supervisor/current.json",
+      "bytes": 220,
+      "sha256": "e18ecf3da2f75f5cf6c88fa1de65d529b94614a0bde420980d8b8fa36c4f9275"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-final/jobs/verify-supervisor/fence.json",
+      "bytes": 12,
+      "sha256": "29a9dcddcffc1d077d12d090c3a0c1ed05945f0c9561d5d2aa37019461dee2c0"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-final/jobs/verify-supervisor/logs/1.log",
+      "bytes": 2320,
+      "sha256": "2608bfb5c8163610920c96490c994427e1bd1f7d0f0fff54c6ccc2e13d69cb14"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-final/jobs/verify-supervisor/resume.json",
+      "bytes": 1164,
+      "sha256": "f5b4e389ed6412e802d19e069e4a9376281f706d2fe4c04730bcb4003fe1f038"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-final/jobs/verify-supervisor/stages/1/evidence.json",
+      "bytes": 912,
+      "sha256": "a45e94d44bef56db3ce2f95f2291dab391ff4eb386d7664cb5e61a3fd6de8afa"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-final/receipts/consolidate-v3.json",
+      "bytes": 423,
+      "sha256": "4303da29546255fcee51abdbc7256e802cdceaf9b7a67ba58f500d4597e944ad"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-final/receipts/continue-science.json",
+      "bytes": 425,
+      "sha256": "add5851955b700230c6c9774e3d03b466504c0b68d05077bae2db3290291176d"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-final/receipts/create-initiative.json",
+      "bytes": 426,
+      "sha256": "bd0e01065aa14aa2ae68b3131d3b0ab195a986fdd99befd173ad84551e467d39"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-final/receipts/design-renderer.json",
+      "bytes": 424,
+      "sha256": "f48ad3a16f131f48dd5502605fc98a59fca3161b921a44cb16347428828a0c0e"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-final/receipts/document-atlas.json",
+      "bytes": 423,
+      "sha256": "65882216fd9bcadea040c317e32394d505caa761d30db2c7638c499510274ed8"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-final/receipts/document-harnesses.json",
+      "bytes": 427,
+      "sha256": "ceca7edca019a31ce8b8c0e893301071ed7eeb95a053ce819288f02774c0ad32"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-final/receipts/publish-repository.json",
+      "bytes": 427,
+      "sha256": "624cf43f6e06ed7ebf3f7d7c7ad7cf28fb539a275621cc04eb5b81f8ed6602c3"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-final/receipts/verify-foundation.json",
+      "bytes": 572,
+      "sha256": "321e630f40a6f3e954e308061f237312e1d86362d439777aeeb6ce1754ec2426"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-final/receipts/verify-polyia.json",
+      "bytes": 719,
+      "sha256": "b8548b1141e2b46b7d41ada8432c5575eebaf5b86f442dcb13d684020e1cfc58"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-final/receipts/verify-source.json",
+      "bytes": 567,
+      "sha256": "a130dca7731dd1013b8c8b2dc685635e2c6d4d318c2e3ec9e238f393f1798635"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-final/receipts/verify-supervisor.json",
+      "bytes": 567,
+      "sha256": "d8b521337a1ae37c612a2c14e251b61880d3ce02f09de5a273dca37d573dbfa0"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-final/run.json",
+      "bytes": 462,
+      "sha256": "6248cfc80aaa18ddee86ba247840864fbe9a9e59c091f5a9cc498ae35e01a36b"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-final/submissions/document-harnesses/1/submission.json",
+      "bytes": 1488,
+      "sha256": "01707150b34c62b5c0bd07dc3acf63282b4d3bf01a6a8e4829b3606e831f2b88"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-final/summaries/000001.json",
+      "bytes": 5699,
+      "sha256": "a93bb4e34f408001919f3100655ca1ba7ce186001dab9471456633f967325812"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-final.json",
+      "bytes": 7255,
+      "sha256": "68a6ee1f800753d997f743af855e5fae2323df81962a4a65a5afecf13fa66e25"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-replay.json",
+      "bytes": 7549,
+      "sha256": "794dbae79089d7265a7641c5215186141812a773152dd85c728c5c7bb8428e96"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-run/envelopes/consolidate-v3.json",
+      "bytes": 3591,
+      "sha256": "299bad1c0cbd619804f76223f0c31bdf4f7c3c713accce8a2bfefabca4fae502"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-run/envelopes/continue-science.json",
+      "bytes": 2028,
+      "sha256": "8dd3b8433d802570f5e58ba855c5c403fc003511a990ec9f7430dbb2da351299"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-run/envelopes/create-initiative.json",
+      "bytes": 2011,
+      "sha256": "17513ca6fc659dbd5e2dc04df01e44f1ece44b3bd3d5b26dc79c5aac6c35bd7b"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-run/envelopes/design-renderer.json",
+      "bytes": 1721,
+      "sha256": "d00b046f98bbbc99c4a3b2edee1e15d164394ca0d6b443fe981c3184339f9871"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-run/envelopes/document-atlas.json",
+      "bytes": 1712,
+      "sha256": "eed408938b15af5d0c47bef1ba0c042b1dee2017928091f31748034e2de05473"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-run/envelopes/document-harnesses.json",
+      "bytes": 7000,
+      "sha256": "ced8e19d6ee99770bed49edfce2feb37af838a2a926e3b3c16c497cfbd167a52"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-run/envelopes/publish-repository.json",
+      "bytes": 3144,
+      "sha256": "39d9cf8b5dd326132d3a357eaeb3ab4d953a7b96db1c759e22b7d63217064a94"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-run/execution-inputs.json",
+      "bytes": 8470,
+      "sha256": "9be9f9d58a92b3cc66703e2b4af7b025667f64fd30d5d64dcfadbad3c22be463"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-run/jobs/verify-foundation/committed/1/evidence.json",
+      "bytes": 1013,
+      "sha256": "894eba806cb87b4340902a5051b475b0fb9087adfe8c1b351cc741f70c71a28b"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-run/jobs/verify-foundation/committed/1/manifest.json",
+      "bytes": 221,
+      "sha256": "c7bc0b4d139714377f915f8d976e90fc4396e7ec5595fd655f8f907d290ac3b5"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-run/jobs/verify-foundation/current.json",
+      "bytes": 221,
+      "sha256": "c7bc0b4d139714377f915f8d976e90fc4396e7ec5595fd655f8f907d290ac3b5"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-run/jobs/verify-foundation/fence.json",
+      "bytes": 12,
+      "sha256": "29a9dcddcffc1d077d12d090c3a0c1ed05945f0c9561d5d2aa37019461dee2c0"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-run/jobs/verify-foundation/logs/1.log",
+      "bytes": 399,
+      "sha256": "999f13d5bdf4dd2110c5df2740ef6291ebf7626cdfb053da93faf6d54123cffa"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-run/jobs/verify-foundation/resume.json",
+      "bytes": 1168,
+      "sha256": "354b5c5192d45677857abd55863163103a5753eb5333e0a8a2013e75edf13774"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-run/jobs/verify-foundation/stages/1/evidence.json",
+      "bytes": 1013,
+      "sha256": "894eba806cb87b4340902a5051b475b0fb9087adfe8c1b351cc741f70c71a28b"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-run/jobs/verify-polyia/committed/1/evidence.json",
+      "bytes": 1067,
+      "sha256": "db1a81527fb34fe5c01d64ad18d52aa71392a62d1b953810dacfb992b4640078"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-run/jobs/verify-polyia/committed/1/manifest.json",
+      "bytes": 377,
+      "sha256": "f39fafc22996aaf7b7b3bbdfaa887ef25c189ae9f56957535b66965e70c3fc84"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-run/jobs/verify-polyia/committed/1/polyia-demo.json",
+      "bytes": 17291,
+      "sha256": "ea40046a3ced8e964f6a6bad9a447268919c42d18fccb21cf10ecc1c31da6279"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-run/jobs/verify-polyia/current.json",
+      "bytes": 377,
+      "sha256": "f39fafc22996aaf7b7b3bbdfaa887ef25c189ae9f56957535b66965e70c3fc84"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-run/jobs/verify-polyia/fence.json",
+      "bytes": 12,
+      "sha256": "29a9dcddcffc1d077d12d090c3a0c1ed05945f0c9561d5d2aa37019461dee2c0"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-run/jobs/verify-polyia/logs/1.log",
+      "bytes": 17422,
+      "sha256": "7b4019f6822830fabeed2cf6056fca92668275723ae1b7b3f8e6502044fccd2f"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-run/jobs/verify-polyia/resume.json",
+      "bytes": 1325,
+      "sha256": "83b6807132f101b30d921d51f139abbc4e5ff0b7da09126154ac0d9b211e1c8c"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-run/jobs/verify-polyia/stages/1/evidence.json",
+      "bytes": 1067,
+      "sha256": "db1a81527fb34fe5c01d64ad18d52aa71392a62d1b953810dacfb992b4640078"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-run/jobs/verify-polyia/stages/1/polyia-demo.json",
+      "bytes": 17291,
+      "sha256": "ea40046a3ced8e964f6a6bad9a447268919c42d18fccb21cf10ecc1c31da6279"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-run/jobs/verify-source/committed/1/evidence.json",
+      "bytes": 948,
+      "sha256": "efb9e8f27933635eb47c492a51abff1c2e679b54584f7d126546c2a6381fa92f"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-run/jobs/verify-source/committed/1/manifest.json",
+      "bytes": 220,
+      "sha256": "076b731c21defd29a39d95a7306990cefcbfb98d347e212c394c4bd022d7735f"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-run/jobs/verify-source/current.json",
+      "bytes": 220,
+      "sha256": "076b731c21defd29a39d95a7306990cefcbfb98d347e212c394c4bd022d7735f"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-run/jobs/verify-source/fence.json",
+      "bytes": 12,
+      "sha256": "29a9dcddcffc1d077d12d090c3a0c1ed05945f0c9561d5d2aa37019461dee2c0"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-run/jobs/verify-source/logs/1.log",
+      "bytes": 131,
+      "sha256": "c657188e57d365cdcf298a5ba40eebb6d83d22def06f3a83e37c94f2e5b73936"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-run/jobs/verify-source/resume.json",
+      "bytes": 1156,
+      "sha256": "8c576557667f1c7729ab7c1caa53cf72edb9311d36f052a30ccab5e1e80991a4"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-run/jobs/verify-source/stages/1/evidence.json",
+      "bytes": 948,
+      "sha256": "efb9e8f27933635eb47c492a51abff1c2e679b54584f7d126546c2a6381fa92f"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-run/jobs/verify-supervisor/fence.json",
+      "bytes": 12,
+      "sha256": "29a9dcddcffc1d077d12d090c3a0c1ed05945f0c9561d5d2aa37019461dee2c0"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-run/jobs/verify-supervisor/logs/1.log",
+      "bytes": 2770,
+      "sha256": "78372a34277214f901dc6ff2f6d9566675737645c37d25e25988a7c25850f4e3"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-run/jobs/verify-supervisor/resume.json",
+      "bytes": 1014,
+      "sha256": "c9b63192b065ae69ccf0d7401b830a07afc5071fd084d1f963b31ee648d90c97"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-run/receipts/consolidate-v3.json",
+      "bytes": 423,
+      "sha256": "4303da29546255fcee51abdbc7256e802cdceaf9b7a67ba58f500d4597e944ad"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-run/receipts/continue-science.json",
+      "bytes": 425,
+      "sha256": "add5851955b700230c6c9774e3d03b466504c0b68d05077bae2db3290291176d"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-run/receipts/create-initiative.json",
+      "bytes": 408,
+      "sha256": "fac619cdeae5bad0c758d8611995b18416364265af4708fb1a22e2ad5af4eadb"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-run/receipts/design-renderer.json",
+      "bytes": 424,
+      "sha256": "f48ad3a16f131f48dd5502605fc98a59fca3161b921a44cb16347428828a0c0e"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-run/receipts/document-atlas.json",
+      "bytes": 423,
+      "sha256": "65882216fd9bcadea040c317e32394d505caa761d30db2c7638c499510274ed8"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-run/receipts/document-harnesses.json",
+      "bytes": 409,
+      "sha256": "60eaa916b1b319c32a3de158645978f64f6f7ee058181c566d5816c19f8e44e3"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-run/receipts/publish-repository.json",
+      "bytes": 409,
+      "sha256": "f677cabaaf5b075304198c60f0828bbd0e3066407552aaf151c1e4e4fed9c4e3"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-run/receipts/verify-foundation.json",
+      "bytes": 572,
+      "sha256": "38b57e6145f01ac248dde23bc877f6a4f678b8641a876c5f42dba87025e4480e"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-run/receipts/verify-polyia.json",
+      "bytes": 719,
+      "sha256": "f0113200bb939bf2f08531de8a39fed443c07684894aee62610f0fb1cd701609"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-run/receipts/verify-source.json",
+      "bytes": 567,
+      "sha256": "980bd80d3afdff1c69b97e0352943ddfcc0e44f63e6064dc183220e640a0e225"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-run/receipts/verify-supervisor.json",
+      "bytes": 419,
+      "sha256": "04849f697700aa60e49bca4b019f2b7a1213341067e0aacf1400ba3caae94ba6"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-run/run.json",
+      "bytes": 464,
+      "sha256": "e47aea12b92fffac19f580342e334887a5f42a455cdf9a3bb87d3570ec13289a"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-run/summaries/000001.json",
+      "bytes": 5496,
+      "sha256": "7550d57627588938a9cd37e7515084d187fa479451878dc5cc80ae4a620d7540"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-run.json",
+      "bytes": 6979,
+      "sha256": "3e1f9e0012db1b1d4a5c1a723ff7e6ea8a8b45b81c5aebc71ff03cb68e78a42a"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-verified/envelopes/consolidate-v3.json",
+      "bytes": 3591,
+      "sha256": "29de6ac3f8b1ceffc4767bec30db0667f4d7bdb293842eb35f2329f53149de86"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-verified/envelopes/continue-science.json",
+      "bytes": 2028,
+      "sha256": "39e35f39a0d4094156bfc57f8adc50cfdbd3d4582baf6792ebca8456ba75fa39"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-verified/envelopes/create-initiative.json",
+      "bytes": 2011,
+      "sha256": "549c615efb86203844d24e693b3aa251ca708b04c625385e28e1a29c53772794"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-verified/envelopes/design-renderer.json",
+      "bytes": 1721,
+      "sha256": "bd4d37e7b7df136577b14ed6e194f7b60d20246fbfd32ee764af52149056531d"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-verified/envelopes/document-atlas.json",
+      "bytes": 1712,
+      "sha256": "fd8f0a014469d05a04fc80f0f6707563c147b92dd9b53b4ead1c7dbc031e4ee6"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-verified/envelopes/document-harnesses.json",
+      "bytes": 7000,
+      "sha256": "c50272749ab0176922a885d9a37f5347c82dd501088d44f54b6611b857be5b87"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-verified/envelopes/publish-repository.json",
+      "bytes": 3144,
+      "sha256": "6f9b52f02ef4cbee0e3c9cc5e5ee02ca360fed1d506c38a7cfd6ecebf7450419"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-verified/execution-inputs.json",
+      "bytes": 8476,
+      "sha256": "ab0f790cfb58233c732e9b542016d8f33bf9d6626ab79765a7d922ed02b29e13"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-verified/jobs/verify-foundation/committed/1/evidence.json",
+      "bytes": 1013,
+      "sha256": "894eba806cb87b4340902a5051b475b0fb9087adfe8c1b351cc741f70c71a28b"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-verified/jobs/verify-foundation/committed/1/manifest.json",
+      "bytes": 221,
+      "sha256": "c7bc0b4d139714377f915f8d976e90fc4396e7ec5595fd655f8f907d290ac3b5"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-verified/jobs/verify-foundation/current.json",
+      "bytes": 221,
+      "sha256": "c7bc0b4d139714377f915f8d976e90fc4396e7ec5595fd655f8f907d290ac3b5"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-verified/jobs/verify-foundation/fence.json",
+      "bytes": 12,
+      "sha256": "29a9dcddcffc1d077d12d090c3a0c1ed05945f0c9561d5d2aa37019461dee2c0"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-verified/jobs/verify-foundation/logs/1.log",
+      "bytes": 399,
+      "sha256": "999f13d5bdf4dd2110c5df2740ef6291ebf7626cdfb053da93faf6d54123cffa"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-verified/jobs/verify-foundation/resume.json",
+      "bytes": 1173,
+      "sha256": "0b382d55cb8e83a06278d710a58b7e08e357e3a8976f5718b9066b68528f0f46"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-verified/jobs/verify-foundation/stages/1/evidence.json",
+      "bytes": 1013,
+      "sha256": "894eba806cb87b4340902a5051b475b0fb9087adfe8c1b351cc741f70c71a28b"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-verified/jobs/verify-polyia/committed/1/evidence.json",
+      "bytes": 1072,
+      "sha256": "a6ad84108cf17505d9231827e564cc995b80221d4abc3d96149efb90daac0cbd"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-verified/jobs/verify-polyia/committed/1/manifest.json",
+      "bytes": 377,
+      "sha256": "c7f41e4ef6b113437de0ced2884f87dec5a04adef4717f840706f73d2ae301e6"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-verified/jobs/verify-polyia/committed/1/polyia-demo.json",
+      "bytes": 17291,
+      "sha256": "ea40046a3ced8e964f6a6bad9a447268919c42d18fccb21cf10ecc1c31da6279"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-verified/jobs/verify-polyia/current.json",
+      "bytes": 377,
+      "sha256": "c7f41e4ef6b113437de0ced2884f87dec5a04adef4717f840706f73d2ae301e6"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-verified/jobs/verify-polyia/fence.json",
+      "bytes": 12,
+      "sha256": "29a9dcddcffc1d077d12d090c3a0c1ed05945f0c9561d5d2aa37019461dee2c0"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-verified/jobs/verify-polyia/logs/1.log",
+      "bytes": 17422,
+      "sha256": "7b4019f6822830fabeed2cf6056fca92668275723ae1b7b3f8e6502044fccd2f"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-verified/jobs/verify-polyia/resume.json",
+      "bytes": 1331,
+      "sha256": "a1528f06c7476f6f33fc4efd1974749925a68117e41d94c36f355334feb06ad3"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-verified/jobs/verify-polyia/stages/1/evidence.json",
+      "bytes": 1072,
+      "sha256": "a6ad84108cf17505d9231827e564cc995b80221d4abc3d96149efb90daac0cbd"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-verified/jobs/verify-polyia/stages/1/polyia-demo.json",
+      "bytes": 17291,
+      "sha256": "ea40046a3ced8e964f6a6bad9a447268919c42d18fccb21cf10ecc1c31da6279"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-verified/jobs/verify-source/committed/1/evidence.json",
+      "bytes": 948,
+      "sha256": "efb9e8f27933635eb47c492a51abff1c2e679b54584f7d126546c2a6381fa92f"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-verified/jobs/verify-source/committed/1/manifest.json",
+      "bytes": 220,
+      "sha256": "076b731c21defd29a39d95a7306990cefcbfb98d347e212c394c4bd022d7735f"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-verified/jobs/verify-source/current.json",
+      "bytes": 220,
+      "sha256": "076b731c21defd29a39d95a7306990cefcbfb98d347e212c394c4bd022d7735f"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-verified/jobs/verify-source/fence.json",
+      "bytes": 12,
+      "sha256": "29a9dcddcffc1d077d12d090c3a0c1ed05945f0c9561d5d2aa37019461dee2c0"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-verified/jobs/verify-source/logs/1.log",
+      "bytes": 131,
+      "sha256": "c657188e57d365cdcf298a5ba40eebb6d83d22def06f3a83e37c94f2e5b73936"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-verified/jobs/verify-source/resume.json",
+      "bytes": 1158,
+      "sha256": "95e747c5ba018c9d6afa49b1aa09dbeabbd5996afa887901c5eb2ba474fb7886"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-verified/jobs/verify-source/stages/1/evidence.json",
+      "bytes": 948,
+      "sha256": "efb9e8f27933635eb47c492a51abff1c2e679b54584f7d126546c2a6381fa92f"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-verified/jobs/verify-supervisor/fence.json",
+      "bytes": 12,
+      "sha256": "29a9dcddcffc1d077d12d090c3a0c1ed05945f0c9561d5d2aa37019461dee2c0"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-verified/jobs/verify-supervisor/logs/1.log",
+      "bytes": 3670,
+      "sha256": "b924593af174f334c80e989f27e75bf04378c2ae38c8c0bd7ef89a65e1f83a9c"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-verified/jobs/verify-supervisor/resume.json",
+      "bytes": 1019,
+      "sha256": "14ea1911b8d7992a20740fdae91c8736aa40ebd08e4384a81529e71e0951e137"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-verified/receipts/consolidate-v3.json",
+      "bytes": 423,
+      "sha256": "4303da29546255fcee51abdbc7256e802cdceaf9b7a67ba58f500d4597e944ad"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-verified/receipts/continue-science.json",
+      "bytes": 425,
+      "sha256": "add5851955b700230c6c9774e3d03b466504c0b68d05077bae2db3290291176d"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-verified/receipts/create-initiative.json",
+      "bytes": 408,
+      "sha256": "fac619cdeae5bad0c758d8611995b18416364265af4708fb1a22e2ad5af4eadb"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-verified/receipts/design-renderer.json",
+      "bytes": 424,
+      "sha256": "f48ad3a16f131f48dd5502605fc98a59fca3161b921a44cb16347428828a0c0e"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-verified/receipts/document-atlas.json",
+      "bytes": 423,
+      "sha256": "65882216fd9bcadea040c317e32394d505caa761d30db2c7638c499510274ed8"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-verified/receipts/document-harnesses.json",
+      "bytes": 409,
+      "sha256": "60eaa916b1b319c32a3de158645978f64f6f7ee058181c566d5816c19f8e44e3"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-verified/receipts/publish-repository.json",
+      "bytes": 409,
+      "sha256": "f677cabaaf5b075304198c60f0828bbd0e3066407552aaf151c1e4e4fed9c4e3"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-verified/receipts/verify-foundation.json",
+      "bytes": 572,
+      "sha256": "c862496ebabda4b6ce81377e83fe212bc260dcd7a91d93d75af355ba7c1178c3"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-verified/receipts/verify-polyia.json",
+      "bytes": 719,
+      "sha256": "8236296fcffdea4a895aae1ce9e5e238c77a8ab40cd088982af2b67b3ff70dbe"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-verified/receipts/verify-source.json",
+      "bytes": 567,
+      "sha256": "97eacbad1245a549161a167bd6b0d358296e1ade2402a0ed75ba5fb349cafa58"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-verified/receipts/verify-supervisor.json",
+      "bytes": 419,
+      "sha256": "c454e4e48a19475b7ec8c7c05e25f557956603551c442e453cb097158413d3c7"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-verified/run.json",
+      "bytes": 464,
+      "sha256": "61478a8386ffc97a2c653aa127189ff04c0fffbdd5a8146b640c9155b98c1cd4"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-verified/summaries/000001.json",
+      "bytes": 5496,
+      "sha256": "11c19ff1fdbcb2fbbd66bb6d8458a3db09599bb4748d67296f769f7f3043465d"
+    },
+    {
+      "path": "evidence/consolidation/owner-commission-verified.json",
+      "bytes": 6979,
+      "sha256": "ba507f628aeafece5f79f9b7dc2015cc011d6b01eeae4330eb6424dd557658e7"
+    },
+    {
+      "path": "evidence/consolidation/review-final-first.log",
+      "bytes": 11237,
+      "sha256": "49bda3e2f02a4f956bb7ca41892c46f8039b3ce5678557ce6515b349f503a4d3"
+    },
+    {
+      "path": "evidence/consolidation/review-recheck.log",
+      "bytes": 14277,
+      "sha256": "f9fc8ba46a48bfa884ff23c65b6c2299364fcea32d34c5d5982b78b556c3a1ad"
+    }
+  ],
+  "publication": "GitHub publication has a separate fresh-checkout/tree witness; local tests do not by themselves establish remote publication."
+}

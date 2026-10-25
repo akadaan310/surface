@@ -1,0 +1,18 @@
+{
+  "schema": "SURFACE-HEADLESS-RUN/1",
+  "renderer": "Surface original CPU rasterizer",
+  "execution": "native host headless; not Android device timing",
+  "width": 720, "height": 1280,
+  "frames": 30, "fixedStepSeconds": 0.0166666666667,
+  "observation": "cosmos",
+  "deterministicDemo": false,
+  "frameTimingMilliseconds": {"mean": 7.88470466667, "p50": 6.6300195, "p95": 10.5647761, "maximum": 17.122075, "sum": 236.54114},
+  "timingScope": "Injection + physics + render, or sky projection + render. Includes first-frame warmup. Excludes output I/O.",
+  "totalWallMilliseconds": 270.244065,
+  "simulationTimeBefore": 0, "simulationTimeAfter": 0,
+  "inputSequenceBefore": 0, "inputSequenceAfter": 0,
+  "physicsGrid": [128,160],
+  "diagnostics": {"finiteValid": true, "waveEnergy": 0.990346413297, "thermalIntegral": 15.3463646746, "maxE": 188.511409354, "maxB": 8.72092567184e-05},
+  "catalogueSources": 10000, "projectedStars": 5058,
+  "output": "build/previews/cosmos.ppm", "savedSession": "", "loadedSession": "", "audio": ""
+}

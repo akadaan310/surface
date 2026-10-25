@@ -1,0 +1,21 @@
+{
+  "android_device_execution": "NOT_RUN_NO_DEVICE_OR_EMULATOR",
+  "apk_bytes": 1369050,
+  "apk_sha256": "0a6f32c450c931699eaf75778c5e7d1fae1b5cfc1123d32aeac93d5f46a2f8da",
+  "application": "org.surface.nativeink",
+  "architecture": "arm64-v8a",
+  "external_repository_upload": "BLOCKED_BY_AUTOMATIC_APPROVAL_REVIEW; no alternate route attempted",
+  "minimum_android": "Android 10 / API 29",
+  "native_cpp_suites_passed": 9,
+  "original_deterministic_files_exact": 125,
+  "original_foundation_tests_passed": 145,
+  "original_lost_surface_url": "UNAVAILABLE",
+  "registered_site_published": false,
+  "schema": "surface-native-release-v1",
+  "science_scope": "Bounded reduced reference models; original G00-G16 completion is reported separately",
+  "signing_key_backup_delivery": "LOCAL_ONLY_APPROVAL_REQUIRED: automatic review rejected transmission of the private signing key; APK/source/evidence delivery proceeds without that file",
+  "source_manifest_sha256": "e60a41c5f5a6f365d4c620881398aabd5840cc9584b32c8175645292cb0f8ffd",
+  "source_revision": "b16a63a8fc9466c93f9233d0a45bd3840ac39536",
+  "supervisor_fault_tests_passed": 14,
+  "version": "0.1.0"
+}

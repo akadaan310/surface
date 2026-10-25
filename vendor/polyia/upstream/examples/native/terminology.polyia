@@ -1,0 +1,8 @@
+; A declared literal wording transformation, not general language inference.
+(commission
+  (profile "polyia.native/0.1")
+  (let sentence Text "The input uses x*x - 1; the output records x*x - 1.")
+  (let rendered Text (replace sentence "x*x" "x²"))
+  (emit wording (concat "Polynomial notation: " rendered))
+  (emit multilingual (replace "المعادلة: x*x - 1" "x*x" "x²"))
+)

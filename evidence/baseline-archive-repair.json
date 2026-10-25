@@ -1,0 +1,11 @@
+{
+  "broken_received_bytes": 19147652,
+  "broken_received_sha256": "57fe3ce8c7e9b499868ec133de0e10661625246e886aebc803bcb05b6d9a4bbb",
+  "repaired_bytes": 19158355,
+  "repaired_sha256": "25fe5411038ba145a9de2e260d161a50a300fd0a219c22eb35bbf30cca7cb209",
+  "entries_recovered": 117,
+  "original_source_files_exact": 115,
+  "zip_crc": "PASS",
+  "missing_untracked_example": "examples/demo.surface was not present in received carrier and is not fabricated",
+  "scope": "Original 0.1.0 source members preserved byte-for-byte; ZIP carrier rebuilt with valid central directory"
+}

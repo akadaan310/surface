@@ -1,0 +1,16 @@
+{
+  "external_repository_upload": {
+    "status": "BLOCKED",
+    "reason": "Automatic approval review: external destination ownership and destination-specific authorization were not established.",
+    "workaround_attempted": false
+  },
+  "private_signing_key_backup_upload": {
+    "status": "BLOCKED_PENDING_EXPLICIT_AUTHORIZATION",
+    "reason": "Automatic approval review allowed APK/source/recovery artifacts to the user private files, but denied the batch because it also transmitted a private Android signing-key backup that was not clearly required or explicitly authorized.",
+    "safe_alternative": "Remove the signing-key backup and deliver the APK, source and evidence artifacts.",
+    "private_key_in_source_archive": false,
+    "private_key_in_safe_delivery_batch": false,
+    "local_backup": "Separate private local file; not durably transmitted or linked to the user without approval."
+  },
+  "native_runtime_effect": "No signing-key access is needed to install or run the already-signed APK. The same key is needed to sign compatible future updates."
+}

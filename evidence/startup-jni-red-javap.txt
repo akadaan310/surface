@@ -1,0 +1,151 @@
+Compiled from "SurfaceActivity.java"
+public final class org.surface.nativeink.SurfaceActivity extends android.app.NativeActivity implements android.view.View$OnLayoutChangeListener {
+  public org.surface.nativeink.SurfaceActivity();
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method android/app/NativeActivity."<init>":()V
+       4: return
+
+  private static native void nativeDimensions(int, int);
+
+  private static native void nativeOpen(java.lang.String);
+
+  public void onCreate(android.os.Bundle);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokespecial #7                  // Method android/app/NativeActivity.onCreate:(Landroid/os/Bundle;)V
+       5: aload_0
+       6: invokevirtual #11                 // Method getWindow:()Landroid/view/Window;
+       9: invokevirtual #17                 // Method android/view/Window.getDecorView:()Landroid/view/View;
+      12: aload_0
+      13: invokevirtual #23                 // Method android/view/View.addOnLayoutChangeListener:(Landroid/view/View$OnLayoutChangeListener;)V
+      16: aload_0
+      17: invokespecial #29                 // Method immerse:()V
+      20: aload_0
+      21: aload_0
+      22: invokevirtual #32                 // Method getIntent:()Landroid/content/Intent;
+      25: invokespecial #36                 // Method accept:(Landroid/content/Intent;)V
+      28: return
+
+  protected void onResume();
+    Code:
+       0: aload_0
+       1: invokespecial #40                 // Method android/app/NativeActivity.onResume:()V
+       4: aload_0
+       5: invokespecial #29                 // Method immerse:()V
+       8: return
+
+  public void onWindowFocusChanged(boolean);
+    Code:
+       0: aload_0
+       1: iload_1
+       2: invokespecial #43                 // Method android/app/NativeActivity.onWindowFocusChanged:(Z)V
+       5: iload_1
+       6: ifeq          13
+       9: aload_0
+      10: invokespecial #29                 // Method immerse:()V
+      13: return
+
+  protected void onNewIntent(android.content.Intent);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokespecial #47                 // Method android/app/NativeActivity.onNewIntent:(Landroid/content/Intent;)V
+       5: aload_0
+       6: aload_1
+       7: invokevirtual #50                 // Method setIntent:(Landroid/content/Intent;)V
+      10: aload_0
+      11: aload_1
+      12: invokespecial #36                 // Method accept:(Landroid/content/Intent;)V
+      15: return
+
+  private void accept(android.content.Intent);
+    Code:
+       0: aload_1
+       1: ifnull        16
+       4: ldc           #55                 // String android.intent.action.VIEW
+       6: aload_1
+       7: invokevirtual #57                 // Method android/content/Intent.getAction:()Ljava/lang/String;
+      10: invokevirtual #61                 // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+      13: ifne          17
+      16: return
+      17: aload_1
+      18: invokevirtual #67                 // Method android/content/Intent.getData:()Landroid/net/Uri;
+      21: astore_2
+      22: aload_2
+      23: ifnull        57
+      26: ldc           #71                 // String content
+      28: aload_2
+      29: invokevirtual #73                 // Method android/net/Uri.getScheme:()Ljava/lang/String;
+      32: invokevirtual #61                 // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+      35: ifne          50
+      38: ldc           #78                 // String file
+      40: aload_2
+      41: invokevirtual #73                 // Method android/net/Uri.getScheme:()Ljava/lang/String;
+      44: invokevirtual #61                 // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+      47: ifeq          57
+      50: aload_2
+      51: invokevirtual #80                 // Method android/net/Uri.toString:()Ljava/lang/String;
+      54: invokestatic  #83                 // Method nativeOpen:(Ljava/lang/String;)V
+      57: return
+
+  private void immerse();
+    Code:
+       0: aload_0
+       1: invokevirtual #11                 // Method getWindow:()Landroid/view/Window;
+       4: astore_1
+       5: aload_1
+       6: sipush        1152
+       9: invokevirtual #89                 // Method android/view/Window.addFlags:(I)V
+      12: aload_1
+      13: invokevirtual #17                 // Method android/view/Window.getDecorView:()Landroid/view/View;
+      16: astore_2
+      17: getstatic     #93                 // Field android/os/Build$VERSION.SDK_INT:I
+      20: bipush        30
+      22: if_icmplt     58
+      25: aload_1
+      26: iconst_0
+      27: invokevirtual #99                 // Method android/view/Window.setDecorFitsSystemWindows:(Z)V
+      30: aload_2
+      31: invokevirtual #102                // Method android/view/View.getWindowInsetsController:()Landroid/view/WindowInsetsController;
+      34: astore_3
+      35: aload_3
+      36: ifnull        55
+      39: aload_3
+      40: invokestatic  #106                // Method android/view/WindowInsets$Type.systemBars:()I
+      43: invokeinterface #112,  2          // InterfaceMethod android/view/WindowInsetsController.hide:(I)V
+      48: aload_3
+      49: iconst_2
+      50: invokeinterface #117,  2          // InterfaceMethod android/view/WindowInsetsController.setSystemBarsBehavior:(I)V
+      55: goto          65
+      58: aload_2
+      59: sipush        5894
+      62: invokevirtual #120                // Method android/view/View.setSystemUiVisibility:(I)V
+      65: aload_1
+      66: invokevirtual #123                // Method android/view/Window.getAttributes:()Landroid/view/WindowManager$LayoutParams;
+      69: astore_3
+      70: aload_3
+      71: getstatic     #93                 // Field android/os/Build$VERSION.SDK_INT:I
+      74: bipush        30
+      76: if_icmplt     83
+      79: iconst_3
+      80: goto          84
+      83: iconst_1
+      84: putfield      #127                // Field android/view/WindowManager$LayoutParams.layoutInDisplayCutoutMode:I
+      87: aload_1
+      88: aload_3
+      89: invokevirtual #130                // Method android/view/Window.setAttributes:(Landroid/view/WindowManager$LayoutParams;)V
+      92: return
+
+  public void onLayoutChange(android.view.View, int, int, int, int, int, int, int, int);
+    Code:
+       0: iload         4
+       2: iload_2
+       3: isub
+       4: iload         5
+       6: iload_3
+       7: isub
+       8: invokestatic  #134                // Method nativeDimensions:(II)V
+      11: return
+}

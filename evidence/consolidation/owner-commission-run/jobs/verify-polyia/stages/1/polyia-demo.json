@@ -1,0 +1,521 @@
+{
+  "astra": {
+    "checkpoint_attempt": "PERSISTENCE_REQUIRED",
+    "event_persistence": "NOT_COMMITTED_BY_KERNEL",
+    "events": [
+      {
+        "from_phase": "OBSERVE",
+        "hash": "4924f295a84c3e30b15530b8a2cfc82fb16495dbb5d3f0b8e5d8d4b72e202408",
+        "input": {
+          "artifact": "Surface bounded import",
+          "content": "abc"
+        },
+        "previous": "0000000000000000000000000000000000000000000000000000000000000000",
+        "tick": 1,
+        "to_phase": "PROPOSE",
+        "verb": "SELECT"
+      },
+      {
+        "from_phase": "PROPOSE",
+        "hash": "143854dd94f050a71fd273cbcd705f27efe22e7ef02a5ec6428ac81f4e3360bd",
+        "input": {},
+        "previous": "4924f295a84c3e30b15530b8a2cfc82fb16495dbb5d3f0b8e5d8d4b72e202408",
+        "tick": 2,
+        "to_phase": "ADMIT",
+        "verb": "PROPOSE"
+      },
+      {
+        "from_phase": "ADMIT",
+        "hash": "02b8e7b0d1197d6416572103617e2f4f2bc9dfa7a8d0753db172e53a5ea4512e",
+        "input": {},
+        "previous": "143854dd94f050a71fd273cbcd705f27efe22e7ef02a5ec6428ac81f4e3360bd",
+        "tick": 3,
+        "to_phase": "EXECUTE",
+        "verb": "ADMIT"
+      },
+      {
+        "from_phase": "EXECUTE",
+        "hash": "f3f4686f583aa290fd459ab478a4d2cd5626ac44d0208b7fbfd6bca0d1dd86ac",
+        "input": {},
+        "previous": "02b8e7b0d1197d6416572103617e2f4f2bc9dfa7a8d0753db172e53a5ea4512e",
+        "tick": 4,
+        "to_phase": "VERIFY",
+        "verb": "EXECUTE"
+      },
+      {
+        "from_phase": "VERIFY",
+        "hash": "4a55d5f79145e2722187307d37ae8acb78e4942e4cf58cf67a73ddf0ea217a35",
+        "input": {},
+        "previous": "f3f4686f583aa290fd459ab478a4d2cd5626ac44d0208b7fbfd6bca0d1dd86ac",
+        "tick": 5,
+        "to_phase": "CHECKPOINT",
+        "verb": "VERIFY"
+      }
+    ],
+    "phases": [
+      "OBSERVE",
+      "PROPOSE",
+      "ADMIT",
+      "EXECUTE",
+      "VERIFY",
+      "CHECKPOINT"
+    ],
+    "verification": {
+      "evidence_class": "HANDLER_SELF_CONSISTENCY",
+      "independent": false,
+      "output_hash": "f0b75a208bf80b7ac47f090211c7e19f9123b5048b526e9ac1e98151c362f9d4",
+      "verdict": "PASS"
+    }
+  },
+  "checks": {
+    "different_representation_after_layout": true,
+    "eighteen_exact_exercises": true,
+    "limited_search_unresolved": true,
+    "native_differential_agreement": true,
+    "negative_membership": true,
+    "no_fabricated_checkpoint": true,
+    "roundtrip": true,
+    "same_content_after_layout": true,
+    "style_preserves_content": true,
+    "trace_intact": true,
+    "trace_tamper_refused": true,
+    "two_protocol_words": true
+  },
+  "custody": {
+    "bytes": 4455381,
+    "files": 80,
+    "manifest_sha256": "6eebb37ec30fceae018fcd158e39fecb2f3c47cacae6a732891f3fdb99ebaf01",
+    "scope": "Exact Git blob and SHA-256 custody; not a license grant or scientific proof.",
+    "status": "PASS",
+    "upstreams": {
+      "polyia": {
+        "branch": "codex/commission-20261024-83906c7",
+        "commit": "bb6319acb88467b618f5a6f673f1867768223ce6",
+        "license_status": "UNSPECIFIED: no repository-wide software license found at this commit",
+        "mission_obligations_accepted": 2,
+        "mission_obligations_total": 192,
+        "mission_status": "NOT_COMMISSIONED",
+        "repository": "https://github.com/akadaan310/PolyIA",
+        "research": "paused by owner; not resumed"
+      },
+      "substrate-university": {
+        "branch": "claude/new-session-xd8auu",
+        "commit": "6a0f5eaa8dd39b58bdd99889721ecea5f54e62bb",
+        "license_status": "UNSPECIFIED: no repository-wide software license found at this commit; bundled font licenses do not license TypeScript code",
+        "repository": "https://github.com/akadaan310/abedkadaancom"
+      }
+    }
+  },
+  "forms": {
+    "after_content_cid": "3cdf5cd9c6000cff439d650673d56ecf1f6ecbbbda9e356ecfe3673c2f61374d",
+    "after_representation_cid": "a67188843bc804cce2ae57469dccae237a686b1585871c8368415437cc6088b5",
+    "before_content_cid": "3cdf5cd9c6000cff439d650673d56ecf1f6ecbbbda9e356ecfe3673c2f61374d",
+    "before_representation_cid": "2f3319892f5b0bf581169149bfa521d66c0b64cf3830343eb8d60b0aeeb8646e",
+    "roundtrip_equal": true
+  },
+  "full_mission_acceptance": false,
+  "limitations": [
+    "PolyIA remains NOT_COMMISSIONED; the source handoff reports 2/192 accepted mission obligations.",
+    "Owner-paused upstream research is not resumed by this example.",
+    "Trace replay detects corruption; an unsigned self-consistent receipt is not authenticated provenance.",
+    "Differential VM checking shares Python and Fraction; it is not a formal proof.",
+    "Infinity is IX; VII and VIII remain open research charters.",
+    "No model-free open-domain interpretation or open-ended discovery is claimed."
+  ],
+  "llm_inference": false,
+  "native": {
+    "outputs": {
+      "product_derivative": {
+        "type": "Polynomial",
+        "value": [
+          "0",
+          "1",
+          "-3/2"
+        ]
+      },
+      "quotient": {
+        "type": "Polynomial",
+        "value": [
+          "-1/2",
+          "-1/2"
+        ]
+      },
+      "quotient_numerator": {
+        "type": "Polynomial",
+        "value": [
+          "0",
+          "1",
+          "-1/2"
+        ]
+      },
+      "remainder": {
+        "type": "Polynomial",
+        "value": [
+          "-1/2"
+        ]
+      }
+    },
+    "source": "(commission\n  (profile \"polyia.native/0.1\")\n  (budget 128)\n  (let a Polynomial (poly 0 0 -1/2))\n  (let b Polynomial (poly -1 1))\n  (let d Division (divmod a b))\n  (emit quotient (quotient d))\n  (emit remainder (remainder d))\n  (emit product_derivative (derivative (pmul a b)))\n  (emit quotient_numerator (padd (pmul (derivative a) b) (pmul (poly -1) (pmul a (derivative b)))))\n)\n",
+    "verification": {
+      "agreement": true,
+      "evidence_class": "differential-check",
+      "limitation": "finite supported profile; agreement is not proof or full mission acceptance",
+      "method": "bytecode versus separate AST evaluator",
+      "shared_dependencies": [
+        "lexer/parser/typechecker",
+        "fractions.Fraction"
+      ]
+    }
+  },
+  "polynomial": {
+    "candidate_count": 18,
+    "curriculum": {
+      "assumptions": [
+        "Q[x], ascending exact rational coefficients",
+        "r=0 or degree(r)<degree(b)",
+        "quotient differentiation requires b(x) != 0"
+      ],
+      "content_id": "74b39c052511954ded96f7217c6661e36589317dda316b1902e706dec9bb68ad",
+      "id": "dc6a1dc92926af879ab8f5b717517a34f96a014bfcf18a40ba72e42899273ed9",
+      "schema": "polyia.curriculum/0.1",
+      "scope": "four exact worked steps, not a complete pedagogy or learner assessment",
+      "source_lock": [
+        {
+          "anchors": "040,123-132,135,152",
+          "path": "sources/originals/UCG_CODEX_CONSTITUTIONAL_COMMISSION.md",
+          "sha256": "0cf03197777e19330ce36cf478bec9a5c4cad5459fd142c37eb4ae0e82bd6d7e"
+        },
+        {
+          "anchors": "C-020,021,030,051,053,064,069,070,076",
+          "path": "sources/recovered/CODEX_CONSTITUTION.md",
+          "sha256": "cfe0b88f9c701e139372d783db1d9568da272f6433f9e513d6475fe7985a2630"
+        },
+        {
+          "anchors": "3,5,8",
+          "path": "sources/originals/RELATIONAL_GENERATIVITY_FOUNDATION_V0_1.md",
+          "sha256": "359a3d584a06c3fd3cb30ebd43c9a3d7781ecc7e33ba6846823bf3758d7c528f"
+        },
+        {
+          "anchors": "1,3-7,10",
+          "path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/docs/TECHNICAL_TREATISE.md",
+          "sha256": "bed750d816b54029a59ff933361cc5ad15709de14b59b595735d6e95439a2e01"
+        },
+        {
+          "anchors": "2.1,2.2,2.3,4,5",
+          "path": "sources/repos/computationalgrammartheory/CGT_SDK_SPEC.md",
+          "sha256": "4ed9074c9d1713f4aba14da0f21de08bfea192fdba57bcefcf8219886e87ca9f"
+        },
+        {
+          "anchors": "SF-06,07,08",
+          "path": "docs/SCIENTIFIC_FOUNDATIONS.md",
+          "sha256": "78dff0f8c6637449d043e3816d2d4f6cfc5a42a2d4aad6dd662f2d6b5e9cd8f0"
+        },
+        {
+          "anchors": "PIA-097..PIA-108",
+          "path": "GOD_SEED.md",
+          "sha256": "4f179f83ff2279e1bf3e471ac8edc80456b9fdff29548332bf5b649a3c724f38"
+        },
+        {
+          "anchors": "FV-01..FV-09",
+          "path": "docs/FORMAL_VOCABULARY.md",
+          "sha256": "45455b3d908b5ca978a510902337c08363478db378aa52b0825c91a5deb5ce24"
+        },
+        {
+          "anchors": "state graph and representation boundary",
+          "path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/docs/STATE_MACHINE.md",
+          "sha256": "48c38a2a24128513fc45c091ba1c26c61feb4cd48a3062f876bb560c6d05fa5e"
+        },
+        {
+          "anchors": "intent coverage, source custody and refusal",
+          "path": "sources/expanded/POLYIA_FOUNDATION_V0_1/POLYIA_FOUNDATION_V0_1/docs/CONCIERGE_CONTRACT.md",
+          "sha256": "0400c89054a4fa88cbb40f8312d38f9548f6373f666746874d7005e30b31692b"
+        },
+        {
+          "anchors": "typed machine construction and verification",
+          "path": "sources/expanded/TRE_TREE_FOUNDATIONS_RESEARCH_PACKET_V01/TRE_TREE_FOUNDATIONS_V01/docs/01_MACHINE_COMPILER.md",
+          "sha256": "8955e70c7d48bb47588f863382df6c3a046a2301d4701ef84d4fe4bc29d5a14b"
+        }
+      ],
+      "steps": [
+        {
+          "claim": "constant coefficient b[0]*q[0]+r[0] equals a[0]",
+          "evidence_class": "exact-rational-coefficient-check",
+          "id": "fractions",
+          "operands": [
+            "-1",
+            "-1/2",
+            "-1/2"
+          ],
+          "operation": "multiply then add exact rationals",
+          "requires": [],
+          "result": "0",
+          "source_refs": [
+            0,
+            1,
+            5
+          ]
+        },
+        {
+          "dividend": [
+            "0",
+            "0",
+            "-1/2"
+          ],
+          "divisor": [
+            "-1",
+            "1"
+          ],
+          "evidence_class": "exact-rational-coefficient-check",
+          "id": "division",
+          "operation": "descending coefficient elimination",
+          "quotient": [
+            "-1/2",
+            "-1/2"
+          ],
+          "remainder": [
+            "-1/2"
+          ],
+          "requires": [
+            "fractions"
+          ],
+          "source_refs": [
+            0,
+            1,
+            5
+          ]
+        },
+        {
+          "evidence_class": "exact-rational-coefficient-check",
+          "id": "product-derivative",
+          "operation": "(a*b)' = a'*b+a*b'",
+          "requires": [
+            "division"
+          ],
+          "result": [
+            "0",
+            "1",
+            "-3/2"
+          ],
+          "source_refs": [
+            0,
+            1,
+            5
+          ]
+        },
+        {
+          "denominator": [
+            "1",
+            "-2",
+            "1"
+          ],
+          "domain": {
+            "excluded_by_polynomial": [
+              "-1",
+              "1"
+            ],
+            "requirement": "b(x) != 0"
+          },
+          "evidence_class": "exact-rational-coefficient-check",
+          "id": "quotient-derivative",
+          "numerator": [
+            "0",
+            "1",
+            "-1/2"
+          ],
+          "operation": "(a/b)' = (a'*b-a*b')/(b*b)",
+          "requires": [
+            "division",
+            "product-derivative"
+          ],
+          "source_refs": [
+            0,
+            1,
+            5
+          ]
+        }
+      ]
+    },
+    "first": {
+      "dividend": [
+        "0",
+        "0",
+        "-1/2"
+      ],
+      "divisor": [
+        "-1",
+        "1"
+      ],
+      "domain": {
+        "excluded_by_polynomial": [
+          "-1",
+          "1"
+        ],
+        "requirement": "b(x) != 0"
+      },
+      "product_derivative": [
+        "0",
+        "1",
+        "-3/2"
+      ],
+      "quotient": [
+        "-1/2",
+        "-1/2"
+      ],
+      "quotient_derivative_denominator": [
+        "1",
+        "-2",
+        "1"
+      ],
+      "quotient_derivative_numerator": [
+        "0",
+        "1",
+        "-1/2"
+      ],
+      "remainder": [
+        "-1/2"
+      ]
+    },
+    "first_content_id": "74b39c052511954ded96f7217c6661e36589317dda316b1902e706dec9bb68ad",
+    "limited_inverse": {
+      "classification": "UNRESOLVED_SEARCH_BUDGET",
+      "complete": false,
+      "status": "RESOURCE_LIMIT"
+    },
+    "model_cid": "5d3b2ad3c46c2f244dae81426e3f8f55ab4363b383991d5b810579ce306b6310",
+    "style_preserves_content_id": true,
+    "style_preserves_relations": true
+  },
+  "protocol": {
+    "model_cid": "dfb51b34cfe8aa8f5f529b40d984535514b6f4644257400c2d1c7640addedab4",
+    "negative_member": false,
+    "replay": {
+      "entries": 9,
+      "ok": true,
+      "result_cid": "158a4ff052414afe68ae3319f1bfff3a7fa5c8a976572321ce4d58d7f1c541b9",
+      "scope": "captured trace integrity only; no execution or provenance authentication"
+    },
+    "tampered_replay": {
+      "error": {
+        "code": "TRACE",
+        "detail": "Trace chain mismatch."
+      },
+      "ok": false
+    },
+    "trace": [
+      {
+        "data": {
+          "model_cid": "dfb51b34cfe8aa8f5f529b40d984535514b6f4644257400c2d1c7640addedab4",
+          "request_cid": "42f9f09789c7fc28f001a93d5dd15a3281fbb3365b54ac005f064925315440a4"
+        },
+        "digest": "0c171117f5d03691f2c0409bd70b5efec19988ed65e34c3dde376a50d6404ea7",
+        "event": "admit",
+        "index": 0,
+        "previous": "0000000000000000000000000000000000000000000000000000000000000000",
+        "state": "INPUT"
+      },
+      {
+        "data": {
+          "family": "regular",
+          "search_budget": 10000,
+          "tool_calls": []
+        },
+        "digest": "7b0b5c2c0f5aaee68d42b9c881f540e4b0a556ddd4f27ea79fd480b11f3a6cae",
+        "event": "begin_frontier",
+        "index": 1,
+        "previous": "0c171117f5d03691f2c0409bd70b5efec19988ed65e34c3dde376a50d6404ea7",
+        "state": "GENERATE"
+      },
+      {
+        "data": {
+          "content_id": "cd4b14005e5892e7162a31bef95c55a4165c4988139f5ecb5d2c0dba5a6f4ddc",
+          "frontier_visit": 5
+        },
+        "digest": "d3692531a243da3a8f71bd448e9eec85c411cc7884a33baf1bf8a224b37f4e07",
+        "event": "construct_candidate",
+        "index": 2,
+        "previous": "7b0b5c2c0f5aaee68d42b9c881f540e4b0a556ddd4f27ea79fd480b11f3a6cae",
+        "state": "GENERATE"
+      },
+      {
+        "data": {
+          "content_id": "cd4b14005e5892e7162a31bef95c55a4165c4988139f5ecb5d2c0dba5a6f4ddc",
+          "frontier_visit": 5
+        },
+        "digest": "e69a330ffc318b4a71337f03520d57da202171955ef8922b27b6cfff3e665cb0",
+        "event": "constraints_passed",
+        "index": 3,
+        "previous": "d3692531a243da3a8f71bd448e9eec85c411cc7884a33baf1bf8a224b37f4e07",
+        "state": "CONSTRAIN"
+      },
+      {
+        "data": {
+          "content_id": "cd4b14005e5892e7162a31bef95c55a4165c4988139f5ecb5d2c0dba5a6f4ddc",
+          "frontier_visit": 5
+        },
+        "digest": "215fbb2950d2307003cc68968770208b25c5c87daec7b9fd139d854cd9f8e851",
+        "event": "admit_candidate",
+        "index": 4,
+        "previous": "e69a330ffc318b4a71337f03520d57da202171955ef8922b27b6cfff3e665cb0",
+        "state": "VERIFY"
+      },
+      {
+        "data": {
+          "content_id": "63eeb16b5cfd3a006056b36f54bc9a742073db369f3152e99aa85937bc8f9fb1",
+          "frontier_visit": 11
+        },
+        "digest": "479f820b3613374dbd2a1906b5e50b80ea2c4f367a8fb5eb2387b1d9aa0e0f41",
+        "event": "construct_candidate",
+        "index": 5,
+        "previous": "215fbb2950d2307003cc68968770208b25c5c87daec7b9fd139d854cd9f8e851",
+        "state": "GENERATE"
+      },
+      {
+        "data": {
+          "content_id": "63eeb16b5cfd3a006056b36f54bc9a742073db369f3152e99aa85937bc8f9fb1",
+          "frontier_visit": 11
+        },
+        "digest": "24469a64e737f7f75d3981175066d6194ae34ed682e7478a18d10b8f5e74db76",
+        "event": "constraints_passed",
+        "index": 6,
+        "previous": "479f820b3613374dbd2a1906b5e50b80ea2c4f367a8fb5eb2387b1d9aa0e0f41",
+        "state": "CONSTRAIN"
+      },
+      {
+        "data": {
+          "content_id": "63eeb16b5cfd3a006056b36f54bc9a742073db369f3152e99aa85937bc8f9fb1",
+          "frontier_visit": 11
+        },
+        "digest": "75d3598ab4a18e4241f5c9e7020b5a79f20422d42b7397a080138fb92345bd58",
+        "event": "admit_candidate",
+        "index": 7,
+        "previous": "24469a64e737f7f75d3981175066d6194ae34ed682e7478a18d10b8f5e74db76",
+        "state": "VERIFY"
+      },
+      {
+        "data": {
+          "result_cid": "158a4ff052414afe68ae3319f1bfff3a7fa5c8a976572321ce4d58d7f1c541b9",
+          "status": "PASS"
+        },
+        "digest": "99377e708f7b4ff428c79290f97c175002b5d79b86ba260674856be40189677c",
+        "event": "finish",
+        "index": 8,
+        "previous": "75d3598ab4a18e4241f5c9e7020b5a79f20422d42b7397a080138fb92345bd58",
+        "state": "COMPLETE"
+      }
+    ],
+    "words": [
+      [
+        "PING",
+        "ACK"
+      ],
+      [
+        "PING",
+        "ACK",
+        "ACK"
+      ]
+    ]
+  },
+  "schema": "surface.polyia-demo/1",
+  "scope": "Local finite computations and source custody; no live service, durable ledger, native renderer binding or Android execution.",
+  "status": "PASS"
+}

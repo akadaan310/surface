@@ -1,0 +1,171 @@
+{
+  "schema": "surface-verified-source-capture-v1",
+  "capture": "After final native tests and APK build; C++/Java sources unchanged between those runs and this capture",
+  "native_command": "python3 tools/build_native.py --test",
+  "native_log": "evidence/native-final-tests.log",
+  "android_command": "python3 tools/build_android.py --toolchain /workspace/scratch/976a326a6786/android-toolchain",
+  "android_receipt": "evidence/android-build.json",
+  "files": [
+    {
+      "path": "src/acoustic.cpp",
+      "bytes": 2806,
+      "sha256": "71ad13d03add448c5bac98950640afda59dbda7afe72ec8035bd64260a7e96c4"
+    },
+    {
+      "path": "src/atlas.cpp",
+      "bytes": 4803,
+      "sha256": "646ca509d607e6cc0e8cf9a7404fdeb043df59ae7485b3d5b057de5cd5fd59ca"
+    },
+    {
+      "path": "src/checkpoint.cpp",
+      "bytes": 10004,
+      "sha256": "73c811442d0b66629d758a8691d1f0e60669775c59022899f90f61d1030e1670"
+    },
+    {
+      "path": "src/cie1931.inc",
+      "bytes": 26048,
+      "sha256": "7f5741a7208f0fef34fb6fcd13ef46fe890e51aa06c5bf0644bb78fa883632c7"
+    },
+    {
+      "path": "src/engine_service.cpp",
+      "bytes": 5988,
+      "sha256": "c27ded47cbc3b17088d1df9c96ed0a8ada1f934db5195c9e5abe3b50209cd6b9"
+    },
+    {
+      "path": "src/main.cpp",
+      "bytes": 11449,
+      "sha256": "00e32ef77a73c34239c592d688a62fe352257227a7fc441423d1c2030ee9aa94"
+    },
+    {
+      "path": "src/phantom.cpp",
+      "bytes": 17236,
+      "sha256": "8143187a0328f308a6bcaf263f07f085bed5f58f7fa2e596d03c3624ac46d70d"
+    },
+    {
+      "path": "src/physics.cpp",
+      "bytes": 19584,
+      "sha256": "6da1bb70ac8693af7b1c4352b7b5cbf4ae3930912533bfba114a207a34342b4e"
+    },
+    {
+      "path": "src/renderer.cpp",
+      "bytes": 13025,
+      "sha256": "95eb459658e0844c8c50b47e7baffc69ce3591d70f29e913d38fd5161a8d5303"
+    },
+    {
+      "path": "src/session.cpp",
+      "bytes": 4680,
+      "sha256": "38a601d48cc99bc302804e751b04fbf6cfc38b0c47534d7f1f7f7ed1abfcb6e6"
+    },
+    {
+      "path": "include/surface/acoustic.hpp",
+      "bytes": 814,
+      "sha256": "5be851a3c1c62c76b961405476df7807029dda420a2cea1a7c80a747ccaeaaaf"
+    },
+    {
+      "path": "include/surface/atlas.hpp",
+      "bytes": 1326,
+      "sha256": "c7d93c890e7878eb61a5ee764fbe8f0578ea3c32f6916ec46884fd76fffc52eb"
+    },
+    {
+      "path": "include/surface/checkpoint.hpp",
+      "bytes": 1510,
+      "sha256": "1a7536639907b881c2d5ecfddeba5062e6dc20eb8adc93762cda834e13d791c8"
+    },
+    {
+      "path": "include/surface/engine_service.hpp",
+      "bytes": 768,
+      "sha256": "0a06de85f5e61a07fb3c7f17f6ac401da741eda9bb5b131381a4c8e636519e50"
+    },
+    {
+      "path": "include/surface/input.hpp",
+      "bytes": 592,
+      "sha256": "14fdabecd71a61d39286c0570c7ea5e5afa60c24a5b3bac180b302235b026142"
+    },
+    {
+      "path": "include/surface/phantom.hpp",
+      "bytes": 3351,
+      "sha256": "44831debc6455f6feb854bfae00ab3bd01acb031f855d281a5467233436e7ad3"
+    },
+    {
+      "path": "include/surface/physics.hpp",
+      "bytes": 2694,
+      "sha256": "d93ed0a6c71c9863c48b22b5636ad48e41b8fef296df0ab6536c5c69b1a1dbbf"
+    },
+    {
+      "path": "include/surface/renderer.hpp",
+      "bytes": 2547,
+      "sha256": "520680e70c4a79c0366cac7101333b0ad2c41e736364ba952b241183c5c6c360"
+    },
+    {
+      "path": "include/surface/session.hpp",
+      "bytes": 629,
+      "sha256": "ed0047c3215cb074145e7694b40b57a82d15673aad406ef1d93c5cc3ae2467a8"
+    },
+    {
+      "path": "android/AndroidManifest.xml",
+      "bytes": 1415,
+      "sha256": "4e2cd41d7f254ecc0e5e72769ed82eb61db23f96599b8e5d8f9916212e4c83f5"
+    },
+    {
+      "path": "android/SurfaceActivity.java",
+      "bytes": 2943,
+      "sha256": "bb142a681f2d97da5b5e1047d3bfbc3a6a5c9c9f96857d7717f611ebf67d9fea"
+    },
+    {
+      "path": "android/native_main.cpp",
+      "bytes": 20756,
+      "sha256": "8169c6e1dc3f26a00721b9d6db29e12a6840f673895b5ff2d8cef16d5dc2b9c9"
+    },
+    {
+      "path": "tests/test_acoustic.cpp",
+      "bytes": 706,
+      "sha256": "834efd3ef437b0212474dedb28f572423c585b0a44af519746b86f25c71ef400"
+    },
+    {
+      "path": "tests/test_atlas.cpp",
+      "bytes": 2355,
+      "sha256": "9264530b3b2b50bd6ec7afb5ac1936341282dc2a873a7b57d35facd568e0793e"
+    },
+    {
+      "path": "tests/test_checkpoint.cpp",
+      "bytes": 8609,
+      "sha256": "346fbe3374555ba5bb250774d485d20ec7179c5baf53922ddf6e4cff09e19f79"
+    },
+    {
+      "path": "tests/test_engine.cpp",
+      "bytes": 1842,
+      "sha256": "25e5bfbd8d6867ae797c0043fc0ecc6b0544dbcb390bd7c65cc4174aac4c2875"
+    },
+    {
+      "path": "tests/test_input.cpp",
+      "bytes": 438,
+      "sha256": "574b009a4087e53a30ecfd47a334bb7969910e1c480dd0adbd6d1f483e399588"
+    },
+    {
+      "path": "tests/test_phantom.cpp",
+      "bytes": 6057,
+      "sha256": "3dcf44abef9abd01d7cb7ca0cbd1b17404b0b2b10116cceeb4bfa52cc150a13b"
+    },
+    {
+      "path": "tests/test_physics.cpp",
+      "bytes": 7195,
+      "sha256": "15ef804d4df1ffb78817fcd7ea7bcc4164c7d684c7c6a9bde054bd697dfc9d4b"
+    },
+    {
+      "path": "tests/test_renderer.cpp",
+      "bytes": 1368,
+      "sha256": "752a4933df6e4dad8a77895d93ae78900049904bae15b7b6132483cef8f4ea93"
+    },
+    {
+      "path": "tests/test_session.cpp",
+      "bytes": 1766,
+      "sha256": "14dda2a7c33f24d442a7d6dc10a262a6062bc694267a7c7deaf9bc5a59e2e71c"
+    },
+    {
+      "path": "tests/test_supervisor.py",
+      "bytes": 9916,
+      "sha256": "496a87606f801f93faa4de45262c0be59ea8c85af56ba48123b406c8cfb4245d"
+    }
+  ],
+  "limits": "Records this source snapshot and observed runs. Does not assert byte-reproducible APK rebuilds across host/toolchain/time changes."
+}

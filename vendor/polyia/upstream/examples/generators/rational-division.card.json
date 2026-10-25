@@ -1,0 +1,21 @@
+{
+  "schema": "polyia.generator-card/0.1",
+  "id": "rational-division-curriculum",
+  "version": "1.0.0",
+  "family": "polynomial-division",
+  "coefficient_choices": [
+    "-1/2",
+    "0",
+    "1/2"
+  ],
+  "divisor": [
+    "-1",
+    "1"
+  ],
+  "quotient_degree": 1,
+  "seed": 0,
+  "bounds": {
+    "work_units": 10000,
+    "max_candidates": 64
+  }
+}

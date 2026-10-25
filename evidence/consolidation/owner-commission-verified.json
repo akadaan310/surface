@@ -1,0 +1,191 @@
+{
+  "bundle_manifest_sha256": "43ee1e60a102e5024c9e7d27e4910fa2cb1593bf634c0997a16633676de10a41",
+  "commission_id": "surface-consolidation-20261025",
+  "execution_status": "FAILED",
+  "external_submissions": [],
+  "schema": "surface.commission.execution-summary.v1",
+  "scientific_acceptance": "NOT_EVALUATED",
+  "tasks": [
+    {
+      "action": "source-integrity",
+      "attempts": 1,
+      "bundle_manifest_sha256": "43ee1e60a102e5024c9e7d27e4910fa2cb1593bf634c0997a16633676de10a41",
+      "epoch": 1,
+      "published": [
+        {
+          "bytes": 948,
+          "name": "evidence.json",
+          "path": "committed/1/evidence.json",
+          "sha256": "efb9e8f27933635eb47c492a51abff1c2e679b54584f7d126546c2a6381fa92f"
+        }
+      ],
+      "reason": "success",
+      "returncode": 0,
+      "schema": "surface.commission.task-receipt.v1",
+      "scientific_acceptance": "NOT_EVALUATED",
+      "status": "SUCCEEDED",
+      "supervisor_state_sha256": "95e747c5ba018c9d6afa49b1aa09dbeabbd5996afa887901c5eb2ba474fb7886",
+      "task_id": "verify-source"
+    },
+    {
+      "action": "foundation-audit",
+      "attempts": 1,
+      "bundle_manifest_sha256": "43ee1e60a102e5024c9e7d27e4910fa2cb1593bf634c0997a16633676de10a41",
+      "epoch": 1,
+      "published": [
+        {
+          "bytes": 1013,
+          "name": "evidence.json",
+          "path": "committed/1/evidence.json",
+          "sha256": "894eba806cb87b4340902a5051b475b0fb9087adfe8c1b351cc741f70c71a28b"
+        }
+      ],
+      "reason": "success",
+      "returncode": 0,
+      "schema": "surface.commission.task-receipt.v1",
+      "scientific_acceptance": "NOT_EVALUATED",
+      "status": "SUCCEEDED",
+      "supervisor_state_sha256": "0b382d55cb8e83a06278d710a58b7e08e357e3a8976f5718b9066b68528f0f46",
+      "task_id": "verify-foundation"
+    },
+    {
+      "action": "polyia-demo",
+      "attempts": 1,
+      "bundle_manifest_sha256": "43ee1e60a102e5024c9e7d27e4910fa2cb1593bf634c0997a16633676de10a41",
+      "epoch": 1,
+      "published": [
+        {
+          "bytes": 1072,
+          "name": "evidence.json",
+          "path": "committed/1/evidence.json",
+          "sha256": "a6ad84108cf17505d9231827e564cc995b80221d4abc3d96149efb90daac0cbd"
+        },
+        {
+          "bytes": 17291,
+          "name": "polyia-demo.json",
+          "path": "committed/1/polyia-demo.json",
+          "sha256": "ea40046a3ced8e964f6a6bad9a447268919c42d18fccb21cf10ecc1c31da6279"
+        }
+      ],
+      "reason": "success",
+      "returncode": 0,
+      "schema": "surface.commission.task-receipt.v1",
+      "scientific_acceptance": "NOT_EVALUATED",
+      "status": "SUCCEEDED",
+      "supervisor_state_sha256": "a1528f06c7476f6f33fc4efd1974749925a68117e41d94c36f355334feb06ad3",
+      "task_id": "verify-polyia"
+    },
+    {
+      "action": "python-tests",
+      "attempts": 1,
+      "bundle_manifest_sha256": "43ee1e60a102e5024c9e7d27e4910fa2cb1593bf634c0997a16633676de10a41",
+      "epoch": 1,
+      "published": [],
+      "reason": "exit-code",
+      "returncode": 1,
+      "schema": "surface.commission.task-receipt.v1",
+      "scientific_acceptance": "NOT_EVALUATED",
+      "status": "FAILED",
+      "supervisor_state_sha256": "14ea1911b8d7992a20740fdae91c8736aa40ebd08e4384a81529e71e0951e137",
+      "task_id": "verify-supervisor"
+    },
+    {
+      "action": "external-agent",
+      "attempts": 0,
+      "bundle_manifest_sha256": "43ee1e60a102e5024c9e7d27e4910fa2cb1593bf634c0997a16633676de10a41",
+      "epoch": null,
+      "published": [],
+      "reason": "external-agent adapter is not installed; use the issued task envelope",
+      "returncode": null,
+      "schema": "surface.commission.task-receipt.v1",
+      "scientific_acceptance": "NOT_EVALUATED",
+      "status": "BLOCKED",
+      "supervisor_state_sha256": null,
+      "task_id": "consolidate-v3"
+    },
+    {
+      "action": "external-agent",
+      "attempts": 0,
+      "bundle_manifest_sha256": "43ee1e60a102e5024c9e7d27e4910fa2cb1593bf634c0997a16633676de10a41",
+      "epoch": null,
+      "published": [],
+      "reason": "external-agent adapter is not installed; use the issued task envelope",
+      "returncode": null,
+      "schema": "surface.commission.task-receipt.v1",
+      "scientific_acceptance": "NOT_EVALUATED",
+      "status": "BLOCKED",
+      "supervisor_state_sha256": null,
+      "task_id": "continue-science"
+    },
+    {
+      "action": "external-agent",
+      "attempts": 0,
+      "bundle_manifest_sha256": "43ee1e60a102e5024c9e7d27e4910fa2cb1593bf634c0997a16633676de10a41",
+      "epoch": null,
+      "published": [],
+      "reason": "dependency does not have a verified success receipt",
+      "returncode": null,
+      "schema": "surface.commission.task-receipt.v1",
+      "scientific_acceptance": "NOT_EVALUATED",
+      "status": "BLOCKED",
+      "supervisor_state_sha256": null,
+      "task_id": "create-initiative"
+    },
+    {
+      "action": "external-agent",
+      "attempts": 0,
+      "bundle_manifest_sha256": "43ee1e60a102e5024c9e7d27e4910fa2cb1593bf634c0997a16633676de10a41",
+      "epoch": null,
+      "published": [],
+      "reason": "external-agent adapter is not installed; use the issued task envelope",
+      "returncode": null,
+      "schema": "surface.commission.task-receipt.v1",
+      "scientific_acceptance": "NOT_EVALUATED",
+      "status": "BLOCKED",
+      "supervisor_state_sha256": null,
+      "task_id": "design-renderer"
+    },
+    {
+      "action": "external-agent",
+      "attempts": 0,
+      "bundle_manifest_sha256": "43ee1e60a102e5024c9e7d27e4910fa2cb1593bf634c0997a16633676de10a41",
+      "epoch": null,
+      "published": [],
+      "reason": "external-agent adapter is not installed; use the issued task envelope",
+      "returncode": null,
+      "schema": "surface.commission.task-receipt.v1",
+      "scientific_acceptance": "NOT_EVALUATED",
+      "status": "BLOCKED",
+      "supervisor_state_sha256": null,
+      "task_id": "document-atlas"
+    },
+    {
+      "action": "external-agent",
+      "attempts": 0,
+      "bundle_manifest_sha256": "43ee1e60a102e5024c9e7d27e4910fa2cb1593bf634c0997a16633676de10a41",
+      "epoch": null,
+      "published": [],
+      "reason": "dependency does not have a verified success receipt",
+      "returncode": null,
+      "schema": "surface.commission.task-receipt.v1",
+      "scientific_acceptance": "NOT_EVALUATED",
+      "status": "BLOCKED",
+      "supervisor_state_sha256": null,
+      "task_id": "document-harnesses"
+    },
+    {
+      "action": "external-agent",
+      "attempts": 0,
+      "bundle_manifest_sha256": "43ee1e60a102e5024c9e7d27e4910fa2cb1593bf634c0997a16633676de10a41",
+      "epoch": null,
+      "published": [],
+      "reason": "dependency does not have a verified success receipt",
+      "returncode": null,
+      "schema": "surface.commission.task-receipt.v1",
+      "scientific_acceptance": "NOT_EVALUATED",
+      "status": "BLOCKED",
+      "supervisor_state_sha256": null,
+      "task_id": "publish-repository"
+    }
+  ]
+}

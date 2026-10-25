@@ -1,0 +1,50 @@
+{
+  "name": "substrate-university",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Substrate University — Haq Roots. A browser-native mathematical university: the campus is the interface.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --port 4173 --strictPort",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:e2e": "playwright test",
+    "data:stars": "node tools/build-stars.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@fontsource/cinzel": "5.3.0",
+    "@fontsource/cormorant-garamond": "5.3.0",
+    "@fontsource/inter": "5.3.0",
+    "@fontsource/jetbrains-mono": "5.3.0",
+    "@pdf-lib/fontkit": "1.1.1",
+    "@react-three/drei": "10.7.6",
+    "@react-three/fiber": "9.4.0",
+    "@supabase/supabase-js": "2.75.0",
+    "astronomy-engine": "2.1.19",
+    "pdf-lib": "1.17.1",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "react-router-dom": "7.18.4",
+    "three": "0.181.0",
+    "topojson-client": "3.1.0",
+    "troika-three-text": "0.52.5"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.56.1",
+    "@types/node": "22.15.3",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@types/three": "0.181.0",
+    "@types/topojson-client": "3.1.5",
+    "@vitejs/plugin-react": "5.2.0",
+    "typescript": "5.9.3",
+    "vite": "7.3.7",
+    "vitest": "4.1.12",
+    "world-atlas": "2.0.2"
+  }
+}

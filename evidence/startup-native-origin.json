@@ -1,0 +1,7 @@
+{
+  "original_apk_sha256": "0a6f32c450c931699eaf75778c5e7d1fae1b5cfc1123d32aeac93d5f46a2f8da",
+  "native_library_sha256": "0f473e75eef6e3741e9dc3c1a3b7ca7ab9af12618e6ef26384378bc302a0bf1b",
+  "native_library_bytes": 1076032,
+  "native_library_path": "lineage/Surface-0.1.0-libsurface.so",
+  "reason": "Reuse byte-identical C++ code to isolate tested Java library-registration repair; original package carrier SHA256 verified."
+}

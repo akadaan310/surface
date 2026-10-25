@@ -1,0 +1,17 @@
+Verifies
+Verified using v1 scheme (JAR signing): false
+Verified using v2 scheme (APK Signature Scheme v2): false
+Verified using v3 scheme (APK Signature Scheme v3): true
+Verified using v3.1 scheme (APK Signature Scheme v3.1): false
+Verified using v4 scheme (APK Signature Scheme v4): false
+Verified for SourceStamp: false
+Number of signers: 1
+Signer #1 certificate DN: CN=Surface Development, O=Surface, C=US
+Signer #1 certificate SHA-256 digest: 4bcd88328555debd1aa87107492348a1503eeb3615a9ec20960a0066ed9a6662
+Signer #1 certificate SHA-1 digest: 24c48e12668a531730311f91c9b7ec319d4242d4
+Signer #1 certificate MD5 digest: 5ec5cc5c4d87c66aa81aaf61f703a870
+Signer #1 key algorithm: RSA
+Signer #1 key size (bits): 3072
+Signer #1 public key SHA-256 digest: 46e39abbe340fde5327474f335b00ac361a29815d9b88a4ea68c4df2541d888d
+Signer #1 public key SHA-1 digest: 8062bcc98d5ec32c8d60d143f781e6424b9fdac8
+Signer #1 public key MD5 digest: 5615ef9339ce6182312399d22f170f56

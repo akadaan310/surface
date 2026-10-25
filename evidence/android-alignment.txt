@@ -1,0 +1,16 @@
+Verifying alignment of /workspace/scratch/976a326a6786/surface-native/build/Surface-arm64.apk (4)...
+      49 AndroidManifest.xml (OK - compressed)
+    1252 resources.arsc (OK)
+    1343 assets/CIE-LICENSE.md (OK - compressed)
+    2289 assets/CIE_xyz_1931_2deg.csv (OK - compressed)
+    9687 assets/CIE_xyz_1931_2deg.csv_metadata.json (OK - compressed)
+   11012 assets/gaia-dr3-bright-source.csv (OK - compressed)
+  533491 assets/gaia-provenance.json (OK - compressed)
+  534993 assets/gaia.bin (OK - compressed)
+  989486 assets/import-atlas.py (OK - compressed)
+  991734 lib/arm64-v8a/libsurface.so (OK - compressed)
+ 1358165 classes.dex (OK - compressed)
+ 1359841 META-INF/SURFACE-.SF (OK - compressed)
+ 1360596 META-INF/SURFACE-.RSA (OK - compressed)
+ 1362120 META-INF/MANIFEST.MF (OK - compressed)
+Verification successful

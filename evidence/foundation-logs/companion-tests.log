@@ -1,0 +1,12 @@
+test_all_add (test_machine.TestMachine.test_all_add) ... ok
+test_carry_path (test_machine.TestMachine.test_carry_path) ... ok
+test_finite_discovery (test_machine.TestMachine.test_finite_discovery) ... ok
+test_position_and_navigation (test_machine.TestMachine.test_position_and_navigation) ... ok
+test_qrelation (test_machine.TestMachine.test_qrelation) ... ok
+test_sub_and_logic (test_machine.TestMachine.test_sub_and_logic) ... ok
+test_tamper (test_machine.TestMachine.test_tamper) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.285s
+
+OK

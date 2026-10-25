@@ -1,0 +1,44 @@
+{
+  "schema": "surface.commission.factory.v1",
+  "generator_id": "surface-commission-factory",
+  "allowed_actions": [
+    "source-integrity",
+    "python-tests",
+    "polyia-demo",
+    "foundation-audit",
+    "external-agent"
+  ],
+  "limits": {
+    "max_depth": 2,
+    "max_children": 2,
+    "max_tasks": 64,
+    "total_seconds": 900
+  },
+  "children": [
+    {
+      "generator_id": "surface-grounded",
+      "allowed_actions": [
+        "source-integrity",
+        "python-tests",
+        "polyia-demo",
+        "foundation-audit",
+        "external-agent"
+      ],
+      "limits": {
+        "max_tasks": 64,
+        "total_seconds": 900
+      }
+    },
+    {
+      "generator_id": "source-review",
+      "allowed_actions": [
+        "source-integrity",
+        "external-agent"
+      ],
+      "limits": {
+        "max_tasks": 8,
+        "total_seconds": 300
+      }
+    }
+  ]
+}

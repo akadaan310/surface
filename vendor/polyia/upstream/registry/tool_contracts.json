@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "implemented_tools": [
+    {
+      "id": "polyia.polynomial",
+      "version": "1.0",
+      "input_schema": "a,b: <=33 exact integer/rational coefficients",
+      "output": "Recorded command receipt plus registered report",
+      "effects": "pure computation plus admitted ledger event",
+      "capability": "operator command",
+      "implementation": "polyia.experiments.run_registered",
+      "reads": "declared parameters only; source code identity separately captured",
+      "no_llm": true,
+      "network": false,
+      "subprocess": false,
+      "max_steps": "fixed finite kernel bounds",
+      "timeout_policy": "pure bounded kernel; production broker isolation remains commissioned",
+      "idempotency": "Ledger command_id and expected_revision"
+    },
+    {
+      "id": "polyia.grammar-promotion",
+      "version": "1.0",
+      "input_schema": "finite grammar alphabet<=16,words<=128,word length<=12",
+      "output": "Recorded command receipt plus registered report",
+      "effects": "pure computation plus admitted ledger event",
+      "capability": "operator command",
+      "implementation": "polyia.experiments.run_registered",
+      "reads": "declared parameters only; source code identity separately captured",
+      "no_llm": true,
+      "network": false,
+      "subprocess": false,
+      "max_steps": "fixed finite kernel bounds",
+      "timeout_policy": "pure bounded kernel; production broker isolation remains commissioned",
+      "idempotency": "Ledger command_id and expected_revision"
+    },
+    {
+      "id": "polyia.qpath",
+      "version": "1.0",
+      "input_schema": "<=32typed inputs and<=32registered joint-input steps",
+      "output": "Recorded command receipt plus registered report",
+      "effects": "pure computation plus admitted ledger event",
+      "capability": "operator command",
+      "implementation": "polyia.experiments.run_registered",
+      "reads": "declared parameters only; source code identity separately captured",
+      "no_llm": true,
+      "network": false,
+      "subprocess": false,
+      "max_steps": "fixed finite kernel bounds",
+      "timeout_policy": "pure bounded kernel; production broker isolation remains commissioned",
+      "idempotency": "Ledger command_id and expected_revision"
+    },
+    {
+      "id": "polyia.acceptance",
+      "version": "1.0",
+      "input_schema": "empty object only",
+      "output": "Recorded command receipt plus registered report",
+      "effects": "pure computation plus admitted ledger event",
+      "capability": "operator command",
+      "implementation": "polyia.experiments.run_registered",
+      "reads": "declared parameters only; source code identity separately captured",
+      "no_llm": true,
+      "network": false,
+      "subprocess": false,
+      "max_steps": "fixed finite kernel bounds",
+      "timeout_policy": "pure bounded kernel; production broker isolation remains commissioned",
+      "idempotency": "Ledger command_id and expected_revision"
+    }
+  ],
+  "production_broker_obligations": [
+    "PIA-090",
+    "PIA-091",
+    "PIA-092",
+    "PIA-093",
+    "PIA-094",
+    "PIA-095",
+    "PIA-096"
+  ],
+  "optional_model_clients": "not installed; must submit ordinary proposals through the same authority boundary"
+}

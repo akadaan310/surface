@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="1272" viewBox="0 0 1120 1272" role="img" aria-labelledby="title description">
+<title id="title">Surface canonical repository, V3 continuation and directive harness</title>
+<desc id="description">Reviewed grounded commission dependency graph. Task execution success never asserts scientific acceptance.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#64748b"/></marker></defs>
+<rect width="1120" height="1272" fill="#f4f7fb"/>
+<g font-family="sans-serif" fill="#15263b">
+<text x="38" y="43" font-size="25" font-weight="700">Surface canonical repository, V3 continuation and directive harness</text>
+<text x="38" y="74" font-size="15">surface-consolidation-20261025 · 5043 UTF-8 bytes · explicit reviewed mapping</text>
+<text x="38" y="103" font-size="15">Scientific acceptance: NOT_EVALUATED</text>
+<text x="38" y="131" font-size="12">Source SHA-256: a11fa2b2730548376fb8f9a7b5bc84c71b1abf1ac3ddeb2f933b85a353117ee0</text>
+<path d="M220 226 H60 V289 H220" fill="none" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow)"/>
+<path d="M220 226 H68 V383 H220" fill="none" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow)"/>
+<path d="M220 226 H76 V477 H220" fill="none" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow)"/>
+<path d="M220 320 H84 V571 H220" fill="none" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow)"/>
+<path d="M220 320 H92 V665 H220" fill="none" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow)"/>
+<path d="M220 320 H100 V759 H220" fill="none" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow)"/>
+<path d="M220 508 H100 V759 H220" fill="none" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow)"/>
+<path d="M220 320 H108 V853 H220" fill="none" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow)"/>
+<path d="M220 320 H52 V947 H220" fill="none" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow)"/>
+<path d="M220 508 H60 V1041 H220" fill="none" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow)"/>
+<path d="M220 414 H60 V1041 H220" fill="none" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow)"/>
+<path d="M220 320 H68 V1135 H220" fill="none" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow)"/>
+<path d="M220 508 H68 V1135 H220" fill="none" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow)"/>
+<path d="M220 414 H68 V1135 H220" fill="none" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="222" y="166" width="846" height="66" rx="9" fill="#e5f0ff" stroke="#b5c8de"/>
+<text x="242" y="192" font-size="17" font-weight="700">verify-source · source-integrity</text>
+<text x="242" y="215" font-size="13">PENDING: execution receipt required · deadline ≤ 60s · source: R01, R02, R17, R18</text>
+<rect x="222" y="260" width="846" height="66" rx="9" fill="#e5f0ff" stroke="#b5c8de"/>
+<text x="242" y="286" font-size="17" font-weight="700">verify-foundation · foundation-audit</text>
+<text x="242" y="309" font-size="13">PENDING: execution receipt required · deadline ≤ 60s · source: R02, R04, R06, R12</text>
+<rect x="222" y="354" width="846" height="66" rx="9" fill="#e5f0ff" stroke="#b5c8de"/>
+<text x="242" y="380" font-size="17" font-weight="700">verify-polyia · polyia-demo</text>
+<text x="242" y="403" font-size="13">PENDING: execution receipt required · deadline ≤ 60s · source: R08, R14, R16</text>
+<rect x="222" y="448" width="846" height="66" rx="9" fill="#e5f0ff" stroke="#b5c8de"/>
+<text x="242" y="474" font-size="17" font-weight="700">verify-supervisor · python-tests</text>
+<text x="242" y="497" font-size="13">PENDING: execution receipt required · deadline ≤ 60s · source: R03, R15, R18</text>
+<rect x="222" y="542" width="846" height="66" rx="9" fill="#edf0f4" stroke="#b5c8de"/>
+<text x="242" y="568" font-size="17" font-weight="700">consolidate-v3 · external-agent</text>
+<text x="242" y="591" font-size="13">BLOCKED: external adapter absent · deadline ≤ 120s · source: R04, R06, R12</text>
+<rect x="222" y="636" width="846" height="66" rx="9" fill="#edf0f4" stroke="#b5c8de"/>
+<text x="242" y="662" font-size="17" font-weight="700">continue-science · external-agent</text>
+<text x="242" y="685" font-size="13">BLOCKED: external adapter absent · deadline ≤ 120s · source: R04</text>
+<rect x="222" y="730" width="846" height="66" rx="9" fill="#edf0f4" stroke="#b5c8de"/>
+<text x="242" y="756" font-size="17" font-weight="700">create-initiative · external-agent</text>
+<text x="242" y="779" font-size="13">BLOCKED: external adapter absent · deadline ≤ 120s · source: R13</text>
+<rect x="222" y="824" width="846" height="66" rx="9" fill="#edf0f4" stroke="#b5c8de"/>
+<text x="242" y="850" font-size="17" font-weight="700">design-renderer · external-agent</text>
+<text x="242" y="873" font-size="13">BLOCKED: external adapter absent · deadline ≤ 120s · source: R05</text>
+<rect x="222" y="918" width="846" height="66" rx="9" fill="#edf0f4" stroke="#b5c8de"/>
+<text x="242" y="944" font-size="17" font-weight="700">document-atlas · external-agent</text>
+<text x="242" y="967" font-size="13">BLOCKED: external adapter absent · deadline ≤ 120s · source: R07</text>
+<rect x="222" y="1012" width="846" height="66" rx="9" fill="#edf0f4" stroke="#b5c8de"/>
+<text x="242" y="1038" font-size="17" font-weight="700">document-harnesses · external-agent</text>
+<text x="242" y="1061" font-size="13">BLOCKED: external adapter absent · deadline ≤ 120s · source: R03, R08, R09, R14, R15, R17, R18</text>
+<rect x="222" y="1106" width="846" height="66" rx="9" fill="#edf0f4" stroke="#b5c8de"/>
+<text x="242" y="1132" font-size="17" font-weight="700">publish-repository · external-agent</text>
+<text x="242" y="1155" font-size="13">BLOCKED: external adapter absent · deadline ≤ 120s · source: R01, R02, R19</text>
+<text x="38" y="1244" font-size="13">Exact source quotes, unresolved intervals, review decisions and evidence contracts accompany this diagram.</text>
+</g></svg>

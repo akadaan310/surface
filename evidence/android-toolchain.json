@@ -1,0 +1,32 @@
+[
+  {
+    "package": "ndk",
+    "url": "https://dl.google.com/android/repository/android-ndk-r30-linux.zip",
+    "size": 738633529,
+    "sha1": "5107f898313790e449e87eee2183d9a20602dee9",
+    "sha256": "753611f410d002cfcd3f3dc2ef49aad532089d3180b436c060a90bf0fcb64df2",
+    "official_metadata": "repository2-3.xml",
+    "verification": "published SHA-1 and byte length matched",
+    "build_tools_initial_transfer": null
+  },
+  {
+    "package": "build-tools",
+    "url": "https://dl.google.com/android/repository/build-tools_r36_linux.zip",
+    "size": 63737259,
+    "sha1": "b0b6376977657e8ad9b969bacf4093601da2c6fb",
+    "sha256": "5d9ac77fb6ff43d9da518a337b4fcf8f9097113df531d99ccefe80ef7ce8250b",
+    "official_metadata": "repository2-3.xml",
+    "verification": "published SHA-1 and byte length matched",
+    "build_tools_initial_transfer": "truncated; resumed from exact offset; verified complete hash"
+  },
+  {
+    "package": "platform",
+    "url": "https://dl.google.com/android/repository/platform-36_r02.zip",
+    "size": 65878410,
+    "sha1": "2c1a80dd4d9f7d0e6dd336ec603d9b5c55a6f576",
+    "sha256": "37607369a28c5b640b3a7998868d45898ebcb777565a0e85f9acf36f29631d2e",
+    "official_metadata": "repository2-3.xml",
+    "verification": "published SHA-1 and byte length matched",
+    "build_tools_initial_transfer": null
+  }
+]

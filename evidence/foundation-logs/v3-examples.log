@@ -1,0 +1,87 @@
+{
+  "charts": [
+    {
+      "id": "wave",
+      "origin": [
+        0,
+        0
+      ],
+      "unit": "space_unit",
+      "operation": "sine",
+      "phase": 0.0,
+      "scale": 1.0
+    },
+    {
+      "id": "slope",
+      "origin": [
+        3,
+        4
+      ],
+      "unit": "space_unit",
+      "operation": "derivative",
+      "phase": 0.0,
+      "scale": 1.0
+    },
+    {
+      "id": "intensity",
+      "origin": [
+        6,
+        0
+      ],
+      "unit": "space_unit",
+      "operation": "energy",
+      "phase": 0.0,
+      "scale": 1.0
+    }
+  ],
+  "edges": [
+    {
+      "from": "wave",
+      "to": "slope",
+      "origin_distance": 5.0,
+      "unit": "space_unit",
+      "operator": "sine->derivative",
+      "distance_type": "environment_metric_not_function_distance"
+    },
+    {
+      "from": "wave",
+      "to": "intensity",
+      "origin_distance": 6.0,
+      "unit": "space_unit",
+      "operator": "sine->energy",
+      "distance_type": "environment_metric_not_function_distance"
+    },
+    {
+      "from": "slope",
+      "to": "intensity",
+      "origin_distance": 5.0,
+      "unit": "space_unit",
+      "operator": "derivative->energy",
+      "distance_type": "environment_metric_not_function_distance"
+    }
+  ],
+  "wave_at_zero": {
+    "wave": 0.0,
+    "slope": 1.0,
+    "intensity": 0.0
+  },
+  "quantum_pair": {
+    "classical_word": 0,
+    "width": 1,
+    "measurement_probability": 0.4999999999999999,
+    "fubini_study_distance": 0.7853981633974484,
+    "basis_mapping": "integer i -> computational basis |i>, qubit0 LSB"
+  },
+  "quantum_state": {
+    "schema": "complex-f64-le/1",
+    "qubits": 1,
+    "basis_order": "index_i_is_basis_i; qubit_0_lsb",
+    "raw": {
+      "sha256": "fcf3f3d9ac2a0f3c513c099438fbc7ddd5ec30962151e9b50445fea21b1538c3",
+      "length": 32,
+      "hex": "cc3b7f669ea0e63f0000000000000000cc3b7f669ea0e63f0000000000000000",
+      "bit_order": "msb0 per byte",
+      "endianness": "not_applicable_for_opaque_bytes"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "schema": "surface.immutable-chunks.v1",
+  "logical_path": "lineage/SURFACE_PHYSICAL_COSMOS_CONTINUATION_v1.zip",
+  "bytes": 16736093,
+  "sha256": "ca8f9202b4c4acc8ab39d3a7305f4ba4cf80d016a384db9714019208cd5ae622",
+  "parts": [
+    {
+      "path": "lineage/cosmos-continuation-parts/part-001.bin",
+      "bytes": 8388608,
+      "sha256": "2eb1788df6c7a04592ca746dd22f9ed21c1da1ba9723d50081158de24de2f025",
+      "offset": 0
+    },
+    {
+      "path": "lineage/cosmos-continuation-parts/part-002.bin",
+      "bytes": 8347485,
+      "sha256": "085d78f46213e605f0ae243ca16eabac5adb4b30b38e54c4f37d420a54f261d9",
+      "offset": 8388608
+    }
+  ],
+  "reason": "GitHub connector request body limit 16 MiB; binary base64 transport exceeds ceiling. Concatenation reproduces original archive byte for byte."
+}

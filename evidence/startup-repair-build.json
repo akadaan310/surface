@@ -1,0 +1,183 @@
+{
+  "schema": "surface-startup-repair-package-v1",
+  "passed": true,
+  "artifact": "build/startup-repair/Surface-Recovery-0.1.1-arm64.apk",
+  "bytes": 1369050,
+  "sha256": "eb430f4a71f296059901fd383edf8f128c0b4795c2df737eb1ef99e1d98ab120",
+  "application_id": "org.surface.nativeink.recovery",
+  "launcher_name": "Surface Recovery",
+  "version": "0.1.1",
+  "activity_class": "org.surface.nativeink.SurfaceActivity",
+  "native_library_sha256": "0f473e75eef6e3741e9dc3c1a3b7ca7ab9af12618e6ef26384378bc302a0bf1b",
+  "certificate_sha256": "71590989048342b1865937cb8588c2f270b56d9adb355bcf74db7eb53a8e7d16",
+  "checks": {
+    "recovery_application_id": true,
+    "fully_qualified_existing_activity": true,
+    "arm64": true,
+    "minimum_api29": true,
+    "no_requested_permissions": true,
+    "version_code2": true,
+    "pinned_recovery_signing_certificate": true,
+    "all_load_segments_16k_aligned": true,
+    "platform_only_dynamic_dependencies": true,
+    "jni_and_native_entry_points": true,
+    "compiled_class_matches_passing_regression": true,
+    "archive_crc": true,
+    "native_payload_unchanged": true,
+    "assets_match_recovered_sources": true
+  },
+  "commands": [
+    {
+      "label": "compile-java",
+      "argv": [
+        "java",
+        "-m",
+        "jdk.compiler/com.sun.tools.javac.Main",
+        "-source",
+        "8",
+        "-target",
+        "8",
+        "-classpath",
+        "/workspace/scratch/976a326a6786/android-toolchain/android-36/android.jar",
+        "-d",
+        "/workspace/scratch/976a326a6786/surface-native/build/startup-repair/classes",
+        "/workspace/scratch/976a326a6786/surface-native/android/SurfaceActivity.java"
+      ],
+      "timeout_seconds": 60,
+      "exit_code": 0,
+      "log": "evidence/startup-package/compile-java.log"
+    },
+    {
+      "label": "dex",
+      "argv": [
+        "java",
+        "-cp",
+        "/workspace/scratch/976a326a6786/android-toolchain/android-16/lib/d8.jar",
+        "com.android.tools.r8.D8",
+        "--min-api",
+        "29",
+        "--lib",
+        "/workspace/scratch/976a326a6786/android-toolchain/android-36/android.jar",
+        "--output",
+        "/workspace/scratch/976a326a6786/surface-native/build/startup-repair",
+        "/workspace/scratch/976a326a6786/surface-native/build/startup-repair/classes/org/surface/nativeink/SurfaceActivity.class"
+      ],
+      "timeout_seconds": 60,
+      "exit_code": 0,
+      "log": "evidence/startup-package/dex.log"
+    },
+    {
+      "label": "resources",
+      "argv": [
+        "/workspace/scratch/976a326a6786/android-toolchain/android-16/aapt2",
+        "link",
+        "-I",
+        "/workspace/scratch/976a326a6786/android-toolchain/android-36/android.jar",
+        "--manifest",
+        "/workspace/scratch/976a326a6786/surface-native/android/AndroidManifest.recovery.xml",
+        "--min-sdk-version",
+        "29",
+        "--target-sdk-version",
+        "36",
+        "-A",
+        "/workspace/scratch/976a326a6786/surface-native/data",
+        "-o",
+        "/workspace/scratch/976a326a6786/surface-native/build/startup-repair/unsigned.apk"
+      ],
+      "timeout_seconds": 60,
+      "exit_code": 0,
+      "log": "evidence/startup-package/resources.log"
+    },
+    {
+      "label": "align",
+      "argv": [
+        "/workspace/scratch/976a326a6786/android-toolchain/android-16/zipalign",
+        "-f",
+        "-p",
+        "4",
+        "/workspace/scratch/976a326a6786/surface-native/build/startup-repair/unsigned.apk",
+        "/workspace/scratch/976a326a6786/surface-native/build/startup-repair/aligned.apk"
+      ],
+      "timeout_seconds": 60,
+      "exit_code": 0,
+      "log": "evidence/startup-package/align.log"
+    },
+    {
+      "label": "sign",
+      "argv": [
+        "/workspace/scratch/976a326a6786/android-toolchain/android-16/apksigner",
+        "sign",
+        "--ks",
+        "/workspace/scratch/976a326a6786/surface-signing-private/surface-recovery.keystore",
+        "--ks-key-alias",
+        "surface-development",
+        "--ks-pass",
+        "pass:android",
+        "--key-pass",
+        "pass:android",
+        "--out",
+        "/workspace/scratch/976a326a6786/surface-native/build/startup-repair/Surface-Recovery-0.1.1-arm64.apk",
+        "/workspace/scratch/976a326a6786/surface-native/build/startup-repair/aligned.apk"
+      ],
+      "timeout_seconds": 60,
+      "exit_code": 0,
+      "log": "evidence/startup-package/sign.log"
+    },
+    {
+      "label": "verify-signature",
+      "argv": [
+        "/workspace/scratch/976a326a6786/android-toolchain/android-16/apksigner",
+        "verify",
+        "--verbose",
+        "--print-certs",
+        "/workspace/scratch/976a326a6786/surface-native/build/startup-repair/Surface-Recovery-0.1.1-arm64.apk"
+      ],
+      "timeout_seconds": 60,
+      "exit_code": 0,
+      "log": "evidence/startup-package/verify-signature.log"
+    },
+    {
+      "label": "verify-alignment",
+      "argv": [
+        "/workspace/scratch/976a326a6786/android-toolchain/android-16/zipalign",
+        "-c",
+        "-v",
+        "4",
+        "/workspace/scratch/976a326a6786/surface-native/build/startup-repair/Surface-Recovery-0.1.1-arm64.apk"
+      ],
+      "timeout_seconds": 60,
+      "exit_code": 0,
+      "log": "evidence/startup-package/verify-alignment.log"
+    },
+    {
+      "label": "inspect-manifest",
+      "argv": [
+        "/workspace/scratch/976a326a6786/android-toolchain/android-16/aapt2",
+        "dump",
+        "badging",
+        "/workspace/scratch/976a326a6786/surface-native/build/startup-repair/Surface-Recovery-0.1.1-arm64.apk"
+      ],
+      "timeout_seconds": 60,
+      "exit_code": 0,
+      "log": "evidence/startup-package/inspect-manifest.log"
+    },
+    {
+      "label": "inspect-native",
+      "argv": [
+        "readelf",
+        "--wide",
+        "--file-header",
+        "--program-headers",
+        "--dynamic",
+        "--dyn-syms",
+        "/workspace/scratch/976a326a6786/surface-native/lineage/Surface-0.1.0-libsurface.so"
+      ],
+      "timeout_seconds": 60,
+      "exit_code": 0,
+      "log": "evidence/startup-package/inspect-native.log"
+    }
+  ],
+  "change": "Static System.loadLibrary(\"surface\") before Java JNI calls; side-by-side application identity because original private key was unavailable",
+  "android_device_execution": "NOT_RUN; host JVM JNI regression and package verification only",
+  "device_crash_causality": "Concrete matching startup defect reproduced on actual Java class; original phone log unavailable"
+}

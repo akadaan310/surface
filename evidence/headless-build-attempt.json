@@ -1,0 +1,6 @@
+{
+  "schema": "SURFACE-NATIVE-BUILD-ATTEMPT/1",
+  "status": "succeeded",
+  "testSuitesRun": 10,
+  "receipt": "evidence/headless-build.json"
+}

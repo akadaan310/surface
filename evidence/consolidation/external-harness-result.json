@@ -1,0 +1,23 @@
+{
+  "commission_id": "surface-consolidation-20261025",
+  "task_id": "document-harnesses",
+  "task_sha256": "428238dec166e58434b1209f82724e584b56f71cb0f3a3142e184d28f0f0a4d1",
+  "bundle_manifest_sha256": "43ee1e60a102e5024c9e7d27e4910fa2cb1593bf634c0997a16633676de10a41",
+  "run_sha256": "6248cfc80aaa18ddee86ba247840864fbe9a9e59c091f5a9cc498ae35e01a36b",
+  "submission_epoch": 1,
+  "schema": "surface.commission.agent-result.v1",
+  "source_sha256": "a11fa2b2730548376fb8f9a7b5bc84c71b1abf1ac3ddeb2f933b85a353117ee0",
+  "outcome": "PROPOSED",
+  "summary": "Root authoring agent submits implemented harness and state-machine documentation for review. Execution/scientific acceptance remain separate.",
+  "scientific_acceptance": "NOT_EVALUATED",
+  "artifacts": [
+    {
+      "path": "ARCHITECTURE_AND_HARNESSES.md",
+      "bytes": 10647,
+      "sha256": "8749303ce946654135f61a0a80f18495d99a1228583836764f1c3509e3a53da9",
+      "command": "python3 -B tools/build_native.py --test",
+      "observed_result": "9 native test executables and63 Python tests passed; the document inventories actual source paths, interfaces and limits. This result does not prove every scientific obligation.",
+      "tolerance": "Exact artifact byte hash; all executed tests successful; scientific tolerances remain per-gate."
+    }
+  ]
+}

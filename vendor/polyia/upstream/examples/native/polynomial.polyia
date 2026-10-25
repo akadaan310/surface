@@ -1,0 +1,11 @@
+; Q[x] division and differentiation with exact rational coefficients.
+(commission
+  (profile "polyia.native/0.1")
+  (budget 128)
+  (let numerator Polynomial (poly -1 0 1))
+  (let denominator Polynomial (poly -1 1))
+  (let division Division (divmod numerator denominator))
+  (emit quotient (quotient division))
+  (emit remainder (remainder division))
+  (emit derivative_at_three_halves (evaluate (derivative numerator) 3/2))
+)

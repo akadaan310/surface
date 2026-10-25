@@ -1,0 +1,3 @@
+# Preserve exact source, catalogue and evidence bytes across checkouts.
+# In particular, do not normalize the original CIE table's CRLF endings.
+* -text

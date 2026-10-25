@@ -1,0 +1,45 @@
+{
+  "bell": [
+    0.4999999999999999,
+    0.0,
+    0.0,
+    0.4999999999999999
+  ],
+  "bell_counts": {
+    "00": 520,
+    "01": 0,
+    "10": 0,
+    "11": 480
+  },
+  "open_system_final_excited": 0.12245642825298171,
+  "open_system_expected": 0.12245642825298195,
+  "accelerator_cases": 20,
+  "discovery": {
+    "status": "ACCEPT",
+    "best": {
+      "operations": [
+        {
+          "gate": "H",
+          "target": 0
+        },
+        {
+          "gate": "CX",
+          "control": 0,
+          "target": 1
+        }
+      ],
+      "error": 1.5700924586837752e-16,
+      "depth": 2,
+      "trials": 20
+    },
+    "searched": 20,
+    "target_probabilities": [
+      0.5,
+      0,
+      0,
+      0.5
+    ]
+  },
+  "ledger_verified": true,
+  "ledger_head": "89862addc7e6339f14e8355e31c8d79557ef84dc0504e15cb5a434567a32800f"
+}

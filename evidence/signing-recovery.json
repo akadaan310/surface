@@ -1,0 +1,14 @@
+{
+  "new_certificate_sha256": "71590989048342b1865937cb8588c2f270b56d9adb355bcf74db7eb53a8e7d16",
+  "new_application_id": "org.surface.nativeink.recovery",
+  "old_certificate_sha256": "4bcd88328555debd1aa87107492348a1503eeb3615a9ec20960a0066ed9a6662",
+  "old_key_status": "UNAVAILABLE_AFTER_WORKSPACE_CLEAR",
+  "backup_filename": "SURFACE_RECOVERY_SIGNING_BACKUP_PRIVATE.zip",
+  "private_backup_bytes": 5238,
+  "private_backup_sha256": "9941224fb67f2f099dfbdbabe566bd1fd38849e51b4759f0c521ccb9263f6f8e",
+  "user_authorization": "Explicit private signing-key backup authorization received 2026-10-25",
+  "scope": "Development signing only; private key excluded from source and APK assets",
+  "private_backup_saved": true,
+  "private_backup_download_roundtrip": "SHA256_AND_BYTES_EXACT",
+  "private_backup_in_public_source": false
+}

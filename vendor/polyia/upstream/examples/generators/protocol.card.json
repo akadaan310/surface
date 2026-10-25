@@ -1,0 +1,33 @@
+{
+  "schema": "polyia.generator-card/0.1",
+  "id": "request-ack-protocol",
+  "version": "1.0.0",
+  "family": "regular",
+  "alphabet": [
+    "PING",
+    "ACK"
+  ],
+  "seed": 0,
+  "grammar": {
+    "op": "sequence",
+    "parts": [
+      {
+        "op": "token",
+        "token": "PING"
+      },
+      {
+        "op": "repeat",
+        "body": {
+          "op": "token",
+          "token": "ACK"
+        },
+        "min": 1,
+        "max": 2
+      }
+    ]
+  },
+  "bounds": {
+    "work_units": 10000,
+    "max_candidates": 64
+  }
+}

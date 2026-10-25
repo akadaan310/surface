@@ -1,0 +1,14 @@
+test_basis_roundtrip (test_atlas.Tests.test_basis_roundtrip) ... ok
+test_born_probabilities (test_atlas.Tests.test_born_probabilities) ... ok
+test_bridge (test_atlas.Tests.test_bridge) ... ok
+test_density_trace (test_atlas.Tests.test_density_trace) ... ok
+test_exact_bytes (test_atlas.Tests.test_exact_bytes) ... ok
+test_metric (test_atlas.Tests.test_metric) ... ok
+test_phase_equivalence (test_atlas.Tests.test_phase_equivalence) ... ok
+test_tamper (test_atlas.Tests.test_tamper) ... ok
+test_wave_derivative (test_atlas.Tests.test_wave_derivative) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.001s
+
+OK

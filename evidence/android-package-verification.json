@@ -1,0 +1,85 @@
+{
+  "passed": true,
+  "artifact": "build/Surface-arm64.apk",
+  "bytes": 1369050,
+  "sha256": "0a6f32c450c931699eaf75778c5e7d1fae1b5cfc1123d32aeac93d5f46a2f8da",
+  "checks": {
+    "arm64_package": true,
+    "minimum_api_29": true,
+    "no_requested_permissions": true,
+    "native_arm64_elf": true,
+    "elf_16k_page_alignment": true,
+    "only_platform_dynamic_libraries": true,
+    "native_and_jni_entry_points": true,
+    "archive_crc": true,
+    "one_owned_renderer_library": true,
+    "packaged_library_matches_inspected_elf": true
+  },
+  "verification": {
+    "signature": {
+      "command": [
+        "/workspace/scratch/976a326a6786/android-toolchain/android-16/apksigner",
+        "verify",
+        "--verbose",
+        "--print-certs",
+        "/workspace/scratch/976a326a6786/surface-native/build/Surface-arm64.apk"
+      ],
+      "exit_code": 0,
+      "evidence": "evidence/android-signature.txt"
+    },
+    "alignment": {
+      "command": [
+        "/workspace/scratch/976a326a6786/android-toolchain/android-16/zipalign",
+        "-c",
+        "-v",
+        "4",
+        "/workspace/scratch/976a326a6786/surface-native/build/Surface-arm64.apk"
+      ],
+      "exit_code": 0,
+      "evidence": "evidence/android-alignment.txt"
+    },
+    "manifest": {
+      "command": [
+        "/workspace/scratch/976a326a6786/android-toolchain/android-16/aapt2",
+        "dump",
+        "badging",
+        "/workspace/scratch/976a326a6786/surface-native/build/Surface-arm64.apk"
+      ],
+      "exit_code": 0,
+      "evidence": "evidence/android-manifest.txt"
+    },
+    "elf": {
+      "command": [
+        "/usr/bin/readelf",
+        "--wide",
+        "--file-header",
+        "--program-headers",
+        "--dynamic",
+        "--dyn-syms",
+        "/workspace/scratch/976a326a6786/surface-native/build/android/libsurface.so"
+      ],
+      "exit_code": 0,
+      "evidence": "evidence/android-elf.txt"
+    }
+  },
+  "libraries": [
+    "lib/arm64-v8a/libsurface.so"
+  ],
+  "elf_needed": [
+    "0x0000000000000001 (NEEDED)             Shared library: [libandroid.so]",
+    "0x0000000000000001 (NEEDED)             Shared library: [liblog.so]",
+    "0x0000000000000001 (NEEDED)             Shared library: [libaaudio.so]",
+    "0x0000000000000001 (NEEDED)             Shared library: [libm.so]",
+    "0x0000000000000001 (NEEDED)             Shared library: [libdl.so]",
+    "0x0000000000000001 (NEEDED)             Shared library: [libc.so]"
+  ],
+  "entry_points_observed": [
+    "ANativeActivity_onCreate",
+    "Java_org_surface_nativeink_SurfaceActivity_nativeDimensions",
+    "Java_org_surface_nativeink_SurfaceActivity_nativeOpen"
+  ],
+  "archive_entries": 14,
+  "runtime_permissions": [],
+  "device_execution": "NOT_RUN_NO_DEVICE_OR_EMULATOR",
+  "scope": "Package, ELF and signature checks only; not Android runtime acceptance"
+}

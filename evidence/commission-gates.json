@@ -1,0 +1,2104 @@
+{
+  "schema": "SURFACE-COMMISSION-GATES/1",
+  "recorded_at_utc": "2026-10-25T07:02:14.828830+00:00",
+  "assessment": "PARTIAL_NATIVE_INCREMENT_NOT_FULL_COMMISSION_ACCEPTANCE",
+  "status_vocabulary": [
+    "ACCEPT",
+    "REJECT",
+    "UNKNOWN",
+    "BLOCKED",
+    "NOT_STARTED"
+  ],
+  "status_counts": {
+    "ACCEPT": 0,
+    "REJECT": 0,
+    "UNKNOWN": 2,
+    "BLOCKED": 13,
+    "NOT_STARTED": 2
+  },
+  "authority_note": "Latest user instruction requires a native C/C++ binary and original renderer; browser/WebGL/WebView route requirements are superseded rather than silently marked passed. Other scientific obligations remain visible.",
+  "original_acceptance": {
+    "path": "lineage/commission-acceptance.original.json",
+    "sha256": "9d62726628fc6dc1c65b1deb3d06b1fbae28ec9420b0d48b41e622adbf3f8a58"
+  },
+  "original_commission": {
+    "archive": "lineage/SURFACE_PHYSICAL_COSMOS_CONTINUATION_v1.zip",
+    "archive_sha256": "ca8f9202b4c4acc8ab39d3a7305f4ba4cf80d016a384db9714019208cd5ae622",
+    "member": "SURFACE_PHYSICAL_COSMOS_V1/SURFACE_PHYSICAL_COSMOS_COMMISSION.md",
+    "member_sha256": "896386a0bf2107a22557baceae83823fd28eaae4181cb7ed2e0216bb9413c5c1",
+    "provisions_read": 100
+  },
+  "source_revision": {
+    "git_commit": null,
+    "status": "UNCOMMITTED_CONTENT_SNAPSHOT",
+    "content_fingerprint_sha256": "5c9803a9071d84041a557556207b1ddd986f71631045c6f76e16379724ca3c67",
+    "fingerprint_definition": "SHA-256 of source_hashes serialized as sorted compact UTF-8 JSON",
+    "binding_limit": "Hashes capture the reviewed working tree; no immutable repository revision is claimed. See recorded build commands and release manifest for artifact binding."
+  },
+  "source_hashes": {
+    "android/AndroidManifest.xml": "4e2cd41d7f254ecc0e5e72769ed82eb61db23f96599b8e5d8f9916212e4c83f5",
+    "android/SurfaceActivity.java": "bb142a681f2d97da5b5e1047d3bfbc3a6a5c9c9f96857d7717f611ebf67d9fea",
+    "android/native_main.cpp": "8169c6e1dc3f26a00721b9d6db29e12a6840f673895b5ff2d8cef16d5dc2b9c9",
+    "include/surface/acoustic.hpp": "5be851a3c1c62c76b961405476df7807029dda420a2cea1a7c80a747ccaeaaaf",
+    "include/surface/atlas.hpp": "c7d93c890e7878eb61a5ee764fbe8f0578ea3c32f6916ec46884fd76fffc52eb",
+    "include/surface/checkpoint.hpp": "1a7536639907b881c2d5ecfddeba5062e6dc20eb8adc93762cda834e13d791c8",
+    "include/surface/engine_service.hpp": "0a06de85f5e61a07fb3c7f17f6ac401da741eda9bb5b131381a4c8e636519e50",
+    "include/surface/input.hpp": "14fdabecd71a61d39286c0570c7ea5e5afa60c24a5b3bac180b302235b026142",
+    "include/surface/phantom.hpp": "44831debc6455f6feb854bfae00ab3bd01acb031f855d281a5467233436e7ad3",
+    "include/surface/physics.hpp": "d93ed0a6c71c9863c48b22b5636ad48e41b8fef296df0ab6536c5c69b1a1dbbf",
+    "include/surface/renderer.hpp": "520680e70c4a79c0366cac7101333b0ad2c41e736364ba952b241183c5c6c360",
+    "include/surface/session.hpp": "ed0047c3215cb074145e7694b40b57a82d15673aad406ef1d93c5cc3ae2467a8",
+    "src/acoustic.cpp": "71ad13d03add448c5bac98950640afda59dbda7afe72ec8035bd64260a7e96c4",
+    "src/atlas.cpp": "646ca509d607e6cc0e8cf9a7404fdeb043df59ae7485b3d5b057de5cd5fd59ca",
+    "src/checkpoint.cpp": "73c811442d0b66629d758a8691d1f0e60669775c59022899f90f61d1030e1670",
+    "src/cie1931.inc": "7f5741a7208f0fef34fb6fcd13ef46fe890e51aa06c5bf0644bb78fa883632c7",
+    "src/engine_service.cpp": "c27ded47cbc3b17088d1df9c96ed0a8ada1f934db5195c9e5abe3b50209cd6b9",
+    "src/main.cpp": "00e32ef77a73c34239c592d688a62fe352257227a7fc441423d1c2030ee9aa94",
+    "src/phantom.cpp": "8143187a0328f308a6bcaf263f07f085bed5f58f7fa2e596d03c3624ac46d70d",
+    "src/physics.cpp": "6da1bb70ac8693af7b1c4352b7b5cbf4ae3930912533bfba114a207a34342b4e",
+    "src/renderer.cpp": "95eb459658e0844c8c50b47e7baffc69ce3591d70f29e913d38fd5161a8d5303",
+    "src/session.cpp": "38a601d48cc99bc302804e751b04fbf6cfc38b0c47534d7f1f7f7ed1abfcb6e6",
+    "tests/test_acoustic.cpp": "834efd3ef437b0212474dedb28f572423c585b0a44af519746b86f25c71ef400",
+    "tests/test_atlas.cpp": "9264530b3b2b50bd6ec7afb5ac1936341282dc2a873a7b57d35facd568e0793e",
+    "tests/test_checkpoint.cpp": "346fbe3374555ba5bb250774d485d20ec7179c5baf53922ddf6e4cff09e19f79",
+    "tests/test_engine.cpp": "25e5bfbd8d6867ae797c0043fc0ecc6b0544dbcb390bd7c65cc4174aac4c2875",
+    "tests/test_input.cpp": "574b009a4087e53a30ecfd47a334bb7969910e1c480dd0adbd6d1f483e399588",
+    "tests/test_phantom.cpp": "3dcf44abef9abd01d7cb7ca0cbd1b17404b0b2b10116cceeb4bfa52cc150a13b",
+    "tests/test_physics.cpp": "15ef804d4df1ffb78817fcd7ea7bcc4164c7d684c7c6a9bde054bd697dfc9d4b",
+    "tests/test_renderer.cpp": "752a4933df6e4dad8a77895d93ae78900049904bae15b7b6132483cef8f4ea93",
+    "tests/test_session.cpp": "14dda2a7c33f24d442a7d6dc10a262a6062bc694267a7c7deaf9bc5a59e2e71c",
+    "tests/test_supervisor.py": "496a87606f801f93faa4de45262c0be59ea8c85af56ba48123b406c8cfb4245d",
+    "tools/build_android.py": "88049cf6b3a85b6a189ae1defea7ed0ea9f1f22d85c5785172ff823ad07a8b40",
+    "tools/build_native.py": "e6db951787ce5c4e936c8ae5a5d95c24aeb1d6ff1c3668ab38196ccaf21281c7",
+    "tools/package_release.py": "ecb02ea01e5bccbf8cf13f43e15f4b017d2822e7c2d88c77a9db8e3860e00692",
+    "tools/supervise.py": "b71911546fa84b29b890e8b755cbb0c6177823c51c15a23bdd67548af34b7cbf",
+    "tools/verify_android.py": "ee681004ceb6e74e22501852a642dbbf9022927bf937a2711c2bd0b2276398f5"
+  },
+  "evidence_policy": "Read existing fresh receipts and verifier sources. No build outputs or code changed for this report; no unprinted numerical residual is invented. A component pass does not close a larger gate.",
+  "receipt_required_fields": [
+    "gate_id",
+    "task_version",
+    "command_or_api",
+    "source_revision",
+    "input_hashes",
+    "environment",
+    "verifier_hash",
+    "observed_values",
+    "units",
+    "tolerances",
+    "output_hashes",
+    "status",
+    "evidence_paths",
+    "blocker_or_deviation"
+  ],
+  "summary": {
+    "whole_gates_accepted": 0,
+    "native_cpp_suites_passed": 9,
+    "python_supervisor_tests_passed": 14,
+    "original_foundation_tests_passed": 145,
+    "foundation_exact_regenerated_files": 125,
+    "foundation_numeric_tolerance_used": false,
+    "historical_Octave_cases_unknown": 8,
+    "historical_wave_validation": "UNKNOWN",
+    "lost_session_source_revision_url_jobs": "UNKNOWN_OR_UNAVAILABLE",
+    "android_device_execution": "UNKNOWN",
+    "external_repository_and_site_publication": "BLOCKED; see recovery inventory"
+  },
+  "foundation_archives": [
+    {
+      "name": "continuation",
+      "bytes": 16736093,
+      "sha256": "ca8f9202b4c4acc8ab39d3a7305f4ba4cf80d016a384db9714019208cd5ae622"
+    },
+    {
+      "name": "v3",
+      "bytes": 16666087,
+      "sha256": "4b8decefc53d7f6776ed668cfc2f3ab48660f68e5a47ddfcd4fb346548c32ace"
+    },
+    {
+      "name": "v2",
+      "bytes": 16643831,
+      "sha256": "0e37728a910431be8a3e7290caaf4f49481b6fc12643f336b4debfda4642e92b"
+    },
+    {
+      "name": "phantom",
+      "bytes": 17147236,
+      "sha256": "b66fb352ad51c6ed09f1059b0a72fdcf0f38ee81431c6f3099ba20a4e4076fbb"
+    },
+    {
+      "name": "oracle",
+      "bytes": 12191,
+      "sha256": "cbe3097cbaef23369134be894e13a8df96832efcad2577633d040fe8cec1b26d"
+    }
+  ],
+  "foundation_exact_command_receipt": "evidence/foundation-replay.json",
+  "native_exact_command_receipt": "evidence/headless-build.json",
+  "native_log": "evidence/native-final-tests.log",
+  "inherited_v2_gates": [
+    {
+      "id": "G0",
+      "status": "ACCEPT",
+      "scope": "Supplied archive identities, original documented local unit tests and PHANTOM cold replay only",
+      "evidence": [
+        "evidence/foundation-replay.json"
+      ],
+      "remaining": "Does not include absent full Language Lab corpus or broader integrated package"
+    },
+    {
+      "id": "G1",
+      "status": "BLOCKED",
+      "scope": "Selected native numeric/word adapters pass",
+      "remaining": "Complete binary<->typed IR<->PHANTOM conformance and loss-aware integration"
+    },
+    {
+      "id": "G2",
+      "status": "BLOCKED",
+      "scope": "Original Oracle single-harness examples and native ideal-gate fixtures pass",
+      "remaining": "Fresh >=2 independent-backend state/density/channel comparisons, CPTP/trace/positivity and applicable noise/shot semantics"
+    },
+    {
+      "id": "G3",
+      "status": "BLOCKED",
+      "scope": "Gaia CSV directions are a separate accepted bounded dataset",
+      "remaining": "Public FITS/WCS/calibrated spectrum/measurement pipeline with uncertainty and independent reference"
+    },
+    {
+      "id": "G4",
+      "status": "NOT_STARTED",
+      "scope": "No native collider event analysis",
+      "remaining": "Actual ROOT/HepMC event receipt, source offsets, particle graph, kinematics, histograms and independent comparison"
+    },
+    {
+      "id": "G5",
+      "status": "BLOCKED",
+      "scope": "No hardware compilation/calibration receipt",
+      "remaining": "Versioned target/coupler/calibration snapshot, logical-to-physical map, compiled IR, shot/cost estimates and simulator checks; physical submissions require separate authorization"
+    },
+    {
+      "id": "G6",
+      "status": "BLOCKED",
+      "scope": "Original finite examples/replayed scoped discovery retained",
+      "remaining": "Held-out cross-substrate generator induction with baselines, nulls and complete failure controls"
+    },
+    {
+      "id": "G7",
+      "status": "BLOCKED",
+      "scope": "Foundation replay and native continuation proven separately",
+      "remaining": "Clean-room repeatability of the integrated full v2 package and missing data/hardware dependencies"
+    }
+  ],
+  "gates": [
+    {
+      "id": "G00",
+      "title": "Recover current workspace and immutable baselines",
+      "depends_on": [],
+      "provisions": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        91
+      ],
+      "required_evidence": "recovery/inventory.json; original hashes; current source snapshot",
+      "status": "UNKNOWN",
+      "receipt": {
+        "gate_id": "G00",
+        "task_version": "native-bounded-increment/2026-10-25",
+        "source_revision": {
+          "git_commit": null,
+          "status": "UNCOMMITTED_CONTENT_SNAPSHOT",
+          "content_fingerprint_sha256": "5c9803a9071d84041a557556207b1ddd986f71631045c6f76e16379724ca3c67",
+          "fingerprint_definition": "SHA-256 of source_hashes serialized as sorted compact UTF-8 JSON",
+          "binding_limit": "Hashes capture the reviewed working tree; no immutable repository revision is claimed. See recorded build commands and release manifest for artifact binding."
+        },
+        "input_hashes": {
+          "lineage/commission-acceptance.original.json": "9d62726628fc6dc1c65b1deb3d06b1fbae28ec9420b0d48b41e622adbf3f8a58",
+          "lineage/SURFACE_PHYSICAL_COSMOS_CONTINUATION_v1.zip": "ca8f9202b4c4acc8ab39d3a7305f4ba4cf80d016a384db9714019208cd5ae622"
+        },
+        "environment": {
+          "native_host_receipt": "evidence/headless-build.json",
+          "native_compiler": "c++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
+          "native_platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+          "foundation_runtime": {
+            "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+            "executable": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+            "numpy": "2.3.5",
+            "scipy": "1.17.0"
+          },
+          "Android_runtime": "not executed"
+        },
+        "verifier_hash": {},
+        "output_hashes": {
+          "evidence/recovery-inventory.json": "3e4d6e4aa41a34d995e1416c4fe2ac247a6cfeaaf4aa4ad9223ed76ead14969c",
+          "evidence/foundation-replay.json": "d5f05aff022fb105d199dba04a101180c40cbca8043d801039167f98c57cb15b",
+          "evidence/foundation-logs/phantom-verify.log": "2ed1c8533114b7562c2e133d6cc0ef10ea48fdf4efaef3fa768792e93c51131b",
+          "evidence/foundation-logs/v2-inputs.log": "ddb9277a7aeeed16835b4f1731a403ba68b8ef942a5bf5138d290374b40e18ce"
+        },
+        "status": "UNKNOWN",
+        "evidence_paths": [
+          "evidence/recovery-inventory.json",
+          "evidence/foundation-replay.json",
+          "evidence/foundation-logs/phantom-verify.log",
+          "evidence/foundation-logs/v2-inputs.log"
+        ],
+        "command_or_api": [
+          "Read evidence/recovery-inventory.json",
+          "python3 -B verify_inputs.py [from extracted immutable v2 root]",
+          "python3 -B -m division8 verify --manifest RELEASE_MANIFEST.json [from extracted PHANTOM root]",
+          "See all exact replay commands in evidence/foundation-replay.json"
+        ],
+        "observed_values": {
+          "lost_source": "unavailable",
+          "lost_revision": "unknown",
+          "lost_url": "unavailable",
+          "lost_remote_jobs": "unknown",
+          "owned_external_jobs": 0,
+          "original_archive_unchanged": true,
+          "extracted_archive_file_changes": 0,
+          "foundation_unit_tests": 145,
+          "verified_manifest_files": 564,
+          "verified_manifest_bytes": 27758650,
+          "exact_regenerated_files": 125
+        },
+        "units": [
+          "bytes",
+          "files",
+          "test cases"
+        ],
+        "tolerances": {
+          "archive_identity": "Exact SHA-256 and byte equality",
+          "cold_replay": "No numerical tolerance requested or used"
+        },
+        "accepted_scope": [
+          "Preserved provided continuation and nested immutable inputs",
+          "Fresh documented foundation replay; current native source inventoried"
+        ],
+        "blocker_or_deviation": [
+          "Lost implementation workspace, revision, URL and outstanding jobs were not recovered; screenshots cannot fill that gap",
+          "Current native work is a newly authorized replacement, not a recovered lost-session revision",
+          "External repository synchronization was blocked by automatic approval review; see recovery inventory"
+        ],
+        "next_action": "Preserve the release source bundle and hashes; obtain the old workspace/deployment/job identifiers if historical continuity is to be reconciled."
+      },
+      "scope_status": "PARTIAL_EVIDENCE_ONLY"
+    },
+    {
+      "id": "G01",
+      "title": "Bounded supervisor and durable recovery",
+      "depends_on": [
+        "G00"
+      ],
+      "provisions": [
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        97
+      ],
+      "required_evidence": "fault receipts; state history; interrupted/resumed task",
+      "status": "BLOCKED",
+      "receipt": {
+        "gate_id": "G01",
+        "task_version": "native-bounded-increment/2026-10-25",
+        "source_revision": {
+          "git_commit": null,
+          "status": "UNCOMMITTED_CONTENT_SNAPSHOT",
+          "content_fingerprint_sha256": "5c9803a9071d84041a557556207b1ddd986f71631045c6f76e16379724ca3c67",
+          "fingerprint_definition": "SHA-256 of source_hashes serialized as sorted compact UTF-8 JSON",
+          "binding_limit": "Hashes capture the reviewed working tree; no immutable repository revision is claimed. See recorded build commands and release manifest for artifact binding."
+        },
+        "input_hashes": {
+          "lineage/commission-acceptance.original.json": "9d62726628fc6dc1c65b1deb3d06b1fbae28ec9420b0d48b41e622adbf3f8a58"
+        },
+        "environment": {
+          "native_host_receipt": "evidence/headless-build.json",
+          "native_compiler": "c++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
+          "native_platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+          "foundation_runtime": null,
+          "Android_runtime": "not executed"
+        },
+        "verifier_hash": {
+          "tests/test_checkpoint.cpp": "346fbe3374555ba5bb250774d485d20ec7179c5baf53922ddf6e4cff09e19f79",
+          "tests/test_engine.cpp": "25e5bfbd8d6867ae797c0043fc0ecc6b0544dbcb390bd7c65cc4174aac4c2875",
+          "tests/test_session.cpp": "14dda2a7c33f24d442a7d6dc10a262a6062bc694267a7c7deaf9bc5a59e2e71c",
+          "tests/test_supervisor.py": "496a87606f801f93faa4de45262c0be59ea8c85af56ba48123b406c8cfb4245d"
+        },
+        "output_hashes": {
+          "evidence/native-final-tests.log": "94eac5557d3eca38f64250d30489ccc4d230b50c35ae13ccfdf41197f8154250",
+          "evidence/headless-build.json": "2ecb1d1182c9ebd67f5d5de127fd8fa95574eb911659a34a1d40a7c23c47e4d2",
+          "evidence/headless-resumed.json": "c2680d8d5549a83abeabf3ce899c8a55e69946fa5763566e65065612ba382a2f",
+          "evidence/headless-cli-qa.json": "d8bebda1c9534f6a2134802e5ebde900f26a26530b24ee9129000ef32efe3ae1",
+          "docs/RECOVERY.md": "623b14eaf4197a36e7b41fed9a7bb8d1a054b7bc64b682440f4889aa4653c36b"
+        },
+        "status": "BLOCKED",
+        "evidence_paths": [
+          "evidence/native-final-tests.log",
+          "evidence/headless-build.json",
+          "evidence/headless-resumed.json",
+          "evidence/headless-cli-qa.json",
+          "docs/RECOVERY.md"
+        ],
+        "command_or_api": [
+          "build/tests/test_checkpoint",
+          "build/tests/test_engine",
+          "build/tests/test_session",
+          "python3 -m unittest discover -s tests -p test_*.py",
+          "build/surface --load build/previews/demo.surface --frames 1 --width 360 --height 640 --output build/previews/resumed.ppm --report evidence/headless-resumed.json"
+        ],
+        "observed_values": {
+          "supervisor_tests_passed": 14,
+          "checkpoint_engine_session_suites": "passed",
+          "host_hard_deadline_max_seconds": 300,
+          "semantic_deadline_max_seconds": 120,
+          "classified_retries_max": 1,
+          "resume_input_sequence_before": 60,
+          "resume_input_sequence_after": 60,
+          "resume_simulation_time_before": 1,
+          "resume_simulation_time_after": 1.01666666667,
+          "obsolete_owner_huge_generation_test": "rejected",
+          "corrupt_lease_preserves_slots": "passed"
+        },
+        "units": [
+          "seconds",
+          "sequence integer",
+          "bytes"
+        ],
+        "tolerances": {
+          "same_build_continuation": "Exact serialized equality",
+          "epoch_and_owner": "Exact integer equality",
+          "deadline": "Monotonic cutoff plus declared poll/termination overhead; not hard real time"
+        },
+        "accepted_scope": [
+          "Independent POSIX child-process supervision, staged SHA-256 publication, fixed deadlines and one classified retry",
+          "Two-slot native continuation and durable owner fencing; FIFO/barrier/export tests"
+        ],
+        "blocker_or_deviation": [
+          "Original full task contract (source/input fingerprint and independent acceptance witness at publication), all prescribed state names, and persistent failure-family circuit breaker across equivalent renamed/restarted tasks are not implemented",
+          "Declared milestone messages are cooperative assertions, not independently verified semantic progress",
+          "Unknown remote jobs cannot be reconciled; no provider-late-completion or ambiguous non-idempotent submission integration was exercised",
+          "A blocked native std::thread cannot be force-killed safely; host and filesystem stalls are outside the guarantee",
+          "Original timing defaults are not copied literally: host polling is 0.05s by default, milestone timeout is a stop at120s, and no mandatory15s heartbeat/45s suspect policy exists"
+        ],
+        "next_action": "Add the remaining versioned task contract, persistent family-level failure accounting, explicit states and provider reconciliation before accepting the full supervisor gate."
+      },
+      "scope_status": "PARTIAL_EVIDENCE_ONLY"
+    },
+    {
+      "id": "G02",
+      "title": "Existing admission, wave stability and evidence reconciliation",
+      "depends_on": [
+        "G00"
+      ],
+      "provisions": [
+        6,
+        7,
+        8,
+        9,
+        96
+      ],
+      "required_evidence": "counterexamples; solver stability derivation; eight comparison applicability receipts",
+      "status": "UNKNOWN",
+      "receipt": {
+        "gate_id": "G02",
+        "task_version": "native-bounded-increment/2026-10-25",
+        "source_revision": {
+          "git_commit": null,
+          "status": "UNCOMMITTED_CONTENT_SNAPSHOT",
+          "content_fingerprint_sha256": "5c9803a9071d84041a557556207b1ddd986f71631045c6f76e16379724ca3c67",
+          "fingerprint_definition": "SHA-256 of source_hashes serialized as sorted compact UTF-8 JSON",
+          "binding_limit": "Hashes capture the reviewed working tree; no immutable repository revision is claimed. See recorded build commands and release manifest for artifact binding."
+        },
+        "input_hashes": {
+          "lineage/commission-acceptance.original.json": "9d62726628fc6dc1c65b1deb3d06b1fbae28ec9420b0d48b41e622adbf3f8a58"
+        },
+        "environment": {
+          "native_host_receipt": "evidence/headless-build.json",
+          "native_compiler": "c++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
+          "native_platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+          "foundation_runtime": null,
+          "Android_runtime": "not executed"
+        },
+        "verifier_hash": {
+          "tests/test_physics.cpp": "15ef804d4df1ffb78817fcd7ea7bcc4164c7d684c7c6a9bde054bd697dfc9d4b",
+          "tests/test_phantom.cpp": "3dcf44abef9abd01d7cb7ca0cbd1b17404b0b2b10116cceeb4bfa52cc150a13b",
+          "tests/test_session.cpp": "14dda2a7c33f24d442a7d6dc10a262a6062bc694267a7c7deaf9bc5a59e2e71c"
+        },
+        "output_hashes": {
+          "evidence/native-final-tests.log": "94eac5557d3eca38f64250d30489ccc4d230b50c35ae13ccfdf41197f8154250",
+          "evidence/headless-build.json": "2ecb1d1182c9ebd67f5d5de127fd8fa95574eb911659a34a1d40a7c23c47e4d2",
+          "evidence/physics-verification.json": "b15666756e1d781a3b9f13d463a129e2c84ac57453bd3170f3fbfbd0fe5e4114",
+          "evidence/recovery-inventory.json": "3e4d6e4aa41a34d995e1416c4fe2ac247a6cfeaaf4aa4ad9223ed76ead14969c",
+          "docs/PHYSICS.md": "0bad3ff97e3b9186d6dc770328be0b43bec5c525c7c7e56f92eca72a67c4dc6e"
+        },
+        "status": "UNKNOWN",
+        "evidence_paths": [
+          "evidence/native-final-tests.log",
+          "evidence/headless-build.json",
+          "evidence/physics-verification.json",
+          "evidence/recovery-inventory.json",
+          "docs/PHYSICS.md"
+        ],
+        "command_or_api": [
+          "build/tests/test_physics",
+          "build/tests/test_phantom",
+          "build/tests/test_session",
+          "See original comparison availability in evidence/recovery-inventory.json"
+        ],
+        "observed_values": {
+          "new_native_wave_and_admission": "passed",
+          "historical_octave_cases": [
+            {
+              "case": 1,
+              "status": "UNKNOWN"
+            },
+            {
+              "case": 2,
+              "status": "UNKNOWN"
+            },
+            {
+              "case": 3,
+              "status": "UNKNOWN"
+            },
+            {
+              "case": 4,
+              "status": "UNKNOWN"
+            },
+            {
+              "case": 5,
+              "status": "UNKNOWN"
+            },
+            {
+              "case": 6,
+              "status": "UNKNOWN"
+            },
+            {
+              "case": 7,
+              "status": "UNKNOWN"
+            },
+            {
+              "case": 8,
+              "status": "UNKNOWN"
+            }
+          ],
+          "historical_wave_validation": "UNKNOWN",
+          "historical_sparse_array_repair": "UNKNOWN",
+          "native_max_step_seconds": 0.1,
+          "long_step_requested_seconds": 3600,
+          "native_source_limit": 32
+        },
+        "units": [
+          "Pa for scalar visual-wave amplitude",
+          "solver seconds",
+          "grid nodes"
+        ],
+        "tolerances": {
+          "new_damped_cosine_amplitude_absolute_error": "<0.004",
+          "new_midpoint_wave_absolute_value": "<1e-5",
+          "native_wave_CFL_margin": "documented0.65 below2D explicit-wave limit; substeps<=1/120s",
+          "legacy_comparison_tolerances": "UNKNOWN; raw receipts unavailable"
+        },
+        "accepted_scope": [
+          "New native bounded solver and finite/size/version admission checks",
+          "New analytical wave fixture; documented separate reduced model"
+        ],
+        "blocker_or_deviation": [
+          "Actual old stencil, integrator, unstable witness, adjacent stability-boundary and high-frequency tests are unavailable",
+          "Eight historical Octave input/verifier/raw-output/pixel-difference receipts remain unavailable",
+          "Native vectors do not re-establish the historical sparse JavaScript-array repair",
+          "New analytical native fixture is not a completed mesh/time-refinement or recovered old-solver validation"
+        ],
+        "next_action": "Recover old counterexamples and all eight applicability receipts; keep new native solver evidence separate until then."
+      },
+      "scope_status": "PARTIAL_EVIDENCE_ONLY"
+    },
+    {
+      "id": "G03",
+      "title": "Usable current SURFACE route",
+      "depends_on": [
+        "G01",
+        "G02"
+      ],
+      "provisions": [
+        8,
+        9,
+        10,
+        99
+      ],
+      "required_evidence": "actual URL and revision; browser interaction; frame/fallback provenance",
+      "status": "BLOCKED",
+      "receipt": {
+        "gate_id": "G03",
+        "task_version": "native-bounded-increment/2026-10-25",
+        "source_revision": {
+          "git_commit": null,
+          "status": "UNCOMMITTED_CONTENT_SNAPSHOT",
+          "content_fingerprint_sha256": "5c9803a9071d84041a557556207b1ddd986f71631045c6f76e16379724ca3c67",
+          "fingerprint_definition": "SHA-256 of source_hashes serialized as sorted compact UTF-8 JSON",
+          "binding_limit": "Hashes capture the reviewed working tree; no immutable repository revision is claimed. See recorded build commands and release manifest for artifact binding."
+        },
+        "input_hashes": {
+          "lineage/commission-acceptance.original.json": "9d62726628fc6dc1c65b1deb3d06b1fbae28ec9420b0d48b41e622adbf3f8a58",
+          "build/Surface-arm64.apk": "0a6f32c450c931699eaf75778c5e7d1fae1b5cfc1123d32aeac93d5f46a2f8da"
+        },
+        "environment": {
+          "native_host_receipt": "evidence/headless-build.json",
+          "native_compiler": "c++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
+          "native_platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+          "foundation_runtime": null,
+          "Android_runtime": "not executed"
+        },
+        "verifier_hash": {
+          "tools/build_native.py": "e6db951787ce5c4e936c8ae5a5d95c24aeb1d6ff1c3668ab38196ccaf21281c7",
+          "tools/build_android.py": "88049cf6b3a85b6a189ae1defea7ed0ea9f1f22d85c5785172ff823ad07a8b40",
+          "tests/test_renderer.cpp": "752a4933df6e4dad8a77895d93ae78900049904bae15b7b6132483cef8f4ea93",
+          "tests/test_input.cpp": "574b009a4087e53a30ecfd47a334bb7969910e1c480dd0adbd6d1f483e399588",
+          "tools/verify_android.py": "ee681004ceb6e74e22501852a642dbbf9022927bf937a2711c2bd0b2276398f5"
+        },
+        "output_hashes": {
+          "evidence/native-final-tests.log": "94eac5557d3eca38f64250d30489ccc4d230b50c35ae13ccfdf41197f8154250",
+          "evidence/headless-build.json": "2ecb1d1182c9ebd67f5d5de127fd8fa95574eb911659a34a1d40a7c23c47e4d2",
+          "evidence/android-build.json": "321572722826a2db9e37c60344aec2b516d17ff2b7b6397c6265657e20368c21",
+          "evidence/android-build.log": "7060e354321bfd64c5dcaa22daa66aa4990b4eb7cebe774e863c3fab921355dc",
+          "evidence/headless-cli-qa.json": "d8bebda1c9534f6a2134802e5ebde900f26a26530b24ee9129000ef32efe3ae1",
+          "evidence/recovery-inventory.json": "3e4d6e4aa41a34d995e1416c4fe2ac247a6cfeaaf4aa4ad9223ed76ead14969c",
+          "evidence/android-package-verification.json": "e667b10a9f7983f1e69bfb91fd4ac13f003868b0a97814c947b935a489b5f794"
+        },
+        "status": "BLOCKED",
+        "evidence_paths": [
+          "evidence/native-final-tests.log",
+          "evidence/headless-build.json",
+          "evidence/android-build.json",
+          "evidence/android-build.log",
+          "evidence/headless-cli-qa.json",
+          "evidence/recovery-inventory.json",
+          "evidence/android-package-verification.json"
+        ],
+        "command_or_api": [
+          "python3 tools/build_native.py --test",
+          "python3 tools/build_android.py --toolchain ../android-toolchain",
+          "Native headless commands recorded in docs/CLI.md and evidence/headless-*.json",
+          "python3 tools/verify_android.py --toolchain ../android-toolchain"
+        ],
+        "observed_values": {
+          "native_cpp_suites_passed": 9,
+          "python_tests_passed": 14,
+          "apk": "build/Surface-arm64.apk",
+          "architecture": "arm64-v8a",
+          "min_android_api": 29,
+          "target_android_api": 36,
+          "native_preview_inspected": true,
+          "device_execution": "UNKNOWN",
+          "lost_url": "unavailable",
+          "published_site": false,
+          "android_static_checks_passed": 10,
+          "android_signature_exit_code": 0,
+          "android_zip_alignment_exit_code": 0,
+          "android_runtime": "NOT_RUN_NO_DEVICE_OR_EMULATOR"
+        },
+        "units": [
+          "pixels",
+          "Android API integer"
+        ],
+        "tolerances": {
+          "native_tests": "Exact assertions and declared fixture tolerances",
+          "device_interaction": "No measured tolerance or device receipt"
+        },
+        "accepted_scope": [
+          "Native CPU rasterizer, host executable, touch adapter source, signed ARM64 APK and actual headless previews"
+        ],
+        "blocker_or_deviation": [
+          "The user explicitly replaced browser/WebGL requirements with native-only C++ rendering; historical browser criteria are superseded, not passed",
+          "No Android device/emulator run proves lifecycle, touch, audio routing or sustained device frame rate",
+          "Lost deployment is unknown and repository/site publication was blocked; preserved project identity is not a usable published URL"
+        ],
+        "next_action": "Deliver the private native artifacts and source handoff; install on an Android API29+ ARM64 device and record actual interaction/lifecycle evidence."
+      },
+      "scope_status": "PARTIAL_EVIDENCE_ONLY"
+    },
+    {
+      "id": "G04",
+      "title": "Binary physical and quantum contracts",
+      "depends_on": [
+        "G02"
+      ],
+      "provisions": [
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "required_evidence": "cross-runtime conformance; ID and byte witnesses; representation loss",
+      "status": "BLOCKED",
+      "receipt": {
+        "gate_id": "G04",
+        "task_version": "native-bounded-increment/2026-10-25",
+        "source_revision": {
+          "git_commit": null,
+          "status": "UNCOMMITTED_CONTENT_SNAPSHOT",
+          "content_fingerprint_sha256": "5c9803a9071d84041a557556207b1ddd986f71631045c6f76e16379724ca3c67",
+          "fingerprint_definition": "SHA-256 of source_hashes serialized as sorted compact UTF-8 JSON",
+          "binding_limit": "Hashes capture the reviewed working tree; no immutable repository revision is claimed. See recorded build commands and release manifest for artifact binding."
+        },
+        "input_hashes": {
+          "lineage/commission-acceptance.original.json": "9d62726628fc6dc1c65b1deb3d06b1fbae28ec9420b0d48b41e622adbf3f8a58",
+          "lineage/SURFACE_PHYSICAL_COSMOS_CONTINUATION_v1.zip": "ca8f9202b4c4acc8ab39d3a7305f4ba4cf80d016a384db9714019208cd5ae622",
+          "data/gaia.bin": "f8105fda8968e6f18fb3b6982c688f908fc62826c415c65c492b906b68d804bd"
+        },
+        "environment": {
+          "native_host_receipt": "evidence/headless-build.json",
+          "native_compiler": "c++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
+          "native_platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+          "foundation_runtime": {
+            "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+            "executable": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+            "numpy": "2.3.5",
+            "scipy": "1.17.0"
+          },
+          "Android_runtime": "not executed"
+        },
+        "verifier_hash": {
+          "tests/test_phantom.cpp": "3dcf44abef9abd01d7cb7ca0cbd1b17404b0b2b10116cceeb4bfa52cc150a13b",
+          "tests/test_atlas.cpp": "9264530b3b2b50bd6ec7afb5ac1936341282dc2a873a7b57d35facd568e0793e",
+          "tests/test_session.cpp": "14dda2a7c33f24d442a7d6dc10a262a6062bc694267a7c7deaf9bc5a59e2e71c"
+        },
+        "output_hashes": {
+          "evidence/native-final-tests.log": "94eac5557d3eca38f64250d30489ccc4d230b50c35ae13ccfdf41197f8154250",
+          "evidence/headless-build.json": "2ecb1d1182c9ebd67f5d5de127fd8fa95574eb911659a34a1d40a7c23c47e4d2",
+          "docs/PHANTOM_SOURCES.json": "f1e01ebc1a2e9c9127f50a8728b4793d4be981397dbd68c2dd254acbb79a66af",
+          "docs/ATLAS_PHANTOM_RECEIPT.json": "ede3fe94887429a0fbdd57218b0142a824a09c6a6d3425f6d2f770e9063d862f",
+          "evidence/foundation-replay.json": "d5f05aff022fb105d199dba04a101180c40cbca8043d801039167f98c57cb15b",
+          "evidence/foundation-logs/oracle-fresh-summary.json": "232b7b8d8f7f31359ff5fbdf6c44c703f974703844e3ef50c73c22be14b58e6c"
+        },
+        "status": "BLOCKED",
+        "evidence_paths": [
+          "evidence/native-final-tests.log",
+          "evidence/headless-build.json",
+          "docs/PHANTOM_SOURCES.json",
+          "docs/ATLAS_PHANTOM_RECEIPT.json",
+          "evidence/foundation-replay.json",
+          "evidence/foundation-logs/oracle-fresh-summary.json"
+        ],
+        "command_or_api": [
+          "build/tests/test_phantom",
+          "build/tests/test_atlas",
+          "build/tests/test_session",
+          "Original Oracle/v3 test commands in evidence/foundation-replay.json"
+        ],
+        "observed_values": {
+          "exact_gaia_id": "1576683529448755328",
+          "binary64_signed_zero": "preserved",
+          "explicit_float32_loss": "retained source plus reported conversion loss",
+          "bell_expected_probabilities": [
+            0.5,
+            0,
+            0,
+            0.5
+          ],
+          "native_quantum_max_qubits": 6,
+          "native_quantum_max_operations": 256,
+          "basis_order_conversion": "explicit MSB<->LSB tested",
+          "exact_complex_and_session_roundtrip": "passed"
+        },
+        "units": [
+          "bits",
+          "dimensionless quantum amplitudes/probabilities",
+          "canonical decimal source ID"
+        ],
+        "tolerances": {
+          "native_numeric_quantum_fixture_absolute": "1e-12 unless explicit exact byte assertion",
+          "state_norm_admission": "<=1e-10",
+          "source_bytes_and_integer_ID": "exact"
+        },
+        "accepted_scope": [
+          "Finite loss-aware byte conversions, exact source IDs, explicit quantum basis convention and ideal gate fixtures"
+        ],
+        "blocker_or_deviation": [
+          "Selected native semantic ports are not complete PHANTOM/typed-IR wire compatibility or full v3 contracts",
+          "No second independent quantum backend comparison; no complete native density/CPTP-channel, calibrated shot/hardware-map conformance",
+          "Universal typed physical semantics, full source-to-observation witnesses and instrumented compilation execution path remain incomplete"
+        ],
+        "next_action": "Extend versioned typed IR adapters and independently compare pure/density/channel cases across at least two backends; retain source and hardware/calibration witnesses."
+      },
+      "scope_status": "PARTIAL_EVIDENCE_ONLY"
+    },
+    {
+      "id": "G05",
+      "title": "Electrical magnetic multirate coupling",
+      "depends_on": [
+        "G01",
+        "G04"
+      ],
+      "provisions": [
+        31,
+        32,
+        33,
+        34,
+        36,
+        39,
+        40,
+        92
+      ],
+      "required_evidence": "analytic coil/circuit results; magnetic switching and hysteresis reference; field constraints; energy balance",
+      "status": "BLOCKED",
+      "receipt": {
+        "gate_id": "G05",
+        "task_version": "native-bounded-increment/2026-10-25",
+        "source_revision": {
+          "git_commit": null,
+          "status": "UNCOMMITTED_CONTENT_SNAPSHOT",
+          "content_fingerprint_sha256": "5c9803a9071d84041a557556207b1ddd986f71631045c6f76e16379724ca3c67",
+          "fingerprint_definition": "SHA-256 of source_hashes serialized as sorted compact UTF-8 JSON",
+          "binding_limit": "Hashes capture the reviewed working tree; no immutable repository revision is claimed. See recorded build commands and release manifest for artifact binding."
+        },
+        "input_hashes": {
+          "lineage/commission-acceptance.original.json": "9d62726628fc6dc1c65b1deb3d06b1fbae28ec9420b0d48b41e622adbf3f8a58"
+        },
+        "environment": {
+          "native_host_receipt": "evidence/headless-build.json",
+          "native_compiler": "c++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
+          "native_platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+          "foundation_runtime": null,
+          "Android_runtime": "not executed"
+        },
+        "verifier_hash": {
+          "tests/test_physics.cpp": "15ef804d4df1ffb78817fcd7ea7bcc4164c7d684c7c6a9bde054bd697dfc9d4b"
+        },
+        "output_hashes": {
+          "evidence/native-final-tests.log": "94eac5557d3eca38f64250d30489ccc4d230b50c35ae13ccfdf41197f8154250",
+          "evidence/headless-build.json": "2ecb1d1182c9ebd67f5d5de127fd8fa95574eb911659a34a1d40a7c23c47e4d2",
+          "evidence/physics-verification.json": "b15666756e1d781a3b9f13d463a129e2c84ac57453bd3170f3fbfbd0fe5e4114",
+          "docs/PHYSICS.md": "0bad3ff97e3b9186d6dc770328be0b43bec5c525c7c7e56f92eca72a67c4dc6e"
+        },
+        "status": "BLOCKED",
+        "evidence_paths": [
+          "evidence/native-final-tests.log",
+          "evidence/headless-build.json",
+          "evidence/physics-verification.json",
+          "docs/PHYSICS.md"
+        ],
+        "command_or_api": [
+          "build/tests/test_physics"
+        ],
+        "observed_values": {
+          "regularized_charge_and_dipole_fixtures": "passed",
+          "relay_remanence_reversal": "passed",
+          "unforced_coupled_circuit_passivity_assertion": "passed",
+          "complete_Maxwell_or_micromagnetic_validation": false
+        },
+        "units": [
+          "V",
+          "V/m",
+          "T",
+          "A",
+          "J",
+          "dimensionless relay state"
+        ],
+        "tolerances": {
+          "potential_E_fixture_absolute": "<1e-6",
+          "dipole_B_fixture_absolute_T": "<1e-14",
+          "unforced_energy_J": "stored+harvested+dissipated<=0.200000001",
+          "battery_energy_consistency_J": "<1e-8"
+        },
+        "accepted_scope": [
+          "Declared quasi-static analytic source fields, reduced coupled RLC circuit and diagnostic relay memory"
+        ],
+        "blocker_or_deviation": [
+          "No full Maxwell E/B/D/H solver, charge-continuity/divergence/flux or constitutive-material validation",
+          "No OOMMF/MuMax switching/retention reference, validated macrospin material or transducer force/back-emf power fixture",
+          "Relay memory is not a constitutive magnetic material model; rendered channels are not a validated multirate physical apparatus"
+        ],
+        "next_action": "Choose one physically specified apparatus; add material/geometry parameters and independent electromagnetic, magnetic-state, transducer and interface-energy references."
+      },
+      "scope_status": "PARTIAL_EVIDENCE_ONLY"
+    },
+    {
+      "id": "G06",
+      "title": "Acoustic thermal observables",
+      "depends_on": [
+        "G05"
+      ],
+      "provisions": [
+        35,
+        36,
+        37,
+        40,
+        92
+      ],
+      "required_evidence": "travel-time and cooling references; calibrated pressure; audio transform",
+      "status": "BLOCKED",
+      "receipt": {
+        "gate_id": "G06",
+        "task_version": "native-bounded-increment/2026-10-25",
+        "source_revision": {
+          "git_commit": null,
+          "status": "UNCOMMITTED_CONTENT_SNAPSHOT",
+          "content_fingerprint_sha256": "5c9803a9071d84041a557556207b1ddd986f71631045c6f76e16379724ca3c67",
+          "fingerprint_definition": "SHA-256 of source_hashes serialized as sorted compact UTF-8 JSON",
+          "binding_limit": "Hashes capture the reviewed working tree; no immutable repository revision is claimed. See recorded build commands and release manifest for artifact binding."
+        },
+        "input_hashes": {
+          "lineage/commission-acceptance.original.json": "9d62726628fc6dc1c65b1deb3d06b1fbae28ec9420b0d48b41e622adbf3f8a58"
+        },
+        "environment": {
+          "native_host_receipt": "evidence/headless-build.json",
+          "native_compiler": "c++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
+          "native_platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+          "foundation_runtime": null,
+          "Android_runtime": "not executed"
+        },
+        "verifier_hash": {
+          "tests/test_acoustic.cpp": "834efd3ef437b0212474dedb28f572423c585b0a44af519746b86f25c71ef400",
+          "tests/test_physics.cpp": "15ef804d4df1ffb78817fcd7ea7bcc4164c7d684c7c6a9bde054bd697dfc9d4b"
+        },
+        "output_hashes": {
+          "evidence/native-final-tests.log": "94eac5557d3eca38f64250d30489ccc4d230b50c35ae13ccfdf41197f8154250",
+          "evidence/headless-build.json": "2ecb1d1182c9ebd67f5d5de127fd8fa95574eb911659a34a1d40a7c23c47e4d2",
+          "evidence/headless-cli-qa.json": "d8bebda1c9534f6a2134802e5ebde900f26a26530b24ee9129000ef32efe3ae1",
+          "docs/PHYSICS.md": "0bad3ff97e3b9186d6dc770328be0b43bec5c525c7c7e56f92eca72a67c4dc6e"
+        },
+        "status": "BLOCKED",
+        "evidence_paths": [
+          "evidence/native-final-tests.log",
+          "evidence/headless-build.json",
+          "evidence/headless-cli-qa.json",
+          "docs/PHYSICS.md"
+        ],
+        "command_or_api": [
+          "build/tests/test_acoustic",
+          "build/tests/test_physics",
+          "Host audio-generation command in docs/CLI.md"
+        ],
+        "observed_values": {
+          "room_mode_1_1_expected_Hz": 142.91666666666666,
+          "room_mode_and_decay_tests": "passed",
+          "heat_positivity_and_spreading": "passed",
+          "audio_channels": 1,
+          "audio_sample_rate_Hz": 48000,
+          "audio_samples": 144000,
+          "audio_duration_seconds": 3
+        },
+        "units": [
+          "Hz",
+          "normalized PCM amplitude",
+          "K excess",
+          "K*m^2 thermal integral"
+        ],
+        "tolerances": {
+          "room_frequency_absolute_Hz": "<1e-10",
+          "PCM": "finite and abs(value)<=1",
+          "heat_fixture": "all values0..100 with positive neighbor spreading"
+        },
+        "accepted_scope": [
+          "Declared rectangular-room modal reference and normalized audio transform; reduced heat diffusion/cooling"
+        ],
+        "blocker_or_deviation": [
+          "No calibrated pressure observation, material density/compressibility or measured sound-travel/cooling reference",
+          "Visual scalar wave speed0.48m/s is separate from acoustic reference343m/s",
+          "Heat field has no heat capacity/mass-density energy accounting or validated feedback; audio playback is not calibrated speaker pressure"
+        ],
+        "next_action": "Add a named medium, boundary/transducer coupling and independent pressure/travel/cooling measurements with uncertainty."
+      },
+      "scope_status": "PARTIAL_EVIDENCE_ONLY"
+    },
+    {
+      "id": "G07",
+      "title": "Battery and charging",
+      "depends_on": [
+        "G05"
+      ],
+      "provisions": [
+        37,
+        38,
+        39,
+        40
+      ],
+      "required_evidence": "named cell data; held-out voltage/temperature; chemistry and controller traces",
+      "status": "BLOCKED",
+      "receipt": {
+        "gate_id": "G07",
+        "task_version": "native-bounded-increment/2026-10-25",
+        "source_revision": {
+          "git_commit": null,
+          "status": "UNCOMMITTED_CONTENT_SNAPSHOT",
+          "content_fingerprint_sha256": "5c9803a9071d84041a557556207b1ddd986f71631045c6f76e16379724ca3c67",
+          "fingerprint_definition": "SHA-256 of source_hashes serialized as sorted compact UTF-8 JSON",
+          "binding_limit": "Hashes capture the reviewed working tree; no immutable repository revision is claimed. See recorded build commands and release manifest for artifact binding."
+        },
+        "input_hashes": {
+          "lineage/commission-acceptance.original.json": "9d62726628fc6dc1c65b1deb3d06b1fbae28ec9420b0d48b41e622adbf3f8a58"
+        },
+        "environment": {
+          "native_host_receipt": "evidence/headless-build.json",
+          "native_compiler": "c++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
+          "native_platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+          "foundation_runtime": null,
+          "Android_runtime": "not executed"
+        },
+        "verifier_hash": {
+          "tests/test_physics.cpp": "15ef804d4df1ffb78817fcd7ea7bcc4164c7d684c7c6a9bde054bd697dfc9d4b"
+        },
+        "output_hashes": {
+          "evidence/native-final-tests.log": "94eac5557d3eca38f64250d30489ccc4d230b50c35ae13ccfdf41197f8154250",
+          "evidence/headless-build.json": "2ecb1d1182c9ebd67f5d5de127fd8fa95574eb911659a34a1d40a7c23c47e4d2",
+          "evidence/physics-verification.json": "b15666756e1d781a3b9f13d463a129e2c84ac57453bd3170f3fbfbd0fe5e4114",
+          "docs/PHYSICS.md": "0bad3ff97e3b9186d6dc770328be0b43bec5c525c7c7e56f92eca72a67c4dc6e"
+        },
+        "status": "BLOCKED",
+        "evidence_paths": [
+          "evidence/native-final-tests.log",
+          "evidence/headless-build.json",
+          "evidence/physics-verification.json",
+          "docs/PHYSICS.md"
+        ],
+        "command_or_api": [
+          "build/tests/test_physics"
+        ],
+        "observed_values": {
+          "energy_reservoir_capacity_J": 432,
+          "SOC_bounded_and_increases_under_drive": "passed",
+          "circuit_harvest_and_dissipation": "positive in fixture",
+          "named_battery_cell_dataset": null
+        },
+        "units": [
+          "J",
+          "dimensionless state of charge"
+        ],
+        "tolerances": {
+          "reservoir_energy_vs_SOC_J": "abs(E-432*SOC)<1e-8",
+          "SOC": "0..1"
+        },
+        "accepted_scope": [
+          "Explicit reduced energy reservoir and coupled-circuit bookkeeping"
+        ],
+        "blocker_or_deviation": [
+          "No named cell chemistry/parameter set, electrochemical transport/reaction validation, held-out voltage/temperature or thermodynamic entropy/heat accounting",
+          "No complete rectifier/controller/coil-motion or static-flux no-emf commissioning suite"
+        ],
+        "next_action": "Acquire a named cell dataset and fixed train/held-out splits; validate chemistry/thermal/controller behavior before calling the reservoir a battery model."
+      },
+      "scope_status": "PARTIAL_EVIDENCE_ONLY"
+    },
+    {
+      "id": "G08",
+      "title": "Magneto-optical spectrum and color",
+      "depends_on": [
+        "G04",
+        "G05"
+      ],
+      "provisions": [
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        93
+      ],
+      "required_evidence": "Faraday/analyzer; Zeeman; observer integration; source data and regime tests",
+      "status": "BLOCKED",
+      "receipt": {
+        "gate_id": "G08",
+        "task_version": "native-bounded-increment/2026-10-25",
+        "source_revision": {
+          "git_commit": null,
+          "status": "UNCOMMITTED_CONTENT_SNAPSHOT",
+          "content_fingerprint_sha256": "5c9803a9071d84041a557556207b1ddd986f71631045c6f76e16379724ca3c67",
+          "fingerprint_definition": "SHA-256 of source_hashes serialized as sorted compact UTF-8 JSON",
+          "binding_limit": "Hashes capture the reviewed working tree; no immutable repository revision is claimed. See recorded build commands and release manifest for artifact binding."
+        },
+        "input_hashes": {
+          "lineage/commission-acceptance.original.json": "9d62726628fc6dc1c65b1deb3d06b1fbae28ec9420b0d48b41e622adbf3f8a58",
+          "data/CIE_xyz_1931_2deg.csv": "fa663e3535a7e0763a745993a1f0a192eb0275ac46ad2d1befd7626841e713c1",
+          "data/CIE_xyz_1931_2deg.csv_metadata.json": "03abcaecf4e63d77045ef57c4514b52c8bb1a46dd18e1f93a50044a0f4f481c8"
+        },
+        "environment": {
+          "native_host_receipt": "evidence/headless-build.json",
+          "native_compiler": "c++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
+          "native_platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+          "foundation_runtime": null,
+          "Android_runtime": "not executed"
+        },
+        "verifier_hash": {
+          "tests/test_physics.cpp": "15ef804d4df1ffb78817fcd7ea7bcc4164c7d684c7c6a9bde054bd697dfc9d4b",
+          "tests/test_renderer.cpp": "752a4933df6e4dad8a77895d93ae78900049904bae15b7b6132483cef8f4ea93"
+        },
+        "output_hashes": {
+          "evidence/native-final-tests.log": "94eac5557d3eca38f64250d30489ccc4d230b50c35ae13ccfdf41197f8154250",
+          "evidence/headless-build.json": "2ecb1d1182c9ebd67f5d5de127fd8fa95574eb911659a34a1d40a7c23c47e4d2",
+          "evidence/physics-verification.json": "b15666756e1d781a3b9f13d463a129e2c84ac57453bd3170f3fbfbd0fe5e4114",
+          "data/CIE_xyz_1931_2deg.csv_metadata.json": "03abcaecf4e63d77045ef57c4514b52c8bb1a46dd18e1f93a50044a0f4f481c8",
+          "docs/PHYSICS.md": "0bad3ff97e3b9186d6dc770328be0b43bec5c525c7c7e56f92eca72a67c4dc6e"
+        },
+        "status": "BLOCKED",
+        "evidence_paths": [
+          "evidence/native-final-tests.log",
+          "evidence/headless-build.json",
+          "evidence/physics-verification.json",
+          "data/CIE_xyz_1931_2deg.csv_metadata.json",
+          "docs/PHYSICS.md"
+        ],
+        "command_or_api": [
+          "build/tests/test_physics",
+          "build/tests/test_renderer"
+        ],
+        "observed_values": {
+          "CIE_479nm_expected_XYZ": [
+            0.1042979,
+            0.1334528,
+            0.8566193
+          ],
+          "Faraday_uniform_path_expected_signed_radians": [
+            1,
+            -1
+          ],
+          "Malus_45deg_expected": 0.5,
+          "weak_field_Zeeman_1T_expected_Hz": 13996244917,
+          "scalar_operator_tests": "passed"
+        },
+        "units": [
+          "nm",
+          "rad",
+          "dimensionless observer response/transmission",
+          "Hz"
+        ],
+        "tolerances": {
+          "CIE_reference_and_interpolation": "<1e-12",
+          "Malus45_absolute": "<1e-14",
+          "crossed_polarizers": "<1e-30",
+          "Zeeman_shift_absolute_Hz": "<10"
+        },
+        "accepted_scope": [
+          "Official CIE table lookup/interpolation and explicit preview transform; ideal scalar Faraday/Malus/weak-field-Zeeman references"
+        ],
+        "blocker_or_deviation": [
+          "No retained wavelength-resolved shared scene spectra/Stokes/Jones inspectors or material-dependent Verdet validation",
+          "No species-specific levels/Lande/selection/population/line-profile model or out-of-regime Hamiltonian switching",
+          "No cyclotron/synchrotron transfer, energy-conserving spectral rebinning or instrument convolution",
+          "Colorful ink and scalar helpers do not satisfy the two inspectable commissioning scenes"
+        ],
+        "next_action": "Build the polarizer/slab/analyzer and species-specific Zeeman scenes with retained spectra, measured parameters, regime guards and independent references."
+      },
+      "scope_status": "PARTIAL_EVIDENCE_ONLY"
+    },
+    {
+      "id": "G09",
+      "title": "N-chart atlas and topology",
+      "depends_on": [
+        "G04"
+      ],
+      "provisions": [
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60
+      ],
+      "required_evidence": "chart-map witnesses; topology fixtures; separated metrics; interactive views",
+      "status": "BLOCKED",
+      "receipt": {
+        "gate_id": "G09",
+        "task_version": "native-bounded-increment/2026-10-25",
+        "source_revision": {
+          "git_commit": null,
+          "status": "UNCOMMITTED_CONTENT_SNAPSHOT",
+          "content_fingerprint_sha256": "5c9803a9071d84041a557556207b1ddd986f71631045c6f76e16379724ca3c67",
+          "fingerprint_definition": "SHA-256 of source_hashes serialized as sorted compact UTF-8 JSON",
+          "binding_limit": "Hashes capture the reviewed working tree; no immutable repository revision is claimed. See recorded build commands and release manifest for artifact binding."
+        },
+        "input_hashes": {
+          "lineage/commission-acceptance.original.json": "9d62726628fc6dc1c65b1deb3d06b1fbae28ec9420b0d48b41e622adbf3f8a58"
+        },
+        "environment": {
+          "native_host_receipt": "evidence/headless-build.json",
+          "native_compiler": "c++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
+          "native_platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+          "foundation_runtime": {
+            "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+            "executable": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+            "numpy": "2.3.5",
+            "scipy": "1.17.0"
+          },
+          "Android_runtime": "not executed"
+        },
+        "verifier_hash": {
+          "tests/test_phantom.cpp": "3dcf44abef9abd01d7cb7ca0cbd1b17404b0b2b10116cceeb4bfa52cc150a13b"
+        },
+        "output_hashes": {
+          "evidence/native-final-tests.log": "94eac5557d3eca38f64250d30489ccc4d230b50c35ae13ccfdf41197f8154250",
+          "evidence/headless-build.json": "2ecb1d1182c9ebd67f5d5de127fd8fa95574eb911659a34a1d40a7c23c47e4d2",
+          "evidence/foundation-replay.json": "d5f05aff022fb105d199dba04a101180c40cbca8043d801039167f98c57cb15b",
+          "evidence/foundation-logs/v3-tests.log": "99821dcb33100506c4ee6f6becb45c2981e7e594f1180c27ff1ed64e2e19128f",
+          "evidence/foundation-logs/v3-examples.log": "284cf35c4bb017701f91f313dfbc115ce9f97b26320ebfd882bf9fd85b727940"
+        },
+        "status": "BLOCKED",
+        "evidence_paths": [
+          "evidence/native-final-tests.log",
+          "evidence/headless-build.json",
+          "evidence/foundation-replay.json",
+          "evidence/foundation-logs/v3-tests.log",
+          "evidence/foundation-logs/v3-examples.log"
+        ],
+        "command_or_api": [
+          "python3 -B -m unittest discover -s tests -v [immutable v3 extraction]",
+          "python3 -B examples.py [immutable v3 extraction]",
+          "build/tests/test_phantom"
+        ],
+        "observed_values": {
+          "original_v3_tests_passed": 9,
+          "native_function_chart_topology_engine": false,
+          "native_Fubini_Study_phase_fixtures": "passed"
+        },
+        "units": [
+          "declared chart-local units",
+          "radians for pure-state ray distance"
+        ],
+        "tolerances": {
+          "native_ray_fixture_absolute": "1e-12",
+          "v3_original_tolerances": "Retained original verifier; see pinned archive and replay receipt"
+        },
+        "accepted_scope": [
+          "Unchanged v3 bounded chart/binary/quantum seed replay and native pure-state distance reference"
+        ],
+        "blocker_or_deviation": [
+          "No native dynamic N-chart engine with all typed maps, physical ports, causal delays and four separated metrics",
+          "No required mesh incidence/Hodge/persistent-homology control suite or linked interactive multi-observable views",
+          "A sky projection or a Fubini-Study helper does not establish topology equivalence or complete atlas integration"
+        ],
+        "next_action": "Implement versioned chart/edge/port schemas and bounded incidence/map witnesses, then link inspectable views."
+      },
+      "scope_status": "PARTIAL_EVIDENCE_ONLY"
+    },
+    {
+      "id": "G10",
+      "title": "Observed cosmic catalogue vertical slice",
+      "depends_on": [
+        "G03",
+        "G04",
+        "G09"
+      ],
+      "provisions": [
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        69,
+        70,
+        94
+      ],
+      "required_evidence": "pinned real subset; distance summaries; coordinate checks; source-linked views",
+      "status": "BLOCKED",
+      "receipt": {
+        "gate_id": "G10",
+        "task_version": "native-bounded-increment/2026-10-25",
+        "source_revision": {
+          "git_commit": null,
+          "status": "UNCOMMITTED_CONTENT_SNAPSHOT",
+          "content_fingerprint_sha256": "5c9803a9071d84041a557556207b1ddd986f71631045c6f76e16379724ca3c67",
+          "fingerprint_definition": "SHA-256 of source_hashes serialized as sorted compact UTF-8 JSON",
+          "binding_limit": "Hashes capture the reviewed working tree; no immutable repository revision is claimed. See recorded build commands and release manifest for artifact binding."
+        },
+        "input_hashes": {
+          "lineage/commission-acceptance.original.json": "9d62726628fc6dc1c65b1deb3d06b1fbae28ec9420b0d48b41e622adbf3f8a58",
+          "data/gaia-dr3-bright-source.csv": "fda4d14d08e4e44c38193ac67e385ae3cbf4503e33c19736ddfc027a1ff9d96f",
+          "data/gaia.bin": "f8105fda8968e6f18fb3b6982c688f908fc62826c415c65c492b906b68d804bd",
+          "data/gaia-provenance.json": "019760dfad276b8f41db8a3c6abafccfd6f3a85f8ef3badd9b301423b6a63a66"
+        },
+        "environment": {
+          "native_host_receipt": "evidence/headless-build.json",
+          "native_compiler": "c++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
+          "native_platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+          "foundation_runtime": null,
+          "Android_runtime": "not executed"
+        },
+        "verifier_hash": {
+          "tests/test_atlas.cpp": "9264530b3b2b50bd6ec7afb5ac1936341282dc2a873a7b57d35facd568e0793e",
+          "data/import-atlas.py": "16ae3b31595c69a1663a94123f9c6ad6339a256a4b97bc721ce20fa3959083ca"
+        },
+        "output_hashes": {
+          "evidence/native-final-tests.log": "94eac5557d3eca38f64250d30489ccc4d230b50c35ae13ccfdf41197f8154250",
+          "evidence/headless-build.json": "2ecb1d1182c9ebd67f5d5de127fd8fa95574eb911659a34a1d40a7c23c47e4d2",
+          "data/gaia-provenance.json": "019760dfad276b8f41db8a3c6abafccfd6f3a85f8ef3badd9b301423b6a63a66",
+          "docs/ATLAS_PHANTOM_RECEIPT.json": "ede3fe94887429a0fbdd57218b0142a824a09c6a6d3425f6d2f770e9063d862f",
+          "evidence/headless-cosmos.json": "e18e7988fe9e2fd60a6c17d634fc568139ec0f327a3bc7f4d6185e8d551bef77",
+          "evidence/headless-cli-qa.json": "d8bebda1c9534f6a2134802e5ebde900f26a26530b24ee9129000ef32efe3ae1"
+        },
+        "status": "BLOCKED",
+        "evidence_paths": [
+          "evidence/native-final-tests.log",
+          "evidence/headless-build.json",
+          "data/gaia-provenance.json",
+          "docs/ATLAS_PHANTOM_RECEIPT.json",
+          "evidence/headless-cosmos.json",
+          "evidence/headless-cli-qa.json"
+        ],
+        "command_or_api": [
+          "build/tests/test_atlas",
+          "build/surface --mode 6 --frames 30 --width 720 --height 1280 --output build/previews/cosmos.ppm --report evidence/headless-cosmos.json",
+          "python3 data/import-atlas.py [offline deterministic reconstruction command; recorded data receipt is authoritative]"
+        ],
+        "observed_values": {
+          "catalogue_sources": 10000,
+          "projected_front_hemisphere_sources": 5058,
+          "first_exact_source_id": "1576683529448755328",
+          "epoch_Julian_year": 2016,
+          "missing_parallax": 310,
+          "adopted_distances": 0,
+          "raw_csv_bytes": 1129055,
+          "binary_bytes": 560072
+        },
+        "units": [
+          "ICRS degrees",
+          "Julian year",
+          "mas",
+          "magnitude",
+          "unit-sphere direction"
+        ],
+        "tolerances": {
+          "coordinate_fixtures_absolute": "1e-11",
+          "IDs_count_and_CRC": "exact",
+          "distance_posterior_comparison": "not performed; no distances inferred"
+        },
+        "accepted_scope": [
+          "Pinned real Gaia DR3 subset, exact64-bit IDs, preserved measurements/missingness, bounded direction projection and provenance"
+        ],
+        "blocker_or_deviation": [
+          "No distance posterior summaries/covariances, proper-motion propagation, Galactic/Galactocentric/volume transforms or DESI redshift data",
+          "No HEALPix/HiPS adaptive tiles, source-selection linked inspectors, spectrum/time-series retrieval, or real-pulsar linked vertical slice",
+          "Broader atlas and route dependencies remain open; no complete catalogue/universe claim"
+        ],
+        "next_action": "Add a source-linked angular/volume slice with documented distance posteriors and uncertainty before expanding datasets."
+      },
+      "scope_status": "PARTIAL_EVIDENCE_ONLY"
+    },
+    {
+      "id": "G11",
+      "title": "Billion-source ingestion and scaling",
+      "depends_on": [
+        "G01",
+        "G10"
+      ],
+      "provisions": [
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        95
+      ],
+      "required_evidence": "actual counts; resumable partitions; disk/RAM/bandwidth/frame metrics",
+      "status": "NOT_STARTED",
+      "receipt": {
+        "gate_id": "G11",
+        "task_version": "native-bounded-increment/2026-10-25",
+        "source_revision": {
+          "git_commit": null,
+          "status": "UNCOMMITTED_CONTENT_SNAPSHOT",
+          "content_fingerprint_sha256": "5c9803a9071d84041a557556207b1ddd986f71631045c6f76e16379724ca3c67",
+          "fingerprint_definition": "SHA-256 of source_hashes serialized as sorted compact UTF-8 JSON",
+          "binding_limit": "Hashes capture the reviewed working tree; no immutable repository revision is claimed. See recorded build commands and release manifest for artifact binding."
+        },
+        "input_hashes": {
+          "lineage/commission-acceptance.original.json": "9d62726628fc6dc1c65b1deb3d06b1fbae28ec9420b0d48b41e622adbf3f8a58"
+        },
+        "environment": {
+          "native_host_receipt": "evidence/headless-build.json",
+          "native_compiler": "c++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
+          "native_platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+          "foundation_runtime": null,
+          "Android_runtime": "not executed"
+        },
+        "verifier_hash": {},
+        "output_hashes": {
+          "data/gaia-provenance.json": "019760dfad276b8f41db8a3c6abafccfd6f3a85f8ef3badd9b301423b6a63a66",
+          "evidence/headless-cosmos.json": "e18e7988fe9e2fd60a6c17d634fc568139ec0f327a3bc7f4d6185e8d551bef77",
+          "evidence/headless-coupled.json": "f9d80bd8b96ed9d9ed882545ef5973f3ed22af1b9a47579082c71f8d37329c4f"
+        },
+        "status": "NOT_STARTED",
+        "evidence_paths": [
+          "data/gaia-provenance.json",
+          "evidence/headless-cosmos.json",
+          "evidence/headless-coupled.json"
+        ],
+        "command_or_api": [
+          "No billion-source ingestion command executed",
+          "Read measured bounded-slice report evidence/headless-cosmos.json"
+        ],
+        "observed_values": {
+          "commission_target_sources": 1811709771,
+          "implemented_catalogue_sources": 10000,
+          "projected_sources_in_recorded_view": 5058,
+          "resumable_bulk_partitions": 0,
+          "cosmos_host_p95_ms": 10.5647761,
+          "coupled_host_p95_ms": 57.85202945
+        },
+        "units": [
+          "sources",
+          "bytes",
+          "host milliseconds per frame"
+        ],
+        "tolerances": {
+          "scope": "Only measured local10000-source slice; no extrapolated billion-source metric"
+        },
+        "accepted_scope": [
+          "Measured representative small local catalogue view only"
+        ],
+        "blocker_or_deviation": [
+          "No billion-source indexing/downloading/caching, resumable partitions or full disk/RAM/bandwidth ledger",
+          "No progressive dense/sparse tile scaling series; Android device frame distributions unmeasured"
+        ],
+        "next_action": "Contract resumable partitions with independent accepted counts and storage/memory/bandwidth budgets; measure actual progressively larger datasets."
+      },
+      "scope_status": "PARTIAL_EVIDENCE_ONLY"
+    },
+    {
+      "id": "G12",
+      "title": "Pulsar timing and symbol grammars",
+      "depends_on": [
+        "G04",
+        "G09",
+        "G10"
+      ],
+      "provisions": [
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        94
+      ],
+      "required_evidence": "real valid timing dataset; profile/residual match; event-type and P/2P tests",
+      "status": "BLOCKED",
+      "receipt": {
+        "gate_id": "G12",
+        "task_version": "native-bounded-increment/2026-10-25",
+        "source_revision": {
+          "git_commit": null,
+          "status": "UNCOMMITTED_CONTENT_SNAPSHOT",
+          "content_fingerprint_sha256": "5c9803a9071d84041a557556207b1ddd986f71631045c6f76e16379724ca3c67",
+          "fingerprint_definition": "SHA-256 of source_hashes serialized as sorted compact UTF-8 JSON",
+          "binding_limit": "Hashes capture the reviewed working tree; no immutable repository revision is claimed. See recorded build commands and release manifest for artifact binding."
+        },
+        "input_hashes": {
+          "lineage/commission-acceptance.original.json": "9d62726628fc6dc1c65b1deb3d06b1fbae28ec9420b0d48b41e622adbf3f8a58"
+        },
+        "environment": {
+          "native_host_receipt": "evidence/headless-build.json",
+          "native_compiler": "c++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
+          "native_platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+          "foundation_runtime": null,
+          "Android_runtime": "not executed"
+        },
+        "verifier_hash": {
+          "tests/test_phantom.cpp": "3dcf44abef9abd01d7cb7ca0cbd1b17404b0b2b10116cceeb4bfa52cc150a13b"
+        },
+        "output_hashes": {
+          "evidence/native-final-tests.log": "94eac5557d3eca38f64250d30489ccc4d230b50c35ae13ccfdf41197f8154250",
+          "evidence/headless-build.json": "2ecb1d1182c9ebd67f5d5de127fd8fa95574eb911659a34a1d40a7c23c47e4d2",
+          "docs/PHANTOM.md": "52496d93ed2cdd11a4930af8b0c6e16c461ed3b640447031d775c2ef3168e22f"
+        },
+        "status": "BLOCKED",
+        "evidence_paths": [
+          "evidence/native-final-tests.log",
+          "evidence/headless-build.json",
+          "docs/PHANTOM.md"
+        ],
+        "command_or_api": [
+          "build/tests/test_phantom"
+        ],
+        "observed_values": {
+          "presence_fixture": [
+            1,
+            1,
+            0,
+            1,
+            0,
+            0
+          ],
+          "toggle_encoding_fixture": [
+            1,
+            0,
+            1,
+            1,
+            1,
+            0
+          ],
+          "exact_decode": "passed",
+          "real_TOA_or_event_dataset": null,
+          "timing_ephemeris": null
+        },
+        "units": [
+          "dimensionless sample bits; no physical arrival-time units adopted"
+        ],
+        "tolerances": {
+          "discrete_fixture": "exact",
+          "timing_residual_P_and_2P_acceptance": "not run"
+        },
+        "accepted_scope": [
+          "Distinct finite presence/toggle semantics with exact sample reconstruction"
+        ],
+        "blocker_or_deviation": [
+          "No real timing dataset, valid ephemeris, barycentric/clock/dispersion/binary corrections or high-precision rotation count",
+          "No energy-dependent profile fold/residual comparison, UNKNOWN/UNOBSERVED symbolizer, duplicate-event IDs or physical P/2P tests",
+          "No chronological held-out grammar comparison or linked pulsar chart replay"
+        ],
+        "next_action": "Pin a suitable public event/TOA dataset and valid ephemeris; validate one timing pipeline before applying the symbolizer."
+      },
+      "scope_status": "PARTIAL_EVIDENCE_ONLY"
+    },
+    {
+      "id": "G13",
+      "title": "Astronomical dynamical models",
+      "depends_on": [
+        "G04",
+        "G09",
+        "G10"
+      ],
+      "provisions": [
+        81,
+        82,
+        83,
+        84,
+        85,
+        86
+      ],
+      "required_evidence": "reference orbits/variability/relativistic fixtures; state abstraction and uncertainty",
+      "status": "NOT_STARTED",
+      "receipt": {
+        "gate_id": "G13",
+        "task_version": "native-bounded-increment/2026-10-25",
+        "source_revision": {
+          "git_commit": null,
+          "status": "UNCOMMITTED_CONTENT_SNAPSHOT",
+          "content_fingerprint_sha256": "5c9803a9071d84041a557556207b1ddd986f71631045c6f76e16379724ca3c67",
+          "fingerprint_definition": "SHA-256 of source_hashes serialized as sorted compact UTF-8 JSON",
+          "binding_limit": "Hashes capture the reviewed working tree; no immutable repository revision is claimed. See recorded build commands and release manifest for artifact binding."
+        },
+        "input_hashes": {
+          "lineage/commission-acceptance.original.json": "9d62726628fc6dc1c65b1deb3d06b1fbae28ec9420b0d48b41e622adbf3f8a58"
+        },
+        "environment": {
+          "native_host_receipt": "evidence/headless-build.json",
+          "native_compiler": "c++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
+          "native_platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+          "foundation_runtime": null,
+          "Android_runtime": "not executed"
+        },
+        "verifier_hash": {},
+        "output_hashes": {
+          "docs/PHYSICS.md": "0bad3ff97e3b9186d6dc770328be0b43bec5c525c7c7e56f92eca72a67c4dc6e",
+          "docs/ATLAS.md": "452467ce5d7f7853452b460a409cf28b2c2a84f419500b1fef1ee8994b2d7ff7",
+          "evidence/headless-cosmos.json": "e18e7988fe9e2fd60a6c17d634fc568139ec0f327a3bc7f4d6185e8d551bef77"
+        },
+        "status": "NOT_STARTED",
+        "evidence_paths": [
+          "docs/PHYSICS.md",
+          "docs/ATLAS.md",
+          "evidence/headless-cosmos.json"
+        ],
+        "command_or_api": [
+          "No stellar variability, orbital, galaxy dynamics or relativistic model verification executed"
+        ],
+        "observed_values": {
+          "dynamical_astronomy_models_verified": 0,
+          "catalogue_epoch": 2016,
+          "display": "static direction projection"
+        },
+        "units": [
+          "Julian year",
+          "angular direction"
+        ],
+        "tolerances": {
+          "dynamical_model_tolerance": "not specified or tested"
+        },
+        "accepted_scope": [],
+        "blocker_or_deviation": [
+          "No analytic two-body/N-body, measured variability, galaxy kinematics, geodesic/lensing/accretion or uncertainty/state-abstraction fixtures",
+          "Animated native ink is not an astronomical dynamical model"
+        ],
+        "next_action": "Start with a declared-frame analytic two-body fixture and energy/angular-momentum checks, then a real variability dataset."
+      },
+      "scope_status": "NO_NATIVE_IMPLEMENTATION"
+    },
+    {
+      "id": "G14",
+      "title": "Bounded mathematical discovery",
+      "depends_on": [
+        "G01",
+        "G09",
+        "G12",
+        "G13"
+      ],
+      "provisions": [
+        78,
+        79,
+        87,
+        88,
+        89
+      ],
+      "required_evidence": "search ledger; independent checks; chronological held-out comparison; nulls and failures",
+      "status": "BLOCKED",
+      "receipt": {
+        "gate_id": "G14",
+        "task_version": "native-bounded-increment/2026-10-25",
+        "source_revision": {
+          "git_commit": null,
+          "status": "UNCOMMITTED_CONTENT_SNAPSHOT",
+          "content_fingerprint_sha256": "5c9803a9071d84041a557556207b1ddd986f71631045c6f76e16379724ca3c67",
+          "fingerprint_definition": "SHA-256 of source_hashes serialized as sorted compact UTF-8 JSON",
+          "binding_limit": "Hashes capture the reviewed working tree; no immutable repository revision is claimed. See recorded build commands and release manifest for artifact binding."
+        },
+        "input_hashes": {
+          "lineage/commission-acceptance.original.json": "9d62726628fc6dc1c65b1deb3d06b1fbae28ec9420b0d48b41e622adbf3f8a58"
+        },
+        "environment": {
+          "native_host_receipt": "evidence/headless-build.json",
+          "native_compiler": "c++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
+          "native_platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+          "foundation_runtime": {
+            "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+            "executable": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+            "numpy": "2.3.5",
+            "scipy": "1.17.0"
+          },
+          "Android_runtime": "not executed"
+        },
+        "verifier_hash": {},
+        "output_hashes": {
+          "evidence/foundation-replay.json": "d5f05aff022fb105d199dba04a101180c40cbca8043d801039167f98c57cb15b",
+          "evidence/foundation-logs/oracle-fresh-summary.json": "232b7b8d8f7f31359ff5fbdf6c44c703f974703844e3ef50c73c22be14b58e6c",
+          "evidence/foundation-logs/oracle-fresh-ledger.json": "62e8c6c3ef69650e19284a1f99a053d2dc47261702e87652d9fc99ad0ca84455",
+          "evidence/foundation-logs/phantom-cold-replay-result.json": "c0842a7c028ee8f2cefaa83b693e0faa3ca68330e9373753315a8f74feadd1da"
+        },
+        "status": "BLOCKED",
+        "evidence_paths": [
+          "evidence/foundation-replay.json",
+          "evidence/foundation-logs/oracle-fresh-summary.json",
+          "evidence/foundation-logs/oracle-fresh-ledger.json",
+          "evidence/foundation-logs/phantom-cold-replay-result.json"
+        ],
+        "command_or_api": [
+          "python3 -B -m quantum_oracle run --out <separate-replay-output> [original recorded absolute command retained in evidence/foundation-replay.json]",
+          "python3 -B -m quantum_oracle verify --out <same-output>",
+          "python3 -B -m division8 replay --run runs/release --expected-head 6bddd82c0587cf3ce557bed4f950e9664cdbb9e5a1ae89ad13d0eb891ff948b6 --expected-execution-head dbde8c15bf3dd7bc74da3f2bf537d4f5e59935f06ce833598f6a9fddbaf64e12 --output <separate-output>"
+        ],
+        "observed_values": {
+          "original_oracle_candidates_searched": 20,
+          "original_oracle_best_depth": 2,
+          "original_oracle_best_error": 1.5700924586837752e-16,
+          "original_oracle_scoped_result": "ACCEPT",
+          "replayed_PHANTOM_claims": {
+            "ACCEPTED_WITH_SCOPE": 26,
+            "REJECTED": 8,
+            "UNKNOWN": 1
+          }
+        },
+        "units": [
+          "candidates",
+          "gate depth",
+          "dimensionless probability-vector error"
+        ],
+        "tolerances": {
+          "PHANTOM_regenerated_outputs": "exact; zero numeric differences",
+          "Oracle_error": "1.5700924586837752e-16 observed for its original bounded example; original verifier controls acceptance"
+        },
+        "accepted_scope": [
+          "Unchanged bounded original search/replay and preserved rejected/unknown claim classifications"
+        ],
+        "blocker_or_deviation": [
+          "No new chronological held-out astronomical/reservoir/cross-substrate discovery study, baselines/nulls/multiplicity correction or energy/latency benefit test",
+          "Missing full original Language Lab corpus prevents full-corpus recomputation",
+          "A toy Bell-target search is not evidence of new physics, hardware advantage or completion of the broader discovery commission"
+        ],
+        "next_action": "Specify a finite scientific prediction task and chronological holdout/null controls; preserve all candidate failures and independent verification before novelty claims."
+      },
+      "scope_status": "PARTIAL_EVIDENCE_ONLY"
+    },
+    {
+      "id": "G15",
+      "title": "Inherited v2/v3 unresolved obligations",
+      "depends_on": [
+        "G00",
+        "G04"
+      ],
+      "provisions": [
+        29,
+        90
+      ],
+      "required_evidence": "original gate reconciliation; collider/hardware compilation/quantum/discovery receipts",
+      "status": "BLOCKED",
+      "receipt": {
+        "gate_id": "G15",
+        "task_version": "native-bounded-increment/2026-10-25",
+        "source_revision": {
+          "git_commit": null,
+          "status": "UNCOMMITTED_CONTENT_SNAPSHOT",
+          "content_fingerprint_sha256": "5c9803a9071d84041a557556207b1ddd986f71631045c6f76e16379724ca3c67",
+          "fingerprint_definition": "SHA-256 of source_hashes serialized as sorted compact UTF-8 JSON",
+          "binding_limit": "Hashes capture the reviewed working tree; no immutable repository revision is claimed. See recorded build commands and release manifest for artifact binding."
+        },
+        "input_hashes": {
+          "lineage/commission-acceptance.original.json": "9d62726628fc6dc1c65b1deb3d06b1fbae28ec9420b0d48b41e622adbf3f8a58",
+          "lineage/SURFACE_PHYSICAL_COSMOS_CONTINUATION_v1.zip": "ca8f9202b4c4acc8ab39d3a7305f4ba4cf80d016a384db9714019208cd5ae622"
+        },
+        "environment": {
+          "native_host_receipt": "evidence/headless-build.json",
+          "native_compiler": "c++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
+          "native_platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+          "foundation_runtime": {
+            "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+            "executable": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+            "numpy": "2.3.5",
+            "scipy": "1.17.0"
+          },
+          "Android_runtime": "not executed"
+        },
+        "verifier_hash": {
+          "tests/test_phantom.cpp": "3dcf44abef9abd01d7cb7ca0cbd1b17404b0b2b10116cceeb4bfa52cc150a13b"
+        },
+        "output_hashes": {
+          "evidence/native-final-tests.log": "94eac5557d3eca38f64250d30489ccc4d230b50c35ae13ccfdf41197f8154250",
+          "evidence/headless-build.json": "2ecb1d1182c9ebd67f5d5de127fd8fa95574eb911659a34a1d40a7c23c47e4d2",
+          "evidence/foundation-replay.json": "d5f05aff022fb105d199dba04a101180c40cbca8043d801039167f98c57cb15b",
+          "docs/PHANTOM_SOURCES.json": "f1e01ebc1a2e9c9127f50a8728b4793d4be981397dbd68c2dd254acbb79a66af",
+          "evidence/foundation-logs/oracle-fresh-summary.json": "232b7b8d8f7f31359ff5fbdf6c44c703f974703844e3ef50c73c22be14b58e6c"
+        },
+        "status": "BLOCKED",
+        "evidence_paths": [
+          "evidence/native-final-tests.log",
+          "evidence/headless-build.json",
+          "evidence/foundation-replay.json",
+          "docs/PHANTOM_SOURCES.json",
+          "evidence/foundation-logs/oracle-fresh-summary.json"
+        ],
+        "command_or_api": [
+          "Original input/tests/replay commands in evidence/foundation-replay.json",
+          "build/tests/test_phantom"
+        ],
+        "observed_values": {
+          "inherited_original_unit_tests": 145,
+          "v2_input_archives": "verified",
+          "original_Oracle_open_system_final_excited": 0.12245642825298171,
+          "original_Oracle_open_system_expected": 0.12245642825298195,
+          "original_Oracle_ledger_verified": true,
+          "full_v2_v3_acceptance": false
+        },
+        "units": [
+          "test cases",
+          "dimensionless probability"
+        ],
+        "tolerances": {
+          "immutable_input_hashes": "exact",
+          "original_damping_absolute_difference": 2.3592239273284576e-16,
+          "scope": "Original single-harness example only; not independent-backend conformance"
+        },
+        "accepted_scope": [
+          "Fresh local baseline admission/replay, selected native binary/quantum semantic ports and explicit basis-order conversion"
+        ],
+        "blocker_or_deviation": [
+          "v2G1 complete binary/typed-IR/PHANTOM contract remains partial",
+          "v2G2 requires>=2 independent quantum backends or a documented block; no such fresh comparison",
+          "v2G3 FITS/WCS/calibrated spectrum pipeline, v2G4 collision ROOT events/kinematic comparison and v2G5 calibration-aware hardware compilation are unfulfilled",
+          "v2G6 held-out cross-substrate induction and v2G7 full integrated clean-room replay remain open",
+          "v3 dynamic N-chart, mixed states/channels/measurement/hardware addresses and real-data interfaces are not completed by its9 seed tests"
+        ],
+        "next_action": "Continue the inherited gate matrix explicitly; choose the earliest unmet typed-IR/quantum comparison dependency without relabeling absent data/hardware as accepted."
+      },
+      "scope_status": "PARTIAL_EVIDENCE_ONLY"
+    },
+    {
+      "id": "G16",
+      "title": "Integrated release and cold replay",
+      "depends_on": [
+        "G03",
+        "G05",
+        "G06",
+        "G07",
+        "G08",
+        "G09",
+        "G10",
+        "G11",
+        "G12",
+        "G13",
+        "G14",
+        "G15"
+      ],
+      "provisions": [
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100
+      ],
+      "required_evidence": "usable link; source/data release; independent replay; exact accepted and blocked scope",
+      "status": "BLOCKED",
+      "receipt": {
+        "gate_id": "G16",
+        "task_version": "native-bounded-increment/2026-10-25",
+        "source_revision": {
+          "git_commit": null,
+          "status": "UNCOMMITTED_CONTENT_SNAPSHOT",
+          "content_fingerprint_sha256": "5c9803a9071d84041a557556207b1ddd986f71631045c6f76e16379724ca3c67",
+          "fingerprint_definition": "SHA-256 of source_hashes serialized as sorted compact UTF-8 JSON",
+          "binding_limit": "Hashes capture the reviewed working tree; no immutable repository revision is claimed. See recorded build commands and release manifest for artifact binding."
+        },
+        "input_hashes": {
+          "lineage/commission-acceptance.original.json": "9d62726628fc6dc1c65b1deb3d06b1fbae28ec9420b0d48b41e622adbf3f8a58"
+        },
+        "environment": {
+          "native_host_receipt": "evidence/headless-build.json",
+          "native_compiler": "c++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
+          "native_platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+          "foundation_runtime": {
+            "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+            "executable": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+            "numpy": "2.3.5",
+            "scipy": "1.17.0"
+          },
+          "Android_runtime": "not executed"
+        },
+        "verifier_hash": {
+          "tools/build_native.py": "e6db951787ce5c4e936c8ae5a5d95c24aeb1d6ff1c3668ab38196ccaf21281c7",
+          "tools/build_android.py": "88049cf6b3a85b6a189ae1defea7ed0ea9f1f22d85c5785172ff823ad07a8b40",
+          "tests/test_session.cpp": "14dda2a7c33f24d442a7d6dc10a262a6062bc694267a7c7deaf9bc5a59e2e71c",
+          "tools/verify_android.py": "ee681004ceb6e74e22501852a642dbbf9022927bf937a2711c2bd0b2276398f5"
+        },
+        "output_hashes": {
+          "evidence/native-final-tests.log": "94eac5557d3eca38f64250d30489ccc4d230b50c35ae13ccfdf41197f8154250",
+          "evidence/headless-build.json": "2ecb1d1182c9ebd67f5d5de127fd8fa95574eb911659a34a1d40a7c23c47e4d2",
+          "evidence/android-build.json": "321572722826a2db9e37c60344aec2b516d17ff2b7b6397c6265657e20368c21",
+          "evidence/headless-cli-qa.json": "d8bebda1c9534f6a2134802e5ebde900f26a26530b24ee9129000ef32efe3ae1",
+          "evidence/headless-resumed.json": "c2680d8d5549a83abeabf3ce899c8a55e69946fa5763566e65065612ba382a2f",
+          "evidence/foundation-replay.json": "d5f05aff022fb105d199dba04a101180c40cbca8043d801039167f98c57cb15b",
+          "evidence/recovery-inventory.json": "3e4d6e4aa41a34d995e1416c4fe2ac247a6cfeaaf4aa4ad9223ed76ead14969c",
+          "evidence/android-package-verification.json": "e667b10a9f7983f1e69bfb91fd4ac13f003868b0a97814c947b935a489b5f794"
+        },
+        "status": "BLOCKED",
+        "evidence_paths": [
+          "evidence/native-final-tests.log",
+          "evidence/headless-build.json",
+          "evidence/android-build.json",
+          "evidence/headless-cli-qa.json",
+          "evidence/headless-resumed.json",
+          "evidence/foundation-replay.json",
+          "evidence/recovery-inventory.json",
+          "evidence/android-package-verification.json"
+        ],
+        "command_or_api": [
+          "python3 tools/build_native.py --test",
+          "python3 tools/build_android.py --toolchain ../android-toolchain",
+          "Native CLI and foundation replay commands referenced above",
+          "python3 tools/verify_android.py --toolchain ../android-toolchain"
+        ],
+        "observed_values": {
+          "native_cpp_suites_passed": 9,
+          "python_supervisor_tests_passed": 14,
+          "foundation_tests_passed": 145,
+          "exact_foundation_regenerated_files": 125,
+          "APK_bytes": 1369050,
+          "APK_sha256": "0a6f32c450c931699eaf75778c5e7d1fae1b5cfc1123d32aeac93d5f46a2f8da",
+          "native_source_release": "Final assembly pending; SOURCE_MANIFEST.json and RELEASE.json planned for committed source archive. No upload/delivery claimed.",
+          "all_G00_G16_gates_accepted": false,
+          "android_runtime_evidence": "UNKNOWN",
+          "published_route": false,
+          "android_static_checks_passed": 10,
+          "android_signature_exit_code": 0,
+          "android_zip_alignment_exit_code": 0,
+          "android_runtime": "NOT_RUN_NO_DEVICE_OR_EMULATOR"
+        },
+        "units": [
+          "bytes",
+          "files",
+          "test cases"
+        ],
+        "tolerances": {
+          "source_and_artifact_identity": "SHA-256 where recorded",
+          "full_commission": "Not accepted while prerequisite gates remain unresolved"
+        },
+        "accepted_scope": [
+          "Bounded native artifacts, reproducible host commands, actual previews, cold native continuation and immutable foundation replay receipts"
+        ],
+        "blocker_or_deviation": [
+          "Required broad scientific dependencies G03/G05-G15 remain open",
+          "No device runtime validation or full integrated clean-room commission replay",
+          "No recovered old URL/revision/jobs; external repository/site publication blocked",
+          "This is a partial native increment, not completion of the100-provision commission"
+        ],
+        "next_action": "Package the native binary/source/evidence with this exact open-gate handoff; perform device validation and pursue independently contracted remaining gates."
+      },
+      "scope_status": "PARTIAL_EVIDENCE_ONLY"
+    }
+  ],
+  "partial_release_policy": "Return usable increments with explicit accepted scope; do not label the whole commission complete while required gates remain unresolved.",
+  "release_assembly": {
+    "status": "PENDING_AT_GATE_REVIEW",
+    "source_archive_metadata": "SOURCE_MANIFEST.json and RELEASE.json are planned archive additions that will carry the committed revision and exact file hashes. They are not claimed delivered by this review.",
+    "external_repository_upload": "BLOCKED; no external upload claimed",
+    "native_artifact_delivery": "pending final artifact-save receipt",
+    "APK_sha256": "0a6f32c450c931699eaf75778c5e7d1fae1b5cfc1123d32aeac93d5f46a2f8da"
+  },
+  "bounded_acceptances": [
+    {
+      "id": "S00",
+      "title": "Immutable foundation admission and exact local replay",
+      "status": "ACCEPT",
+      "evidence_paths": [
+        "evidence/foundation-replay.json"
+      ],
+      "command_or_api": [
+        "See eleven exact recorded commands in evidence/foundation-replay.json"
+      ],
+      "observed_values": {
+        "original_unit_tests": 145,
+        "verified_scientific_files": 129,
+        "exact_regenerated_files": 125,
+        "extracted_source_changes": 0
+      },
+      "tolerances": "Exact archived bytes and regenerated deterministic bytes; no numeric tolerance used.",
+      "scope_limit": "Supplied local original suites only; no absent Language Lab corpus or full v2/v3 completion.",
+      "evidence_sha256": {
+        "evidence/foundation-replay.json": "d5f05aff022fb105d199dba04a101180c40cbca8043d801039167f98c57cb15b"
+      }
+    },
+    {
+      "id": "S01",
+      "title": "Native host build and current regression inventory",
+      "status": "ACCEPT",
+      "evidence_paths": [
+        "evidence/headless-build.json",
+        "evidence/native-final-tests.log"
+      ],
+      "command_or_api": [
+        "python3 tools/build_native.py --test"
+      ],
+      "observed_values": {
+        "C++_executables_passed": 9,
+        "Python_tests_passed": 14,
+        "failures": 0
+      },
+      "tolerances": "All recorded processes exited0; assertions remained enabled.",
+      "scope_limit": "Linux host build; no Android device execution inferred.",
+      "evidence_sha256": {
+        "evidence/headless-build.json": "2ecb1d1182c9ebd67f5d5de127fd8fa95574eb911659a34a1d40a7c23c47e4d2",
+        "evidence/native-final-tests.log": "94eac5557d3eca38f64250d30489ccc4d230b50c35ae13ccfdf41197f8154250"
+      }
+    },
+    {
+      "id": "S02",
+      "title": "Bounded process supervision and native recovery",
+      "status": "ACCEPT",
+      "evidence_paths": [
+        "evidence/headless-build.json",
+        "docs/RECOVERY.md"
+      ],
+      "command_or_api": [
+        "build/tests/test_checkpoint",
+        "build/tests/test_engine",
+        "build/tests/test_session",
+        "python3 -m unittest discover -s tests -p test_*.py"
+      ],
+      "observed_values": {
+        "supervisor_fault_tests": 14,
+        "owner_generation_fences": "passed",
+        "FIFO_export_final_checkpoint": "passed"
+      },
+      "tolerances": "Exact state/owner assertions; fixed deadline tests with declared scheduler/termination margins.",
+      "scope_limit": "Subset of original G01; missing full persistent failure-family/provider contract is listed there.",
+      "evidence_sha256": {
+        "evidence/headless-build.json": "2ecb1d1182c9ebd67f5d5de127fd8fa95574eb911659a34a1d40a7c23c47e4d2",
+        "docs/RECOVERY.md": "623b14eaf4197a36e7b41fed9a7bb8d1a054b7bc64b682440f4889aa4653c36b"
+      }
+    },
+    {
+      "id": "S03",
+      "title": "Native rendering and portable cold continuation",
+      "status": "ACCEPT",
+      "evidence_paths": [
+        "evidence/headless-cli-qa.json",
+        "evidence/headless-coupled.json",
+        "evidence/headless-cosmos.json",
+        "evidence/headless-resumed.json"
+      ],
+      "command_or_api": [
+        "Native headless commands in docs/CLI.md"
+      ],
+      "observed_values": {
+        "input_sequence_preserved": 60,
+        "simulation_time_before": 1,
+        "simulation_time_after": 1.01666666667,
+        "tampered_export_exit_code": 2
+      },
+      "tolerances": "Exact portable-state/hash admission; same-build byte-continuation assertions; headless reports retain measured values.",
+      "scope_limit": "Scientific session/view state retained; accumulated renderer pixels are not promised identical after restart.",
+      "evidence_sha256": {
+        "evidence/headless-cli-qa.json": "d8bebda1c9534f6a2134802e5ebde900f26a26530b24ee9129000ef32efe3ae1",
+        "evidence/headless-coupled.json": "f9d80bd8b96ed9d9ed882545ef5973f3ed22af1b9a47579082c71f8d37329c4f",
+        "evidence/headless-cosmos.json": "e18e7988fe9e2fd60a6c17d634fc568139ec0f327a3bc7f4d6185e8d551bef77",
+        "evidence/headless-resumed.json": "c2680d8d5549a83abeabf3ce899c8a55e69946fa5763566e65065612ba382a2f"
+      }
+    },
+    {
+      "id": "S04",
+      "title": "Finite binary and ideal quantum references",
+      "status": "ACCEPT",
+      "evidence_paths": [
+        "evidence/headless-build.json",
+        "docs/PHANTOM_SOURCES.json"
+      ],
+      "command_or_api": [
+        "build/tests/test_phantom",
+        "build/tests/test_atlas"
+      ],
+      "observed_values": {
+        "native_max_qubits": 6,
+        "native_max_operations": 256,
+        "exact_IDs_and_complex_bytes": "passed",
+        "Bell_and_interference": "passed"
+      },
+      "tolerances": "Quantum reference absolute error1e-12 unless exact-byte predicate applies.",
+      "scope_limit": "No full density/channel/hardware or two-independent-backend acceptance.",
+      "evidence_sha256": {
+        "evidence/headless-build.json": "2ecb1d1182c9ebd67f5d5de127fd8fa95574eb911659a34a1d40a7c23c47e4d2",
+        "docs/PHANTOM_SOURCES.json": "f1e01ebc1a2e9c9127f50a8728b4793d4be981397dbd68c2dd254acbb79a66af"
+      }
+    },
+    {
+      "id": "S05",
+      "title": "Declared reduced physics references",
+      "status": "ACCEPT",
+      "evidence_paths": [
+        "evidence/physics-verification.json",
+        "evidence/headless-build.json"
+      ],
+      "command_or_api": [
+        "build/tests/test_physics",
+        "build/tests/test_acoustic"
+      ],
+      "observed_values": {
+        "analytic_wave_heat_E_B_circuit_memory": "passed",
+        "acoustic_mode_decay_PCM": "passed"
+      },
+      "tolerances": "Verifier-source bounds recorded perG02/G05/G06/G07.",
+      "scope_limit": "Reduced reference models, not full Maxwell, battery chemistry or validated micromagnetics.",
+      "evidence_sha256": {
+        "evidence/physics-verification.json": "b15666756e1d781a3b9f13d463a129e2c84ac57453bd3170f3fbfbd0fe5e4114",
+        "evidence/headless-build.json": "2ecb1d1182c9ebd67f5d5de127fd8fa95574eb911659a34a1d40a7c23c47e4d2"
+      }
+    },
+    {
+      "id": "S06",
+      "title": "CIE and scalar magneto-optical references",
+      "status": "ACCEPT",
+      "evidence_paths": [
+        "evidence/physics-verification.json",
+        "evidence/headless-build.json"
+      ],
+      "command_or_api": [
+        "build/tests/test_physics",
+        "build/tests/test_renderer"
+      ],
+      "observed_values": {
+        "CIE_reference_interpolation": "passed",
+        "Faraday_Malus_Zeeman_helpers": "passed"
+      },
+      "tolerances": "CIE1e-12; Malus45deg1e-14; Zeeman10Hz absolute fixture bound.",
+      "scope_limit": "No full retained-spectrum commissioning scenes or calibrated display.",
+      "evidence_sha256": {
+        "evidence/physics-verification.json": "b15666756e1d781a3b9f13d463a129e2c84ac57453bd3170f3fbfbd0fe5e4114",
+        "evidence/headless-build.json": "2ecb1d1182c9ebd67f5d5de127fd8fa95574eb911659a34a1d40a7c23c47e4d2"
+      }
+    },
+    {
+      "id": "S07",
+      "title": "Pinned observed Gaia direction slice",
+      "status": "ACCEPT",
+      "evidence_paths": [
+        "data/gaia-provenance.json",
+        "evidence/headless-cosmos.json",
+        "evidence/headless-build.json"
+      ],
+      "command_or_api": [
+        "build/tests/test_atlas",
+        "Headless mode6 command in docs/CLI.md"
+      ],
+      "observed_values": {
+        "retained_sources": 10000,
+        "projected_front_hemisphere": 5058,
+        "missing_parallax": 310,
+        "inferred_distances": 0
+      },
+      "tolerances": "Exact source IDs/counts/hashes; coordinate fixtures1e-11.",
+      "scope_limit": "No complete sky/universe, distance posterior, pulsar pipeline or billion-source ingestion.",
+      "evidence_sha256": {
+        "data/gaia-provenance.json": "019760dfad276b8f41db8a3c6abafccfd6f3a85f8ef3badd9b301423b6a63a66",
+        "evidence/headless-cosmos.json": "e18e7988fe9e2fd60a6c17d634fc568139ec0f327a3bc7f4d6185e8d551bef77",
+        "evidence/headless-build.json": "2ecb1d1182c9ebd67f5d5de127fd8fa95574eb911659a34a1d40a7c23c47e4d2"
+      }
+    },
+    {
+      "id": "S08",
+      "title": "ARM64 APK construction and static package verification",
+      "status": "ACCEPT",
+      "evidence_paths": [
+        "evidence/android-build.json",
+        "evidence/android-package-verification.json"
+      ],
+      "command_or_api": [
+        "python3 tools/build_android.py --toolchain ../android-toolchain",
+        "python3 tools/verify_android.py --toolchain ../android-toolchain"
+      ],
+      "observed_values": {
+        "static_checks_passed": 10,
+        "bytes": 1369050,
+        "sha256": "0a6f32c450c931699eaf75778c5e7d1fae1b5cfc1123d32aeac93d5f46a2f8da",
+        "signature_exit_code": 0,
+        "zip_alignment_exit_code": 0
+      },
+      "tolerances": "Exact binary identity; ten Boolean package/ELF checks; signature/alignment return0.",
+      "scope_limit": "Android device install/lifecycle/touch/audio/performance NOT_RUN_NO_DEVICE_OR_EMULATOR; development certificate.",
+      "evidence_sha256": {
+        "evidence/android-build.json": "321572722826a2db9e37c60344aec2b516d17ff2b7b6397c6265657e20368c21",
+        "evidence/android-package-verification.json": "e667b10a9f7983f1e69bfb91fd4ac13f003868b0a97814c947b935a489b5f794"
+      }
+    }
+  ]
+}

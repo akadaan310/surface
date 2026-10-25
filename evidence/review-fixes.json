@@ -1,0 +1,64 @@
+{
+  "scope": "Independent source review and targeted native repros; no Android device execution",
+  "fixes": [
+    {
+      "issue": "Android window mutations from native worker thread",
+      "implementation": "SurfaceActivity.java owns immersive Window/View operations on Android UI lifecycle thread; nativeDimensions only writes atomic dimensions.",
+      "verification": "Cross-compilation; static JNI symbol and package inspection; runtime gate remains open.",
+      "status": "IMPLEMENTED_DEVICE_UNVERIFIED"
+    },
+    {
+      "issue": "Checkpoint initialization exception could terminate worker process",
+      "implementation": "EngineService initializes inside exception boundary and reports unavailable checkpoint directory without std::terminate.",
+      "verification": "test_engine plus review child repro: child signaled=0 signal=0.",
+      "status": "PASS"
+    },
+    {
+      "issue": "Stop could discard accepted paint or final state",
+      "implementation": "Closing mode drains the accepted FIFO and commits a final checkpoint within bounded graceful shutdown.",
+      "verification": "test_engine reopens state after shutdown and checks accepted paint.",
+      "status": "PASS"
+    },
+    {
+      "issue": "Retired delayed writer could publish after replacement",
+      "implementation": "Durable owner lease checked under the publication lock, separate from state generation; cancellation checked after initialization.",
+      "verification": "test_checkpoint stale-owner and cross-process cases; review repro exists at stop=0 exists after stop=0.",
+      "status": "PASS"
+    },
+    {
+      "issue": "Export could return stale renderer snapshot",
+      "implementation": "FIFO barrier returns the accepted session after prior commands; Android waits at most 900 ms and refuses an unacknowledged export.",
+      "verification": "test_engine acknowledged export ordering and test_session SHA256 corruption rejection.",
+      "status": "PASS"
+    },
+    {
+      "issue": "Latest mode could reinterpret earlier queued stroke",
+      "implementation": "Paint and View commands share ordered queue.",
+      "verification": "test_engine compares queued mode/paint with sequential reference.",
+      "status": "PASS"
+    },
+    {
+      "issue": "Centered pinch could be mistaken for two-finger tap",
+      "implementation": "Gesture travel includes change in pinch distance as well as centroid motion.",
+      "verification": "test_input stationary-centroid pinch exceeds tap movement threshold.",
+      "status": "PASS"
+    }
+  ],
+  "remaining_boundaries": [
+    "No Android device or emulator; touch/lifecycle/audio/export handlers require device validation.",
+    "C++ cannot safely force-kill a blocked thread; independent host supervision is process-based.",
+    "Saved modeled session excludes accumulated renderer tracer history and active acoustic oscillator phase.",
+    "A checkpoint depends on successful filesystem flush and rename; whole-host loss is outside in-process guarantee."
+  ],
+  "final_tests": {
+    "command": "python3 tools/build_native.py --test",
+    "cpp_executables": 9,
+    "python_fault_tests": 14,
+    "failures": 0,
+    "evidence": "evidence/native-final-tests.log"
+  },
+  "static_android": {
+    "command": "python3 tools/verify_android.py --toolchain /path/to/android-toolchain",
+    "evidence": "evidence/android-package-verification.json"
+  }
+}

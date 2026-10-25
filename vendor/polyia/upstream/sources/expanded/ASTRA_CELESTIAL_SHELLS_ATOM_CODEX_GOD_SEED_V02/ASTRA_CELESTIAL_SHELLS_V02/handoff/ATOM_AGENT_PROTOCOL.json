@@ -1,0 +1,16 @@
+{
+  "protocol": "ATOM-HANDOFF/0.1",
+  "purpose": "Signed-claim-free, source-verifiable structured coordination between an LLM and a deterministic automaton",
+  "message_types": ["inspect", "propose", "advance", "verification", "checkpoint", "hold", "report", "refusal"],
+  "phase_order": ["OBSERVE", "PROPOSE", "ADMIT", "EXECUTE", "VERIFY", "CHECKPOINT", "HOLD"],
+  "required_report_fields": ["protocol", "state_digest", "tick", "phase", "active", "checkpoint_head", "recent", "verification", "next_action", "limits"],
+  "rules": [
+    "Never execute an agent-proposed executable string; use fixed registered operations only",
+    "One tool command can advance at most one step unless an explicitly authorized headless driver plan is used",
+    "Claim CHECKPOINT only when sha256-linked state and saved source objects pass verification",
+    "Do not treat a content hash as a signed third-party attestation",
+    "Do not infer gaze from no device sensor; mark pointer and idle predictions simulated",
+    "Never invoke paid models or paid transactions without operator authorization"
+  ],
+  "implementation": "atom.cli status/report/verify, atom.driver --execute, /api/state /api/report /api/advance"
+}

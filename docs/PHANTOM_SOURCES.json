@@ -1,0 +1,71 @@
+{
+  "status": "inspected, not executed",
+  "archives": [
+    {
+      "archive": "QUANTUM_ORACLE_V2_COMMISSION/inputs/PHANTOM_Division_VIII_v0_4_Handoff.zip",
+      "bytes": 17147236,
+      "sha256": "b66fb352ad51c6ed09f1059b0a72fdcf0f38ee81431c6f3099ba20a4e4076fbb",
+      "files": [
+        {
+          "path": "phantom_division_viii_v04/division8/kernel.py",
+          "bytes": 21895,
+          "sha256": "aeb34870bc79f238514987639c2d15f5c0a1b30e6ae084866b7168b45fc50a6e"
+        },
+        {
+          "path": "phantom_division_viii_v04/division8/contracts.py",
+          "bytes": 4162,
+          "sha256": "442b0c68d984479dc67c89fbce69ca1ca2c789c1e46f8d103dacff981e8b749e"
+        },
+        {
+          "path": "phantom_division_viii_v04/inputs/companion/radix_machine/machine.py",
+          "bytes": 7122,
+          "sha256": "fc8f510f6fbf3a98ae7a5de9cbe352218959ff84ebd191a58629005f7a134958"
+        }
+      ]
+    },
+    {
+      "archive": "QUANTUM_ORACLE_V2_COMMISSION/inputs/QUANTUM_ORACLE_HARNESS_v0.1.zip",
+      "bytes": 12191,
+      "sha256": "cbe3097cbaef23369134be894e13a8df96832efcad2577633d040fe8cec1b26d",
+      "files": [
+        {
+          "path": "quantum_oracle/quantum_oracle/core.py",
+          "bytes": 6875,
+          "sha256": "82efce911b2bcdc42f42872aea97ff320a7bdc9341b3267b5fa486354c970178"
+        },
+        {
+          "path": "quantum_oracle/tests/test_engine.py",
+          "bytes": 1358,
+          "sha256": "f5b603c9626471016f7fa9ea97a6f48aad633518b713e1f9c3363b6f9a9e9b7d"
+        },
+        {
+          "path": "quantum_oracle/docs/ACCEPTANCE.md",
+          "bytes": 1376,
+          "sha256": "5ea69c099da44a69da119516bb1b0fb799b553b1eafa02edbd8ac151f320579a"
+        }
+      ]
+    },
+    {
+      "archive": "SURFACE_PHYSICAL_COSMOS_V1/upstream/QUANTUM_ORACLE_PHANTOM_V3_N_ATLAS.zip",
+      "bytes": 16666087,
+      "sha256": "4b8decefc53d7f6776ed668cfc2f3ab48660f68e5a47ddfcd4fb346548c32ace",
+      "files": [
+        {
+          "path": "QUANTUM_ORACLE_V3_EXTENSION/atlas_quantum/core.py",
+          "bytes": 4182,
+          "sha256": "637368c05000fbcb2e7739cd7b9abe134be6b42222a2bab32bbcc880439369f6"
+        },
+        {
+          "path": "QUANTUM_ORACLE_V3_EXTENSION/tests/test_atlas.py",
+          "bytes": 1417,
+          "sha256": "22a9eea3f7fdaaf9ad20d697fe79161ac4e951b174ba614a9729e1ca47d3ca47"
+        },
+        {
+          "path": "QUANTUM_ORACLE_V3_EXTENSION/README.md",
+          "bytes": 995,
+          "sha256": "d1d25b7d4144ade8bf37cf32e038f061bebf101ca85f25d83414732d627a66af"
+        }
+      ]
+    }
+  ]
+}

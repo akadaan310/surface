@@ -1,0 +1,359 @@
+{
+  "schema": "SURFACE-FOUNDATION-REPLAY/1",
+  "recorded_at_utc": "2026-10-25T06:50:40.989690+00:00",
+  "status": "passed_with_scope",
+  "working_copy_root": "/workspace/scratch/976a326a6786/foundation-replay",
+  "original_archive_unchanged": true,
+  "extracted_archive_file_changes": 0,
+  "runtime": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "executable": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "network_access_used": false,
+  "packages_installed": false,
+  "supervisor": "tools/supervise.py",
+  "archives": [
+    {
+      "name": "continuation",
+      "path": "/workspace/scratch/976a326a6786/surface-native/lineage/SURFACE_PHYSICAL_COSMOS_CONTINUATION_v1.zip",
+      "bytes": 16736093,
+      "sha256": "ca8f9202b4c4acc8ab39d3a7305f4ba4cf80d016a384db9714019208cd5ae622"
+    },
+    {
+      "name": "v3",
+      "path": "/workspace/scratch/976a326a6786/foundation-replay/continuation/SURFACE_PHYSICAL_COSMOS_V1/upstream/QUANTUM_ORACLE_PHANTOM_V3_N_ATLAS.zip",
+      "bytes": 16666087,
+      "sha256": "4b8decefc53d7f6776ed668cfc2f3ab48660f68e5a47ddfcd4fb346548c32ace",
+      "extracted_files_compared": 13,
+      "extracted_changes": []
+    },
+    {
+      "name": "v2",
+      "path": "/workspace/scratch/976a326a6786/foundation-replay/v3/QUANTUM_ORACLE_V3_EXTENSION/upstream/QUANTUM_ORACLE_PHANTOM_V2_HANDOFF.zip",
+      "bytes": 16643831,
+      "sha256": "0e37728a910431be8a3e7290caaf4f49481b6fc12643f336b4debfda4642e92b",
+      "extracted_files_compared": 13,
+      "extracted_changes": []
+    },
+    {
+      "name": "phantom",
+      "path": "/workspace/scratch/976a326a6786/foundation-replay/v2/QUANTUM_ORACLE_V2_COMMISSION/inputs/PHANTOM_Division_VIII_v0_4_Handoff.zip",
+      "bytes": 17147236,
+      "sha256": "b66fb352ad51c6ed09f1059b0a72fdcf0f38ee81431c6f3099ba20a4e4076fbb",
+      "extracted_files_compared": 565,
+      "extracted_changes": []
+    },
+    {
+      "name": "oracle",
+      "path": "/workspace/scratch/976a326a6786/foundation-replay/v2/QUANTUM_ORACLE_V2_COMMISSION/inputs/QUANTUM_ORACLE_HARNESS_v0.1.zip",
+      "bytes": 12191,
+      "sha256": "cbe3097cbaef23369134be894e13a8df96832efcad2577633d040fe8cec1b26d",
+      "extracted_files_compared": 10,
+      "extracted_changes": []
+    }
+  ],
+  "tasks": [
+    {
+      "task": "companion-tests",
+      "command": [
+        "python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v"
+      ],
+      "cwd": "/workspace/scratch/976a326a6786/foundation-replay/phantom/phantom_division_viii_v04/inputs/companion/radix_machine",
+      "status": "succeeded",
+      "returncode": 0,
+      "attempts": 1,
+      "elapsed_seconds": 0.3964152289991034,
+      "hard_deadline_seconds": 180.0,
+      "semantic_deadline_seconds": 120.0,
+      "tests_passed": 7,
+      "raw_log": "evidence/foundation-logs/companion-tests.log",
+      "raw_log_sha256": "b0476443929fde50f51eb817a2a36bff6f11ff935e3c04d6e119b708e572c63e",
+      "supervisor_record": "evidence/foundation-logs/companion-tests.supervisor.json"
+    },
+    {
+      "task": "oracle-run",
+      "command": [
+        "python3",
+        "-B",
+        "-m",
+        "quantum_oracle",
+        "run",
+        "--out",
+        "/workspace/scratch/976a326a6786/foundation-replay/outputs/oracle"
+      ],
+      "cwd": "/workspace/scratch/976a326a6786/foundation-replay/oracle/quantum_oracle",
+      "status": "succeeded",
+      "returncode": 0,
+      "attempts": 1,
+      "elapsed_seconds": 0.544495542999357,
+      "hard_deadline_seconds": 180.0,
+      "semantic_deadline_seconds": 120.0,
+      "tests_passed": null,
+      "raw_log": "evidence/foundation-logs/oracle-run.log",
+      "raw_log_sha256": "264a1f9000b09fc2e69a2a35665778c102eea0146773a7269644ffe56c7713cf",
+      "supervisor_record": "evidence/foundation-logs/oracle-run.supervisor.json"
+    },
+    {
+      "task": "oracle-tests",
+      "command": [
+        "python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "cwd": "/workspace/scratch/976a326a6786/foundation-replay/oracle/quantum_oracle",
+      "status": "succeeded",
+      "returncode": 0,
+      "attempts": 1,
+      "elapsed_seconds": 0.4137175989890238,
+      "hard_deadline_seconds": 180.0,
+      "semantic_deadline_seconds": 120.0,
+      "tests_passed": 8,
+      "raw_log": "evidence/foundation-logs/oracle-tests.log",
+      "raw_log_sha256": "d7eea0e5c888108deca9106aea594067852a52fb73fb8b6ad80b150dd40f0699",
+      "supervisor_record": "evidence/foundation-logs/oracle-tests.supervisor.json"
+    },
+    {
+      "task": "oracle-verify",
+      "command": [
+        "python3",
+        "-B",
+        "-m",
+        "quantum_oracle",
+        "verify",
+        "--out",
+        "/workspace/scratch/976a326a6786/foundation-replay/outputs/oracle"
+      ],
+      "cwd": "/workspace/scratch/976a326a6786/foundation-replay/oracle/quantum_oracle",
+      "status": "succeeded",
+      "returncode": 0,
+      "attempts": 1,
+      "elapsed_seconds": 0.3850144110037945,
+      "hard_deadline_seconds": 180.0,
+      "semantic_deadline_seconds": 120.0,
+      "tests_passed": null,
+      "raw_log": "evidence/foundation-logs/oracle-verify.log",
+      "raw_log_sha256": "8f5a1374b3eb9532a67c0de915a0810ea089fc304c33a44642a7f4878984803e",
+      "supervisor_record": "evidence/foundation-logs/oracle-verify.supervisor.json"
+    },
+    {
+      "task": "phantom-cold-replay",
+      "command": [
+        "python3",
+        "-B",
+        "-m",
+        "division8",
+        "replay",
+        "--run",
+        "runs/release",
+        "--expected-head",
+        "6bddd82c0587cf3ce557bed4f950e9664cdbb9e5a1ae89ad13d0eb891ff948b6",
+        "--expected-execution-head",
+        "dbde8c15bf3dd7bc74da3f2bf537d4f5e59935f06ce833598f6a9fddbaf64e12",
+        "--output",
+        "/workspace/scratch/976a326a6786/foundation-replay/outputs/phantom-cold-replay.json"
+      ],
+      "cwd": "/workspace/scratch/976a326a6786/foundation-replay/phantom/phantom_division_viii_v04",
+      "status": "succeeded",
+      "returncode": 0,
+      "attempts": 1,
+      "elapsed_seconds": 15.797793534002267,
+      "hard_deadline_seconds": 180.0,
+      "semantic_deadline_seconds": 120.0,
+      "tests_passed": null,
+      "raw_log": "evidence/foundation-logs/phantom-cold-replay.log",
+      "raw_log_sha256": "7b1ea4fdc55263305c1c10c88104338c065dcd93c63470599c6ffebf96f853c7",
+      "supervisor_record": "evidence/foundation-logs/phantom-cold-replay.supervisor.json"
+    },
+    {
+      "task": "phantom-examples",
+      "command": [
+        "python3",
+        "-B",
+        "scripts/run_examples.py",
+        "--out",
+        "/workspace/scratch/976a326a6786/foundation-replay/outputs/phantom-examples"
+      ],
+      "cwd": "/workspace/scratch/976a326a6786/foundation-replay/phantom/phantom_division_viii_v04",
+      "status": "succeeded",
+      "returncode": 0,
+      "attempts": 1,
+      "elapsed_seconds": 0.5754578380001476,
+      "hard_deadline_seconds": 180.0,
+      "semantic_deadline_seconds": 120.0,
+      "tests_passed": null,
+      "raw_log": "evidence/foundation-logs/phantom-examples.log",
+      "raw_log_sha256": "a092481e1419f92ec9d2ac2a3118610b0fa9329cb2f069a7519f34a22aac0169",
+      "supervisor_record": "evidence/foundation-logs/phantom-examples.supervisor.json"
+    },
+    {
+      "task": "phantom-tests",
+      "command": [
+        "python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "cwd": "/workspace/scratch/976a326a6786/foundation-replay/phantom/phantom_division_viii_v04",
+      "status": "succeeded",
+      "returncode": 0,
+      "attempts": 1,
+      "elapsed_seconds": 11.582391557996743,
+      "hard_deadline_seconds": 180.0,
+      "semantic_deadline_seconds": 120.0,
+      "tests_passed": 121,
+      "raw_log": "evidence/foundation-logs/phantom-tests.log",
+      "raw_log_sha256": "b60e15811f97b4e2d1fbd30c418ef9deb02e722049ee2460c1482a6ff811c837",
+      "supervisor_record": "evidence/foundation-logs/phantom-tests.supervisor.json"
+    },
+    {
+      "task": "phantom-verify",
+      "command": [
+        "python3",
+        "-B",
+        "-m",
+        "division8",
+        "verify",
+        "--manifest",
+        "RELEASE_MANIFEST.json"
+      ],
+      "cwd": "/workspace/scratch/976a326a6786/foundation-replay/phantom/phantom_division_viii_v04",
+      "status": "succeeded",
+      "returncode": 0,
+      "attempts": 1,
+      "elapsed_seconds": 0.2161556350038154,
+      "hard_deadline_seconds": 180.0,
+      "semantic_deadline_seconds": 120.0,
+      "tests_passed": null,
+      "raw_log": "evidence/foundation-logs/phantom-verify.log",
+      "raw_log_sha256": "2ed1c8533114b7562c2e133d6cc0ef10ea48fdf4efaef3fa768792e93c51131b",
+      "supervisor_record": "evidence/foundation-logs/phantom-verify.supervisor.json"
+    },
+    {
+      "task": "v2-inputs",
+      "command": [
+        "python3",
+        "-B",
+        "verify_inputs.py"
+      ],
+      "cwd": "/workspace/scratch/976a326a6786/foundation-replay/v2/QUANTUM_ORACLE_V2_COMMISSION",
+      "status": "succeeded",
+      "returncode": 0,
+      "attempts": 1,
+      "elapsed_seconds": 0.07670337900344748,
+      "hard_deadline_seconds": 180.0,
+      "semantic_deadline_seconds": 120.0,
+      "tests_passed": null,
+      "raw_log": "evidence/foundation-logs/v2-inputs.log",
+      "raw_log_sha256": "ddb9277a7aeeed16835b4f1731a403ba68b8ef942a5bf5138d290374b40e18ce",
+      "supervisor_record": "evidence/foundation-logs/v2-inputs.supervisor.json"
+    },
+    {
+      "task": "v3-examples",
+      "command": [
+        "python3",
+        "-B",
+        "examples.py"
+      ],
+      "cwd": "/workspace/scratch/976a326a6786/foundation-replay/v3/QUANTUM_ORACLE_V3_EXTENSION",
+      "status": "succeeded",
+      "returncode": 0,
+      "attempts": 1,
+      "elapsed_seconds": 0.1597963690001052,
+      "hard_deadline_seconds": 180.0,
+      "semantic_deadline_seconds": 120.0,
+      "tests_passed": null,
+      "raw_log": "evidence/foundation-logs/v3-examples.log",
+      "raw_log_sha256": "284cf35c4bb017701f91f313dfbc115ce9f97b26320ebfd882bf9fd85b727940",
+      "supervisor_record": "evidence/foundation-logs/v3-examples.supervisor.json"
+    },
+    {
+      "task": "v3-tests",
+      "command": [
+        "python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "cwd": "/workspace/scratch/976a326a6786/foundation-replay/v3/QUANTUM_ORACLE_V3_EXTENSION",
+      "status": "succeeded",
+      "returncode": 0,
+      "attempts": 1,
+      "elapsed_seconds": 0.15283092099707574,
+      "hard_deadline_seconds": 180.0,
+      "semantic_deadline_seconds": 120.0,
+      "tests_passed": 9,
+      "raw_log": "evidence/foundation-logs/v3-tests.log",
+      "raw_log_sha256": "99821dcb33100506c4ee6f6becb45c2981e7e594f1180c27ff1ed64e2e19128f",
+      "supervisor_record": "evidence/foundation-logs/v3-tests.supervisor.json"
+    }
+  ],
+  "unit_test_total": 145,
+  "phantom_manifest": {
+    "bytes_checked": 27758650,
+    "files_checked": 564,
+    "inventory_digest": "e6563adc80b7fe8b944b9c2ea972559b772cc1015632dd16958598b3eab3286c",
+    "status": "verified"
+  },
+  "phantom_cold_replay": {
+    "status": "verified",
+    "original_scientific_files_verified": 129,
+    "regenerated_files": 125,
+    "numeric_tolerance_requested": false,
+    "numeric_tolerance_used": false,
+    "numeric_differences": [],
+    "admission_ledger_events": 472,
+    "execution_ledger_events": 56,
+    "head": "6bddd82c0587cf3ce557bed4f950e9664cdbb9e5a1ae89ad13d0eb891ff948b6",
+    "execution_head": "dbde8c15bf3dd7bc74da3f2bf537d4f5e59935f06ce833598f6a9fddbaf64e12",
+    "inherited_claim_counts": {
+      "ACCEPTED_WITH_SCOPE": 26,
+      "REJECTED": 8,
+      "UNKNOWN": 1
+    },
+    "regeneration_exclusions": {
+      "discovery": [],
+      "kernel": [
+        "companion_tests.txt",
+        "performance.json"
+      ],
+      "structures": [
+        "performance.json"
+      ],
+      "transfer": [
+        "performance_profile.json"
+      ]
+    },
+    "raw_result": "evidence/foundation-logs/phantom-cold-replay-result.json"
+  },
+  "saved_outputs": [
+    "evidence/foundation-logs/phantom-cold-replay-result.json",
+    "evidence/foundation-logs/phantom-examples-receipt.json",
+    "evidence/foundation-logs/oracle-fresh-summary.json",
+    "evidence/foundation-logs/oracle-fresh-ledger.json"
+  ],
+  "boundaries": [
+    "The eight historical Octave comparison passes and reported fixes were not rerun; their status remains UNKNOWN. The eight passing Oracle tests here are the original Python unit suite, a different check.",
+    "The full original five-partition Language Lab corpus and broader research-evidence dependencies are not included in this handoff; no full-corpus recomputation was attempted.",
+    "The v2 archive is a continuation kit. This baseline does not complete its planned astrophysics, collider, third-party solver or physical quantum hardware gates.",
+    "No source implementation was modified. The original Python foundation was replayed separately; it is not a rendering or runtime dependency of the native C++ application."
+  ]
+}

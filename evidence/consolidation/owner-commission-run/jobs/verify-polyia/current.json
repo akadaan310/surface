@@ -1,0 +1,1 @@
+{"epoch":1,"outputs":[{"bytes":1067,"name":"evidence.json","path":"committed/1/evidence.json","sha256":"db1a81527fb34fe5c01d64ad18d52aa71392a62d1b953810dacfb992b4640078"},{"bytes":17291,"name":"polyia-demo.json","path":"committed/1/polyia-demo.json","sha256":"ea40046a3ced8e964f6a6bad9a447268919c42d18fccb21cf10ecc1c31da6279"}],"schema":"surface-task-publication","version":1}

@@ -1,0 +1,139 @@
+{
+  "component": "surface::Physics native C++20",
+  "recorded_at_utc": "2026-10-25T06:47:18.204421+00:00",
+  "tests": {
+    "compiler": "g++",
+    "standard": "c++20",
+    "release_flags": [
+      "-O2",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror"
+    ],
+    "test_source": "tests/test_physics.cpp",
+    "release_exit_code": 0,
+    "asan_ubsan_exit_code": 0,
+    "sanitizer_flags": [
+      "-O1",
+      "-g",
+      "-fsanitize=address,undefined",
+      "-fno-omit-frame-pointer"
+    ],
+    "asan_options": "detect_leaks=0",
+    "leak_sanitizer_status": "unavailable: sandbox cannot inspect /proc task threads"
+  },
+  "numerical_checks": [
+    "damped cosine wave analytical amplitude",
+    "heat positivity and spreading",
+    "regularized charge value and parity",
+    "magnetic dipole axial/equatorial sign and value",
+    "magnetic relay remanence and reversal",
+    "mode-specific deposition including Session light alias",
+    "inductive energy transfer and bounded battery SOC",
+    "unforced coupled-circuit passivity accounting",
+    "exact binary state continuation",
+    "atomic rejection of malformed/truncated/oversized/nonfinite checkpoint",
+    "source identifier rollover",
+    "finite input admission and bounded long step",
+    "official CIE sample and interpolation",
+    "Faraday, Malus and weak-field Zeeman references"
+  ],
+  "benchmark": {
+    "compiler_optimization": "-O2",
+    "grid": [
+      128,
+      96
+    ],
+    "steps": 600,
+    "dt_seconds": 0.016666666666666666,
+    "total_wall_milliseconds": 1493.58,
+    "mean_wall_milliseconds": 2.4893,
+    "limiter_activations": 0,
+    "checkpoint_bytes": 197143,
+    "scope": "this build host only; no Android device benchmark"
+  },
+  "initial_ranges": {
+    "density": [
+      0.00038293,
+      1.04769
+    ],
+    "heat_K_excess": [
+      0.00458088,
+      13.7307
+    ],
+    "pressure_Pa": [
+      -0.266334,
+      0.266334
+    ],
+    "potential_V": [
+      -26.4756,
+      24.1916
+    ],
+    "Bx_T": [
+      -7.53213e-05,
+      7.53213e-05
+    ],
+    "Ex_V_per_m": [
+      -192.167,
+      179.661
+    ]
+  },
+  "supplementary_in_flight_suite": {
+    "cpp_tests_passed": [
+      "test_acoustic",
+      "test_atlas",
+      "test_checkpoint",
+      "test_phantom",
+      "test_physics",
+      "test_renderer",
+      "test_session"
+    ],
+    "python_supervisor_tests_passed": 14,
+    "failures": [],
+    "scope": "component snapshot during parallel integration; final release receipt supersedes"
+  },
+  "limitations": [
+    "Reduced physical reference models only; no complete Maxwell/fluid/DFN/micromagnetics claim",
+    "Scalar visual wave c=0.48 m/s is distinct from separate AcousticField c=343 m/s",
+    "Battery is a 432 J energy reservoir with imposed conversion efficiency",
+    "Relay memory is diagnostic and not a constitutive magnetic material law",
+    "Same-platform exact continuation tested; cross-platform bit-identical trajectories not certified",
+    "Field-line ink, gamut clipping and thermal false color are observation transforms",
+    "No Android device execution or device performance verified by this component"
+  ],
+  "files": {
+    "include/surface/physics.hpp": {
+      "bytes": 2694,
+      "sha256": "d93ed0a6c71c9863c48b22b5636ad48e41b8fef296df0ab6536c5c69b1a1dbbf"
+    },
+    "src/physics.cpp": {
+      "bytes": 19584,
+      "sha256": "6da1bb70ac8693af7b1c4352b7b5cbf4ae3930912533bfba114a207a34342b4e"
+    },
+    "src/cie1931.inc": {
+      "bytes": 26048,
+      "sha256": "7f5741a7208f0fef34fb6fcd13ef46fe890e51aa06c5bf0644bb78fa883632c7"
+    },
+    "tests/test_physics.cpp": {
+      "bytes": 7195,
+      "sha256": "15ef804d4df1ffb78817fcd7ea7bcc4164c7d684c7c6a9bde054bd697dfc9d4b"
+    },
+    "docs/PHYSICS.md": {
+      "bytes": 17685,
+      "sha256": "0bad3ff97e3b9186d6dc770328be0b43bec5c525c7c7e56f92eca72a67c4dc6e"
+    },
+    "data/CIE_xyz_1931_2deg.csv": {
+      "bytes": 24021,
+      "sha256": "fa663e3535a7e0763a745993a1f0a192eb0275ac46ad2d1befd7626841e713c1"
+    },
+    "data/CIE_xyz_1931_2deg.csv_metadata.json": {
+      "bytes": 3787,
+      "sha256": "03abcaecf4e63d77045ef57c4514b52c8bb1a46dd18e1f93a50044a0f4f481c8"
+    },
+    "data/CIE-LICENSE.md": {
+      "bytes": 1629,
+      "sha256": "8a49abcf142d909b59c1e7107f7b0426f17af54f2341eb060c784d4c2b9e6f46"
+    }
+  }
+}

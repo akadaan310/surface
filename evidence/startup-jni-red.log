@@ -1,0 +1,26 @@
+COMMAND ["/usr/bin/java", "-version"]
+
+openjdk version "17.0.20" 2026-07-21
+OpenJDK Runtime Environment (build 17.0.20+8-1-24.04-Ubuntu)
+OpenJDK 64-Bit Server VM (build 17.0.20+8-1-24.04-Ubuntu, mixed mode, sharing)
+
+COMMAND ["/usr/bin/c++", "-std=c++20", "-O2", "-Wall", "-Wextra", "-Werror", "-fPIC", "-shared", "-fvisibility=hidden", "/workspace/scratch/976a326a6786/surface-native/tests/android_startup/bridge_fixture.cpp", "-o", "/workspace/scratch/976a326a6786/surface-native/build/startup-jni/red/libsurface.so"]
+
+
+COMMAND ["/usr/bin/java", "-m", "jdk.compiler/com.sun.tools.javac.Main", "-source", "8", "-target", "8", "-classpath", "/workspace/scratch/976a326a6786/android-toolchain/android-36/android.jar", "-d", "/workspace/scratch/976a326a6786/surface-native/build/startup-jni/red/classes", "/workspace/scratch/976a326a6786/surface-native/android/SurfaceActivity.java", "/workspace/scratch/976a326a6786/surface-native/tests/android_startup/StartupProbe.java"]
+
+warning: [options] bootstrap class path not set in conjunction with -source 8
+Note: /workspace/scratch/976a326a6786/surface-native/android/SurfaceActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+1 warning
+
+COMMAND ["/usr/bin/java", "-Djava.library.path=/workspace/scratch/976a326a6786/surface-native/build/startup-jni/red", "-cp", "/workspace/scratch/976a326a6786/surface-native/build/startup-jni/red/classes:/workspace/scratch/976a326a6786/android-toolchain/android-36/android.jar", "org.surface.nativeink.StartupProbe"]
+PROBE actual SurfaceActivity class initialized
+
+java.lang.UnsatisfiedLinkError: 'void org.surface.nativeink.SurfaceActivity.nativeDimensions(int, int)'
+	at org.surface.nativeink.SurfaceActivity.nativeDimensions(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.surface.nativeink.StartupProbe.main(StartupProbe.java:25)

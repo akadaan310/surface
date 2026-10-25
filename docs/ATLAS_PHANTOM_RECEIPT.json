@@ -1,0 +1,89 @@
+{
+  "schema": "SURFACE-NATIVE-COMPONENT-RECEIPT/1",
+  "dateUTC": "2026-10-25",
+  "component": [
+    "atlas",
+    "phantom"
+  ],
+  "status": "ACCEPT_BOUNDED_NATIVE_FIXTURES",
+  "compiler": "c++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
+  "environment": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "sources": [
+    {
+      "path": "include/surface/atlas.hpp",
+      "sha256": "c7d93c890e7878eb61a5ee764fbe8f0578ea3c32f6916ec46884fd76fffc52eb",
+      "bytes": 1326
+    },
+    {
+      "path": "src/atlas.cpp",
+      "sha256": "646ca509d607e6cc0e8cf9a7404fdeb043df59ae7485b3d5b057de5cd5fd59ca",
+      "bytes": 4803
+    },
+    {
+      "path": "tests/test_atlas.cpp",
+      "sha256": "9264530b3b2b50bd6ec7afb5ac1936341282dc2a873a7b57d35facd568e0793e",
+      "bytes": 2355
+    },
+    {
+      "path": "include/surface/phantom.hpp",
+      "sha256": "44831debc6455f6feb854bfae00ab3bd01acb031f855d281a5467233436e7ad3",
+      "bytes": 3351
+    },
+    {
+      "path": "src/phantom.cpp",
+      "sha256": "8143187a0328f308a6bcaf263f07f085bed5f58f7fa2e596d03c3624ac46d70d",
+      "bytes": 17236
+    },
+    {
+      "path": "tests/test_phantom.cpp",
+      "sha256": "3dcf44abef9abd01d7cb7ca0cbd1b17404b0b2b10116cceeb4bfa52cc150a13b",
+      "bytes": 6057
+    },
+    {
+      "path": "data/gaia.bin",
+      "sha256": "f8105fda8968e6f18fb3b6982c688f908fc62826c415c65c492b906b68d804bd",
+      "bytes": 560072
+    },
+    {
+      "path": "data/gaia-dr3-bright-source.csv",
+      "sha256": "fda4d14d08e4e44c38193ac67e385ae3cbf4503e33c19736ddfc027a1ff9d96f",
+      "bytes": 1129055
+    }
+  ],
+  "commands": [
+    "c++ -std=c++20 -O2 -Wall -Wextra -Wpedantic -Werror -Iinclude tests/test_phantom.cpp src/phantom.cpp -o /tmp/surface-phantom-test",
+    "/tmp/surface-phantom-test",
+    "c++ -std=c++20 -O1 -g -fsanitize=address,undefined -fno-omit-frame-pointer -Wall -Wextra -Wpedantic -Werror -Iinclude tests/test_phantom.cpp src/phantom.cpp -o /tmp/surface-phantom-sanitized",
+    "ASAN_OPTIONS=detect_leaks=0 /tmp/surface-phantom-sanitized",
+    "c++ -std=c++20 -O1 -g -fsanitize=address,undefined -fno-omit-frame-pointer -Wall -Wextra -Wpedantic -Werror -Iinclude tests/test_atlas.cpp src/atlas.cpp -o /tmp/surface-atlas-sanitized",
+    "ASAN_OPTIONS=detect_leaks=0 /tmp/surface-atlas-sanitized data/gaia.bin"
+  ],
+  "observed": {
+    "catalogueRecords": 10000,
+    "missingParallaxes": 310,
+    "binaryBytes": 560072,
+    "bellProbabilitiesWithin1e-12": [
+      0.5,
+      0,
+      0,
+      0.5
+    ],
+    "wordInject7At0": 8,
+    "wordInvert7At0": 6,
+    "sha256KnownAnswers": "empty, abc, 56-byte multi-block message",
+    "strictWarnings": "clean",
+    "addressAndUndefinedSanitizers": "pass with leak scanning disabled"
+  },
+  "limits": {
+    "leakSanitizer": "BLOCKED: /proc task inspection restricted in sandbox; initial LSan run exited 1. Only leak scanning disabled for subsequent ASan/UBSan checks.",
+    "inheritedCommissionGates": "NOT_RECONCILED; component fixture acceptance is not acceptance of the whole upstream commission",
+    "originalArchivesExecuted": false,
+    "fullAppIntegration": "parent task validates separately",
+    "maxCatalogueRecords": 20000,
+    "packagedCatalogueRecords": 10000,
+    "maxQuantumQubits": 6,
+    "maxQuantumOperations": 256,
+    "maxNumericValues": 65536,
+    "maxWordWidth": 64
+  }
+}

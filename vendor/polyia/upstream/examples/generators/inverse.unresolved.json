@@ -1,0 +1,7 @@
+{
+  "operation": "inverse",
+  "target": [
+    "10"
+  ],
+  "search_budget": 1
+}

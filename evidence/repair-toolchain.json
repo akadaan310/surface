@@ -1,0 +1,14 @@
+[
+  {
+    "package": "build-tools",
+    "bytes": 63737259,
+    "sha256": "5d9ac77fb6ff43d9da518a337b4fcf8f9097113df531d99ccefe80ef7ce8250b",
+    "verified": true
+  },
+  {
+    "package": "platform",
+    "bytes": 65878410,
+    "sha256": "37607369a28c5b640b3a7998868d45898ebcb777565a0e85f9acf36f29631d2e",
+    "verified": true
+  }
+]

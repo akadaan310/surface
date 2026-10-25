@@ -1,0 +1,388 @@
+{
+  "schema": "surface-physical-cosmos-acceptance/1.0",
+  "created": "2026-10-25",
+  "status": "INITIAL_COMMISSION",
+  "status_vocabulary": [
+    "ACCEPT",
+    "REJECT",
+    "UNKNOWN",
+    "BLOCKED",
+    "NOT_STARTED"
+  ],
+  "reported_prior_results": "EVIDENCE_INVENTORY.md; not fresh test passes",
+  "receipt_required_fields": [
+    "gate_id",
+    "task_version",
+    "command_or_api",
+    "source_revision",
+    "input_hashes",
+    "environment",
+    "verifier_hash",
+    "observed_values",
+    "units",
+    "tolerances",
+    "output_hashes",
+    "status",
+    "evidence_paths",
+    "blocker_or_deviation"
+  ],
+  "gates": [
+    {
+      "id": "G00",
+      "title": "Recover current workspace and immutable baselines",
+      "depends_on": [],
+      "provisions": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        91
+      ],
+      "required_evidence": "recovery/inventory.json; original hashes; current source snapshot",
+      "status": "NOT_STARTED",
+      "receipt": null
+    },
+    {
+      "id": "G01",
+      "title": "Bounded supervisor and durable recovery",
+      "depends_on": [
+        "G00"
+      ],
+      "provisions": [
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        97
+      ],
+      "required_evidence": "fault receipts; state history; interrupted/resumed task",
+      "status": "NOT_STARTED",
+      "receipt": null
+    },
+    {
+      "id": "G02",
+      "title": "Existing admission, wave stability and evidence reconciliation",
+      "depends_on": [
+        "G00"
+      ],
+      "provisions": [
+        6,
+        7,
+        8,
+        9,
+        96
+      ],
+      "required_evidence": "counterexamples; solver stability derivation; eight comparison applicability receipts",
+      "status": "NOT_STARTED",
+      "receipt": null
+    },
+    {
+      "id": "G03",
+      "title": "Usable current SURFACE route",
+      "depends_on": [
+        "G01",
+        "G02"
+      ],
+      "provisions": [
+        8,
+        9,
+        10,
+        99
+      ],
+      "required_evidence": "actual URL and revision; browser interaction; frame/fallback provenance",
+      "status": "NOT_STARTED",
+      "receipt": null
+    },
+    {
+      "id": "G04",
+      "title": "Binary physical and quantum contracts",
+      "depends_on": [
+        "G02"
+      ],
+      "provisions": [
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "required_evidence": "cross-runtime conformance; ID and byte witnesses; representation loss",
+      "status": "NOT_STARTED",
+      "receipt": null
+    },
+    {
+      "id": "G05",
+      "title": "Electrical magnetic multirate coupling",
+      "depends_on": [
+        "G01",
+        "G04"
+      ],
+      "provisions": [
+        31,
+        32,
+        33,
+        34,
+        36,
+        39,
+        40,
+        92
+      ],
+      "required_evidence": "analytic coil/circuit results; magnetic switching and hysteresis reference; field constraints; energy balance",
+      "status": "NOT_STARTED",
+      "receipt": null
+    },
+    {
+      "id": "G06",
+      "title": "Acoustic thermal observables",
+      "depends_on": [
+        "G05"
+      ],
+      "provisions": [
+        35,
+        36,
+        37,
+        40,
+        92
+      ],
+      "required_evidence": "travel-time and cooling references; calibrated pressure; audio transform",
+      "status": "NOT_STARTED",
+      "receipt": null
+    },
+    {
+      "id": "G07",
+      "title": "Battery and charging",
+      "depends_on": [
+        "G05"
+      ],
+      "provisions": [
+        37,
+        38,
+        39,
+        40
+      ],
+      "required_evidence": "named cell data; held-out voltage/temperature; chemistry and controller traces",
+      "status": "NOT_STARTED",
+      "receipt": null
+    },
+    {
+      "id": "G08",
+      "title": "Magneto-optical spectrum and color",
+      "depends_on": [
+        "G04",
+        "G05"
+      ],
+      "provisions": [
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        93
+      ],
+      "required_evidence": "Faraday/analyzer; Zeeman; observer integration; source data and regime tests",
+      "status": "NOT_STARTED",
+      "receipt": null
+    },
+    {
+      "id": "G09",
+      "title": "N-chart atlas and topology",
+      "depends_on": [
+        "G04"
+      ],
+      "provisions": [
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60
+      ],
+      "required_evidence": "chart-map witnesses; topology fixtures; separated metrics; interactive views",
+      "status": "NOT_STARTED",
+      "receipt": null
+    },
+    {
+      "id": "G10",
+      "title": "Observed cosmic catalogue vertical slice",
+      "depends_on": [
+        "G03",
+        "G04",
+        "G09"
+      ],
+      "provisions": [
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        69,
+        70,
+        94
+      ],
+      "required_evidence": "pinned real subset; distance summaries; coordinate checks; source-linked views",
+      "status": "NOT_STARTED",
+      "receipt": null
+    },
+    {
+      "id": "G11",
+      "title": "Billion-source ingestion and scaling",
+      "depends_on": [
+        "G01",
+        "G10"
+      ],
+      "provisions": [
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        95
+      ],
+      "required_evidence": "actual counts; resumable partitions; disk/RAM/bandwidth/frame metrics",
+      "status": "NOT_STARTED",
+      "receipt": null
+    },
+    {
+      "id": "G12",
+      "title": "Pulsar timing and symbol grammars",
+      "depends_on": [
+        "G04",
+        "G09",
+        "G10"
+      ],
+      "provisions": [
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        94
+      ],
+      "required_evidence": "real valid timing dataset; profile/residual match; event-type and P/2P tests",
+      "status": "NOT_STARTED",
+      "receipt": null
+    },
+    {
+      "id": "G13",
+      "title": "Astronomical dynamical models",
+      "depends_on": [
+        "G04",
+        "G09",
+        "G10"
+      ],
+      "provisions": [
+        81,
+        82,
+        83,
+        84,
+        85,
+        86
+      ],
+      "required_evidence": "reference orbits/variability/relativistic fixtures; state abstraction and uncertainty",
+      "status": "NOT_STARTED",
+      "receipt": null
+    },
+    {
+      "id": "G14",
+      "title": "Bounded mathematical discovery",
+      "depends_on": [
+        "G01",
+        "G09",
+        "G12",
+        "G13"
+      ],
+      "provisions": [
+        78,
+        79,
+        87,
+        88,
+        89
+      ],
+      "required_evidence": "search ledger; independent checks; chronological held-out comparison; nulls and failures",
+      "status": "NOT_STARTED",
+      "receipt": null
+    },
+    {
+      "id": "G15",
+      "title": "Inherited v2/v3 unresolved obligations",
+      "depends_on": [
+        "G00",
+        "G04"
+      ],
+      "provisions": [
+        29,
+        90
+      ],
+      "required_evidence": "original gate reconciliation; collider/hardware compilation/quantum/discovery receipts",
+      "status": "NOT_STARTED",
+      "receipt": null
+    },
+    {
+      "id": "G16",
+      "title": "Integrated release and cold replay",
+      "depends_on": [
+        "G03",
+        "G05",
+        "G06",
+        "G07",
+        "G08",
+        "G09",
+        "G10",
+        "G11",
+        "G12",
+        "G13",
+        "G14",
+        "G15"
+      ],
+      "provisions": [
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100
+      ],
+      "required_evidence": "usable link; source/data release; independent replay; exact accepted and blocked scope",
+      "status": "NOT_STARTED",
+      "receipt": null
+    }
+  ],
+  "partial_release_policy": "Return usable increments with explicit accepted scope; do not label the whole commission complete while required gates remain unresolved."
+}

@@ -1,0 +1,13 @@
+build/
+android-toolchain/
+*.keystore
+*.jks
+*.pk8
+*.pem
+.sites/
+dist/downloads/
+evidence/runtime/
+__pycache__/
+*.pyc
+lineage/SURFACE_PHYSICAL_COSMOS_CONTINUATION_v1.zip
+.worktrees/

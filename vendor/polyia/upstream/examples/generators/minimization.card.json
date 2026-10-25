@@ -1,0 +1,46 @@
+{
+  "schema": "polyia.generator-card/0.1",
+  "id": "branch-minimization",
+  "version": "1.0.0",
+  "family": "regular",
+  "alphabet": [
+    "PING",
+    "ACK"
+  ],
+  "seed": 0,
+  "grammar": {
+    "op": "choice",
+    "parts": [
+      {
+        "op": "sequence",
+        "parts": [
+          {
+            "op": "token",
+            "token": "PING"
+          },
+          {
+            "op": "token",
+            "token": "ACK"
+          }
+        ]
+      },
+      {
+        "op": "sequence",
+        "parts": [
+          {
+            "op": "token",
+            "token": "ACK"
+          },
+          {
+            "op": "token",
+            "token": "ACK"
+          }
+        ]
+      }
+    ]
+  },
+  "bounds": {
+    "work_units": 10000,
+    "max_candidates": 64
+  }
+}

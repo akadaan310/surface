@@ -1,0 +1,2776 @@
+{
+  "schema": "SURFACE-QUANTUM-V3-CONSOLIDATION-AUDIT/1",
+  "recorded_at_utc": "2026-10-25T16:09:19.310867+00:00",
+  "scope": "Immutable-source identity, original V3 fixtures, implementation inventory and outstanding constitution obligations; not full V2/V3 scientific acceptance.",
+  "status": "ACCEPT",
+  "native_baseline_commit": "f002eece5a5915b886d77dce1807890588282afd",
+  "runtime": {
+    "python": "3.12.14",
+    "executable": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "numpy": "2.3.5"
+  },
+  "archives": {
+    "continuation": {
+      "name": "SURFACE_PHYSICAL_COSMOS_CONTINUATION_v1.zip",
+      "bytes": 16736093,
+      "sha256": "ca8f9202b4c4acc8ab39d3a7305f4ba4cf80d016a384db9714019208cd5ae622"
+    },
+    "v3_attachment": {
+      "name": "QUANTUM_ORACLE_PHANTOM_V3_N_ATLAS.zip",
+      "bytes": 16666087,
+      "sha256": "4b8decefc53d7f6776ed668cfc2f3ab48660f68e5a47ddfcd4fb346548c32ace"
+    },
+    "v2": {
+      "name": "QUANTUM_ORACLE_PHANTOM_V2_HANDOFF.zip",
+      "bytes": 16643831,
+      "sha256": "0e37728a910431be8a3e7290caaf4f49481b6fc12643f336b4debfda4642e92b"
+    },
+    "phantom": {
+      "name": "PHANTOM_Division_VIII_v0_4_Handoff.zip",
+      "bytes": 17147236,
+      "sha256": "b66fb352ad51c6ed09f1059b0a72fdcf0f38ee81431c6f3099ba20a4e4076fbb"
+    },
+    "oracle": {
+      "name": "QUANTUM_ORACLE_HARNESS_v0.1.zip",
+      "bytes": 12191,
+      "sha256": "cbe3097cbaef23369134be894e13a8df96832efcad2577633d040fe8cec1b26d"
+    }
+  },
+  "preservation": {
+    "new_attachment_matches_archived_v3_exactly": true,
+    "archived_v3_member": "SURFACE_PHYSICAL_COSMOS_V1/upstream/QUANTUM_ORACLE_PHANTOM_V3_N_ATLAS.zip",
+    "standalone_constitution": {
+      "bytes": 8110,
+      "sha256": "96a662ad2fab353eb6de4f8a16b44310960a57ba93deb0777979b6f208bef5e3"
+    },
+    "standalone_constitution_matches_bundled_exactly": true,
+    "v3_tree": {
+      "files_compared": 13,
+      "changed": [],
+      "status": "ACCEPT"
+    },
+    "v2_tree": {
+      "files_compared": 13,
+      "changed": [],
+      "status": "ACCEPT"
+    },
+    "phantom_tree": {
+      "files_compared": 565,
+      "changed": [],
+      "status": "ACCEPT"
+    },
+    "oracle_tree": {
+      "files_compared": 10,
+      "changed": [],
+      "status": "ACCEPT"
+    }
+  },
+  "manifests": {
+    "v3": {
+      "manifest": "MANIFEST.json",
+      "bytes": 2004,
+      "sha256": "ae6579a6cc89546f341f762db0456b354aa2f847420b71ac598d9bd463d450cd",
+      "records_checked": 12,
+      "bytes_checked": 16679311,
+      "mismatches": [],
+      "status": "ACCEPT"
+    },
+    "v2_inputs": {
+      "manifest": "INPUTS_MANIFEST.json",
+      "bytes": 573,
+      "sha256": "7e165dcbb05cc4aa544a126a2d5f37ba8a320c83404383edb796f540db64e6fc",
+      "records_checked": 2,
+      "bytes_checked": 17159427,
+      "mismatches": [],
+      "status": "ACCEPT"
+    },
+    "phantom": {
+      "manifest": "RELEASE_MANIFEST.json",
+      "bytes": 89852,
+      "sha256": "925b8ab9760ce19fd80f30e5e1aa7382864a6625c0fb2ab6099d48806c6beb58",
+      "records_checked": 564,
+      "bytes_checked": 27758650,
+      "mismatches": [],
+      "status": "ACCEPT"
+    },
+    "oracle": {
+      "manifest": "MANIFEST.json",
+      "bytes": 1454,
+      "sha256": "909b52b737a12aefb6561ffa5cf2a38e6bde53952aa95886cde1c39cd214f633",
+      "records_checked": 9,
+      "bytes_checked": 26101,
+      "mismatches": [],
+      "status": "ACCEPT"
+    }
+  },
+  "controlling_documents_read": [
+    {
+      "package": "V3",
+      "path": "README.md",
+      "bytes": 995,
+      "sha256": "d1d25b7d4144ade8bf37cf32e038f061bebf101ca85f25d83414732d627a66af"
+    },
+    {
+      "package": "V3",
+      "path": "SELF_PROMPT_V3.md",
+      "bytes": 2980,
+      "sha256": "8a0c39c381d524a64d590181531dd1098e6af0ab03f360ee85f94a50a36a781f"
+    },
+    {
+      "package": "V3",
+      "path": "CONSTITUTION_V3.md",
+      "bytes": 8110,
+      "sha256": "96a662ad2fab353eb6de4f8a16b44310960a57ba93deb0777979b6f208bef5e3"
+    },
+    {
+      "package": "V3",
+      "path": "MANIFEST.json",
+      "bytes": 2004,
+      "sha256": "ae6579a6cc89546f341f762db0456b354aa2f847420b71ac598d9bd463d450cd"
+    },
+    {
+      "package": "V2",
+      "path": "README.md",
+      "bytes": 1515,
+      "sha256": "f91c42d30c9bebff8e679d35bbe7a39e82f9c5700c94aea8c68d4a94be678999"
+    },
+    {
+      "package": "V2",
+      "path": "SELF_PROMPT.md",
+      "bytes": 4998,
+      "sha256": "3321085dde04cfea58cd4aff31426250b1573797cc3d7b6853e753b370fa1d02"
+    },
+    {
+      "package": "V2",
+      "path": "CONSTITUTION.md",
+      "bytes": 10947,
+      "sha256": "bbdf20168cd26b07c79e16a6fe13d8baed715fb43bae97a1a5ee38576500d82b"
+    },
+    {
+      "package": "V2",
+      "path": "ACCEPTANCE_MATRIX.md",
+      "bytes": 1434,
+      "sha256": "833eb891dbeef3fb222f435c3dc9e2bab34d6be9ee6f160b6432ddd001d719ab"
+    },
+    {
+      "package": "V2",
+      "path": "INTERFACE_CONTRACTS.json",
+      "bytes": 1126,
+      "sha256": "17fd5b83b29f0c62717d428b8edfd5c14220fe50618e33deab70624ea3406dab"
+    },
+    {
+      "package": "V2",
+      "path": "INPUTS_MANIFEST.json",
+      "bytes": 573,
+      "sha256": "7e165dcbb05cc4aa544a126a2d5f37ba8a320c83404383edb796f540db64e6fc"
+    },
+    {
+      "package": "V2",
+      "path": "UPSTREAM_RESEARCH.md",
+      "bytes": 3065,
+      "sha256": "2686a8d0329fa5edc873394e7445599a00fdbb093b7b205c24e6fca69236c605"
+    },
+    {
+      "package": "V2",
+      "path": "context/PHANTOM_COMPOSER_SURFACE_CONSTITUTION_v1.md",
+      "bytes": 20463,
+      "sha256": "1328544ac84cc43a558ad7c485f8150c63094b634059c7cda58ccee7da632feb"
+    },
+    {
+      "package": "V2",
+      "path": "context/PHANTOM_DIVISION_VIII_DISCOVERY_COMMISSION_v0.3.md",
+      "bytes": 22929,
+      "sha256": "af9136cd213809c83a1d0f83d1f56d933de99e76230488d3d790fac59830b2f9"
+    },
+    {
+      "package": "V2",
+      "path": "context/REPLAY_HANDOFF.md",
+      "bytes": 16275,
+      "sha256": "bf2978de02efcf210fcc32e3b6315d8144f630b3f90372e23d70239759297e0f"
+    },
+    {
+      "package": "PHANTOM",
+      "path": "README.md",
+      "bytes": 8077,
+      "sha256": "5ebf0803cfe460728bd94e1655113cafbb136cb9595234d5d5e9e024a17fdbec"
+    },
+    {
+      "package": "PHANTOM",
+      "path": "REPLAY_HANDOFF.md",
+      "bytes": 16275,
+      "sha256": "bf2978de02efcf210fcc32e3b6315d8144f630b3f90372e23d70239759297e0f"
+    },
+    {
+      "package": "PHANTOM",
+      "path": "docs/FINITE_BOUNDS.md",
+      "bytes": 17119,
+      "sha256": "56a413ff12fd6858f9d188efbe807f85038a5b8ef02719b32ac23ce2d0b4992e"
+    },
+    {
+      "package": "PHANTOM",
+      "path": "inputs/companion/radix_machine/PHANTOM_ONBOARDING_ADDENDUM.md",
+      "bytes": 10035,
+      "sha256": "48f00413e0d3f45b5a595a1a5299b333b6cfe073e325166ba3527c98c4c266d2"
+    },
+    {
+      "package": "ORACLE",
+      "path": "README.md",
+      "bytes": 5338,
+      "sha256": "8c87f799ed29c43ac3cc71e241de1b7731ad6e2e3110f668c57f249243cd8a51"
+    },
+    {
+      "package": "ORACLE",
+      "path": "docs/ACCEPTANCE.md",
+      "bytes": 1376,
+      "sha256": "5ea69c099da44a69da119516bb1b0fb799b553b1eafa02edbd8ac151f320579a"
+    }
+  ],
+  "fresh_tasks": [
+    {
+      "id": "v3-original-unit-suite",
+      "cwd_archive_root": "QUANTUM_ORACLE_V3_EXTENSION",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "hard_timeout_seconds": 30,
+      "elapsed_seconds": 0.43660210500001995,
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "test_basis_roundtrip (test_atlas.Tests.test_basis_roundtrip) ... ok\ntest_born_probabilities (test_atlas.Tests.test_born_probabilities) ... ok\ntest_bridge (test_atlas.Tests.test_bridge) ... ok\ntest_density_trace (test_atlas.Tests.test_density_trace) ... ok\ntest_exact_bytes (test_atlas.Tests.test_exact_bytes) ... ok\ntest_metric (test_atlas.Tests.test_metric) ... ok\ntest_phase_equivalence (test_atlas.Tests.test_phase_equivalence) ... ok\ntest_tamper (test_atlas.Tests.test_tamper) ... ok\ntest_wave_derivative (test_atlas.Tests.test_wave_derivative) ... ok\n\n----------------------------------------------------------------------\nRan 9 tests in 0.004s\n\nOK\n",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "8dc2734ac964e8dac9dde5e1e32601527a64bde7935f7c0eb2b92905b40a2086",
+      "status": "ACCEPT",
+      "tests_passed": 9
+    },
+    {
+      "id": "v3-original-example",
+      "cwd_archive_root": "QUANTUM_ORACLE_V3_EXTENSION",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "examples.py"
+      ],
+      "hard_timeout_seconds": 30,
+      "elapsed_seconds": 0.3422197469999446,
+      "returncode": 0,
+      "stdout": "{\n  \"charts\": [\n    {\n      \"id\": \"wave\",\n      \"origin\": [\n        0,\n        0\n      ],\n      \"unit\": \"space_unit\",\n      \"operation\": \"sine\",\n      \"phase\": 0.0,\n      \"scale\": 1.0\n    },\n    {\n      \"id\": \"slope\",\n      \"origin\": [\n        3,\n        4\n      ],\n      \"unit\": \"space_unit\",\n      \"operation\": \"derivative\",\n      \"phase\": 0.0,\n      \"scale\": 1.0\n    },\n    {\n      \"id\": \"intensity\",\n      \"origin\": [\n        6,\n        0\n      ],\n      \"unit\": \"space_unit\",\n      \"operation\": \"energy\",\n      \"phase\": 0.0,\n      \"scale\": 1.0\n    }\n  ],\n  \"edges\": [\n    {\n      \"from\": \"wave\",\n      \"to\": \"slope\",\n      \"origin_distance\": 5.0,\n      \"unit\": \"space_unit\",\n      \"operator\": \"sine->derivative\",\n      \"distance_type\": \"environment_metric_not_function_distance\"\n    },\n    {\n      \"from\": \"wave\",\n      \"to\": \"intensity\",\n      \"origin_distance\": 6.0,\n      \"unit\": \"space_unit\",\n      \"operator\": \"sine->energy\",\n      \"distance_type\": \"environment_metric_not_function_distance\"\n    },\n    {\n      \"from\": \"slope\",\n      \"to\": \"intensity\",\n      \"origin_distance\": 5.0,\n      \"unit\": \"space_unit\",\n      \"operator\": \"derivative->energy\",\n      \"distance_type\": \"environment_metric_not_function_distance\"\n    }\n  ],\n  \"wave_at_zero\": {\n    \"wave\": 0.0,\n    \"slope\": 1.0,\n    \"intensity\": 0.0\n  },\n  \"quantum_pair\": {\n    \"classical_word\": 0,\n    \"width\": 1,\n    \"measurement_probability\": 0.4999999999999999,\n    \"fubini_study_distance\": 0.7853981633974484,\n    \"basis_mapping\": \"integer i -> computational basis |i>, qubit0 LSB\"\n  },\n  \"quantum_state\": {\n    \"schema\": \"complex-f64-le/1\",\n    \"qubits\": 1,\n    \"basis_order\": \"index_i_is_basis_i; qubit_0_lsb\",\n    \"raw\": {\n      \"sha256\": \"fcf3f3d9ac2a0f3c513c099438fbc7ddd5ec30962151e9b50445fea21b1538c3\",\n      \"length\": 32,\n      \"hex\": \"cc3b7f669ea0e63f0000000000000000cc3b7f669ea0e63f0000000000000000\",\n      \"bit_order\": \"msb0 per byte\",\n      \"endianness\": \"not_applicable_for_opaque_bytes\"\n    }\n  }\n}\n",
+      "stderr": "",
+      "stdout_sha256": "284cf35c4bb017701f91f313dfbc115ce9f97b26320ebfd882bf9fd85b727940",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "status": "ACCEPT",
+      "matches_retained_demo_bytes": true
+    },
+    {
+      "id": "v2-input-manifest-verifier",
+      "cwd_archive_root": "QUANTUM_ORACLE_V2_COMMISSION",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "verify_inputs.py"
+      ],
+      "hard_timeout_seconds": 30,
+      "elapsed_seconds": 0.2880914320003285,
+      "returncode": 0,
+      "stdout": "PASS inputs/QUANTUM_ORACLE_HARNESS_v0.1.zip\nPASS inputs/PHANTOM_Division_VIII_v0_4_Handoff.zip\n",
+      "stderr": "",
+      "stdout_sha256": "ddb9277a7aeeed16835b4f1731a403ba68b8ef942a5bf5138d290374b40e18ce",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "status": "ACCEPT"
+    }
+  ],
+  "fresh_v3_unit_tests_passed": 9,
+  "valid_seed_fixtures": {
+    "opaque_byte_domain": {
+      "count": 256,
+      "exact_reconstruction": true
+    },
+    "three_chart_origin_distances": [
+      {
+        "from": "wave",
+        "to": "slope",
+        "origin_distance": 5.0,
+        "unit": "space_unit",
+        "operator": "sine->derivative",
+        "distance_type": "environment_metric_not_function_distance"
+      },
+      {
+        "from": "wave",
+        "to": "intensity",
+        "origin_distance": 6.0,
+        "unit": "space_unit",
+        "operator": "sine->energy",
+        "distance_type": "environment_metric_not_function_distance"
+      },
+      {
+        "from": "slope",
+        "to": "intensity",
+        "origin_distance": 5.0,
+        "unit": "space_unit",
+        "operator": "derivative->energy",
+        "distance_type": "environment_metric_not_function_distance"
+      }
+    ],
+    "hadamard_probabilities": [
+      0.4999999999999999,
+      0.4999999999999999
+    ],
+    "complex_payload_exact_roundtrip": true,
+    "global_phase_distance": 2.1073424255447017e-08,
+    "equal_probabilities_distinct_relative_phase": {
+      "probabilities_equal": true,
+      "fubini_study_distance": 1.5707963267948966
+    },
+    "global_phase_basis_fixture_distance": 0.0,
+    "global_phase_distance_scope": "Additional Hadamard-state probe; finite overlap/acos roundoff, not physical global-phase distinguishability."
+  },
+  "seed_counterexamples": [
+    {
+      "id": "non-power-of-two-state",
+      "reproduction_python": "record = complex_pairs([1, 0, 0]); decode_pairs(record)",
+      "observed": {
+        "encoder_accepted": true,
+        "amplitude_count": 3,
+        "declared_qubits": 2,
+        "decoder": "ValueError: bad basis length"
+      },
+      "full_v3_required_behavior": "Reject a non-power-of-two amplitude dimension before encoding an n-qubit state."
+    },
+    {
+      "id": "basis-order-metadata-not-bound",
+      "reproduction_python": "record = complex_pairs(basis_lift(0, 1)); record['basis_order'] = 'changed_without_payload_change'; decode_pairs(record)",
+      "observed": {
+        "decoder_accepted_changed_basis_order": true
+      },
+      "full_v3_required_behavior": "Validate the basis-order enum and bind interpretation metadata with the payload."
+    },
+    {
+      "id": "non-xy-origin-admitted",
+      "reproduction_python": "Atlas([Chart('a',(0,0,0),'m','sine'),Chart('b',(3,4,0),'m','derivative')]).distance('a','b')",
+      "observed": {
+        "origin_dimensions": 3,
+        "distance": 5.0,
+        "accepted": true
+      },
+      "full_v3_required_behavior": "An XY-chart schema rejects an undeclared third coordinate; ambient dimension needs its own explicit schema."
+    },
+    {
+      "id": "nonfinite-origin-admitted",
+      "reproduction_python": "Atlas([Chart('a',(0,0),'m','sine'),Chart('b',(float('nan'),0),'m','sine')]).distance('a','b')",
+      "observed": {
+        "accepted": true,
+        "distance_is_nan": true
+      },
+      "full_v3_required_behavior": "Reject nonfinite origins before admitting metric claims."
+    },
+    {
+      "id": "unnormalized-measurement-input",
+      "reproduction_python": "measure_distribution([2, 0]).tolist()",
+      "observed": {
+        "probabilities": [
+          4,
+          0
+        ],
+        "sum": 4.0
+      },
+      "full_v3_required_behavior": "Admit only normalized states or make any renormalization an explicit, loss-accounted operation."
+    },
+    {
+      "id": "energy-scale-is-not-amplitude-square",
+      "reproduction_python": "Atlas([Chart('s',(0,0),'m','sine',scale=2),Chart('e',(1,0),'m','energy',scale=2)])",
+      "observed": {
+        "sine_squared": 4.0,
+        "energy_branch": 2.0
+      },
+      "full_v3_required_behavior": "Declare separate observable scales and a physical energy law; the seed energy branch is scale*sin(theta)^2."
+    }
+  ],
+  "counterexample_scope": "Observed against unchanged original atlas_quantum/core.py; existing native adapters have stricter admission rules. These findings are not edits to the upstream source.",
+  "prior_foundation_evidence": {
+    "path": "evidence/foundation-replay.json",
+    "bytes": 13242,
+    "sha256": "d5f05aff022fb105d199dba04a101180c40cbca8043d801039167f98c57cb15b",
+    "archive_identity_checks": [
+      {
+        "name": "continuation",
+        "matches_bytes_and_sha256": true
+      },
+      {
+        "name": "v3",
+        "matches_bytes_and_sha256": true
+      },
+      {
+        "name": "v2",
+        "matches_bytes_and_sha256": true
+      },
+      {
+        "name": "phantom",
+        "matches_bytes_and_sha256": true
+      },
+      {
+        "name": "oracle",
+        "matches_bytes_and_sha256": true
+      }
+    ],
+    "log_identity_checks": [
+      {
+        "task": "companion-tests",
+        "path": "evidence/foundation-logs/companion-tests.log",
+        "bytes": 588,
+        "sha256": "b0476443929fde50f51eb817a2a36bff6f11ff935e3c04d6e119b708e572c63e",
+        "matches_receipt": true,
+        "recorded_returncode": 0,
+        "recorded_tests_passed": 7
+      },
+      {
+        "task": "oracle-run",
+        "path": "evidence/foundation-logs/oracle-run.log",
+        "bytes": 827,
+        "sha256": "264a1f9000b09fc2e69a2a35665778c102eea0146773a7269644ffe56c7713cf",
+        "matches_receipt": true,
+        "recorded_returncode": 0,
+        "recorded_tests_passed": null
+      },
+      {
+        "task": "oracle-tests",
+        "path": "evidence/foundation-logs/oracle-tests.log",
+        "bytes": 562,
+        "sha256": "d7eea0e5c888108deca9106aea594067852a52fb73fb8b6ad80b150dd40f0699",
+        "matches_receipt": true,
+        "recorded_returncode": 0,
+        "recorded_tests_passed": 8
+      },
+      {
+        "task": "oracle-verify",
+        "path": "evidence/foundation-logs/oracle-verify.log",
+        "bytes": 9,
+        "sha256": "8f5a1374b3eb9532a67c0de915a0810ea089fc304c33a44642a7f4878984803e",
+        "matches_receipt": true,
+        "recorded_returncode": 0,
+        "recorded_tests_passed": null
+      },
+      {
+        "task": "phantom-cold-replay",
+        "path": "evidence/foundation-logs/phantom-cold-replay.log",
+        "bytes": 2604,
+        "sha256": "7b1ea4fdc55263305c1c10c88104338c065dcd93c63470599c6ffebf96f853c7",
+        "matches_receipt": true,
+        "recorded_returncode": 0,
+        "recorded_tests_passed": null
+      },
+      {
+        "task": "phantom-examples",
+        "path": "evidence/foundation-logs/phantom-examples.log",
+        "bytes": 1130,
+        "sha256": "a092481e1419f92ec9d2ac2a3118610b0fa9329cb2f069a7519f34a22aac0169",
+        "matches_receipt": true,
+        "recorded_returncode": 0,
+        "recorded_tests_passed": null
+      },
+      {
+        "task": "phantom-tests",
+        "path": "evidence/foundation-logs/phantom-tests.log",
+        "bytes": 16380,
+        "sha256": "b60e15811f97b4e2d1fbd30c418ef9deb02e722049ee2460c1482a6ff811c837",
+        "matches_receipt": true,
+        "recorded_returncode": 0,
+        "recorded_tests_passed": 121
+      },
+      {
+        "task": "phantom-verify",
+        "path": "evidence/foundation-logs/phantom-verify.log",
+        "bytes": 160,
+        "sha256": "2ed1c8533114b7562c2e133d6cc0ef10ea48fdf4efaef3fa768792e93c51131b",
+        "matches_receipt": true,
+        "recorded_returncode": 0,
+        "recorded_tests_passed": null
+      },
+      {
+        "task": "v2-inputs",
+        "path": "evidence/foundation-logs/v2-inputs.log",
+        "bytes": 95,
+        "sha256": "ddb9277a7aeeed16835b4f1731a403ba68b8ef942a5bf5138d290374b40e18ce",
+        "matches_receipt": true,
+        "recorded_returncode": 0,
+        "recorded_tests_passed": null
+      },
+      {
+        "task": "v3-examples",
+        "path": "evidence/foundation-logs/v3-examples.log",
+        "bytes": 1982,
+        "sha256": "284cf35c4bb017701f91f313dfbc115ce9f97b26320ebfd882bf9fd85b727940",
+        "matches_receipt": true,
+        "recorded_returncode": 0,
+        "recorded_tests_passed": null
+      },
+      {
+        "task": "v3-tests",
+        "path": "evidence/foundation-logs/v3-tests.log",
+        "bytes": 654,
+        "sha256": "99821dcb33100506c4ee6f6becb45c2981e7e594f1180c27ff1ed64e2e19128f",
+        "matches_receipt": true,
+        "recorded_returncode": 0,
+        "recorded_tests_passed": 9
+      }
+    ],
+    "recorded_unit_tests_passed": 145,
+    "recorded_cold_replay": {
+      "status": "verified",
+      "original_scientific_files_verified": 129,
+      "regenerated_files": 125,
+      "numeric_tolerance_requested": false,
+      "numeric_tolerance_used": false,
+      "numeric_differences": [],
+      "admission_ledger_events": 472,
+      "execution_ledger_events": 56,
+      "head": "6bddd82c0587cf3ce557bed4f950e9664cdbb9e5a1ae89ad13d0eb891ff948b6",
+      "execution_head": "dbde8c15bf3dd7bc74da3f2bf537d4f5e59935f06ce833598f6a9fddbaf64e12",
+      "inherited_claim_counts": {
+        "ACCEPTED_WITH_SCOPE": 26,
+        "REJECTED": 8,
+        "UNKNOWN": 1
+      },
+      "regeneration_exclusions": {
+        "discovery": [],
+        "kernel": [
+          "companion_tests.txt",
+          "performance.json"
+        ],
+        "structures": [
+          "performance.json"
+        ],
+        "transfer": [
+          "performance_profile.json"
+        ]
+      },
+      "raw_result": "evidence/foundation-logs/phantom-cold-replay-result.json"
+    },
+    "scope": "Existing fresh foundation run retained and its archive/log identities rechecked here. PHANTOM and Oracle suites and cold replay were not redundantly rerun in this documentation audit. Nine fresh V3 checks repeat an existing subset and are not nine additional unique foundation tests."
+  },
+  "source_inventory": [
+    {
+      "package": "PHANTOM",
+      "path": "division8/__init__.py",
+      "bytes": 103,
+      "sha256": "8d6782405df442c6d2d45a87153b00a16204ce8b58b55e9bfb19595ca6e23958",
+      "symbols": []
+    },
+    {
+      "package": "PHANTOM",
+      "path": "division8/__main__.py",
+      "bytes": 9582,
+      "sha256": "e5564f4ca7254a05600a24e750c19a626258c6af3ad2dff7231427f7cf01e00a",
+      "symbols": [
+        {
+          "kind": "function",
+          "name": "_load",
+          "signature": "path"
+        },
+        {
+          "kind": "function",
+          "name": "parser",
+          "signature": ""
+        },
+        {
+          "kind": "function",
+          "name": "execute",
+          "signature": "args"
+        },
+        {
+          "kind": "function",
+          "name": "main",
+          "signature": ""
+        }
+      ]
+    },
+    {
+      "package": "PHANTOM",
+      "path": "division8/_runtime.py",
+      "bytes": 12250,
+      "sha256": "33bfc046b67f90d7a470cd57ea146b54c8f210be4780a61e59fbe000b3ad8734",
+      "symbols": [
+        {
+          "kind": "function",
+          "name": "_json",
+          "signature": "value"
+        },
+        {
+          "kind": "function",
+          "name": "_int",
+          "signature": "value, name, low, high"
+        },
+        {
+          "kind": "function",
+          "name": "_validate",
+          "signature": "ir, depth=0"
+        },
+        {
+          "kind": "function",
+          "name": "validate_ir",
+          "signature": "ir"
+        },
+        {
+          "kind": "function",
+          "name": "_charge",
+          "signature": "frame, count"
+        },
+        {
+          "kind": "function",
+          "name": "construct_ir",
+          "signature": "kind, input_type, output_type, parameters, parents=None"
+        },
+        {
+          "kind": "function",
+          "name": "runtime_execute",
+          "signature": "ir, value, depth=0, _budget=None"
+        }
+      ]
+    },
+    {
+      "package": "PHANTOM",
+      "path": "division8/circuits.py",
+      "bytes": 9991,
+      "sha256": "6445b2163b6bbc2922a877938cbce4d04bb1ee1e5d603fcf65823ea4774eef01",
+      "symbols": [
+        {
+          "kind": "class",
+          "name": "Circuit",
+          "methods": [
+            {
+              "name": "__init__",
+              "signature": "self, inputs, gates, outputs"
+            },
+            {
+              "name": "to_dict",
+              "signature": "self"
+            },
+            {
+              "name": "from_dict",
+              "signature": "cls, value"
+            },
+            {
+              "name": "evaluate",
+              "signature": "self, values, trace=False"
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "adder_circuit",
+          "signature": "width"
+        },
+        {
+          "kind": "function",
+          "name": "optimize_circuit",
+          "signature": "circuit"
+        },
+        {
+          "kind": "function",
+          "name": "evaluate_expression",
+          "signature": "expression, values"
+        },
+        {
+          "kind": "function",
+          "name": "synthesize_boolean",
+          "signature": "truth, n_inputs, max_cost=7, max_candidates=2000000"
+        },
+        {
+          "kind": "function",
+          "name": "compile_expression",
+          "signature": "expression, n_inputs"
+        }
+      ]
+    },
+    {
+      "package": "PHANTOM",
+      "path": "division8/contracts.py",
+      "bytes": 4162,
+      "sha256": "442b0c68d984479dc67c89fbce69ca1ca2c789c1e46f8d103dacff981e8b749e",
+      "symbols": [
+        {
+          "kind": "function",
+          "name": "canonical",
+          "signature": "value"
+        },
+        {
+          "kind": "function",
+          "name": "digest",
+          "signature": "value"
+        },
+        {
+          "kind": "function",
+          "name": "file_hash",
+          "signature": "path"
+        },
+        {
+          "kind": "function",
+          "name": "integer",
+          "signature": "value, name, low=0, high=1 << 63"
+        },
+        {
+          "kind": "function",
+          "name": "inside",
+          "signature": "root, name"
+        },
+        {
+          "kind": "function",
+          "name": "write_json",
+          "signature": "path, value"
+        },
+        {
+          "kind": "function",
+          "name": "inventory",
+          "signature": "root, exclude=()"
+        },
+        {
+          "kind": "function",
+          "name": "verify_inventory",
+          "signature": "root, manifest"
+        },
+        {
+          "kind": "function",
+          "name": "validate_operator",
+          "signature": "record"
+        },
+        {
+          "kind": "function",
+          "name": "substrate_spec",
+          "signature": "name, alphabet, states, operators, valuation, projections, invariants, evidence, context, provenance"
+        }
+      ]
+    },
+    {
+      "package": "PHANTOM",
+      "path": "division8/experiment_discovery.py",
+      "bytes": 12850,
+      "sha256": "be8367de32aa976164aeb38c56853ecca59e98e775b575ff02d72475914b65e4",
+      "symbols": [
+        {
+          "kind": "function",
+          "name": "_record",
+          "signature": "ident, claim, grade, status, conditions, bounds, metrics, baselines, counterexamples, artifacts"
+        },
+        {
+          "kind": "function",
+          "name": "_compiled_check",
+          "signature": "ir, path, examples"
+        },
+        {
+          "kind": "function",
+          "name": "run_experiments",
+          "signature": "out_dir"
+        }
+      ]
+    },
+    {
+      "package": "PHANTOM",
+      "path": "division8/experiment_kernel.py",
+      "bytes": 19772,
+      "sha256": "eeb2e8b52b4b658a25defaaa9e6813deb7e99bae34f58be8c9b46cc282cb757b",
+      "symbols": [
+        {
+          "kind": "function",
+          "name": "_write",
+          "signature": "path, value"
+        },
+        {
+          "kind": "function",
+          "name": "_record",
+          "signature": "identifier, claim, metrics, artifacts, conditions, bounds, baseline=None, counterexamples=None, status='ACCEPTED_WITH_SCOPE', evidence_class='computational_observation'"
+        },
+        {
+          "kind": "function",
+          "name": "_benchmark",
+          "signature": "call, iterations, repetitions=5"
+        },
+        {
+          "kind": "function",
+          "name": "run_experiments",
+          "signature": "out_dir: Path"
+        }
+      ]
+    },
+    {
+      "package": "PHANTOM",
+      "path": "division8/experiment_structures.py",
+      "bytes": 24644,
+      "sha256": "ee3e238dad4b290a14c48ebd37f6e44e7245d9cf0f0354b4eaa074ae5876541a",
+      "symbols": [
+        {
+          "kind": "function",
+          "name": "_json_bytes",
+          "signature": "value"
+        },
+        {
+          "kind": "function",
+          "name": "_write",
+          "signature": "root, name, value"
+        },
+        {
+          "kind": "class",
+          "name": "_Rows",
+          "methods": [
+            {
+              "name": "__init__",
+              "signature": "self, path"
+            },
+            {
+              "name": "add",
+              "signature": "self, row"
+            },
+            {
+              "name": "close",
+              "signature": "self"
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "_bench",
+          "signature": "function, repeats=5"
+        },
+        {
+          "kind": "function",
+          "name": "_navigation",
+          "signature": "root"
+        },
+        {
+          "kind": "function",
+          "name": "_rrr",
+          "signature": "root"
+        },
+        {
+          "kind": "function",
+          "name": "_huffman",
+          "signature": "root, performance"
+        },
+        {
+          "kind": "function",
+          "name": "_bdd",
+          "signature": "root"
+        },
+        {
+          "kind": "function",
+          "name": "run_experiments",
+          "signature": "out_dir: Path"
+        }
+      ]
+    },
+    {
+      "package": "PHANTOM",
+      "path": "division8/experiment_transfer.py",
+      "bytes": 34265,
+      "sha256": "5f82ecdc2a05287b78a603455fa096eff349281e9dd66fede51d18f3b2e7a28d",
+      "symbols": [
+        {
+          "kind": "function",
+          "name": "_write",
+          "signature": "out, path, obj"
+        },
+        {
+          "kind": "function",
+          "name": "_record",
+          "signature": "id, claim, status, conditions, bounds, metrics, baselines, counterexamples, artifacts, evidence_class='computational_observation'"
+        },
+        {
+          "kind": "function",
+          "name": "_score",
+          "signature": "model, rows, adapter"
+        },
+        {
+          "kind": "function",
+          "name": "_wilson",
+          "signature": "success, n"
+        },
+        {
+          "kind": "function",
+          "name": "_compile_standalone",
+          "signature": "out, kind, model, filename, request, expected"
+        },
+        {
+          "kind": "function",
+          "name": "_timings",
+          "signature": "ir, enabled"
+        },
+        {
+          "kind": "function",
+          "name": "run_experiments",
+          "signature": "out_dir: Path, benchmark=True"
+        }
+      ]
+    },
+    {
+      "package": "PHANTOM",
+      "path": "division8/generators.py",
+      "bytes": 6221,
+      "sha256": "77d792b22d3bcfae3b6a48f0ed74db6352e73188daa999f03e5ee2aaa9d90fa9",
+      "symbols": [
+        {
+          "kind": "function",
+          "name": "make_ir",
+          "signature": "kind, input_type, output_type, parameters, parents=None"
+        },
+        {
+          "kind": "function",
+          "name": "execute_ir",
+          "signature": "ir, value"
+        },
+        {
+          "kind": "function",
+          "name": "synthesize_word",
+          "signature": "examples, width=8, max_depth=2, max_candidates=1000, constants=(0, 1, 2, 3, 7)"
+        },
+        {
+          "kind": "function",
+          "name": "compose",
+          "signature": "first, second"
+        },
+        {
+          "kind": "function",
+          "name": "compile_generator",
+          "signature": "ir, path"
+        },
+        {
+          "kind": "function",
+          "name": "reflect_generator",
+          "signature": "ir, max_width=10"
+        }
+      ]
+    },
+    {
+      "package": "PHANTOM",
+      "path": "division8/geometry.py",
+      "bytes": 10570,
+      "sha256": "086095ede7395a28e7166a7c781350b58f6daad7d9b1f397edb31147563a5ca1",
+      "symbols": [
+        {
+          "kind": "function",
+          "name": "gray_encode",
+          "signature": "x"
+        },
+        {
+          "kind": "function",
+          "name": "gray_decode",
+          "signature": "x"
+        },
+        {
+          "kind": "function",
+          "name": "successor_distribution",
+          "signature": "width"
+        },
+        {
+          "kind": "function",
+          "name": "transition_graph",
+          "signature": "width, kind"
+        },
+        {
+          "kind": "function",
+          "name": "graph_invariants",
+          "signature": "graph"
+        },
+        {
+          "kind": "function",
+          "name": "gf2_rank",
+          "signature": "columns"
+        },
+        {
+          "kind": "function",
+          "name": "cubical_homology",
+          "signature": "width, filled=True"
+        },
+        {
+          "kind": "function",
+          "name": "closure_monoid",
+          "signature": "n, generators, max_elements=10000"
+        },
+        {
+          "kind": "function",
+          "name": "algebra_catalogue",
+          "signature": "width=3"
+        },
+        {
+          "kind": "function",
+          "name": "induce_trace_automaton",
+          "signature": "words"
+        },
+        {
+          "kind": "function",
+          "name": "run_trace_automaton",
+          "signature": "dfa, word"
+        },
+        {
+          "kind": "function",
+          "name": "minimize_dfa",
+          "signature": "dfa"
+        }
+      ]
+    },
+    {
+      "package": "PHANTOM",
+      "path": "division8/ingest.py",
+      "bytes": 8353,
+      "sha256": "3d549009bda37c25a7e49810c8db21929b067d45e08b83ca166d4b492d006065",
+      "symbols": [
+        {
+          "kind": "function",
+          "name": "_publish",
+          "signature": "path, data, exclusive=False"
+        },
+        {
+          "kind": "function",
+          "name": "_load_manifest",
+          "signature": "out, check_checkpoint=True"
+        },
+        {
+          "kind": "function",
+          "name": "ingest_file",
+          "signature": "source, outdir, kind, max_bytes=64 << 20, chunk_bytes=1 << 16, max_chunks=100000, license_note='user-supplied research input'"
+        },
+        {
+          "kind": "function",
+          "name": "reconstruct_input",
+          "signature": "outdir, allow_partial=False"
+        },
+        {
+          "kind": "function",
+          "name": "project_input",
+          "signature": "outdir"
+        }
+      ]
+    },
+    {
+      "package": "PHANTOM",
+      "path": "division8/kernel.py",
+      "bytes": 21895,
+      "sha256": "aeb34870bc79f238514987639c2d15f5c0a1b30e6ae084866b7168b45fc50a6e",
+      "symbols": [
+        {
+          "kind": "function",
+          "name": "digest",
+          "signature": "value"
+        },
+        {
+          "kind": "function",
+          "name": "_same",
+          "signature": "left, right"
+        },
+        {
+          "kind": "function",
+          "name": "integer",
+          "signature": "value, name"
+        },
+        {
+          "kind": "class",
+          "name": "WordSpec",
+          "methods": [
+            {
+              "name": "__post_init__",
+              "signature": "self"
+            },
+            {
+              "name": "mask",
+              "signature": "self"
+            },
+            {
+              "name": "minimum",
+              "signature": "self"
+            },
+            {
+              "name": "maximum",
+              "signature": "self"
+            },
+            {
+              "name": "check_raw",
+              "signature": "self, value"
+            },
+            {
+              "name": "decode",
+              "signature": "self, value"
+            },
+            {
+              "name": "encode",
+              "signature": "self, value"
+            },
+            {
+              "name": "to_bytes",
+              "signature": "self, value"
+            },
+            {
+              "name": "from_bytes",
+              "signature": "self, value"
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "ripple_add",
+          "signature": "a, b, width"
+        },
+        {
+          "kind": "function",
+          "name": "ripple_sub",
+          "signature": "a, b, width"
+        },
+        {
+          "kind": "function",
+          "name": "growing_successor",
+          "signature": "raw, width, max_width=4096"
+        },
+        {
+          "kind": "function",
+          "name": "_parameters",
+          "signature": "spec, op, params"
+        },
+        {
+          "kind": "function",
+          "name": "_bound",
+          "signature": "spec, full"
+        },
+        {
+          "kind": "function",
+          "name": "_compute",
+          "signature": "spec, before, op, params"
+        },
+        {
+          "kind": "class",
+          "name": "WordMachine",
+          "methods": [
+            {
+              "name": "__init__",
+              "signature": "self, spec: WordSpec, initial=0, max_events=100000"
+            },
+            {
+              "name": "events",
+              "signature": "self"
+            },
+            {
+              "name": "execute",
+              "signature": "self, op, **params"
+            },
+            {
+              "name": "snapshot",
+              "signature": "self"
+            },
+            {
+              "name": "journal",
+              "signature": "self"
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "_reference",
+          "signature": "spec, before, op, p"
+        },
+        {
+          "kind": "function",
+          "name": "_check_steps",
+          "signature": "e, spec"
+        },
+        {
+          "kind": "function",
+          "name": "verify_transition",
+          "signature": "event"
+        },
+        {
+          "kind": "function",
+          "name": "verify_journal",
+          "signature": "journal"
+        },
+        {
+          "kind": "class",
+          "name": "FieldLayout",
+          "methods": [
+            {
+              "name": "__init__",
+              "signature": "self, width, fields"
+            },
+            {
+              "name": "pack",
+              "signature": "self, values"
+            },
+            {
+              "name": "unpack",
+              "signature": "self, raw"
+            }
+          ]
+        },
+        {
+          "kind": "class",
+          "name": "RegisterMachine",
+          "methods": [
+            {
+              "name": "__init__",
+              "signature": "self, spec, registers, max_steps=10000"
+            },
+            {
+              "name": "run",
+              "signature": "self, program"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "package": "PHANTOM",
+      "path": "division8/ledger.py",
+      "bytes": 14708,
+      "sha256": "b2ccc23a891f1eb4af94124f9b62efe2335553c999f7d8f251e8dcc3033c109b",
+      "symbols": [
+        {
+          "kind": "function",
+          "name": "_initial",
+          "signature": ""
+        },
+        {
+          "kind": "function",
+          "name": "_reduce",
+          "signature": "before, phase, payload, status"
+        },
+        {
+          "kind": "function",
+          "name": "_metadata_hash",
+          "signature": "metadata"
+        },
+        {
+          "kind": "function",
+          "name": "_copy",
+          "signature": "value"
+        },
+        {
+          "kind": "function",
+          "name": "_atomic",
+          "signature": "path, data, exclusive=False"
+        },
+        {
+          "kind": "function",
+          "name": "_limits",
+          "signature": "bounds"
+        },
+        {
+          "kind": "function",
+          "name": "_references",
+          "signature": "payload"
+        },
+        {
+          "kind": "function",
+          "name": "_check_refs",
+          "signature": "root, refs, bounds"
+        },
+        {
+          "kind": "class",
+          "name": "Ledger",
+          "methods": [
+            {
+              "name": "__init__",
+              "signature": "self, root, session, revision, branch='main', parent_checkpoint=None"
+            },
+            {
+              "name": "metadata",
+              "signature": "self"
+            },
+            {
+              "name": "events",
+              "signature": "self"
+            },
+            {
+              "name": "state",
+              "signature": "self"
+            },
+            {
+              "name": "store_bytes",
+              "signature": "self, data, kind='application/octet-stream'"
+            },
+            {
+              "name": "store_json",
+              "signature": "self, value"
+            },
+            {
+              "name": "append",
+              "signature": "self, phase, payload, status='OBSERVED', seed=731, bounds=None, assumptions=None, causal_dependencies=None, timing=None"
+            },
+            {
+              "name": "checkpoint",
+              "signature": "self"
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "verify_ledger",
+          "signature": "root, expected_head=None"
+        },
+        {
+          "kind": "function",
+          "name": "fork_ledger",
+          "signature": "source, destination, branch"
+        }
+      ]
+    },
+    {
+      "package": "PHANTOM",
+      "path": "division8/media.py",
+      "bytes": 19142,
+      "sha256": "0d22c86b66e6030bf13deba733a1f2202d0da654314ab17092717c1c89c44d4b",
+      "symbols": [
+        {
+          "kind": "function",
+          "name": "_image",
+          "signature": "image, max_pixels=1000000"
+        },
+        {
+          "kind": "function",
+          "name": "_chunk",
+          "signature": "kind, payload"
+        },
+        {
+          "kind": "function",
+          "name": "_paeth",
+          "signature": "a, b, c"
+        },
+        {
+          "kind": "function",
+          "name": "encode_png",
+          "signature": "image, filter_type=0"
+        },
+        {
+          "kind": "function",
+          "name": "decode_png",
+          "signature": "blob, max_pixels=1000000, max_bytes=16000000"
+        },
+        {
+          "kind": "function",
+          "name": "image_roi",
+          "signature": "image, roi, ir, include_alpha=False"
+        },
+        {
+          "kind": "function",
+          "name": "ycocg_forward",
+          "signature": "rgb"
+        },
+        {
+          "kind": "function",
+          "name": "ycocg_inverse",
+          "signature": "coefficients"
+        },
+        {
+          "kind": "function",
+          "name": "flip_image",
+          "signature": "image, axis='horizontal'"
+        },
+        {
+          "kind": "function",
+          "name": "convolve_image",
+          "signature": "image, kernel, divisor=1"
+        },
+        {
+          "kind": "function",
+          "name": "alpha_composite",
+          "signature": "foreground, background"
+        },
+        {
+          "kind": "function",
+          "name": "_audio",
+          "signature": "audio, max_frames=1000000"
+        },
+        {
+          "kind": "function",
+          "name": "encode_wav",
+          "signature": "audio"
+        },
+        {
+          "kind": "function",
+          "name": "decode_wav",
+          "signature": "blob, max_frames=1000000"
+        },
+        {
+          "kind": "function",
+          "name": "audio_window",
+          "signature": "audio, window, ir, allow_wrap=False"
+        },
+        {
+          "kind": "function",
+          "name": "gain_pcm",
+          "signature": "samples, numerator, denominator=1"
+        },
+        {
+          "kind": "function",
+          "name": "resample_hold",
+          "signature": "audio, target_rate"
+        },
+        {
+          "kind": "function",
+          "name": "video_roi",
+          "signature": "frames, frame_window, roi, ir, fps=(24, 1), sample_rate=48000"
+        },
+        {
+          "kind": "function",
+          "name": "validate_molecule",
+          "signature": "graph"
+        },
+        {
+          "kind": "function",
+          "name": "relabel_molecule",
+          "signature": "graph, old_to_new"
+        }
+      ]
+    },
+    {
+      "package": "PHANTOM",
+      "path": "division8/pipeline.py",
+      "bytes": 25845,
+      "sha256": "94455a8f682fcb5ef1700e28a48d7fa801cd8345eaebfbb7690e7d6cf66a3add",
+      "symbols": [
+        {
+          "kind": "function",
+          "name": "source_revision",
+          "signature": ""
+        },
+        {
+          "kind": "function",
+          "name": "deterministic_snapshot",
+          "signature": "root, excluded=()"
+        },
+        {
+          "kind": "function",
+          "name": "compare_signal_numeric",
+          "signature": "filename, original, recomputed"
+        },
+        {
+          "kind": "function",
+          "name": "_normalize_class",
+          "signature": "value"
+        },
+        {
+          "kind": "function",
+          "name": "_prepare_record",
+          "signature": "area, raw, out"
+        },
+        {
+          "kind": "function",
+          "name": "_admit_record",
+          "signature": "ledger, record, out"
+        },
+        {
+          "kind": "function",
+          "name": "_input_inventories",
+          "signature": ""
+        },
+        {
+          "kind": "function",
+          "name": "_execution_event",
+          "signature": "ledger, phase, area, plan_ref, refs=(), status='OBSERVED', **fields"
+        },
+        {
+          "kind": "function",
+          "name": "_summary",
+          "signature": "revision, records, claim_checkpoint, execution_checkpoint, selected"
+        },
+        {
+          "kind": "function",
+          "name": "_build_run",
+          "signature": "out, selected"
+        },
+        {
+          "kind": "function",
+          "name": "_publish_run",
+          "signature": "staging, destination"
+        },
+        {
+          "kind": "function",
+          "name": "build_run",
+          "signature": "destination, areas=None"
+        },
+        {
+          "kind": "function",
+          "name": "_read_ref",
+          "signature": "root, ref"
+        },
+        {
+          "kind": "function",
+          "name": "_bound_execution_plan",
+          "signature": "run, manifest, execution"
+        },
+        {
+          "kind": "function",
+          "name": "_reconcile_report",
+          "signature": "run, manifest, ledger, execution, selected"
+        },
+        {
+          "kind": "function",
+          "name": "replay_run",
+          "signature": "run, expected_head=None, recompute=True, expected_execution_head=None, allow_numeric_tolerance=False"
+        },
+        {
+          "kind": "function",
+          "name": "describe",
+          "signature": ""
+        }
+      ]
+    },
+    {
+      "package": "PHANTOM",
+      "path": "division8/qstrings.py",
+      "bytes": 8410,
+      "sha256": "2369e5b3ab9bbecb04f1d38d9fd5a92acedefc71027e4fcd2d3bd604c7b64595",
+      "symbols": [
+        {
+          "kind": "function",
+          "name": "_sha",
+          "signature": "value"
+        },
+        {
+          "kind": "function",
+          "name": "_copy",
+          "signature": "value"
+        },
+        {
+          "kind": "function",
+          "name": "_guard",
+          "signature": "g, depth=0, budget=None"
+        },
+        {
+          "kind": "function",
+          "name": "_evaluate",
+          "signature": "g, observations, results"
+        },
+        {
+          "kind": "function",
+          "name": "_cycles",
+          "signature": "graph"
+        },
+        {
+          "kind": "class",
+          "name": "QSystem",
+          "methods": [
+            {
+              "name": "__init__",
+              "signature": "self, max_relations=256, max_candidates=256"
+            },
+            {
+              "name": "relations",
+              "signature": "self"
+            },
+            {
+              "name": "observations",
+              "signature": "self"
+            },
+            {
+              "name": "add",
+              "signature": "self, name, objects, candidates, parents=()"
+            },
+            {
+              "name": "observe",
+              "signature": "self, name, value, witness_sha256"
+            },
+            {
+              "name": "resolve",
+              "signature": "self, max_rounds=256"
+            },
+            {
+              "name": "export",
+              "signature": "self"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "package": "PHANTOM",
+      "path": "division8/structures.py",
+      "bytes": 35250,
+      "sha256": "720c2bc5e305ac007ad0b6ed38a1d3a5cbab4a953421e5bb9251c9c07bf86224",
+      "symbols": [
+        {
+          "kind": "function",
+          "name": "_integer",
+          "signature": "value, name, lo=None, hi=None"
+        },
+        {
+          "kind": "function",
+          "name": "_bit",
+          "signature": "value"
+        },
+        {
+          "kind": "function",
+          "name": "_bits",
+          "signature": "iterable, max_bits"
+        },
+        {
+          "kind": "class",
+          "name": "BinaryTrie",
+          "methods": [
+            {
+              "name": "__init__",
+              "signature": "self, width, bit_order='msb', codebook=None, max_nodes=1000000"
+            },
+            {
+              "name": "node_count",
+              "signature": "self"
+            },
+            {
+              "name": "route",
+              "signature": "self, key"
+            },
+            {
+              "name": "insert",
+              "signature": "self, key, payload"
+            },
+            {
+              "name": "lookup",
+              "signature": "self, key"
+            },
+            {
+              "name": "export_model",
+              "signature": "self"
+            }
+          ]
+        },
+        {
+          "kind": "class",
+          "name": "PatriciaTrie",
+          "methods": [
+            {
+              "name": "from_trie",
+              "signature": "cls, trie"
+            },
+            {
+              "name": "node_count",
+              "signature": "self"
+            },
+            {
+              "name": "lookup",
+              "signature": "self, key"
+            },
+            {
+              "name": "export_model",
+              "signature": "self"
+            }
+          ]
+        },
+        {
+          "kind": "class",
+          "name": "PackedBitVector",
+          "methods": [
+            {
+              "name": "__init__",
+              "signature": "self, bits, max_bits=1 << 24"
+            },
+            {
+              "name": "_directory",
+              "signature": "self"
+            },
+            {
+              "name": "access",
+              "signature": "self, index"
+            },
+            {
+              "name": "rank",
+              "signature": "self, bit, end"
+            },
+            {
+              "name": "select",
+              "signature": "self, bit, occurrence"
+            },
+            {
+              "name": "to_bytes",
+              "signature": "self"
+            },
+            {
+              "name": "from_bytes",
+              "signature": "cls, data, max_bits=1 << 24"
+            }
+          ]
+        },
+        {
+          "kind": "class",
+          "name": "_BitWriter",
+          "methods": [
+            {
+              "name": "__init__",
+              "signature": "self"
+            },
+            {
+              "name": "write",
+              "signature": "self, value, width"
+            },
+            {
+              "name": "finish",
+              "signature": "self"
+            }
+          ]
+        },
+        {
+          "kind": "class",
+          "name": "_BitReader",
+          "methods": [
+            {
+              "name": "__init__",
+              "signature": "self, data, length, position=0"
+            },
+            {
+              "name": "read",
+              "signature": "self, width"
+            }
+          ]
+        },
+        {
+          "kind": "class",
+          "name": "RRRBitVector",
+          "methods": [
+            {
+              "name": "__init__",
+              "signature": "self, bits, max_bits=1 << 20"
+            },
+            {
+              "name": "_width",
+              "signature": "cls, c"
+            },
+            {
+              "name": "_directory",
+              "signature": "self"
+            },
+            {
+              "name": "_block",
+              "signature": "self, index"
+            },
+            {
+              "name": "access",
+              "signature": "self, index"
+            },
+            {
+              "name": "rank",
+              "signature": "self, bit, end"
+            },
+            {
+              "name": "select",
+              "signature": "self, bit, occurrence"
+            },
+            {
+              "name": "to_bytes",
+              "signature": "self"
+            },
+            {
+              "name": "from_bytes",
+              "signature": "cls, data, max_bits=1 << 20"
+            }
+          ]
+        },
+        {
+          "kind": "class",
+          "name": "WaveletTree",
+          "methods": [
+            {
+              "name": "__init__",
+              "signature": "self, sequence, alphabet=None, max_items=1 << 20"
+            },
+            {
+              "name": "access_with_trace",
+              "signature": "self, index"
+            },
+            {
+              "name": "access",
+              "signature": "self, index"
+            },
+            {
+              "name": "rank_with_trace",
+              "signature": "self, symbol, end"
+            },
+            {
+              "name": "rank",
+              "signature": "self, symbol, end"
+            },
+            {
+              "name": "select_with_trace",
+              "signature": "self, symbol, occurrence"
+            },
+            {
+              "name": "select",
+              "signature": "self, symbol, occurrence"
+            },
+            {
+              "name": "export_model",
+              "signature": "self"
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "_canonical_codes",
+          "signature": "lengths"
+        },
+        {
+          "kind": "class",
+          "name": "HuffmanCodec",
+          "methods": [
+            {
+              "name": "__init__",
+              "signature": "self, lengths, frequencies=None, training_sha256=None"
+            },
+            {
+              "name": "train",
+              "signature": "cls, data, max_bytes=64 << 20"
+            },
+            {
+              "name": "export_model",
+              "signature": "self"
+            },
+            {
+              "name": "from_model",
+              "signature": "cls, model"
+            },
+            {
+              "name": "model_sha256",
+              "signature": "self"
+            },
+            {
+              "name": "__eq__",
+              "signature": "self, other"
+            },
+            {
+              "name": "encode",
+              "signature": "self, data, max_bytes=64 << 20"
+            },
+            {
+              "name": "_decode",
+              "signature": "cls, packet, max_output_bytes=64 << 20, trace_limit=None"
+            },
+            {
+              "name": "decode",
+              "signature": "cls, packet, max_output_bytes=64 << 20"
+            },
+            {
+              "name": "decode_with_trace",
+              "signature": "cls, packet, max_output_bytes=64 << 20, trace_limit=4096"
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "compile_huffman_generator",
+          "signature": "codec, path"
+        },
+        {
+          "kind": "class",
+          "name": "ROBDD",
+          "methods": [
+            {
+              "name": "from_truth_table",
+              "signature": "cls, variables, outputs, max_variables=12"
+            },
+            {
+              "name": "_assignment",
+              "signature": "self, assignment"
+            },
+            {
+              "name": "evaluate",
+              "signature": "self, assignment, trace=False"
+            },
+            {
+              "name": "evaluate_circuit",
+              "signature": "self, assignment"
+            },
+            {
+              "name": "export_model",
+              "signature": "self"
+            },
+            {
+              "name": "export_circuit",
+              "signature": "self"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "package": "PHANTOM",
+      "path": "division8/transfer.py",
+      "bytes": 20065,
+      "sha256": "9711aa3c798197618f53b5325b0f453b41c71923f75cd84c9abb5c11a00525e8",
+      "symbols": [
+        {
+          "kind": "function",
+          "name": "_hash",
+          "signature": "value"
+        },
+        {
+          "kind": "function",
+          "name": "_integer",
+          "signature": "x, name, low=None, high=None"
+        },
+        {
+          "kind": "function",
+          "name": "_local_contract",
+          "signature": "values, support, ir"
+        },
+        {
+          "kind": "function",
+          "name": "apply_local_update",
+          "signature": "values, support, ir"
+        },
+        {
+          "kind": "function",
+          "name": "inverse_local_update",
+          "signature": "ir"
+        },
+        {
+          "kind": "function",
+          "name": "transport_local",
+          "signature": "ir, width"
+        },
+        {
+          "kind": "function",
+          "name": "induce_local_update",
+          "signature": "observations, width=8"
+        },
+        {
+          "kind": "function",
+          "name": "_context_key",
+          "signature": "features, names"
+        },
+        {
+          "kind": "function",
+          "name": "induce_context_rule",
+          "signature": "rows, feature_names"
+        },
+        {
+          "kind": "function",
+          "name": "predict_context",
+          "signature": "model, features"
+        },
+        {
+          "kind": "function",
+          "name": "turkish_features",
+          "signature": "word"
+        },
+        {
+          "kind": "function",
+          "name": "parse_expression",
+          "signature": "text, max_nodes=256"
+        },
+        {
+          "kind": "function",
+          "name": "evaluate_expression",
+          "signature": "node, bindings, max_nodes=1024"
+        },
+        {
+          "kind": "function",
+          "name": "simplify_expression",
+          "signature": "node"
+        },
+        {
+          "kind": "function",
+          "name": "differentiate",
+          "signature": "node, variable"
+        },
+        {
+          "kind": "function",
+          "name": "_matrix",
+          "signature": "a"
+        },
+        {
+          "kind": "function",
+          "name": "transpose",
+          "signature": "a"
+        },
+        {
+          "kind": "function",
+          "name": "matmul",
+          "signature": "a, b"
+        },
+        {
+          "kind": "function",
+          "name": "matrix_entry_update",
+          "signature": "a, b, row, column, new_value, product=None"
+        },
+        {
+          "kind": "function",
+          "name": "dft",
+          "signature": "values, inverse=False"
+        },
+        {
+          "kind": "function",
+          "name": "fft",
+          "signature": "values, inverse=False"
+        },
+        {
+          "kind": "function",
+          "name": "integer_haar",
+          "signature": "values"
+        },
+        {
+          "kind": "function",
+          "name": "integer_haar_inverse",
+          "signature": "values"
+        },
+        {
+          "kind": "function",
+          "name": "stft",
+          "signature": "samples, size, hop, window"
+        },
+        {
+          "kind": "function",
+          "name": "istft",
+          "signature": "record"
+        }
+      ]
+    },
+    {
+      "package": "ORACLE",
+      "path": "quantum_oracle/__init__.py",
+      "bytes": 20,
+      "sha256": "2b490dcb6e959ba03ed55e65493de2972eb256c34b51b8aa93a0190c59b69c92",
+      "symbols": []
+    },
+    {
+      "package": "ORACLE",
+      "path": "quantum_oracle/__main__.py",
+      "bytes": 713,
+      "sha256": "dd8044afa1d489b2fe2e16de22b65073ae361bec0f379da0375cd0eaaa034f99",
+      "symbols": []
+    },
+    {
+      "package": "ORACLE",
+      "path": "quantum_oracle/core.py",
+      "bytes": 6875,
+      "sha256": "82efce911b2bcdc42f42872aea97ff320a7bdc9341b3267b5fa486354c970178",
+      "symbols": [
+        {
+          "kind": "function",
+          "name": "canonical",
+          "signature": "x"
+        },
+        {
+          "kind": "function",
+          "name": "sha",
+          "signature": "x"
+        },
+        {
+          "kind": "function",
+          "name": "kron_all",
+          "signature": "ms"
+        },
+        {
+          "kind": "function",
+          "name": "local",
+          "signature": "g, q, n"
+        },
+        {
+          "kind": "function",
+          "name": "cx",
+          "signature": "control, target, n"
+        },
+        {
+          "kind": "function",
+          "name": "rz",
+          "signature": "theta"
+        },
+        {
+          "kind": "function",
+          "name": "rx",
+          "signature": "theta"
+        },
+        {
+          "kind": "function",
+          "name": "gate",
+          "signature": "op, n"
+        },
+        {
+          "kind": "function",
+          "name": "circuit",
+          "signature": "n, ops"
+        },
+        {
+          "kind": "function",
+          "name": "probabilities",
+          "signature": "psi"
+        },
+        {
+          "kind": "function",
+          "name": "shots",
+          "signature": "psi, num=1024, seed=7"
+        },
+        {
+          "kind": "function",
+          "name": "purity",
+          "signature": "rho"
+        },
+        {
+          "kind": "function",
+          "name": "density",
+          "signature": "psi"
+        },
+        {
+          "kind": "function",
+          "name": "evolve_closed",
+          "signature": "psi, Hamiltonian, dt"
+        },
+        {
+          "kind": "function",
+          "name": "lindblad",
+          "signature": "rho, Hamiltonian, collapses, dt, steps"
+        },
+        {
+          "kind": "function",
+          "name": "ring_tracking",
+          "signature": "x0, p0, turns=128, kappa=0.1, tune=0.23"
+        },
+        {
+          "kind": "function",
+          "name": "phase_scan",
+          "signature": "tunes=None, kappas=None, turns=128"
+        },
+        {
+          "kind": "function",
+          "name": "circuit_discovery",
+          "signature": "target_probs, n=2, max_depth=3, alphabet=('H', 'X', 'Z', 'S')"
+        },
+        {
+          "kind": "class",
+          "name": "Ledger",
+          "methods": [
+            {
+              "name": "__init__",
+              "signature": "self"
+            },
+            {
+              "name": "add",
+              "signature": "self, kind, payload"
+            },
+            {
+              "name": "verify",
+              "signature": "self"
+            },
+            {
+              "name": "export",
+              "signature": "self"
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "experiment",
+          "signature": ""
+        }
+      ]
+    },
+    {
+      "package": "V3",
+      "path": "atlas_quantum/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "symbols": []
+    },
+    {
+      "package": "V3",
+      "path": "atlas_quantum/core.py",
+      "bytes": 4182,
+      "sha256": "637368c05000fbcb2e7739cd7b9abe134be6b42222a2bab32bbcc880439369f6",
+      "symbols": [
+        {
+          "kind": "class",
+          "name": "Chart",
+          "methods": []
+        },
+        {
+          "kind": "class",
+          "name": "Atlas",
+          "methods": [
+            {
+              "name": "__init__",
+              "signature": "self, charts"
+            },
+            {
+              "name": "distance",
+              "signature": "self, a, b"
+            },
+            {
+              "name": "wave",
+              "signature": "self, chart, x, t=0.0, k=1.0, omega=1.0"
+            },
+            {
+              "name": "edge",
+              "signature": "self, a, b"
+            },
+            {
+              "name": "edges",
+              "signature": "self"
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "source_binary",
+          "signature": "data"
+        },
+        {
+          "kind": "function",
+          "name": "reconstruct",
+          "signature": "record"
+        },
+        {
+          "kind": "function",
+          "name": "complex_pairs",
+          "signature": "psi"
+        },
+        {
+          "kind": "function",
+          "name": "decode_pairs",
+          "signature": "rep"
+        },
+        {
+          "kind": "function",
+          "name": "basis_lift",
+          "signature": "word, width"
+        },
+        {
+          "kind": "function",
+          "name": "hadamard",
+          "signature": "psi, qubit"
+        },
+        {
+          "kind": "function",
+          "name": "measure_distribution",
+          "signature": "psi"
+        },
+        {
+          "kind": "function",
+          "name": "density",
+          "signature": "psi"
+        },
+        {
+          "kind": "function",
+          "name": "quantum_distance",
+          "signature": "psi, phi"
+        },
+        {
+          "kind": "function",
+          "name": "compare",
+          "signature": "word, width, psi"
+        }
+      ]
+    }
+  ],
+  "discovery_registry": [
+    {
+      "executable": "generated/word_affine.py",
+      "id": "ecedc1fa2b948c469237ab5f828753e595d95a65971f138bef7e09215fa1b248",
+      "ir": "generated/word_affine.json",
+      "name": "word_affine",
+      "origin": "bounded composition search over four observations",
+      "status": "ACCEPTED_WITH_SCOPE"
+    },
+    {
+      "executable": "generated/image_roi.py",
+      "id": "6833348acafeb514264551db3f68e37b543ea8e9c27516457e01d8c1f0995048",
+      "ir": "generated/image_roi.json",
+      "name": "image_roi",
+      "origin": "unique ADD_MOD candidate selected from observed local updates and typed adapter",
+      "status": "ACCEPTED_WITH_SCOPE"
+    },
+    {
+      "executable": "generated/audio_window.py",
+      "id": "3aafb8341077976b4edb4185b885cda81b6cf10253d802f6416c289e8c3530b5",
+      "ir": "generated/audio_window.json",
+      "name": "audio_window",
+      "origin": "unique ADD_MOD candidate selected from observed local updates and typed adapter",
+      "status": "ACCEPTED_WITH_SCOPE"
+    },
+    {
+      "executable": "generated/support_update.py",
+      "id": "1bb508725d7e0f303254121c0945043fd9ab46341c1020e5c5e1aef96b870661",
+      "ir": "generated/support_update.json",
+      "name": "support_update",
+      "origin": "unique ADD_MOD candidate selected from observed local updates and typed adapter",
+      "status": "ACCEPTED_WITH_SCOPE"
+    },
+    {
+      "executable": "generated/support_factory.py",
+      "id": "3957e983e175b580eb1491e667b85fb15b0e01b704d966c8fdda34d0cf6a3f0a",
+      "ir": "generated/support_factory.json",
+      "name": "support_factory",
+      "origin": "verified modular schema lifted to bounded generator requests",
+      "status": "ACCEPTED_WITH_SCOPE"
+    }
+  ],
+  "generated_artifacts": [
+    {
+      "path": "runs/release/discovery/generated/audio_window.json",
+      "bytes": 338,
+      "sha256": "1b9383b29bd9d9eafbef9f897e1bab78cf28423192afa844780b3c1d22bf21d3"
+    },
+    {
+      "path": "runs/release/discovery/generated/audio_window.py",
+      "bytes": 13127,
+      "sha256": "988dca7a401ea4fe96a29e2f7f53407911c9116b090de3446e3ffb1bfa190844"
+    },
+    {
+      "path": "runs/release/discovery/generated/child_16_255.json",
+      "bytes": 407,
+      "sha256": "c0b2c1a7e3cc3e0c9cc2ef52dbec0c0f34ac5e0263674c07e17216a9797e8852"
+    },
+    {
+      "path": "runs/release/discovery/generated/child_16_255.py",
+      "bytes": 13196,
+      "sha256": "8f3816b7c77850c1e7af938a9ce970f2ffac046a4acd477f688726bcacf38336"
+    },
+    {
+      "path": "runs/release/discovery/generated/child_16_7.json",
+      "bytes": 405,
+      "sha256": "bef222b08870d0d3453d57bd38e63e2daeee260691a619efc6db56daec91ba84"
+    },
+    {
+      "path": "runs/release/discovery/generated/child_16_7.py",
+      "bytes": 13194,
+      "sha256": "1028479cbe7b4c062cefb0fbdb4eed87ef01831d7242819c7099d3df17e68c53"
+    },
+    {
+      "path": "runs/release/discovery/generated/child_8_0.json",
+      "bytes": 402,
+      "sha256": "6356b70f77fcebdc3b275e28e8cac97246a69b1fbb7c3033ffc9397a22d378d3"
+    },
+    {
+      "path": "runs/release/discovery/generated/child_8_0.py",
+      "bytes": 13191,
+      "sha256": "f803f823c59990b0023222c1cda4a20f4cbadb045c5bdb8152c7f78d334a978d"
+    },
+    {
+      "path": "runs/release/discovery/generated/child_8_1.json",
+      "bytes": 402,
+      "sha256": "db4e56b8bfa445f65415b95217527f3c7b4af19aff184579a12c193e13e5f159"
+    },
+    {
+      "path": "runs/release/discovery/generated/child_8_1.py",
+      "bytes": 13191,
+      "sha256": "fb56050483ffd5c0e11c364948249a96c7d222ca18b269f32065f62d5586ab17"
+    },
+    {
+      "path": "runs/release/discovery/generated/child_8_255.json",
+      "bytes": 404,
+      "sha256": "1c785a2317d52c3a754d7367663cff30bf47c3ab8c2de8ee87fb4ef14ab65d90"
+    },
+    {
+      "path": "runs/release/discovery/generated/child_8_255.py",
+      "bytes": 13193,
+      "sha256": "06b5b528f2f79111c03757af9c598f7066fa99519debb6b07da1731a22adcb9d"
+    },
+    {
+      "path": "runs/release/discovery/generated/child_8_7.json",
+      "bytes": 402,
+      "sha256": "fc623c828d7ba9ffd0e369a3144293d3f969f76143c7aa35d5db4706cd3af028"
+    },
+    {
+      "path": "runs/release/discovery/generated/child_8_7.py",
+      "bytes": 13191,
+      "sha256": "94b2826fbf4519d7c1dceb32a915764465060a226bc99cdb8271a229f41780b0"
+    },
+    {
+      "path": "runs/release/discovery/generated/identity_rewrite.json",
+      "bytes": 368,
+      "sha256": "ac402b469ec9ec9d653f24b52708feef08b028fc0f4f3ea128f2388ce4ec7879"
+    },
+    {
+      "path": "runs/release/discovery/generated/image_roi.json",
+      "bytes": 332,
+      "sha256": "61840fdcd7fc92d764b9ae589564915fbfac70985dc7bbc55a60a67d7e721058"
+    },
+    {
+      "path": "runs/release/discovery/generated/image_roi.py",
+      "bytes": 13121,
+      "sha256": "cb8711edf4bdd692fbb977428b2b4aa11ee5c2b31f982e6c4e6dc98df1582d39"
+    },
+    {
+      "path": "runs/release/discovery/generated/support_factory.json",
+      "bytes": 345,
+      "sha256": "b9433ad5e8f6a0a9173c927a8bb48e9ad14d0859863b4e9f291bafc03149fb7e"
+    },
+    {
+      "path": "runs/release/discovery/generated/support_factory.py",
+      "bytes": 13134,
+      "sha256": "ac6d5d6b3e73927e51cbe01c166a71fe0a92a837482b267b62cc986c10adfbbf"
+    },
+    {
+      "path": "runs/release/discovery/generated/support_update.json",
+      "bytes": 339,
+      "sha256": "21fe5098e50c40717cf7424ed579f7ae7513dc9a9d84c1bb19a5aaf3b454bdab"
+    },
+    {
+      "path": "runs/release/discovery/generated/support_update.py",
+      "bytes": 13128,
+      "sha256": "9ebf5e4ad1ea38e1d32baad08f57b3bee90c1e3654997b9cca78db3e64a7996f"
+    },
+    {
+      "path": "runs/release/discovery/generated/word_affine.json",
+      "bytes": 351,
+      "sha256": "298fd7bb9a2449328ea56428dea9d3891644ca52ef77b806432367e83f69483f"
+    },
+    {
+      "path": "runs/release/discovery/generated/word_affine.py",
+      "bytes": 13140,
+      "sha256": "4848bceb5bc958fb2b92f497916e3b3ef9d5622de9ff8a4fc7b68c4806c1bd11"
+    },
+    {
+      "path": "runs/release/transfer/generated/audio_window_generator.py",
+      "bytes": 3559,
+      "sha256": "065eeaf10eb73337b5652553b4596a981f01846ae5f8cc48d1cb2b2d1f74bd48"
+    },
+    {
+      "path": "runs/release/transfer/generated/composed_generator_manifest.json",
+      "bytes": 600,
+      "sha256": "7bdc3831192a753a0ff0daa2e0df677938359808725cf71e08605729d946fafa"
+    },
+    {
+      "path": "runs/release/transfer/generated/composed_sequence_generator.py",
+      "bytes": 3417,
+      "sha256": "d8e00c34afec7ffbe8af4903c58068bef711e8dd04a30e80e2f15ab387c93487"
+    },
+    {
+      "path": "runs/release/transfer/generated/context_selector_generator.py",
+      "bytes": 4064,
+      "sha256": "ce89d1fb5c3906ee1231122fd3070ef1b5cd252c038c25f89c7fade422875eb0"
+    },
+    {
+      "path": "runs/release/transfer/generated/generator_manifest.json",
+      "bytes": 4700,
+      "sha256": "4d2dfa208ef551b52cb5e5eb085b7cdfb44a274e2a316891578cbb61e638bafb"
+    },
+    {
+      "path": "runs/release/transfer/generated/image_roi_generator.py",
+      "bytes": 3414,
+      "sha256": "1956e99b71b3ad9ce365f97a6e587b2c06458ba39c333ec6e87d1fa222776159"
+    },
+    {
+      "path": "runs/release/transfer/generated/local_sequence_generator.py",
+      "bytes": 3417,
+      "sha256": "a5b1e61e807e6b52d7f811ae87f0c10807fd8b971500d1db91e43f302cb82e9a"
+    },
+    {
+      "path": "runs/release/structures/huffman_generated.py",
+      "bytes": 11112,
+      "sha256": "6cdfd41e12527844d5ccd8bc37e1d224f459583818131daee7a4a532c93a97fd"
+    }
+  ],
+  "research_state_machine": {
+    "implemented_phantom_path": [
+      "REGISTER_INPUT",
+      "INTERPRET",
+      "PROJECT",
+      "PROPOSE_STRUCTURE",
+      "DERIVE_OPERATOR",
+      "EXECUTE",
+      "CHECK",
+      "CONTRAST",
+      "CHALLENGE",
+      "ACCEPT",
+      "REGISTER_GENERATOR",
+      "TRANSFER",
+      "REPLAY",
+      "NEXT"
+    ],
+    "v3_commissioned_path": [
+      "SCOPE",
+      "ACQUIRE",
+      "HASH",
+      "DECODE",
+      "MAP",
+      "COMPOSE",
+      "SIMULATE",
+      "PERTURB",
+      "DISCOVER",
+      "CHALLENGE",
+      "VERIFY",
+      "GENERATE",
+      "REFLECT",
+      "ARCHIVE",
+      "SELECT"
+    ],
+    "equivalence": "NOT_ESTABLISHED",
+    "separate_ledgers": [
+      "actual_runner_execution_envelope",
+      "retrospective_evidence_admission"
+    ]
+  },
+  "boundaries": [
+    "The new V3 attachment is an exact duplicate of already preserved lineage, not evidence of a new completed integration.",
+    "The V3 seed does not enforce the full XY, finite-coordinate, power-of-two-state, interpretation-binding or explicit-budget contracts.",
+    "fourier_sine is a sine-expression branch, not an FFT/Fourier transform implementation.",
+    "The V3 energy label computes a scaled sine square, not a verified physical energy law.",
+    "No full mathematical atlas runtime, dynamic coupling, nested atlas, topology/discovery pipeline, real FITS/WCS, ROOT/HepMC or calibrated quantum-hardware gate is certified by this audit.",
+    "Classical Q-Strings, statevector array encodings, computational-basis words and physical hardware qubits are distinct representations.",
+    "No universal quantum/classical equivalence, novel physics, hardware execution, full Language Lab reconstruction or historical Octave rerun is claimed.",
+    "The native renderer has no browser/WebGL runtime. Android 0.1.1 actual-device launch remains unverified."
+  ],
+  "references_reviewed_utc": "2026-10-25",
+  "external_reference_urls": [
+    "https://quantum.cloud.ibm.com/docs/en/guides/bit-ordering",
+    "https://quantum.cloud.ibm.com/docs/en/api/qiskit/quantum_info",
+    "https://qutip.readthedocs.io/en/stable/guide/dynamics/dynamics-master.html",
+    "https://docs.astropy.org/en/stable/io/fits/index.html"
+  ],
+  "mathematical_domain_ids": [
+    "logic",
+    "set_theory",
+    "type_theory",
+    "arithmetic",
+    "algebra",
+    "order_lattices",
+    "combinatorics",
+    "graph_theory",
+    "automata_languages",
+    "information_coding",
+    "geometry",
+    "topology",
+    "analysis_calculus",
+    "differential_equations",
+    "spectral_harmonic",
+    "probability_statistics",
+    "optimization_control",
+    "numerical_analysis",
+    "category_composition",
+    "physics_units",
+    "quantum_information",
+    "computation_complexity",
+    "metrology_uncertainty"
+  ],
+  "mathematical_domain_coverage_scope": "The 23 ordered IDs define the finite project review catalogue, not exhaustive coverage of mathematics. Presence/type checks do not prove a theorem, numerical result, physical claim or scientific gate. Every review needs applicability reasoning, assumptions, witness/proof/test obligations, controls and independent status.",
+  "materialized_package_roots": {
+    "V3": "build/foundation/QUANTUM_ORACLE_V3_EXTENSION",
+    "V2": "build/foundation/QUANTUM_ORACLE_V2_COMMISSION",
+    "PHANTOM": "build/foundation/phantom_division_viii_v04",
+    "ORACLE": "build/foundation/quantum_oracle"
+  },
+  "v2_release_gates": [
+    {
+      "id": "G0",
+      "status": "ACCEPT",
+      "scope": "Compact original archive preservation, original suites and core replay only; external full Language Lab recomputation is BLOCKED and historical Octave comparisons UNKNOWN."
+    },
+    {
+      "id": "G1",
+      "status": "UNKNOWN",
+      "scope": "Selected numeric/word/state codecs and semantic ports exist; full versioned binary-to-typed-IR-to-PHANTOM adapter conformance is not established."
+    },
+    {
+      "id": "G2",
+      "status": "UNKNOWN",
+      "scope": "Original ideal and Lindblad fixtures exist; independent backends and full phase/open-system/channel cases remain."
+    },
+    {
+      "id": "G3",
+      "status": "NOT_STARTED",
+      "scope": "Required real FITS/WCS/calibration/uncertainty pipeline is absent; existing astronomical catalogue is a separate scoped result."
+    },
+    {
+      "id": "G4",
+      "status": "NOT_STARTED",
+      "scope": "Real ROOT/HepMC event source, independent readers, kinematics and systematic uncertainties remain."
+    },
+    {
+      "id": "G5",
+      "status": "NOT_STARTED",
+      "scope": "Target/calibration/topology-aware compilation and calibrated simulator evidence remain; no physical device execution."
+    },
+    {
+      "id": "G6",
+      "status": "UNKNOWN",
+      "scope": "Original PHANTOM finite discovery/transfer/factory evidence is preserved; new integrated held-out transfer is not verified."
+    },
+    {
+      "id": "G7",
+      "status": "UNKNOWN",
+      "scope": "Original compact baseline replay is complete within scope; full integrated V2/V3 real-data/backend/discovery release replay is not."
+    }
+  ],
+  "v3_provision_assessments": [
+    {
+      "clause": 1,
+      "status": "UNKNOWN",
+      "scope": "Finite XY chart domains, typed observables, SPD local metrics and admissible maps are not fully implemented."
+    },
+    {
+      "clause": 2,
+      "status": "UNKNOWN",
+      "scope": "Layout-distance fixture exists, but dimensional and finite-coordinate metric admission is incomplete."
+    },
+    {
+      "clause": 3,
+      "status": "UNKNOWN",
+      "scope": "Sine/derivative fixtures exist; witnessed chart maps, actual spectral transforms and typed physical energy views remain."
+    },
+    {
+      "clause": 4,
+      "status": "NOT_STARTED",
+      "scope": "Atlas function norms, domain/measure contracts, cover/nerve topology and integration remain."
+    },
+    {
+      "clause": 5,
+      "status": "NOT_STARTED",
+      "scope": "Atlas coupling/delay/damping and energy accounting remain."
+    },
+    {
+      "clause": 6,
+      "status": "NOT_STARTED",
+      "scope": "Budgeted dynamic/nested atlas, native interactive scene and chronology remain."
+    },
+    {
+      "clause": 7,
+      "status": "NOT_STARTED",
+      "scope": "Wave-alphabet atlas discovery with held-out/null/encoding controls remains."
+    },
+    {
+      "clause": 8,
+      "status": "ACCEPT",
+      "scope": "Only the original finite 1-to-16-bit integer-to-computational-basis mapping under declared ordering."
+    },
+    {
+      "clause": 9,
+      "status": "UNKNOWN",
+      "scope": "Pure-state fixtures exist; general density-state admission and mixed-state conformance remain."
+    },
+    {
+      "clause": 10,
+      "status": "UNKNOWN",
+      "scope": "Probability and seeded Oracle shot fixtures exist; general measurement/loss and Bloch/Pauli views remain."
+    },
+    {
+      "clause": 11,
+      "status": "UNKNOWN",
+      "scope": "Opaque/complex byte fixtures exist; non-power-of-two and metadata-binding counterexamples remain in original seed."
+    },
+    {
+      "clause": 12,
+      "status": "UNKNOWN",
+      "scope": "Subset of ideal gates and original Lindblad fixture; required gate/channel/reset/control inventory remains incomplete."
+    },
+    {
+      "clause": 13,
+      "status": "UNKNOWN",
+      "scope": "Selected basis/H/phase controls exist; full pairwise property and break-case inventory remains."
+    },
+    {
+      "clause": 14,
+      "status": "UNKNOWN",
+      "scope": "Pure Fubini-Study fixture exists; density trace/fidelity/Bures comparisons and conventions remain."
+    },
+    {
+      "clause": 15,
+      "status": "NOT_STARTED",
+      "scope": "Native basis-order conversion exists; provider-versioned logical/physical/coupler/pulse/readout address model remains."
+    },
+    {
+      "clause": 16,
+      "status": "UNKNOWN",
+      "scope": "Original source/event provenance and native numeric witnesses exist; all-domain binary chains remain incomplete."
+    },
+    {
+      "clause": 17,
+      "status": "NOT_STARTED",
+      "scope": "Multi-domain atlas charts and explicit cross-domain maps remain."
+    },
+    {
+      "clause": 18,
+      "status": "NOT_STARTED",
+      "scope": "Hardware target/transpilation/noise/calibration adapter remains; no physical submission executed."
+    },
+    {
+      "clause": 19,
+      "status": "NOT_STARTED",
+      "scope": "Real FITS/WCS/time/PSF/spectral/calibration/uncertainty adapter remains."
+    },
+    {
+      "clause": 20,
+      "status": "NOT_STARTED",
+      "scope": "Real ROOT/HepMC event/particle/four-vector/weights/systematics adapter remains."
+    },
+    {
+      "clause": 21,
+      "status": "UNKNOWN",
+      "scope": "PHANTOM has a different actual research path; equivalence to the V3 phase schema is not established."
+    },
+    {
+      "clause": 22,
+      "status": "UNKNOWN",
+      "scope": "Inherited PHANTOM bounded factory and six compiled children are accepted within scope; atlas-generator grammar and independent verification remain."
+    },
+    {
+      "clause": 23,
+      "status": "NOT_STARTED",
+      "scope": "Integrated atlas physical/operational discovery with named priors, numerical/analytic baselines and novelty obligations remains."
+    },
+    {
+      "clause": 24,
+      "status": "UNKNOWN",
+      "scope": "All V2 requirements remain active; full integrated release is not complete."
+    }
+  ],
+  "v3_acceptance_examples": [
+    {
+      "id": "A",
+      "status": "ACCEPT",
+      "scope": "Numerical three-chart fixture and distances 5,6,5 only; original seed has no interactive visual scene."
+    },
+    {
+      "id": "B",
+      "status": "ACCEPT",
+      "scope": "All 256 opaque byte values reconstruct exactly."
+    },
+    {
+      "id": "C",
+      "status": "ACCEPT",
+      "scope": "Valid basis/H/complex-payload fixture only, not arbitrary malformed-state admission."
+    },
+    {
+      "id": "D",
+      "status": "ACCEPT",
+      "scope": "Original basis-vector global phase fixture; added Hadamard-state probe has 2.1073424255447017e-8 rad numerical residual, explicitly retained."
+    },
+    {
+      "id": "E",
+      "status": "REJECT",
+      "scope": "Claim that the original seed fully rejects invalid dimensions, units, tampering and normalization is falsified by retained probes."
+    },
+    {
+      "id": "F",
+      "status": "NOT_STARTED",
+      "scope": "N-chart dynamics and reference solutions are absent from the original seed."
+    },
+    {
+      "id": "G",
+      "status": "UNKNOWN",
+      "scope": "Full V2 integration replay is unclosed despite accepted compact original baseline."
+    }
+  ],
+  "full_v3_release_status": "UNKNOWN",
+  "published_immutable_transport": {
+    "manifest": "lineage/cosmos-continuation-parts/manifest.json",
+    "manifest_sha256": "936a5dc31992ea6b062ff8691d72a58d88f688f321b173d54c548678960cf7da",
+    "parts_checked": 2,
+    "logical_archive_bytes": 16736093,
+    "logical_archive_sha256": "ca8f9202b4c4acc8ab39d3a7305f4ba4cf80d016a384db9714019208cd5ae622",
+    "matches_audited_original": true,
+    "scope": "Ordered exact-byte transport chunks; no logical ZIP rewrite."
+  },
+  "documents": [
+    "docs/QUANTUM_V3_CONSOLIDATION.md",
+    "docs/MATHEMATICAL_ATLAS.md",
+    "docs/FOUNDATION_INVENTORY.md"
+  ],
+  "documentation_validation": {
+    "local_links": "all_targets_exist",
+    "markdown_tables": "consistent_column_counts",
+    "code_fences": "balanced",
+    "domain_ids": "exact_ordered_23_match",
+    "v3_provisions": "all_24_present",
+    "v2_gates": "all_8_present",
+    "acceptance_examples": "A_through_G_present",
+    "imported_constitution_and_self_prompt": "exact_source_bytes",
+    "original_phantom_replay_handoff": "byte_identical_to_fully_read_V2_context"
+  },
+  "status_scope": "This audit completed its declared preservation/inventory/fixture checks; full scientific V3 release status is separately UNKNOWN."
+}

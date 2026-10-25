@@ -1,0 +1,90 @@
+{
+  "schema": "SURFACE-HEADLESS-CLI-QA/1",
+  "boundsAndCorruptImport": [
+    {
+      "arguments": [
+        "--width",
+        "0"
+      ],
+      "returncode": 2,
+      "stderr": "Surface: width outside 16..4096"
+    },
+    {
+      "arguments": [
+        "--width",
+        "4096",
+        "--height",
+        "4096"
+      ],
+      "returncode": 2,
+      "stderr": "Surface: framebuffer exceeds four-million-pixel budget"
+    },
+    {
+      "arguments": [
+        "--frames",
+        "10001"
+      ],
+      "returncode": 2,
+      "stderr": "Surface: frames outside 1..10000"
+    },
+    {
+      "arguments": [
+        "--mode",
+        "7"
+      ],
+      "returncode": 2,
+      "stderr": "Surface: mode outside 0..6"
+    },
+    {
+      "arguments": [
+        "--output",
+        "same",
+        "--save",
+        "same"
+      ],
+      "returncode": 2,
+      "stderr": "Surface: output paths must be distinct"
+    },
+    {
+      "arguments": [
+        "--unknown",
+        "1"
+      ],
+      "returncode": 2,
+      "stderr": "Surface: unknown argument: --unknown"
+    },
+    {
+      "arguments": [
+        "--load",
+        "corrupt portable envelope"
+      ],
+      "returncode": 2,
+      "stderr": "Surface: export SHA256 mismatch"
+    }
+  ],
+  "savedPortableMagic": "SURFEXP1",
+  "savedBytes": 329819,
+  "savedSha256": "cd2118833625ba023766af1a9437cb45543e3ea6573080f889d958b3322b24b1",
+  "audio": {
+    "channels": 1,
+    "sampleWidthBytes": 2,
+    "sampleRate": 48000,
+    "sampleCount": 144000,
+    "seconds": 3.0
+  },
+  "previews": [
+    {
+      "path": "build/previews/coupled.png",
+      "bytes": 1083188,
+      "sha256": "5ce40dcb0acc129316941644c2a3c1e63444f3971fdd23d55869a3979a9ff220",
+      "origin": "Surface native CPU rasterizer P6 PPM; Pillow file-format conversion only"
+    },
+    {
+      "path": "build/previews/cosmos.png",
+      "bytes": 301287,
+      "sha256": "7ca127820ced77c5a902f9b4191e78dd6dbaceb2a76d75a73a86c5a830fc8730",
+      "origin": "Surface native CPU rasterizer P6 PPM; Pillow file-format conversion only"
+    }
+  ],
+  "visualInspection": "Coupled preview inspected: no chrome, visible red/cyan field streamlines and deposited curved stroke. Cosmos preview inspected: actual catalogue projection with bounded orthographic hemisphere; no labels or UI."
+}

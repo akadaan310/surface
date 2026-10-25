@@ -1,0 +1,62 @@
+{
+  "workspace": "/workspace/scratch/976a326a6786",
+  "native_workspace": "/workspace/scratch/976a326a6786/surface-native",
+  "prior_lost_session": {
+    "source": "unavailable",
+    "revision": "unknown",
+    "url": "unavailable",
+    "outstanding_jobs": "unknown; no authority to cancel unidentified remote jobs"
+  },
+  "current_work": {
+    "source_checkpoint": "surface-web-work-in-progress-20261025.zip",
+    "sha256": "b59d1e6471b9deb543aa8e3b53affcd503a88d33c97e7bca32bacf7e7230ff83",
+    "revision": "not yet committed",
+    "site_id": "appgprj_6adda0d68b40819195aa220751fcb5b6",
+    "expected_url": "https://surface-physical-ink.daintyaspen11.chatgpt.site",
+    "published": false,
+    "unfinished": "Browser implementation halted by explicit native-only requirement"
+  },
+  "owned_external_jobs": [],
+  "reported_octave_cases": [
+    {
+      "case": 1,
+      "status": "UNKNOWN",
+      "reason": "only screenshot report; raw input/output/verifier unavailable"
+    },
+    {
+      "case": 2,
+      "status": "UNKNOWN",
+      "reason": "only screenshot report; raw input/output/verifier unavailable"
+    },
+    {
+      "case": 3,
+      "status": "UNKNOWN",
+      "reason": "only screenshot report; raw input/output/verifier unavailable"
+    },
+    {
+      "case": 4,
+      "status": "UNKNOWN",
+      "reason": "only screenshot report; raw input/output/verifier unavailable"
+    },
+    {
+      "case": 5,
+      "status": "UNKNOWN",
+      "reason": "only screenshot report; raw input/output/verifier unavailable"
+    },
+    {
+      "case": 6,
+      "status": "UNKNOWN",
+      "reason": "only screenshot report; raw input/output/verifier unavailable"
+    },
+    {
+      "case": 7,
+      "status": "UNKNOWN",
+      "reason": "only screenshot report; raw input/output/verifier unavailable"
+    },
+    {
+      "case": 8,
+      "status": "UNKNOWN",
+      "reason": "only screenshot report; raw input/output/verifier unavailable"
+    }
+  ]
+}

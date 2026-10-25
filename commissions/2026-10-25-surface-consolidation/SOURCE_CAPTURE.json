@@ -1,0 +1,11 @@
+{
+  "schema": "surface.source-capture.v1",
+  "file": "verbatim.txt",
+  "sha256": "a11fa2b2730548376fb8f9a7b5bc84c71b1abf1ac3ddeb2f933b85a353117ee0",
+  "bytes": 5043,
+  "encoding": "UTF-8",
+  "final_newline": false,
+  "capture": "Exact visible user message copied from this conversation, including URL, paragraph breaks and closing. No access to original chat transport binary encoding is claimed.",
+  "semantic_mapping": "plan.json; authored and reviewed interpretation, not a claim of unrestricted natural-language inference",
+  "normalization": "No wording, punctuation or paragraph normalization"
+}

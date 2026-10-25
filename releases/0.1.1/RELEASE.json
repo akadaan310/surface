@@ -1,0 +1,50 @@
+{
+  "activity_class": "org.surface.nativeink.SurfaceActivity",
+  "android_device_execution": "NOT_RUN; user must confirm launch on their phone",
+  "apk_bytes": 1369050,
+  "apk_sha256": "eb430f4a71f296059901fd383edf8f128c0b4795c2df737eb1ef99e1d98ab120",
+  "application_id": "org.surface.nativeink.recovery",
+  "artifacts": [
+    {
+      "bytes": 1369050,
+      "file": "Surface-Recovery-0.1.1-arm64.apk",
+      "sha256": "eb430f4a71f296059901fd383edf8f128c0b4795c2df737eb1ef99e1d98ab120"
+    },
+    {
+      "bytes": 5016,
+      "file": "SURFACE_STARTUP_REPAIR.md",
+      "sha256": "644a349a678cf6283220e000c6f325c35cc4a7536c1b0ce49b323ffc1972100a"
+    },
+    {
+      "bytes": 3481,
+      "file": "SURFACE_RECOVERY_README.md",
+      "sha256": "73e1cfb9a410e7b3d13e2b9c81f9098f58c01a0e7f8d9060a9aeda356699465a"
+    },
+    {
+      "bytes": 4616,
+      "file": "SURFACE_RECOVERY_RESUME.md",
+      "sha256": "bd3dc7e62f8b7b1be899305227dfdc4a602561f3bcf493fb94b70256945a7f0f"
+    },
+    {
+      "bytes": 19618052,
+      "file": "Surface-Recovery-0.1.1-source.zip",
+      "sha256": "67f4a89c8bcc6bb416638f68936dfc5ee40d72ba2b373ba6adb411a994e986f7"
+    }
+  ],
+  "certificate_sha256": "71590989048342b1865937cb8588c2f270b56d9adb355bcf74db7eb53a8e7d16",
+  "native_core": "BYTE_IDENTICAL_TO_0.1.0",
+  "package_checks_passed": 14,
+  "private_signing_backup": "Saved separately with explicit user authorization; exact downloaded bytes verified; excluded from this archive",
+  "schema": "surface-startup-repair-release-v1",
+  "scientific_gate_changes": "NONE; previous scoped evidence remains historical",
+  "source_manifest_sha256": "e963e894a295ba349db9e9a278f3ee4329d8263877f3dc4cdf1b8af83fc818a8",
+  "source_revision": "f002eece5a5915b886d77dce1807890588282afd",
+  "source_verification": {
+    "all_hashes_exact": true,
+    "crc": "PASS",
+    "files": 150,
+    "source_zip_bytes": 19618052
+  },
+  "startup_regression": "RED UnsatisfiedLinkError to GREEN exact callback witness on actual Java Activity class",
+  "version": "0.1.1"
+}
