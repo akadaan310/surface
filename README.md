@@ -72,3 +72,12 @@ Read [the compiler guide](docs/COMMISSION_COMPILER.md) for draft → reviewed ma
 Android device launch; full recovery-policy conformance; missing historical Octave/sparse-wave witnesses; calibrated EM/material/acoustic/heat/battery models; complete spectral/polarization operators; typed N-chart transitions and dynamical coupling; real pulsar timing; FITS/WCS and collider pipelines; noise/channel and independent quantum-backend validation; optional authorized hardware execution; held-out discovery and integrated cold replay. The original Quantum Oracle V2 and V3 obligations remain binding.
 
 The former lost laboratory URL and remote job inventory were not recovered. This repository supplies recoverable source, an APK and executable research tools. Archived browser work is historical custody only.
+
+
+## UNISON/0.1 — Qur'an reading surface (source-only prototype)
+
+The first [MUQRI × GLASS Qur'an rendering commission](docs/UNISON_QURAN_RENDERER.md) preserves canonical Arabic source, exact word spans, disconnected-letter name frames, and an **optional proposed QITṬ numeric overlay**. [The offline HTML preview exporter](tools/unison_quran_preview.py) reads [a self-contained `الم` scene](examples/unison_quran_scene.json), verifies the source digest/spans and renders right-to-left Arabic with platform text shaping. The [C++ scene carrier](include/surface/quran_scene.hpp) declares native integration inputs; Android/native Surface painting is NOT yet wired or device verified.
+
+To render the source-review HTML once checks are authorized: `python3 tools/unison_quran_preview.py --scene examples/unison_quran_scene.json --output build/previews/unison_quran.html`.
+
+This addition leaves existing `src/renderer.cpp`, the Android lifecycle, physics, PHANTOM source custody and released APK unchanged. The prior no-new-build handoff remains respected.
