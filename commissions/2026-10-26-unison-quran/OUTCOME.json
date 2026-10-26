@@ -1,0 +1,51 @@
+{
+  "schema": "surface.unison.quran.commission.outcome/0.1",
+  "commission": "2026-10-26-unison-quran",
+  "repo": "akadaan310/SURFACE",
+  "branch": "main",
+  "source_baseline": "aa4474e4bd884ddec98fbeb13b5f0c167cdbe03c",
+  "source_intent": "commissions/2026-10-26-unison-quran/INTENT.md",
+  "published_artifacts": [
+    "docs/UNISON_QURAN_RENDERER.md",
+    "tools/unison_quran_preview.py",
+    "include/surface/quran_scene.hpp",
+    "examples/unison_quran_scene.json",
+    "tests/test_unison_quran_preview.py",
+    "README.md"
+  ],
+  "source_checks": {
+    "muqri_scene": "surface.unison.quran-scene/0.1",
+    "fixture_raw": "الم",
+    "fixture_surah_ayah": "2:1",
+    "fixture_source_sha256": "58bc1e3007bc0ed70b737b562ad04a88867c38e78e58e2f15c3f43c9be783acb",
+    "fixture_qitt_sum_research": 71,
+    "known_muqattaat_letters": 14,
+    "imagery_claim": "none; HTML review uses platform Arabic shaping",
+    "external_theory_search": "not performed"
+  },
+  "preserved": [
+    "src/renderer.cpp and include/surface/renderer.hpp unchanged",
+    "Android startup/lifecycle and native main unchanged",
+    "physics, orbital/quantum and legacy PHANTOM evidence unchanged",
+    "release APK and verification gate records unchanged"
+  ],
+  "actual_outcome": {
+    "offline_html_renderer": "source-complete; validates version/hash/byte spans and escapes input before independent review rendering",
+    "native_cpp_scene": "bounded header-level structs for words, star observations and shaped glyph runs; not wired to native renderer",
+    "review_fixture": "source metadata and three letter-name frames are committed",
+    "unit_test_file": "authored, not executed",
+    "android_render": "not implemented",
+    "cosmic_catalog": "no ingestion; no source-independent star dynamics",
+    "historical_claims": "not evaluated or proven"
+  },
+  "remaining_gates": [
+    "review HTML generated and visually inspected on supported shaping environment",
+    "source tests run by owner-authorized verified isolated environment",
+    "native source importer with robust UTF-8+SHA256 validation",
+    "licensed/platform Arabic glyph shaping and RTL hit testing",
+    "Android lifecycle/device test and actual screenshots",
+    "optional sourced star coordinate/time and uncertainty adapters"
+  ],
+  "state": "source_published; executable review command present; native-device NOT_STARTED",
+  "note": "Existing 2026-10-25 no-build/no-check handoff obeyed."
+}
