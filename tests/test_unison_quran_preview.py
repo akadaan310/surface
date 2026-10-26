@@ -31,7 +31,7 @@ class UnisonQuranSceneTests(unittest.TestCase):
         self.assertIn("أَلِف", output)
         self.assertIn("لَام", output)
         self.assertIn("مِيم", output)
-        self.assertIn("source-review", output.lower() + " source-review")
+        self.assertIn("MUQRI_HAFS_UTHMANI_SOURCE_REVIEW", output)
 
     def test_tampered_source_or_span_rejected(self):
         invalid = copy.deepcopy(self.scene)
