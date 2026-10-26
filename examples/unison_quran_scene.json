@@ -1,0 +1,95 @@
+{
+  "schema": "surface.unison.quran-scene/0.1",
+  "clock": {
+    "epoch_ns": 0,
+    "tick_ns": 0,
+    "generation": 0,
+    "logical_time_ns": 0
+  },
+  "text_layer": {
+    "kind": "quran_verse_source",
+    "surah": 2,
+    "ayah": 1,
+    "edition": "MUQRI_HAFS_UTHMANI_SOURCE_REVIEW",
+    "raw": "الم",
+    "source_sha256": "58bc1e3007bc0ed70b737b562ad04a88867c38e78e58e2f15c3f43c9be783acb",
+    "word_spans": [
+      {
+        "id": "235b5a4c2ac99c7c0130",
+        "raw": "الم",
+        "start_byte": 0,
+        "end_byte": 6
+      }
+    ],
+    "rasm_candidate": {
+      "kind": "simplified_noncanonical_letter_skeleton",
+      "original": "الم",
+      "skeleton": "الم",
+      "lossy": false,
+      "source_sha256": "58bc1e3007bc0ed70b737b562ad04a88867c38e78e58e2f15c3f43c9be783acb",
+      "limitations": [
+        "Not authoritative Uthmani rasm",
+        "Does not infer pronunciation"
+      ]
+    },
+    "qitt_status": "optional numeric overlay; not primary religious meaning",
+    "spoken_targets": "delegate to MUQRI TajweedParser, wajh/waqf context",
+    "basmala": "source- and verse-role-specific; never auto added or removed"
+  },
+  "initials_layer": {
+    "source": "الم",
+    "recognized_sequence": true,
+    "role": "verse_initial_candidate",
+    "reference": "2:1",
+    "letter_nodes": [
+      {
+        "letter": "ا",
+        "name_written": "أَلِف",
+        "position": 0,
+        "native_weight_research": 1,
+        "pronunciation": "DELEGATE_TO_MUQRI_TAJWID"
+      },
+      {
+        "letter": "ل",
+        "name_written": "لَام",
+        "position": 1,
+        "native_weight_research": 30,
+        "pronunciation": "DELEGATE_TO_MUQRI_TAJWID"
+      },
+      {
+        "letter": "م",
+        "name_written": "مِيم",
+        "position": 2,
+        "native_weight_research": 40,
+        "pronunciation": "DELEGATE_TO_MUQRI_TAJWID"
+      }
+    ],
+    "qitt_native_value": 71,
+    "spoken_policy": "MUQRI_TAJWID_LETTER_NAMES",
+    "epistemic_status": "written initials recognized; numerical reading is proposed research"
+  },
+  "pronunciation_layer": {
+    "provider": "muqri.tajweed_parser",
+    "state": "DEFERRED",
+    "units": "letters+phonemes+seconds/harakat when supplied"
+  },
+  "qitt_layer": {
+    "provider": "GLASS.QITT/0.1",
+    "research_only": true,
+    "does_not_overwrite_meaning_or_tajwid": true
+  },
+  "astro_layer": {
+    "purpose": "opt-in source-backed astronomical chart, not scriptural spatial decoding",
+    "objects": [],
+    "observational_clock": "requires separately sourced ephemerides"
+  },
+  "render_hints": {
+    "word_count": 1,
+    "word_ids": [
+      "235b5a4c2ac99c7c0130"
+    ],
+    "arabic_rtl": true,
+    "independent_layers": true,
+    "requires_native_surface_adapter": true
+  }
+}
