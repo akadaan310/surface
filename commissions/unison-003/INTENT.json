@@ -1,0 +1,32 @@
+{
+  "schema": "surface.commission.intent.v1",
+  "id": "unison-003",
+  "date": "2026-10-26",
+  "target": "Additive native Android Surface Unison CPU canvas with C++ core, declarative generator factory, clock-bearing telemetry and 14x14 dictionary; preserve existing Surface code and current app",
+  "paths": [
+    "unison/"
+  ],
+  "constraints": [
+    "no WebView, JS UI or external browser in native product",
+    "C++20 core; small Android Java Canvas / input bridge only for platform Unicode shaping and lifecycle",
+    "APK delivery only if full Android SDK/NDK toolchain and signing available; otherwise source+tests and honest blocker",
+    "no raw Quran text mutation",
+    "no unauthorized exploitation or paywall bypass",
+    "finite resumable commission, no unbounded autonomous app self-modification",
+    "direct additive main commits with verified publication"
+  ],
+  "source_inventory": [
+    "SURFACE/main Native Renderer and Quran Scene",
+    "GLASS/main QITT/0.1 and enCycled Calculus",
+    "SNAD/main Quran license/provenance"
+  ],
+  "state_regions": [
+    "lexicon",
+    "prime",
+    "telemetry",
+    "android",
+    "security",
+    "publication"
+  ],
+  "status": "predeclared"
+}
